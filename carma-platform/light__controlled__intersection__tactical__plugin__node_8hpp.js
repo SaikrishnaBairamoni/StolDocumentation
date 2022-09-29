@@ -1,0 +1,4 @@
+var light__controlled__intersection__tactical__plugin__node_8hpp =
+[
+    [ "light_controlled_intersection_tactical_plugin::LightControlledIntersectionTransitPluginNode", "classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTransitPluginNode.html", "classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTransitPluginNode" ]
+];

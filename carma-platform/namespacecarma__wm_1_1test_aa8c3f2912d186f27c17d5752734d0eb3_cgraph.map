@@ -1,0 +1,4 @@
+<map id="carma_wm::test::setRouteByIds" name="carma_wm::test::setRouteByIds">
+<area shape="rect" id="node1" title="Sets the route by series of lanelets id." alt="" coords="5,5,177,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1test.html#ae5be99adec8c6e92726dc6fcfac8b083" title="Sets the route by series of lanelets." alt="" coords="225,5,397,47"/>
+</map>

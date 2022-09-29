@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::PluginBaseNode::handle_on_error" name="carma_guidance_plugins::PluginBaseNode::handle_on_error">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,175,61"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#abadec1fa43995d369141d44893f567c5" title="Method which is triggered when an unhandled exception occurs in this plugin This method should be use..." alt="" coords="223,5,401,61"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::isVehicleNearTargetPlatoon" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::isVehicleNearTargetPlatoon">
+<area shape="rect" id="node1" title="Function to determine if the host vehicle is close to the target platoon (used for cut&#45;in join scenar..." alt="" coords="660,5,851,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#afd00a90158f773100543b3f56f964d74" title="Function to process mobility operation in leader state." alt="" coords="429,5,612,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a9f77f3abf67b6006fd6c9b965cbb1c10" title="Callback function for Mobility Operation Message." alt="" coords="199,5,381,61"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,5,151,61"/>
+</map>

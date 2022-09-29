@@ -1,0 +1,6 @@
+<map id="roadway_objects::RoadwayObjectsWorker" name="roadway_objects::RoadwayObjectsWorker">
+<area shape="rect" id="node1" title=" " alt="" coords="189,175,371,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,216,112"/>
+<area shape="rect" id="node3" title=" " alt="" coords="240,20,320,97"/>
+<area shape="rect" id="node4" title=" " alt="" coords="344,20,552,97"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="carma_wm::WMListenerWorker::routingGraphFromMsg" name="carma_wm::WMListenerWorker::routingGraphFromMsg">
+<area shape="rect" id="node1" title="Helper function to convert a routing graph message into a actual RoutingGraph object." alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1WMListenerWorker.html#ac0c115081f19ec29b215e6edeb110d4c" title="Returns the Vehicle Participation Type value." alt="" coords="256,5,459,47"/>
+</map>

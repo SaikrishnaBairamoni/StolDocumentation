@@ -1,0 +1,6 @@
+<map id="health_monitor::EntryManager::get_entries" name="health_monitor::EntryManager::get_entries">
+<area shape="rect" id="node1" title="Get all registed entries as a list." alt="" coords="541,39,733,80"/>
+<area shape="rect" id="node2" href="$classhealth__monitor_1_1DriverManager.html#ac09a1e7ae9666784702fe99c35457dd7" title="Check if all critical drivers are operational for car." alt="" coords="256,5,488,47"/>
+<area shape="rect" id="node4" href="$classhealth__monitor_1_1DriverManager.html#a39a657e4039414f06c43625633f281c2" title="Check if all critical drivers are operational for truck." alt="" coords="251,71,493,112"/>
+<area shape="rect" id="node3" href="$classhealth__monitor_1_1DriverManager.html#a75bc9cac7e2d7690021175f01efef726" title="Handle the spin and publisher." alt="" coords="5,39,203,80"/>
+</map>

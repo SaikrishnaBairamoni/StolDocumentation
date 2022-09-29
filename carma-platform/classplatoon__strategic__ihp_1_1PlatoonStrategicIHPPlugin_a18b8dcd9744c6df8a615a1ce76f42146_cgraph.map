@@ -1,0 +1,6 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_leadwithoperation" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_leadwithoperation">
+<area shape="rect" id="node1" title="Function to process mobility request in leadwithoperation state (cut&#45;in join)" alt="" coords="5,77,212,133"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a876cee27af19b1f215ffd4a2190be371" title="Function to convert ecef location to a 2d point in map frame." alt="" coords="290,5,473,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="260,85,503,126"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a11ffedaaa90fe358ecfdccab7c5a428c" title="Function to convert pose from map frame to ecef location." alt="" coords="290,149,473,205"/>
+</map>

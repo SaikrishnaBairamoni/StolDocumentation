@@ -1,0 +1,6 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_leader_waiting" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_leader_waiting">
+<area shape="rect" id="node1" title="Run Leader Waiting State." alt="" coords="5,38,188,94"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="237,5,456,47"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a95d140cc05909e28936b714f41862fc9" title="Function to compose mobility operation in leader waiting state." alt="" coords="236,71,457,141"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="505,78,740,134"/>
+</map>

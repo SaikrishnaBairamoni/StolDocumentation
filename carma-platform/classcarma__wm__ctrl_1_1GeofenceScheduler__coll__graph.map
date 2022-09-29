@@ -1,0 +1,10 @@
+<map id="carma_wm_ctrl::GeofenceScheduler" name="carma_wm_ctrl::GeofenceScheduler">
+<area shape="rect" id="node1" title="A GeofenceScheduler is responsable for notifying the user when a geofence is active or inactive accor..." alt="" coords="428,189,659,399"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,20,63,97"/>
+<area shape="rect" id="node3" title=" " alt="" coords="87,20,269,97"/>
+<area shape="rect" id="node4" title=" " alt="" coords="293,5,450,112"/>
+<area shape="rect" id="node5" title=" " alt="" coords="475,20,612,97"/>
+<area shape="rect" id="node6" title=" " alt="" coords="637,5,797,112"/>
+<area shape="rect" id="node7" title=" " alt="" coords="821,20,895,97"/>
+<area shape="rect" id="node8" title=" " alt="" coords="920,20,1036,97"/>
+</map>

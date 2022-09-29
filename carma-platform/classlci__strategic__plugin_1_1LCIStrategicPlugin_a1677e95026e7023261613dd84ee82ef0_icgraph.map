@@ -1,0 +1,7 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::get_distance_to_accel_or_decel_twice" name="lci_strategic_plugin::LCIStrategicPlugin::get_distance_to_accel_or_decel_twice">
+<area shape="rect" id="node1" title="Get required distance to accel then decel, or vise versa &#45; each at least once &#45; to reach departure_sp..." alt="" coords="731,5,889,76"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a146dad761ed5158d0d6371f7335c4888" title="Gets the earliest entry time into the intersection that is kinematically possible for the vehicle...." alt="" coords="520,13,683,69"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#adb5f42d9458f7c1e4b7c87310c015059" title="Method for performing maneuver planning when the current plugin state is TransitState::APPROACHING Th..." alt="" coords="289,13,472,69"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a8b3f0877902b0153950cf4577e7b6ac0" title="Service callback for arbitrator maneuver planning." alt="" coords="104,13,241,69"/>
+<area shape="rect" id="node5" href="$lci__strategic__plugin_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,27,56,54"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="carma_wm_ctrl::WMBroadcaster::geofenceCallback" name="carma_wm_ctrl::WMBroadcaster::geofenceCallback">
+<area shape="rect" id="node1" title="Callback to add a geofence to the map. Currently only supports version 1 TrafficControlMessage." alt="" coords="5,71,216,112"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#abea25fd0b879387b68454225ebb0ebc6" title="Populates the schedules member of the geofence object from given TrafficControlMessageV01 message." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#acc8891ed0c1949e44412537e7c904f4c" title="Construct TCM acknowledgement object and populate it with params. Publish the object for a configured..." alt="" coords="264,71,475,112"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#ab6bfd98359ff2f28688bf7503b43a336" title=" " alt="" coords="264,136,475,177"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a2fecf322a302aff00ce8d76b0965e02e" title="Get the clock type of the clock being created by the timer factory." alt="" coords="538,5,769,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a645ff72ccf3e3b7f6a529debf7a172a2" title="Get current time used by scheduler." alt="" coords="523,78,784,105"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#aa6e1c118ed8765ca03a7e52518c6e007" title="Add a geofence to the scheduler. This will cause it to trigger an event when it becomes active or goe..." alt="" coords="538,136,769,177"/>
+<area shape="rect" id="node8" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a9072b770cf240953a50f1d926b733b7c" title="Generates the next id to be used for a timer." alt="" coords="1389,132,1620,173"/>
+<area shape="rect" id="node9" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a8e993e68cb77c8c77b81dc8dfba2bc1e" title="The callback which is triggered when a geofence becomes active This will call the user set active_cal..." alt="" coords="832,165,1063,207"/>
+<area shape="rect" id="node10" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a0f58b227dcbd413eb451146d36cb1728" title="The callback which is triggered when a geofence becomes in&#45;active This will call the user set inactiv..." alt="" coords="1111,191,1341,232"/>
+</map>

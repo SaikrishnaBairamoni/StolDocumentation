@@ -1,0 +1,10 @@
+<map id="carma_wm_ctrl" name="carma_wm_ctrl">
+<area shape="rect" id="node2" href="dir_4011a6b64851f3ce120c93e6b3abcee1.html" title="include" alt="" coords="27,123,99,171"/>
+<area shape="rect" id="node5" href="dir_73e59df62327a001b53069470f2538a9.html" title="carma_wm_ros2" alt="" coords="39,219,158,267"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000060_000023.html" title="5" alt="" coords="87,191,95,206"/>
+<area shape="rect" id="node3" href="dir_9fbec0193eba5e1c7d9c25f065b11517.html" title="launch" alt="" coords="123,27,195,75"/>
+<area shape="rect" id="node4" href="dir_32e5f8abfc2730f22e7cf9d33e386ffd.html" title="src" alt="" coords="27,27,99,75"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000219_000060.html" title="5" alt="" coords="67,97,75,112"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000219_000023.html" title="2" alt="" coords="115,196,123,210"/>
+<area shape="rect" id="clust1" href="dir_b6b186497da38ed570e46f8088aa19ef.html" alt="" coords="16,16,341,181"/>
+</map>

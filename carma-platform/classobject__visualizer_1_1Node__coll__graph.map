@@ -1,0 +1,11 @@
+<map id="object_visualizer::Node" name="object_visualizer::Node">
+<area shape="rect" id="node1" title="This node provides RViz visualization messages for recieved ExternalObject and RoadwayObstacle messag..." alt="" coords="647,388,854,553"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,197,253,274"/>
+<area shape="rect" id="node3" title=" " alt="" coords="278,189,493,281"/>
+<area shape="rect" id="node4" title=" " alt="" coords="517,189,753,281"/>
+<area shape="rect" id="node5" title=" " alt="" coords="777,189,956,281"/>
+<area shape="rect" id="node6" href="$structobject__visualizer_1_1Config.html" title="Stuct containing the algorithm configuration values for object_visualizer." alt="" coords="981,189,1105,281"/>
+<area shape="rect" id="node7" href="$classbool.html" title=" " alt="" coords="917,5,963,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1117,5,1171,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1128,197,1184,274"/>
+</map>

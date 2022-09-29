@@ -1,0 +1,6 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::calc_speed_before_decel" name="sci_strategic_plugin::SCIStrategicPlugin::calc_speed_before_decel">
+<area shape="rect" id="node1" title="calculate the speed, right before the car starts to decelerate for stopping" alt="" coords="503,57,677,113"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#afc38c2b6e6549f1bfc08feb3c2a643a3" title="Compose a lane keeping maneuver message based on input params." alt="" coords="232,5,455,76"/>
+<area shape="rect" id="node4" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a16d353d1135dd8b869322242479f634b" title="Determine the speed profile case fpr approaching an intersection." alt="" coords="242,101,445,157"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a5ad9628cf7d25246bc3a192c842ba8e2" title="Service callback for arbitrator maneuver planning." alt="" coords="5,57,184,113"/>
+</map>

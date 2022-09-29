@@ -1,0 +1,11 @@
+<map id="carma_wm_ctrl::GeofenceScheduler::nextId" name="carma_wm_ctrl::GeofenceScheduler::nextId">
+<area shape="rect" id="node1" title="Generates the next id to be used for a timer." alt="" coords="1617,93,1848,135"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a338823f9a0dab3c3c5ce8838cbb64323" title="Constructor which takes in a TimerFactory. Timers from this factory will be used to generate the trig..." alt="" coords="1339,5,1569,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#aa6e1c118ed8765ca03a7e52518c6e007" title="Add a geofence to the scheduler. This will cause it to trigger an event when it becomes active or goe..." alt="" coords="781,93,1012,135"/>
+<area shape="rect" id="node8" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a0f58b227dcbd413eb451146d36cb1728" title="The callback which is triggered when a geofence becomes in&#45;active This will call the user set inactiv..." alt="" coords="1339,123,1569,164"/>
+<area shape="rect" id="node9" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a8e993e68cb77c8c77b81dc8dfba2bc1e" title="The callback which is triggered when a geofence becomes active This will call the user set active_cal..." alt="" coords="1060,123,1291,164"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#ab6bfd98359ff2f28688bf7503b43a336" title=" " alt="" coords="523,93,733,135"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a9d4ee6959ff334d9f4f16864e5bd0cfe" title="Callback to MAP.msg which contains intersections&#39; static info such geometry and lane ids." alt="" coords="264,60,475,101"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a63a919c2cf6736a80fa29a706b020330" title="Callback to add a geofence to the map. Currently only supports version 1 TrafficControlMessage." alt="" coords="264,125,475,167"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#ab0c14f6d7e30870755a4dcf6b228de82" title=" " alt="" coords="5,93,216,135"/>
+</map>

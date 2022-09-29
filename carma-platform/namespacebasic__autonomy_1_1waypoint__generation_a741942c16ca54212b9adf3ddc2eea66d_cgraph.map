@@ -1,0 +1,14 @@
+<map id="basic_autonomy::waypoint_generation::compose_lanechange_trajectory_from_path" name="basic_autonomy::waypoint_generation::compose_lanechange_trajectory_from_path">
+<area shape="rect" id="node1" title="Method converts a list of lanelet centerline points and current vehicle state into a usable list of t..." alt="" coords="5,208,227,264"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#adf1c6b7f1e33569b45074e4e5bbeff1d" title="Compute the arc length at each point around the curve." alt="" coords="304,13,456,54"/>
+<area shape="rect" id="node5" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a9e0eab343d21d18c665083839d706f04" title="Computes a spline based on the provided points." alt="" coords="293,78,467,119"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#ad8a3ee0bf06f85a6e7a8b5097251da2b" title="Compute an approximate orientation for the vehicle at each point along the provided centerline." alt="" coords="279,143,481,185"/>
+<area shape="rect" id="node9" href="$namespacebasic__autonomy_1_1waypoint__generation.html#aa399a236f88f7b1c5557327fbb2ba71a" title="Returns the nearest &quot;less than&quot; point to the provided vehicle pose in the provided list by utilizing ..." alt="" coords="293,208,467,264"/>
+<area shape="rect" id="node10" href="$namespacebasic__autonomy_1_1smoothing.html#afb726e75a21ada8efa3ca5561ffc9984" title="Extremely simplie moving average filter." alt="" coords="289,287,471,329"/>
+<area shape="rect" id="node11" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a0f07faaac8c54cc485f2bb217097326e" title="Helper method to split a list of PointSpeedPair into separate point and speed lists." alt="" coords="293,352,467,408"/>
+<area shape="rect" id="node12" href="$namespacebasic__autonomy_1_1waypoint__generation.html#aeaf04f0d429f5abe96d2582330e646a1" title="Method combines input points, times, orientations, and an absolute start time to form a valid carma p..." alt="" coords="275,432,485,488"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a4e12c2971926486d1447e44e978f8d4d" title=" " alt="" coords="534,5,679,61"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="728,5,873,61"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#a126f739493756f0eb84183ea22912b93" title=" " alt="" coords="533,136,680,192"/>
+<area shape="rect" id="node8" href="$namespacecarma__wm_1_1geometry.html#ae8af6cd9c27d35849c12959ab9f1b9c3" title=" " alt="" coords="728,136,873,192"/>
+</map>

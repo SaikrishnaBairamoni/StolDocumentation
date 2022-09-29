@@ -1,0 +1,9 @@
+<map id="platoon_strategic_ihp::PlatoonManager::hostMemberUpdates" name="platoon_strategic_ihp::PlatoonManager::hostMemberUpdates">
+<area shape="rect" id="node1" title="Update information for members of the host&#39;s platoon based on a mobility operation STATUS message." alt="" coords="5,205,205,261"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a10f95b2573ee211d8f9b07f8d7551809" title="Returns command speed. in m/s." alt="" coords="253,5,459,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ac7017e74336d2270a0d66249a46c7dbb" title="Returns current crosstrack distance, in m." alt="" coords="262,85,450,141"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8f79bf82a5c6ba800fd48f9ed819f606" title="Returns current downtrack distance, in m." alt="" coords="262,165,450,221"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ac123534207dc3ea247cfb1281426cd84" title="Returns current speed, in m/s." alt="" coords="262,245,450,301"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ae696d79ca33f496082ef462fdc9ba53b" title="Returns current host static ID as a string." alt="" coords="507,351,728,393"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a6b4eae07dfc95c25104f95fef1f0f344" title="Updates the list of vehicles in the specified platoon, based on info available from a mobility operat..." alt="" coords="262,376,450,432"/>
+</map>

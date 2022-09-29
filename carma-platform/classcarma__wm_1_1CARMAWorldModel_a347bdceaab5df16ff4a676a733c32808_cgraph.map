@@ -1,0 +1,4 @@
+<map id="carma_wm::CARMAWorldModel::getIntersectingLanelet" name="carma_wm::CARMAWorldModel::getIntersectingLanelet">
+<area shape="rect" id="node1" title="Gets the a lanelet the object is currently on determined by its position on the semantic map...." alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#aaca2786bf27678c20e6c148e7485e5d3" title="Uses the provided pose and size vector of an ExternalObject to compute what the polygon would be of t..." alt="" coords="260,5,409,47"/>
+</map>

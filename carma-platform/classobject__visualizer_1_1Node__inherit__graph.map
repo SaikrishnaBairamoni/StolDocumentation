@@ -1,0 +1,4 @@
+<map id="object_visualizer::Node" name="object_visualizer::Node">
+<area shape="rect" id="node1" title="This node provides RViz visualization messages for recieved ExternalObject and RoadwayObstacle messag..." alt="" coords="26,131,233,413"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,253,83"/>
+</map>

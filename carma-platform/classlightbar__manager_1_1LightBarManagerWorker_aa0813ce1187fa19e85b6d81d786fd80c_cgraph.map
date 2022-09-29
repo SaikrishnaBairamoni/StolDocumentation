@@ -1,0 +1,4 @@
+<map id="lightbar_manager::LightBarManagerWorker::getCurrentState" name="lightbar_manager::LightBarManagerWorker::getCurrentState">
+<area shape="rect" id="node1" title="Get current state of the LightBarStateMachine." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a393463cfebd28b324093b8710b3a7ae9" title="Get current state machine status." alt="" coords="264,5,513,47"/>
+</map>

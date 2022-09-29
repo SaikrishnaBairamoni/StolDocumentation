@@ -1,0 +1,4 @@
+<map id="carma_wm::test::getLanelet" name="carma_wm::test::getLanelet">
+<area shape="rect" id="node1" title="helper function for quickly creating a lanelet::Lanelet using linestrings. id is specified" alt="" coords="5,5,187,32"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1test.html#a77097e8d97f244908d22ea5050c08a70" title="helper function for quickly creating a lanelet::Lanelet using linestrings. random id is assigned" alt="" coords="235,5,416,32"/>
+</map>

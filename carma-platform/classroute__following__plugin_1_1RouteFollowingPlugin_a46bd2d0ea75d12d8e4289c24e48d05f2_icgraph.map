@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::updateTimeProgress" name="route_following_plugin::RouteFollowingPlugin::updateTimeProgress">
+<area shape="rect" id="node1" title="Given an array of maneuvers update the starting time for each." alt="" coords="232,5,385,61"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a889056a79a669d5de8e1ce1bdb6eba99" title="Service callback for arbitrator maneuver planning." alt="" coords="5,5,184,61"/>
+</map>

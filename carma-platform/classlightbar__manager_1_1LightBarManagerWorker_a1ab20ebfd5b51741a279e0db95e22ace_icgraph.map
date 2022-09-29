@@ -1,0 +1,5 @@
+<map id="lightbar_manager::LightBarManagerWorker::handleControlChange" name="lightbar_manager::LightBarManagerWorker::handleControlChange">
+<area shape="rect" id="node1" title="Helper function that handles control lost/gained event of a component. This function registers/remove..." alt="" coords="256,39,499,80"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManagerWorker.html#a82bb65255d8dba00ae624d7e41b2643b" title="Releases the specified owner plugin or component&#39;s control of the given indicator list...." alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node3" href="$classlightbar__manager_1_1LightBarManagerWorker.html#ac3da8c268b0d6fb5bf556ce181f20916" title="Requests the control of the given list of indicators to the requester. This function handles successf..." alt="" coords="5,71,208,112"/>
+</map>

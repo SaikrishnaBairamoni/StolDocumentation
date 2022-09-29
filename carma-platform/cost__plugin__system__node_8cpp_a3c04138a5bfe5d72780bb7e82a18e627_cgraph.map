@@ -1,0 +1,19 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,342,56,369"/>
+<area shape="rect" id="node2" href="$classcost__plugin__system_1_1CostPluginWorker.html#a2d525dabcf3969daa72a972f4701f9e9" title="Run the spin loop of cost plugin system." alt="" coords="104,335,260,376"/>
+<area shape="rect" id="node3" href="$classcost__plugin__system_1_1CostPluginWorker.html#a5002ce8a5ab8add4df4875660c935277" title=" " alt="" coords="316,291,455,347"/>
+<area shape="rect" id="node17" href="$classcost__plugin__system_1_1CostPluginWorker.html#a8219937867e2fcb208fe25ef98f7302b" title="Initialize the cost plugin system." alt="" coords="308,371,463,412"/>
+<area shape="rect" id="node4" href="$classcost__plugin__system_1_1CostPluginWorker.html#a2ae5ab674a17617341c6c6b1297cb03f" title=" " alt="" coords="511,291,652,347"/>
+<area shape="rect" id="node5" href="$classcost__plugin__system_1_1CostofComfort.html#a6d24c8ce7b9daed56340720dfe9215e7" title="Compute the cost of a given maneuver plan." alt="" coords="700,119,900,160"/>
+<area shape="rect" id="node12" href="$classcost__plugin__system_1_1CostofEfficiency.html#adec849ff467815d75883f886875d7bc6" title="Compute the cost of a given maneuver plan." alt="" coords="731,327,869,383"/>
+<area shape="rect" id="node13" href="$classcost__plugin__system_1_1CostofFeasibility.html#a1e534ace325f98feaf624f13378e3c8c" title="Compute the cost of a given maneuver plan." alt="" coords="731,183,869,239"/>
+<area shape="rect" id="node14" href="$classcost__plugin__system_1_1CostofFuel.html#ade3fe25bd91bf295dd3e8e861e61f156" title="Compute the cost of a given maneuver plan." alt="" coords="711,263,889,304"/>
+<area shape="rect" id="node15" href="$classcost__plugin__system_1_1CostofLegality.html#a7238ed094f02e855d26b20bbe958caf6" title="Compute the cost of a given maneuver plan." alt="" coords="701,407,899,448"/>
+<area shape="rect" id="node16" href="$classcost__plugin__system_1_1CostofSafety.html#ad1f8a24b48d59cbb683d938c93c36109" title="Compute the cost of a given maneuver plan." alt="" coords="705,472,895,513"/>
+<area shape="rect" id="node6" href="$namespacecost__utils.html#a9085af85baecba8cc448ba31736a1b5f" title="Get the end speed of the specified maneuver." alt="" coords="948,267,1115,308"/>
+<area shape="rect" id="node7" href="$namespacecost__utils.html#a6b23212b8dff611a3aa2014f58a0b8ee" title="Get the end time of the specified maneuver." alt="" coords="948,136,1115,177"/>
+<area shape="rect" id="node8" href="$namespacecost__utils.html#ac29f789c83a7a30c64ff6a0778d1ea7a" title="Get the ending lane of the specified maneuver." alt="" coords="948,5,1115,47"/>
+<area shape="rect" id="node9" href="$namespacecost__utils.html#a86b850960da1a5f8c4be4fb3e39b8205" title="Get the start speed of the specified maneuver." alt="" coords="948,332,1115,373"/>
+<area shape="rect" id="node10" href="$namespacecost__utils.html#af29dec506f8d8e0b08e7f677eab297d4" title="Get the start time of the specified maneuver." alt="" coords="948,201,1115,243"/>
+<area shape="rect" id="node11" href="$namespacecost__utils.html#a3afe2ecbcd20cbeed3a7e59a56525e13" title="Get the starting lane of the specified maneuver." alt="" coords="948,71,1115,112"/>
+</map>

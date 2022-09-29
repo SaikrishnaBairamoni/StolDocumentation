@@ -1,0 +1,5 @@
+<map id="mock_drivers::MockDriverNode::init" name="mock_drivers::MockDriverNode::init">
+<area shape="rect" id="node1" title="Initialize the CARMA Node Handle pointer for the MockDriverNode (must be called before spin)" alt="" coords="348,5,520,47"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriver.html#aad7620eb7aecece6a70e4181c938e945" title="A function to initialize the publishers and subsricers and start the node. In child classes,..." alt="" coords="104,13,300,39"/>
+<area shape="rect" id="node3" href="$mock__drivers_2rosbag__mock__drivers_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,56,39"/>
+</map>

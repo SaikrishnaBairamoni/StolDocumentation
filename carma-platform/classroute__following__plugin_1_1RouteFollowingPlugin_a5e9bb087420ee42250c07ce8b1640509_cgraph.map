@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::composeLaneFollowingManeuverMessage" name="route_following_plugin::RouteFollowingPlugin::composeLaneFollowingManeuverMessage">
+<area shape="rect" id="node1" title="Compose a lane keeping maneuver message based on input params." alt="" coords="5,5,228,76"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a4c98600b556259d55d2eb087e20a2a96" title="This method returns a new UUID as a string for assignment to a Maneuver message." alt="" coords="276,13,429,69"/>
+</map>

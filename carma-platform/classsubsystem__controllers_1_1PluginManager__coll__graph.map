@@ -1,0 +1,11 @@
+<map id="subsystem_controllers::PluginManager" name="subsystem_controllers::PluginManager">
+<area shape="rect" id="node1" title="The PluginManager serves as a component to manage CARMA Guidance Plugins via their ros2 lifecycle int..." alt="" coords="608,476,779,832"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,211,139,303"/>
+<area shape="rect" id="node3" title=" " alt="" coords="163,211,413,303"/>
+<area shape="rect" id="node4" title=" " alt="" coords="437,219,571,296"/>
+<area shape="rect" id="node5" title=" " alt="" coords="596,182,791,333"/>
+<area shape="rect" id="node6" href="$classsubsystem__controllers_1_1EntryManager.html" title="An entry manager keeps track of the set of entries and makes it easy to add or remove entries." alt="" coords="815,175,969,340"/>
+<area shape="rect" id="node7" title=" " alt="" coords="822,5,962,112"/>
+<area shape="rect" id="node8" title=" " alt="" coords="993,219,1092,296"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1134,219,1189,296"/>
+</map>

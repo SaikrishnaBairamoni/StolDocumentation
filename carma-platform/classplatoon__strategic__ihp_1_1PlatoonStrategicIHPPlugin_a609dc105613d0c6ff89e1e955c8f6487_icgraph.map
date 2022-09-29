@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::updateCurrentStatus" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::updateCurrentStatus">
+<area shape="rect" id="node1" title="Update maneuver status based on prior plan." alt="" coords="236,5,419,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aedb5c1f689806047c82f0c7b3ebe9c66" title="Callback function to the maneuver request." alt="" coords="5,5,188,61"/>
+</map>

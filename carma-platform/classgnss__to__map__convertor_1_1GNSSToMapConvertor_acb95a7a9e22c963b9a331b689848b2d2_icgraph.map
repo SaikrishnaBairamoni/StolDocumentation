@@ -1,0 +1,5 @@
+<map id="gnss_to_map_convertor::GNSSToMapConvertor::poseFromGnss" name="gnss_to_map_convertor::GNSSToMapConvertor::poseFromGnss">
+<area shape="rect" id="node1" title="Converts a provided GNSS fix message into a pose message for the map frame describibed by the provide..." alt="" coords="447,5,609,61"/>
+<area shape="rect" id="node2" href="$classgnss__to__map__convertor_1_1GNSSToMapConvertor.html#a3b37a3b059aa5da9f6e6faf1d92627fb" title="GNSS Fix callback which will publish a pose representing that fix in the map frame if the required tr..." alt="" coords="236,5,399,61"/>
+<area shape="rect" id="node3" href="$classgnss__to__map__convertor_1_1Node.html#a0de3641c944433ac709ce9ca395c24b3" title=" " alt="" coords="5,13,188,54"/>
+</map>

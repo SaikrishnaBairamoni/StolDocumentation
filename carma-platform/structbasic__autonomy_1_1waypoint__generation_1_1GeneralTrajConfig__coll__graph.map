@@ -1,0 +1,5 @@
+<map id="basic_autonomy::waypoint_generation::GeneralTrajConfig" name="basic_autonomy::waypoint_generation::GeneralTrajConfig">
+<area shape="rect" id="node1" title=" " alt="" coords="5,189,204,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="15,5,69,83"/>
+<area shape="rect" id="node3" href="$classint.html" title=" " alt="" coords="149,5,188,83"/>
+</map>

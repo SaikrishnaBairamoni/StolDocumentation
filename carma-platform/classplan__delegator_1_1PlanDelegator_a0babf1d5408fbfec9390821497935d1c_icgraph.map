@@ -1,0 +1,5 @@
+<map id="plan_delegator::PlanDelegator::planTrajectory" name="plan_delegator::PlanDelegator::planTrajectory">
+<area shape="rect" id="node1" title="Plan trajectory based on latest maneuver plan via ROS service call to plugins." alt="" coords="488,5,681,47"/>
+<area shape="rect" id="node2" href="$classplan__delegator_1_1PlanDelegator.html#a00a1a0c219bb3ba739e0cf7603105e75" title="Callback function for triggering trajectory planning." alt="" coords="247,5,440,47"/>
+<area shape="rect" id="node3" href="$classplan__delegator_1_1PlanDelegator.html#a2048a07d71d63108e83eb7fb5c7ca475" title=" " alt="" coords="5,5,199,47"/>
+</map>

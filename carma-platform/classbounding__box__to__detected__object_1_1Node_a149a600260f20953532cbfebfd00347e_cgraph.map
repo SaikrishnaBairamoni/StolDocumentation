@@ -1,0 +1,4 @@
+<map id="bounding_box_to_detected_object::Node::bbox_callback" name="bounding_box_to_detected_object::Node::bbox_callback">
+<area shape="rect" id="node1" title="Callback for bounding box data to be converted. Publishes a DetectedObjects message from the bounding..." alt="" coords="5,13,195,54"/>
+<area shape="rect" id="node2" href="$namespacebounding__box__to__detected__object.html#a892d68cf57313240fbfdec9e99568ade" title=" " alt="" coords="243,5,420,61"/>
+</map>

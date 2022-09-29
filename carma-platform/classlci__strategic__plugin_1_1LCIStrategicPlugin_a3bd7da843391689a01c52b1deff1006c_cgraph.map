@@ -1,0 +1,4 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::mobilityPubSpin" name="lci_strategic_plugin::LCIStrategicPlugin::mobilityPubSpin">
+<area shape="rect" id="node1" title="Method to call at fixed rate in execution loop. Will publish plugin discovery and mobility operation ..." alt="" coords="5,5,143,61"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a63354d48a82cceed362b725510157bf6" title="Generates Mobility Operation messages." alt="" coords="191,5,369,61"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTacticalPlugin::applyTrajectorySmoothingAlgorithm" name="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTacticalPlugin::applyTrajectorySmoothingAlgorithm">
+<area shape="rect" id="node1" title="Creates a speed profile according to case one or two of the light controlled intersection,..." alt="" coords="645,5,911,76"/>
+<area shape="rect" id="node2" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTacticalPlugin.html#a932b0caef86ca4b4e28063218202d1d7" title="Apply optimized target speeds to the trajectory determined for fixed&#45;time and actuated signals...." alt="" coords="331,5,597,76"/>
+<area shape="rect" id="node3" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTacticalPlugin.html#a124f95825dfb2728fefa245e6a0e1db7" title="Function to process the light controlled intersection tactical plugin service call for trajectory pla..." alt="" coords="5,13,283,69"/>
+</map>

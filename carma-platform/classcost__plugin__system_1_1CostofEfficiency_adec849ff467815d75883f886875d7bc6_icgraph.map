@@ -1,0 +1,7 @@
+<map id="cost_plugin_system::CostofEfficiency::compute_cost" name="cost_plugin_system::CostofEfficiency::compute_cost">
+<area shape="rect" id="node1" title="Compute the cost of a given maneuver plan." alt="" coords="684,5,821,61"/>
+<area shape="rect" id="node2" href="$classcost__plugin__system_1_1CostPluginWorker.html#a2ae5ab674a17617341c6c6b1297cb03f" title=" " alt="" coords="495,5,636,61"/>
+<area shape="rect" id="node3" href="$classcost__plugin__system_1_1CostPluginWorker.html#a5002ce8a5ab8add4df4875660c935277" title=" " alt="" coords="308,5,447,61"/>
+<area shape="rect" id="node4" href="$classcost__plugin__system_1_1CostPluginWorker.html#a2d525dabcf3969daa72a972f4701f9e9" title="Run the spin loop of cost plugin system." alt="" coords="104,13,260,54"/>
+<area shape="rect" id="node5" href="$cost__plugin__system__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,20,56,47"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="platoon_strategic_ihp::PlatoonManager::resetNeighborPlatoon" name="platoon_strategic_ihp::PlatoonManager::resetNeighborPlatoon">
+<area shape="rect" id="node1" title="Resets all variables that describe a neighbor platoon, so that no neighbor is known." alt="" coords="940,119,1149,175"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aa589c920c9684b42bf8f675c072ddb6b" title="Update status when state change from Leader to Follower." alt="" coords="692,85,892,141"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac969d6086d5fe4b55831015327820688" title="Function to process mobility response in candidate follower state." alt="" coords="429,5,644,61"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a9f77f3abf67b6006fd6c9b965cbb1c10" title="Callback function for Mobility Operation Message." alt="" coords="199,147,381,203"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a90514428edda23566362c1a60dc01448" title="Function to process mobility request in candidateleader state." alt="" coords="693,216,891,272"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aeba3a1dd3fc9411891a1fe1eac8c3993" title="Function to process mobility response in leaderaborting state." alt="" coords="439,85,634,141"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aaca0c4143be4a27041ab5ed90d2c624c" title="Callback function for Mobility Response Message." alt="" coords="199,67,381,123"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,147,151,203"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a53cc42ead95e9734805f4b52de1e38eb" title="Function to the process and respond to the mobility request." alt="" coords="445,220,628,276"/>
+<area shape="rect" id="node10" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a588b379b14e20af4e05cf4883c535c5a" title="Callback function for Mobility Request Message." alt="" coords="199,227,381,283"/>
+</map>

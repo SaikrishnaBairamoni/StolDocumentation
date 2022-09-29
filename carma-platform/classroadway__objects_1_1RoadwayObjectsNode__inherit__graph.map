@@ -1,0 +1,4 @@
+<map id="roadway_objects::RoadwayObjectsNode" name="roadway_objects::RoadwayObjectsNode">
+<area shape="rect" id="node1" title="The class responsible for converting detected objects into objects that are mapped onto specific lane..." alt="" coords="40,131,219,296"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,253,83"/>
+</map>

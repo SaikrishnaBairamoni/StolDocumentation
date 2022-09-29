@@ -1,0 +1,5 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::determine_speed_profile_case" name="sci_strategic_plugin::SCIStrategicPlugin::determine_speed_profile_case">
+<area shape="rect" id="node1" title="Determine the speed profile case fpr approaching an intersection." alt="" coords="5,45,208,101"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#aaf728e798283e618eeba6aa3ba94bb73" title="calculate the speed, right before the car starts to decelerate for stopping" alt="" coords="256,5,431,61"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a0a17b477f6f28bf53fdf0e034172334c" title="calculate the time vehicle will stop with optimal decelarion" alt="" coords="260,85,427,141"/>
+</map>

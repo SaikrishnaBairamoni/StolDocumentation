@@ -1,0 +1,35 @@
+<map id="PutReserve" name="PutReserve">
+<area shape="rect" id="node1" title="Reserve n characters for writing to a stream." alt="" coords="587,385,677,412"/>
+<area shape="rect" id="node2" href="$stream_8h.html#aacdd569be6f98c9d7d9ef71f79ef0fc0" title="Put N copies of a character to a stream." alt="" coords="437,31,489,57"/>
+<area shape="rect" id="node3" href="$classWriter.html#a42ad68b6950431bb8ca0199568546eaf" title=" " alt="" coords="404,81,523,108"/>
+<area shape="rect" id="node6" href="$classWriter.html#ae7a0fc4740681d845d92c1213bd25aa1" title=" " alt="" coords="397,157,529,184"/>
+<area shape="rect" id="node9" href="$classWriter.html#a31d0feda654ca245c41462be7dc59998" title=" " alt="" coords="410,259,517,285"/>
+<area shape="rect" id="node12" href="$classWriter.html#aa58d3f80c06394648de5055ecfb41587" title=" " alt="" coords="403,360,524,387"/>
+<area shape="rect" id="node15" href="$classWriter.html#a44862b3eba8d84b909c69aba875c9f4d" title=" " alt="" coords="406,411,521,437"/>
+<area shape="rect" id="node18" href="$classWriter.html#a8ee1135b2595261819b134907f67614e" title=" " alt="" coords="388,512,539,539"/>
+<area shape="rect" id="node21" href="$classWriter.html#acda4412ef5f4cac6e89f9544e4b10f70" title=" " alt="" coords="400,664,527,691"/>
+<area shape="rect" id="node28" href="$classWriter.html#a2861227e93707d1478d2cf56644dca3b" title=" " alt="" coords="405,816,521,843"/>
+<area shape="rect" id="node31" href="$classWriter.html#ad07b325157220e3aa791c1c8c904021e" title=" " alt="" coords="398,917,529,944"/>
+<area shape="rect" id="node4" href="$classPrettyWriter.html#a6e765ee7ada5ed40f317c78a98f6f90b" title=" " alt="" coords="195,5,317,32"/>
+<area shape="rect" id="node5" href="$classWriter.html#ad7491f4dedb02e7456b240b23ef8c1ad" title=" " alt="" coords="212,56,300,83"/>
+<area shape="rect" id="node7" href="$classPrettyWriter.html#ad9d592e86b985da666665926e87db415" title=" " alt="" coords="188,107,324,133"/>
+<area shape="rect" id="node8" href="$classWriter.html#a22a43e8a7193105deec6b808736f7a1a" title="Writes the given double value to the stream." alt="" coords="205,157,307,184"/>
+<area shape="rect" id="node10" href="$classPrettyWriter.html#aa1815263e61cb7af3b6dfba480a0f481" title=" " alt="" coords="201,208,311,235"/>
+<area shape="rect" id="node11" href="$classWriter.html#ad471415aa7741e732bab0bcfbb9522a8" title=" " alt="" coords="217,259,295,285"/>
+<area shape="rect" id="node13" href="$classPrettyWriter.html#ad42b797429f4ee19efdce610f5aff976" title=" " alt="" coords="193,309,319,336"/>
+<area shape="rect" id="node14" href="$classWriter.html#a4144d7086ed9d3d807c373de242bde45" title=" " alt="" coords="211,360,301,387"/>
+<area shape="rect" id="node16" href="$classPrettyWriter.html#aa144f2d0f0c3c69248cdbe957349528c" title=" " alt="" coords="197,411,315,437"/>
+<area shape="rect" id="node17" href="$classWriter.html#af700ed03c8810d48a4aaa3c5baeaf26c" title=" " alt="" coords="213,461,299,488"/>
+<area shape="rect" id="node19" href="$classPrettyWriter.html#a440890a72408a150ef46edda6becdc94" title="Write a raw JSON value." alt="" coords="179,512,333,539"/>
+<area shape="rect" id="node20" href="$classWriter.html#ae0d1615104e4e88040b9640e6784008a" title="Write a raw JSON value." alt="" coords="195,563,317,589"/>
+<area shape="rect" id="node22" href="$classPrettyWriter.html#a3941bc21d6a261ca8a86eff330db30ef" title=" " alt="" coords="172,613,340,640"/>
+<area shape="rect" id="node23" href="$classWriter.html#ad462dc606fddea0f34fc0e190c3bdaee" title=" " alt="" coords="189,664,323,691"/>
+<area shape="rect" id="node24" href="$classPrettyWriter.html#ae544ccfe35dd7e80ed694873062409f6" title=" " alt="" coords="191,715,321,741"/>
+<area shape="rect" id="node26" href="$classWriter.html#a8b4dc44f471403a83c9959575796ceab" title=" " alt="" coords="208,765,304,792"/>
+<area shape="rect" id="node25" href="$classPrettyWriter.html#a20ecbe1d31a871e4da4a3899b40ad3cd" title=" " alt="" coords="5,715,124,741"/>
+<area shape="rect" id="node27" href="$classWriter.html#a19096d2ccb90761f63ab1240337bf90a" title=" " alt="" coords="23,765,107,792"/>
+<area shape="rect" id="node29" href="$classPrettyWriter.html#a8c82302877a5588eae77eb7d042c49ef" title=" " alt="" coords="196,816,316,843"/>
+<area shape="rect" id="node30" href="$classWriter.html#a5fb0c3228f89f6f9bef15f3e6e6f1739" title=" " alt="" coords="213,867,299,893"/>
+<area shape="rect" id="node32" href="$classPrettyWriter.html#aba75ac1f13c2629b2a55ffbf3d8a116c" title=" " alt="" coords="189,917,323,944"/>
+<area shape="rect" id="node33" href="$classWriter.html#a55bb9f286ecdaf4cdb07bddb02e0cb2d" title=" " alt="" coords="206,968,306,995"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="carma_wm_ctrl::WMBroadcaster::addBackRegulatoryComponent" name="carma_wm_ctrl::WMBroadcaster::addBackRegulatoryComponent">
+<area shape="rect" id="node1" title=" " alt="" coords="781,5,992,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a0a119e3571ef94545fc979ca3190c5f1" title=" " alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a3751e2e2dc4455fc7e3e80f1ae2c672e" title="Removes a geofence from the current map and publishes the ROS msg." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,5,216,47"/>
+</map>

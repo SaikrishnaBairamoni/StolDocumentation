@@ -1,0 +1,4 @@
+<map id="bsm_generator::BSMGenerator::speedCallback" name="bsm_generator::BSMGenerator::speedCallback">
+<area shape="rect" id="node1" title="Callback to populate BSM message with vehicle speed data." alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGeneratorWorker.html#aa0325501a0fae0877b52f11fda7b92b7" title="Function to apply minimum and maximum limits to a speed value. Minimum limit is 0...." alt="" coords="253,5,453,47"/>
+</map>

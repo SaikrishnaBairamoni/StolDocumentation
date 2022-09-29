@@ -1,0 +1,5 @@
+<map id="carma_wm::IndexedDistanceMap" name="carma_wm::IndexedDistanceMap">
+<area shape="rect" id="node1" title="O(1) distance lookup structure for quickly accessing route distance information. NOTE: This structure..." alt="" coords="57,175,272,531"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,148,112"/>
+<area shape="rect" id="node3" title=" " alt="" coords="173,5,333,112"/>
+</map>

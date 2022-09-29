@@ -1,0 +1,4 @@
+<map id="mock_drivers::MockControllerDriver::onSpin" name="mock_drivers::MockControllerDriver::onSpin">
+<area shape="rect" id="node1" title="Virtual method which child classes can override to add functionality which will occur during each spi..." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriverNode.html#a5093a4c0d55e49d48e246fd5e8c136a9" title="Publish data with no header on a desired topic." alt="" coords="247,5,433,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="GenericReader::HandleError" name="GenericReader::HandleError">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$classGenericReader.html#ac417441794477ea747b63adb6d3653a9" title="Whether a parse error has occured in the last parsing." alt="" coords="236,5,435,32"/>
+<area shape="rect" id="node3" href="$structParseResult.html#adfe0ef5b994e82f8aa9ebf0b30c924b1" title="Whether the result is an error." alt="" coords="483,5,620,32"/>
+</map>

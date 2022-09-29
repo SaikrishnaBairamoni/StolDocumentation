@@ -1,0 +1,8 @@
+<map id="carma_wm::CARMAWorldModel::toRoadwayObstacle" name="carma_wm::CARMAWorldModel::toRoadwayObstacle">
+<area shape="rect" id="node1" title="Converts an ExternalObject in a RoadwayObstacle by mapping its position onto the semantic map...." alt="" coords="5,64,212,105"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a9a57996d0476022d6e047f1596911147" title="Gets the a lanelet the object is currently on determined by its position on the semantic map...." alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#aaca2786bf27678c20e6c148e7485e5d3" title="Uses the provided pose and size vector of an ExternalObject to compute what the polygon would be of t..." alt="" coords="515,32,664,73"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="291,123,436,164"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="517,123,662,164"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="712,123,857,164"/>
+</map>

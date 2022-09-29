@@ -1,0 +1,6 @@
+<map id="GenericPointer::NeedPercentEncode" name="GenericPointer::NeedPercentEncode">
+<area shape="rect" id="node1" title="Check whether a character should be percent&#45;encoded." alt="" coords="463,23,653,65"/>
+<area shape="rect" id="node2" href="$classGenericPointer.html#a542a313d11b2296c92420179b9e9cf87" title="Parse a JSON String or its URI fragment representation into tokens." alt="" coords="260,5,408,32"/>
+<area shape="rect" id="node4" href="$classGenericPointer.html#a0ab2465212dd57d2badeac5fe4a5f853" title="Stringify to string or URI fragment representation." alt="" coords="253,56,415,83"/>
+<area shape="rect" id="node3" href="$classGenericPointer.html#a4ad549b8a826c3c2dedf03fcc07be9b0" title="Constructor that parses a string or URI fragment representation." alt="" coords="5,5,205,32"/>
+</map>

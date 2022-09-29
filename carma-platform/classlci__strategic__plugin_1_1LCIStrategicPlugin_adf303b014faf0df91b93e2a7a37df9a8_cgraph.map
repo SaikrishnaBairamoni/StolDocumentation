@@ -1,0 +1,15 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::get_boundary_traj_params" name="lci_strategic_plugin::LCIStrategicPlugin::get_boundary_traj_params">
+<area shape="rect" id="node1" title="Get all possible trajectory smoothing parameters for each segments. Later this will be used to genera..." alt="" coords="5,534,185,590"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a71eb5d63d2d1338440cb2da3dec5a45f" title=" " alt="" coords="267,5,427,76"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a293a179317673ebdcda7890f4f933f60" title=" " alt="" coords="259,100,434,171"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a58675498122012f18f8a686b551f70d3" title=" " alt="" coords="259,195,434,265"/>
+<area shape="rect" id="node5" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a2a02000689636fe971a9080c20b2e48f" title=" " alt="" coords="259,289,434,360"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a2f21fa9d57192b727b649f538b90087a" title=" " alt="" coords="259,384,434,455"/>
+<area shape="rect" id="node7" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aa3a3866067ba8e2808e785f29909bc72" title=" " alt="" coords="267,479,427,549"/>
+<area shape="rect" id="node8" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a8cc331c61cde633f2ef571b8ca86a208" title=" " alt="" coords="267,573,427,644"/>
+<area shape="rect" id="node9" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a0796279675323a1dc0c4e5be7b2a3090" title=" " alt="" coords="267,668,427,739"/>
+<area shape="rect" id="node10" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a739ee8e685d7d651c2c3826df0a43496" title=" " alt="" coords="233,763,460,819"/>
+<area shape="rect" id="node11" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aa1b880660d58500ab32abc453096a38d" title=" " alt="" coords="255,844,438,915"/>
+<area shape="rect" id="node12" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a5941c3b49c97c3c55ef3bb2dd9e4c96c" title=" " alt="" coords="250,939,443,1009"/>
+<area shape="rect" id="node13" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a0401f858c83b717d4525c4ac8aeedcd2" title=" " alt="" coords="259,1033,434,1104"/>
+</map>

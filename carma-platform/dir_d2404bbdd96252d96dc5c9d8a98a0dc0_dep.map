@@ -1,0 +1,13 @@
+<map id="platooning_tactical_plugin" name="platooning_tactical_plugin">
+<area shape="rect" id="node2" href="dir_a09e88313071a7ffb3b14f2593351929.html" title="include" alt="" coords="186,123,258,171"/>
+<area shape="rect" id="node5" href="dir_73e59df62327a001b53069470f2538a9.html" title="carma_wm_ros2" alt="" coords="5,219,124,267"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000089_000023.html" title="2" alt="" coords="119,209,127,224"/>
+<area shape="rect" id="node6" href="dir_81e4214e732b63254210354ec5727868.html" title="basic_autonomy_ros2" alt="" coords="148,219,296,267"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000089_000008.html" title="1" alt="" coords="226,193,234,208"/>
+<area shape="rect" id="node7" href="dir_d5f084badec3f37704845c74a174bd28.html" title="carma_guidance_plugins" alt="" coords="321,219,486,267"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000089_000015.html" title="1" alt="" coords="343,195,351,210"/>
+<area shape="rect" id="node3" href="dir_ea20b0d18af024c213e6c4a21fe10e4a.html" title="launch" alt="" coords="282,27,354,75"/>
+<area shape="rect" id="node4" href="dir_7749924dc082ff73f3b639e9d65c49fa.html" title="src" alt="" coords="186,27,258,75"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000248_000089.html" title="3" alt="" coords="226,97,234,112"/>
+<area shape="rect" id="clust1" href="dir_d2404bbdd96252d96dc5c9d8a98a0dc0.html" alt="" coords="175,16,559,181"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="carma_wm::SignalizedIntersectionManager::setMaxLaneWidth" name="carma_wm::SignalizedIntersectionManager::setMaxLaneWidth">
+<area shape="rect" id="node1" title="Sets the max lane width in meters. Map msg points are associated to a lanelet if they are within this..." alt="" coords="264,5,483,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a634326ffd890a920f456bd8c1ebc5e6f" title="Sets the max lane width in meters. Geofence points are associated to a lanelet if they are within thi..." alt="" coords="5,5,216,47"/>
+</map>

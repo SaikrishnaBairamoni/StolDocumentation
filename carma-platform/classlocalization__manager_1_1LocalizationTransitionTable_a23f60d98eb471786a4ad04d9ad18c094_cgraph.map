@@ -1,0 +1,11 @@
+<map id="localization_manager::LocalizationTransitionTable::signalWhenDEGRADED_NO_LIDAR_FIX" name="localization_manager::LocalizationTransitionTable::signalWhenDEGRADED_NO_LIDAR_FIX">
+<area shape="rect" id="node1" title=" " alt="" coords="5,192,272,248"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a909aab1a6b7683b40720282de992ca42" title="Helper function for logging the provide signal." alt="" coords="320,153,507,209"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a0f5e05d562934f0e04d7f64f9d2fd95c" title="Trigger signal for the transition table." alt="" coords="555,230,741,286"/>
+<area shape="rect" id="node5" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a1b9ef45847204afb476ebb661e06454a" title="Function to change the current state and log the details of the transition." alt="" coords="1145,166,1332,222"/>
+<area shape="rect" id="node4" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a2436fd6ba3b137c8f94ae07660763e8f" title=" " alt="" coords="789,46,1097,102"/>
+<area shape="rect" id="node6" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ac0a99a2e6cff16fd3d75212ce97beb21" title=" " alt="" coords="850,286,1037,342"/>
+<area shape="rect" id="node7" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a63a7132b4e220496356ff142df4daba2" title=" " alt="" coords="850,206,1037,262"/>
+<area shape="rect" id="node8" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ad6622c59f8297f8f8654de9c0208ab44" title=" " alt="" coords="849,366,1038,422"/>
+<area shape="rect" id="node9" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aab9c58979971dcdabde93e222d5f5028" title=" " alt="" coords="848,126,1039,182"/>
+</map>

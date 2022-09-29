@@ -1,0 +1,7 @@
+<map id="NS3Client::sendNS3Message" name="NS3Client::sendNS3Message">
+<area shape="rect" id="node1" title="sends a udp message" alt="" coords="467,42,661,69"/>
+<area shape="rect" id="node2" href="$classNS3Adapter.html#ab9900b0fe8a3f23388749fdc8d72cf89" title="Sends a message from the queue of outbound messages." alt="" coords="208,5,419,47"/>
+<area shape="rect" id="node4" href="$classNS3Adapter.html#a1e33b194c9ae9d6eb0454c86cb8d4cc6" title="Message sending service." alt="" coords="213,71,413,98"/>
+<area shape="rect" id="node3" href="$classNS3Adapter.html#ab318ceeab58b5039fdc59cbb0f29165f" title="Called by the base DriverApplication class after spin." alt="" coords="5,13,160,39"/>
+<area shape="rect" id="node5" href="$classNS3Adapter.html#ab2dfb933cc738732c0580b62c233f876" title="Initializes ROS context for this node." alt="" coords="10,71,155,98"/>
+</map>

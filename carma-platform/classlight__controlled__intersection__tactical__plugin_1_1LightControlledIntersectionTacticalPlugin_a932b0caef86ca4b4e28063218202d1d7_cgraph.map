@@ -1,0 +1,4 @@
+<map id="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTacticalPlugin::applyOptimizedTargetSpeedProfile" name="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTacticalPlugin::applyOptimizedTargetSpeedProfile">
+<area shape="rect" id="node1" title="Apply optimized target speeds to the trajectory determined for fixed&#45;time and actuated signals...." alt="" coords="5,5,272,76"/>
+<area shape="rect" id="node2" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTacticalPlugin.html#a405afb4e30f548826f3ebb791446f55f" title="Creates a speed profile according to case one or two of the light controlled intersection,..." alt="" coords="320,5,585,76"/>
+</map>

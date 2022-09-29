@@ -1,0 +1,4 @@
+<map id="carma_wm::CARMAWorldModel::getIntersectingLanelet" name="carma_wm::CARMAWorldModel::getIntersectingLanelet">
+<area shape="rect" id="node1" title="Gets the a lanelet the object is currently on determined by its position on the semantic map...." alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a33571ca2cc04d5c2a85dd28cbb59f33f" title="Converts an ExternalObject in a RoadwayObstacle by mapping its position onto the semantic map...." alt="" coords="5,5,212,47"/>
+</map>

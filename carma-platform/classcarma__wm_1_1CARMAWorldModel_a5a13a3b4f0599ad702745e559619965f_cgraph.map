@@ -1,0 +1,9 @@
+<map id="carma_wm::CARMAWorldModel::getNearestObjInLane" name="carma_wm::CARMAWorldModel::getNearestObjInLane">
+<area shape="rect" id="node1" title="This function is called by distanceToObjectBehindInLane or distanceToObjectAheadInLane...." alt="" coords="5,68,212,109"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a19b8c922c7524c769f96a57b91f6a6bd" title="Gets all roadway objects currently in the same lane as the given lanelet." alt="" coords="260,68,467,109"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a869b918893af283afe09b1adb52c69a7" title="Gets the specified lane section achievable without lane change, sorted from the start,..." alt="" coords="515,5,721,47"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="291,136,436,177"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aaca2786bf27678c20e6c148e7485e5d3" title="Uses the provided pose and size vector of an ExternalObject to compute what the polygon would be of t..." alt="" coords="543,71,693,112"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="545,136,691,177"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="769,136,915,177"/>
+</map>

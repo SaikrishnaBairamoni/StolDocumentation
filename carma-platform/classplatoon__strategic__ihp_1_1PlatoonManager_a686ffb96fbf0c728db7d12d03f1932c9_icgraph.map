@@ -1,0 +1,5 @@
+<map id="platoon_strategic_ihp::PlatoonManager::updateHostSpeeds" name="platoon_strategic_ihp::PlatoonManager::updateHostSpeeds">
+<area shape="rect" id="node1" title="Stores the latest info on host vehicle&#39;s command &amp; actual speeds." alt="" coords="429,5,624,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac7e7160659b61a4ac61be14f74fb1caa" title="Spin callback function." alt="" coords="199,5,381,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,5,151,61"/>
+</map>

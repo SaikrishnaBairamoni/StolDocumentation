@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::returnToShortestPath" name="route_following_plugin::RouteFollowingPlugin::returnToShortestPath">
+<area shape="rect" id="node1" title="This method re&#45;routes the vehicle back to the shortest path, if the vehicle has left the shortest pat..." alt="" coords="207,5,360,61"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a65fc4245c9eb4f377690321e322c532d" title="Callback for the front bumper pose transform." alt="" coords="5,5,159,61"/>
+</map>

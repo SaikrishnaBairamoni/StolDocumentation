@@ -1,0 +1,6 @@
+<map id="traffic_incident_parser::TrafficIncidentParserWorker::getIncidentOriginPoint" name="traffic_incident_parser::TrafficIncidentParserWorker::getIncidentOriginPoint">
+<area shape="rect" id="node1" title="Function to convert internally saved incident origin point from lat/lon to local map frame." alt="" coords="740,5,928,61"/>
+<area shape="rect" id="node2" href="$classtraffic__incident__parser_1_1TrafficIncidentParserWorker.html#aac2ea250b0e7172e734b527d751ea6ff" title="Algorithm for extracting the closed lanelet from internally saved mobility message (or geofence) para..." alt="" coords="468,5,692,61"/>
+<area shape="rect" id="node3" href="$classtraffic__incident__parser_1_1TrafficIncidentParserWorker.html#abae3128613fa2e18eba5a34d0c29d5b2" title="Function to receive the incoming mobility operation message from the message node and publish the geo..." alt="" coords="232,5,420,61"/>
+<area shape="rect" id="node4" href="$classtraffic__incident__parser_1_1TrafficIncidentParserNode.html#af98037edfee9234b8a89c513dee9183f" title=" " alt="" coords="5,5,184,61"/>
+</map>

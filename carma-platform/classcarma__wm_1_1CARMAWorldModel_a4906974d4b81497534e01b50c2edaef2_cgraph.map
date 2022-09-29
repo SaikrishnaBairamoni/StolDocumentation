@@ -1,0 +1,5 @@
+<map id="carma_wm::CARMAWorldModel::getLaneletsFromPoint" name="carma_wm::CARMAWorldModel::getLaneletsFromPoint">
+<area shape="rect" id="node1" title="Gets the underlying lanelet, given the cartesian point on the map." alt="" coords="5,39,212,80"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1query.html#a8933b74d652e02d07be1170b787d87a2" title="carma_wm::query namespace contains implementations for query functions (input and output read or writ..." alt="" coords="265,5,462,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a5a40e4c8b3107914d61fb8f8064c842d" title="Get a pointer to the current map. If the underlying map has changed the pointer will also need to be ..." alt="" coords="260,71,467,112"/>
+</map>

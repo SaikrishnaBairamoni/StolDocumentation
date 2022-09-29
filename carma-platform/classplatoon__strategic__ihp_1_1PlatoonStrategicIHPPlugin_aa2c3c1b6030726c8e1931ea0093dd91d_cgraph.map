@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_candidate_leader" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_candidate_leader">
+<area shape="rect" id="node1" title="Run Candidate Leader State." alt="" coords="5,78,188,134"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="246,5,465,47"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a5e18795bb16ef8f84cf6e451def325bb" title="Function to compose mobility operation in CandidateLeader." alt="" coords="236,71,475,141"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ab1c204db4a5056621de299a9dd663c6f" title="Resets all variables that might indicate other members of the host&#39;s platoon; sets the host back to s..." alt="" coords="263,166,448,222"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="523,78,757,134"/>
+</map>

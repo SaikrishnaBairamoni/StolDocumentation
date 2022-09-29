@@ -1,0 +1,7 @@
+<map id="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTacticalPlugin::createGeometryProfile" name="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTacticalPlugin::createGeometryProfile">
+<area shape="rect" id="node1" title="Creates geometry profile to return a point speed pair struct for INTERSECTION_TRANSIT maneuver types ..." alt="" coords="5,34,312,90"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1waypoint__generation.html#adf8998fd3412efde64e2747f1e35df6b" title="Adds extra centerline points beyond required message length to lane follow maneuver points so that th..." alt="" coords="360,5,580,47"/>
+<area shape="rect" id="node3" href="$namespacebasic__autonomy_1_1waypoint__generation.html#ac15066696338bef3b38408c8000346d8" title="Converts a set of requested LANE_FOLLOWING maneuvers to point speed limit pairs." alt="" coords="372,70,568,126"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#ae7d5ca280140dce2bf7bcfb78bdfd55d" title="Helper function to concatenate 2 linestrings together and return the result. Neither LineString is mo..." alt="" coords="628,77,800,119"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="848,70,993,126"/>
+</map>

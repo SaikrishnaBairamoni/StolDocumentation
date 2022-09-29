@@ -1,0 +1,9 @@
+<map id="subsystem_controllers::BaseSubsystemController" name="subsystem_controllers::BaseSubsystemController">
+<area shape="rect" id="node1" title="A base class for all subsystem_controllers which provides default lifecycle behavior for subsystems." alt="" coords="472,131,671,589"/>
+<area shape="rect" id="node3" href="$classsubsystem__controllers_1_1DriversControllerNode.html" title=" " alt="" coords="5,769,180,891"/>
+<area shape="rect" id="node4" href="$classsubsystem__controllers_1_1EnvironmentPerceptionControllerNode.html" title=" " alt="" coords="205,747,453,913"/>
+<area shape="rect" id="node5" href="$classsubsystem__controllers_1_1GuidanceControllerNode.html" title=" " alt="" coords="477,637,666,1023"/>
+<area shape="rect" id="node6" href="$classsubsystem__controllers_1_1LocalizationControllerNode.html" title=" " alt="" coords="690,733,893,927"/>
+<area shape="rect" id="node7" href="$classsubsystem__controllers_1_1V2XControllerNode.html" title=" " alt="" coords="917,769,1076,891"/>
+<area shape="rect" id="node2" title=" " alt="" coords="447,5,695,83"/>
+</map>

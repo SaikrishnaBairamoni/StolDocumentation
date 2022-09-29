@@ -1,0 +1,11 @@
+<map id="carma_wm::IndexedDistanceMap::distanceToElement" name="carma_wm::IndexedDistanceMap::distanceToElement">
+<area shape="rect" id="node1" title="Get the distance to the start of the linestring at the specified index." alt="" coords="1049,56,1237,97"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1IndexedDistanceMap.html#a8a56236ca7587395b6a5cd84c08ec811" title="Returns index of the linestring which the provided distance is within. NOTE: Unlike the rest of this ..." alt="" coords="532,35,747,76"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a1e7bf1856cd6cd7dbf1e262d378c6087" title="Converts a route track position into a map frame cartesian point." alt="" coords="269,5,475,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1CARMAWorldModel.html#a561bd30d0274bb605a7b7dd54b16b037" title="Returns the TrackPos, computed in 2d, of the provided point relative to the current route." alt="" coords="795,85,1001,127"/>
+<area shape="rect" id="node6" href="$classcarma__wm_1_1IndexedDistanceMap.html#a984999e739e3b5f2971da657da6d6adb" title="Returns the total along&#45;line length of this structure." alt="" coords="804,151,992,192"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#af091e77668f082aaafea367836118dc9" title="Samples the route centerline between the provided downtracks with the provided step size...." alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node7" href="$classcarma__wm_1_1IndexedDistanceMap.html#a669e41545be3e1ee49512a56c57b7196" title="Add a linestring to this structure. This function will iterate over the line string to compute distan..." alt="" coords="545,151,733,192"/>
+<area shape="rect" id="node8" href="$classcarma__wm_1_1CARMAWorldModel.html#a6f924aa42ade5d323045fdad9b7ca3a8" title="Helper function to compute the geometry of the route downtrack/crosstrack reference line This functio..." alt="" coords="260,151,484,192"/>
+<area shape="rect" id="node9" href="$classcarma__wm_1_1CARMAWorldModel.html#ad4d9510c892eb9f19f462e0576317a69" title="Set the current route. This route must match the current map for this class to function properly." alt="" coords="5,151,212,192"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="route::RouteStateWorker::getRouteState" name="route::RouteStateWorker::getRouteState">
+<area shape="rect" id="node1" title="Get current route state machine state." alt="" coords="663,136,825,177"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#af36eb1766ecdb1016d366b80921591cd" title="Abort_active_route service callback. User can call this service to abort a current following route an..." alt="" coords="425,5,615,47"/>
+<area shape="rect" id="node4" href="$classroute_1_1RouteGeneratorWorker.html#a5be98218cbc7d5c5fdc8d7f8c8c0b12c" title="Callback for the front bumper pose transform." alt="" coords="425,201,615,243"/>
+<area shape="rect" id="node5" href="$classroute_1_1RouteGeneratorWorker.html#aaa0e672955fabcf13358f07cf5123a28" title="Spin callback which will be called frequently based on spin rate." alt="" coords="188,231,377,272"/>
+<area shape="rect" id="node7" href="$classroute_1_1RouteGeneratorWorker.html#a1f1c08a9230de2d00cdd48aa65cdf3cf" title="Get_available_route service callback. Calls to this service will respond with a list of route names f..." alt="" coords="425,71,615,112"/>
+<area shape="rect" id="node8" href="$classroute_1_1RouteGeneratorWorker.html#a0ac499df9ad47fb4c66e7163c9611a6a" title="Set_active_route service callback. User can select a route to start following by calling this service..." alt="" coords="425,136,615,177"/>
+<area shape="rect" id="node3" href="$classroute_1_1Route.html#a5f6b00da6b8e1cd9238b9d60457276c8" title=" " alt="" coords="215,71,350,112"/>
+<area shape="rect" id="node6" href="$classroute_1_1Route.html#a738074e042da30c623a1c0e80d019913" title=" " alt="" coords="5,231,140,272"/>
+</map>

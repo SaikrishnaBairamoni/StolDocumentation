@@ -1,0 +1,9 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::plan_maneuver_cb" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::plan_maneuver_cb">
+<area shape="rect" id="node1" title="Callback function to the maneuver request." alt="" coords="5,201,188,257"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a8378d85e905c51ff883b7fae4bf64367" title="Find start(current) and target(end) lanelet index from path to generate lane change maneuver message." alt="" coords="236,5,500,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a68e48fa7d12584918a6764710d71a606" title="Find lanelet index from path." alt="" coords="273,85,463,141"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a6fe836b822225ea28495dd732d2e1d6e" title="Function to find speed limit of a lanelet." alt="" coords="277,165,459,221"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="247,245,489,286"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a8bf57cd61a2fde08b32e8411eff64cae" title="Function to check if lanechange is possible." alt="" coords="277,309,459,365"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a609dc105613d0c6ff89e1e955c8f6487" title="Update maneuver status based on prior plan." alt="" coords="277,389,459,445"/>
+</map>

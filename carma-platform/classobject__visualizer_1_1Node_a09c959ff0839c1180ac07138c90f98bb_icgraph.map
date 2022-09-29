@@ -1,0 +1,4 @@
+<map id="object_visualizer::Node::roadway_obstacles_callback" name="object_visualizer::Node::roadway_obstacles_callback">
+<area shape="rect" id="node1" title="Roadway obstacles callback. Converts the message to a visualization message to republish." alt="" coords="231,5,401,61"/>
+<area shape="rect" id="node2" href="$classobject__visualizer_1_1Node.html#a47bdce39cc71549a9b236397138a78de" title=" " alt="" coords="5,13,183,54"/>
+</map>

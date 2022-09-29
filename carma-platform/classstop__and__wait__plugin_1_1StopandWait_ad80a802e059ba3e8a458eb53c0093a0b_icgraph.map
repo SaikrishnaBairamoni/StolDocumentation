@@ -1,0 +1,4 @@
+<map id="stop_and_wait_plugin::StopandWait::compose_trajectory_from_centerline" name="stop_and_wait_plugin::StopandWait::compose_trajectory_from_centerline">
+<area shape="rect" id="node1" title="Method converts a list of lanelet centerline points and current vehicle state into a usable list of t..." alt="" coords="267,5,445,61"/>
+<area shape="rect" id="node2" href="$classstop__and__wait__plugin_1_1StopandWait.html#aacfe3c82e0d7cc47a27c67f7b9f4b83e" title="Service callback for trajectory planning." alt="" coords="5,13,219,54"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="system_controller::SystemControllerNode::SystemControllerNode" name="system_controller::SystemControllerNode::SystemControllerNode">
+<area shape="rect" id="node1" title="Constructor. Set explicitly to support node composition." alt="" coords="5,26,164,82"/>
+<area shape="rect" id="node2" href="$classsystem__controller_1_1SystemControllerNode.html#ac17c8bcbcdc33e1b29a2b9b79355acdf" title="Initialize this node by loading parameters from the ROS Network." alt="" coords="212,26,364,82"/>
+<area shape="rect" id="node3" href="$classsystem__controller_1_1SystemControllerNode.html#add1da8b573598b344db3512a8e87d1ee" title="Exception handling method for processing all internal exceptions;." alt="" coords="620,26,772,82"/>
+<area shape="rect" id="node4" href="$classsystem__controller_1_1SystemControllerNode.html#ab245ad238728ecf3d614d7d8ada28737" title="Callback for system alert messages used to evaluate system fault handling." alt="" coords="416,106,568,162"/>
+<area shape="rect" id="node6" href="$classsystem__controller_1_1SystemControllerNode.html#a1e149d6be07e6d593a6f3b7cbb039b02" title="Callback to be triggered when the startup delay has passed." alt="" coords="412,26,572,82"/>
+<area shape="rect" id="node5" href="$classsystem__controller_1_1SystemControllerNode.html#acecf27e4f5120641c2e0fb335091a5cb" title="Publishes a SystemAlert message to the rest of the carma&#45;platform system. NOTE: This callback will au..." alt="" coords="620,106,772,162"/>
+</map>

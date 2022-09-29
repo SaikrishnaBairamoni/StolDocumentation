@@ -1,0 +1,15 @@
+<map id="localization_manager::LocalizationManager::stateTransitionCallback" name="localization_manager::LocalizationManager::stateTransitionCallback">
+<area shape="rect" id="node1" title="Callback for when a new state was triggered. Allows creation of entry/exit behavior for states." alt="" coords="5,139,169,195"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#a357d15f4b553adac7c730e66a0b99cbf" title="Generates the next id to be used for a timer." alt="" coords="217,99,364,155"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1LocalizationManager.html#a180b8d484c93d7faea1a707a0d586a79" title="Callback for timeouts. Used to trigger timeout signals for the state machine." alt="" coords="217,179,364,235"/>
+<area shape="rect" id="node4" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aeec5e1584741de33c3c5f23f3ebe529a" title="Returns the current state." alt="" coords="412,127,599,183"/>
+<area shape="rect" id="node5" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a0f5e05d562934f0e04d7f64f9d2fd95c" title="Trigger signal for the transition table." alt="" coords="412,231,599,287"/>
+<area shape="rect" id="node6" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a2436fd6ba3b137c8f94ae07660763e8f" title=" " alt="" coords="647,311,955,367"/>
+<area shape="rect" id="node9" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ac0a99a2e6cff16fd3d75212ce97beb21" title=" " alt="" coords="707,391,894,447"/>
+<area shape="rect" id="node10" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a23f60d98eb471786a4ad04d9ad18c094" title=" " alt="" coords="667,471,934,527"/>
+<area shape="rect" id="node11" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a63a7132b4e220496356ff142df4daba2" title=" " alt="" coords="707,71,894,127"/>
+<area shape="rect" id="node12" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ad6622c59f8297f8f8654de9c0208ab44" title=" " alt="" coords="706,151,895,207"/>
+<area shape="rect" id="node13" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aab9c58979971dcdabde93e222d5f5028" title=" " alt="" coords="705,231,896,287"/>
+<area shape="rect" id="node7" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a909aab1a6b7683b40720282de992ca42" title="Helper function for logging the provide signal." alt="" coords="1003,231,1189,287"/>
+<area shape="rect" id="node8" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a1b9ef45847204afb476ebb661e06454a" title="Function to change the current state and log the details of the transition." alt="" coords="1003,311,1189,367"/>
+</map>

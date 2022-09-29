@@ -1,0 +1,4 @@
+<map id="Transcoder::Transcode" name="Transcoder::Transcode">
+<area shape="rect" id="node1" title="Take one Unicode codepoint from source encoding, convert it to target encoding and put it to the outp..." alt="" coords="193,5,348,32"/>
+<area shape="rect" id="node2" href="$structTranscoder.html#a8a64aa837f7962894a99f63232472543" title="Validate one Unicode codepoint from an encoded stream." alt="" coords="5,5,145,32"/>
+</map>

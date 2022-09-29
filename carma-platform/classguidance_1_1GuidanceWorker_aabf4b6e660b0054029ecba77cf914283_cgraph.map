@@ -1,0 +1,5 @@
+<map id="guidance::GuidanceWorker::robot_status_cb" name="guidance::GuidanceWorker::robot_status_cb">
+<area shape="rect" id="node1" title="Callback for robot enabled messages." alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceStateMachine.html#a090ae51e7d5ec69924ad07ca085c8c73" title="Handle robotic_status message from ROS network." alt="" coords="229,5,444,47"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceStateMachine.html#aaa75a81fec6e28dbbeb446af8355e8e0" title="Actual state machine logic driven by signal enum." alt="" coords="492,5,707,47"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::GeofenceScheduler::onGeofenceActive" name="carma_wm_ctrl::GeofenceScheduler::onGeofenceActive">
+<area shape="rect" id="node1" title="Method which allows the user to set a callback which will be triggered when a geofence becomes active..." alt="" coords="264,5,495,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,5,216,47"/>
+</map>

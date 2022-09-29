@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::isJoiningVehicleNearPlatoon" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::isJoiningVehicleNearPlatoon">
+<area shape="rect" id="node1" title="The method for platoon leader to determine if the joining vehicle is closeby. (Note: Used when host v..." alt="" coords="5,5,200,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ad3cd4b02451fd0b0a25ed712e3331c36" title="Find lanelet width from local position." alt="" coords="248,5,431,61"/>
+</map>

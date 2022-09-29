@@ -1,0 +1,5 @@
+<map id="basic_autonomy::waypoint_generation::compose_lanechange_trajectory_from_path" name="basic_autonomy::waypoint_generation::compose_lanechange_trajectory_from_path">
+<area shape="rect" id="node1" title="Method converts a list of lanelet centerline points and current vehicle state into a usable list of t..." alt="" coords="515,5,736,61"/>
+<area shape="rect" id="node2" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a5f0c14a409d58d6b1750c38c6bf1b34a" title="Creates a vector of Trajectory Points from maneuver information in trajectory request." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node3" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a8913539d8614e509910af225e18bc809" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="5,5,212,61"/>
+</map>

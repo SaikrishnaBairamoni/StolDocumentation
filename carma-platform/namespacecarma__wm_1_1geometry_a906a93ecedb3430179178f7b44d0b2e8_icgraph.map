@@ -1,0 +1,4 @@
+<map id="carma_wm::geometry::circular_arc_curvature" name="carma_wm::geometry::circular_arc_curvature">
+<area shape="rect" id="node1" title="Computes the curvature of a circular arc that passes through the two provided points...." alt="" coords="199,13,355,54"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#aec227caee1708506f7fec3561538ef38" title="Computes the curvature of each point in the provided list by calling circular_arc_curvature using tha..." alt="" coords="5,5,151,61"/>
+</map>

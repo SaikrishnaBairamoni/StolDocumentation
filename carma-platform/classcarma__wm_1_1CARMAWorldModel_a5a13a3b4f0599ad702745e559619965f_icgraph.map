@@ -1,0 +1,5 @@
+<map id="carma_wm::CARMAWorldModel::getNearestObjInLane" name="carma_wm::CARMAWorldModel::getNearestObjInLane">
+<area shape="rect" id="node1" title="This function is called by distanceToObjectBehindInLane or distanceToObjectAheadInLane...." alt="" coords="260,39,467,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#afbee9dff34ee62ac507d5fc39bcb2e10" title="Gets Downtrack distance to AND copy of the closest object AHEAD on the same lane as the given point...." alt="" coords="5,5,212,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#aa291cd8ca71835c0720dc853031be300" title="Gets Downtrack distance to AND copy of the closest object BEHIND on the same lane as the given point...." alt="" coords="5,71,212,112"/>
+</map>

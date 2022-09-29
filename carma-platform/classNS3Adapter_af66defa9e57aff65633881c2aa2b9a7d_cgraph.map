@@ -1,0 +1,4 @@
+<map id="NS3Adapter::pre_spin" name="NS3Adapter::pre_spin">
+<area shape="rect" id="node1" title="Called by the base DriverApplication class prior to Spin." alt="" coords="5,5,153,32"/>
+<area shape="rect" id="node2" href="$classNS3Client.html#a830020e2b62acf0bcfcd05d26e93f983" title="Closes connection." alt="" coords="201,5,320,32"/>
+</map>

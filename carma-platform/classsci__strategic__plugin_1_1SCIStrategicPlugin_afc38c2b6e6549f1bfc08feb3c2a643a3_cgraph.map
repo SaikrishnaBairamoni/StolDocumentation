@@ -1,0 +1,6 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::composeLaneFollowingManeuverMessage" name="sci_strategic_plugin::SCIStrategicPlugin::composeLaneFollowingManeuverMessage">
+<area shape="rect" id="node1" title="Compose a lane keeping maneuver message based on input params." alt="" coords="5,78,228,149"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#aaf728e798283e618eeba6aa3ba94bb73" title="calculate the speed, right before the car starts to decelerate for stopping" alt="" coords="276,5,451,61"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#aef07ef19ce4d8744ccfb952b8be671ae" title="Determine the desired speed profile parameters for Case 1." alt="" coords="287,85,440,141"/>
+<area shape="rect" id="node4" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#afdcf681517004f6307a1862a3f3bc052" title="Determine the desired speed profile parameters for Case 2." alt="" coords="286,165,441,221"/>
+</map>

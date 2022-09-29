@@ -1,0 +1,6 @@
+<map id="route::RouteGeneratorWorker::getClosestLaneletFromRouteLanelets" name="route::RouteGeneratorWorker::getClosestLaneletFromRouteLanelets">
+<area shape="rect" id="node1" title="&quot;Get the closest lanelet on the route relative to the vehicle&#39;s current position. If the input list d..." alt="" coords="663,5,909,47"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#a5be98218cbc7d5c5fdc8d7f8c8c0b12c" title="Callback for the front bumper pose transform." alt="" coords="425,5,615,47"/>
+<area shape="rect" id="node3" href="$classroute_1_1RouteGeneratorWorker.html#aaa0e672955fabcf13358f07cf5123a28" title="Spin callback which will be called frequently based on spin rate." alt="" coords="188,5,377,47"/>
+<area shape="rect" id="node4" href="$classroute_1_1Route.html#a738074e042da30c623a1c0e80d019913" title=" " alt="" coords="5,5,140,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="MemoryPoolAllocator&lt; BaseAllocator &gt;" name="MemoryPoolAllocator&lt; BaseAllocator &gt;">
+<area shape="rect" id="node1" title="Default memory allocator used by the parser and DOM." alt="" coords="271,344,441,597"/>
+<area shape="rect" id="node2" href="$classbool.html" title=" " alt="" coords="25,5,71,83"/>
+<area shape="rect" id="node7" href="$classCrtAllocator.html" title="C&#45;runtime library allocator." alt="" coords="111,160,201,267"/>
+<area shape="rect" id="node3" href="$classint.html" title=" " alt="" coords="255,175,294,252"/>
+<area shape="rect" id="node4" href="$structMemoryPoolAllocator_1_1ChunkHeader.html" title="Chunk header for perpending to each chunk." alt="" coords="567,167,777,259"/>
+<area shape="rect" id="node5" title=" " alt="" coords="479,5,535,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="862,175,917,252"/>
+</map>

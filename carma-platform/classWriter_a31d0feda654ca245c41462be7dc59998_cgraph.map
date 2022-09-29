@@ -1,0 +1,8 @@
+<map id="Writer::WriteInt" name="Writer::WriteInt">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,112,83"/>
+<area shape="rect" id="node2" href="$namespaceinternal.html#ac6c7d763acc9ca9f15a759241640328e" title=" " alt="" coords="160,5,265,32"/>
+<area shape="rect" id="node5" href="$stream_8h.html#aa817b00a466bb84d96c5de1616436c95" title="Reserve n characters for writing to a stream." alt="" coords="167,56,258,83"/>
+<area shape="rect" id="node6" href="$stream_8h.html#ad57ba7f2912c5509924b69dec7db4396" title="Write character to a stream, presuming buffer is reserved." alt="" coords="171,107,255,133"/>
+<area shape="rect" id="node3" href="$namespaceinternal.html#a90e3cb218b557548f361e99dc718b4b1" title=" " alt="" coords="313,5,423,32"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#a76ad2b55668f695effde1971d53a5ce1" title=" " alt="" coords="471,5,613,32"/>
+</map>

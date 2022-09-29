@@ -1,0 +1,10 @@
+<map id="traffic_incident_parser::TrafficIncidentParserWorker" name="traffic_incident_parser::TrafficIncidentParserWorker">
+<area shape="rect" id="node1" title=" " alt="" coords="311,248,549,457"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,20,65,97"/>
+<area shape="rect" id="node3" title=" " alt="" coords="137,20,192,97"/>
+<area shape="rect" id="node4" title=" " alt="" coords="217,20,315,97"/>
+<area shape="rect" id="node5" title=" " alt="" coords="339,5,521,112"/>
+<area shape="rect" id="node6" title=" " alt="" coords="545,20,753,97"/>
+<area shape="rect" id="node7" title=" " alt="" coords="777,20,857,97"/>
+<area shape="rect" id="node8" title=" " alt="" coords="881,20,961,97"/>
+</map>

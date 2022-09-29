@@ -1,0 +1,27 @@
+var structlci__strategic__plugin_1_1LCIStrategicPluginConfig =
+[
+    [ "absolute_minimum_speed", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#afe2ab14744011bfe1dadba7db9e68488", null ],
+    [ "algo_minimum_speed", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a26987cdb2e41209df729d5f5c087bec2", null ],
+    [ "carma_streets_update_interval", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#acee45c04297576c188b19dc782ca6f9d", null ],
+    [ "deceleration_fraction", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#aa23372bc397e9fd707e0acd75b9aa941", null ],
+    [ "desired_distance_to_stop_buffer", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#ab79bce20a6f3373603ad92b33b1f4232", null ],
+    [ "enable_carma_streets_connection", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a055fcdaa6b5f1b2065df726a6687de84", null ],
+    [ "green_light_time_buffer", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a3081657f4f8d1d20729ac84897561c27", null ],
+    [ "intersection_transit_plugin_name", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a001ab9c72909eec9d6870cbd92dfa152", null ],
+    [ "lane_following_plugin_name", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a62ccfdacfd9ef06d1ed0515d7cd6a2d8", null ],
+    [ "min_approach_distance", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a8a79158c6b90827592dbc7d6a2cb5d4a", null ],
+    [ "min_gap", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#ac0abc606a35bfdf537c1297591e86d0c", null ],
+    [ "min_maneuver_planning_period", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a2cd3403442e86fd75c540efc09238698", null ],
+    [ "mobility_rate", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#ab660df5cc3ba479a07f190e00c9ebbea", null ],
+    [ "reaction_time", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a4815821904dcefecf744a71e0ca50a9e", null ],
+    [ "stop_and_wait_plugin_name", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a35cdfbe518abecdfe0452ccf0ada4224", null ],
+    [ "stop_light_time_buffer", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#ae62ad486e624b9260aac9df9e0774a03", null ],
+    [ "stopping_location_buffer", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a3a0e8c26f578b34ca773be49061364a6", null ],
+    [ "strategic_plugin_name", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#aa1f3fefe2ee7fc7af0d064ece71bf971", null ],
+    [ "trajectory_smoothing_activation_distance", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a1b6855596f36c0929143bb379c9dc937", null ],
+    [ "vehicle_accel_limit", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a9e7218d1580a5813879ed975e02b75ad", null ],
+    [ "vehicle_accel_limit_multiplier", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a287e3511b9dcc1ec1ec28c6034c15799", null ],
+    [ "vehicle_decel_limit", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a78e238191c3ba5b1a495a32df80c240b", null ],
+    [ "vehicle_decel_limit_multiplier", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a803ac90d8ed6a841a1e5f7343d65a1aa", null ],
+    [ "vehicle_id", "structlci__strategic__plugin_1_1LCIStrategicPluginConfig.html#a1004d0cff80a036bdf02a20c0fbc46cd", null ]
+];

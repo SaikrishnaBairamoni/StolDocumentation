@@ -1,0 +1,5 @@
+<map id="mpc_follower_wrapper::MPCFollowerWrapper::TrajectoryPlanPoseHandler" name="mpc_follower_wrapper::MPCFollowerWrapper::TrajectoryPlanPoseHandler">
+<area shape="rect" id="node1" title=" " alt="" coords="5,45,192,101"/>
+<area shape="rect" id="node2" href="$classmpc__follower__wrapper_1_1MPCFollowerWrapper.html#a4baab4d03c39a9ce9159c4d2e3bf99f6" title=" " alt="" coords="291,5,454,61"/>
+<area shape="rect" id="node3" href="$classmpc__follower__wrapper_1_1MPCFollowerWrapperWorker.html#a51bee2c339fe47bbaed7f5908ec0e689" title=" " alt="" coords="240,85,505,141"/>
+</map>

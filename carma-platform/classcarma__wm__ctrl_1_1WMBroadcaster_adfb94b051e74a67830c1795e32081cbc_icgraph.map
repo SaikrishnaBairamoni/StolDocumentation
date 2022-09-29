@@ -1,0 +1,7 @@
+<map id="carma_wm_ctrl::WMBroadcaster::generate32BitId" name="carma_wm_ctrl::WMBroadcaster::generate32BitId">
+<area shape="rect" id="node1" title="helper for generating 32bit traffic light Id from TCM label field consisting workzone intersection/si..." alt="" coords="1040,5,1251,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a12708b289f7f3d8f10c6dc749bf14d65" title="Create workzone geofence. Create diagonal lanelets and a lanelet that houses opposing lane&#39;s trafficl..." alt="" coords="781,5,992,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a5ae3f2086831ebd932e19b2bdfd76405" title="Creates a single workzone geofence (in the vector) that includes all additional lanelets (housing tra..." alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a649174a7a7270df95532cad5131bf4cb" title="Adds a geofence to the current map and publishes the ROS msg." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,5,216,47"/>
+</map>

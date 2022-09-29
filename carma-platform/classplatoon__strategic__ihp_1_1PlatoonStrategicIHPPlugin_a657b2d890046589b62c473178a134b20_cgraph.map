@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationCandidateFollower" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationCandidateFollower">
+<area shape="rect" id="node1" title="Function to compose mobility operation in candidate follower state." alt="" coords="5,5,244,76"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="292,13,527,69"/>
+</map>

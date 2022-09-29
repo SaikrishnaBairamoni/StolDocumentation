@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::PluginBaseNode::handle_on_shutdown" name="carma_guidance_plugins::PluginBaseNode::handle_on_shutdown">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,175,61"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#ab888278bbee66e83f7c4a593933b6029" title="Method which is triggered when this plugin is moved from any state to FINALIZED This method should be..." alt="" coords="223,5,431,61"/>
+</map>

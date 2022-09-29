@@ -1,0 +1,6 @@
+<map id="carma_wm::geometry::compute_finite_differences" name="carma_wm::geometry::compute_finite_differences">
+<area shape="rect" id="node1" title="Use finite differences methods to compute the derivative of the input data set with respect to index ..." alt="" coords="627,5,809,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#adebf4a245f31404e822133b23e061ed3" title=" " alt="" coords="392,5,579,47"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a2bae0fef2b76bda05a8ba1f1382f027d" title="Returns a list of local (computed by discrete derivative) curvatures for the input centerlines...." alt="" coords="199,5,344,47"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aafc2b19933ed189b32a03d8462e69d46" title="Specialized overload of the centerline local_curvatures method but for lanelets." alt="" coords="5,5,151,47"/>
+</map>

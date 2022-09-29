@@ -1,0 +1,5 @@
+<map id="basic_autonomy::waypoint_generation::optimize_speed" name="basic_autonomy::waypoint_generation::optimize_speed">
+<area shape="rect" id="node1" title="Applies the longitudinal acceleration limit to each point&#39;s speed." alt="" coords="5,39,191,80"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a9dd6a1f0fa9c6f6590b83a7cc2e0d118" title="Returns the min, and its idx, from the vector of values, excluding given set of values." alt="" coords="239,5,453,47"/>
+<area shape="rect" id="node3" href="$namespacebasic__autonomy_1_1log.html#a54dc1b131f40912ecbf27ce0f42bc782" title="Print a ROS_DEBUG_STREAM for each value in values where the printed value is &lt;&lt; prefix &lt;&lt; value." alt="" coords="245,71,447,112"/>
+</map>

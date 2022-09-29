@@ -1,0 +1,8 @@
+<map id="route_following_plugin::RouteFollowingPlugin::plan_maneuvers_callback" name="route_following_plugin::RouteFollowingPlugin::plan_maneuvers_callback">
+<area shape="rect" id="node1" title="Service callback for arbitrator maneuver planning." alt="" coords="5,72,184,128"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#aa1a9f6aad9bd61079ced344bb99c8e7d" title="returns duration as ros::Duration required to complete maneuver given its start dist,..." alt="" coords="435,80,588,136"/>
+<area shape="rect" id="node4" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a63503ad6eed2f8b25cbe45daf9f3be00" title="Set the start distance of a maneuver based on the progress along the route." alt="" coords="232,32,387,88"/>
+<area shape="rect" id="node5" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a67318ffc3a4163d6949a14f7ea83351d" title="Given an maneuver update the starting speed." alt="" coords="233,112,386,168"/>
+<area shape="rect" id="node6" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a46bd2d0ea75d12d8e4289c24e48d05f2" title="Given an array of maneuvers update the starting time for each." alt="" coords="233,192,386,248"/>
+<area shape="rect" id="node3" href="$namespaceroute__following__plugin_1_1anonymous__namespace_02route__following__plugin_8cpp_03.html#a9b29dd085f9f59d468b1c9320f0b5102" title="Anonymous function to extract maneuver end speed which can not be optained with GET_MANEUVER_PROPERY ..." alt="" coords="636,73,829,143"/>
+</map>

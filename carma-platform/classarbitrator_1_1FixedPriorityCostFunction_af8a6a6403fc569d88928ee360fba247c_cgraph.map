@@ -1,0 +1,8 @@
+<map id="arbitrator::FixedPriorityCostFunction::compute_cost_per_unit_distance" name="arbitrator::FixedPriorityCostFunction::compute_cost_per_unit_distance">
+<area shape="rect" id="node1" title="Compute the unit cost over distance of a given maneuver plan." alt="" coords="5,63,192,119"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1FixedPriorityCostFunction.html#a898692f35cda57fa08cd8aee9e15ff16" title="Compute the unit cost over distance of a given maneuver plan." alt="" coords="240,71,459,112"/>
+<area shape="rect" id="node5" href="$namespacearbitrator__utils.html#a65bbb318c9128fbbefeedc250a79a28a" title="Get the end distance of the first maneuver in the plan." alt="" coords="281,5,418,47"/>
+<area shape="rect" id="node6" href="$namespacearbitrator__utils.html#a75f1142880156c33285acc3c46a65eb4" title="Get the start distance of the first maneuver in the plan." alt="" coords="278,136,421,177"/>
+<area shape="rect" id="node3" href="$namespacearbitrator__utils.html#a55896d5750ee654556f9496e4d71e6d4" title="Get the end distance of the specified maneuver." alt="" coords="509,39,679,80"/>
+<area shape="rect" id="node4" href="$namespacearbitrator__utils.html#a3cbf7c6ae8d6fa35e0106a165706bf0b" title="Get the start distance the specified maneuver." alt="" coords="507,120,681,161"/>
+</map>

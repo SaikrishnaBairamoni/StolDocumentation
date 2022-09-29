@@ -1,0 +1,7 @@
+<map id="traffic_incident_parser::TrafficIncidentParserWorker::composeTrafficControlMesssages" name="traffic_incident_parser::TrafficIncidentParserWorker::composeTrafficControlMesssages">
+<area shape="rect" id="node1" title="Algorithm for extracting the closed lanelet from internally saved mobility message (or geofence) para..." alt="" coords="5,85,229,141"/>
+<area shape="rect" id="node2" href="$classtraffic__incident__parser_1_1TrafficIncidentParserWorker.html#aba2f98d6ac758bcc50849b3fdc69c59a" title="Helper method to compute the concatenated centerlines of the lanes in front of the emergency vehicle ..." alt="" coords="278,5,487,61"/>
+<area shape="rect" id="node4" href="$classtraffic__incident__parser_1_1TrafficIncidentParserWorker.html#af388115db2c4fe3042ab7de1c691024e" title="Helper method that is identical to getAdjacentForwardCenterlines except it works in reverse using upt..." alt="" coords="277,85,488,141"/>
+<area shape="rect" id="node5" href="$classtraffic__incident__parser_1_1TrafficIncidentParserWorker.html#a6779717b5f7aaa1d9d13aa70a6149cff" title="Function to convert internally saved incident origin point from lat/lon to local map frame." alt="" coords="289,165,477,221"/>
+<area shape="rect" id="node3" href="$namespacetraffic__incident__parser.html#a97e7194817b789964ce7d56b96e19cb3" title="Helper method to get the nearest point index of a point and a linestring." alt="" coords="536,53,689,94"/>
+</map>

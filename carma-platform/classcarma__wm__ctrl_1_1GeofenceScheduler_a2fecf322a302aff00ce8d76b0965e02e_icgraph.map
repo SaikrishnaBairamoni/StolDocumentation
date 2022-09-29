@@ -1,0 +1,10 @@
+<map id="carma_wm_ctrl::GeofenceScheduler::getClockType" name="carma_wm_ctrl::GeofenceScheduler::getClockType">
+<area shape="rect" id="node1" title="Get the clock type of the clock being created by the timer factory." alt="" coords="781,104,1012,145"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#abea25fd0b879387b68454225ebb0ebc6" title="Populates the schedules member of the geofence object from given TrafficControlMessageV01 message." alt="" coords="523,71,733,112"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a0fcc6904e5b3fb2fca13e9488069ec10" title="Pulls vehicle information from CARMA Cloud at startup by providing its selected route in a TrafficCon..." alt="" coords="523,136,733,177"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a9d4ee6959ff334d9f4f16864e5bd0cfe" title="Callback to MAP.msg which contains intersections&#39; static info such geometry and lane ids." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a63a919c2cf6736a80fa29a706b020330" title="Callback to add a geofence to the map. Currently only supports version 1 TrafficControlMessage." alt="" coords="264,71,475,112"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#ab0c14f6d7e30870755a4dcf6b228de82" title=" " alt="" coords="5,71,216,112"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a7efa8028648e4ed8b847c97e952b07d1" title="Calls controlRequestFromRoute() and publishes the TrafficControlRequest Message returned after the co..." alt="" coords="264,136,475,177"/>
+<area shape="rect" id="node8" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,136,216,177"/>
+</map>

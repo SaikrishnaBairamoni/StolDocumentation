@@ -1,0 +1,12 @@
+<map id="cost_utils::get_maneuver_end_speed" name="cost_utils::get_maneuver_end_speed">
+<area shape="rect" id="node1" title="Get the end speed of the specified maneuver." alt="" coords="932,157,1099,199"/>
+<area shape="rect" id="node2" href="$classcost__plugin__system_1_1CostofComfort.html#a6d24c8ce7b9daed56340720dfe9215e7" title="Compute the cost of a given maneuver plan." alt="" coords="684,5,884,47"/>
+<area shape="rect" id="node7" href="$classcost__plugin__system_1_1CostofEfficiency.html#adec849ff467815d75883f886875d7bc6" title="Compute the cost of a given maneuver plan." alt="" coords="715,70,853,126"/>
+<area shape="rect" id="node8" href="$classcost__plugin__system_1_1CostofFeasibility.html#a1e534ace325f98feaf624f13378e3c8c" title="Compute the cost of a given maneuver plan." alt="" coords="715,150,853,206"/>
+<area shape="rect" id="node9" href="$classcost__plugin__system_1_1CostofFuel.html#ade3fe25bd91bf295dd3e8e861e61f156" title="Compute the cost of a given maneuver plan." alt="" coords="695,229,873,271"/>
+<area shape="rect" id="node10" href="$classcost__plugin__system_1_1CostofSafety.html#ad1f8a24b48d59cbb683d938c93c36109" title="Compute the cost of a given maneuver plan." alt="" coords="689,295,879,336"/>
+<area shape="rect" id="node3" href="$classcost__plugin__system_1_1CostPluginWorker.html#a2ae5ab674a17617341c6c6b1297cb03f" title=" " alt="" coords="495,150,636,206"/>
+<area shape="rect" id="node4" href="$classcost__plugin__system_1_1CostPluginWorker.html#a5002ce8a5ab8add4df4875660c935277" title=" " alt="" coords="308,150,447,206"/>
+<area shape="rect" id="node5" href="$classcost__plugin__system_1_1CostPluginWorker.html#a2d525dabcf3969daa72a972f4701f9e9" title="Run the spin loop of cost plugin system." alt="" coords="104,157,260,199"/>
+<area shape="rect" id="node6" href="$cost__plugin__system__node_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,165,56,191"/>
+</map>

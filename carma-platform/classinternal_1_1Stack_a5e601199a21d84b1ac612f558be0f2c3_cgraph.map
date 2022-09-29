@@ -1,0 +1,4 @@
+<map id="internal::Stack::Swap" name="internal::Stack::Swap">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node2" href="$namespaceinternal.html#a72b2c71d36273b9691487f58c671ce04" title="Custom swap() to avoid dependency on C++ &lt;algorithm&gt; header." alt="" coords="196,5,299,32"/>
+</map>

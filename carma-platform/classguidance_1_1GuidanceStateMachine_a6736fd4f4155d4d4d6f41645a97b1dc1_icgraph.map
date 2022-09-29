@@ -1,0 +1,5 @@
+<map id="guidance::GuidanceStateMachine::onRouteEvent" name="guidance::GuidanceStateMachine::onRouteEvent">
+<area shape="rect" id="node1" title="Handle route event message." alt="" coords="453,5,668,47"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceWorker.html#a0cca41bb865956d34e85fad76d7b8ae9" title="Callback for route event messages." alt="" coords="229,5,405,47"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceWorker.html#add371176c8b9a97186eee6015b3936c8" title=" " alt="" coords="5,5,181,47"/>
+</map>

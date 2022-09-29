@@ -1,0 +1,11 @@
+<map id="port_drayage_plugin::PortDrayageWorker::PortDrayageWorker" name="port_drayage_plugin::PortDrayageWorker::PortDrayageWorker">
+<area shape="rect" id="node1" title="Standard constructor for the PortDrayageWorker." alt="" coords="5,125,145,181"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a708b620f4ccccbae6f5bdeeffb424a85" title="Callback for usage by the PortDrayageStateMachine when the vehicle has arrived at a destination." alt="" coords="242,5,403,61"/>
+<area shape="rect" id="node5" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#abc81cc6ca86ff7dc5baf7a020edc1f9b" title="Callback for usage by the PortDrayageStateMachine when the vehicle has received a new destination." alt="" coords="229,85,417,141"/>
+<area shape="rect" id="node8" href="$classport__drayage__plugin_1_1PortDrayageStateMachine.html#a66fed7740dcfa89064ac9a76703ee06e" title="Set the callback to be invoked upon transitioning into the AWAITING_DESTINATION state." alt="" coords="207,165,439,221"/>
+<area shape="rect" id="node9" href="$classport__drayage__plugin_1_1PortDrayageStateMachine.html#a6ac237c6c152aa1f835e5b72c7a96193" title="Set the callback to be invoked upon transitioning into the EN_ROUTE state." alt="" coords="193,245,452,301"/>
+<area shape="rect" id="node3" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#af717d8df5c0ebca5c3828d62cf5306b8" title="Assemble the current dataset into a MobilityOperations message with a JSON formatted body containing ..." alt="" coords="525,5,695,61"/>
+<area shape="rect" id="node4" href="$classport__drayage__plugin_1_1PortDrayageStateMachine.html#aee66b24d69c9613c30d92b927a75fc91" title="Get the current state of the state machine." alt="" coords="768,5,947,61"/>
+<area shape="rect" id="node6" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#ac151b686303798dbbcfe959dd43e4f88" title="Create a SetActiveRoute service request to set a new active route for the system based on the destina..." alt="" coords="500,85,720,141"/>
+<area shape="rect" id="node7" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a174fb6435c6aca5c2b140f1a5b00767c" title="Creates a UIInstructions message that can be used to create a pop&#45;up on the Web UI to notify a user t..." alt="" coords="529,165,691,221"/>
+</map>

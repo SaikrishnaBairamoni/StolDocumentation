@@ -1,0 +1,9 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_leader" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_leader">
+<area shape="rect" id="node1" title="Function to process mobility request in leader state." alt="" coords="5,149,188,205"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a876cee27af19b1f215ffd4a2190be371" title="Function to convert ecef location to a 2d point in map frame." alt="" coords="266,5,449,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="236,85,479,126"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aac57cfc07168101835015859c9c7e48e" title="UCLA: Return the platoon leader downtrack distance, in m." alt="" coords="262,149,453,205"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a83ecd30ec7e2f7eb15c93075c8eca436" title="Returns downtrack distance of the rear vehicle in platoon, in m." alt="" coords="262,229,453,285"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a12d5bd4a0601fe67e924cc07f0672e85" title="The method for platoon leader to determine if the joining vehicle is closeby. (Note: Used when host v..." alt="" coords="260,309,455,365"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ad3cd4b02451fd0b0a25ed712e3331c36" title="Find lanelet width from local position." alt="" coords="527,309,709,365"/>
+</map>

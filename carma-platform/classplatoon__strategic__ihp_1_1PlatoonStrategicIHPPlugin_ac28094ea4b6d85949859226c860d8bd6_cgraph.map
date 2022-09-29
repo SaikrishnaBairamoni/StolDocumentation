@@ -1,0 +1,8 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_lead_with_operation" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_lead_with_operation">
+<area shape="rect" id="node1" title="UCLA Run lead with operation State." alt="" coords="5,115,188,171"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a2b54d8a43eb72f0c439860b5b5793302" title="Function to compose mobility operation in LeadWithOperation (cut&#45;in join)" alt="" coords="236,70,472,141"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="803,121,1045,162"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#abf34e8d8c0c18809bf551d3b04db81d4" title="Function to compose mobility operation message with INFO params." alt="" coords="531,5,744,61"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="520,85,755,141"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af19d3e4a88f6875cf802442b183694a0" title="Returns overall length of the platoon. in m." alt="" coords="830,5,1018,61"/>
+</map>

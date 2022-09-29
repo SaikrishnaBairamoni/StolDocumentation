@@ -1,0 +1,10 @@
+<map id="platoon_control::PlatoonControlWorker::generateSteer" name="platoon_control::PlatoonControlWorker::generateSteer">
+<area shape="rect" id="node1" title="Generates steering commands based on lookahead trajectory point." alt="" coords="5,136,196,177"/>
+<area shape="rect" id="node2" href="$classplatoon__control_1_1PurePursuit.html#a79f04624104c783928d3257a755ae30b" title="calculates steering angle based on lookahead trajectory point" alt="" coords="244,71,428,112"/>
+<area shape="rect" id="node7" href="$classplatoon__control_1_1PurePursuit.html#a36339afc8fd9acc7b8b7c1d5756d1e4e" title=" " alt="" coords="244,136,428,177"/>
+<area shape="rect" id="node8" href="$classplatoon__control_1_1PurePursuit.html#ad64f0cb0f082932fb6c357618152efda" title="returns steering angle" alt="" coords="244,201,428,243"/>
+<area shape="rect" id="node3" href="$classplatoon__control_1_1PurePursuit.html#a58ce5f7ea15672fdfd7a050bd3a7f2f1" title="calculates curvature to the lookahead trajectory point" alt="" coords="476,12,660,53"/>
+<area shape="rect" id="node5" href="$classplatoon__control_1_1PurePursuit.html#a33891c90c1c142bb6c358fab90136f0a" title=" " alt="" coords="708,71,892,112"/>
+<area shape="rect" id="node6" href="$classplatoon__control_1_1PurePursuit.html#a569d0480c270c0a1d5d32e9e02ee865f" title="Lowpass filter to smoothen control signal." alt="" coords="476,129,660,171"/>
+<area shape="rect" id="node4" href="$classplatoon__control_1_1PurePursuit.html#ada5d569072205a40f28cf96a864b0e5b" title="calculates sin of the heading angle to the target point" alt="" coords="708,5,892,47"/>
+</map>

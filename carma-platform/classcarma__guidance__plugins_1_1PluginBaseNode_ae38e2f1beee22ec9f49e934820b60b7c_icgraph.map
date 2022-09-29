@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::PluginBaseNode::discovery_timer_callback" name="carma_guidance_plugins::PluginBaseNode::discovery_timer_callback">
+<area shape="rect" id="node1" title="Callback for the plugin discovery timer which will publish the plugin discovery message." alt="" coords="281,5,468,61"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a870d8e69433a175360bced984fa9a580" title="PluginBaseNode constructor." alt="" coords="5,13,233,54"/>
+</map>

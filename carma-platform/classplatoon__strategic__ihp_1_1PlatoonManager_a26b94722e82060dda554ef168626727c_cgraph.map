@@ -1,0 +1,11 @@
+<map id="platoon_strategic_ihp::PlatoonManager::getDynamicLeader" name="platoon_strategic_ihp::PlatoonManager::getDynamicLeader">
+<area shape="rect" id="node1" title="Returns dynamic leader of the host vehicle." alt="" coords="5,315,201,371"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a5fa3ab8c7c127c9d76f0dce1be59fe80" title="This is the implementation of all predecessor following (APF) algorithm for leader selection in a pla..." alt="" coords="249,235,464,291"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a1de160740f47d9b0198e42dcbe67a6fe" title="Get number of vehicles in front of host vehicle inside platoon." alt="" coords="531,427,723,483"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aea48de69a49b77ff87145342a0790363" title="Calculate the time headaway of each platoon member and save as a vector." alt="" coords="537,5,717,61"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a24583fcb6596efbb2772001a58c36588" title="Determine the proper vehicle to follow based the time headway of each member. Note that the host will..." alt="" coords="519,136,735,192"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ae747d7f17a417d2fa30227d71925489d" title="Find the closest vehicle to the host vehicle that violates the (time headaway) lower boundary conditi..." alt="" coords="807,74,1042,145"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a10ff5ed73a7a5f72b96fc5b1a928bfe3" title="Find the closest vehicle to the host vehicle that violates the (time headaway) maximum spacing condit..." alt="" coords="789,180,1060,236"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#addb3708590b81f46b27e612b6e945cea" title="Return a sub&#45;vector of the platoon&#45;wise time headaways vector that start with a given index." alt="" coords="512,267,741,323"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ab6bac9590984959b2a6988c329090235" title="Check the gap with the predecessor vehicle." alt="" coords="532,347,721,403"/>
+</map>

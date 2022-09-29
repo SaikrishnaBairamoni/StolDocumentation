@@ -1,0 +1,4 @@
+<map id="yield_plugin::YieldPlugin::update_traj_for_cooperative_behavior" name="yield_plugin::YieldPlugin::update_traj_for_cooperative_behavior">
+<area shape="rect" id="node1" title="update trajectory for yielding to an incoming cooperative behavior" alt="" coords="220,5,408,61"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#a0fd790e287683a2ef404e16a15e0ea29" title="Service callback for trajectory planning." alt="" coords="5,13,172,54"/>
+</map>

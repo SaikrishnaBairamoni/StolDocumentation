@@ -1,0 +1,4 @@
+<map id="bsm_generator::BSMGenerator::yawCallback" name="bsm_generator::BSMGenerator::yawCallback">
+<area shape="rect" id="node1" title="Callback to populate BSM message with yaw rate data." alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGeneratorWorker.html#a888057310e75b7162601788b2734805c" title="Function to apply minimum and maximum limits to a yaw rate value. Minimum limit is &#45;327...." alt="" coords="253,5,453,47"/>
+</map>

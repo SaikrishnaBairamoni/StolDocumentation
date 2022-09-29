@@ -1,0 +1,4 @@
+<map id="traffic_incident_parser::TrafficIncidentParserWorker::georeferenceCallback" name="traffic_incident_parser::TrafficIncidentParserWorker::georeferenceCallback">
+<area shape="rect" id="node1" title="Callback for the georeference subscriber used to set the map projection." alt="" coords="232,5,420,61"/>
+<area shape="rect" id="node2" href="$classtraffic__incident__parser_1_1TrafficIncidentParserNode.html#af98037edfee9234b8a89c513dee9183f" title=" " alt="" coords="5,5,184,61"/>
+</map>

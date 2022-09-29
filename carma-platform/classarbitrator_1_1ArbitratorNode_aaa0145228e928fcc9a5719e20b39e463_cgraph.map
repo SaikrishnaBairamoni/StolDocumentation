@@ -1,0 +1,6 @@
+<map id="arbitrator::ArbitratorNode::handle_on_configure" name="arbitrator::ArbitratorNode::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,77,168,119"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1CostSystemCostFunction.html#a0cfe6f1a41592b64f6f4f3bf3f563788" title=" " alt="" coords="216,5,393,47"/>
+<area shape="rect" id="node3" href="$classarbitrator_1_1ArbitratorNode.html#a0bf5eb19413d98bba2ee9c774cd9f4c6" title=" " alt="" coords="223,70,386,126"/>
+<area shape="rect" id="node4" href="$classarbitrator_1_1Arbitrator.html#a4667a042a8dea13ca8fa58e0a14caa1e" title="Callback for the twist subscriber, which will store latest twist locally." alt="" coords="239,149,371,191"/>
+</map>

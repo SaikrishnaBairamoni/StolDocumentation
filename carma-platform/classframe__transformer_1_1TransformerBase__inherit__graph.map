@@ -1,0 +1,4 @@
+<map id="frame_transformer::TransformerBase" name="frame_transformer::TransformerBase">
+<area shape="rect" id="node1" title="Transformer base class provides default member variables for tf2 lookup and ros network access...." alt="" coords="5,5,145,127"/>
+<area shape="rect" id="node2" href="$classframe__transformer_1_1Transformer.html" title="Class template for data transformers which use the tf2_ros::Buffer.transform() method to perform tran..." alt="" coords="8,175,143,340"/>
+</map>

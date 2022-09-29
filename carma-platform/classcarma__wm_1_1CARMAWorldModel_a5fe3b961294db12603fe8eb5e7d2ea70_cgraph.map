@@ -1,0 +1,4 @@
+<map id="carma_wm::CARMAWorldModel::setMap" name="carma_wm::CARMAWorldModel::setMap">
+<area shape="rect" id="node1" title="Set the current map." alt="" coords="5,29,212,71"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a6d75cb8cde721072cc7f69edd0ececb6" title="Get the Traffic Rules object." alt="" coords="260,29,467,71"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_op_cb_preparetojoin" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_op_cb_preparetojoin">
+<area shape="rect" id="node1" title="Function to process mobility operation in PrepareToJoin state (cut&#45;in join)" alt="" coords="5,113,188,169"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a876cee27af19b1f215ffd4a2190be371" title="Function to convert ecef location to a 2d point in map frame." alt="" coords="272,5,455,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="242,85,485,126"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ab475f5a72d52048d8a4a09617634e24f" title="Function to process mobility operation INFO params to find platoon leader&#39;s ecef location." alt="" coords="236,149,491,205"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a11ffedaaa90fe358ecfdccab7c5a428c" title="Function to convert pose from map frame to ecef location." alt="" coords="272,229,455,285"/>
+</map>

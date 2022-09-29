@@ -1,0 +1,4 @@
+<map id="ParseResult::operator BooleanType" name="ParseResult::operator BooleanType">
+<area shape="rect" id="node1" title="Explicit conversion to bool, returns true, iff !IsError()." alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$structParseResult.html#adfe0ef5b994e82f8aa9ebf0b30c924b1" title="Whether the result is an error." alt="" coords="200,13,337,39"/>
+</map>

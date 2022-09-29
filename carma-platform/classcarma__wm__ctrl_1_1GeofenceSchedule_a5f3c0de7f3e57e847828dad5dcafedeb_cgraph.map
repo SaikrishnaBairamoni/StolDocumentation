@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::GeofenceSchedule::getNextInterval" name="carma_wm_ctrl::GeofenceSchedule::getNextInterval">
+<area shape="rect" id="node1" title="Returns the start time of the next active interval defined by this schedule." alt="" coords="5,5,232,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1GeofenceSchedule.html#acc7946dd30cec74c4d81c60a45f3f210" title="Returns true if the schedule has expired by the provided time." alt="" coords="280,5,507,47"/>
+</map>

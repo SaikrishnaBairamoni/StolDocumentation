@@ -1,0 +1,5 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::caseTwoSpeedProfile" name="sci_strategic_plugin::SCIStrategicPlugin::caseTwoSpeedProfile">
+<area shape="rect" id="node1" title="Determine the desired speed profile parameters for Case 2." alt="" coords="503,13,657,69"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#afc38c2b6e6549f1bfc08feb3c2a643a3" title="Compose a lane keeping maneuver message based on input params." alt="" coords="232,5,455,76"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a5ad9628cf7d25246bc3a192c842ba8e2" title="Service callback for arbitrator maneuver planning." alt="" coords="5,13,184,69"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::planWhenWAITING" name="lci_strategic_plugin::LCIStrategicPlugin::planWhenWAITING">
+<area shape="rect" id="node1" title="Method for performing maneuver planning when the current plugin state is TransitState::WAITING Theref..." alt="" coords="5,88,148,144"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#ad0dfe4121507c3080e3d21dd1244bec9" title="Return true if the car can arrive at given arrival time within green light time buffer." alt="" coords="199,44,407,100"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a23192777055fbb632e0676e56a2d182e" title="Helper method that checks both if the input optional light state is set and if the state it contains ..." alt="" coords="503,5,640,61"/>
+<area shape="rect" id="node5" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a8528301c6bda50dde4d55e64ec02e7f1" title="Compose a stop and wait maneuver message based on input params." alt="" coords="196,125,411,195"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a6dc204c919a4df801ed0b5ff6e1486ea" title="Trigger signal for the transition table." alt="" coords="209,244,398,300"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aedf733561a0ca72170d664f4414f624e" title="Helper method to evaluate if the given traffic light state is supported by this plugin." alt="" coords="754,5,899,61"/>
+<area shape="rect" id="node7" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a4737562012420f1e6d7a5ce25bd927e5" title=" " alt="" coords="459,404,684,460"/>
+<area shape="rect" id="node10" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a44bd26ef4b3d86b0b6890b96b3373b66" title=" " alt="" coords="470,164,673,220"/>
+<area shape="rect" id="node11" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a631bce476ffdb5a8a3230b497bd459c7" title=" " alt="" coords="461,244,681,300"/>
+<area shape="rect" id="node12" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a56893fc24b1a263a0783ba3194737b57" title=" " alt="" coords="477,324,666,380"/>
+<area shape="rect" id="node8" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a1be896f0242c04f33991b86008320e06" title="Helper function for logging the provide signal." alt="" coords="732,244,921,300"/>
+<area shape="rect" id="node9" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a425d7f16324829fdef5b1d2bfbd9bf87" title="Function to change the current state and log the details of the transition." alt="" coords="732,324,921,380"/>
+</map>

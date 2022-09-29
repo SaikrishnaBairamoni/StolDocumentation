@@ -1,0 +1,5 @@
+<map id="motion_computation::MotionComputationWorker::synchronizeAndAppend" name="motion_computation::MotionComputationWorker::synchronizeAndAppend">
+<area shape="rect" id="node1" title="Appends external objects list behind base_objects. This does not do sensor fusion...." alt="" coords="453,5,635,61"/>
+<area shape="rect" id="node2" href="$classmotion__computation_1_1MotionComputationWorker.html#a33ea3fe0d96620798fe778aebaf5b244" title="Function to populate duplicated detected objects along with their velocity, yaw, yaw_rate and static/..." alt="" coords="224,5,405,61"/>
+<area shape="rect" id="node3" href="$classmotion__computation_1_1MotionComputationNode.html#a6fef0cbb33460d4d3c9b0c9da36dd76a" title=" " alt="" coords="5,5,176,61"/>
+</map>

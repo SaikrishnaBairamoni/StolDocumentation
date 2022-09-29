@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::WMBroadcasterNode" name="carma_wm_ctrl::WMBroadcasterNode">
+<area shape="rect" id="node1" title="Node which provies exposes map publication and carma_wm update logic." alt="" coords="9,131,250,604"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,253,83"/>
+</map>

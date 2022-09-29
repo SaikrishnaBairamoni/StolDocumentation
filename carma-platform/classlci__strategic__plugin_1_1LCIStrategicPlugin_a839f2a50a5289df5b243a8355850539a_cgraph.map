@@ -1,0 +1,12 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::planWhenUNAVAILABLE" name="lci_strategic_plugin::LCIStrategicPlugin::planWhenUNAVAILABLE">
+<area shape="rect" id="node1" title="Method for performing maneuver planning when the current plugin state is TransitState::UNAVAILABLE Th..." alt="" coords="5,85,184,141"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#ace9fb36575ef6b54f01291ef8cf1d697" title="Helper method to use basic kinematics to compute an estimated stopping distance from from the inputs." alt="" coords="235,5,419,61"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a3a26d736705389e017c4c41097806e90" title="Given a Lanelet, find it&#39;s associated Speed Limit." alt="" coords="258,85,395,141"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a6dc204c919a4df801ed0b5ff6e1486ea" title="Trigger signal for the transition table." alt="" coords="232,189,421,245"/>
+<area shape="rect" id="node5" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a4737562012420f1e6d7a5ce25bd927e5" title=" " alt="" coords="469,189,695,245"/>
+<area shape="rect" id="node8" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a44bd26ef4b3d86b0b6890b96b3373b66" title=" " alt="" coords="481,269,683,325"/>
+<area shape="rect" id="node9" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a631bce476ffdb5a8a3230b497bd459c7" title=" " alt="" coords="472,349,692,405"/>
+<area shape="rect" id="node10" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a56893fc24b1a263a0783ba3194737b57" title=" " alt="" coords="487,109,677,165"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a1be896f0242c04f33991b86008320e06" title="Helper function for logging the provide signal." alt="" coords="743,189,932,245"/>
+<area shape="rect" id="node7" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a425d7f16324829fdef5b1d2bfbd9bf87" title="Function to change the current state and log the details of the transition." alt="" coords="743,269,932,325"/>
+</map>

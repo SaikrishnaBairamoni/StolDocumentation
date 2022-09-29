@@ -1,0 +1,7 @@
+<map id="platoon_control::PurePursuit::calculateSteer" name="platoon_control::PurePursuit::calculateSteer">
+<area shape="rect" id="node1" title="calculates steering angle based on lookahead trajectory point" alt="" coords="5,71,189,112"/>
+<area shape="rect" id="node2" href="$classplatoon__control_1_1PurePursuit.html#a58ce5f7ea15672fdfd7a050bd3a7f2f1" title="calculates curvature to the lookahead trajectory point" alt="" coords="237,12,421,53"/>
+<area shape="rect" id="node4" href="$classplatoon__control_1_1PurePursuit.html#a33891c90c1c142bb6c358fab90136f0a" title=" " alt="" coords="469,71,653,112"/>
+<area shape="rect" id="node5" href="$classplatoon__control_1_1PurePursuit.html#a569d0480c270c0a1d5d32e9e02ee865f" title="Lowpass filter to smoothen control signal." alt="" coords="237,129,421,171"/>
+<area shape="rect" id="node3" href="$classplatoon__control_1_1PurePursuit.html#ada5d569072205a40f28cf96a864b0e5b" title="calculates sin of the heading angle to the target point" alt="" coords="469,5,653,47"/>
+</map>

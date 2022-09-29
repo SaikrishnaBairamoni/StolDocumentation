@@ -1,0 +1,4 @@
+<map id="yield_plugin::YieldPlugin::convert_eceftrajectory_to_mappoints" name="yield_plugin::YieldPlugin::convert_eceftrajectory_to_mappoints">
+<area shape="rect" id="node1" title="convert a carma trajectory from ecef frame to map frame ecef trajectory consists of the point and a s..." alt="" coords="5,5,165,61"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#ac0b6fb988e61ce2cfb04c4a1f33070d5" title="convert a point in ecef frame (in cm) into map frame (in meters)" alt="" coords="213,13,373,54"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="cooperative_lanechange::CooperativeLaneChangePlugin::georeference_cb" name="cooperative_lanechange::CooperativeLaneChangePlugin::georeference_cb">
+<area shape="rect" id="node1" title="Callback for map projection string to define lat/lon &#45;&gt; map conversion." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node2" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#add02fa3e584de2ba842cb90fca20be21" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,5,212,61"/>
+</map>

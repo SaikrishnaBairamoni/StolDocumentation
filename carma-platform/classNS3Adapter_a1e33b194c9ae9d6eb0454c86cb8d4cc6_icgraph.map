@@ -1,0 +1,4 @@
+<map id="NS3Adapter::sendMessageSrv" name="NS3Adapter::sendMessageSrv">
+<area shape="rect" id="node1" title="Message sending service." alt="" coords="199,5,399,32"/>
+<area shape="rect" id="node2" href="$classNS3Adapter.html#ab2dfb933cc738732c0580b62c233f876" title="Initializes ROS context for this node." alt="" coords="5,5,151,32"/>
+</map>

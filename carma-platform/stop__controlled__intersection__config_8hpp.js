@@ -1,0 +1,4 @@
+var stop__controlled__intersection__config_8hpp =
+[
+    [ "stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPluginConfig", "structstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPluginConfig.html", "structstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPluginConfig" ]
+];

@@ -1,0 +1,6 @@
+<map id="platoon_strategic_ihp::Node" name="platoon_strategic_ihp::Node">
+<area shape="rect" id="node1" title="ROS Node to for Platooning Strategic Plugin IHP2 variant." alt="" coords="29,968,229,1339"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html" title="StrategicPlugin base class which can be extended by user provided plugins which wish to implement the..." alt="" coords="34,681,225,920"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="35,131,223,633"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,253,83"/>
+</map>

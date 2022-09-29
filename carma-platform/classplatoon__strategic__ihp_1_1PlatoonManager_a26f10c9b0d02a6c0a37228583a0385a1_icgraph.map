@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonManager::removeMember" name="platoon_strategic_ihp::PlatoonManager::removeMember">
+<area shape="rect" id="node1" title="Removes a single member from the internal record of platoon members." alt="" coords="721,49,940,90"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aeba3a1dd3fc9411891a1fe1eac8c3993" title="Function to process mobility response in leaderaborting state." alt="" coords="454,5,649,61"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a4a6ad6000ba1d8598e0eb7dc8e0be76b" title="Removes a single member from the internal record of platoon members." alt="" coords="429,85,673,126"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aaca0c4143be4a27041ab5ed90d2c624c" title="Callback function for Mobility Response Message." alt="" coords="199,5,381,61"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,5,151,61"/>
+</map>

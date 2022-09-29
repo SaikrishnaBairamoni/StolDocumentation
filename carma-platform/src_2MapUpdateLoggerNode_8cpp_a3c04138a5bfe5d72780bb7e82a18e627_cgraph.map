@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node2" href="$classCallbackHolder.html#ad4b60564cbe53725dd1a01df0d44b50e" title=" " alt="" coords="104,23,241,65"/>
+<area shape="rect" id="node3" href="$src_2MapUpdateLoggerNode_8cpp.html#a1b730b55ab0579f82083b4e0c463b83c" title="Callback for map updates that converts them to a human readable format." alt="" coords="289,31,428,57"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm.html#a988397f5bcadc640fed21cb096f7a350" title=" " alt="" coords="476,5,639,32"/>
+<area shape="rect" id="node5" href="$src_2MapUpdateLoggerNode_8cpp.html#a0d002aaac599027e763d4ff49c04dcf6" title="Converts a TrafficControl pair into the corresponding debug message type." alt="" coords="483,56,631,83"/>
+</map>

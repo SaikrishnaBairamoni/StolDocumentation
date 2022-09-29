@@ -1,0 +1,5 @@
+<map id="bounding_box_to_detected_object::detected_obj_from_bounding_box" name="bounding_box_to_detected_object::detected_obj_from_bounding_box">
+<area shape="rect" id="node1" title=" " alt="" coords="467,5,644,61"/>
+<area shape="rect" id="node2" href="$classbounding__box__to__detected__object_1_1Node.html#a149a600260f20953532cbfebfd00347e" title="Callback for bounding box data to be converted. Publishes a DetectedObjects message from the bounding..." alt="" coords="229,13,419,54"/>
+<area shape="rect" id="node3" href="$classbounding__box__to__detected__object_1_1Node.html#addaa254aa0b94aa7f7d39bfe724dcfeb" title=" " alt="" coords="5,5,181,61"/>
+</map>

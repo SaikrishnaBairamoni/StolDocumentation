@@ -1,0 +1,6 @@
+<map id="guidance::GuidanceWorker::guidance_activation_cb" name="guidance::GuidanceWorker::guidance_activation_cb">
+<area shape="rect" id="node1" title="Set_guidance_active service callback. User can attempt to activate the guidance system by calling thi..." alt="" coords="5,39,181,80"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceStateMachine.html#a0a70a93252ab7d5870ad14d338a84719" title="Get current state machine status." alt="" coords="229,5,444,47"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceStateMachine.html#aff994c9f4628063f36a39aa532b52e81" title="Handle set_guidance_active service call from ROS network." alt="" coords="229,71,444,112"/>
+<area shape="rect" id="node4" href="$classguidance_1_1GuidanceStateMachine.html#aaa75a81fec6e28dbbeb446af8355e8e0" title="Actual state machine logic driven by signal enum." alt="" coords="492,71,707,112"/>
+</map>

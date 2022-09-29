@@ -1,0 +1,6 @@
+<map id="platoon_strategic_ihp::PlatoonManager::updateHostPose" name="platoon_strategic_ihp::PlatoonManager::updateHostPose">
+<area shape="rect" id="node1" title="Stores the latest info on location of the host vehicle." alt="" coords="429,53,655,94"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac7e7160659b61a4ac61be14f74fb1caa" title="Spin callback function." alt="" coords="199,5,381,61"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aa81560488f89d886d731bcdbfebbbf37" title="Callback function for current pose." alt="" coords="199,85,381,141"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,45,151,101"/>
+</map>

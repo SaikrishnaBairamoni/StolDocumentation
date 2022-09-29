@@ -1,0 +1,4 @@
+<map id="port_drayage_plugin::PortDrayageWorker::onReceivedNewDestination" name="port_drayage_plugin::PortDrayageWorker::onReceivedNewDestination">
+<area shape="rect" id="node1" title="Callback for usage by the PortDrayageStateMachine when the vehicle has received a new destination." alt="" coords="193,5,381,61"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a234aa0d5f2afcf347d8336d37d27c3a9" title="Standard constructor for the PortDrayageWorker." alt="" coords="5,5,145,61"/>
+</map>

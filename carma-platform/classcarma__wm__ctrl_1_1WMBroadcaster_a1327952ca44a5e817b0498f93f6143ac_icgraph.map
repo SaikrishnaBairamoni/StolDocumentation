@@ -1,0 +1,6 @@
+<map id="carma_wm_ctrl::WMBroadcaster::getAffectedLaneletOrAreas" name="carma_wm_ctrl::WMBroadcaster::getAffectedLaneletOrAreas">
+<area shape="rect" id="node1" title="Gets the affected lanelet or areas based on the points in local frame." alt="" coords="781,5,992,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#af0e373523dc84a409331d01b62d2fce0" title="Fills geofence object from TrafficControlMessageV01 ROS Msg." alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a649174a7a7270df95532cad5131bf4cb" title="Adds a geofence to the current map and publishes the ROS msg." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,5,216,47"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="cost_plugin_system::CostPlugins" name="cost_plugin_system::CostPlugins">
+<area shape="rect" id="node1" title=" " alt="" coords="408,5,545,112"/>
+<area shape="rect" id="node2" href="$classcost__plugin__system_1_1CostofComfort.html" title=" " alt="" coords="5,167,143,274"/>
+<area shape="rect" id="node3" href="$classcost__plugin__system_1_1CostofEfficiency.html" title=" " alt="" coords="167,160,304,281"/>
+<area shape="rect" id="node4" href="$classcost__plugin__system_1_1CostofFeasibility.html" title=" " alt="" coords="328,160,465,281"/>
+<area shape="rect" id="node5" href="$classcost__plugin__system_1_1CostofFuel.html" title=" " alt="" coords="489,167,627,274"/>
+<area shape="rect" id="node6" href="$classcost__plugin__system_1_1CostofLegality.html" title=" " alt="" coords="651,167,788,274"/>
+<area shape="rect" id="node7" href="$classcost__plugin__system_1_1CostofSafety.html" title=" " alt="" coords="812,167,949,274"/>
+</map>

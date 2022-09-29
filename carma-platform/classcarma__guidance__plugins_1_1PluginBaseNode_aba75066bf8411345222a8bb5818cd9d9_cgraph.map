@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::PluginBaseNode::handle_on_activate" name="carma_guidance_plugins::PluginBaseNode::handle_on_activate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,175,61"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#af1d2248e7e0bd5b9e6c754f72e49429c" title="Method which is triggered when this plugin is moved from the INACTIVE to ACTIVE states...." alt="" coords="223,5,421,61"/>
+</map>

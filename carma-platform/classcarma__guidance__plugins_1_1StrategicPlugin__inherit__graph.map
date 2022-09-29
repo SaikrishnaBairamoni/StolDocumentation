@@ -1,0 +1,9 @@
+<map id="carma_guidance_plugins::StrategicPlugin" name="carma_guidance_plugins::StrategicPlugin">
+<area shape="rect" id="node1" title="StrategicPlugin base class which can be extended by user provided plugins which wish to implement the..." alt="" coords="351,681,542,920"/>
+<area shape="rect" id="node4" href="$classSUB_1_1Node.html" title="TODO for USER: Add class description." alt="" coords="5,1217,205,1837"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1Node.html" title="ROS Node to for Platooning Strategic Plugin IHP2 variant." alt="" coords="229,1342,429,1713"/>
+<area shape="rect" id="node6" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html" title=" " alt="" coords="453,968,675,2087"/>
+<area shape="rect" id="node7" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html" title=" " alt="" coords="700,968,943,2087"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="353,131,541,633"/>
+<area shape="rect" id="node3" title=" " alt="" coords="323,5,571,83"/>
+</map>

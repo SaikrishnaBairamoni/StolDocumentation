@@ -1,0 +1,9 @@
+<map id="platoon_control::PurePursuit" name="platoon_control::PurePursuit">
+<area shape="rect" id="node1" title=" " alt="" coords="122,637,306,847"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,424,57,501"/>
+<area shape="rect" id="node3" title=" " alt="" coords="180,5,240,83"/>
+<area shape="rect" id="node4" href="$structPlatooningControlPluginConfig.html" title="Stuct containing the algorithm configuration values for the PlatooningControlPlugin." alt="" coords="281,351,477,575"/>
+<area shape="rect" id="node5" href="$classint.html" title=" " alt="" coords="337,5,376,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="472,5,527,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="501,424,636,501"/>
+</map>

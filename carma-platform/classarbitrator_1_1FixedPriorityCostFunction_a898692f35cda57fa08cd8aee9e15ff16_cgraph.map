@@ -1,0 +1,5 @@
+<map id="arbitrator::FixedPriorityCostFunction::compute_total_cost" name="arbitrator::FixedPriorityCostFunction::compute_total_cost">
+<area shape="rect" id="node1" title="Compute the unit cost over distance of a given maneuver plan." alt="" coords="5,39,224,80"/>
+<area shape="rect" id="node2" href="$namespacearbitrator__utils.html#a55896d5750ee654556f9496e4d71e6d4" title="Get the end distance of the specified maneuver." alt="" coords="274,5,445,47"/>
+<area shape="rect" id="node3" href="$namespacearbitrator__utils.html#a3cbf7c6ae8d6fa35e0106a165706bf0b" title="Get the start distance the specified maneuver." alt="" coords="272,71,447,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::calcEstimatedStopTime" name="sci_strategic_plugin::SCIStrategicPlugin::calcEstimatedStopTime">
+<area shape="rect" id="node1" title="calculate the time vehicle will stop with optimal decelarion" alt="" coords="483,5,649,61"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a16d353d1135dd8b869322242479f634b" title="Determine the speed profile case fpr approaching an intersection." alt="" coords="232,5,435,61"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a5ad9628cf7d25246bc3a192c842ba8e2" title="Service callback for arbitrator maneuver planning." alt="" coords="5,5,184,61"/>
+</map>

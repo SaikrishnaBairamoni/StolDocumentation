@@ -1,0 +1,4 @@
+<map id="localization_manager::LocalizationManager::getState" name="localization_manager::LocalizationManager::getState">
+<area shape="rect" id="node1" title="Returns the current localization state." alt="" coords="5,5,152,61"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aeec5e1584741de33c3c5f23f3ebe529a" title="Returns the current state." alt="" coords="200,5,387,61"/>
+</map>

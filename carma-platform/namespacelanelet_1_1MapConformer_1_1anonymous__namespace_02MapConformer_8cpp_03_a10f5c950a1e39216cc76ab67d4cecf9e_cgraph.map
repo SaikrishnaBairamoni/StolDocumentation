@@ -1,0 +1,5 @@
+<map id="lanelet::MapConformer::anonymous_namespace{MapConformer::cpp}::getChangeType" name="lanelet::MapConformer::anonymous_namespace{MapConformer::cpp}::getChangeType">
+<area shape="rect" id="node1" title="Helper function to determine the type of lane change implicitly allowed by the markings on the road." alt="" coords="5,57,244,113"/>
+<area shape="rect" id="node2" href="$namespacelanelet_1_1MapConformer_1_1anonymous__namespace_02MapConformer_8cpp_03.html#ae5cd14f5d9ebf27510d794f22e61e887" title="Helper function to get a value from a map or return a default value when key is not present." alt="" coords="292,5,497,76"/>
+<area shape="rect" id="node3" href="$namespacelanelet_1_1MapConformer_1_1anonymous__namespace_02MapConformer_8cpp_03.html#ae7989b69694d8848cb026d07701db624" title="Helper function to check if a string starts with another string." alt="" coords="292,101,497,157"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="platooning_control_ihp/include/platoon_control_ihp_config.h" name="platooning_control_ihp/include/platoon_control_ihp_config.h">
+<area shape="rect" id="node1" title=" " alt="" coords="168,5,311,61"/>
+<area shape="rect" id="node2" href="$ihp_2include_2pid__controller_8h.html" title=" " alt="" coords="19,109,201,151"/>
+<area shape="rect" id="node3" href="$platoon__control__ihp__worker_8h.html" title=" " alt="" coords="165,199,313,255"/>
+<area shape="rect" id="node8" href="$ihp_2include_2pure__pursuit_8h.html" title=" " alt="" coords="277,109,453,151"/>
+<area shape="rect" id="node4" href="$platoon__control__ihp_8h.html" title=" " alt="" coords="84,303,221,359"/>
+<area shape="rect" id="node7" href="$platoon__control__ihp__worker_8cpp.html" title=" " alt="" coords="246,303,406,359"/>
+<area shape="rect" id="node5" href="$platooning__control__ihp_2src_2main_8cpp.html" title=" " alt="" coords="5,414,132,455"/>
+<area shape="rect" id="node6" href="$platoon__control__ihp_8cpp.html" title=" " alt="" coords="157,407,317,463"/>
+</map>

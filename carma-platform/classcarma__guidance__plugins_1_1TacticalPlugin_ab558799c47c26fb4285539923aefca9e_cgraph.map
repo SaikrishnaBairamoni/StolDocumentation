@@ -1,0 +1,7 @@
+<map id="carma_guidance_plugins::TacticalPlugin::handle_on_configure" name="carma_guidance_plugins::TacticalPlugin::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,85,171,141"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a0c627d698b6cebcc99d1946d047f1ac3" title="Returns the activation status of this plugin. The plugins API callbacks will only be triggered when t..." alt="" coords="221,5,386,61"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a5629a69d353b4ec27de5c3b2d3f2d0e4" title=" " alt="" coords="219,85,388,141"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html#aeb22bc8488f77c0f164c69cb0bf9091b" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="221,165,386,221"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a8786fff73c3ddd6061dbdfe0b6288d82" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="436,85,640,141"/>
+</map>

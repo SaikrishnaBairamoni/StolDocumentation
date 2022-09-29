@@ -1,0 +1,8 @@
+<map id="stop_and_wait_plugin::StopandWait" name="stop_and_wait_plugin::StopandWait">
+<area shape="rect" id="node1" title=" " alt="" coords="207,491,372,685"/>
+<area shape="rect" id="node2" title=" " alt="" coords="17,5,77,83"/>
+<area shape="rect" id="node5" href="$structStopandWaitConfig.html" title="Stuct containing the algorithm configuration values for the stop_and_wait_plugin." alt="" coords="106,329,238,406"/>
+<area shape="rect" id="node3" title=" " alt="" coords="262,329,317,406"/>
+<area shape="rect" id="node4" title=" " alt="" coords="341,329,549,406"/>
+<area shape="rect" id="node6" title=" " alt="" coords="574,321,765,413"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_resp_cb_preparetojoin" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_resp_cb_preparetojoin">
+<area shape="rect" id="node1" title="Function to process mobility response in preparetojoin state." alt="" coords="5,34,192,90"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="240,5,483,47"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a11ffedaaa90fe358ecfdccab7c5a428c" title="Function to convert pose from map frame to ecef location." alt="" coords="270,70,453,126"/>
+</map>

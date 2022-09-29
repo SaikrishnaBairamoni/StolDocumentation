@@ -1,0 +1,10 @@
+<map id="port_drayage_plugin::PortDrayageStateMachine::getState" name="port_drayage_plugin::PortDrayageStateMachine::getState">
+<area shape="rect" id="node1" title="Get the current state of the state machine." alt="" coords="621,125,800,181"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#af717d8df5c0ebca5c3828d62cf5306b8" title="Assemble the current dataset into a MobilityOperations message with a JSON formatted body containing ..." alt="" coords="403,5,573,61"/>
+<area shape="rect" id="node5" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a5466152596f2ad4f0b9483a904ba8be4" title="Get the current state of the port drayage state machine." alt="" coords="414,85,562,141"/>
+<area shape="rect" id="node6" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#ad30c99aeeb1f93525717c30c4cf49e9d" title="Callback to process the current status of the guidance state machine." alt="" coords="418,165,558,221"/>
+<area shape="rect" id="node8" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a58e23743371e64739555bffa0eab0442" title="Callback to process each Route Event." alt="" coords="418,245,558,301"/>
+<area shape="rect" id="node3" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a708b620f4ccccbae6f5bdeeffb424a85" title="Callback for usage by the PortDrayageStateMachine when the vehicle has arrived at a destination." alt="" coords="193,5,355,61"/>
+<area shape="rect" id="node4" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a234aa0d5f2afcf347d8336d37d27c3a9" title="Standard constructor for the PortDrayageWorker." alt="" coords="5,5,145,61"/>
+<area shape="rect" id="node7" href="$classport__drayage__plugin_1_1PortDrayagePlugin.html#a6c49de39e315ae4a5ab4f53c52cf9d32" title=" " alt="" coords="201,205,347,261"/>
+</map>

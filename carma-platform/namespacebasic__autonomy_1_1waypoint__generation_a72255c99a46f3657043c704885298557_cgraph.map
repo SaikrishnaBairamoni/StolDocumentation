@@ -1,0 +1,5 @@
+<map id="basic_autonomy::waypoint_generation::get_nearest_index_by_downtrack" name="basic_autonomy::waypoint_generation::get_nearest_index_by_downtrack">
+<area shape="rect" id="node1" title="Overload: Returns the nearest point to the provided vehicle pose in the provided list by utilizing th..." alt="" coords="5,45,179,101"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1waypoint__generation.html#aa399a236f88f7b1c5557327fbb2ba71a" title="Returns the nearest &quot;less than&quot; point to the provided vehicle pose in the provided list by utilizing ..." alt="" coords="227,5,400,61"/>
+<area shape="rect" id="node3" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a0f07faaac8c54cc485f2bb217097326e" title="Helper method to split a list of PointSpeedPair into separate point and speed lists." alt="" coords="227,85,400,141"/>
+</map>

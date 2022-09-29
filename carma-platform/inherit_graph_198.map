@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classmock__drivers_1_1MockDriver.html" title="The template node for the mock drivers that will handle all of the default driver logic." alt="" coords="5,240,177,267"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockCANDriver.html" title="Mock CAN driver. Operates as a passthrough for bag data which updates the timestamps on received mess..." alt="" coords="234,5,434,32"/>
+<area shape="rect" id="node3" href="$classmock__drivers_1_1MockCameraDriver.html" title="Mock camera driver. Operates as a passthrough for bag data which updates the timestamps on received m..." alt="" coords="243,57,425,98"/>
+<area shape="rect" id="node4" href="$classmock__drivers_1_1MockCommsDriver.html" title="Mock Comms driver. Operates as a passthrough for bag data which updates the timestamps on received me..." alt="" coords="225,123,443,149"/>
+<area shape="rect" id="node5" href="$classmock__drivers_1_1MockControllerDriver.html" title="Mock Controller driver. Implements controller service and feedback logic to support CARMA Platform Gu..." alt="" coords="237,174,431,215"/>
+<area shape="rect" id="node6" href="$classmock__drivers_1_1MockGNSSDriver.html" title="Mock GNSS driver. Operates as a passthrough for bag data which updates the timestamps on received mes..." alt="" coords="229,240,439,267"/>
+<area shape="rect" id="node7" href="$classmock__drivers_1_1MockIMUDriver.html" title="Mock IMU driver. Operates as a passthrough for bag data which updates the timestamps on received mess..." alt="" coords="235,291,433,317"/>
+<area shape="rect" id="node8" href="$classmock__drivers_1_1MockLidarDriver.html" title="Mock Lidar driver. Operates as a passthrough for bag data which updates the timestamps on received me..." alt="" coords="233,341,435,368"/>
+<area shape="rect" id="node9" href="$classmock__drivers_1_1MockRadarDriver.html" title="Mock Radar driver. Operates as a passthrough for bag data which updates the timestamps on received me..." alt="" coords="231,392,437,419"/>
+<area shape="rect" id="node10" href="$classmock__drivers_1_1MockRoadwaySensorDriver.html" title="Mock Roadway Sensor driver. Operates as a passthrough for bag data which updates the timestamps on re..." alt="" coords="239,443,429,485"/>
+</map>

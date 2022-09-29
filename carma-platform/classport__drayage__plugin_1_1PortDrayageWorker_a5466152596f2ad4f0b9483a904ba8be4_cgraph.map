@@ -1,0 +1,4 @@
+<map id="port_drayage_plugin::PortDrayageWorker::getPortDrayageState" name="port_drayage_plugin::PortDrayageWorker::getPortDrayageState">
+<area shape="rect" id="node1" title="Get the current state of the port drayage state machine." alt="" coords="5,5,153,61"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageStateMachine.html#aee66b24d69c9613c30d92b927a75fc91" title="Get the current state of the state machine." alt="" coords="201,5,380,61"/>
+</map>

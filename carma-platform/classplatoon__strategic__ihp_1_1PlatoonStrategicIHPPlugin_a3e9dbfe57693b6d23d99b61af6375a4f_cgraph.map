@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_follower" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_follower">
+<area shape="rect" id="node1" title="Run Follower State." alt="" coords="5,85,188,141"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af80fc61208f8a6e2efefdcfcc37ce980" title="Update status when state change from Follower to Leader." alt="" coords="251,5,451,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a3a80cbd904887d9fa98448f76fba7993" title="Function to compose mobility operation in follower state." alt="" coords="236,85,467,141"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a1de160740f47d9b0198e42dcbe67a6fe" title="Get number of vehicles in front of host vehicle inside platoon." alt="" coords="255,165,447,221"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="515,85,749,141"/>
+</map>

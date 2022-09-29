@@ -1,0 +1,12 @@
+<map id="PrettyWriter::Null" name="PrettyWriter::Null">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,124,83"/>
+<area shape="rect" id="node2" href="$classPrettyWriter.html#a09709ffa3b545e007631ecfd35029843" title=" " alt="" coords="172,31,335,57"/>
+<area shape="rect" id="node8" href="$classWriter.html#a44862b3eba8d84b909c69aba875c9f4d" title=" " alt="" coords="196,81,311,108"/>
+<area shape="rect" id="node3" href="$classPrettyWriter.html#a6f244ecc94fd5b134d424033b1574b7e" title=" " alt="" coords="383,31,545,57"/>
+<area shape="rect" id="node4" href="$classinternal_1_1Stack.html#ac484468a2791bd3e9ba609bd1600ab48" title=" " alt="" coords="593,5,749,32"/>
+<area shape="rect" id="node5" href="$filewritestream_8h.html#a5c9b0f0e6249be2acf7f3505c295c132" title="Implement specialized version of PutN() with memset() for better performance." alt="" coords="645,56,697,83"/>
+<area shape="rect" id="node6" href="$classFileWriteStream.html#ad9ec108b24316a2c1c83c6ddc75d308a" title=" " alt="" coords="797,56,948,83"/>
+<area shape="rect" id="node7" href="$classFileWriteStream.html#a939fbf183ba36464c5e0837df4329d37" title=" " alt="" coords="996,56,1149,83"/>
+<area shape="rect" id="node9" href="$stream_8h.html#aa817b00a466bb84d96c5de1616436c95" title="Reserve n characters for writing to a stream." alt="" coords="419,81,509,108"/>
+<area shape="rect" id="node10" href="$stream_8h.html#ad57ba7f2912c5509924b69dec7db4396" title="Write character to a stream, presuming buffer is reserved." alt="" coords="422,132,506,159"/>
+</map>

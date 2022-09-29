@@ -1,0 +1,24 @@
+<map id="localization_manager::Node::handle_on_configure" name="localization_manager::Node::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,428,188,469"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#a2804818f7ee388d2eca7bcbd3e27f908" title="Callback for new GNSS messages." alt="" coords="273,305,419,361"/>
+<area shape="rect" id="node13" href="$classlocalization__manager_1_1LocalizationManager.html#a43d2dc2970c35c4d6a12293ec240e84a" title="Callback for the initial pose provided by Rviz or some external localization initializer." alt="" coords="273,145,419,201"/>
+<area shape="rect" id="node14" href="$classlocalization__manager_1_1Node.html#adbe76fafe4696e41317f04206958b8b8" title="Synchronized callback for pose and stats data for usage with message_filters. Provides exception hand..." alt="" coords="247,464,445,505"/>
+<area shape="rect" id="node15" href="$classlocalization__manager_1_1LocalizationManager.html#a0ce2b35dcab57bd0abc4ad9c10f5a24e" title="Timer callback that controls the publication of the selected pose and status report." alt="" coords="273,385,419,441"/>
+<area shape="rect" id="node19" href="$classlocalization__manager_1_1Node.html#ab04906354c8deeb423c123e145cf9dbe" title="Callback to publish the initial pose deemed suitable to intialize NDT." alt="" coords="236,529,456,571"/>
+<area shape="rect" id="node20" href="$classlocalization__manager_1_1Node.html#a838b644118d8a9dd5088e500722992d7" title="Callback to publish the selected pose." alt="" coords="252,595,440,636"/>
+<area shape="rect" id="node21" href="$classlocalization__manager_1_1Node.html#a0de029a550bf8b1b73a85086deba2c61" title="Callback to publish the provided localization status report." alt="" coords="274,660,418,701"/>
+<area shape="rect" id="node22" href="$classlocalization__manager_1_1LocalizationManager.html#a9e4c9b82f1d519c27cc82bc5c9231121" title="Callback for SystemAlert data. Used to check for lidar failure." alt="" coords="273,225,419,281"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aeec5e1584741de33c3c5f23f3ebe529a" title="Returns the current state." alt="" coords="504,305,691,361"/>
+<area shape="rect" id="node4" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a0f5e05d562934f0e04d7f64f9d2fd95c" title="Trigger signal for the transition table." alt="" coords="504,225,691,281"/>
+<area shape="rect" id="node5" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a2436fd6ba3b137c8f94ae07660763e8f" title=" " alt="" coords="739,305,1047,361"/>
+<area shape="rect" id="node8" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ac0a99a2e6cff16fd3d75212ce97beb21" title=" " alt="" coords="799,385,986,441"/>
+<area shape="rect" id="node9" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a23f60d98eb471786a4ad04d9ad18c094" title=" " alt="" coords="759,465,1026,521"/>
+<area shape="rect" id="node10" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a63a7132b4e220496356ff142df4daba2" title=" " alt="" coords="799,65,986,121"/>
+<area shape="rect" id="node11" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ad6622c59f8297f8f8654de9c0208ab44" title=" " alt="" coords="798,145,987,201"/>
+<area shape="rect" id="node12" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aab9c58979971dcdabde93e222d5f5028" title=" " alt="" coords="797,225,988,281"/>
+<area shape="rect" id="node6" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a909aab1a6b7683b40720282de992ca42" title="Helper function for logging the provide signal." alt="" coords="1095,225,1281,281"/>
+<area shape="rect" id="node7" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a1b9ef45847204afb476ebb661e06454a" title="Function to change the current state and log the details of the transition." alt="" coords="1095,305,1281,361"/>
+<area shape="rect" id="node16" href="$classlocalization__manager_1_1LocalizationManager.html#a83866ff4e7229989b0a265a98e3d50b4" title="Clears the expired timers from the memory of this scheduler." alt="" coords="524,385,671,441"/>
+<area shape="rect" id="node17" href="$classlocalization__manager_1_1LocalizationManager.html#a6a06b312cdda09ab9b945daf69710c66" title="Helper function to compute the instantaneous frequency between two times." alt="" coords="524,465,671,521"/>
+<area shape="rect" id="node18" href="$namespacelocalization__manager.html#a0dd225fbc4cf3989bc6a2b0a78b57eb8" title="Helper function to convert LocalizationState objects into LocalizationStatusReport ROS messages." alt="" coords="526,544,669,585"/>
+</map>

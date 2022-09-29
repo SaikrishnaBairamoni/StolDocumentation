@@ -1,0 +1,4 @@
+<map id="carma_wm::CARMAWorldModel::min_end_time_converter_minute_of_year" name="carma_wm::CARMAWorldModel::min_end_time_converter_minute_of_year">
+<area shape="rect" id="node1" title="update minimum end time to account for minute of the year" alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a3c23ffeaab1b1f3de9c866db5958ee25" title="processSpatFromMsg update map&#39;s traffic light states with SPAT msg" alt="" coords="5,13,212,54"/>
+</map>

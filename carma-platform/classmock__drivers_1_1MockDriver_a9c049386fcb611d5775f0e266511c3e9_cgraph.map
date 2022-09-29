@@ -1,0 +1,9 @@
+<map id="mock_drivers::MockDriver::spinCallback" name="mock_drivers::MockDriver::spinCallback">
+<area shape="rect" id="node1" title="Callback which will be triggered at the rate specified by getRate(). This callback will also trigger ..." alt="" coords="5,137,177,179"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriver.html#a8dd8f92d27da3b00fab5a70848fcb961" title="Helper function to publish the driver discovery message." alt="" coords="225,104,397,145"/>
+<area shape="rect" id="node7" href="$classmock__drivers_1_1MockDriver.html#a210727c6265d0380902493f307822b9e" title="Virtual method which child classes can override to add functionality which will occur during each spi..." alt="" coords="225,169,397,211"/>
+<area shape="rect" id="node3" href="$classmock__drivers_1_1MockDriver.html#afce860fdbdc6ec54c353513b7525ec8c" title="Pure Virtual method. Returns an integer value which corresponds to the cav_msgs/DriverStatus enum fel..." alt="" coords="453,5,625,47"/>
+<area shape="rect" id="node4" href="$classmock__drivers_1_1MockDriver.html#aeb52896a9a6edf13af50e9d431624ecd" title="Pure Virtual method which child classes must override that returns the list of all driver types that ..." alt="" coords="453,71,625,112"/>
+<area shape="rect" id="node5" href="$classmock__drivers_1_1MockDriverNode.html#a165494adb60e7dba9d4ef2c95fce2aa7" title="Returns the fully qualified name of this node in the ROS network graph." alt="" coords="453,136,625,177"/>
+<area shape="rect" id="node6" href="$classmock__drivers_1_1MockDriverNode.html#a5093a4c0d55e49d48e246fd5e8c136a9" title="Publish data with no header on a desired topic." alt="" coords="445,201,632,243"/>
+</map>

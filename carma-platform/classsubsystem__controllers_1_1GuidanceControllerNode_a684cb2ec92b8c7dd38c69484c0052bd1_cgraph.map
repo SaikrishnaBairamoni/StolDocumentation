@@ -1,0 +1,20 @@
+<map id="subsystem_controllers::GuidanceControllerNode::handle_on_configure" name="subsystem_controllers::GuidanceControllerNode::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,393,175,449"/>
+<area shape="rect" id="node2" href="$classsubsystem__controllers_1_1PluginManager.html#ad002f6cc78d9ceb6ba76bce4c309362b" title="Activate the specified plugin." alt="" coords="239,153,406,209"/>
+<area shape="rect" id="node5" href="$classsubsystem__controllers_1_1PluginManager.html#aa0a83528b66d35c3cfac1bb2f96a5132" title="Get the list of currently active plugins." alt="" coords="247,313,399,369"/>
+<area shape="rect" id="node7" href="$classsubsystem__controllers_1_1PluginManager.html#a273a123b0ce1a5d004c52e2deff69ea4" title="Get control plugins by capability." alt="" coords="224,393,421,449"/>
+<area shape="rect" id="node9" href="$classsubsystem__controllers_1_1BaseSubsystemController.html#a98837f5beef889c21ebca4cc2f2d6228" title="Returns all elements of the provided set_a which are NOT contained in the provided set_b." alt="" coords="471,631,649,687"/>
+<area shape="rect" id="node10" href="$classsubsystem__controllers_1_1PluginManager.html#a9676128e1c0d7bb13979e5fabcbf3871" title="Returns the list of known plugins." alt="" coords="247,233,399,289"/>
+<area shape="rect" id="node11" href="$classsubsystem__controllers_1_1PluginManager.html#abb246fe8565a91e9890c3639ca333e83" title="Get strategic plugins by capability." alt="" coords="247,474,399,545"/>
+<area shape="rect" id="node12" href="$classsubsystem__controllers_1_1PluginManager.html#ace48d6d87c84f35018389a67a3b886e1" title="Get tactical plugins by capability." alt="" coords="223,569,423,625"/>
+<area shape="rect" id="node13" href="$classsubsystem__controllers_1_1BaseSubsystemController.html#a34f5dc91b0ac8a34a399a6ad1585bc8a" title=" " alt="" coords="233,704,412,760"/>
+<area shape="rect" id="node16" href="$classsubsystem__controllers_1_1PluginManager.html#a9f732913ba1f9c7e16986bade344f258" title="Update the status of a certain plugin." alt="" coords="243,73,402,129"/>
+<area shape="rect" id="node3" href="$classsubsystem__controllers_1_1EntryManager.html#a4204928cd382c992b11ff3e2b8c0da98" title="Get a entry using name as the key." alt="" coords="477,139,643,195"/>
+<area shape="rect" id="node4" href="$classsubsystem__controllers_1_1EntryManager.html#a657eaee164195d03c44ec660fbc08c3c" title="Add a new entry if the given name does not exist. Update an existing entry if the given name exists." alt="" coords="697,85,884,126"/>
+<area shape="rect" id="node6" href="$classsubsystem__controllers_1_1EntryManager.html#af5d2082896822651ca7846adf3867e94" title="Get all entries as a list." alt="" coords="471,401,649,442"/>
+<area shape="rect" id="node8" href="$classsubsystem__controllers_1_1PluginManager.html#a7b5fb468e0d422b8fc47b13103aeaa71" title="Returns true if the provided base capability hierarchy can achieve the requested capability hierarchy..." alt="" coords="473,481,647,537"/>
+<area shape="rect" id="node14" href="$classsubsystem__controllers_1_1BaseSubsystemController.html#a418affcaec63b88abe092d10b248054b" title="Returns the list of fully qualified node names for all ROS2 nodes in the provided namespace." alt="" coords="471,791,649,847"/>
+<area shape="rect" id="node15" href="$classsubsystem__controllers_1_1BaseSubsystemController.html#a8087facfdc76c599d690bf3b4ebba0cc" title=" " alt="" coords="471,711,649,767"/>
+<area shape="rect" id="node17" href="$classsubsystem__controllers_1_1PluginManager.html#a1823614749aa3885622ca8fbf499728a" title="Add the specified entry to our plugin management This function will attempt to move the newly detecte..." alt="" coords="484,8,636,64"/>
+<area shape="rect" id="node18" href="$classsubsystem__controllers_1_1PluginManager.html#ae746a83d3ff2ae3985d73d534331f174" title="Returns true if the specified fully qualified node name is a ROS2 lifecycle node." alt="" coords="709,5,872,61"/>
+</map>

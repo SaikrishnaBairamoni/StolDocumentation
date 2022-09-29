@@ -1,0 +1,4 @@
+<map id="MemoryPoolAllocator::Malloc" name="MemoryPoolAllocator::Malloc">
+<area shape="rect" id="node1" title="Allocates a memory block. (concept Allocator)" alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node2" href="$classMemoryPoolAllocator.html#a41bebe49979dc69921519c7556af18fc" title="Creates a new chunk." alt="" coords="199,5,344,47"/>
+</map>

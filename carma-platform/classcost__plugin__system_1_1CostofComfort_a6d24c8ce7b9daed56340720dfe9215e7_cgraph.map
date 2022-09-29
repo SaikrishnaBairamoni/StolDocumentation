@@ -1,0 +1,9 @@
+<map id="cost_plugin_system::CostofComfort::compute_cost" name="cost_plugin_system::CostofComfort::compute_cost">
+<area shape="rect" id="node1" title="Compute the cost of a given maneuver plan." alt="" coords="5,169,205,211"/>
+<area shape="rect" id="node2" href="$namespacecost__utils.html#a9085af85baecba8cc448ba31736a1b5f" title="Get the end speed of the specified maneuver." alt="" coords="253,5,420,47"/>
+<area shape="rect" id="node3" href="$namespacecost__utils.html#a6b23212b8dff611a3aa2014f58a0b8ee" title="Get the end time of the specified maneuver." alt="" coords="253,71,420,112"/>
+<area shape="rect" id="node4" href="$namespacecost__utils.html#ac29f789c83a7a30c64ff6a0778d1ea7a" title="Get the ending lane of the specified maneuver." alt="" coords="253,136,420,177"/>
+<area shape="rect" id="node5" href="$namespacecost__utils.html#a86b850960da1a5f8c4be4fb3e39b8205" title="Get the start speed of the specified maneuver." alt="" coords="253,201,420,243"/>
+<area shape="rect" id="node6" href="$namespacecost__utils.html#af29dec506f8d8e0b08e7f677eab297d4" title="Get the start time of the specified maneuver." alt="" coords="253,267,420,308"/>
+<area shape="rect" id="node7" href="$namespacecost__utils.html#a3afe2ecbcd20cbeed3a7e59a56525e13" title="Get the starting lane of the specified maneuver." alt="" coords="253,332,420,373"/>
+</map>

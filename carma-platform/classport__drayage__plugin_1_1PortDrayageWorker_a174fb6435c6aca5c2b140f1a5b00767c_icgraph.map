@@ -1,0 +1,5 @@
+<map id="port_drayage_plugin::PortDrayageWorker::composeUIInstructions" name="port_drayage_plugin::PortDrayageWorker::composeUIInstructions">
+<area shape="rect" id="node1" title="Creates a UIInstructions message that can be used to create a pop&#45;up on the Web UI to notify a user t..." alt="" coords="429,5,592,61"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#abc81cc6ca86ff7dc5baf7a020edc1f9b" title="Callback for usage by the PortDrayageStateMachine when the vehicle has received a new destination." alt="" coords="193,5,381,61"/>
+<area shape="rect" id="node3" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a234aa0d5f2afcf347d8336d37d27c3a9" title="Standard constructor for the PortDrayageWorker." alt="" coords="5,5,145,61"/>
+</map>

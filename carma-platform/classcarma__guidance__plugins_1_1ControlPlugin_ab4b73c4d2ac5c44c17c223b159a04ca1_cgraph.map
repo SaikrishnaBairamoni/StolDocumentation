@@ -1,0 +1,10 @@
+<map id="carma_guidance_plugins::ControlPlugin::handle_on_configure" name="carma_guidance_plugins::ControlPlugin::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,205,171,261"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#a648825fbd8c21c8fb7ba932bdcf696d7" title=" " alt="" coords="221,5,386,61"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#a6a76dc5029111d426e31881074721fb1" title=" " alt="" coords="221,85,386,141"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#aba50cd08606f4bffe0b315c9ac2779ae" title=" " alt="" coords="221,165,386,221"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#ab15c7ab847b27cb6f9407decefddeebb" title="Extending class provided method which should generate a command message which will be published to th..." alt="" coords="221,245,386,301"/>
+<area shape="rect" id="node6" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a0c627d698b6cebcc99d1946d047f1ac3" title="Returns the activation status of this plugin. The plugins API callbacks will only be triggered when t..." alt="" coords="221,325,386,381"/>
+<area shape="rect" id="node7" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a5629a69d353b4ec27de5c3b2d3f2d0e4" title=" " alt="" coords="219,405,388,461"/>
+<area shape="rect" id="node8" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a8786fff73c3ddd6061dbdfe0b6288d82" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="436,405,640,461"/>
+</map>

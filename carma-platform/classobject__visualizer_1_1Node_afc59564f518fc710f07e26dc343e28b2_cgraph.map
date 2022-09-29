@@ -1,0 +1,4 @@
+<map id="object_visualizer::Node::external_objects_callback" name="object_visualizer::Node::external_objects_callback">
+<area shape="rect" id="node1" title="External objects callback. Converts the message to a visualization message to republish." alt="" coords="5,5,159,61"/>
+<area shape="rect" id="node2" href="$classobject__visualizer_1_1Node.html#a4db9260841f85e37db81172b3ae0a8d6" title="Adds a marker deletion for a number of markers which is the delta between the new marker count and th..." alt="" coords="207,5,368,61"/>
+</map>

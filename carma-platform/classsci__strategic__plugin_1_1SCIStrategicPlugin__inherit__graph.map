@@ -1,0 +1,6 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin" name="sci_strategic_plugin::SCIStrategicPlugin">
+<area shape="rect" id="node1" title=" " alt="" coords="8,968,251,2087"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html" title="StrategicPlugin base class which can be extended by user provided plugins which wish to implement the..." alt="" coords="34,681,225,920"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="35,131,223,633"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,253,83"/>
+</map>

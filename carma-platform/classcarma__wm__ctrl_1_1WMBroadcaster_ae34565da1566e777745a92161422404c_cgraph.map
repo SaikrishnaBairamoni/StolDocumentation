@@ -1,0 +1,6 @@
+<map id="carma_wm_ctrl::WMBroadcaster::addRegionAccessRule" name="carma_wm_ctrl::WMBroadcaster::addRegionAccessRule">
+<area shape="rect" id="node1" title="Adds RegionAccessRule to the map." alt="" coords="5,39,216,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#ac71c9fdbf27cbfbe3988c3a77d6e7067" title="Generates inverse participants list of the given participants." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#aa326eab73fe1583c1fa937ed2e38b33f" title="Generates participants list." alt="" coords="264,71,475,112"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a2c6c3606e5f4b3c12a984261823c1d71" title="Combines a list of the given participants into a single &quot;vehicle&quot; type if participants cover all poss..." alt="" coords="523,71,733,112"/>
+</map>

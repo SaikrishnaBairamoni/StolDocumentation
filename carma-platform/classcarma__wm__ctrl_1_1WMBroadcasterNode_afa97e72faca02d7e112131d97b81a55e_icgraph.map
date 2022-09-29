@@ -1,0 +1,5 @@
+<map id="carma_wm_ctrl::WMBroadcasterNode::publishActiveGeofence" name="carma_wm_ctrl::WMBroadcasterNode::publishActiveGeofence">
+<area shape="rect" id="node1" title="Callback to publish active geofence information." alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#a9fed1dd61516b445318a7c48a3490eb2" title="Initializes the WMBroadcaster worker with reference to the CarmaLifecycleNode itself." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#a1b58bf8d2d77dea233e0e87e7a202d03" title=" " alt="" coords="5,5,216,47"/>
+</map>

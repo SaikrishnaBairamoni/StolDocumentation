@@ -1,0 +1,6 @@
+<map id="carma_wm::geometry::compute_magnitude_of_vectors" name="carma_wm::geometry::compute_magnitude_of_vectors">
+<area shape="rect" id="node1" title="Compute the magnitude of each vector in the input list." alt="" coords="627,5,772,61"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#adebf4a245f31404e822133b23e061ed3" title=" " alt="" coords="392,13,579,54"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a2bae0fef2b76bda05a8ba1f1382f027d" title="Returns a list of local (computed by discrete derivative) curvatures for the input centerlines...." alt="" coords="199,13,344,54"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aafc2b19933ed189b32a03d8462e69d46" title="Specialized overload of the centerline local_curvatures method but for lanelets." alt="" coords="5,13,151,54"/>
+</map>

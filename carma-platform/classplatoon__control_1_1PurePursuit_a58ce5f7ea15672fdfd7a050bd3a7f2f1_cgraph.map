@@ -1,0 +1,5 @@
+<map id="platoon_control::PurePursuit::calculateKappa" name="platoon_control::PurePursuit::calculateKappa">
+<area shape="rect" id="node1" title="calculates curvature to the lookahead trajectory point" alt="" coords="5,39,189,80"/>
+<area shape="rect" id="node2" href="$classplatoon__control_1_1PurePursuit.html#ada5d569072205a40f28cf96a864b0e5b" title="calculates sin of the heading angle to the target point" alt="" coords="237,5,421,47"/>
+<area shape="rect" id="node3" href="$classplatoon__control_1_1PurePursuit.html#a33891c90c1c142bb6c358fab90136f0a" title=" " alt="" coords="237,71,421,112"/>
+</map>

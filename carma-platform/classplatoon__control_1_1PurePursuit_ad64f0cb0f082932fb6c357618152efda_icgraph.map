@@ -1,0 +1,9 @@
+<map id="platoon_control::PurePursuit::getSteeringAngle" name="platoon_control::PurePursuit::getSteeringAngle">
+<area shape="rect" id="node1" title="returns steering angle" alt="" coords="1244,13,1428,54"/>
+<area shape="rect" id="node2" href="$classplatoon__control_1_1PlatoonControlWorker.html#a027cda0b5c831bfe9cf5cd3550a261aa" title="Generates steering commands based on lookahead trajectory point." alt="" coords="1005,13,1196,54"/>
+<area shape="rect" id="node3" href="$classplatoon__control_1_1PlatoonControlPlugin.html#abb22802d99a0a7bbd90490023eb2d5dd" title=" " alt="" coords="761,5,957,61"/>
+<area shape="rect" id="node4" href="$classplatoon__control_1_1PlatoonControlPlugin.html#a978f691be847519d5819ab96a8261bc2" title=" " alt="" coords="520,13,713,54"/>
+<area shape="rect" id="node5" href="$classplatoon__control_1_1PlatoonControlPlugin.html#a41e544bf2d71b3a46eb6f2adf94dffbd" title=" " alt="" coords="312,13,472,54"/>
+<area shape="rect" id="node6" href="$classplatoon__control_1_1PlatoonControlPlugin.html#a47990ab2e1664e62111fce1084369875" title=" " alt="" coords="104,13,264,54"/>
+<area shape="rect" id="node7" href="$platooning__control_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,20,56,47"/>
+</map>

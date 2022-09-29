@@ -1,0 +1,7 @@
+<map id="basic_autonomy::waypoint_generation::optimize_speed" name="basic_autonomy::waypoint_generation::optimize_speed">
+<area shape="rect" id="node1" title="Applies the longitudinal acceleration limit to each point&#39;s speed." alt="" coords="592,93,777,134"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a8746a5ca630da4365cf22bba2018e346" title="Method converts a list of lanelet centerline points and current vehicle state into a usable list of t..." alt="" coords="331,85,544,141"/>
+<area shape="rect" id="node3" href="$classinlanecruising__plugin_1_1InLaneCruisingPlugin.html#a60f695c3ed54c99c6a2dcfaf77ae55e2" title="Service callback for trajectory planning." alt="" coords="61,5,227,61"/>
+<area shape="rect" id="node4" href="$classplatooning__tactical__plugin_1_1PlatooningTacticalPlugin.html#aee3afe082ccd5ab937dbb1c49f9e21ff" title="Service callback for trajectory planning." alt="" coords="56,85,232,141"/>
+<area shape="rect" id="node5" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTacticalPlugin.html#a124f95825dfb2728fefa245e6a0e1db7" title="Function to process the light controlled intersection tactical plugin service call for trajectory pla..." alt="" coords="5,165,283,221"/>
+</map>

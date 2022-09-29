@@ -1,0 +1,10 @@
+<map id="stop_and_wait_plugin/include" name="stop_and_wait_plugin/include">
+<area shape="rect" id="node1" href="dir_aa6c7464ad1abb0e437c33d0d9f73bd2.html" title="include" alt="" coords="186,52,258,100"/>
+<area shape="rect" id="node2" href="dir_73e59df62327a001b53069470f2538a9.html" title="carma_wm_ros2" alt="" coords="5,148,124,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000098_000023.html" title="5" alt="" coords="119,138,127,153"/>
+<area shape="rect" id="node3" href="dir_81e4214e732b63254210354ec5727868.html" title="basic_autonomy_ros2" alt="" coords="148,148,296,196"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000098_000008.html" title="2" alt="" coords="226,122,234,137"/>
+<area shape="rect" id="node4" href="dir_d5f084badec3f37704845c74a174bd28.html" title="carma_guidance_plugins" alt="" coords="321,148,486,196"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000098_000015.html" title="1" alt="" coords="343,125,351,139"/>
+<area shape="rect" id="clust1" href="dir_c744803b381d4198f3a03790afe86525.html" title="stop_and_wait_plugin" alt="" coords="149,16,295,111"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="carma_wm::geometry::compute_arc_lengths" name="carma_wm::geometry::compute_arc_lengths">
+<area shape="rect" id="node1" title="Compute the arc length at each point around the curve." alt="" coords="5,13,157,54"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#a4e12c2971926486d1447e44e978f8d4d" title=" " alt="" coords="205,5,351,61"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="399,5,544,61"/>
+</map>

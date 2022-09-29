@@ -1,0 +1,8 @@
+<map id="yield_plugin::YieldPlugin::generate_JMT_trajectory" name="yield_plugin::YieldPlugin::generate_JMT_trajectory">
+<area shape="rect" id="node1" title="generate a Jerk Minimizing Trajectory(JMT) with the provided start and end conditions" alt="" coords="5,136,176,177"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#a1bc011c9c2db48289bf40214d972cec4" title="calculates distance between trajectory points in a plan" alt="" coords="224,5,393,47"/>
+<area shape="rect" id="node3" href="$classyield__plugin_1_1YieldPlugin.html#a3092a19247e5172989aa087b71570427" title="calculates the maximum speed in a set of tajectory points" alt="" coords="229,71,389,112"/>
+<area shape="rect" id="node4" href="$classyield__plugin_1_1YieldPlugin.html#acabf59c9274e6317e6abc1fc198efe50" title=" " alt="" coords="229,136,389,177"/>
+<area shape="rect" id="node5" href="$classyield__plugin_1_1YieldPlugin.html#ae7ffd46ccbae6de4b60a7f49a8cfa3d6" title="calculate quintic polynomial equation for a given x" alt="" coords="229,201,389,243"/>
+<area shape="rect" id="node6" href="$classyield__plugin_1_1YieldPlugin.html#afeab08ed138eafe6e24abd775c3163dd" title="calculate derivative of quintic polynomial equation for a given x" alt="" coords="229,267,389,308"/>
+</map>

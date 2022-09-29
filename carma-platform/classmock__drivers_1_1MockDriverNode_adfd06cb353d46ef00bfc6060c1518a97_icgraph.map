@@ -1,0 +1,6 @@
+<map id="mock_drivers::MockDriverNode::addPub" name="mock_drivers::MockDriverNode::addPub">
+<area shape="rect" id="node1" title="Function to add a publisher from a ROSComms object." alt="" coords="348,35,520,76"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockControllerDriver.html#ac0ac6cd368b7d57e7f6c83c27408133f" title="Pure virtual method which must be implemented by child classes. This method will be run once at start..." alt="" coords="105,5,299,47"/>
+<area shape="rect" id="node3" href="$classmock__drivers_1_1MockDriver.html#aad7620eb7aecece6a70e4181c938e945" title="A function to initialize the publishers and subsricers and start the node. In child classes,..." alt="" coords="104,71,300,98"/>
+<area shape="rect" id="node4" href="$mock__drivers_2rosbag__mock__drivers_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,71,56,98"/>
+</map>

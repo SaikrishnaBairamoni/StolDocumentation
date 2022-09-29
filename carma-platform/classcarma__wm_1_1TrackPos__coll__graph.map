@@ -1,0 +1,4 @@
+<map id="carma_wm::TrackPos" name="carma_wm::TrackPos">
+<area shape="rect" id="node1" title="Position in a track based coordinate system where the axis are downtrack and crosstrack...." alt="" coords="5,160,153,369"/>
+<area shape="rect" id="node2" title=" " alt="" coords="49,5,109,83"/>
+</map>

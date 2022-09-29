@@ -1,0 +1,5 @@
+<map id="guidance::GuidanceStateMachine::onVehicleStatus" name="guidance::GuidanceStateMachine::onVehicleStatus">
+<area shape="rect" id="node1" title="Handle vehicle status message from ROS network." alt="" coords="453,5,668,47"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceWorker.html#af084c565cf5a06c89e1e8465f92f54f9" title="Callback for vehicle status messages." alt="" coords="229,5,405,47"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceWorker.html#add371176c8b9a97186eee6015b3936c8" title=" " alt="" coords="5,5,181,47"/>
+</map>

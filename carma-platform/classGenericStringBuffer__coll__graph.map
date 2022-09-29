@@ -1,0 +1,9 @@
+<map id="GenericStringBuffer&lt; Encoding, Allocator &gt;" name="GenericStringBuffer&lt; Encoding, Allocator &gt;">
+<area shape="rect" id="node1" title="Represents an in&#45;memory output stream." alt="" coords="5,1203,160,1500"/>
+<area shape="rect" id="node2" title=" " alt="" coords="163,5,219,83"/>
+<area shape="rect" id="node3" href="$classinternal_1_1Stack.html" title=" " alt="" coords="283,696,450,1140"/>
+<area shape="rect" id="node6" href="$classinternal_1_1Stack.html" title="A type&#45;unsafe stack for storing different types of data." alt="" coords="310,175,487,604"/>
+<area shape="rect" id="node4" href="$classrapidjson_1_1Allocator.html" title="Concept for allocating, resizing and freeing memory block." alt="" coords="525,5,598,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="511,351,566,428"/>
+<area shape="rect" id="node7" title=" " alt="" coords="375,5,422,83"/>
+</map>

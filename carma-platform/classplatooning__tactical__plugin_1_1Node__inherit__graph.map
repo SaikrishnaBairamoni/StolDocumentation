@@ -1,0 +1,6 @@
+<map id="platooning_tactical_plugin::Node" name="platooning_tactical_plugin::Node">
+<area shape="rect" id="node1" title="ROS node for the PlatooningTacticalPlugin." alt="" coords="29,968,229,1148"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html" title="TacticalPlugin base class which can be extended by user provided plugins which wish to implement the ..." alt="" coords="39,681,219,920"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="35,131,223,633"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,253,83"/>
+</map>

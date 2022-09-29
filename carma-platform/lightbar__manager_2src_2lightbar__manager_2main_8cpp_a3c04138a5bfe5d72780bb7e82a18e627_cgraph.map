@@ -1,0 +1,14 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Main entry point for LightBarManager package." alt="" coords="5,199,56,226"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManager.html#a4186a5cdf7d08c6fb13c3de6472b7f44" title="Begin normal execution of LightBarManager worker. Will take over control flow of program and exit fro..." alt="" coords="104,192,280,233"/>
+<area shape="rect" id="node3" href="$classlightbar__manager_1_1LightBarManager.html#adcf9f9eed8df7d9a80b74a468f394ee5" title="Initialize ROS related functions. Pass &quot;test&quot; to setup ROS parameters for unit testing." alt="" coords="328,159,504,200"/>
+<area shape="rect" id="node12" href="$classlightbar__manager_1_1LightBarManager.html#afa0b9a88bb901c10bddcf65cade8d17a" title=" " alt="" coords="328,224,504,265"/>
+<area shape="rect" id="node4" href="$classlightbar__manager_1_1LightBarManager.html#a4416527c1092e7ae62f4c0b045df05a1" title=" " alt="" coords="553,5,766,47"/>
+<area shape="rect" id="node5" href="$classlightbar__manager_1_1LightBarManager.html#a6c391a132f16de56a2693107e914d74e" title=" " alt="" coords="552,71,767,112"/>
+<area shape="rect" id="node6" href="$classlightbar__manager_1_1LightBarManager.html#a782a2ddafcae48d4d97a8674e8cb901e" title=" " alt="" coords="815,131,1013,172"/>
+<area shape="rect" id="node8" href="$classlightbar__manager_1_1LightBarManager.html#a016aea09c86007f35d50240371f18844" title="Helper function that sets up ROS parameters for unit test." alt="" coords="571,188,747,229"/>
+<area shape="rect" id="node9" href="$classlightbar__manager_1_1LightBarManager.html#a3b9e331e9615954deb2399f1e1bbcd6b" title=" " alt="" coords="558,253,761,295"/>
+<area shape="rect" id="node11" href="$classlightbar__manager_1_1LightBarManager.html#ae6d7900403386bf7c3d565c9f20a1117" title="Callback function for turning signal." alt="" coords="821,316,1007,357"/>
+<area shape="rect" id="node7" href="$classlightbar__manager_1_1LightBarManager.html#a2428c8eac0dab494d0d542c28b0e7565" title="Try to turn the given indicator ON or OFF (comm with hardware) upon the given component&#39;s request." alt="" coords="1061,221,1237,263"/>
+<area shape="rect" id="node10" href="$classlightbar__manager_1_1LightBarManager.html#a2e9c417c53e30b85a24f672094c7a973" title="Miscellaneous function that forces the state to disengaged and turn off all indicators...." alt="" coords="826,251,1002,292"/>
+</map>

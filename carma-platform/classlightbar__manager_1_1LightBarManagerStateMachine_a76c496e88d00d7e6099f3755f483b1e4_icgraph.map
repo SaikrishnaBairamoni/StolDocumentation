@@ -1,0 +1,9 @@
+<map id="lightbar_manager::LightBarManagerStateMachine::next" name="lightbar_manager::LightBarManagerStateMachine::next">
+<area shape="rect" id="node1" title="Transition to the next state of the LightBarStateMachine." alt="" coords="841,104,1024,145"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManagerWorker.html#a702dd03bbbf71db4ed844ea36aca5d52" title="Transition to the next state of the LightBarStateMachine Not used at the moment as state machine full..." alt="" coords="589,5,765,47"/>
+<area shape="rect" id="node3" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a3ed784c7837ddbb1290ee6e7ae28e0c7" title=" " alt="" coords="572,71,781,112"/>
+<area shape="rect" id="node6" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a91cf833ba9ff960996202c1e8d6388b1" title=" " alt="" coords="560,136,793,177"/>
+<area shape="rect" id="node7" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a4890a123e4c9169ae288c578a67338ee" title=" " alt="" coords="569,201,784,243"/>
+<area shape="rect" id="node4" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a16ccd712ba66394cfd71e32ce102126f" title="This function triggers the transitioning to the next state in LightBarStateMachine based on the guida..." alt="" coords="285,129,512,185"/>
+<area shape="rect" id="node5" href="$classlightbar__manager_1_1LightBarManagerWorker.html#aca9fd87b1b120d1415adb3315675c700" title="This function relays the state change msg to the state maching. It triggers the transitioning to the ..." alt="" coords="5,136,237,177"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="carma_wm::query::nonConnectedAdjacentLeft" name="carma_wm::query::nonConnectedAdjacentLeft">
+<area shape="rect" id="node1" title="Given the cartesian point on the map, tries to get the opposite direction lanelet on the left This fu..." alt="" coords="1300,39,1512,80"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1query.html#a8566f612a10ecd787f2f18490648bed4" title="(non&#45;const version) Given the cartesian point on the map, tries to get the opposite direction lanelet..." alt="" coords="1040,5,1252,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a264607b6ec5b20d8971f8dc14a4b1825" title="Split given lanelet&#39;s adjacent, OPPOSITE lanelet with same proportion as the given point&#39;s downtrack ..." alt="" coords="1041,71,1251,112"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a12708b289f7f3d8f10c6dc749bf14d65" title="Create workzone geofence. Create diagonal lanelets and a lanelet that houses opposing lane&#39;s trafficl..." alt="" coords="781,71,992,112"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a5ae3f2086831ebd932e19b2bdfd76405" title="Creates a single workzone geofence (in the vector) that includes all additional lanelets (housing tra..." alt="" coords="523,71,733,112"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a649174a7a7270df95532cad5131bf4cb" title="Adds a geofence to the current map and publishes the ROS msg." alt="" coords="264,71,475,112"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,71,216,112"/>
+</map>

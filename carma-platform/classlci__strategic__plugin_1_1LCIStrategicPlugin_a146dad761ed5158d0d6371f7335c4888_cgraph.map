@@ -1,0 +1,6 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::get_earliest_entry_time" name="lci_strategic_plugin::LCIStrategicPlugin::get_earliest_entry_time">
+<area shape="rect" id="node1" title="Gets the earliest entry time into the intersection that is kinematically possible for the vehicle...." alt="" coords="5,107,168,163"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aa2bd4aa59c217c225a29fcf2d6c3552d" title="Get required distance to accel or decel to reach departure_speed with given speed and acceleration pa..." alt="" coords="229,5,387,76"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a1677e95026e7023261613dd84ee82ef0" title="Get required distance to accel then decel, or vise versa &#45; each at least once &#45; to reach departure_sp..." alt="" coords="229,100,387,171"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aa64916c2b9a3b7eedc359c68931f967c" title="Get the speed between the acceleration and deceleration pieces." alt="" coords="216,195,400,251"/>
+</map>

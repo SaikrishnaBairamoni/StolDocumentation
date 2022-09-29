@@ -1,0 +1,4 @@
+<map id="carma_wm::WMListenerWorker::setMapCallback" name="carma_wm::WMListenerWorker::setMapCallback">
+<area shape="rect" id="node1" title="Allows user to set a callback to be triggered when a map update is received." alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node2" href="$helper_8cpp.html#ac0f7f7ec5375e47d4c681359431356b9" title=" " alt="" coords="256,13,327,39"/>
+</map>

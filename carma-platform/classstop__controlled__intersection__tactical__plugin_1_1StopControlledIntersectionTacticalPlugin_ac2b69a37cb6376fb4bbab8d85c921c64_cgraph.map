@@ -1,0 +1,6 @@
+<map id="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::on_configure_plugin" name="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::on_configure_plugin">
+<area shape="rect" id="node1" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,42,208,113"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a50b54d5c4cc5180eeef0c78c55f70ec3" title="Method to return the default world model provided as a convience by this base class If this method or..." alt="" coords="291,5,457,61"/>
+<area shape="rect" id="node4" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#a0e01c19708de3a3c34e7e5cff2f77bab" title=" " alt="" coords="256,86,492,157"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a9c9d8aa9324b12f941dc0be7394f98e7" title="Helper function for lazy initialization of wm_listener_. If already initialized method returns (ie...." alt="" coords="540,5,705,61"/>
+</map>

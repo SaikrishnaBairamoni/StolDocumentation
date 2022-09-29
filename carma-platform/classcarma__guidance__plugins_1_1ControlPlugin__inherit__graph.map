@@ -1,0 +1,6 @@
+<map id="carma_guidance_plugins::ControlPlugin" name="carma_guidance_plugins::ControlPlugin">
+<area shape="rect" id="node1" title="ControlPlugin base class which can be extended by user provided plugins which wish to implement the C..." alt="" coords="46,681,213,1081"/>
+<area shape="rect" id="node4" href="$classSUB_1_1Node.html" title="TODO for USER: Add class description." alt="" coords="29,1129,229,1749"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="35,131,223,633"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,253,83"/>
+</map>

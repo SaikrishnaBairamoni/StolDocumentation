@@ -1,0 +1,8 @@
+<map id="route::RouteGeneratorWorker::routing" name="route::RouteGeneratorWorker::routing">
+<area shape="rect" id="node1" title="Generate Lanelet2 route based on input destinations." alt="" coords="669,39,859,80"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#a67f9c465f5873765f118ec9a858fd9ed" title="After route is invalidated, this function returns a new route based on the destinations points." alt="" coords="425,5,621,47"/>
+<area shape="rect" id="node5" href="$classroute_1_1RouteGeneratorWorker.html#a0ac499df9ad47fb4c66e7163c9611a6a" title="Set_active_route service callback. User can select a route to start following by calling this service..." alt="" coords="429,71,618,112"/>
+<area shape="rect" id="node3" href="$classroute_1_1RouteGeneratorWorker.html#aaa0e672955fabcf13358f07cf5123a28" title="Spin callback which will be called frequently based on spin rate." alt="" coords="188,5,377,47"/>
+<area shape="rect" id="node4" href="$classroute_1_1Route.html#a738074e042da30c623a1c0e80d019913" title=" " alt="" coords="5,5,140,47"/>
+<area shape="rect" id="node6" href="$classroute_1_1Route.html#a5f6b00da6b8e1cd9238b9d60457276c8" title=" " alt="" coords="215,71,350,112"/>
+</map>

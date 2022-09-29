@@ -1,0 +1,7 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::boundary_accel_nocruise_maxspeed_decel" name="lci_strategic_plugin::LCIStrategicPlugin::boundary_accel_nocruise_maxspeed_decel">
+<area shape="rect" id="node1" title=" " alt="" coords="748,5,923,76"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#adf303b014faf0df91b93e2a7a37df9a8" title="Get all possible trajectory smoothing parameters for each segments. Later this will be used to genera..." alt="" coords="520,13,700,69"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#adb5f42d9458f7c1e4b7c87310c015059" title="Method for performing maneuver planning when the current plugin state is TransitState::APPROACHING Th..." alt="" coords="289,13,472,69"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a8b3f0877902b0153950cf4577e7b6ac0" title="Service callback for arbitrator maneuver planning." alt="" coords="104,13,241,69"/>
+<area shape="rect" id="node5" href="$lci__strategic__plugin_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,27,56,54"/>
+</map>

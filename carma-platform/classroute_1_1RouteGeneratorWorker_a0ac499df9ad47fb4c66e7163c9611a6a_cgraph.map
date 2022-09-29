@@ -1,0 +1,15 @@
+<map id="route::RouteGeneratorWorker::setActiveRouteCb" name="route::RouteGeneratorWorker::setActiveRouteCb">
+<area shape="rect" id="node1" title="Set_active_route service callback. User can select a route to start following by calling this service..." alt="" coords="5,273,195,315"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#af67153a36940ea3e4dda5e90101f5b2d" title="Helper function to check whether a route&#39;s shortest path contains any duplicate Lanelet IDs...." alt="" coords="243,5,516,47"/>
+<area shape="rect" id="node3" href="$classroute_1_1RouteGeneratorWorker.html#a8bd1257e2b6df3b4a41bc0c2c26ae31b" title="composeRouteMarkerMsg is a function to generate route rviz markers" alt="" coords="285,71,474,112"/>
+<area shape="rect" id="node7" href="$classroute_1_1RouteGeneratorWorker.html#acf66ad1c4a68e68b769c2aec9d45efd7" title="Helper function to generate a CARMA route message based on planned lanelet route." alt="" coords="285,136,474,177"/>
+<area shape="rect" id="node8" href="$classroute_1_1RouteStateWorker.html#a1a9c85b2c2349f3fe3c53c074b02f5d5" title="Get current route state machine state." alt="" coords="298,201,461,243"/>
+<area shape="rect" id="node9" href="$classroute_1_1RouteGeneratorWorker.html#ac73746bfbb1465b31651bcfe2481b1d1" title="Function to load route destination points from a route file and store them in a vector of 3D points." alt="" coords="273,266,485,322"/>
+<area shape="rect" id="node10" href="$classroute_1_1RouteGeneratorWorker.html#abb4a34fba858902068cede9dcdfa67cf" title="Function to take route destination points from a vector of 3D points and convert them from lat/lon va..." alt="" coords="264,345,495,387"/>
+<area shape="rect" id="node11" href="$classroute_1_1RouteStateWorker.html#ae8db8fa631f6265a5e552ae45ff79c8d" title="Process route event based on designed state machine diagram." alt="" coords="298,411,461,452"/>
+<area shape="rect" id="node12" href="$classroute_1_1RouteGeneratorWorker.html#afb3229ca1330570406ad5e766df4ed27" title=" " alt="" coords="285,476,474,517"/>
+<area shape="rect" id="node13" href="$classroute_1_1RouteGeneratorWorker.html#ac63761bf325459098e5efce7879d4c56" title="Generate Lanelet2 route based on input destinations." alt="" coords="285,541,474,583"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="564,71,709,112"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="757,71,903,112"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="951,71,1096,112"/>
+</map>

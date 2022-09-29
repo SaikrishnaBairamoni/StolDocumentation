@@ -1,0 +1,4 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::currentPoseCb" name="sci_strategic_plugin::SCIStrategicPlugin::currentPoseCb">
+<area shape="rect" id="node1" title="callback function for current pose" alt="" coords="196,5,335,61"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a9a5e689ddad6738f71d325cb70ad4901" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,5,148,61"/>
+</map>

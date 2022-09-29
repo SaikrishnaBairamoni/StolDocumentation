@@ -1,0 +1,10 @@
+<map id="carma_wm::geometry::objectToMapPolygon" name="carma_wm::geometry::objectToMapPolygon">
+<area shape="rect" id="node1" title="Uses the provided pose and size vector of an ExternalObject to compute what the polygon would be of t..." alt="" coords="769,97,919,139"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a131c9d5adca779c9efd7601f1dcfef5b" title="Gets Cartesian distance to the closest object on the same lane as the given point." alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a19b8c922c7524c769f96a57b91f6a6bd" title="Gets all roadway objects currently in the same lane as the given lanelet." alt="" coords="515,64,721,105"/>
+<area shape="rect" id="node7" href="$classcarma__wm_1_1CARMAWorldModel.html#a9a57996d0476022d6e047f1596911147" title="Gets the a lanelet the object is currently on determined by its position on the semantic map...." alt="" coords="515,129,721,171"/>
+<area shape="rect" id="node8" href="$classcarma__wm_1_1CARMAWorldModel.html#a33571ca2cc04d5c2a85dd28cbb59f33f" title="Converts an ExternalObject in a RoadwayObstacle by mapping its position onto the semantic map...." alt="" coords="260,161,467,203"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#a5a13a3b4f0599ad702745e559619965f" title="This function is called by distanceToObjectBehindInLane or distanceToObjectAheadInLane...." alt="" coords="260,71,467,112"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1CARMAWorldModel.html#afbee9dff34ee62ac507d5fc39bcb2e10" title="Gets Downtrack distance to AND copy of the closest object AHEAD on the same lane as the given point...." alt="" coords="5,39,212,80"/>
+<area shape="rect" id="node6" href="$classcarma__wm_1_1CARMAWorldModel.html#aa291cd8ca71835c0720dc853031be300" title="Gets Downtrack distance to AND copy of the closest object BEHIND on the same lane as the given point...." alt="" coords="5,104,212,145"/>
+</map>

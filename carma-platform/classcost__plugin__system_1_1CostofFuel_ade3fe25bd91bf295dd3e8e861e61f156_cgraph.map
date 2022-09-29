@@ -1,0 +1,7 @@
+<map id="cost_plugin_system::CostofFuel::compute_cost" name="cost_plugin_system::CostofFuel::compute_cost">
+<area shape="rect" id="node1" title="Compute the cost of a given maneuver plan." alt="" coords="5,104,184,145"/>
+<area shape="rect" id="node2" href="$namespacecost__utils.html#a9085af85baecba8cc448ba31736a1b5f" title="Get the end speed of the specified maneuver." alt="" coords="232,5,399,47"/>
+<area shape="rect" id="node3" href="$namespacecost__utils.html#a6b23212b8dff611a3aa2014f58a0b8ee" title="Get the end time of the specified maneuver." alt="" coords="232,71,399,112"/>
+<area shape="rect" id="node4" href="$namespacecost__utils.html#a86b850960da1a5f8c4be4fb3e39b8205" title="Get the start speed of the specified maneuver." alt="" coords="232,136,399,177"/>
+<area shape="rect" id="node5" href="$namespacecost__utils.html#af29dec506f8d8e0b08e7f677eab297d4" title="Get the start time of the specified maneuver." alt="" coords="232,201,399,243"/>
+</map>

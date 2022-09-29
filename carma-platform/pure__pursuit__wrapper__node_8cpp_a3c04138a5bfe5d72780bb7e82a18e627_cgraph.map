@@ -1,0 +1,5 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,20,56,47"/>
+<area shape="rect" id="node2" href="$classpure__pursuit__wrapper_1_1PurePursuitWrapper.html#a536107a6608fd83e7e77d045d1402c18" title=" " alt="" coords="104,5,256,61"/>
+<area shape="rect" id="node3" href="$classpure__pursuit__wrapper_1_1PurePursuitWrapper.html#a2ec2ebfb102ae6d5f1cf09a77b52cbdd" title="Applies a specified response lag in seconds to the trajectory shifting the whole thing by the specifi..." alt="" coords="304,5,451,61"/>
+</map>

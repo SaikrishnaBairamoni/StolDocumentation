@@ -1,0 +1,5 @@
+<map id="carma_wm::IndexedDistanceMap::getElementIndexByDistance" name="carma_wm::IndexedDistanceMap::getElementIndexByDistance">
+<area shape="rect" id="node1" title="Returns index of the linestring which the provided distance is within. NOTE: Unlike the rest of this ..." alt="" coords="515,5,729,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a1e7bf1856cd6cd7dbf1e262d378c6087" title="Converts a route track position into a map frame cartesian point." alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#af091e77668f082aaafea367836118dc9" title="Samples the route centerline between the provided downtracks with the provided step size...." alt="" coords="5,5,212,47"/>
+</map>

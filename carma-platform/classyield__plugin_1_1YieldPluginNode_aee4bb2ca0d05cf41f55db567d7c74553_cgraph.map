@@ -1,0 +1,13 @@
+<map id="yield_plugin::YieldPluginNode::on_configure_plugin" name="yield_plugin::YieldPluginNode::on_configure_plugin">
+<area shape="rect" id="node1" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,107,179,148"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#a7b2ee0cdcba01c2df0f1d9df679424f8" title="callback for bsm message" alt="" coords="229,5,389,47"/>
+<area shape="rect" id="node4" href="$classyield__plugin_1_1YieldPlugin.html#aa972945a903d616ef6c3d54c4a5893c9" title="Callback for map projection string to define lat/lon &#45;&gt; map conversion." alt="" coords="229,71,389,112"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a50b54d5c4cc5180eeef0c78c55f70ec3" title="Method to return the default world model provided as a convience by this base class If this method or..." alt="" coords="227,135,392,191"/>
+<area shape="rect" id="node7" href="$classyield__plugin_1_1YieldPlugin.html#a3276c693a65319e769e63078284d3056" title="callback for mobility request" alt="" coords="229,217,389,259"/>
+<area shape="rect" id="node3" href="$classyield__plugin_1_1YieldPlugin.html#a852c927a6a8d94bfdbeeffcf56ba6331" title=" " alt="" coords="456,5,616,47"/>
+<area shape="rect" id="node6" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a9c9d8aa9324b12f941dc0be7394f98e7" title="Helper function for lazy initialization of wm_listener_. If already initialized method returns (ie...." alt="" coords="453,102,619,158"/>
+<area shape="rect" id="node8" href="$classyield__plugin_1_1YieldPlugin.html#acf45eb277044353dbb87226f0bec3f06" title="compose a mobility response message" alt="" coords="440,181,632,223"/>
+<area shape="rect" id="node9" href="$classyield__plugin_1_1YieldPlugin.html#a5255e398082083d48e7b07054f82fad8" title="convert a carma trajectory from ecef frame to map frame ecef trajectory consists of the point and a s..." alt="" coords="456,246,616,302"/>
+<area shape="rect" id="node11" href="$classyield__plugin_1_1YieldPlugin.html#a2def22504a4972db1994e96033e76ee9" title="set values for member variables related to cooperative behavior" alt="" coords="445,325,627,367"/>
+<area shape="rect" id="node10" href="$classyield__plugin_1_1YieldPlugin.html#ac0b6fb988e61ce2cfb04c4a1f33070d5" title="convert a point in ecef frame (in cm) into map frame (in meters)" alt="" coords="680,253,840,295"/>
+</map>

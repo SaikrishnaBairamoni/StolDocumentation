@@ -1,0 +1,6 @@
+<map id="NS3Adapter::packMessage" name="NS3Adapter::packMessage">
+<area shape="rect" id="node1" title="Packs an outgoing message into J2375 standard." alt="" coords="469,31,649,57"/>
+<area shape="rect" id="node2" href="$classNS3Adapter.html#a677a80e6965180882714e115bc439b61" title="Handles outbound messages from the ROS network." alt="" coords="199,5,421,32"/>
+<area shape="rect" id="node4" href="$classNS3Adapter.html#a1e33b194c9ae9d6eb0454c86cb8d4cc6" title="Message sending service." alt="" coords="210,56,410,83"/>
+<area shape="rect" id="node3" href="$classNS3Adapter.html#ab2dfb933cc738732c0580b62c233f876" title="Initializes ROS context for this node." alt="" coords="5,31,151,57"/>
+</map>

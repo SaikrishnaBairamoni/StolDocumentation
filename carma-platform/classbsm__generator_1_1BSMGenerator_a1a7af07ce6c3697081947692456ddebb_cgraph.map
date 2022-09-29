@@ -1,0 +1,6 @@
+<map id="bsm_generator::BSMGenerator::generateBSM" name="bsm_generator::BSMGenerator::generateBSM">
+<area shape="rect" id="node1" title="Timer callback, which publishes a BSM." alt="" coords="5,71,205,112"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGeneratorWorker.html#a04fa9f5ba903c44d5cc41eec648d0158" title="Function to obtain the current BSM message ID. The ID is updated to a new random BSM message ID every..." alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node3" href="$classbsm__generator_1_1BSMGeneratorWorker.html#acc10d131e7ab9d59e0e6da8f09ada723" title="Function to increment the BSM message counter and obtain the new counter value. Counter restarts at 0..." alt="" coords="253,71,453,112"/>
+<area shape="rect" id="node4" href="$classbsm__generator_1_1BSMGeneratorWorker.html#aef1b7489ab8ed61adaca1564d2569b3f" title="Function to obtain the &#39;milliseconds&#39; mark of the provided time within the last minute." alt="" coords="253,136,453,177"/>
+</map>

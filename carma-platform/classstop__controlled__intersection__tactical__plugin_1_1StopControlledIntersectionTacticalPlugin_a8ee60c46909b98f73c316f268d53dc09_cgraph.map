@@ -1,0 +1,6 @@
+<map id="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::maneuvers_to_points" name="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::maneuvers_to_points">
+<area shape="rect" id="node1" title="Converts a set of requested stop controlled intersection maneuvers to point speed limit pairs." alt="" coords="5,100,248,171"/>
+<area shape="rect" id="node2" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#ae71b3324a56fd1e1ffdea9e1e2ac3686" title="Creates a speed profile according to case one of the stop controlled intersection,..." alt="" coords="296,5,511,76"/>
+<area shape="rect" id="node3" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#af1fdb9f79d7712bf60feb8b82a4868b4" title="Creates a speed profile according to case three of the stop controlled intersection,..." alt="" coords="296,100,511,171"/>
+<area shape="rect" id="node4" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#aa5f0a6401736cd8f388b5b73a104df9d" title="Creates a speed profile according to case two of the stop controlled intersection,..." alt="" coords="296,195,511,265"/>
+</map>

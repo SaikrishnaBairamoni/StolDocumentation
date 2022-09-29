@@ -1,0 +1,6 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_leaderwaiting" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_leaderwaiting">
+<area shape="rect" id="node1" title="Function to process mobility request in leader waiting state." alt="" coords="5,70,188,126"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="248,5,467,47"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a876cee27af19b1f215ffd4a2190be371" title="Function to convert ecef location to a 2d point in map frame." alt="" coords="266,70,449,126"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="236,149,479,191"/>
+</map>

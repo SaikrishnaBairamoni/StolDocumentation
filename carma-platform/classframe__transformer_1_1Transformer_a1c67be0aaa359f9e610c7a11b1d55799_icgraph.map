@@ -1,0 +1,5 @@
+<map id="frame_transformer::Transformer::transform" name="frame_transformer::Transformer::transform">
+<area shape="rect" id="node1" title="Helper method which takes in an input message and transforms it to the provided frame...." alt="" coords="451,5,604,47"/>
+<area shape="rect" id="node2" href="$classframe__transformer_1_1Transformer.html#a585875deb45761b50c0362bd0ff8cb27" title="Callback for input data. Transforms the data then republishes it." alt="" coords="221,5,403,47"/>
+<area shape="rect" id="node3" href="$classframe__transformer_1_1Transformer.html#a87337853dbe76d3c1020152c47bfc6d9" title="Constructor which sets up the required publishers and subscribers." alt="" coords="5,5,173,47"/>
+</map>

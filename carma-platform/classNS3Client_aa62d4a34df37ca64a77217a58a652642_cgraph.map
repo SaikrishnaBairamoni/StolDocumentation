@@ -1,0 +1,4 @@
+<map id="NS3Client::connect" name="NS3Client::connect">
+<area shape="rect" id="node1" title="Connects the driver to the OBU at the provided IPv4 address and Port." alt="" coords="5,5,139,32"/>
+<area shape="rect" id="node2" href="$classNS3Client.html#a51572c7be971d670e29cc8ae0504c179" title="maintains the process thread" alt="" coords="187,5,320,32"/>
+</map>

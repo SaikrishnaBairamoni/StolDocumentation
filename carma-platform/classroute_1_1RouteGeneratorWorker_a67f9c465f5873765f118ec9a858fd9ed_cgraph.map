@@ -1,0 +1,4 @@
+<map id="route::RouteGeneratorWorker::rerouteAfterRouteInvalidation" name="route::RouteGeneratorWorker::rerouteAfterRouteInvalidation">
+<area shape="rect" id="node1" title="After route is invalidated, this function returns a new route based on the destinations points." alt="" coords="5,5,201,47"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#ac63761bf325459098e5efce7879d4c56" title="Generate Lanelet2 route based on input destinations." alt="" coords="249,5,439,47"/>
+</map>

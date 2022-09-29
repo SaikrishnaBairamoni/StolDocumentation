@@ -1,0 +1,8 @@
+<map id="carma_guidance_plugins::PluginBaseNode::get_activation_status" name="carma_guidance_plugins::PluginBaseNode::get_activation_status">
+<area shape="rect" id="node1" title="Returns the activation status of this plugin. The plugins API callbacks will only be triggered when t..." alt="" coords="516,125,681,181"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#ae38e2f1beee22ec9f49e934820b60b7c" title="Callback for the plugin discovery timer which will publish the plugin discovery message." alt="" coords="281,5,468,61"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#ab4b73c4d2ac5c44c17c223b159a04ca1" title=" " alt="" coords="292,85,457,141"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html#a1cf28fec547006198c7a0c20297ea96a" title=" " alt="" coords="292,165,457,221"/>
+<area shape="rect" id="node6" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html#ab558799c47c26fb4285539923aefca9e" title=" " alt="" coords="292,245,457,301"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a870d8e69433a175360bced984fa9a580" title="PluginBaseNode constructor." alt="" coords="5,13,233,54"/>
+</map>

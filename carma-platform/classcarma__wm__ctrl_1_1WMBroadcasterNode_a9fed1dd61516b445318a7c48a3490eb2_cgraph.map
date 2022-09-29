@@ -1,0 +1,8 @@
+<map id="carma_wm_ctrl::WMBroadcasterNode::initializeWorker" name="carma_wm_ctrl::WMBroadcasterNode::initializeWorker">
+<area shape="rect" id="node1" title="Initializes the WMBroadcaster worker with reference to the CarmaLifecycleNode itself." alt="" coords="5,136,216,177"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#afa97e72faca02d7e112131d97b81a55e" title="Callback to publish active geofence information." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#a25335e1d0f13808c0d2fbfd3148c7b0b" title="Callback to publish TrafficControlRequest Messages." alt="" coords="264,71,475,112"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#a4f9946dd0bfea84911c55c0d69032b94" title="Callback to publish a map." alt="" coords="264,136,475,177"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#aa0211099de1b21918abb44afcc6ca96d" title="Callback to publish map updates (geofences)" alt="" coords="264,201,475,243"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#a4dd3b79154ba29be69feef37259b200f" title="Callback to publish traffic control acknowledgement information." alt="" coords="264,267,475,308"/>
+</map>

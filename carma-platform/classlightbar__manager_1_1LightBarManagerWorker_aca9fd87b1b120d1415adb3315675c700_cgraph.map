@@ -1,0 +1,8 @@
+<map id="lightbar_manager::LightBarManagerWorker::handleStateChange" name="lightbar_manager::LightBarManagerWorker::handleStateChange">
+<area shape="rect" id="node1" title="This function relays the state change msg to the state maching. It triggers the transitioning to the ..." alt="" coords="5,71,237,112"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a16ccd712ba66394cfd71e32ce102126f" title="This function triggers the transitioning to the next state in LightBarStateMachine based on the guida..." alt="" coords="285,63,512,119"/>
+<area shape="rect" id="node3" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a3ed784c7837ddbb1290ee6e7ae28e0c7" title=" " alt="" coords="572,5,781,47"/>
+<area shape="rect" id="node5" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a91cf833ba9ff960996202c1e8d6388b1" title=" " alt="" coords="560,71,793,112"/>
+<area shape="rect" id="node6" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a4890a123e4c9169ae288c578a67338ee" title=" " alt="" coords="569,136,784,177"/>
+<area shape="rect" id="node4" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a76c496e88d00d7e6099f3755f483b1e4" title="Transition to the next state of the LightBarStateMachine." alt="" coords="841,71,1024,112"/>
+</map>

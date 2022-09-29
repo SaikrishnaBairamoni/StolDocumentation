@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classarbitrator_1_1PlanningStrategy.html" title="Generic interface representing a strategy for arriving at a maneuver plan." alt="" coords="5,5,183,32"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1TreePlanner.html" title="Implementation of PlanningStrategy using a generic tree search algorithm." alt="" coords="231,5,380,32"/>
+</map>

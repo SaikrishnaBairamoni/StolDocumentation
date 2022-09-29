@@ -1,0 +1,6 @@
+<map id="port_drayage_plugin::PortDrayageMobilityOperationMsg" name="port_drayage_plugin::PortDrayageMobilityOperationMsg">
+<area shape="rect" id="node1" title="Convenience struct for storing all data contained in a received MobilityOperation message&#39;s strategy_..." alt="" coords="105,189,329,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,151,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="189,5,244,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="268,5,395,83"/>
+</map>

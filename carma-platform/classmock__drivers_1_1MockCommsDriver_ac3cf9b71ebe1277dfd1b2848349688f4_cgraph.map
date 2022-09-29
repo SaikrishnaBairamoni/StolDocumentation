@@ -1,0 +1,5 @@
+<map id="mock_drivers::MockCommsDriver::onRun" name="mock_drivers::MockCommsDriver::onRun">
+<area shape="rect" id="node1" title="Pure virtual method which must be implemented by child classes. This method will be run once at start..." alt="" coords="5,5,223,47"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriverNode.html#a201cf1d286f8017aba6bf463bb72b9e3" title="Function to add a subscriber from a ROSComms object." alt="" coords="271,5,443,47"/>
+<area shape="rect" id="node3" href="$helper_8cpp.html#ac0f7f7ec5375e47d4c681359431356b9" title=" " alt="" coords="491,13,561,39"/>
+</map>

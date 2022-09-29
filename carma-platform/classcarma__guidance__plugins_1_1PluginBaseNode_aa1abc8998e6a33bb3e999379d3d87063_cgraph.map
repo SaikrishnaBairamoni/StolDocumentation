@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::PluginBaseNode::get_world_model_listener" name="carma_guidance_plugins::PluginBaseNode::get_world_model_listener">
+<area shape="rect" id="node1" title="Method to return the default world model listener provided as a convience by this base class If this ..." alt="" coords="5,5,171,61"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a9c9d8aa9324b12f941dc0be7394f98e7" title="Helper function for lazy initialization of wm_listener_. If already initialized method returns (ie...." alt="" coords="219,5,384,61"/>
+</map>

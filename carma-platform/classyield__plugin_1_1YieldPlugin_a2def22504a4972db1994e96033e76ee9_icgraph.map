@@ -1,0 +1,5 @@
+<map id="yield_plugin::YieldPlugin::set_incoming_request_info" name="yield_plugin::YieldPlugin::set_incoming_request_info">
+<area shape="rect" id="node1" title="set values for member variables related to cooperative behavior" alt="" coords="435,5,617,47"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#a3276c693a65319e769e63078284d3056" title="callback for mobility request" alt="" coords="227,5,387,47"/>
+<area shape="rect" id="node3" href="$classyield__plugin_1_1YieldPluginNode.html#aee4bb2ca0d05cf41f55db567d7c74553" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,5,179,47"/>
+</map>

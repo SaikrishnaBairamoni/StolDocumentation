@@ -1,0 +1,7 @@
+<map id="mock_drivers::MockDriver::driverDiscovery" name="mock_drivers::MockDriver::driverDiscovery">
+<area shape="rect" id="node1" title="Helper function to publish the driver discovery message." alt="" coords="5,104,177,145"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriver.html#afce860fdbdc6ec54c353513b7525ec8c" title="Pure Virtual method. Returns an integer value which corresponds to the cav_msgs/DriverStatus enum fel..." alt="" coords="233,5,405,47"/>
+<area shape="rect" id="node3" href="$classmock__drivers_1_1MockDriver.html#aeb52896a9a6edf13af50e9d431624ecd" title="Pure Virtual method which child classes must override that returns the list of all driver types that ..." alt="" coords="233,71,405,112"/>
+<area shape="rect" id="node4" href="$classmock__drivers_1_1MockDriverNode.html#a165494adb60e7dba9d4ef2c95fce2aa7" title="Returns the fully qualified name of this node in the ROS network graph." alt="" coords="233,136,405,177"/>
+<area shape="rect" id="node5" href="$classmock__drivers_1_1MockDriverNode.html#a5093a4c0d55e49d48e246fd5e8c136a9" title="Publish data with no header on a desired topic." alt="" coords="225,201,412,243"/>
+</map>

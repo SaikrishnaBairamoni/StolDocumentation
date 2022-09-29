@@ -1,0 +1,4 @@
+<map id="arbitrator_utils::get_plan_end_time" name="arbitrator_utils::get_plan_end_time">
+<area shape="rect" id="node1" title="Get the end time of the first maneuver in the plan." alt="" coords="5,5,133,47"/>
+<area shape="rect" id="node2" href="$namespacearbitrator__utils.html#a3104a221fe7ccf65bc81850e5e8481ab" title="Get the end time of the specified maneuver." alt="" coords="181,5,328,47"/>
+</map>

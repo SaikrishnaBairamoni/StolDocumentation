@@ -1,0 +1,7 @@
+<map id="carma_wm::geometry::point_to_point_yaw" name="carma_wm::geometry::point_to_point_yaw">
+<area shape="rect" id="node1" title="Computes the 2d orientation of the vector from the provided start point to end point." alt="" coords="515,50,660,91"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#a906a93ecedb3430179178f7b44d0b2e8" title="Computes the curvature of a circular arc that passes through the two provided points...." alt="" coords="285,15,441,57"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#a1e7bf1856cd6cd7dbf1e262d378c6087" title="Converts a route track position into a map frame cartesian point." alt="" coords="260,82,467,123"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#aec227caee1708506f7fec3561538ef38" title="Computes the curvature of each point in the provided list by calling circular_arc_curvature using tha..." alt="" coords="36,5,181,61"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1CARMAWorldModel.html#af091e77668f082aaafea367836118dc9" title="Samples the route centerline between the provided downtracks with the provided step size...." alt="" coords="5,85,212,126"/>
+</map>

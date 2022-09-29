@@ -1,0 +1,4 @@
+<map id="GenericPointer::Append" name="GenericPointer::Append">
+<area shape="rect" id="node1" title="Append a token and return a new Pointer." alt="" coords="212,5,371,32"/>
+<area shape="rect" id="node2" href="$classGenericPointer.html#a9f8a1711f5b8e0d951c25c6c65326f77" title="Append a name token with length, and return a new Pointer." alt="" coords="5,5,164,32"/>
+</map>

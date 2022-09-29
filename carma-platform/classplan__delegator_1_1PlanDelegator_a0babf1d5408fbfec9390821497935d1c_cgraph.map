@@ -1,0 +1,9 @@
+<map id="plan_delegator::PlanDelegator::planTrajectory" name="plan_delegator::PlanDelegator::planTrajectory">
+<area shape="rect" id="node1" title="Plan trajectory based on latest maneuver plan via ROS service call to plugins." alt="" coords="5,136,199,177"/>
+<area shape="rect" id="node2" href="$classplan__delegator_1_1PlanDelegator.html#a3e82a12902dd3a6c2db17f3012d39574" title="Generate new PlanTrajecory service request based on current planning progress." alt="" coords="247,5,459,47"/>
+<area shape="rect" id="node4" href="$classplan__delegator_1_1PlanDelegator.html#a11cce6168539b4bd0a24d9d8bb1043b9" title="Get PlanTrajectory service client by plugin name and create new PlanTrajectory service client if spec..." alt="" coords="256,71,449,112"/>
+<area shape="rect" id="node5" href="$classplan__delegator_1_1PlanDelegator.html#a4548e8d6a52f762c4207099e9e571b06" title="Example if a maneuver end time has passed current system time." alt="" coords="256,136,449,177"/>
+<area shape="rect" id="node6" href="$classplan__delegator_1_1PlanDelegator.html#a73072006eb567e8fa0e32b7c48ec56e6" title="Example if a trajectory plan is longer than configured time thresheld." alt="" coords="256,201,449,243"/>
+<area shape="rect" id="node7" href="$classplan__delegator_1_1PlanDelegator.html#a33c99ac83fc07014db94d406e1e11da2" title="Example if a trajectory plan contains at least two trajectory points." alt="" coords="256,267,449,308"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a31ddfa96008060a7c10c2bbd08a5739d" title="Extract extrinsic roll&#45;pitch&#45;yaw from quaternion." alt="" coords="507,5,652,47"/>
+</map>

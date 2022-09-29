@@ -1,0 +1,7 @@
+<map id="GenericValue::GetStringPointer" name="GenericValue::GetStringPointer">
+<area shape="rect" id="node1" title=" " alt="" coords="709,31,912,57"/>
+<area shape="rect" id="node2" href="$classGenericValue.html#a213ba89ef5ef961a5e655bd8c78ac9f4" title="Destructor." alt="" coords="471,31,661,57"/>
+<area shape="rect" id="node3" href="$classGenericValue.html#ad7502bbfcd0c14f7ece07243d56e2b90" title="Assignment with move semantics." alt="" coords="261,31,423,57"/>
+<area shape="rect" id="node4" href="$classGenericDocument.html#a7bc1827a7ab04de4789fe46237f0e921" title="Parse JSON text from an input stream (with Encoding conversion)" alt="" coords="5,5,213,32"/>
+<area shape="rect" id="node5" href="$classGenericDocument.html#ac30b4e8887974060b695be20c3ceb02c" title="Populate this document by a generator which produces SAX events." alt="" coords="18,56,201,83"/>
+</map>

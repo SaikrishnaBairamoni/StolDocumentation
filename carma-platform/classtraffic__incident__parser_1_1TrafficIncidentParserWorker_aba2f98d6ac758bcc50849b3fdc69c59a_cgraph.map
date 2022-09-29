@@ -1,0 +1,4 @@
+<map id="traffic_incident_parser::TrafficIncidentParserWorker::getAdjacentForwardCenterlines" name="traffic_incident_parser::TrafficIncidentParserWorker::getAdjacentForwardCenterlines">
+<area shape="rect" id="node1" title="Helper method to compute the concatenated centerlines of the lanes in front of the emergency vehicle ..." alt="" coords="5,5,215,61"/>
+<area shape="rect" id="node2" href="$namespacetraffic__incident__parser.html#a97e7194817b789964ce7d56b96e19cb3" title="Helper method to get the nearest point index of a point and a linestring." alt="" coords="263,13,416,54"/>
+</map>

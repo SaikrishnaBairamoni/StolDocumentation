@@ -1,0 +1,4 @@
+<map id="carma_wm::IndexedDistanceMap::getIndexFromId" name="carma_wm::IndexedDistanceMap::getIndexFromId">
+<area shape="rect" id="node1" title="Returns the indexes of the element identified by the provided Id NOTE: It is up to the user to know i..." alt="" coords="260,5,448,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a561bd30d0274bb605a7b7dd54b16b037" title="Returns the TrackPos, computed in 2d, of the provided point relative to the current route." alt="" coords="5,5,212,47"/>
+</map>

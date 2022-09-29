@@ -1,0 +1,4 @@
+<map id="mobilitypath_visualizer::MobilityPathVisualizer::georeferenceCallback" name="mobilitypath_visualizer::MobilityPathVisualizer::georeferenceCallback">
+<area shape="rect" id="node1" title="Callback for map projection string to define lat/lon &#45;&gt; map conversion." alt="" coords="208,5,363,61"/>
+<area shape="rect" id="node2" href="$classmobilitypath__visualizer_1_1MobilityPathVisualizer.html#a204f1f59397827eff2b5b376fd16cc7a" title=" " alt="" coords="5,5,160,61"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::plan_maneuvers_callback" name="sci_strategic_plugin::SCIStrategicPlugin::plan_maneuvers_callback">
+<area shape="rect" id="node1" title="Service callback for arbitrator maneuver planning." alt="" coords="5,371,184,427"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a411f383e5d3d58d74928ebe1be87ba45" title="Determine the desired speed profile parameters for Case 3." alt="" coords="262,5,425,61"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a9ae7e5167984c36b6570e2fe65586fcd" title=" " alt="" coords="249,86,438,157"/>
+<area shape="rect" id="node4" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#afc38c2b6e6549f1bfc08feb3c2a643a3" title="Compose a lane keeping maneuver message based on input params." alt="" coords="232,181,455,251"/>
+<area shape="rect" id="node8" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#af2de1eb0cc293b7f09cb9ef572fee9dd" title=" " alt="" coords="236,275,451,346"/>
+<area shape="rect" id="node9" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a16d353d1135dd8b869322242479f634b" title="Determine the speed profile case fpr approaching an intersection." alt="" coords="242,371,445,427"/>
+<area shape="rect" id="node11" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a205037533c3c6a5310a1b7582ef3fb30" title="Helper method to extract the initial vehicle state from the planning request method based on if the p..." alt="" coords="274,501,413,557"/>
+<area shape="rect" id="node12" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a087de26a52e0676970a86e4b85d45375" title="Helper method which calls carma_wm::WorldModel::getLaneletsBetween(start_downtrack,..." alt="" coords="503,448,732,504"/>
+<area shape="rect" id="node14" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#ada4c9e734fc2509cee25b7be327c807e" title="Given a Lanelet, find it&#39;s associated Speed Limit." alt="" coords="274,581,413,637"/>
+<area shape="rect" id="node15" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a287fec9bdb357a5cf6c8e564c0e623f8" title="Determine the turn direction at intersection." alt="" coords="241,661,445,717"/>
+<area shape="rect" id="node5" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#aaf728e798283e618eeba6aa3ba94bb73" title="calculate the speed, right before the car starts to decelerate for stopping" alt="" coords="530,277,705,333"/>
+<area shape="rect" id="node6" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#aef07ef19ce4d8744ccfb952b8be671ae" title="Determine the desired speed profile parameters for Case 1." alt="" coords="541,112,694,168"/>
+<area shape="rect" id="node7" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#afdcf681517004f6307a1862a3f3bc052" title="Determine the desired speed profile parameters for Case 2." alt="" coords="540,192,695,248"/>
+<area shape="rect" id="node10" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a0a17b477f6f28bf53fdf0e034172334c" title="calculate the time vehicle will stop with optimal decelarion" alt="" coords="534,368,701,424"/>
+<area shape="rect" id="node13" href="$namespacesci__strategic__plugin_1_1anonymous__namespace_02sci__strategic__plugin_8cpp_03.html#aeb7eb09c545674de7ccd8be538ee7d8e" title="Anonymous function to extract maneuver end speed which can not be optained with GET_MANEUVER_PROPERY ..." alt="" coords="521,529,714,599"/>
+</map>

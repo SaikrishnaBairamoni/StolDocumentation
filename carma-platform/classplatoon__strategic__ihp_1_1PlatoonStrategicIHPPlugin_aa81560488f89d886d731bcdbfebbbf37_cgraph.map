@@ -1,0 +1,6 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::pose_cb" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::pose_cb">
+<area shape="rect" id="node1" title="Callback function for current pose." alt="" coords="5,85,188,141"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a11ffedaaa90fe358ecfdccab7c5a428c" title="Function to convert pose from map frame to ecef location." alt="" coords="257,5,440,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#abcab6368ab8bffc15e380b099554b314" title="UCLA Update the private variable pose_ecef_point_." alt="" coords="257,85,440,141"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ab1710b942f6893b756b67dd6505ee90b" title="Stores the latest info on location of the host vehicle." alt="" coords="236,165,461,206"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="frame_transformer::Node" name="frame_transformer::Node">
+<area shape="rect" id="node1" title="Node which subcribes to and input topic, transforms the data into a new frame and republishes it onto..." alt="" coords="453,315,619,465"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,167,253,245"/>
+<area shape="rect" id="node3" href="$structframe__transformer_1_1Config.html" title="Stuct containing the algorithm configuration values for frame_transformer." alt="" coords="278,160,413,252"/>
+<area shape="rect" id="node4" title=" " alt="" coords="254,5,309,83"/>
+<area shape="rect" id="node5" href="$classint.html" title=" " alt="" coords="389,5,427,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="437,160,635,252"/>
+<area shape="rect" id="node7" title=" " alt="" coords="659,160,794,252"/>
+<area shape="rect" id="node8" title=" " alt="" coords="818,160,963,252"/>
+</map>

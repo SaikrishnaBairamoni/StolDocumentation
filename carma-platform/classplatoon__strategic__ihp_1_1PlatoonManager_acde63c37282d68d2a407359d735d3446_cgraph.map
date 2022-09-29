@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonManager::getPredecessorTimeHeadwaySum" name="platoon_strategic_ihp::PlatoonManager::getPredecessorTimeHeadwaySum">
+<area shape="rect" id="node1" title="UCLA: Return the time headway summation of all predecessors, in s." alt="" coords="5,5,224,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8f79bf82a5c6ba800fd48f9ed819f606" title="Returns current downtrack distance, in m." alt="" coords="272,5,460,61"/>
+</map>

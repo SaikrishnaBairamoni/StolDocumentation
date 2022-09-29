@@ -1,0 +1,8 @@
+<map id="platoon_control_ihp::PIDController" name="platoon_control_ihp::PIDController">
+<area shape="rect" id="node1" title=" " alt="" coords="5,637,140,759"/>
+<area shape="rect" id="node2" href="$structPlatooningControlIHPPluginConfig.html" title="Stuct containing the algorithm configuration values for the PlatooningControlPlugin." alt="" coords="105,292,288,575"/>
+<area shape="rect" id="node3" title=" " alt="" coords="11,5,71,83"/>
+<area shape="rect" id="node4" href="$classint.html" title=" " alt="" coords="169,5,208,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="304,5,359,83"/>
+<area shape="rect" id="node6" href="$classbool.html" title=" " alt="" coords="404,5,451,83"/>
+</map>

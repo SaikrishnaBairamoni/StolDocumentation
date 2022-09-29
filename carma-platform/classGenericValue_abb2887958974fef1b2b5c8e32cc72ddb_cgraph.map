@@ -1,0 +1,5 @@
+<map id="GenericValue::GenericValue" name="GenericValue::GenericValue">
+<area shape="rect" id="node1" title="Constructor for constant string (i.e. do not make a copy of string)" alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$classGenericValue.html#a1451603922dcdf34976f125dc60f70ee" title="Initialize this value as constant string, without calling destructor." alt="" coords="237,5,424,32"/>
+<area shape="rect" id="node3" href="$classGenericValue.html#ab3e8833927fb1454585e8692200dbb93" title=" " alt="" coords="472,5,673,32"/>
+</map>

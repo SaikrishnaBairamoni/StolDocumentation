@@ -1,0 +1,8 @@
+<map id="NS3Adapter::uint8_vector_to_hex_string" name="NS3Adapter::uint8_vector_to_hex_string">
+<area shape="rect" id="node1" title="converts a uint8_t vector to an ascii representation" alt="" coords="737,35,908,76"/>
+<area shape="rect" id="node2" href="$classNS3Adapter.html#a3e94b6bfa09fc33c410e8329678fd9de" title="Handles messages received from the NS&#45;3 Client." alt="" coords="469,5,689,47"/>
+<area shape="rect" id="node4" href="$classNS3Adapter.html#a2f06522adf3098b3f9947c93b815ef35" title="Packs an outgoing message into J2375 standard." alt="" coords="489,71,669,98"/>
+<area shape="rect" id="node3" href="$classNS3Adapter.html#ab2dfb933cc738732c0580b62c233f876" title="Initializes ROS context for this node." alt="" coords="5,63,151,90"/>
+<area shape="rect" id="node5" href="$classNS3Adapter.html#a677a80e6965180882714e115bc439b61" title="Handles outbound messages from the ROS network." alt="" coords="199,63,421,90"/>
+<area shape="rect" id="node6" href="$classNS3Adapter.html#a1e33b194c9ae9d6eb0454c86cb8d4cc6" title="Message sending service." alt="" coords="210,114,410,141"/>
+</map>

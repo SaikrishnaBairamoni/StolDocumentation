@@ -1,0 +1,4 @@
+<map id="NS3Adapter::sendMessageFromQueue" name="NS3Adapter::sendMessageFromQueue">
+<area shape="rect" id="node1" title="Sends a message from the queue of outbound messages." alt="" coords="208,5,419,47"/>
+<area shape="rect" id="node2" href="$classNS3Adapter.html#ab318ceeab58b5039fdc59cbb0f29165f" title="Called by the base DriverApplication class after spin." alt="" coords="5,13,160,39"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="localization_manager::stateToMsg" name="localization_manager::stateToMsg">
+<area shape="rect" id="node1" title="Helper function to convert LocalizationState objects into LocalizationStatusReport ROS messages." alt="" coords="431,13,573,54"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#a0ce2b35dcab57bd0abc4ad9c10f5a24e" title="Timer callback that controls the publication of the selected pose and status report." alt="" coords="236,5,383,61"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1Node.html#afb38782f4ca8c455d8b6440b38bc62a9" title=" " alt="" coords="5,13,188,54"/>
+</map>

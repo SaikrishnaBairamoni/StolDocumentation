@@ -1,0 +1,5 @@
+<map id="object::ObjectDetectionTrackingWorker::isClass" name="object::ObjectDetectionTrackingWorker::isClass">
+<area shape="rect" id="node1" title="Helper method to check if the provided tracked object has the provided class type." alt="" coords="515,5,721,47"/>
+<area shape="rect" id="node2" href="$classobject_1_1ObjectDetectionTrackingWorker.html#a9c50f3a7d96105185537b87dda4b1c11" title="detectedObjectCallback populates detected object along with its velocity,yaw, yaw_rate and static/dyn..." alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node3" href="$classobject_1_1ObjectDetectionTrackingNode.html#a6bd08fb5c79b0ffc2fc9cf1b8212d008" title=" " alt="" coords="5,5,212,47"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="cooperative_lanechange::CooperativeLaneChangePlugin::on_configure_plugin" name="cooperative_lanechange::CooperativeLaneChangePlugin::on_configure_plugin">
+<area shape="rect" id="node1" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,245,212,301"/>
+<area shape="rect" id="node2" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a23d1512a6611e3c55b17231e77c3031e" title="Callback for the BSM subscriber, which will store the latest BSM Core Data broadcasted by the host ve..." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node3" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#ad23798164344b2bcae5383cdadacc060" title="Callback for map projection string to define lat/lon &#45;&gt; map conversion." alt="" coords="260,85,467,141"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a50b54d5c4cc5180eeef0c78c55f70ec3" title="Method to return the default world model provided as a convience by this base class If this method or..." alt="" coords="281,165,446,221"/>
+<area shape="rect" id="node6" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a6a40e4f152bc0c545ccaa3dd3046bf4f" title="Callback to subscribed mobility response topic." alt="" coords="260,245,467,301"/>
+<area shape="rect" id="node7" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#adc71864e6c3618055f1009250f939132" title="Callback for dynamic parameter updates." alt="" coords="260,325,467,381"/>
+<area shape="rect" id="node8" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#ab5f44aa0c294fd99b50ce82885cd1a29" title="Callback for the pose subscriber, which will store latest pose locally." alt="" coords="260,405,467,461"/>
+<area shape="rect" id="node9" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#acaa1a4c1e974d499869789cf5c26a317" title="Callback for the twist subscriber, which will store latest twist locally." alt="" coords="260,485,467,541"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a9c9d8aa9324b12f941dc0be7394f98e7" title="Helper function for lazy initialization of wm_listener_. If already initialized method returns (ie...." alt="" coords="515,165,680,221"/>
+</map>

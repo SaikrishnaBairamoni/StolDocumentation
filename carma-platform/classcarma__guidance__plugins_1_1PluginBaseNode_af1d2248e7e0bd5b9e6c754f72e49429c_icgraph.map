@@ -1,0 +1,7 @@
+<map id="carma_guidance_plugins::PluginBaseNode::on_activate_plugin" name="carma_guidance_plugins::PluginBaseNode::on_activate_plugin">
+<area shape="rect" id="node1" title="Method which is triggered when this plugin is moved from the INACTIVE to ACTIVE states...." alt="" coords="436,85,635,141"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#aba75066bf8411345222a8bb5818cd9d9" title=" " alt="" coords="219,85,388,141"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#aaf5fbd9820b21396a6cabbce94b27080" title=" " alt="" coords="5,5,171,61"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html#a394a3bea62765a582f723a232ade34fa" title=" " alt="" coords="5,85,171,141"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html#aaa76c3446cc4b2fb395912fc66ad4343" title=" " alt="" coords="5,165,171,221"/>
+</map>

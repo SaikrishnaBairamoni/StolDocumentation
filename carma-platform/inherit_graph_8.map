@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classarbitrator_1_1CostFunction.html" title="Generic interface representing a means of computing cost for plans in the search graph." alt="" coords="5,46,161,73"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1CostSystemCostFunction.html" title="Implementation of the CostFunction interface." alt="" coords="209,5,387,47"/>
+<area shape="rect" id="node3" href="$classarbitrator_1_1FixedPriorityCostFunction.html" title="Implementation of the CostFunction interface." alt="" coords="223,71,373,112"/>
+</map>

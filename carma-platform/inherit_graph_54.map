@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcost__plugin__system_1_1CostPlugins.html" title=" " alt="" coords="5,169,143,211"/>
+<area shape="rect" id="node2" href="$classcost__plugin__system_1_1CostofComfort.html" title=" " alt="" coords="191,5,328,47"/>
+<area shape="rect" id="node3" href="$classcost__plugin__system_1_1CostofEfficiency.html" title=" " alt="" coords="191,71,328,112"/>
+<area shape="rect" id="node4" href="$classcost__plugin__system_1_1CostofFeasibility.html" title=" " alt="" coords="191,136,328,177"/>
+<area shape="rect" id="node5" href="$classcost__plugin__system_1_1CostofFuel.html" title=" " alt="" coords="191,201,328,243"/>
+<area shape="rect" id="node6" href="$classcost__plugin__system_1_1CostofLegality.html" title=" " alt="" coords="191,267,328,308"/>
+<area shape="rect" id="node7" href="$classcost__plugin__system_1_1CostofSafety.html" title=" " alt="" coords="191,332,328,373"/>
+</map>

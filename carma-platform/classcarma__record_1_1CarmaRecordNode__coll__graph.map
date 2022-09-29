@@ -1,0 +1,4 @@
+<map id="carma_record::CarmaRecordNode" name="carma_record::CarmaRecordNode">
+<area shape="rect" id="node1" title="Node which manages rosbag record with additional carma specific functionality." alt="" coords="5,145,223,237"/>
+<area shape="rect" id="node2" title=" " alt="" coords="43,5,185,83"/>
+</map>

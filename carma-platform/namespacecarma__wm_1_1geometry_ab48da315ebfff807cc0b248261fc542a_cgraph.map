@@ -1,0 +1,11 @@
+<map id="carma_wm::geometry::local_curvatures" name="carma_wm::geometry::local_curvatures">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,151,166"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#adebf4a245f31404e822133b23e061ed3" title=" " alt="" coords="199,125,385,166"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#adf1c6b7f1e33569b45074e4e5bbeff1d" title="Compute the arc length at each point around the curve." alt="" coords="449,17,601,58"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#aef0b6f2362a5ebbf0d5dcb3b7ff78619" title="Use finite differences methods to compute the derivative of the input data set with respect to index ..." alt="" coords="433,89,616,130"/>
+<area shape="rect" id="node8" href="$namespacecarma__wm_1_1geometry.html#afad31f5a6dcbee8828814d406384635f" title="Compute the magnitude of each vector in the input list." alt="" coords="452,153,597,209"/>
+<area shape="rect" id="node9" href="$namespacecarma__wm_1_1geometry.html#a56bddbee1116988543192b2f235a692c" title="Normalize the vectors in the input list such that their magnitudes = 1." alt="" coords="452,233,597,274"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#a4e12c2971926486d1447e44e978f8d4d" title=" " alt="" coords="664,5,809,61"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="857,5,1003,61"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#ae8af6cd9c27d35849c12959ab9f1b9c3" title=" " alt="" coords="664,85,809,141"/>
+</map>

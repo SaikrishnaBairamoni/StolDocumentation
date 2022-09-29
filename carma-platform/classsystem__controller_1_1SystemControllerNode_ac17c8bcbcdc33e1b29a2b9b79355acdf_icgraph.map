@@ -1,0 +1,4 @@
+<map id="system_controller::SystemControllerNode::initialize" name="system_controller::SystemControllerNode::initialize">
+<area shape="rect" id="node1" title="Initialize this node by loading parameters from the ROS Network." alt="" coords="212,5,364,61"/>
+<area shape="rect" id="node2" href="$classsystem__controller_1_1SystemControllerNode.html#ab77f16bd75bbf38d50903845e8e2f088" title="Constructor. Set explicitly to support node composition." alt="" coords="5,5,164,61"/>
+</map>

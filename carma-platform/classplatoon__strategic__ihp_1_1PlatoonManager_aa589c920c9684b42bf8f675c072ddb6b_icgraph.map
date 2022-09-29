@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonManager::changeFromLeaderToFollower" name="platoon_strategic_ihp::PlatoonManager::changeFromLeaderToFollower">
+<area shape="rect" id="node1" title="Update status when state change from Leader to Follower." alt="" coords="692,45,892,101"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac969d6086d5fe4b55831015327820688" title="Function to process mobility response in candidate follower state." alt="" coords="429,5,644,61"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aeba3a1dd3fc9411891a1fe1eac8c3993" title="Function to process mobility response in leaderaborting state." alt="" coords="439,85,634,141"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aaca0c4143be4a27041ab5ed90d2c624c" title="Callback function for Mobility Response Message." alt="" coords="199,45,381,101"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,45,151,101"/>
+</map>

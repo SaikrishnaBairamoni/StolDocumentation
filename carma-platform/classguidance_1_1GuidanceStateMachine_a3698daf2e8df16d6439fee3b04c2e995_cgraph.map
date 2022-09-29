@@ -1,0 +1,4 @@
+<map id="guidance::GuidanceStateMachine::onVehicleStatus" name="guidance::GuidanceStateMachine::onVehicleStatus">
+<area shape="rect" id="node1" title="Handle vehicle status message from ROS network." alt="" coords="5,5,220,47"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceStateMachine.html#aaa75a81fec6e28dbbeb446af8355e8e0" title="Actual state machine logic driven by signal enum." alt="" coords="268,5,483,47"/>
+</map>

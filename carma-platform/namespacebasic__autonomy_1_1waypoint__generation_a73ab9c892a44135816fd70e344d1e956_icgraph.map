@@ -1,0 +1,8 @@
+<map id="basic_autonomy::waypoint_generation::get_lanechange_points_from_maneuver" name="basic_autonomy::waypoint_generation::get_lanechange_points_from_maneuver">
+<area shape="rect" id="node1" title="Converts a set of requested LANE_CHANGE maneuvers to point speed limit pairs." alt="" coords="753,85,940,141"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a5dd7e714fd12529219c3b63da8887e00" title="Creates geometry profile to return a point speed pair struct for LANE FOLLOW and LANE CHANGE maneuver..." alt="" coords="515,85,705,141"/>
+<area shape="rect" id="node3" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a5f0c14a409d58d6b1750c38c6bf1b34a" title="Creates a vector of Trajectory Points from maneuver information in trajectory request." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node5" href="$classinlanecruising__plugin_1_1InLaneCruisingPlugin.html#a60f695c3ed54c99c6a2dcfaf77ae55e2" title="Service callback for trajectory planning." alt="" coords="280,85,447,141"/>
+<area shape="rect" id="node6" href="$classplatooning__tactical__plugin_1_1PlatooningTacticalPlugin.html#aee3afe082ccd5ab937dbb1c49f9e21ff" title="Service callback for trajectory planning." alt="" coords="275,165,451,221"/>
+<area shape="rect" id="node4" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a8913539d8614e509910af225e18bc809" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="5,5,212,61"/>
+</map>

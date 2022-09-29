@@ -1,0 +1,9 @@
+<map id="internal::StrLen" name="internal::StrLen">
+<area shape="rect" id="node1" title="Custom strlen() which works on different character types." alt="" coords="253,184,363,211"/>
+<area shape="rect" id="node2" href="$classGenericPointer.html#a4ad549b8a826c3c2dedf03fcc07be9b0" title="Constructor that parses a string or URI fragment representation." alt="" coords="5,5,205,32"/>
+<area shape="rect" id="node3" href="$classWriter.html#ab6057b7fa9737edb4da55a7afefa966d" title=" " alt="" coords="63,80,147,107"/>
+<area shape="rect" id="node4" href="$classPrettyWriter.html#a4b2a2a6eef02c12d7a3fd77966bd4499" title=" " alt="" coords="46,155,165,181"/>
+<area shape="rect" id="node5" href="$structGenericStringRef.html#af51482556048c13920f5564a48e8ad7d" title=" " alt="" coords="20,206,191,247"/>
+<area shape="rect" id="node6" href="$classWriter.html#a2a2c6f51644b2013471aec4dac0d7466" title="Simpler but slower overload." alt="" coords="57,296,153,323"/>
+<area shape="rect" id="node7" href="$classPrettyWriter.html#a7e85689355a827d273f272c26b447225" title="Simpler but slower overload." alt="" coords="40,371,171,397"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="yield_plugin::YieldPlugin::check_traj_for_digital_min_gap" name="yield_plugin::YieldPlugin::check_traj_for_digital_min_gap">
+<area shape="rect" id="node1" title="checks trajectory for minimum gap associated with it" alt="" coords="456,41,616,97"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#ad9c9e0e4278774a519de12a6a5f4398f" title="update trajectory for yielding to an incoming cooperative behavior" alt="" coords="220,5,408,61"/>
+<area shape="rect" id="node4" href="$classyield__plugin_1_1YieldPlugin.html#a220292dd2a6bebb515e21256ad5b6e9c" title="trajectory is modified to safely avoid obstacles on the road" alt="" coords="234,85,394,126"/>
+<area shape="rect" id="node3" href="$classyield__plugin_1_1YieldPlugin.html#a0fd790e287683a2ef404e16a15e0ea29" title="Service callback for trajectory planning." alt="" coords="5,49,172,90"/>
+</map>

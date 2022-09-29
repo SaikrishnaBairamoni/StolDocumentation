@@ -1,0 +1,5 @@
+<map id="platoon_strategic_ihp::PlatoonManager::determineDynamicLeaderBasedOnViolation" name="platoon_strategic_ihp::PlatoonManager::determineDynamicLeaderBasedOnViolation">
+<area shape="rect" id="node1" title="Determine the proper vehicle to follow based the time headway of each member. Note that the host will..." alt="" coords="5,57,221,113"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ae747d7f17a417d2fa30227d71925489d" title="Find the closest vehicle to the host vehicle that violates the (time headaway) lower boundary conditi..." alt="" coords="287,5,522,76"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a10ff5ed73a7a5f72b96fc5b1a928bfe3" title="Find the closest vehicle to the host vehicle that violates the (time headaway) maximum spacing condit..." alt="" coords="269,101,540,157"/>
+</map>

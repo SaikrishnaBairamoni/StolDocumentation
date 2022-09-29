@@ -1,0 +1,5 @@
+<map id="port_drayage_plugin::PortDrayageWorker::onArrivedAtDestination" name="port_drayage_plugin::PortDrayageWorker::onArrivedAtDestination">
+<area shape="rect" id="node1" title="Callback for usage by the PortDrayageStateMachine when the vehicle has arrived at a destination." alt="" coords="5,5,167,61"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#af717d8df5c0ebca5c3828d62cf5306b8" title="Assemble the current dataset into a MobilityOperations message with a JSON formatted body containing ..." alt="" coords="215,5,385,61"/>
+<area shape="rect" id="node3" href="$classport__drayage__plugin_1_1PortDrayageStateMachine.html#aee66b24d69c9613c30d92b927a75fc91" title="Get the current state of the state machine." alt="" coords="433,5,612,61"/>
+</map>

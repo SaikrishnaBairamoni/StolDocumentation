@@ -1,0 +1,5 @@
+<map id="lightbar_manager::LightBarManager::init" name="lightbar_manager::LightBarManager::init">
+<area shape="rect" id="node1" title="Initialize ROS related functions. Pass &quot;test&quot; to setup ROS parameters for unit testing." alt="" coords="328,5,504,47"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManager.html#a4186a5cdf7d08c6fb13c3de6472b7f44" title="Begin normal execution of LightBarManager worker. Will take over control flow of program and exit fro..." alt="" coords="104,5,280,47"/>
+<area shape="rect" id="node3" href="$lightbar__manager_2src_2lightbar__manager_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point for LightBarManager package." alt="" coords="5,13,56,39"/>
+</map>

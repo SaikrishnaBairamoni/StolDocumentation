@@ -1,0 +1,4 @@
+<map id="NS3Adapter::packMessage" name="NS3Adapter::packMessage">
+<area shape="rect" id="node1" title="Packs an outgoing message into J2375 standard." alt="" coords="5,13,185,39"/>
+<area shape="rect" id="node2" href="$classNS3Adapter.html#a39183974394ca80113e9f0c8caac284e" title="converts a uint8_t vector to an ascii representation" alt="" coords="233,5,404,47"/>
+</map>

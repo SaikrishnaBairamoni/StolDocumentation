@@ -1,0 +1,7 @@
+<map id="carma_wm_ctrl::WMBroadcaster::composeTCRStatus" name="carma_wm_ctrl::WMBroadcaster::composeTCRStatus">
+<area shape="rect" id="node1" title="composeTCRStatus() compose TCM Request visualization on UI" alt="" coords="781,39,992,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a0fcc6904e5b3fb2fca13e9488069ec10" title="Pulls vehicle information from CARMA Cloud at startup by providing its selected route in a TrafficCon..." alt="" coords="523,39,733,80"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a7efa8028648e4ed8b847c97e952b07d1" title="Calls controlRequestFromRoute() and publishes the TrafficControlRequest Message returned after the co..." alt="" coords="264,39,475,80"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#ab0c14f6d7e30870755a4dcf6b228de82" title=" " alt="" coords="5,71,216,112"/>
+</map>

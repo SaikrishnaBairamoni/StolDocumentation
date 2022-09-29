@@ -1,0 +1,6 @@
+<map id="basic_autonomy::waypoint_generation::compose_lanefollow_trajectory_from_path" name="basic_autonomy::waypoint_generation::compose_lanefollow_trajectory_from_path">
+<area shape="rect" id="node1" title="Method converts a list of lanelet centerline points and current vehicle state into a usable list of t..." alt="" coords="331,85,544,141"/>
+<area shape="rect" id="node2" href="$classinlanecruising__plugin_1_1InLaneCruisingPlugin.html#a60f695c3ed54c99c6a2dcfaf77ae55e2" title="Service callback for trajectory planning." alt="" coords="61,5,227,61"/>
+<area shape="rect" id="node3" href="$classplatooning__tactical__plugin_1_1PlatooningTacticalPlugin.html#aee3afe082ccd5ab937dbb1c49f9e21ff" title="Service callback for trajectory planning." alt="" coords="56,85,232,141"/>
+<area shape="rect" id="node4" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTacticalPlugin.html#a124f95825dfb2728fefa245e6a0e1db7" title="Function to process the light controlled intersection tactical plugin service call for trajectory pla..." alt="" coords="5,165,283,221"/>
+</map>

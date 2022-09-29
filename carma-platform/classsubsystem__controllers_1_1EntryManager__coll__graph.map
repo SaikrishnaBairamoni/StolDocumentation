@@ -1,0 +1,4 @@
+<map id="subsystem_controllers::EntryManager" name="subsystem_controllers::EntryManager">
+<area shape="rect" id="node1" title="An entry manager keeps track of the set of entries and makes it easy to add or remove entries." alt="" coords="5,175,159,340"/>
+<area shape="rect" id="node2" title=" " alt="" coords="12,5,152,112"/>
+</map>

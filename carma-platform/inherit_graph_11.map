@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classarbitrator_1_1SearchStrategy.html" title="Generic interface representing a computation to prioritize nodes for expansion in a search graph." alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1BeamSearchStrategy.html" title="Implementation of SearchStrategy by usage of Beam Search." alt="" coords="221,5,424,32"/>
+</map>

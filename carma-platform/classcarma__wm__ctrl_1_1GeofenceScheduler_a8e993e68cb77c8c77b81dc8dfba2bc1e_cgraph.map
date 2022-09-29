@@ -1,0 +1,5 @@
+<map id="carma_wm_ctrl::GeofenceScheduler::startGeofenceCallback" name="carma_wm_ctrl::GeofenceScheduler::startGeofenceCallback">
+<area shape="rect" id="node1" title="The callback which is triggered when a geofence becomes active This will call the user set active_cal..." alt="" coords="5,5,236,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a0f58b227dcbd413eb451146d36cb1728" title="The callback which is triggered when a geofence becomes in&#45;active This will call the user set inactiv..." alt="" coords="284,5,515,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a9072b770cf240953a50f1d926b733b7c" title="Generates the next id to be used for a timer." alt="" coords="563,35,793,76"/>
+</map>

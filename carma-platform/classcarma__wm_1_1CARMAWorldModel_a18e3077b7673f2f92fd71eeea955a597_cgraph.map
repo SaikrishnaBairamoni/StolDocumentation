@@ -1,0 +1,3 @@
+<map id="carma_wm::CARMAWorldModel::routeTrackPos" name="carma_wm::CARMAWorldModel::routeTrackPos">
+<area shape="rect" id="node1" title="Returns a pair of TrackPos, computed in 2d, of the provided area relative to the current route...." alt="" coords="5,29,212,71"/>
+</map>

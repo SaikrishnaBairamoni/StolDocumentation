@@ -1,0 +1,13 @@
+<map id="Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;" name="Writer&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;">
+<area shape="rect" id="node1" title="JSON writer." alt="" coords="196,1203,416,2189"/>
+<area shape="rect" id="node2" href="$classint.html" title=" " alt="" coords="5,872,44,949"/>
+<area shape="rect" id="node3" title=" " alt="" coords="619,5,675,83"/>
+<area shape="rect" id="node5" href="$classinternal_1_1Stack.html" title=" " alt="" coords="386,696,581,1125"/>
+<area shape="rect" id="node9" href="$classinternal_1_1Stack.html" title="A type&#45;unsafe stack for storing different types of data." alt="" coords="725,175,903,604"/>
+<area shape="rect" id="node4" title=" " alt="" coords="251,872,361,949"/>
+<area shape="rect" id="node6" href="$classCrtAllocator.html" title="C&#45;runtime library allocator." alt="" coords="362,336,453,443"/>
+<area shape="rect" id="node7" href="$classbool.html" title=" " alt="" coords="239,5,285,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="281,351,336,428"/>
+<area shape="rect" id="node10" href="$classrapidjson_1_1Allocator.html" title="Concept for allocating, resizing and freeing memory block." alt="" coords="880,5,953,83"/>
+<area shape="rect" id="node11" title=" " alt="" coords="793,5,840,83"/>
+</map>

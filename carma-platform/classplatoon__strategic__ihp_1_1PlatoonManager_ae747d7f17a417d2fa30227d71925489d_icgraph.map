@@ -1,0 +1,9 @@
+<map id="platoon_strategic_ihp::PlatoonManager::findLowerBoundaryViolationClosestToTheHostVehicle" name="platoon_strategic_ihp::PlatoonManager::findLowerBoundaryViolationClosestToTheHostVehicle">
+<area shape="rect" id="node1" title="Find the closest vehicle to the host vehicle that violates the (time headaway) lower boundary conditi..." alt="" coords="1431,5,1665,76"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a5fa3ab8c7c127c9d76f0dce1be59fe80" title="This is the implementation of all predecessor following (APF) algorithm for leader selection in a pla..." alt="" coords="904,13,1119,69"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a24583fcb6596efbb2772001a58c36588" title="Determine the proper vehicle to follow based the time headway of each member. Note that the host will..." alt="" coords="1167,45,1383,101"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a26b94722e82060dda554ef168626727c" title="Returns dynamic leader of the host vehicle." alt="" coords="660,13,856,69"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac86657c9cd45018b1f8544e47be1e5dc" title="Compose Platoon information message." alt="" coords="429,13,612,69"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac7e7160659b61a4ac61be14f74fb1caa" title="Spin callback function." alt="" coords="199,13,381,69"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,13,151,69"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="guidance::GuidanceWorker::handle_on_configure" name="guidance::GuidanceWorker::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,136,181,177"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceWorker.html#afde782fd44b167e223a5cc2534b7615c" title="Set_guidance_active service callback. User can attempt to activate the guidance system by calling thi..." alt="" coords="235,5,411,47"/>
+<area shape="rect" id="node6" href="$classguidance_1_1GuidanceWorker.html#aae03d3aafb3f998f9395e8a5bef6e8d4" title="Callback for dynamic parameter updates." alt="" coords="229,71,416,112"/>
+<area shape="rect" id="node7" href="$classguidance_1_1GuidanceWorker.html#aabf4b6e660b0054029ecba77cf914283" title="Callback for robot enabled messages." alt="" coords="235,136,411,177"/>
+<area shape="rect" id="node9" href="$classguidance_1_1GuidanceWorker.html#a0cca41bb865956d34e85fad76d7b8ae9" title="Callback for route event messages." alt="" coords="235,201,411,243"/>
+<area shape="rect" id="node11" href="$classguidance_1_1GuidanceWorker.html#af084c565cf5a06c89e1e8465f92f54f9" title="Callback for vehicle status messages." alt="" coords="235,267,411,308"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceStateMachine.html#a0a70a93252ab7d5870ad14d338a84719" title="Get current state machine status." alt="" coords="464,5,679,47"/>
+<area shape="rect" id="node4" href="$classguidance_1_1GuidanceStateMachine.html#aff994c9f4628063f36a39aa532b52e81" title="Handle set_guidance_active service call from ROS network." alt="" coords="464,71,679,112"/>
+<area shape="rect" id="node5" href="$classguidance_1_1GuidanceStateMachine.html#aaa75a81fec6e28dbbeb446af8355e8e0" title="Actual state machine logic driven by signal enum." alt="" coords="727,169,941,211"/>
+<area shape="rect" id="node8" href="$classguidance_1_1GuidanceStateMachine.html#a090ae51e7d5ec69924ad07ca085c8c73" title="Handle robotic_status message from ROS network." alt="" coords="464,136,679,177"/>
+<area shape="rect" id="node10" href="$classguidance_1_1GuidanceStateMachine.html#a6736fd4f4155d4d4d6f41645a97b1dc1" title="Handle route event message." alt="" coords="464,201,679,243"/>
+<area shape="rect" id="node12" href="$classguidance_1_1GuidanceStateMachine.html#a3698daf2e8df16d6439fee3b04c2e995" title="Handle vehicle status message from ROS network." alt="" coords="464,267,679,308"/>
+</map>

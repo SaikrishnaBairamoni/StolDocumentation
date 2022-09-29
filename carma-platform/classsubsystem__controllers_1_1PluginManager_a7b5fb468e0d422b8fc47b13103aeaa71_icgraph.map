@@ -1,0 +1,7 @@
+<map id="subsystem_controllers::PluginManager::matching_capability" name="subsystem_controllers::PluginManager::matching_capability">
+<area shape="rect" id="node1" title="Returns true if the provided base capability hierarchy can achieve the requested capability hierarchy..." alt="" coords="471,93,644,149"/>
+<area shape="rect" id="node2" href="$classsubsystem__controllers_1_1PluginManager.html#a273a123b0ce1a5d004c52e2deff69ea4" title="Get control plugins by capability." alt="" coords="224,5,421,61"/>
+<area shape="rect" id="node4" href="$classsubsystem__controllers_1_1PluginManager.html#abb246fe8565a91e9890c3639ca333e83" title="Get strategic plugins by capability." alt="" coords="247,86,399,157"/>
+<area shape="rect" id="node5" href="$classsubsystem__controllers_1_1PluginManager.html#ace48d6d87c84f35018389a67a3b886e1" title="Get tactical plugins by capability." alt="" coords="223,181,423,237"/>
+<area shape="rect" id="node3" href="$classsubsystem__controllers_1_1GuidanceControllerNode.html#a684cb2ec92b8c7dd38c69484c0052bd1" title=" " alt="" coords="5,93,175,149"/>
+</map>

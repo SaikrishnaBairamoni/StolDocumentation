@@ -1,0 +1,10 @@
+<map id="platoon_strategic_ihp::PlatoonManager::allPredecessorFollowing" name="platoon_strategic_ihp::PlatoonManager::allPredecessorFollowing">
+<area shape="rect" id="node1" title="This is the implementation of all predecessor following (APF) algorithm for leader selection in a pla..." alt="" coords="5,201,220,257"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aea48de69a49b77ff87145342a0790363" title="Calculate the time headaway of each platoon member and save as a vector." alt="" coords="293,5,473,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a24583fcb6596efbb2772001a58c36588" title="Determine the proper vehicle to follow based the time headway of each member. Note that the host will..." alt="" coords="275,136,491,192"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ae747d7f17a417d2fa30227d71925489d" title="Find the closest vehicle to the host vehicle that violates the (time headaway) lower boundary conditi..." alt="" coords="563,74,798,145"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a10ff5ed73a7a5f72b96fc5b1a928bfe3" title="Find the closest vehicle to the host vehicle that violates the (time headaway) maximum spacing condit..." alt="" coords="545,180,816,236"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a1de160740f47d9b0198e42dcbe67a6fe" title="Get number of vehicles in front of host vehicle inside platoon." alt="" coords="287,267,479,323"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#addb3708590b81f46b27e612b6e945cea" title="Return a sub&#45;vector of the platoon&#45;wise time headaways vector that start with a given index." alt="" coords="268,347,497,403"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ab6bac9590984959b2a6988c329090235" title="Check the gap with the predecessor vehicle." alt="" coords="288,427,477,483"/>
+</map>

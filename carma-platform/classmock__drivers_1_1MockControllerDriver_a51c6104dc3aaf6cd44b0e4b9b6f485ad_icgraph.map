@@ -1,0 +1,4 @@
+<map id="mock_drivers::MockControllerDriver::enableRoboticSrv" name="mock_drivers::MockControllerDriver::enableRoboticSrv">
+<area shape="rect" id="node1" title="Callback for the enable robotic service. Triggering this callback will modify the RobotEnabled messag..." alt="" coords="247,5,440,47"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockControllerDriver.html#a28c9c2d10a3ae05e462526bd9829075c" title=" " alt="" coords="5,5,199,47"/>
+</map>

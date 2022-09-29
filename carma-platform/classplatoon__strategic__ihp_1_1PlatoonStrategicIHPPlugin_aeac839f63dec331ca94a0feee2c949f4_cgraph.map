@@ -1,0 +1,13 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_op_cb_STATUS" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_op_cb_STATUS">
+<area shape="rect" id="node1" title="Function to process mobility operation message with STATUS params, read ecef location and update plat..." alt="" coords="5,256,188,312"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a876cee27af19b1f215ffd4a2190be371" title="Function to convert ecef location to a 2d point in map frame." alt="" coords="283,136,465,192"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aa09eb8121e30d6ee3517823766dbeea4" title="Update information for members of the host&#39;s platoon based on a mobility operation STATUS message." alt="" coords="274,216,474,272"/>
+<area shape="rect" id="node10" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a3049b9bc64b95a37fe66b83ee6a67a88" title="Function to process mobility operation for STATUS params." alt="" coords="236,296,512,352"/>
+<area shape="rect" id="node11" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aef18115269a340fb9e89452acd05658f" title="Update information for members of a neighboring platoon based on a mobility operation STATUS message." alt="" coords="262,376,486,432"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a10f95b2573ee211d8f9b07f8d7551809" title="Returns command speed. in m/s." alt="" coords="560,5,765,61"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ac7017e74336d2270a0d66249a46c7dbb" title="Returns current crosstrack distance, in m." alt="" coords="569,85,757,141"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8f79bf82a5c6ba800fd48f9ed819f606" title="Returns current downtrack distance, in m." alt="" coords="569,165,757,221"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ac123534207dc3ea247cfb1281426cd84" title="Returns current speed, in m/s." alt="" coords="569,245,757,301"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ae696d79ca33f496082ef462fdc9ba53b" title="Returns current host static ID as a string." alt="" coords="813,351,1035,393"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a6b4eae07dfc95c25104f95fef1f0f344" title="Updates the list of vehicles in the specified platoon, based on info available from a mobility operat..." alt="" coords="569,376,757,432"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="intersection_transit_maneuvering::IntersectionTransitManeuveringNode::run" name="intersection_transit_maneuvering::IntersectionTransitManeuveringNode::run">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,223,61"/>
+<area shape="rect" id="node2" href="$classintersection__transit__maneuvering_1_1IntersectionTransitManeuvering.html#a22151311f157e49ab7129d8f2497751d" title="Service callback for trajectory planning." alt="" coords="271,5,488,61"/>
+<area shape="rect" id="node3" href="$classintersection__transit__maneuvering_1_1IntersectionTransitManeuvering.html#ad11520b96c2b7ce00f5d4db1677595d8" title="Converts a sequence of INTERSECTION_TRANSIT maneuvers to LANE_FOLLOWING maneuvers." alt="" coords="536,5,776,61"/>
+</map>

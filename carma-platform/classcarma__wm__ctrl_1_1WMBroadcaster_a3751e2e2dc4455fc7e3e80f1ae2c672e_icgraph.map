@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::WMBroadcaster::removeGeofence" name="carma_wm_ctrl::WMBroadcaster::removeGeofence">
+<area shape="rect" id="node1" title="Removes a geofence from the current map and publishes the ROS msg." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,5,216,47"/>
+</map>

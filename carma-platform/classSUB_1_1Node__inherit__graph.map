@@ -1,0 +1,8 @@
+<map id="SUB::Node" name="SUB::Node">
+<area shape="rect" id="node1" title="TODO for USER: Add class description." alt="" coords="187,1129,387,1749"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1ControlPlugin.html" title="ControlPlugin base class which can be extended by user provided plugins which wish to implement the C..." alt="" coords="102,681,269,1081"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="198,131,386,633"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html" title="StrategicPlugin base class which can be extended by user provided plugins which wish to implement the..." alt="" coords="293,762,483,1001"/>
+<area shape="rect" id="node6" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html" title="TacticalPlugin base class which can be extended by user provided plugins which wish to implement the ..." alt="" coords="507,762,687,1001"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,253,83"/>
+</map>

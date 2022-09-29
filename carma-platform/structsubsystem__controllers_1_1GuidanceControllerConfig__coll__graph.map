@@ -1,0 +1,4 @@
+<map id="subsystem_controllers::GuidanceControllerConfig" name="subsystem_controllers::GuidanceControllerConfig">
+<area shape="rect" id="node1" title="Stuct containing the algorithm configuration values for the GuidanceController." alt="" coords="5,175,180,267"/>
+<area shape="rect" id="node2" title=" " alt="" coords="25,5,161,83"/>
+</map>

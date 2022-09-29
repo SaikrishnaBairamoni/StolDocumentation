@@ -1,0 +1,5 @@
+<map id="bsm_generator::BSMGeneratorWorker::getBrakeAppliedStatus" name="bsm_generator::BSMGeneratorWorker::getBrakeAppliedStatus">
+<area shape="rect" id="node1" title="Function to convert the current applied brake status to a value used within the BSM message." alt="" coords="501,5,704,47"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGenerator.html#a768c0c32d1521dfe92485fe337e5a6f9" title="Callback to populate BSM message with vehicle applied brake status." alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node3" href="$classbsm__generator_1_1BSMGenerator.html#a7b0d22297d6bb63cc0cc59f9670fcfe5" title=" " alt="" coords="5,5,205,47"/>
+</map>

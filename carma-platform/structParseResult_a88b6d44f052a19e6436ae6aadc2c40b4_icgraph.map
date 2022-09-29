@@ -1,0 +1,6 @@
+<map id="ParseResult::Clear" name="ParseResult::Clear">
+<area shape="rect" id="node1" title="Reset error code." alt="" coords="215,78,344,105"/>
+<area shape="rect" id="node2" href="$classGenericReader.html#a55a2d3fd3d5261f26513ed303724bc3a" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node3" href="$classGenericReader.html#a7de472eda2ad9de13cfd8c1de74f1754" title="Initialize JSON text token&#45;by&#45;token parsing." alt="" coords="5,71,167,112"/>
+<area shape="rect" id="node4" href="$classGenericReader.html#a0c450620d14ff1824e58bb7bd9b42099" title="Parse JSON text." alt="" coords="12,137,160,163"/>
+</map>

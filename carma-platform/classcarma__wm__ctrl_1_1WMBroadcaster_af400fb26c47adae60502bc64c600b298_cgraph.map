@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::WMBroadcaster::geoReferenceCallback" name="carma_wm_ctrl::WMBroadcaster::geoReferenceCallback">
+<area shape="rect" id="node1" title="Callback to set the base map georeference (proj string)" alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1SignalizedIntersectionManager.html#a22308c4c4213176393ac67be893ad717" title="Saves the georeference string to be used for converting MAP.msg coordinates." alt="" coords="264,5,483,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="carma_wm::CARMAWorldModel::getLane" name="carma_wm::CARMAWorldModel::getLane">
+<area shape="rect" id="node1" title="Gets the specified lane section achievable without lane change, sorted from the start,..." alt="" coords="769,41,976,83"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a19b8c922c7524c769f96a57b91f6a6bd" title="Gets all roadway objects currently in the same lane as the given lanelet." alt="" coords="515,12,721,53"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#a5a13a3b4f0599ad702745e559619965f" title="This function is called by distanceToObjectBehindInLane or distanceToObjectAheadInLane...." alt="" coords="260,71,467,112"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a131c9d5adca779c9efd7601f1dcfef5b" title="Gets Cartesian distance to the closest object on the same lane as the given point." alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1CARMAWorldModel.html#afbee9dff34ee62ac507d5fc39bcb2e10" title="Gets Downtrack distance to AND copy of the closest object AHEAD on the same lane as the given point...." alt="" coords="5,37,212,79"/>
+<area shape="rect" id="node6" href="$classcarma__wm_1_1CARMAWorldModel.html#aa291cd8ca71835c0720dc853031be300" title="Gets Downtrack distance to AND copy of the closest object BEHIND on the same lane as the given point...." alt="" coords="5,103,212,144"/>
+</map>

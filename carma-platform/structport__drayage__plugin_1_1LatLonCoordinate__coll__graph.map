@@ -1,0 +1,4 @@
+<map id="port_drayage_plugin::LatLonCoordinate" name="port_drayage_plugin::LatLonCoordinate">
+<area shape="rect" id="node1" title="Convenience struct for storing the vehicle&#39;s current latitude/longitude coordinates." alt="" coords="5,160,143,252"/>
+<area shape="rect" id="node2" title=" " alt="" coords="44,5,104,83"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="subsystem_controllers::LocalizationControllerNode" name="subsystem_controllers::LocalizationControllerNode">
+<area shape="rect" id="node1" title=" " alt="" coords="924,803,1127,983"/>
+<area shape="rect" id="node2" href="$classsubsystem__controllers_1_1BaseSubsystemController.html" title="A base class for all subsystem_controllers which provides default lifecycle behavior for subsystems." alt="" coords="558,457,757,740"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,275,253,353"/>
+<area shape="rect" id="node4" title=" " alt="" coords="517,275,672,353"/>
+<area shape="rect" id="node5" title=" " alt="" coords="696,275,776,353"/>
+<area shape="rect" id="node6" href="$structsubsystem__controllers_1_1BaseSubSystemControllerConfig.html" title="Stuct containing the algorithm configuration values for the BaseSubsystemController." alt="" coords="277,268,493,360"/>
+<area shape="rect" id="node7" title=" " alt="" coords="765,27,901,105"/>
+<area shape="rect" id="node12" href="$structsubsystem__controllers_1_1LocalizationControllerConfig.html" title="Stuct containing the algorithm configuration values for the BaseSubsystemController." alt="" coords="1065,268,1253,360"/>
+<area shape="rect" id="node8" title=" " alt="" coords="163,27,218,105"/>
+<area shape="rect" id="node9" href="$classint.html" title=" " alt="" coords="351,27,390,105"/>
+<area shape="rect" id="node10" href="$classbool.html" title=" " alt="" coords="598,27,645,105"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1102,553,1306,645"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1051,5,1267,127"/>
+</map>

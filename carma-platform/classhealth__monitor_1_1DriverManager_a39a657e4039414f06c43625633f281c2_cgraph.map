@@ -1,0 +1,8 @@
+<map id="health_monitor::DriverManager::are_critical_drivers_operational_truck" name="health_monitor::DriverManager::are_critical_drivers_operational_truck">
+<area shape="rect" id="node1" title="Check if all critical drivers are operational for truck." alt="" coords="5,136,248,177"/>
+<area shape="rect" id="node2" href="$classhealth__monitor_1_1DriverManager.html#a89d3ffc516df63bf934d59f8e787dfd0" title="Evaluate if the sensor is available." alt="" coords="296,5,493,47"/>
+<area shape="rect" id="node3" href="$classhealth__monitor_1_1EntryManager.html#a3d536a9a44ed582fcd11fa3b4651545e" title="Get all registed entries as a list." alt="" coords="299,71,491,112"/>
+<area shape="rect" id="node4" href="$classhealth__monitor_1_1EntryManager.html#a275bc9653940317f85431dadf4cccc79" title=" " alt="" coords="299,136,491,177"/>
+<area shape="rect" id="node5" href="$classhealth__monitor_1_1EntryManager.html#a1256456c461297157cd3a651190096c8" title="Check if the entry is required." alt="" coords="299,201,491,243"/>
+<area shape="rect" id="node6" href="$classhealth__monitor_1_1EntryManager.html#a4e33c11ff040905b0b49d9e2f421bb5d" title="Check if the entry is required." alt="" coords="299,267,491,308"/>
+</map>

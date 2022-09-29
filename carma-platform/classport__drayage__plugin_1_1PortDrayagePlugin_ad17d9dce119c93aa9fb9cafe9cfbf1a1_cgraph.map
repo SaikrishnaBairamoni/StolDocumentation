@@ -1,0 +1,7 @@
+<map id="port_drayage_plugin::PortDrayagePlugin::parameter_update_callback" name="port_drayage_plugin::PortDrayagePlugin::parameter_update_callback">
+<area shape="rect" id="node1" title="Callback for dynamic parameter updates." alt="" coords="5,125,192,181"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#adb86b9f555825eed90563e36a6902988" title="Setter function to set this object&#39;s cargo_id_ string." alt="" coords="270,5,410,61"/>
+<area shape="rect" id="node3" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a729b14448eab06063c75984df7098a0c" title="Setter function to set this object&#39;s enable_port_drayage flag." alt="" coords="249,85,431,141"/>
+<area shape="rect" id="node4" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a31454a5ecaa15d3bff038edb9c53f490" title="Setter function to set this object&#39;s starting_at_staging_area flag." alt="" coords="240,165,440,221"/>
+<area shape="rect" id="node5" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a0c32b158671bb050cec74f2a6650b920" title="Setter function to set this object&#39;s cmv_id_ string." alt="" coords="270,245,410,301"/>
+</map>

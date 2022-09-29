@@ -1,0 +1,4 @@
+<map id="mobilitypath_publisher::MobilityPathPublication::trajectory_plan_to_trajectory" name="mobilitypath_publisher::MobilityPathPublication::trajectory_plan_to_trajectory">
+<area shape="rect" id="node1" title="Converts a Trajectory Plan to a (Mobility) Trajectory." alt="" coords="5,5,196,61"/>
+<area shape="rect" id="node2" href="$classmobilitypath__publisher_1_1MobilityPathPublication.html#a90d04897a78fc2582e11671640e061e9" title="Converts Trajectory Plan Point to ECEF (accepts meters and outputs in cm)" alt="" coords="244,5,419,61"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="NS3Adapter::sendMessageSrv" name="NS3Adapter::sendMessageSrv">
+<area shape="rect" id="node1" title="Message sending service." alt="" coords="5,56,205,83"/>
+<area shape="rect" id="node2" href="$classNS3Client.html#a1d90d224d73ba13c5a3e5bbac2d19149" title="returns connected state" alt="" coords="277,5,424,32"/>
+<area shape="rect" id="node3" href="$classNS3Adapter.html#a2f06522adf3098b3f9947c93b815ef35" title="Packs an outgoing message into J2375 standard." alt="" coords="261,56,441,83"/>
+<area shape="rect" id="node5" href="$classNS3Client.html#a3085a9d506de03255e3acc00aa778c25" title="sends a udp message" alt="" coords="253,107,448,133"/>
+<area shape="rect" id="node4" href="$classNS3Adapter.html#a39183974394ca80113e9f0c8caac284e" title="converts a uint8_t vector to an ascii representation" alt="" coords="496,49,667,90"/>
+</map>

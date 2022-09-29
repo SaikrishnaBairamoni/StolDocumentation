@@ -1,0 +1,4 @@
+<map id="port_drayage_plugin::PortDrayageWorker::composeArrivalMessage" name="port_drayage_plugin::PortDrayageWorker::composeArrivalMessage">
+<area shape="rect" id="node1" title="Assemble the current dataset into a MobilityOperations message with a JSON formatted body containing ..." alt="" coords="5,5,176,61"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageStateMachine.html#aee66b24d69c9613c30d92b927a75fc91" title="Get the current state of the state machine." alt="" coords="224,5,403,61"/>
+</map>

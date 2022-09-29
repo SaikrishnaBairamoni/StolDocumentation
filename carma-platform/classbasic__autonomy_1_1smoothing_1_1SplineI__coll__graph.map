@@ -1,0 +1,3 @@
+<map id="basic_autonomy::smoothing::SplineI" name="basic_autonomy::smoothing::SplineI">
+<area shape="rect" id="node1" title="Interface to a spline interpolator that can be used to smoothly interpolate between points." alt="" coords="5,5,188,229"/>
+</map>

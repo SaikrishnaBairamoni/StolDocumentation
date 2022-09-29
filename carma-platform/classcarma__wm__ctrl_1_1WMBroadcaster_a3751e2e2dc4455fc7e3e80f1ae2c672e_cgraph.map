@@ -1,0 +1,7 @@
+<map id="carma_wm_ctrl::WMBroadcaster::removeGeofence" name="carma_wm_ctrl::WMBroadcaster::removeGeofence">
+<area shape="rect" id="node1" title="Removes a geofence from the current map and publishes the ROS msg." alt="" coords="5,35,216,76"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a0a119e3571ef94545fc979ca3190c5f1" title=" " alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm.html#ac2ebf35bf2d64a6badff1009afc941cb" title=" " alt="" coords="296,71,443,98"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#af1b3b20607c1fde289b41fc6a51ee88a" title=" " alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#af027533b2d500770301e17520f9e4863" title="This is a helper function that returns true if the provided regem is marked to be changed by the geof..." alt="" coords="781,5,992,47"/>
+</map>

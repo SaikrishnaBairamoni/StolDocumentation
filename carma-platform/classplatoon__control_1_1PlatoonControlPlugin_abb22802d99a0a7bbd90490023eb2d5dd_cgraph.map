@@ -1,0 +1,18 @@
+<map id="platoon_control::PlatoonControlPlugin::generateControlSignals" name="platoon_control::PlatoonControlPlugin::generateControlSignals">
+<area shape="rect" id="node1" title=" " alt="" coords="5,162,201,218"/>
+<area shape="rect" id="node2" href="$classplatoon__control_1_1PlatoonControlPlugin.html#aa6c5daf428156d22c826981d40842cf2" title=" " alt="" coords="255,5,461,47"/>
+<area shape="rect" id="node3" href="$classplatoon__control_1_1PlatoonControlPlugin.html#a1330c6c95ac4c5480da1386a6f2dfa3b" title=" " alt="" coords="249,71,467,112"/>
+<area shape="rect" id="node4" href="$classplatoon__control_1_1PlatoonControlWorker.html#a276ee057fe00c91cefe15889de518066" title="Generates speed commands based on the trajectory point." alt="" coords="259,136,457,177"/>
+<area shape="rect" id="node7" href="$classplatoon__control_1_1PlatoonControlWorker.html#a027cda0b5c831bfe9cf5cd3550a261aa" title="Generates steering commands based on lookahead trajectory point." alt="" coords="263,201,453,243"/>
+<area shape="rect" id="node15" href="$classplatoon__control_1_1PlatoonControlWorker.html#a16811fc90f921a0e4457df0cb60099da" title="set current speed" alt="" coords="255,267,461,308"/>
+<area shape="rect" id="node16" href="$classplatoon__control_1_1PlatoonControlWorker.html#a8b3bd7987d0bfebb7e48fd959b14cd58" title="set platoon leader" alt="" coords="274,332,442,373"/>
+<area shape="rect" id="node5" href="$classplatoon__control_1_1PIDController.html#a4444983fb0ab556bf64bd78465b14410" title=" " alt="" coords="515,71,708,112"/>
+<area shape="rect" id="node6" href="$classplatoon__control_1_1PIDController.html#ace2aa16bd5a206a0560a4181f6cdea65" title=" " alt="" coords="515,136,708,177"/>
+<area shape="rect" id="node8" href="$classplatoon__control_1_1PurePursuit.html#a79f04624104c783928d3257a755ae30b" title="calculates steering angle based on lookahead trajectory point" alt="" coords="519,201,703,243"/>
+<area shape="rect" id="node13" href="$classplatoon__control_1_1PurePursuit.html#a36339afc8fd9acc7b8b7c1d5756d1e4e" title=" " alt="" coords="519,267,703,308"/>
+<area shape="rect" id="node14" href="$classplatoon__control_1_1PurePursuit.html#ad64f0cb0f082932fb6c357618152efda" title="returns steering angle" alt="" coords="519,332,703,373"/>
+<area shape="rect" id="node9" href="$classplatoon__control_1_1PurePursuit.html#a58ce5f7ea15672fdfd7a050bd3a7f2f1" title="calculates curvature to the lookahead trajectory point" alt="" coords="756,143,940,184"/>
+<area shape="rect" id="node11" href="$classplatoon__control_1_1PurePursuit.html#a33891c90c1c142bb6c358fab90136f0a" title=" " alt="" coords="988,201,1172,243"/>
+<area shape="rect" id="node12" href="$classplatoon__control_1_1PurePursuit.html#a569d0480c270c0a1d5d32e9e02ee865f" title="Lowpass filter to smoothen control signal." alt="" coords="756,260,940,301"/>
+<area shape="rect" id="node10" href="$classplatoon__control_1_1PurePursuit.html#ada5d569072205a40f28cf96a864b0e5b" title="calculates sin of the heading angle to the target point" alt="" coords="988,136,1172,177"/>
+</map>

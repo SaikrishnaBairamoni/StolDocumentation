@@ -1,0 +1,21 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationSTATUS" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationSTATUS">
+<area shape="rect" id="node1" title="Function to compose mobility operation message with STATUS params." alt="" coords="947,319,1181,375"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a657b2d890046589b62c473178a134b20" title="Function to compose mobility operation in candidate follower state." alt="" coords="660,5,899,76"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a5e18795bb16ef8f84cf6e451def325bb" title="Function to compose mobility operation in CandidateLeader." alt="" coords="660,100,899,171"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a3a80cbd904887d9fa98448f76fba7993" title="Function to compose mobility operation in follower state." alt="" coords="664,195,895,251"/>
+<area shape="rect" id="node10" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#afc01cfaa2979666119dff63ee09c05a6" title="Function to compose mobility operation in leader state." alt="" coords="669,275,890,331"/>
+<area shape="rect" id="node12" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a20c23f25255a2e259d5ee9a4f68b722c" title="Function to compose mobility operation in LeaderAborting state." alt="" coords="669,356,890,427"/>
+<area shape="rect" id="node14" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a95d140cc05909e28936b714f41862fc9" title="Function to compose mobility operation in leader waiting state." alt="" coords="669,451,890,521"/>
+<area shape="rect" id="node16" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a2b54d8a43eb72f0c439860b5b5793302" title="Function to compose mobility operation in LeadWithOperation (cut&#45;in join)" alt="" coords="661,545,897,616"/>
+<area shape="rect" id="node18" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a4e1a6de5a77b7bceab316768df37fc50" title="Function to compose mobility operation in PrepareToJoin (cut&#45;in join)" alt="" coords="666,640,893,711"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a7d07b2ec081219ee9fb62418170bb1f8" title="Run Candidate Follower State." alt="" coords="429,22,612,78"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac7e7160659b61a4ac61be14f74fb1caa" title="Spin callback function." alt="" coords="199,322,381,378"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,322,151,378"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aa2c3c1b6030726c8e1931ea0093dd91d" title="Run Candidate Leader State." alt="" coords="429,111,612,167"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a3e9dbfe57693b6d23d99b61af6375a4f" title="Run Follower State." alt="" coords="429,197,612,253"/>
+<area shape="rect" id="node11" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#acf8506705dea8579268655c4fdeb4ddf" title="Run Leader State." alt="" coords="429,278,612,334"/>
+<area shape="rect" id="node13" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a848aac5dfc1f6a3c4fba8fa0bba0ca66" title="Run Leader Aborting State." alt="" coords="429,362,612,418"/>
+<area shape="rect" id="node15" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a7bcebb0d98ab80013c945a2ec283250e" title="Run Leader Waiting State." alt="" coords="429,450,612,506"/>
+<area shape="rect" id="node17" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac28094ea4b6d85949859226c860d8bd6" title="UCLA Run lead with operation State." alt="" coords="429,546,612,602"/>
+<area shape="rect" id="node19" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a8c989d9220109cab74fb8aff6212f27e" title="UCLA Run prepare to join State." alt="" coords="429,633,612,689"/>
+</map>

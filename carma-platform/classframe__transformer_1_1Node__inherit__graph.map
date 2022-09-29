@@ -1,0 +1,4 @@
+<map id="frame_transformer::Node" name="frame_transformer::Node">
+<area shape="rect" id="node1" title="Node which subcribes to and input topic, transforms the data into a new frame and republishes it onto..." alt="" coords="47,131,212,325"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,253,83"/>
+</map>

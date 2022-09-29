@@ -1,0 +1,4 @@
+<map id="carma_wm::CARMAWorldModel" name="carma_wm::CARMAWorldModel">
+<area shape="rect" id="node1" title="Class which implements the WorldModel interface. In addition this class provides write access to the ..." alt="" coords="5,1025,212,2261"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1WorldModel.html" title="An interface which provides read access to the semantic map and route. This class is not thread safe...." alt="" coords="7,5,210,977"/>
+</map>

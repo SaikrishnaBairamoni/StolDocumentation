@@ -1,0 +1,4 @@
+<map id="bsm_generator::BSMGenerator::poseCallback" name="bsm_generator::BSMGenerator::poseCallback">
+<area shape="rect" id="node1" title="Callback to populate BSM message with longitude, latitude, and elevation data." alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGenerator.html#a7b0d22297d6bb63cc0cc59f9670fcfe5" title=" " alt="" coords="5,5,205,47"/>
+</map>

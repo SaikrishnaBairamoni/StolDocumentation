@@ -1,0 +1,4 @@
+<map id="port_drayage_plugin::PortDrayageStateMachine::setOnArrivedAtDestinationCallback" name="port_drayage_plugin::PortDrayageStateMachine::setOnArrivedAtDestinationCallback">
+<area shape="rect" id="node1" title="Set the callback to be invoked upon transitioning into the AWAITING_DESTINATION state." alt="" coords="193,5,425,61"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a234aa0d5f2afcf347d8336d37d27c3a9" title="Standard constructor for the PortDrayageWorker." alt="" coords="5,5,145,61"/>
+</map>

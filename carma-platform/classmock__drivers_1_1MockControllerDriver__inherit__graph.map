@@ -1,0 +1,4 @@
+<map id="mock_drivers::MockControllerDriver" name="mock_drivers::MockControllerDriver">
+<area shape="rect" id="node1" title="Mock Controller driver. Implements controller service and feedback logic to support CARMA Platform Gu..." alt="" coords="17,351,210,663"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriver.html" title="The template node for the mock drivers that will handle all of the default driver logic." alt="" coords="5,5,221,303"/>
+</map>

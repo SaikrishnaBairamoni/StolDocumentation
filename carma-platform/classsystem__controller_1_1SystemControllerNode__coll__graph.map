@@ -1,0 +1,12 @@
+<map id="system_controller::SystemControllerNode" name="system_controller::SystemControllerNode">
+<area shape="rect" id="node1" title=" " alt="" coords="293,344,471,553"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,175,100,252"/>
+<area shape="rect" id="node3" title=" " alt="" coords="124,175,179,252"/>
+<area shape="rect" id="node4" title=" " alt="" coords="269,175,349,252"/>
+<area shape="rect" id="node5" title=" " alt="" coords="373,160,541,267"/>
+<area shape="rect" id="node6" title=" " alt="" coords="565,175,719,252"/>
+<area shape="rect" id="node7" href="$structSystemControllerConfig.html" title="Stuct containing the algorithm configuration values for the SystemController." alt="" coords="743,175,901,252"/>
+<area shape="rect" id="node8" title=" " alt="" coords="595,5,731,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="792,5,852,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="957,5,1031,83"/>
+</map>

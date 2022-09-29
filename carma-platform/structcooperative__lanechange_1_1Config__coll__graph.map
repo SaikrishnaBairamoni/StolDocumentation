@@ -1,0 +1,6 @@
+<map id="cooperative_lanechange::Config" name="cooperative_lanechange::Config">
+<area shape="rect" id="node1" title="Stuct containing the algorithm configuration values for cooperative_lanechange." alt="" coords="115,336,323,560"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,65,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="192,5,247,83"/>
+<area shape="rect" id="node4" href="$classint.html" title=" " alt="" coords="361,5,400,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="platoon_control::PlatoonControlWorker::generateSpeed" name="platoon_control::PlatoonControlWorker::generateSpeed">
+<area shape="rect" id="node1" title="Generates speed commands based on the trajectory point." alt="" coords="5,39,203,80"/>
+<area shape="rect" id="node2" href="$classplatoon__control_1_1PIDController.html#a4444983fb0ab556bf64bd78465b14410" title=" " alt="" coords="251,5,444,47"/>
+<area shape="rect" id="node3" href="$classplatoon__control_1_1PIDController.html#ace2aa16bd5a206a0560a4181f6cdea65" title=" " alt="" coords="251,71,444,112"/>
+</map>

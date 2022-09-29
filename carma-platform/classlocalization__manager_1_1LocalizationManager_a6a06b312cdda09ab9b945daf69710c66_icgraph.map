@@ -1,0 +1,7 @@
+<map id="localization_manager::LocalizationManager::computeFreq" name="localization_manager::LocalizationManager::computeFreq">
+<area shape="rect" id="node1" title="Helper function to compute the instantaneous frequency between two times." alt="" coords="431,45,577,101"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#ace5b1b34adeeab50c2b3d47591e6c7c9" title="Helper function to both compute the NDT Frequency and update the previous pose timestamp." alt="" coords="236,5,383,61"/>
+<area shape="rect" id="node4" href="$classlocalization__manager_1_1LocalizationManager.html#a0ce2b35dcab57bd0abc4ad9c10f5a24e" title="Timer callback that controls the publication of the selected pose and status report." alt="" coords="236,85,383,141"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1LocalizationManager.html#a027f5aab97b4a77bdbea02a2cf585115" title="Synced callback for the NDT reported pose and status messages." alt="" coords="17,5,177,61"/>
+<area shape="rect" id="node5" href="$classlocalization__manager_1_1Node.html#afb38782f4ca8c455d8b6440b38bc62a9" title=" " alt="" coords="5,93,188,134"/>
+</map>

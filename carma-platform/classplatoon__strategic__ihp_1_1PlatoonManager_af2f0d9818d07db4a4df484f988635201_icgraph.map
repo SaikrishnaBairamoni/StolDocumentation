@@ -1,0 +1,19 @@
+<map id="platoon_strategic_ihp::PlatoonManager::clearActionPlan" name="platoon_strategic_ihp::PlatoonManager::clearActionPlan">
+<area shape="rect" id="node1" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="923,413,1141,454"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a90514428edda23566362c1a60dc01448" title="Function to process mobility request in candidateleader state." alt="" coords="669,5,866,61"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a76aa3d0140244914e0ffe7f9554751bb" title="Function to process mobility request in leader waiting state." alt="" coords="676,85,859,141"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac969d6086d5fe4b55831015327820688" title="Function to process mobility response in candidate follower state." alt="" coords="660,165,875,221"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a7fcd17fc2e2649934215719e473c52bb" title="Function to process mobility response in leader state." alt="" coords="676,245,859,301"/>
+<area shape="rect" id="node10" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aeba3a1dd3fc9411891a1fe1eac8c3993" title="Function to process mobility response in leaderaborting state." alt="" coords="670,325,865,381"/>
+<area shape="rect" id="node11" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a7d07b2ec081219ee9fb62418170bb1f8" title="Run Candidate Follower State." alt="" coords="676,405,859,461"/>
+<area shape="rect" id="node13" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aa2c3c1b6030726c8e1931ea0093dd91d" title="Run Candidate Leader State." alt="" coords="676,485,859,541"/>
+<area shape="rect" id="node14" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#acf8506705dea8579268655c4fdeb4ddf" title="Run Leader State." alt="" coords="676,565,859,621"/>
+<area shape="rect" id="node15" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a848aac5dfc1f6a3c4fba8fa0bba0ca66" title="Run Leader Aborting State." alt="" coords="676,645,859,701"/>
+<area shape="rect" id="node16" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a7bcebb0d98ab80013c945a2ec283250e" title="Run Leader Waiting State." alt="" coords="676,725,859,781"/>
+<area shape="rect" id="node17" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a8c989d9220109cab74fb8aff6212f27e" title="UCLA Run prepare to join State." alt="" coords="676,805,859,861"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a53cc42ead95e9734805f4b52de1e38eb" title="Function to the process and respond to the mobility request." alt="" coords="429,85,612,141"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a588b379b14e20af4e05cf4883c535c5a" title="Callback function for Mobility Request Message." alt="" coords="199,133,381,189"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,245,151,301"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aaca0c4143be4a27041ab5ed90d2c624c" title="Callback function for Mobility Response Message." alt="" coords="429,245,612,301"/>
+<area shape="rect" id="node12" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac7e7160659b61a4ac61be14f74fb1caa" title="Spin callback function." alt="" coords="429,565,612,621"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="platoon_strategic_ihp::PlatoonManager::updatesOrAddMemberInfo" name="platoon_strategic_ihp::PlatoonManager::updatesOrAddMemberInfo">
+<area shape="rect" id="node1" title="Updates the list of vehicles in the specified platoon, based on info available from a mobility operat..." alt="" coords="932,45,1120,101"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aa09eb8121e30d6ee3517823766dbeea4" title="Update information for members of the host&#39;s platoon based on a mobility operation STATUS message." alt="" coords="672,5,872,61"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aef18115269a340fb9e89452acd05658f" title="Update information for members of a neighboring platoon based on a mobility operation STATUS message." alt="" coords="660,85,884,141"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aeac839f63dec331ca94a0feee2c949f4" title="Function to process mobility operation message with STATUS params, read ecef location and update plat..." alt="" coords="429,45,612,101"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a9f77f3abf67b6006fd6c9b965cbb1c10" title="Callback function for Mobility Operation Message." alt="" coords="199,45,381,101"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,45,151,101"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="bsm_generator::BSMGenerator::steerWheelAngleCallback" name="bsm_generator::BSMGenerator::steerWheelAngleCallback">
+<area shape="rect" id="node1" title="Callback to populate BSM message with vehicle steering wheel angle data." alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGeneratorWorker.html#a83ef4108e8859390b60f1d0ba5d7138e" title="Function to apply minimum and maximum limits to a steering wheel angle value. Minimum limit is &#45;189...." alt="" coords="253,5,488,47"/>
+</map>

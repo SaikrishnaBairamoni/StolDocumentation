@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::getManeuverDuration" name="route_following_plugin::RouteFollowingPlugin::getManeuverDuration">
+<area shape="rect" id="node1" title="returns duration as ros::Duration required to complete maneuver given its start dist,..." alt="" coords="5,13,159,69"/>
+<area shape="rect" id="node2" href="$namespaceroute__following__plugin_1_1anonymous__namespace_02route__following__plugin_8cpp_03.html#a9b29dd085f9f59d468b1c9320f0b5102" title="Anonymous function to extract maneuver end speed which can not be optained with GET_MANEUVER_PROPERY ..." alt="" coords="207,5,400,76"/>
+</map>

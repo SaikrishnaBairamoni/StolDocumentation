@@ -1,0 +1,4 @@
+<map id="traffic_incident_parser::TrafficIncidentParserWorker::getAdjacentReverseCenterlines" name="traffic_incident_parser::TrafficIncidentParserWorker::getAdjacentReverseCenterlines">
+<area shape="rect" id="node1" title="Helper method that is identical to getAdjacentForwardCenterlines except it works in reverse using upt..." alt="" coords="5,5,216,61"/>
+<area shape="rect" id="node2" href="$namespacetraffic__incident__parser.html#a97e7194817b789964ce7d56b96e19cb3" title="Helper method to get the nearest point index of a point and a linestring." alt="" coords="264,13,417,54"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="basic_autonomy::smoothing::BSpline" name="basic_autonomy::smoothing::BSpline">
+<area shape="rect" id="node1" title="Realization of SplineI that uses the Eigen::Splines library for interpolation." alt="" coords="5,292,188,516"/>
+<area shape="rect" id="node2" href="$classbasic__autonomy_1_1smoothing_1_1SplineI.html" title="Interface to a spline interpolator that can be used to smoothly interpolate between points." alt="" coords="5,5,188,229"/>
+<area shape="rect" id="node3" title=" " alt="" coords="212,79,344,156"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="carma_guidance_plugins::TacticalPlugin" name="carma_guidance_plugins::TacticalPlugin">
+<area shape="rect" id="node1" title="TacticalPlugin base class which can be extended by user provided plugins which wish to implement the ..." alt="" coords="830,681,1010,920"/>
+<area shape="rect" id="node4" href="$classSUB_1_1Node.html" title="TODO for USER: Add class description." alt="" coords="5,1041,205,1661"/>
+<area shape="rect" id="node5" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html" title="The class responsible for generating cooperative lanechange trajectories from received lane change ma..." alt="" coords="229,968,456,1735"/>
+<area shape="rect" id="node6" href="$classinlanecruising__plugin_1_1InLaneCruisingPluginNode.html" title="ROS node for the InLaneCruisingPlugin." alt="" coords="480,1225,680,1478"/>
+<area shape="rect" id="node7" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTransitPluginNode.html" title="ROS node for the LightControlledIntersectionTransitPluginNode." alt="" coords="704,1247,909,1456"/>
+<area shape="rect" id="node8" href="$classplatooning__tactical__plugin_1_1Node.html" title="ROS node for the PlatooningTacticalPlugin." alt="" coords="933,1261,1133,1441"/>
+<area shape="rect" id="node9" href="$classstop__and__wait__plugin_1_1StopandWaitNode.html" title=" " alt="" coords="1157,1247,1357,1456"/>
+<area shape="rect" id="node10" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html" title="Class containing primary business logic for the Stop Controlled Intersection Tactical Plugin." alt="" coords="1381,1137,1584,1566"/>
+<area shape="rect" id="node11" href="$classyield__plugin_1_1YieldPluginNode.html" title="ROS node for the YieldPlugin." alt="" coords="1609,1232,1799,1471"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="826,131,1014,633"/>
+<area shape="rect" id="node3" title=" " alt="" coords="796,5,1044,83"/>
+</map>

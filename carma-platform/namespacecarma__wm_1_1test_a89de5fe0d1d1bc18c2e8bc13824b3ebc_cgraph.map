@@ -1,0 +1,4 @@
+<map id="carma_wm::test::getBasicPoint" name="carma_wm::test::getBasicPoint">
+<area shape="rect" id="node1" title="helper function for quickly creating a lanelet::BasicPoint. random id is assigned" alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1test.html#afbe68ff3e46a1b21b763246668b9a827" title="helper function for quickly creating a lanelet::Point3d. random id is assigned" alt="" coords="224,13,392,39"/>
+</map>

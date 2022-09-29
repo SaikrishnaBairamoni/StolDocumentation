@@ -1,0 +1,8 @@
+<map id="subsystem_controllers/include/subsystem_controllers/localization_controller" name="subsystem_controllers/include/subsystem_controllers/localization_controller">
+<area shape="rect" id="node1" href="dir_cd295dcb23c8c1543ab9f12d5ea9f785.html" title="base_subsystem_controller" alt="" coords="27,148,207,196"/>
+<area shape="rect" id="node2" href="dir_3f25c84d05cd76c880fee62994665910.html" title="localization_controller" alt="" coords="52,52,199,100"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000153_000004.html" title="1" alt="" coords="125,123,133,138"/>
+<area shape="rect" id="node3" href="dir_769cdac628fe9567f4da08b5b54e0c1a.html" title="ns&#45;3_adapter" alt="" coords="231,148,329,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000153_000176.html" title="1" alt="" coords="227,124,235,138"/>
+<area shape="rect" id="clust1" href="dir_20b4f51b96df99e3cb2da6d8febfd4a5.html" title="subsystem_controllers" alt="" coords="16,16,219,207"/>
+</map>

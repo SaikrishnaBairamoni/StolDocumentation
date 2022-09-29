@@ -1,0 +1,8 @@
+<map id="route_following_plugin::anonymous_namespace{route_following_plugin::cpp}::setManeuverLaneletIds" name="route_following_plugin::anonymous_namespace{route_following_plugin::cpp}::setManeuverLaneletIds">
+<area shape="rect" id="node1" title="Anonymous function to set the lanelet ids for all maneuver types except lane following." alt="" coords="852,38,1047,109"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#aef98e4f85a3a9dd0ac4f8aa2bccc3077" title="Adds a StopAndWait maneuver to the end of a maneuver set stopping at the provided downtrack value NOT..." alt="" coords="609,45,804,101"/>
+<area shape="rect" id="node3" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a5bb267649d296b57b85b6bf3d6868ee6" title="Calculate maneuver plan for remaining route. This callback is triggered when a new route has been rec..." alt="" coords="408,45,561,101"/>
+<area shape="rect" id="node4" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a06ac08c84b45dca29ec5236604dfe64e" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="207,5,360,61"/>
+<area shape="rect" id="node5" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#abe2ea0ac74599eee61235c5db12d9ed2" title="This method re&#45;routes the vehicle back to the shortest path, if the vehicle has left the shortest pat..." alt="" coords="207,85,360,141"/>
+<area shape="rect" id="node6" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a65fc4245c9eb4f377690321e322c532d" title="Callback for the front bumper pose transform." alt="" coords="5,85,159,141"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="carma_guidance_plugins::StrategicPlugin" name="carma_guidance_plugins::StrategicPlugin">
+<area shape="rect" id="node1" title="StrategicPlugin base class which can be extended by user provided plugins which wish to implement the..." alt="" coords="411,696,602,935"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="306,175,494,633"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,13,253,90"/>
+<area shape="rect" id="node4" title=" " alt="" coords="277,13,357,90"/>
+<area shape="rect" id="node5" title=" " alt="" coords="405,5,563,97"/>
+<area shape="rect" id="node6" title=" " alt="" coords="588,13,796,90"/>
+<area shape="rect" id="node7" title=" " alt="" coords="519,358,711,450"/>
+</map>

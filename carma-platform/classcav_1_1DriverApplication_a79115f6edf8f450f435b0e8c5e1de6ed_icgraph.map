@@ -1,0 +1,7 @@
+<map id="cav::DriverApplication::setStatus" name="cav::DriverApplication::setStatus">
+<area shape="rect" id="node1" title="Sets the status of the DriverApplication." alt="" coords="453,49,600,90"/>
+<area shape="rect" id="node2" href="$classNS3Adapter.html#aae35622ecb9c64566f139fdbbda97abd" title="constructor" alt="" coords="217,5,387,32"/>
+<area shape="rect" id="node3" href="$classNS3Adapter.html#afd91fb843d80af26b2b129dd33665d57" title="Handles the NS&#45;3 onConnect Event." alt="" coords="199,56,405,83"/>
+<area shape="rect" id="node5" href="$classNS3Adapter.html#adc385894ac633601f192c7c787b9fb07" title="Handles the NS&#45;3 onDisconnect Event." alt="" coords="213,107,391,149"/>
+<area shape="rect" id="node4" href="$classNS3Adapter.html#ab2dfb933cc738732c0580b62c233f876" title="Initializes ROS context for this node." alt="" coords="5,85,151,112"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node2" href="$classhealth__monitor_1_1HealthMonitor.html#ab146800e4e8939b2ec9db6cf04a86b07" title="Begin normal execution of health monitor node. Will take over control flow of program and exit from h..." alt="" coords="104,5,323,32"/>
+</map>

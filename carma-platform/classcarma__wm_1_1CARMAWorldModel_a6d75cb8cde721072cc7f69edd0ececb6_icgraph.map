@@ -1,0 +1,6 @@
+<map id="carma_wm::CARMAWorldModel::getTrafficRules" name="carma_wm::CARMAWorldModel::getTrafficRules">
+<area shape="rect" id="node1" title="Get the Traffic Rules object." alt="" coords="532,39,739,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a6f924aa42ade5d323045fdad9b7ca3a8" title="Helper function to compute the geometry of the route downtrack/crosstrack reference line This functio..." alt="" coords="260,5,484,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#a5fe3b961294db12603fe8eb5e7d2ea70" title="Set the current map." alt="" coords="269,71,475,112"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#ad4d9510c892eb9f19f462e0576317a69" title="Set the current route. This route must match the current map for this class to function properly." alt="" coords="5,5,212,47"/>
+</map>

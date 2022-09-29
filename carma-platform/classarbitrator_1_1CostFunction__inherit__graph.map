@@ -1,0 +1,5 @@
+<map id="arbitrator::CostFunction" name="arbitrator::CostFunction">
+<area shape="rect" id="node1" title="Generic interface representing a means of computing cost for plans in the search graph." alt="" coords="123,5,291,127"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1CostSystemCostFunction.html" title="Implementation of the CostFunction interface." alt="" coords="5,175,195,340"/>
+<area shape="rect" id="node3" href="$classarbitrator_1_1FixedPriorityCostFunction.html" title="Implementation of the CostFunction interface." alt="" coords="219,189,408,325"/>
+</map>

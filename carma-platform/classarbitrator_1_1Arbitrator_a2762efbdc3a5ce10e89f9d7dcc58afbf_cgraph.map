@@ -1,0 +1,4 @@
+<map id="arbitrator::Arbitrator::initial_state" name="arbitrator::Arbitrator::initial_state">
+<area shape="rect" id="node1" title="Function to be executed during the initial state of the Arbitrator." alt="" coords="5,5,137,47"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1Arbitrator.html#ae96a545169e7255dbf8ccd8544b2c01e" title="Callback for receiving Guidance state machine updates." alt="" coords="185,5,323,47"/>
+</map>

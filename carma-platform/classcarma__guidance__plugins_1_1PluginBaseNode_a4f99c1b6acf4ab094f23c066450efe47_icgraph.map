@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::PluginBaseNode::get_plugin_name" name="carma_guidance_plugins::PluginBaseNode::get_plugin_name">
+<area shape="rect" id="node1" title="Return the name of this plugin." alt="" coords="256,13,421,69"/>
+<area shape="rect" id="node2" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#ab0bf4a699bff521ffe56736d78880926" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="5,5,208,76"/>
+</map>

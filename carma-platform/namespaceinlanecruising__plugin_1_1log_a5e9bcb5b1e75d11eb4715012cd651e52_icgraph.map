@@ -1,0 +1,4 @@
+<map id="inlanecruising_plugin::log::basicPointToStream" name="inlanecruising_plugin::log::basicPointToStream">
+<area shape="rect" id="node1" title="Helper function to convert a lanelet::BasicPoint2d to a string." alt="" coords="249,5,419,47"/>
+<area shape="rect" id="node2" href="$namespaceinlanecruising__plugin_1_1log.html#a4e946617a591b9e02a1b62f65234b15b" title="Helper function to convert a PointSpeedPair to a string." alt="" coords="5,5,201,47"/>
+</map>

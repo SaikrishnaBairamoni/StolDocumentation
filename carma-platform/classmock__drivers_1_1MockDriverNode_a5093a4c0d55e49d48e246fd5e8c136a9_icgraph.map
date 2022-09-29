@@ -1,0 +1,8 @@
+<map id="mock_drivers::MockDriverNode::publishDataNoHeader" name="mock_drivers::MockDriverNode::publishDataNoHeader">
+<area shape="rect" id="node1" title="Publish data with no header on a desired topic." alt="" coords="809,39,996,80"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriver.html#a8dd8f92d27da3b00fab5a70848fcb961" title="Helper function to publish the driver discovery message." alt="" coords="579,5,751,47"/>
+<area shape="rect" id="node6" href="$classmock__drivers_1_1MockControllerDriver.html#ae03ec2df449bd56941c8343361656ea5" title="Virtual method which child classes can override to add functionality which will occur during each spi..." alt="" coords="568,71,761,112"/>
+<area shape="rect" id="node3" href="$classmock__drivers_1_1MockDriver.html#a9c049386fcb611d5775f0e266511c3e9" title="Callback which will be triggered at the rate specified by getRate(). This callback will also trigger ..." alt="" coords="348,5,520,47"/>
+<area shape="rect" id="node4" href="$classmock__drivers_1_1MockDriver.html#aad7620eb7aecece6a70e4181c938e945" title="A function to initialize the publishers and subsricers and start the node. In child classes,..." alt="" coords="104,13,300,39"/>
+<area shape="rect" id="node5" href="$mock__drivers_2rosbag__mock__drivers_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,56,39"/>
+</map>

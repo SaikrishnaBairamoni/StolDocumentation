@@ -1,0 +1,4 @@
+<map id="carma_wm::WMListenerWorker::roadwayObjectListCallback" name="carma_wm::WMListenerWorker::roadwayObjectListCallback">
+<area shape="rect" id="node1" title="Callback for roadway objects msg." alt="" coords="216,5,419,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1WMListener.html#aa727330ec070c6631616bbc7ec2f45d1" title="Constructor which can be used to specify threading behavior of this class." alt="" coords="5,5,168,47"/>
+</map>

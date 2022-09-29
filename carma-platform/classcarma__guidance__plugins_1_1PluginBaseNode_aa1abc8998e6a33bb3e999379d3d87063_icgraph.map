@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::PluginBaseNode::get_world_model_listener" name="carma_guidance_plugins::PluginBaseNode::get_world_model_listener">
+<area shape="rect" id="node1" title="Method to return the default world model listener provided as a convience by this base class If this ..." alt="" coords="207,5,372,61"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a06ac08c84b45dca29ec5236604dfe64e" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,5,159,61"/>
+</map>

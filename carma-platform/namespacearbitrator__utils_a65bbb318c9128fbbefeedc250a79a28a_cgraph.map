@@ -1,0 +1,4 @@
+<map id="arbitrator_utils::get_plan_end_distance" name="arbitrator_utils::get_plan_end_distance">
+<area shape="rect" id="node1" title="Get the end distance of the first maneuver in the plan." alt="" coords="5,5,143,47"/>
+<area shape="rect" id="node2" href="$namespacearbitrator__utils.html#a55896d5750ee654556f9496e4d71e6d4" title="Get the end distance of the specified maneuver." alt="" coords="191,5,361,47"/>
+</map>

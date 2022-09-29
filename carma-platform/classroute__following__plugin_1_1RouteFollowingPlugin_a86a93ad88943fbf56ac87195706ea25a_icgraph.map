@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::current_maneuver_plan_cb" name="route_following_plugin::RouteFollowingPlugin::current_maneuver_plan_cb">
+<area shape="rect" id="node1" title="Callback for the ManeuverPlan subscriber, will store the current maneuver plan received locally...." alt="" coords="207,5,391,61"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a06ac08c84b45dca29ec5236604dfe64e" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,5,159,61"/>
+</map>

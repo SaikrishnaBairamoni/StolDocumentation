@@ -1,0 +1,11 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::findLaneWidth" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::findLaneWidth">
+<area shape="rect" id="node1" title="Find lanelet width from local position." alt="" coords="1133,45,1316,101"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a12d5bd4a0601fe67e924cc07f0672e85" title="The method for platoon leader to determine if the joining vehicle is closeby. (Note: Used when host v..." alt="" coords="891,5,1085,61"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aa76f916a1f30e25204262dcd17fcf4ac" title="Function to determine if the host vehicle is close to the target platoon (used for cut&#45;in join scenar..." alt="" coords="893,85,1083,141"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a5776b135d1c58b8224763c05d64fa440" title="Function to process mobility request in leader state." alt="" coords="660,5,843,61"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a53cc42ead95e9734805f4b52de1e38eb" title="Function to the process and respond to the mobility request." alt="" coords="429,5,612,61"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a588b379b14e20af4e05cf4883c535c5a" title="Callback function for Mobility Request Message." alt="" coords="199,5,381,61"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,45,151,101"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#afd00a90158f773100543b3f56f964d74" title="Function to process mobility operation in leader state." alt="" coords="660,85,843,141"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a9f77f3abf67b6006fd6c9b965cbb1c10" title="Callback function for Mobility Operation Message." alt="" coords="199,85,381,141"/>
+</map>

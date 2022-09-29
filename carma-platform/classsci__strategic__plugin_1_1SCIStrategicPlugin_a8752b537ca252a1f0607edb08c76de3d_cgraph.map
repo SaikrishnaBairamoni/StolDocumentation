@@ -1,0 +1,4 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::publishMobilityOperation" name="sci_strategic_plugin::SCIStrategicPlugin::publishMobilityOperation">
+<area shape="rect" id="node1" title="Method to publish mobility operation msgs at a fixed rate of 10hz if approaching intersection." alt="" coords="5,5,175,61"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#ac50f2ce2d36754bf6a20a46b8b0e559c" title="Generates Mobility Operation messages." alt="" coords="223,5,401,61"/>
+</map>

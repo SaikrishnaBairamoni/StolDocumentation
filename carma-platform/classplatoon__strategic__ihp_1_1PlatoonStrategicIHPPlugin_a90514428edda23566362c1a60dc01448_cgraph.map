@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_candidateleader" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_candidateleader">
+<area shape="rect" id="node1" title="Function to process mobility request in candidateleader state." alt="" coords="5,110,203,166"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="251,5,469,47"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a876cee27af19b1f215ffd4a2190be371" title="Function to convert ecef location to a 2d point in map frame." alt="" coords="269,70,451,126"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ab1c204db4a5056621de299a9dd663c6f" title="Resets all variables that might indicate other members of the host&#39;s platoon; sets the host back to s..." alt="" coords="267,150,453,206"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#abca93088e8980c97a1a24c4fff31c758" title="Resets all variables that describe a neighbor platoon, so that no neighbor is known." alt="" coords="255,230,465,286"/>
+</map>

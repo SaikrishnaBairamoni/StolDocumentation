@@ -1,0 +1,10 @@
+<map id="carma_guidance_plugins::PluginBaseNode::PluginBaseNode" name="carma_guidance_plugins::PluginBaseNode::PluginBaseNode">
+<area shape="rect" id="node1" title="PluginBaseNode constructor." alt="" coords="5,213,233,254"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#ae38e2f1beee22ec9f49e934820b60b7c" title="Callback for the plugin discovery timer which will publish the plugin discovery message." alt="" coords="281,205,468,261"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a0c627d698b6cebcc99d1946d047f1ac3" title="Returns the activation status of this plugin. The plugins API callbacks will only be triggered when t..." alt="" coords="523,5,689,61"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a706b788f272c0d01711f2820ef5f3798" title="Get the availability status of this plugin based on the current operating environment...." alt="" coords="523,85,689,141"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a415f343893f7465fa68094497bc2825a" title="Get the capability string representing this plugins capabilities Method must be overriden by extendin..." alt="" coords="523,165,689,221"/>
+<area shape="rect" id="node6" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#abaabf39cce21b400bff5e93949597830" title="Return the name of this plugin with namespace. NOTE: If only the name of the plugin is required,..." alt="" coords="523,245,689,301"/>
+<area shape="rect" id="node7" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a0b29816e3daff14946e38577011ed57c" title="Returns the type of this plugin according to the carma_planning_msgs::Plugin type enum...." alt="" coords="516,325,696,366"/>
+<area shape="rect" id="node8" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#ac318c8732500fa793149ec4d2f442cf6" title="Returns the version id of this plugin." alt="" coords="523,389,689,445"/>
+</map>

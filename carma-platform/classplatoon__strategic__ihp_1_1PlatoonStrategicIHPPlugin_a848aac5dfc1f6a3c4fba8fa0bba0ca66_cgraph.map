@@ -1,0 +1,9 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_leader_aborting" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_leader_aborting">
+<area shape="rect" id="node1" title="Run Leader Aborting State." alt="" coords="5,166,188,222"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="248,5,467,47"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a20c23f25255a2e259d5ee9a4f68b722c" title="Function to compose mobility operation in LeaderAborting state." alt="" coords="247,71,468,141"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a472f726662a0702881c52b4da95bd457" title="Returns distance to the predessecor vehicle, in m." alt="" coords="259,166,456,222"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="236,245,479,287"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a11ffedaaa90fe358ecfdccab7c5a428c" title="Function to convert pose from map frame to ecef location." alt="" coords="266,310,449,366"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="527,78,761,134"/>
+</map>

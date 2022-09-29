@@ -1,0 +1,4 @@
+<map id="inlanecruising_plugin::smoothing::BSpline" name="inlanecruising_plugin::smoothing::BSpline">
+<area shape="rect" id="node1" title="Realization of SplineI that uses the Eigen::Splines library for interpolation." alt="" coords="5,204,148,355"/>
+<area shape="rect" id="node2" href="$classinlanecruising__plugin_1_1smoothing_1_1SplineI.html" title="Interface to a spline interpolator that can be used to smoothly interpolate between points." alt="" coords="5,5,148,156"/>
+</map>

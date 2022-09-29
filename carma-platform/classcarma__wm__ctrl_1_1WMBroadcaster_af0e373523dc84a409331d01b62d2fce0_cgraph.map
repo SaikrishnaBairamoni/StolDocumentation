@@ -1,0 +1,18 @@
+<map id="carma_wm_ctrl::WMBroadcaster::geofenceFromMsg" name="carma_wm_ctrl::WMBroadcaster::geofenceFromMsg">
+<area shape="rect" id="node1" title="Fills geofence object from TrafficControlMessageV01 ROS Msg." alt="" coords="5,156,216,197"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a74d10f4f0534115f672f8995f0036b49" title=" " alt="" coords="264,5,481,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#aa326eab73fe1583c1fa937ed2e38b33f" title="Generates participants list." alt="" coords="529,123,740,164"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#ae34565da1566e777745a92161422404c" title="Adds RegionAccessRule to the map." alt="" coords="267,188,478,229"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a116928c0070cfa7587c219a6629dadb8" title="Adds Minimum Gap to the map." alt="" coords="267,123,478,164"/>
+<area shape="rect" id="node8" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a1327952ca44a5e817b0498f93f6143ac" title="Gets the affected lanelet or areas based on the points in local frame." alt="" coords="267,253,478,295"/>
+<area shape="rect" id="node16" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a44fed247724b501a968aec27479ed58d" title="Extract geofence points from geofence message using its given proj and datum fields." alt="" coords="267,319,478,360"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a2c6c3606e5f4b3c12a984261823c1d71" title="Combines a list of the given participants into a single &quot;vehicle&quot; type if participants cover all poss..." alt="" coords="790,123,1001,164"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#ac71c9fdbf27cbfbe3988c3a77d6e7067" title="Generates inverse participants list of the given participants." alt="" coords="529,188,740,229"/>
+<area shape="rect" id="node9" href="$namespacecarma__wm_1_1query.html#a9c9935e22582f37c01441115bce72f58" title="Gets the affected lanelet or areas based on the points in the given map&#39;s frame." alt="" coords="537,253,732,295"/>
+<area shape="rect" id="node10" href="$namespacecarma__wm_1_1query.html#a382665a2ddc42be06fca9c1f8dfd0489" title="A function that filters successor lanelets of root_lanelets from possible_lanelets." alt="" coords="788,188,1003,229"/>
+<area shape="rect" id="node11" href="$namespacecarma__wm_1_1geometry.html#abab7ba4e773f03d6cfc09492742c6b7b" title="Calculates the angle between two vectors." alt="" coords="808,253,983,295"/>
+<area shape="rect" id="node13" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="823,319,968,360"/>
+<area shape="rect" id="node12" href="$namespacecarma__wm_1_1geometry.html#a50c966bd5e6ed00ea0b1a70e93cd0d4a" title="acos method that caps the input x value for 1 or &#45;1 to avoid undefined output. This is meant to preve..." alt="" coords="1051,253,1196,295"/>
+<area shape="rect" id="node14" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="1051,319,1196,360"/>
+<area shape="rect" id="node15" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="1244,319,1389,360"/>
+</map>

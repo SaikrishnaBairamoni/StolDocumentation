@@ -1,0 +1,6 @@
+<map id="lightbar_manager::LightBarManagerWorker::hasHigherPriority" name="lightbar_manager::LightBarManagerWorker::hasHigherPriority">
+<area shape="rect" id="node1" title="Helper function that checks if the first input component has higher priority than the second." alt="" coords="547,41,765,83"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManagerWorker.html#a1ab20ebfd5b51741a279e0db95e22ace" title="Helper function that handles control lost/gained event of a component. This function registers/remove..." alt="" coords="256,12,499,53"/>
+<area shape="rect" id="node4" href="$classlightbar__manager_1_1LightBarManagerWorker.html#ac3da8c268b0d6fb5bf556ce181f20916" title="Requests the control of the given list of indicators to the requester. This function handles successf..." alt="" coords="5,71,208,112"/>
+<area shape="rect" id="node3" href="$classlightbar__manager_1_1LightBarManagerWorker.html#a82bb65255d8dba00ae624d7e41b2643b" title="Releases the specified owner plugin or component&#39;s control of the given indicator list...." alt="" coords="5,5,208,47"/>
+</map>

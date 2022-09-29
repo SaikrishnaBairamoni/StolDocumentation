@@ -1,0 +1,5 @@
+<map id="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::create_case_three_speed_profile" name="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::create_case_three_speed_profile">
+<area shape="rect" id="node1" title="Creates a speed profile according to case three of the stop controlled intersection,..." alt="" coords="547,5,761,76"/>
+<area shape="rect" id="node2" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#a8ee60c46909b98f73c316f268d53dc09" title="Converts a set of requested stop controlled intersection maneuvers to point speed limit pairs." alt="" coords="256,5,499,76"/>
+<area shape="rect" id="node3" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#ab0bf4a699bff521ffe56736d78880926" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="5,5,208,76"/>
+</map>

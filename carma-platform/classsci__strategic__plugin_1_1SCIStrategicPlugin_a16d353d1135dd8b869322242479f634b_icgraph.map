@@ -1,0 +1,4 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::determine_speed_profile_case" name="sci_strategic_plugin::SCIStrategicPlugin::determine_speed_profile_case">
+<area shape="rect" id="node1" title="Determine the speed profile case fpr approaching an intersection." alt="" coords="232,5,435,61"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a5ad9628cf7d25246bc3a192c842ba8e2" title="Service callback for arbitrator maneuver planning." alt="" coords="5,5,184,61"/>
+</map>

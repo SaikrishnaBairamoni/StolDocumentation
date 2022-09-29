@@ -1,0 +1,6 @@
+<map id="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTransitPluginNode" name="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTransitPluginNode">
+<area shape="rect" id="node1" title="ROS node for the LightControlledIntersectionTransitPluginNode." alt="" coords="27,968,232,1177"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html" title="TacticalPlugin base class which can be extended by user provided plugins which wish to implement the ..." alt="" coords="39,681,219,920"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="35,131,223,633"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,253,83"/>
+</map>

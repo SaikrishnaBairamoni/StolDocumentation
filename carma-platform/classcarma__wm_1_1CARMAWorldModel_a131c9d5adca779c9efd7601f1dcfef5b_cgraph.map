@@ -1,0 +1,6 @@
+<map id="carma_wm::CARMAWorldModel::distToNearestObjInLane" name="carma_wm::CARMAWorldModel::distToNearestObjInLane">
+<area shape="rect" id="node1" title="Gets Cartesian distance to the closest object on the same lane as the given point." alt="" coords="5,41,212,83"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a19b8c922c7524c769f96a57b91f6a6bd" title="Gets all roadway objects currently in the same lane as the given lanelet." alt="" coords="260,12,467,53"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aaca2786bf27678c20e6c148e7485e5d3" title="Uses the provided pose and size vector of an ExternalObject to compute what the polygon would be of t..." alt="" coords="543,71,693,112"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a869b918893af283afe09b1adb52c69a7" title="Gets the specified lane section achievable without lane change, sorted from the start,..." alt="" coords="515,5,721,47"/>
+</map>

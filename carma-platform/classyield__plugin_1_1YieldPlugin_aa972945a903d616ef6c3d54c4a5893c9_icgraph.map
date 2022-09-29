@@ -1,0 +1,4 @@
+<map id="yield_plugin::YieldPlugin::georeferenceCallback" name="yield_plugin::YieldPlugin::georeferenceCallback">
+<area shape="rect" id="node1" title="Callback for map projection string to define lat/lon &#45;&gt; map conversion." alt="" coords="227,5,387,47"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPluginNode.html#aee4bb2ca0d05cf41f55db567d7c74553" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,5,179,47"/>
+</map>

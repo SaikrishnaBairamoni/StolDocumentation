@@ -1,0 +1,4 @@
+<map id="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTransitPluginNode::parameter_update_callback" name="light_controlled_intersection_tactical_plugin::LightControlledIntersectionTransitPluginNode::parameter_update_callback">
+<area shape="rect" id="node1" title="Callback for dynamic parameter updates." alt="" coords="259,5,464,76"/>
+<area shape="rect" id="node2" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTransitPluginNode.html#ab4d6d79f91d3a89a1d2f22e5c56545ec" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,5,211,76"/>
+</map>

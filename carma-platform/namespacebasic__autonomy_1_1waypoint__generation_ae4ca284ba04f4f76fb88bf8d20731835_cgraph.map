@@ -1,0 +1,5 @@
+<map id="basic_autonomy::waypoint_generation::compute_curvature_at" name="basic_autonomy::waypoint_generation::compute_curvature_at">
+<area shape="rect" id="node1" title="Given the curvature fit, computes the curvature at the given step along the curve." alt="" coords="5,39,229,80"/>
+<area shape="rect" id="node2" href="$classbasic__autonomy_1_1smoothing_1_1SplineI.html#a6fb15e64df8a2591023ae18fba56606f" title="Get the BasicPoint2d representing the first_deriv along the curve at t&#45;th step." alt="" coords="277,5,460,47"/>
+<area shape="rect" id="node3" href="$classbasic__autonomy_1_1smoothing_1_1SplineI.html#aae7724df9449ea357153c86bd2e327af" title="Get the BasicPoint2d representing the first_deriv along the curve at t&#45;th step." alt="" coords="277,71,460,112"/>
+</map>

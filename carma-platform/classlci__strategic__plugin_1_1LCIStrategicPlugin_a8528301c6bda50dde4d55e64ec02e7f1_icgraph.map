@@ -1,0 +1,9 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::composeStopAndWaitManeuverMessage" name="lci_strategic_plugin::LCIStrategicPlugin::composeStopAndWaitManeuverMessage">
+<area shape="rect" id="node1" title="Compose a stop and wait maneuver message based on input params." alt="" coords="735,78,949,149"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a67c17100cc53d332a913ee8f2359df5c" title="This function returns valid maneuvers if the vehicle is able to utilize trajectory smoothing paramete..." alt="" coords="520,5,687,61"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a5d84312c63db263a897386c0d026ea75" title="This function returns stopping maneuver if the vehicle is able to stop at red and in safe stopping di..." alt="" coords="535,85,672,141"/>
+<area shape="rect" id="node7" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#ad8e8b761da49c63e31877814d247005d" title="Method for performing maneuver planning when the current plugin state is TransitState::WAITING Theref..." alt="" coords="309,151,452,207"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#adb5f42d9458f7c1e4b7c87310c015059" title="Method for performing maneuver planning when the current plugin state is TransitState::APPROACHING Th..." alt="" coords="289,71,472,127"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a8b3f0877902b0153950cf4577e7b6ac0" title="Service callback for arbitrator maneuver planning." alt="" coords="104,111,241,167"/>
+<area shape="rect" id="node5" href="$lci__strategic__plugin_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,125,56,152"/>
+</map>

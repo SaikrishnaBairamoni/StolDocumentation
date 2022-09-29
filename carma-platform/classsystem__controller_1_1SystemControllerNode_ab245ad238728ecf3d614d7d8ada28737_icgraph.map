@@ -1,0 +1,5 @@
+<map id="system_controller::SystemControllerNode::on_system_alert" name="system_controller::SystemControllerNode::on_system_alert">
+<area shape="rect" id="node1" title="Callback for system alert messages used to evaluate system fault handling." alt="" coords="412,5,564,61"/>
+<area shape="rect" id="node2" href="$classsystem__controller_1_1SystemControllerNode.html#ac17c8bcbcdc33e1b29a2b9b79355acdf" title="Initialize this node by loading parameters from the ROS Network." alt="" coords="212,5,364,61"/>
+<area shape="rect" id="node3" href="$classsystem__controller_1_1SystemControllerNode.html#ab77f16bd75bbf38d50903845e8e2f088" title="Constructor. Set explicitly to support node composition." alt="" coords="5,5,164,61"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="carma_wm::geometry::concatenate_lanelets" name="carma_wm::geometry::concatenate_lanelets">
+<area shape="rect" id="node1" title="Helper function to a list of lanelets together and return the result. Neither LineString is modified ..." alt="" coords="199,5,349,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#aafc2b19933ed189b32a03d8462e69d46" title="Specialized overload of the centerline local_curvatures method but for lanelets." alt="" coords="5,5,151,47"/>
+</map>

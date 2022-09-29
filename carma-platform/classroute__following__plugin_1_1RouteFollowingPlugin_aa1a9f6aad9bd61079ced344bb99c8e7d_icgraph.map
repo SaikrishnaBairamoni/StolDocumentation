@@ -1,0 +1,5 @@
+<map id="route_following_plugin::RouteFollowingPlugin::getManeuverDuration" name="route_following_plugin::RouteFollowingPlugin::getManeuverDuration">
+<area shape="rect" id="node1" title="returns duration as ros::Duration required to complete maneuver given its start dist,..." alt="" coords="433,5,587,61"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a889056a79a669d5de8e1ce1bdb6eba99" title="Service callback for arbitrator maneuver planning." alt="" coords="5,5,184,61"/>
+<area shape="rect" id="node3" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a46bd2d0ea75d12d8e4289c24e48d05f2" title="Given an array of maneuvers update the starting time for each." alt="" coords="232,37,385,93"/>
+</map>

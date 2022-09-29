@@ -1,0 +1,4 @@
+<map id="platooning_tactical_plugin::Node::parameter_update_callback" name="platooning_tactical_plugin::Node::parameter_update_callback">
+<area shape="rect" id="node1" title="Example callback for dynamic parameter updates." alt="" coords="232,5,396,61"/>
+<area shape="rect" id="node2" href="$classplatooning__tactical__plugin_1_1Node.html#a76763a3755e9cd95ec37288e1e14c7ce" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,5,184,61"/>
+</map>

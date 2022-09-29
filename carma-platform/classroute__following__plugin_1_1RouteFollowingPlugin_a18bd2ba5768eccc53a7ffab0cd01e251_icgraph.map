@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::initializeBumperTransformLookup" name="route_following_plugin::RouteFollowingPlugin::initializeBumperTransformLookup">
+<area shape="rect" id="node1" title="Initialize transform lookup from front bumper to map." alt="" coords="207,5,428,61"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a06ac08c84b45dca29ec5236604dfe64e" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,5,159,61"/>
+</map>

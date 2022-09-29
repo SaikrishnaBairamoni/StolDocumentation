@@ -1,0 +1,11 @@
+<map id="basic_autonomy::waypoint_generation::get_lanechange_points_from_maneuver" name="basic_autonomy::waypoint_generation::get_lanechange_points_from_maneuver">
+<area shape="rect" id="node1" title="Converts a set of requested LANE_CHANGE maneuvers to point speed limit pairs." alt="" coords="5,47,192,103"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a2219ab96db87781023137bdb45af1ea2" title="Creates a vector of lane change points using parameters defined." alt="" coords="240,79,444,135"/>
+<area shape="rect" id="node3" href="$namespacebasic__autonomy_1_1waypoint__generation.html#aa399a236f88f7b1c5557327fbb2ba71a" title="Returns the nearest &quot;less than&quot; point to the provided vehicle pose in the provided list by utilizing ..." alt="" coords="509,5,682,61"/>
+<area shape="rect" id="node4" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a4a4e269a309709b2997e42430203d022" title="Returns the nearest point (in terms of cartesian 2d distance) to the provided vehicle pose in the pro..." alt="" coords="509,85,682,141"/>
+<area shape="rect" id="node5" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a19cf5cf882789e1e9ed3e92d0105a8de" title="Resamples a pair of basicpoint2d lines to get lines of same number of points." alt="" coords="492,165,699,221"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#adf1c6b7f1e33569b45074e4e5bbeff1d" title="Compute the arc length at each point around the curve." alt="" coords="757,139,909,181"/>
+<area shape="rect" id="node9" href="$namespacebasic__autonomy_1_1waypoint__generation.html#a9e0eab343d21d18c665083839d706f04" title="Computes a spline based on the provided points." alt="" coords="747,205,920,246"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#a4e12c2971926486d1447e44e978f8d4d" title=" " alt="" coords="968,132,1113,188"/>
+<area shape="rect" id="node8" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="1161,132,1307,188"/>
+</map>

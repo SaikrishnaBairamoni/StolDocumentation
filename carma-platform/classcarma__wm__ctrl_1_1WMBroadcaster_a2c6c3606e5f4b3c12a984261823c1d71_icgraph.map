@@ -1,0 +1,12 @@
+<map id="carma_wm_ctrl::WMBroadcaster::combineParticipantsToVehicle" name="carma_wm_ctrl::WMBroadcaster::combineParticipantsToVehicle">
+<area shape="rect" id="node1" title="Combines a list of the given participants into a single &quot;vehicle&quot; type if participants cover all poss..." alt="" coords="1564,93,1775,135"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#aa326eab73fe1583c1fa937ed2e38b33f" title="Generates participants list." alt="" coords="1305,93,1516,135"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a74d10f4f0534115f672f8995f0036b49" title=" " alt="" coords="1040,5,1257,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#af0e373523dc84a409331d01b62d2fce0" title="Fills geofence object from TrafficControlMessageV01 ROS Msg." alt="" coords="781,123,992,164"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#ae34565da1566e777745a92161422404c" title="Adds RegionAccessRule to the map." alt="" coords="1043,188,1254,229"/>
+<area shape="rect" id="node10" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a116928c0070cfa7587c219a6629dadb8" title="Adds Minimum Gap to the map." alt="" coords="1043,123,1254,164"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a649174a7a7270df95532cad5131bf4cb" title="Adds a geofence to the current map and publishes the ROS msg." alt="" coords="264,156,475,197"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,156,216,197"/>
+<area shape="rect" id="node8" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a12708b289f7f3d8f10c6dc749bf14d65" title="Create workzone geofence. Create diagonal lanelets and a lanelet that houses opposing lane&#39;s trafficl..." alt="" coords="781,188,992,229"/>
+<area shape="rect" id="node9" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a5ae3f2086831ebd932e19b2bdfd76405" title="Creates a single workzone geofence (in the vector) that includes all additional lanelets (housing tra..." alt="" coords="523,185,733,227"/>
+</map>

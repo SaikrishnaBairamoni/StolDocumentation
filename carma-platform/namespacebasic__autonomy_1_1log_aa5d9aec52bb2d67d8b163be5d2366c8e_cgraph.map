@@ -1,0 +1,4 @@
+<map id="basic_autonomy::log::pointSpeedPairToStream" name="basic_autonomy::log::pointSpeedPairToStream">
+<area shape="rect" id="node1" title="Helper function to convert a PointSpeedPair to a string." alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1log.html#a9123a8bedcfb34f1e6c1336f226956fb" title="Helper function to convert a lanelet::BasicPoint2d to a string." alt="" coords="227,5,373,47"/>
+</map>

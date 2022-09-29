@@ -1,0 +1,10 @@
+<map id="carma_wm_ctrl::WMBroadcaster::externalMapMsgCallback" name="carma_wm_ctrl::WMBroadcaster::externalMapMsgCallback">
+<area shape="rect" id="node1" title="Callback to MAP.msg which contains intersections&#39; static info such geometry and lane ids." alt="" coords="5,39,216,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#abea25fd0b879387b68454225ebb0ebc6" title="Populates the schedules member of the geofence object from given TrafficControlMessageV01 message." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#ab6bfd98359ff2f28688bf7503b43a336" title=" " alt="" coords="264,71,475,112"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a2fecf322a302aff00ce8d76b0965e02e" title="Get the clock type of the clock being created by the timer factory." alt="" coords="523,5,753,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#aa6e1c118ed8765ca03a7e52518c6e007" title="Add a geofence to the scheduler. This will cause it to trigger an event when it becomes active or goe..." alt="" coords="523,71,753,112"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a9072b770cf240953a50f1d926b733b7c" title="Generates the next id to be used for a timer." alt="" coords="1359,67,1589,108"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a8e993e68cb77c8c77b81dc8dfba2bc1e" title="The callback which is triggered when a geofence becomes active This will call the user set active_cal..." alt="" coords="801,100,1032,141"/>
+<area shape="rect" id="node8" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a0f58b227dcbd413eb451146d36cb1728" title="The callback which is triggered when a geofence becomes in&#45;active This will call the user set inactiv..." alt="" coords="1080,125,1311,167"/>
+</map>

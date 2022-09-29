@@ -1,0 +1,6 @@
+<map id="cooperative_lanechange::CooperativeLaneChangePlugin::trajectory_point_to_ecef" name="cooperative_lanechange::CooperativeLaneChangePlugin::trajectory_point_to_ecef">
+<area shape="rect" id="node1" title="Converts Trajectory Point to ECEF frame using map projection." alt="" coords="769,5,976,61"/>
+<area shape="rect" id="node2" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a20d68c7f1bde0030d7d7bb68957aaada" title="Creates a mobility request message from planned trajectory and requested maneuver info." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node4" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#af52a03fcc4c193952e5541f2aad4638b" title="Converts Trajectory Plan to (Mobility) Trajectory." alt="" coords="515,37,721,93"/>
+<area shape="rect" id="node3" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a8913539d8614e509910af225e18bc809" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="5,5,212,61"/>
+</map>

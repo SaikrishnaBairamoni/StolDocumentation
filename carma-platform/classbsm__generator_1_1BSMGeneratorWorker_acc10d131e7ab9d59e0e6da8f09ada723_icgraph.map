@@ -1,0 +1,5 @@
+<map id="bsm_generator::BSMGeneratorWorker::getNextMsgCount" name="bsm_generator::BSMGeneratorWorker::getNextMsgCount">
+<area shape="rect" id="node1" title="Function to increment the BSM message counter and obtain the new counter value. Counter restarts at 0..." alt="" coords="501,5,701,47"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGenerator.html#a1a7af07ce6c3697081947692456ddebb" title="Timer callback, which publishes a BSM." alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node3" href="$classbsm__generator_1_1BSMGenerator.html#a9a75f3bc0a44a9584ef5bd28ad87490b" title=" " alt="" coords="5,5,205,47"/>
+</map>

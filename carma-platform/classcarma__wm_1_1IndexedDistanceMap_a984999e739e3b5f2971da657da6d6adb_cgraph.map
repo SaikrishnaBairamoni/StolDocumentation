@@ -1,0 +1,5 @@
+<map id="carma_wm::IndexedDistanceMap::totalLength" name="carma_wm::IndexedDistanceMap::totalLength">
+<area shape="rect" id="node1" title="Returns the total along&#45;line length of this structure." alt="" coords="5,39,193,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1IndexedDistanceMap.html#aaf9700fe30cc2819ca4423a2acffa27d" title="Get the distance to the start of the linestring at the specified index." alt="" coords="241,5,429,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1IndexedDistanceMap.html#a7bd91613ee531f0bb715d9e89a1285f1" title="Get the length of the linestring located at the provided index." alt="" coords="241,71,429,112"/>
+</map>

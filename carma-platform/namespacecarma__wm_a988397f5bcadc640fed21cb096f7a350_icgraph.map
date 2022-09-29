@@ -1,0 +1,15 @@
+<map id="carma_wm::fromBinMsg" name="carma_wm::fromBinMsg">
+<area shape="rect" id="node1" title=" " alt="" coords="984,137,1147,163"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a243d8d82a364aad6270e38f0202a68cb" title="Callback to set the base map when it has been loaded." alt="" coords="725,11,936,52"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1WMListenerWorker.html#a28ae2c52d969a306dc53a9f976cfdc73" title="Callback for new map messages. Updates the underlying map." alt="" coords="216,180,419,221"/>
+<area shape="rect" id="node6" href="$src_2MapUpdateLoggerNode_8cpp.html#a1b730b55ab0579f82083b4e0c463b83c" title="Callback for map updates that converts them to a human readable format." alt="" coords="761,82,900,109"/>
+<area shape="rect" id="node9" href="$classcarma__wm_1_1WMListenerWorker.html#ac0f4e6772f76aed866391ccb17091961" title="Callback for new map update messages (geofence). Updates the underlying map." alt="" coords="729,188,932,229"/>
+<area shape="rect" id="node11" href="$classMapUpdateLogger.html#afa5c600a6be77593cfb3f2a2517a7df5" title="Callback for map updates that converts them to a human readable format." alt="" coords="729,279,932,320"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#ab0c14f6d7e30870755a4dcf6b228de82" title=" " alt="" coords="467,5,677,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1WMListener.html#aa727330ec070c6631616bbc7ec2f45d1" title="Constructor which can be used to specify threading behavior of this class." alt="" coords="5,209,168,251"/>
+<area shape="rect" id="node7" href="$classCallbackHolder.html#ad4b60564cbe53725dd1a01df0d44b50e" title=" " alt="" coords="503,71,641,112"/>
+<area shape="rect" id="node8" href="$src_2MapUpdateLoggerNode_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="292,78,343,105"/>
+<area shape="rect" id="node10" href="$classcarma__wm_1_1WMListenerWorker.html#a2d1cd5f09e980e0d4f379da18c50780a" title="Callback for route message." alt="" coords="471,239,673,280"/>
+<area shape="rect" id="node12" href="$classMapUpdateLogger.html#ac782a1014626a3fd5a8cd133a79b7263" title=" " alt="" coords="494,304,650,345"/>
+<area shape="rect" id="node13" href="$classMapUpdateLogger.html#a1fb05e84dc5d3d91fadf29793af7587b" title=" " alt="" coords="216,304,419,345"/>
+</map>

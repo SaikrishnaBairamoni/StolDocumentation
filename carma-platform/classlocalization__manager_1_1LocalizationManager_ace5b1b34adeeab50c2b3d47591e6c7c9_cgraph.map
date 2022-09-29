@@ -1,0 +1,4 @@
+<map id="localization_manager::LocalizationManager::computeNDTFreq" name="localization_manager::LocalizationManager::computeNDTFreq">
+<area shape="rect" id="node1" title="Helper function to both compute the NDT Frequency and update the previous pose timestamp." alt="" coords="5,5,152,61"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#a6a06b312cdda09ab9b945daf69710c66" title="Helper function to compute the instantaneous frequency between two times." alt="" coords="200,5,347,61"/>
+</map>

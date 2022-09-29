@@ -1,0 +1,5 @@
+<map id="route::RouteGeneratorWorker::loadRouteDestinationGpsPointsFromRouteId" name="route::RouteGeneratorWorker::loadRouteDestinationGpsPointsFromRouteId">
+<area shape="rect" id="node1" title="Function to load route destination points from a route file and store them in a vector of 3D points." alt="" coords="425,5,637,61"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#a0ac499df9ad47fb4c66e7163c9611a6a" title="Set_active_route service callback. User can select a route to start following by calling this service..." alt="" coords="188,13,377,54"/>
+<area shape="rect" id="node3" href="$classroute_1_1Route.html#a5f6b00da6b8e1cd9238b9d60457276c8" title=" " alt="" coords="5,13,140,54"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="carma_wm::geometry::build2dEigenTransform" name="carma_wm::geometry::build2dEigenTransform">
+<area shape="rect" id="node1" title="Builds a 2D Eigen coordinate frame transform with not applied scaling (only translation and rotation)..." alt="" coords="291,5,451,47"/>
+<area shape="rect" id="node2" href="$namespacebasic__autonomy_1_1waypoint__generation.html#ada2ee63b890bfa23d67a17cf61dd0129" title="Returns a 2D coordinate frame which is located at p1 and oriented so p2 lies on the +X axis." alt="" coords="5,5,243,47"/>
+</map>

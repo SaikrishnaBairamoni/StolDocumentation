@@ -1,0 +1,4 @@
+<map id="localization_manager::Node::poseAndStatsCallback" name="localization_manager::Node::poseAndStatsCallback">
+<area shape="rect" id="node1" title="Synchronized callback for pose and stats data for usage with message_filters. Provides exception hand..." alt="" coords="236,5,433,47"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1Node.html#afb38782f4ca8c455d8b6440b38bc62a9" title=" " alt="" coords="5,5,188,47"/>
+</map>

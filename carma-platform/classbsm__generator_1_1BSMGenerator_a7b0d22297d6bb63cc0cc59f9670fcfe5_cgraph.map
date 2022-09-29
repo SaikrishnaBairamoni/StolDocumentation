@@ -1,0 +1,20 @@
+<map id="bsm_generator::BSMGenerator::handle_on_configure" name="bsm_generator::BSMGenerator::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,332,205,373"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGenerator.html#afb1592654cfd0cb45e6f4370def56ccc" title="Callback to populate BSM message with longitudinal acceleration data." alt="" coords="253,5,453,47"/>
+<area shape="rect" id="node4" href="$classbsm__generator_1_1BSMGenerator.html#a768c0c32d1521dfe92485fe337e5a6f9" title="Callback to populate BSM message with vehicle applied brake status." alt="" coords="253,71,453,112"/>
+<area shape="rect" id="node6" href="$classbsm__generator_1_1BSMGenerator.html#ade2e02ab343e098382540903097294cc" title="Callback to populate BSM message with transmission state data." alt="" coords="253,136,453,177"/>
+<area shape="rect" id="node7" href="$classbsm__generator_1_1BSMGenerator.html#a4dfc7ddd9059cfc4fbbaf6e66dfe1e05" title="Callback for map projection string to define lat/lon &#45;&gt; map conversion." alt="" coords="253,201,453,243"/>
+<area shape="rect" id="node8" href="$classbsm__generator_1_1BSMGenerator.html#a71e465312754a33d2a3514b7b91e2de1" title="Callback to populate BSM message with vehicle heading data." alt="" coords="253,267,453,308"/>
+<area shape="rect" id="node10" href="$classbsm__generator_1_1BSMGenerator.html#ae28617663e390e8733ba2daff53bc306" title="Function to fill the BSM message with initial default data." alt="" coords="253,332,453,373"/>
+<area shape="rect" id="node11" href="$classbsm__generator_1_1BSMGenerator.html#a2357a99a7bd634b44b044a2fd80b3049" title="Function callback for dynamic parameter updates." alt="" coords="253,397,453,439"/>
+<area shape="rect" id="node12" href="$classbsm__generator_1_1BSMGenerator.html#a85ccfa14936e41c393d51237f58ad964" title="Callback to populate BSM message with longitude, latitude, and elevation data." alt="" coords="253,463,453,504"/>
+<area shape="rect" id="node13" href="$classbsm__generator_1_1BSMGenerator.html#a695fa32ac6f6d92fa0e26d2ef29219d0" title="Callback to populate BSM message with vehicle speed data." alt="" coords="253,528,453,569"/>
+<area shape="rect" id="node15" href="$classbsm__generator_1_1BSMGenerator.html#af8efa201d486e6790827b7b73044aa59" title="Callback to populate BSM message with vehicle steering wheel angle data." alt="" coords="253,593,453,635"/>
+<area shape="rect" id="node17" href="$classbsm__generator_1_1BSMGenerator.html#aeda99000cb38bac5384329249fb6af80" title="Callback to populate BSM message with yaw rate data." alt="" coords="253,659,453,700"/>
+<area shape="rect" id="node3" href="$classbsm__generator_1_1BSMGeneratorWorker.html#abecb625b9ba2982f413f916d27132720" title="Function to apply minimum and maximum limits to a longitudinal acceleration value...." alt="" coords="519,5,719,47"/>
+<area shape="rect" id="node5" href="$classbsm__generator_1_1BSMGeneratorWorker.html#ad15f477a1a7d10a3d5cabfb0f0a22a04" title="Function to convert the current applied brake status to a value used within the BSM message." alt="" coords="517,71,720,112"/>
+<area shape="rect" id="node9" href="$classbsm__generator_1_1BSMGeneratorWorker.html#aef76258cae4b1e032ebb5518334637c2" title="Function to apply minimum and maximum limits to a vehicle heading value. Minimum limit is 0...." alt="" coords="519,267,719,308"/>
+<area shape="rect" id="node14" href="$classbsm__generator_1_1BSMGeneratorWorker.html#aa0325501a0fae0877b52f11fda7b92b7" title="Function to apply minimum and maximum limits to a speed value. Minimum limit is 0...." alt="" coords="519,528,719,569"/>
+<area shape="rect" id="node16" href="$classbsm__generator_1_1BSMGeneratorWorker.html#a83ef4108e8859390b60f1d0ba5d7138e" title="Function to apply minimum and maximum limits to a steering wheel angle value. Minimum limit is &#45;189...." alt="" coords="501,593,736,635"/>
+<area shape="rect" id="node18" href="$classbsm__generator_1_1BSMGeneratorWorker.html#a888057310e75b7162601788b2734805c" title="Function to apply minimum and maximum limits to a yaw rate value. Minimum limit is &#45;327...." alt="" coords="519,659,719,700"/>
+</map>

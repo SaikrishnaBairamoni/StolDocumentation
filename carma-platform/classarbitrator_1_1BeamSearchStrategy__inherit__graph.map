@@ -1,0 +1,4 @@
+<map id="arbitrator::BeamSearchStrategy" name="arbitrator::BeamSearchStrategy">
+<area shape="rect" id="node1" title="Implementation of SearchStrategy by usage of Beam Search." alt="" coords="5,145,208,237"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1SearchStrategy.html" title="Generic interface representing a computation to prioritize nodes for expansion in a search graph." alt="" coords="23,5,191,97"/>
+</map>

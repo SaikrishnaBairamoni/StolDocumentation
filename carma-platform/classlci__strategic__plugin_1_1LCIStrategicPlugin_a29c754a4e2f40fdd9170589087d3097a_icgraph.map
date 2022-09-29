@@ -1,0 +1,7 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::ts_case1" name="lci_strategic_plugin::LCIStrategicPlugin::ts_case1">
+<area shape="rect" id="node1" title="Trajectory Smoothing Algorithm 8 cases. TSMO UC2, UC3 algorithm equations." alt="" coords="705,5,843,61"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a9f6b11b8d6c543e15eb501c90bb1d3c3" title=" " alt="" coords="520,5,657,61"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#adb5f42d9458f7c1e4b7c87310c015059" title="Method for performing maneuver planning when the current plugin state is TransitState::APPROACHING Th..." alt="" coords="289,5,472,61"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a8b3f0877902b0153950cf4577e7b6ac0" title="Service callback for arbitrator maneuver planning." alt="" coords="104,5,241,61"/>
+<area shape="rect" id="node5" href="$lci__strategic__plugin_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,20,56,47"/>
+</map>

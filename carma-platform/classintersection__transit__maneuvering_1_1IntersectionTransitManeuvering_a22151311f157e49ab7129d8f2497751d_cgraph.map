@@ -1,0 +1,4 @@
+<map id="intersection_transit_maneuvering::IntersectionTransitManeuvering::plan_trajectory_cb" name="intersection_transit_maneuvering::IntersectionTransitManeuvering::plan_trajectory_cb">
+<area shape="rect" id="node1" title="Service callback for trajectory planning." alt="" coords="5,5,223,61"/>
+<area shape="rect" id="node2" href="$classintersection__transit__maneuvering_1_1IntersectionTransitManeuvering.html#ad11520b96c2b7ce00f5d4db1677595d8" title="Converts a sequence of INTERSECTION_TRANSIT maneuvers to LANE_FOLLOWING maneuvers." alt="" coords="271,5,511,61"/>
+</map>

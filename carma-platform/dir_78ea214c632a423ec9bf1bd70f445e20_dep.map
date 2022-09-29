@@ -1,0 +1,13 @@
+<map id="inlanecruising_plugin" name="inlanecruising_plugin">
+<area shape="rect" id="node2" href="dir_5f57efb5442461e635356c3c79ff5b9e.html" title="include" alt="" coords="186,123,258,171"/>
+<area shape="rect" id="node5" href="dir_73e59df62327a001b53069470f2538a9.html" title="carma_wm_ros2" alt="" coords="5,219,124,267"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000068_000023.html" title="5" alt="" coords="119,209,127,224"/>
+<area shape="rect" id="node6" href="dir_81e4214e732b63254210354ec5727868.html" title="basic_autonomy_ros2" alt="" coords="148,219,296,267"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000068_000008.html" title="1" alt="" coords="226,193,234,208"/>
+<area shape="rect" id="node7" href="dir_d5f084badec3f37704845c74a174bd28.html" title="carma_guidance_plugins" alt="" coords="321,219,486,267"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000068_000015.html" title="1" alt="" coords="343,195,351,210"/>
+<area shape="rect" id="node3" href="dir_ea73eb893012ce6cf1985c471baf53d2.html" title="launch" alt="" coords="282,27,354,75"/>
+<area shape="rect" id="node4" href="dir_09bff52d18c91dec4889f85cff5ca4bf.html" title="src" alt="" coords="186,27,258,75"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000228_000068.html" title="4" alt="" coords="226,97,234,112"/>
+<area shape="rect" id="clust1" href="dir_78ea214c632a423ec9bf1bd70f445e20.html" alt="" coords="175,16,531,181"/>
+</map>

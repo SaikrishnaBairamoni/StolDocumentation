@@ -1,0 +1,13 @@
+<map id="subsystem_controllers::EntryManager::get_entries" name="subsystem_controllers::EntryManager::get_entries">
+<area shape="rect" id="node1" title="Get all entries as a list." alt="" coords="471,273,648,315"/>
+<area shape="rect" id="node2" href="$classsubsystem__controllers_1_1PluginManager.html#a312b193d3903ed7fe998ac40710f6f1c" title=" " alt="" coords="239,5,406,47"/>
+<area shape="rect" id="node3" href="$classsubsystem__controllers_1_1PluginManager.html#a95f486ab4a95614c6eae4462c9ea1a9b" title=" " alt="" coords="240,71,405,112"/>
+<area shape="rect" id="node4" href="$classsubsystem__controllers_1_1PluginManager.html#aec6e7897fb188f0880cd092b00d7b7a2" title=" " alt="" coords="237,136,409,177"/>
+<area shape="rect" id="node5" href="$classsubsystem__controllers_1_1PluginManager.html#a28ad99d78439c58b1c598dac44b1c063" title=" " alt="" coords="233,201,413,243"/>
+<area shape="rect" id="node6" href="$classsubsystem__controllers_1_1PluginManager.html#aa0a83528b66d35c3cfac1bb2f96a5132" title="Get the list of currently active plugins." alt="" coords="247,266,399,322"/>
+<area shape="rect" id="node8" href="$classsubsystem__controllers_1_1PluginManager.html#a273a123b0ce1a5d004c52e2deff69ea4" title="Get control plugins by capability." alt="" coords="224,346,421,402"/>
+<area shape="rect" id="node9" href="$classsubsystem__controllers_1_1PluginManager.html#a9676128e1c0d7bb13979e5fabcbf3871" title="Returns the list of known plugins." alt="" coords="247,426,399,482"/>
+<area shape="rect" id="node10" href="$classsubsystem__controllers_1_1PluginManager.html#abb246fe8565a91e9890c3639ca333e83" title="Get strategic plugins by capability." alt="" coords="247,507,399,577"/>
+<area shape="rect" id="node11" href="$classsubsystem__controllers_1_1PluginManager.html#ace48d6d87c84f35018389a67a3b886e1" title="Get tactical plugins by capability." alt="" coords="223,602,423,658"/>
+<area shape="rect" id="node7" href="$classsubsystem__controllers_1_1GuidanceControllerNode.html#a684cb2ec92b8c7dd38c69484c0052bd1" title=" " alt="" coords="5,426,175,482"/>
+</map>

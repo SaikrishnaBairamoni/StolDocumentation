@@ -1,0 +1,4 @@
+<map id="cooperative_lanechange::CooperativeLaneChangePlugin::add_trajectory_to_response" name="cooperative_lanechange::CooperativeLaneChangePlugin::add_trajectory_to_response">
+<area shape="rect" id="node1" title="Adds the generated trajectory plan to the service response." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node2" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a8913539d8614e509910af225e18bc809" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="5,5,212,61"/>
+</map>

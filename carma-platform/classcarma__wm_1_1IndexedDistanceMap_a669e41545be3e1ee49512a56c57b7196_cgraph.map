@@ -1,0 +1,6 @@
+<map id="carma_wm::IndexedDistanceMap::pushBack" name="carma_wm::IndexedDistanceMap::pushBack">
+<area shape="rect" id="node1" title="Add a linestring to this structure. This function will iterate over the line string to compute distan..." alt="" coords="5,39,193,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1IndexedDistanceMap.html#a984999e739e3b5f2971da657da6d6adb" title="Returns the total along&#45;line length of this structure." alt="" coords="241,39,429,80"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1IndexedDistanceMap.html#aaf9700fe30cc2819ca4423a2acffa27d" title="Get the distance to the start of the linestring at the specified index." alt="" coords="477,5,665,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1IndexedDistanceMap.html#a7bd91613ee531f0bb715d9e89a1285f1" title="Get the length of the linestring located at the provided index." alt="" coords="477,71,665,112"/>
+</map>

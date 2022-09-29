@@ -1,0 +1,5 @@
+<map id="carma_wm_ctrl::GeofenceScheduler::GeofenceScheduler" name="carma_wm_ctrl::GeofenceScheduler::GeofenceScheduler">
+<area shape="rect" id="node1" title="Constructor which takes in a TimerFactory. Timers from this factory will be used to generate the trig..." alt="" coords="5,39,236,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#af4a7eb048e0ab28239aa434a9a25b1ac" title="Clears the expired timers from the memory of this scheduler." alt="" coords="284,5,515,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a9072b770cf240953a50f1d926b733b7c" title="Generates the next id to be used for a timer." alt="" coords="284,71,515,112"/>
+</map>

@@ -1,0 +1,40 @@
+<map id="PutUnsafe" name="PutUnsafe">
+<area shape="rect" id="node1" title="Write character to a stream, presuming buffer is reserved." alt="" coords="635,376,719,403"/>
+<area shape="rect" id="node2" href="$structUTF8.html#aac6bdaf03c114265384b2ae3e425e7a8" title=" " alt="" coords="414,5,561,32"/>
+<area shape="rect" id="node3" href="$structUTF16.html#aa67661e756c273871b574e7133b7fc63" title=" " alt="" coords="411,56,564,83"/>
+<area shape="rect" id="node4" href="$structUTF32.html#ae50dd8dff92c36ee184c6d4eccb1961e" title=" " alt="" coords="411,107,564,133"/>
+<area shape="rect" id="node5" href="$structASCII.html#afeb90d6f04771067b83b35a0f366af46" title=" " alt="" coords="413,157,561,184"/>
+<area shape="rect" id="node6" href="$stream_8h.html#aacdd569be6f98c9d7d9ef71f79ef0fc0" title="Put N copies of a character to a stream." alt="" coords="461,208,513,235"/>
+<area shape="rect" id="node7" href="$structTranscoder_3_01Encoding_00_01Encoding_01_4.html#addf67decfff7d0de510c47842eb53cef" title=" " alt="" coords="388,259,587,301"/>
+<area shape="rect" id="node8" href="$classWriter.html#a42ad68b6950431bb8ca0199568546eaf" title=" " alt="" coords="428,325,547,352"/>
+<area shape="rect" id="node11" href="$classWriter.html#ae7a0fc4740681d845d92c1213bd25aa1" title=" " alt="" coords="421,376,553,403"/>
+<area shape="rect" id="node14" href="$classWriter.html#a31d0feda654ca245c41462be7dc59998" title=" " alt="" coords="434,427,541,453"/>
+<area shape="rect" id="node17" href="$classWriter.html#aa58d3f80c06394648de5055ecfb41587" title=" " alt="" coords="427,477,548,504"/>
+<area shape="rect" id="node20" href="$classWriter.html#a44862b3eba8d84b909c69aba875c9f4d" title=" " alt="" coords="430,579,545,605"/>
+<area shape="rect" id="node23" href="$classWriter.html#a8ee1135b2595261819b134907f67614e" title=" " alt="" coords="412,680,563,707"/>
+<area shape="rect" id="node26" href="$classWriter.html#acda4412ef5f4cac6e89f9544e4b10f70" title=" " alt="" coords="424,832,551,859"/>
+<area shape="rect" id="node33" href="$classWriter.html#a2861227e93707d1478d2cf56644dca3b" title=" " alt="" coords="429,984,545,1011"/>
+<area shape="rect" id="node36" href="$classWriter.html#ad07b325157220e3aa791c1c8c904021e" title=" " alt="" coords="422,1085,553,1112"/>
+<area shape="rect" id="node9" href="$classPrettyWriter.html#a6e765ee7ada5ed40f317c78a98f6f90b" title=" " alt="" coords="195,173,317,200"/>
+<area shape="rect" id="node10" href="$classWriter.html#ad7491f4dedb02e7456b240b23ef8c1ad" title=" " alt="" coords="212,224,300,251"/>
+<area shape="rect" id="node12" href="$classPrettyWriter.html#ad9d592e86b985da666665926e87db415" title=" " alt="" coords="188,275,324,301"/>
+<area shape="rect" id="node13" href="$classWriter.html#a22a43e8a7193105deec6b808736f7a1a" title="Writes the given double value to the stream." alt="" coords="205,325,307,352"/>
+<area shape="rect" id="node15" href="$classPrettyWriter.html#aa1815263e61cb7af3b6dfba480a0f481" title=" " alt="" coords="201,376,311,403"/>
+<area shape="rect" id="node16" href="$classWriter.html#ad471415aa7741e732bab0bcfbb9522a8" title=" " alt="" coords="217,427,295,453"/>
+<area shape="rect" id="node18" href="$classPrettyWriter.html#ad42b797429f4ee19efdce610f5aff976" title=" " alt="" coords="193,477,319,504"/>
+<area shape="rect" id="node19" href="$classWriter.html#a4144d7086ed9d3d807c373de242bde45" title=" " alt="" coords="211,528,301,555"/>
+<area shape="rect" id="node21" href="$classPrettyWriter.html#aa144f2d0f0c3c69248cdbe957349528c" title=" " alt="" coords="197,579,315,605"/>
+<area shape="rect" id="node22" href="$classWriter.html#af700ed03c8810d48a4aaa3c5baeaf26c" title=" " alt="" coords="213,629,299,656"/>
+<area shape="rect" id="node24" href="$classPrettyWriter.html#a440890a72408a150ef46edda6becdc94" title="Write a raw JSON value." alt="" coords="179,680,333,707"/>
+<area shape="rect" id="node25" href="$classWriter.html#ae0d1615104e4e88040b9640e6784008a" title="Write a raw JSON value." alt="" coords="195,731,317,757"/>
+<area shape="rect" id="node27" href="$classPrettyWriter.html#a3941bc21d6a261ca8a86eff330db30ef" title=" " alt="" coords="172,781,340,808"/>
+<area shape="rect" id="node28" href="$classWriter.html#ad462dc606fddea0f34fc0e190c3bdaee" title=" " alt="" coords="189,832,323,859"/>
+<area shape="rect" id="node29" href="$classPrettyWriter.html#ae544ccfe35dd7e80ed694873062409f6" title=" " alt="" coords="191,883,321,909"/>
+<area shape="rect" id="node31" href="$classWriter.html#a8b4dc44f471403a83c9959575796ceab" title=" " alt="" coords="208,933,304,960"/>
+<area shape="rect" id="node30" href="$classPrettyWriter.html#a20ecbe1d31a871e4da4a3899b40ad3cd" title=" " alt="" coords="5,883,124,909"/>
+<area shape="rect" id="node32" href="$classWriter.html#a19096d2ccb90761f63ab1240337bf90a" title=" " alt="" coords="23,933,107,960"/>
+<area shape="rect" id="node34" href="$classPrettyWriter.html#a8c82302877a5588eae77eb7d042c49ef" title=" " alt="" coords="196,984,316,1011"/>
+<area shape="rect" id="node35" href="$classWriter.html#a5fb0c3228f89f6f9bef15f3e6e6f1739" title=" " alt="" coords="213,1035,299,1061"/>
+<area shape="rect" id="node37" href="$classPrettyWriter.html#aba75ac1f13c2629b2a55ffbf3d8a116c" title=" " alt="" coords="189,1085,323,1112"/>
+<area shape="rect" id="node38" href="$classWriter.html#a55bb9f286ecdaf4cdb07bddb02e0cb2d" title=" " alt="" coords="206,1136,306,1163"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="motion_computation::conversion::impl::calculateAngVelocityOfPredictedStates" name="motion_computation::conversion::impl::calculateAngVelocityOfPredictedStates">
+<area shape="rect" id="node1" title="Helper function to fill in the angular velocity of the external object." alt="" coords="5,5,217,76"/>
+<area shape="rect" id="node2" href="$namespacemotion__computation_1_1conversion_1_1impl.html#a3dcbeb3180ab008815e6e7749796d147" title="Gets the yaw angle in degrees described by the provided quaternion." alt="" coords="265,13,449,69"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::WMBroadcaster::publishLightId" name="carma_wm_ctrl::WMBroadcaster::publishLightId">
+<area shape="rect" id="node1" title="helps to populate upcoming_intersection_ids_ from local traffic lanelet ids" alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a4b5b09f05f4f3ed3a6d5027328f687a3" title="helper for generating intersection and group Id of a traffic light from lanelet id" alt="" coords="264,5,475,47"/>
+</map>

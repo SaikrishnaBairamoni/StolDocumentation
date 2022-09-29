@@ -1,0 +1,6 @@
+<map id="cooperative_lanechange::LaneChangeManeuverOriginalValues" name="cooperative_lanechange::LaneChangeManeuverOriginalValues">
+<area shape="rect" id="node1" title="Convenience struct for storing the original start_dist and starting_lane_id associated with a receive..." alt="" coords="62,175,265,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,60,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="133,5,193,83"/>
+<area shape="rect" id="node4" href="$classbool.html" title=" " alt="" coords="296,5,343,83"/>
+</map>

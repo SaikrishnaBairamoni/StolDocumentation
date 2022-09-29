@@ -1,0 +1,7 @@
+<map id="object_visualizer::Node::handle_on_configure" name="object_visualizer::Node::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,183,134"/>
+<area shape="rect" id="node2" href="$classobject__visualizer_1_1Node.html#afc59564f518fc710f07e26dc343e28b2" title="External objects callback. Converts the message to a visualization message to republish." alt="" coords="239,5,393,61"/>
+<area shape="rect" id="node4" href="$classobject__visualizer_1_1Node.html#a377f66a70c55be8c96dffe4181ad96f9" title="Example callback for dynamic parameter updates." alt="" coords="235,85,397,141"/>
+<area shape="rect" id="node5" href="$classobject__visualizer_1_1Node.html#a09c959ff0839c1180ac07138c90f98bb" title="Roadway obstacles callback. Converts the message to a visualization message to republish." alt="" coords="231,165,401,221"/>
+<area shape="rect" id="node3" href="$classobject__visualizer_1_1Node.html#a4db9260841f85e37db81172b3ae0a8d6" title="Adds a marker deletion for a number of markers which is the delta between the new marker count and th..." alt="" coords="449,85,611,141"/>
+</map>

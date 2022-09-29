@@ -1,0 +1,5 @@
+<map id="guidance::GuidanceWorker::handle_on_shutdown" name="guidance::GuidanceWorker::handle_on_shutdown">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceStateMachine.html#a08a0fa8354b039cf7a085b54f4d6c176" title="Updates Guidance State Machine with SHUTDOWN signal." alt="" coords="229,5,444,47"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceStateMachine.html#aaa75a81fec6e28dbbeb446af8355e8e0" title="Actual state machine logic driven by signal enum." alt="" coords="492,5,707,47"/>
+</map>

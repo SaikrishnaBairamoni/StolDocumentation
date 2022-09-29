@@ -1,0 +1,4 @@
+<map id="health_monitor::DriverManager::are_critical_drivers_operational_car" name="health_monitor::DriverManager::are_critical_drivers_operational_car">
+<area shape="rect" id="node1" title="Check if all critical drivers are operational for car." alt="" coords="251,5,483,47"/>
+<area shape="rect" id="node2" href="$classhealth__monitor_1_1DriverManager.html#a75bc9cac7e2d7690021175f01efef726" title="Handle the spin and publisher." alt="" coords="5,5,203,47"/>
+</map>

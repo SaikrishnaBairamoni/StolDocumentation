@@ -1,0 +1,5 @@
+<map id="carma_wm::IndexedDistanceMap::pushBack" name="carma_wm::IndexedDistanceMap::pushBack">
+<area shape="rect" id="node1" title="Add a linestring to this structure. This function will iterate over the line string to compute distan..." alt="" coords="532,5,720,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a6f924aa42ade5d323045fdad9b7ca3a8" title="Helper function to compute the geometry of the route downtrack/crosstrack reference line This functio..." alt="" coords="260,5,484,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#ad4d9510c892eb9f19f462e0576317a69" title="Set the current route. This route must match the current map for this class to function properly." alt="" coords="5,5,212,47"/>
+</map>

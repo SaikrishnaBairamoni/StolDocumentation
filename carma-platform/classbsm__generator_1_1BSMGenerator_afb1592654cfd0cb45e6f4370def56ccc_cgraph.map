@@ -1,0 +1,4 @@
+<map id="bsm_generator::BSMGenerator::accelCallback" name="bsm_generator::BSMGenerator::accelCallback">
+<area shape="rect" id="node1" title="Callback to populate BSM message with longitudinal acceleration data." alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="$classbsm__generator_1_1BSMGeneratorWorker.html#abecb625b9ba2982f413f916d27132720" title="Function to apply minimum and maximum limits to a longitudinal acceleration value...." alt="" coords="253,5,453,47"/>
+</map>

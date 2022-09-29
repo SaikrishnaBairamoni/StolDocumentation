@@ -1,0 +1,5 @@
+<map id="mock_drivers::MockControllerDriver::MockControllerDriver" name="mock_drivers::MockControllerDriver::MockControllerDriver">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,199,80"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockControllerDriver.html#a51c6104dc3aaf6cd44b0e4b9b6f485ad" title="Callback for the enable robotic service. Triggering this callback will modify the RobotEnabled messag..." alt="" coords="247,5,440,47"/>
+<area shape="rect" id="node3" href="$classmock__drivers_1_1MockControllerDriver.html#af22988c5bad04da16fc8abf9b5a5576b" title="Callback for the vehicle command topic. This callback must be triggered at least once before the enab..." alt="" coords="247,71,440,112"/>
+</map>

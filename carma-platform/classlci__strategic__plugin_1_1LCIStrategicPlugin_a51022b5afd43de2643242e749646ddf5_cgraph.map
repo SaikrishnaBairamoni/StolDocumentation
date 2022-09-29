@@ -1,0 +1,8 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::handleGreenSignalScenario" name="lci_strategic_plugin::LCIStrategicPlugin::handleGreenSignalScenario">
+<area shape="rect" id="node1" title="This function returns valid maneuvers if the vehicle is able to utilize trajectory smoothing paramete..." alt="" coords="5,93,193,149"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#ad0dfe4121507c3080e3d21dd1244bec9" title="Return true if the car can arrive at given arrival time within green light time buffer." alt="" coords="241,5,449,61"/>
+<area shape="rect" id="node5" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a5e4ecab9f1255d861d20fd21c2b5bdd6" title="Compose a intersection transit maneuver message based on input params." alt="" coords="251,86,440,157"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a75ee8f9cf4e0d986b20a5d1e51c0e275" title="Compose a trajectory smoothing maneuver msg (sent as transit maneuver message)" alt="" coords="245,181,445,251"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a23192777055fbb632e0676e56a2d182e" title="Helper method that checks both if the input optional light state is set and if the state it contains ..." alt="" coords="497,5,635,61"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aedf733561a0ca72170d664f4414f624e" title="Helper method to evaluate if the given traffic light state is supported by this plugin." alt="" coords="683,5,828,61"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="NS3Client::close" name="NS3Client::close">
+<area shape="rect" id="node1" title="Closes connection." alt="" coords="433,56,552,83"/>
+<area shape="rect" id="node2" href="$classNS3Client.html#a9fefbf372609df88f6d302eaba6317c5" title=" " alt="" coords="231,5,385,32"/>
+<area shape="rect" id="node3" href="$classNS3Adapter.html#af66defa9e57aff65633881c2aa2b9a7d" title="Called by the base DriverApplication class prior to Spin." alt="" coords="234,56,382,83"/>
+<area shape="rect" id="node4" href="$classNS3Adapter.html#a1bc40c1e3e0f224a9e7a302569ea228c" title=" " alt="" coords="231,107,385,133"/>
+<area shape="rect" id="node5" href="$classNS3Adapter.html#a1a8a50f551558dd3bdd6ccf29f573bed" title=" " alt="" coords="5,107,183,133"/>
+</map>

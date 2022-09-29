@@ -1,0 +1,7 @@
+<map id="trajectory_executor::TrajectoryExecutor::handle_on_configure" name="trajectory_executor::TrajectoryExecutor::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,152,181"/>
+<area shape="rect" id="node2" href="$classtrajectory__executor_1_1TrajectoryExecutor.html#a7642af4e61aa0999da8fe42ae6406864" title="Monitor the guidance state and set the current trajector as null_ptr." alt="" coords="216,5,371,61"/>
+<area shape="rect" id="node3" href="$classtrajectory__executor_1_1TrajectoryExecutor.html#a6f46116e44f324f955b3c9a42f4abc1f" title="Callback to be invoked when a new trajectory plan is received on our inbound plan topic." alt="" coords="217,85,369,141"/>
+<area shape="rect" id="node4" href="$classtrajectory__executor_1_1TrajectoryExecutor.html#a0d3daa9c18e3d7ecf38391b13262b695" title="Example callback for dynamic parameter updates." alt="" coords="200,165,387,221"/>
+<area shape="rect" id="node5" href="$classtrajectory__executor_1_1TrajectoryExecutor.html#abe3380021694e3d128ecc66cbbc8d951" title="Helper function to query control plugin registration system." alt="" coords="222,245,365,301"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::NumberStream&lt; InputStream, true, true &gt;" name="GenericReader&lt; SourceEncoding, TargetEncoding, StackAllocator &gt;::NumberStream&lt; InputStream, true, true &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="125,1976,343,2112"/>
+<area shape="rect" id="node2" href="$classGenericReader_1_1NumberStream_3_01InputStream_00_01true_00_01false_01_4.html" title=" " alt="" coords="125,1747,343,1927"/>
+<area shape="rect" id="node3" href="$classGenericReader_1_1NumberStream_3_01InputStream_00_01false_00_01false_01_4.html" title=" " alt="" coords="5,1445,223,1684"/>
+<area shape="rect" id="node4" title=" " alt="" coords="56,1247,161,1324"/>
+<area shape="rect" id="node5" href="$classGenericReader_1_1StackStream.html" title=" " alt="" coords="257,1467,475,1662"/>
+<area shape="rect" id="node6" href="$classinternal_1_1Stack.html" title=" " alt="" coords="379,696,590,1125"/>
+<area shape="rect" id="node14" href="$classGenericReader_1_1StackStream.html" title=" " alt="" coords="284,1188,501,1383"/>
+<area shape="rect" id="node7" href="$classStackAllocator_01_5.html" title=" " alt="" coords="265,351,379,428"/>
+<area shape="rect" id="node8" title=" " alt="" coords="412,351,467,428"/>
+<area shape="rect" id="node9" title=" " alt="" coords="542,5,598,83"/>
+<area shape="rect" id="node10" href="$classinternal_1_1Stack.html" title="A type&#45;unsafe stack for storing different types of data." alt="" coords="648,175,825,604"/>
+<area shape="rect" id="node11" href="$classrapidjson_1_1Allocator.html" title="Concept for allocating, resizing and freeing memory block." alt="" coords="689,5,763,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="820,5,867,83"/>
+<area shape="rect" id="node13" title=" " alt="" coords="273,872,347,949"/>
+</map>

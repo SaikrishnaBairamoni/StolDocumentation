@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::maneuverWithBufferStartsAfterDowntrack" name="route_following_plugin::RouteFollowingPlugin::maneuverWithBufferStartsAfterDowntrack">
+<area shape="rect" id="node1" title="Identifies if a maneuver starts after the provided downtrack with compensation for a dynamic buffer s..." alt="" coords="5,5,213,76"/>
+<area shape="rect" id="node2" href="$namespaceroute__following__plugin_1_1anonymous__namespace_02route__following__plugin_8cpp_03.html#a9b29dd085f9f59d468b1c9320f0b5102" title="Anonymous function to extract maneuver end speed which can not be optained with GET_MANEUVER_PROPERY ..." alt="" coords="261,5,455,76"/>
+</map>

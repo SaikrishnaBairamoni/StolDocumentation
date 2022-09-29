@@ -1,0 +1,13 @@
+<map id="localization_manager::LocalizationManager::gnssPoseCallback" name="localization_manager::LocalizationManager::gnssPoseCallback">
+<area shape="rect" id="node1" title="Callback for new GNSS messages." alt="" coords="5,179,152,235"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aeec5e1584741de33c3c5f23f3ebe529a" title="Returns the current state." alt="" coords="200,127,387,183"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a0f5e05d562934f0e04d7f64f9d2fd95c" title="Trigger signal for the transition table." alt="" coords="200,231,387,287"/>
+<area shape="rect" id="node4" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a2436fd6ba3b137c8f94ae07660763e8f" title=" " alt="" coords="435,311,743,367"/>
+<area shape="rect" id="node7" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ac0a99a2e6cff16fd3d75212ce97beb21" title=" " alt="" coords="495,391,682,447"/>
+<area shape="rect" id="node8" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a23f60d98eb471786a4ad04d9ad18c094" title=" " alt="" coords="455,471,722,527"/>
+<area shape="rect" id="node9" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a63a7132b4e220496356ff142df4daba2" title=" " alt="" coords="495,71,682,127"/>
+<area shape="rect" id="node10" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ad6622c59f8297f8f8654de9c0208ab44" title=" " alt="" coords="494,151,683,207"/>
+<area shape="rect" id="node11" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aab9c58979971dcdabde93e222d5f5028" title=" " alt="" coords="493,231,684,287"/>
+<area shape="rect" id="node5" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a909aab1a6b7683b40720282de992ca42" title="Helper function for logging the provide signal." alt="" coords="791,231,977,287"/>
+<area shape="rect" id="node6" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a1b9ef45847204afb476ebb661e06454a" title="Function to change the current state and log the details of the transition." alt="" coords="791,311,977,367"/>
+</map>

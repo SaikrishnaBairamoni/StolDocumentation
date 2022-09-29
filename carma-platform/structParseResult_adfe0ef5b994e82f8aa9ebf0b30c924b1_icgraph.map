@@ -1,0 +1,10 @@
+<map id="ParseResult::IsError" name="ParseResult::IsError">
+<area shape="rect" id="node1" title="Whether the result is an error." alt="" coords="692,71,829,98"/>
+<area shape="rect" id="node2" href="$classGenericDocument.html#a510a0588db4eb372f5d81bc3646578fb" title="Whether a parse error has occured in the last parsing." alt="" coords="449,5,640,47"/>
+<area shape="rect" id="node3" href="$classGenericReader.html#ac417441794477ea747b63adb6d3653a9" title="Whether a parse error has occured in the last parsing." alt="" coords="445,71,644,98"/>
+<area shape="rect" id="node8" href="$structParseResult.html#abcd534680e4067ab797b1c6e930ac91c" title="Explicit conversion to bool, returns true, iff !IsError()." alt="" coords="471,123,618,164"/>
+<area shape="rect" id="node4" href="$classGenericReader.html#a46660019ff1ed42bc192d9b5f9119b0f" title=" " alt="" coords="215,46,397,73"/>
+<area shape="rect" id="node7" href="$classGenericReader.html#a09637865e7aea8e50fb8f9fc25dd65ad" title=" " alt="" coords="229,97,383,123"/>
+<area shape="rect" id="node5" href="$classGenericReader.html#a55a2d3fd3d5261f26513ed303724bc3a" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node6" href="$classGenericReader.html#a257891331e0c259903e7066fb4cebf92" title="Parse one token from JSON text." alt="" coords="5,71,167,112"/>
+</map>

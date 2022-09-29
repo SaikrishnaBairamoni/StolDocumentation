@@ -1,0 +1,5 @@
+<map id="port_drayage_plugin::PortDrayageWorker::onReceivedNewDestination" name="port_drayage_plugin::PortDrayageWorker::onReceivedNewDestination">
+<area shape="rect" id="node1" title="Callback for usage by the PortDrayageStateMachine when the vehicle has received a new destination." alt="" coords="5,45,193,101"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#ac151b686303798dbbcfe959dd43e4f88" title="Create a SetActiveRoute service request to set a new active route for the system based on the destina..." alt="" coords="241,5,461,61"/>
+<area shape="rect" id="node3" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a174fb6435c6aca5c2b140f1a5b00767c" title="Creates a UIInstructions message that can be used to create a pop&#45;up on the Web UI to notify a user t..." alt="" coords="270,85,433,141"/>
+</map>

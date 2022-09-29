@@ -1,0 +1,7 @@
+<map id="carma_wm::CARMAWorldModel::processSpatFromMsg" name="carma_wm::CARMAWorldModel::processSpatFromMsg">
+<area shape="rect" id="node1" title="processSpatFromMsg update map&#39;s traffic light states with SPAT msg" alt="" coords="5,118,212,159"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a406c6663f86a234a5e87474809386c34" title="for cheking previous rate to avoid repetation." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a65df34058ada8f5a64a7abd1a6e2afae" title="helper for getting traffic signal with given lanelet::Id" alt="" coords="260,85,467,126"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#a3beafa813c6efd889c0e1eaabdf0a6f8" title="helper for traffic signal Id" alt="" coords="260,150,467,191"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1CARMAWorldModel.html#a93b99ebb986b8f2c288fda23574fa2cb" title="update minimum end time to account for minute of the year" alt="" coords="260,215,467,271"/>
+</map>

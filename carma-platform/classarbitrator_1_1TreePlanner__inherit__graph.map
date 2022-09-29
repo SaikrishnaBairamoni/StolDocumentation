@@ -1,0 +1,4 @@
+<map id="arbitrator::TreePlanner" name="arbitrator::TreePlanner">
+<area shape="rect" id="node1" title="Implementation of PlanningStrategy using a generic tree search algorithm." alt="" coords="16,145,172,281"/>
+<area shape="rect" id="node2" href="$classarbitrator_1_1PlanningStrategy.html" title="Generic interface representing a strategy for arriving at a maneuver plan." alt="" coords="5,5,183,97"/>
+</map>

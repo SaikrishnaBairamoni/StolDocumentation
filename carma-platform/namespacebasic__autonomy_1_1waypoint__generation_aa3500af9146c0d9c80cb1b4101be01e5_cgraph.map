@@ -1,0 +1,5 @@
+<map id="basic_autonomy::waypoint_generation::create_lanefollow_geometry" name="basic_autonomy::waypoint_generation::create_lanefollow_geometry">
+<area shape="rect" id="node1" title="Converts a set of requested LANE_FOLLOWING maneuvers to point speed limit pairs." alt="" coords="5,5,201,61"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#ae7d5ca280140dce2bf7bcfb78bdfd55d" title="Helper function to concatenate 2 linestrings together and return the result. Neither LineString is mo..." alt="" coords="249,13,421,54"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="469,5,615,61"/>
+</map>

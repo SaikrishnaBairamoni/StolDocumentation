@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::StrategicPlugin::plan_maneuvers_callback" name="carma_guidance_plugins::StrategicPlugin::plan_maneuvers_callback">
+<area shape="rect" id="node1" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="219,5,384,61"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html#a1cf28fec547006198c7a0c20297ea96a" title=" " alt="" coords="5,5,171,61"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="lci_strategic_plugin::LCIStrategicStateTransitionTable::signalWhenAPPROACHING" name="lci_strategic_plugin::LCIStrategicStateTransitionTable::signalWhenAPPROACHING">
+<area shape="rect" id="node1" title=" " alt="" coords="5,135,231,191"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a1be896f0242c04f33991b86008320e06" title="Helper function for logging the provide signal." alt="" coords="279,97,468,153"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a6dc204c919a4df801ed0b5ff6e1486ea" title="Trigger signal for the transition table." alt="" coords="516,174,705,230"/>
+<area shape="rect" id="node5" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a425d7f16324829fdef5b1d2bfbd9bf87" title="Function to change the current state and log the details of the transition." alt="" coords="1021,103,1211,159"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a44bd26ef4b3d86b0b6890b96b3373b66" title=" " alt="" coords="762,143,965,199"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a631bce476ffdb5a8a3230b497bd459c7" title=" " alt="" coords="753,223,973,279"/>
+<area shape="rect" id="node7" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a56893fc24b1a263a0783ba3194737b57" title=" " alt="" coords="769,63,958,119"/>
+</map>

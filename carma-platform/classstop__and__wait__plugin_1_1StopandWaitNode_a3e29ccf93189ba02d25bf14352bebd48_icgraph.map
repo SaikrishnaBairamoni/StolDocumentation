@@ -1,0 +1,4 @@
+<map id="stop_and_wait_plugin::StopandWaitNode::parameter_update_callback" name="stop_and_wait_plugin::StopandWaitNode::parameter_update_callback">
+<area shape="rect" id="node1" title="Callback for dynamic parameter updates." alt="" coords="207,5,404,61"/>
+<area shape="rect" id="node2" href="$classstop__and__wait__plugin_1_1StopandWaitNode.html#a6c485cb3de7a713103b4b5fb77badebb" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,5,159,61"/>
+</map>

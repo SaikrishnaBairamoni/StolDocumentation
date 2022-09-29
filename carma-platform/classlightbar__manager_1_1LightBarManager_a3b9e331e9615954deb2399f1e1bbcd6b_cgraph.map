@@ -1,0 +1,5 @@
+<map id="lightbar_manager::LightBarManager::stateChangeCallBack" name="lightbar_manager::LightBarManager::stateChangeCallBack">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManager.html#a2428c8eac0dab494d0d542c28b0e7565" title="Try to turn the given indicator ON or OFF (comm with hardware) upon the given component&#39;s request." alt="" coords="480,5,656,47"/>
+<area shape="rect" id="node3" href="$classlightbar__manager_1_1LightBarManager.html#a2e9c417c53e30b85a24f672094c7a973" title="Miscellaneous function that forces the state to disengaged and turn off all indicators...." alt="" coords="256,35,432,76"/>
+</map>

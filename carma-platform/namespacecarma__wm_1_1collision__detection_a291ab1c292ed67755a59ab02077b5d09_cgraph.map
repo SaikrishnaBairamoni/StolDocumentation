@@ -1,0 +1,5 @@
+<map id="carma_wm::collision_detection::DetectCollision" name="carma_wm::collision_detection::DetectCollision">
+<area shape="rect" id="node1" title=".function is used in WorldCollisionDetection to detection collision between two Moving Object" alt="" coords="5,39,180,80"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1collision__detection.html#a8f119b1433d2e72efa49c08a7abe140d" title=".check Intersection between polygons" alt="" coords="228,5,467,47"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1collision__detection.html#a9b5a3d3db943a04478fd465cda786fb8" title=".function is to create a monving object with a polygon that represents area that object is going to a..." alt="" coords="240,71,455,112"/>
+</map>

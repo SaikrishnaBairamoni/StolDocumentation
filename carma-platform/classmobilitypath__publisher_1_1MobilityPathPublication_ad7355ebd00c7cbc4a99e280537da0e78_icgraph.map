@@ -1,0 +1,4 @@
+<map id="mobilitypath_publisher::MobilityPathPublication::spin_callback" name="mobilitypath_publisher::MobilityPathPublication::spin_callback">
+<area shape="rect" id="node1" title="Spin callback, which will be called frequently based on the configured spin rate." alt="" coords="216,5,379,61"/>
+<area shape="rect" id="node2" href="$classmobilitypath__publisher_1_1MobilityPathPublication.html#ab1cfe90d8b500eeefe48fec4394c370c" title=" " alt="" coords="5,5,168,61"/>
+</map>

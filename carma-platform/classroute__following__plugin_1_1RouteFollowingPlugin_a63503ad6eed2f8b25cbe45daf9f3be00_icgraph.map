@@ -1,0 +1,4 @@
+<map id="route_following_plugin::RouteFollowingPlugin::setManeuverStartDist" name="route_following_plugin::RouteFollowingPlugin::setManeuverStartDist">
+<area shape="rect" id="node1" title="Set the start distance of a maneuver based on the progress along the route." alt="" coords="232,5,387,61"/>
+<area shape="rect" id="node2" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html#a889056a79a669d5de8e1ce1bdb6eba99" title="Service callback for arbitrator maneuver planning." alt="" coords="5,5,184,61"/>
+</map>

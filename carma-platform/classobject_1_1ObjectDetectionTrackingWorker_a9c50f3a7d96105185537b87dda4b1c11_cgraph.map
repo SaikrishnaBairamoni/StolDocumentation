@@ -1,0 +1,5 @@
+<map id="object::ObjectDetectionTrackingWorker::detectedObjectCallback" name="object::ObjectDetectionTrackingWorker::detectedObjectCallback">
+<area shape="rect" id="node1" title="detectedObjectCallback populates detected object along with its velocity,yaw, yaw_rate and static/dyn..." alt="" coords="5,39,212,80"/>
+<area shape="rect" id="node2" href="$classobject_1_1ObjectDetectionTrackingWorker.html#a7246e975b019782d244594b4ba849945" title="Helper method to check if the provided tracked object has the provided class type." alt="" coords="260,5,467,47"/>
+<area shape="rect" id="node3" href="$namespacecovariance__helper.html#af38530465ec3a2a40b4e9be14032f65e" title="Transform the covariance matrix of a PoseWithCovariance message to a new frame." alt="" coords="292,71,435,112"/>
+</map>

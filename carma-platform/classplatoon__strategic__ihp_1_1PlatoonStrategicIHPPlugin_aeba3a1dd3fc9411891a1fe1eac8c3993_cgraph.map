@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_resp_cb_leaderaborting" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_resp_cb_leaderaborting">
+<area shape="rect" id="node1" title="Function to process mobility response in leaderaborting state." alt="" coords="5,77,200,133"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aa589c920c9684b42bf8f675c072ddb6b" title="Update status when state change from Leader to Follower." alt="" coords="257,5,457,61"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="248,85,467,126"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a26f10c9b0d02a6c0a37228583a0385a1" title="Removes a single member from the internal record of platoon members." alt="" coords="248,150,467,191"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#abca93088e8980c97a1a24c4fff31c758" title="Resets all variables that describe a neighbor platoon, so that no neighbor is known." alt="" coords="515,5,724,61"/>
+</map>

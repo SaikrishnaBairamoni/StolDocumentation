@@ -1,0 +1,4 @@
+<map id="mock_drivers::MockIMUDriver" name="mock_drivers::MockIMUDriver">
+<area shape="rect" id="node1" title="Mock IMU driver. Operates as a passthrough for bag data which updates the timestamps on received mess..." alt="" coords="15,351,212,501"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriver.html" title="The template node for the mock drivers that will handle all of the default driver logic." alt="" coords="5,5,221,303"/>
+</map>

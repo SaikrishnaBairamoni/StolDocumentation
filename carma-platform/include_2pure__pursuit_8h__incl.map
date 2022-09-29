@@ -1,0 +1,11 @@
+<map id="platooning_control/include/pure_pursuit.h" name="platooning_control/include/pure_pursuit.h">
+<area shape="rect" id="node1" title=" " alt="" coords="375,5,527,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,77,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,95,163,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="628,169,700,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="237,95,448,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="473,95,647,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="671,95,819,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="844,95,1023,121"/>
+<area shape="rect" id="node9" href="$platoon__control__config_8h.html" title=" " alt="" coords="1047,95,1209,121"/>
+</map>

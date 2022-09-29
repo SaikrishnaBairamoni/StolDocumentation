@@ -1,0 +1,10 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::on_configure_plugin" name="sci_strategic_plugin::SCIStrategicPlugin::on_configure_plugin">
+<area shape="rect" id="node1" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,165,148,221"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a272ecdbc0a5e12b2a20b24a1de56ead0" title="BSM callback function." alt="" coords="220,5,359,61"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a87470ace3c7e10f3de11a3c1d5eba831" title="callback function for current pose" alt="" coords="220,85,359,141"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a50b54d5c4cc5180eeef0c78c55f70ec3" title="Method to return the default world model provided as a convience by this base class If this method or..." alt="" coords="207,165,372,221"/>
+<area shape="rect" id="node6" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#ac84de4a0f0b5c1ba2f69a96ab49115b9" title="callback function for mobility operation" alt="" coords="217,245,361,301"/>
+<area shape="rect" id="node8" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a2890f5fb975352e8478b785a62669bde" title="Callback for dynamic parameter updates." alt="" coords="196,325,383,381"/>
+<area shape="rect" id="node5" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html#a9c9d8aa9324b12f941dc0be7394f98e7" title="Helper function for lazy initialization of wm_listener_. If already initialized method returns (ie...." alt="" coords="431,165,596,221"/>
+<area shape="rect" id="node7" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a20c1723fab3c1c2f84fe47a9414cd4d9" title="parse strategy parameters" alt="" coords="437,245,590,301"/>
+</map>

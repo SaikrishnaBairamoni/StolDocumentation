@@ -1,0 +1,4 @@
+<map id="carma_wm::CARMAWorldModel::getSignalizedIntersectionsAlongRoute" name="carma_wm::CARMAWorldModel::getSignalizedIntersectionsAlongRoute">
+<area shape="rect" id="node1" title="Return a list of signalized intersections along the current route. &#160;&#160;The signalized intersections alo..." alt="" coords="5,29,252,71"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a18e3077b7673f2f92fd71eeea955a597" title="Returns a pair of TrackPos, computed in 2d, of the provided area relative to the current route...." alt="" coords="300,29,507,71"/>
+</map>

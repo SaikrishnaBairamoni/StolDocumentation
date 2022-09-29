@@ -1,0 +1,4 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::validLightState" name="lci_strategic_plugin::LCIStrategicPlugin::validLightState">
+<area shape="rect" id="node1" title="Helper method that checks both if the input optional light state is set and if the state it contains ..." alt="" coords="5,5,143,61"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aedf733561a0ca72170d664f4414f624e" title="Helper method to evaluate if the given traffic light state is supported by this plugin." alt="" coords="191,5,336,61"/>
+</map>

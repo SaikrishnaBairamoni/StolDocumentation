@@ -1,0 +1,11 @@
+<map id="platoon_strategic_ihp::PlatoonManager::getNumberOfVehicleInFront" name="platoon_strategic_ihp::PlatoonManager::getNumberOfVehicleInFront">
+<area shape="rect" id="node1" title="Get number of vehicles in front of host vehicle inside platoon." alt="" coords="1189,155,1381,211"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a5fa3ab8c7c127c9d76f0dce1be59fe80" title="This is the implementation of all predecessor following (APF) algorithm for leader selection in a pla..." alt="" coords="927,5,1141,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a26b94722e82060dda554ef168626727c" title="Returns dynamic leader of the host vehicle." alt="" coords="671,56,867,112"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac86657c9cd45018b1f8544e47be1e5dc" title="Compose Platoon information message." alt="" coords="429,180,612,236"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ad0416740bcfdcccbd91a810d8b3ebbd5" title="UCLA: Return follower&#39;s desired position (i.e., downtrack, in m) that maintains the desired intra&#45;pla..." alt="" coords="938,187,1130,243"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8dcec182e6480989f16493cdae76e445" title="UCLA: Return the position of the preceding vehicle, in m." alt="" coords="660,212,879,268"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a3e9dbfe57693b6d23d99b61af6375a4f" title="Run Follower State." alt="" coords="429,277,612,333"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#ac7e7160659b61a4ac61be14f74fb1caa" title="Spin callback function." alt="" coords="199,237,381,293"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,237,151,293"/>
+</map>

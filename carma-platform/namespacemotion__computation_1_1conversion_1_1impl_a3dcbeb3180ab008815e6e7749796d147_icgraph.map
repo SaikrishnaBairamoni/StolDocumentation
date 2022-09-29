@@ -1,0 +1,4 @@
+<map id="motion_computation::conversion::impl::getYawFromQuaternionMsg" name="motion_computation::conversion::impl::getYawFromQuaternionMsg">
+<area shape="rect" id="node1" title="Gets the yaw angle in degrees described by the provided quaternion." alt="" coords="265,13,449,69"/>
+<area shape="rect" id="node2" href="$namespacemotion__computation_1_1conversion_1_1impl.html#aa87a85102ac70d15b834d6e1cd3d9429" title="Helper function to fill in the angular velocity of the external object." alt="" coords="5,5,217,76"/>
+</map>

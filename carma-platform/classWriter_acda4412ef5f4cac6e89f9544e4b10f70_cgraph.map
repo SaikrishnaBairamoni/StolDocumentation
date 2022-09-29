@@ -1,0 +1,9 @@
+<map id="Writer::WriteString" name="Writer::WriteString">
+<area shape="rect" id="node1" title=" " alt="" coords="5,122,132,149"/>
+<area shape="rect" id="node2" href="$structGenericStringStream.html#a0c8fea9c2740c2953af9b3bb28bd469b" title=" " alt="" coords="203,5,345,47"/>
+<area shape="rect" id="node3" href="$stream_8h.html#aa817b00a466bb84d96c5de1616436c95" title="Reserve n characters for writing to a stream." alt="" coords="229,71,319,98"/>
+<area shape="rect" id="node4" href="$stream_8h.html#ad57ba7f2912c5509924b69dec7db4396" title="Write character to a stream, presuming buffer is reserved." alt="" coords="232,122,316,149"/>
+<area shape="rect" id="node5" href="$classWriter.html#a94140803bba7863a1b39c936bbe6d262" title=" " alt="" coords="180,173,368,215"/>
+<area shape="rect" id="node7" href="$structGenericStringStream.html#a0d26e3e77e4fca64a87c2d71f48ac5e5" title=" " alt="" coords="203,239,345,280"/>
+<area shape="rect" id="node6" href="$structGenericStringStream.html#abc73d04baf4c7c58f383bc52536e8ac4" title=" " alt="" coords="416,173,559,215"/>
+</map>

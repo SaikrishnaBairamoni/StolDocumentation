@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::WMBroadcaster::generate32BitId" name="carma_wm_ctrl::WMBroadcaster::generate32BitId">
+<area shape="rect" id="node1" title="helper for generating 32bit traffic light Id from TCM label field consisting workzone intersection/si..." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1utils.html#a5f9cfb53df6903542a0cb9bf2f8a7d7c" title="Get 32bit id by concatenating 16bit id with 8bit signal_group_id." alt="" coords="264,13,445,39"/>
+</map>

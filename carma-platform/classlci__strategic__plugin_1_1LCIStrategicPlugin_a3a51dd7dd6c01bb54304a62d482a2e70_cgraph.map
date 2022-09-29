@@ -1,0 +1,8 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::handleFailureCase" name="lci_strategic_plugin::LCIStrategicPlugin::handleFailureCase">
+<area shape="rect" id="node1" title="When the vehicle is not able to successfully run the algorithm or not able to stop,..." alt="" coords="5,151,143,207"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a5e4ecab9f1255d861d20fd21c2b5bdd6" title="Compose a intersection transit maneuver message based on input params." alt="" coords="211,5,400,76"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a75ee8f9cf4e0d986b20a5d1e51c0e275" title="Compose a trajectory smoothing maneuver msg (sent as transit maneuver message)" alt="" coords="205,100,405,171"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a7dd0000bcaf1d2028aeef57416f7c429" title="Helper method which calls carma_wm::WorldModel::getLaneletsBetween(start_downtrack,..." alt="" coords="191,195,420,251"/>
+<area shape="rect" id="node5" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a7f7fc780ada2600048d45cc5451cf2af" title="Helper function to handleFailureCase that modifies ts_params to desired new parameters...." alt="" coords="219,275,392,331"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a90783dcf3764851270354a58d81c27c1" title="Helper method to print TrajectoryParams." alt="" coords="468,275,605,331"/>
+</map>

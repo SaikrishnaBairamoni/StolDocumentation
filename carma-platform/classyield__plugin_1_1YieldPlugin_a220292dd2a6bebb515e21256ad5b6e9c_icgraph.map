@@ -1,0 +1,4 @@
+<map id="yield_plugin::YieldPlugin::update_traj_for_object" name="yield_plugin::YieldPlugin::update_traj_for_object">
+<area shape="rect" id="node1" title="trajectory is modified to safely avoid obstacles on the road" alt="" coords="220,5,380,47"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#a0fd790e287683a2ef404e16a15e0ea29" title="Service callback for trajectory planning." alt="" coords="5,5,172,47"/>
+</map>

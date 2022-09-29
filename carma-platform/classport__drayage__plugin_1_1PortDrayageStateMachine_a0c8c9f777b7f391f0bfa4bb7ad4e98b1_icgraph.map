@@ -1,0 +1,7 @@
+<map id="port_drayage_plugin::PortDrayageStateMachine::processEvent" name="port_drayage_plugin::PortDrayageStateMachine::processEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="436,85,615,141"/>
+<area shape="rect" id="node2" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#ad30c99aeeb1f93525717c30c4cf49e9d" title="Callback to process the current status of the guidance state machine." alt="" coords="224,5,364,61"/>
+<area shape="rect" id="node4" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#ad82975a91317793c81efaa072471bb6e" title="Callback to process a received MobilityOperation message." alt="" coords="200,85,388,141"/>
+<area shape="rect" id="node5" href="$classport__drayage__plugin_1_1PortDrayageWorker.html#a58e23743371e64739555bffa0eab0442" title="Callback to process each Route Event." alt="" coords="224,165,364,221"/>
+<area shape="rect" id="node3" href="$classport__drayage__plugin_1_1PortDrayagePlugin.html#a6c49de39e315ae4a5ab4f53c52cf9d32" title=" " alt="" coords="5,85,152,141"/>
+</map>

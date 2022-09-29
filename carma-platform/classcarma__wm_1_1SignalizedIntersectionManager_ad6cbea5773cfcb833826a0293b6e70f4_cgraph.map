@@ -1,0 +1,10 @@
+<map id="carma_wm::SignalizedIntersectionManager::convertLaneToLaneletId" name="carma_wm::SignalizedIntersectionManager::convertLaneToLaneletId">
+<area shape="rect" id="node1" title="Returns mapping of MAP lane id to lanelet id for the given map and intersection.msg in the MAP...." alt="" coords="5,71,224,112"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1query.html#a9c9935e22582f37c01441115bce72f58" title="Gets the affected lanelet or areas based on the points in the given map&#39;s frame." alt="" coords="272,71,467,112"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1query.html#a382665a2ddc42be06fca9c1f8dfd0489" title="A function that filters successor lanelets of root_lanelets from possible_lanelets." alt="" coords="515,5,729,47"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#abab7ba4e773f03d6cfc09492742c6b7b" title="Calculates the angle between two vectors." alt="" coords="535,71,709,112"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="549,136,695,177"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#a50c966bd5e6ed00ea0b1a70e93cd0d4a" title="acos method that caps the input x value for 1 or &#45;1 to avoid undefined output. This is meant to preve..." alt="" coords="777,71,923,112"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="777,136,923,177"/>
+<area shape="rect" id="node8" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="971,136,1116,177"/>
+</map>

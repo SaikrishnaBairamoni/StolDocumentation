@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationPrepareToJoin" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationPrepareToJoin">
+<area shape="rect" id="node1" title="Function to compose mobility operation in PrepareToJoin (cut&#45;in join)" alt="" coords="5,5,232,76"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="280,13,515,69"/>
+</map>

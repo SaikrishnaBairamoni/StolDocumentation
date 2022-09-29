@@ -1,0 +1,4 @@
+<map id="mock_drivers::MockDriverNode::addSrv" name="mock_drivers::MockDriverNode::addSrv">
+<area shape="rect" id="node1" title="Function to add a service from a ROSComms object." alt="" coords="247,5,419,47"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockControllerDriver.html#ac0ac6cd368b7d57e7f6c83c27408133f" title="Pure virtual method which must be implemented by child classes. This method will be run once at start..." alt="" coords="5,5,199,47"/>
+</map>

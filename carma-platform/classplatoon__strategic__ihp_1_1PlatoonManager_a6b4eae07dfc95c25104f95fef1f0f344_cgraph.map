@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonManager::updatesOrAddMemberInfo" name="platoon_strategic_ihp::PlatoonManager::updatesOrAddMemberInfo">
+<area shape="rect" id="node1" title="Updates the list of vehicles in the specified platoon, based on info available from a mobility operat..." alt="" coords="5,5,193,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ae696d79ca33f496082ef462fdc9ba53b" title="Returns current host static ID as a string." alt="" coords="241,13,463,54"/>
+</map>

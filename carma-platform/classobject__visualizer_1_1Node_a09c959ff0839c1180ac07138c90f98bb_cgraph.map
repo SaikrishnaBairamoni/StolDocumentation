@@ -1,0 +1,4 @@
+<map id="object_visualizer::Node::roadway_obstacles_callback" name="object_visualizer::Node::roadway_obstacles_callback">
+<area shape="rect" id="node1" title="Roadway obstacles callback. Converts the message to a visualization message to republish." alt="" coords="5,5,176,61"/>
+<area shape="rect" id="node2" href="$classobject__visualizer_1_1Node.html#a4db9260841f85e37db81172b3ae0a8d6" title="Adds a marker deletion for a number of markers which is the delta between the new marker count and th..." alt="" coords="224,5,385,61"/>
+</map>

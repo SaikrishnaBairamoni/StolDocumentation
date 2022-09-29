@@ -1,0 +1,26 @@
+<map id="route_following_plugin::RouteFollowingPlugin" name="route_following_plugin::RouteFollowingPlugin">
+<area shape="rect" id="node1" title=" " alt="" coords="1811,1159,2033,1896"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html" title="StrategicPlugin base class which can be extended by user provided plugins which wish to implement the..." alt="" coords="351,843,541,1081"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="352,175,540,633"/>
+<area shape="rect" id="node4" title=" " alt="" coords="189,13,437,90"/>
+<area shape="rect" id="node5" title=" " alt="" coords="461,13,541,90"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,5,164,97"/>
+<area shape="rect" id="node7" title=" " alt="" coords="565,13,773,90"/>
+<area shape="rect" id="node8" title=" " alt="" coords="135,358,327,450"/>
+<area shape="rect" id="node9" title=" " alt="" coords="706,916,871,1008"/>
+<area shape="rect" id="node10" title=" " alt="" coords="895,916,1087,1008"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1112,909,1343,1015"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1367,916,1520,1008"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1560,365,1620,443"/>
+<area shape="rect" id="node14" href="$structroute__following__plugin_1_1Config.html" title="Struct containing config values values for route_following_plugin." alt="" coords="1723,916,1873,1008"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1828,365,1883,443"/>
+<area shape="rect" id="node16" title=" " alt="" coords="2084,909,2304,1015"/>
+<area shape="rect" id="node17" title=" " alt="" coords="2329,923,2433,1001"/>
+<area shape="rect" id="node18" title=" " alt="" coords="2457,923,2555,1001"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2579,923,2659,1001"/>
+<area shape="rect" id="node20" title=" " alt="" coords="2683,916,2849,1008"/>
+<area shape="rect" id="node21" title=" " alt="" coords="2874,923,3007,1001"/>
+<area shape="rect" id="node22" title=" " alt="" coords="3031,923,3207,1001"/>
+<area shape="rect" id="node23" title=" " alt="" coords="3231,923,3287,1001"/>
+<area shape="rect" id="node24" title=" " alt="" coords="3312,916,3457,1008"/>
+</map>

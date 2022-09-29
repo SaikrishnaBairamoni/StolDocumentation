@@ -1,0 +1,14 @@
+<map id="lci_strategic_plugin::LCIStrategicStateTransitionTable::signal" name="lci_strategic_plugin::LCIStrategicStateTransitionTable::signal">
+<area shape="rect" id="node1" title="Trigger signal for the transition table." alt="" coords="615,235,804,291"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a1be896f0242c04f33991b86008320e06" title="Helper function for logging the provide signal." alt="" coords="377,157,567,213"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a4737562012420f1e6d7a5ce25bd927e5" title=" " alt="" coords="104,5,329,61"/>
+<area shape="rect" id="node4" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a44bd26ef4b3d86b0b6890b96b3373b66" title=" " alt="" coords="115,85,318,141"/>
+<area shape="rect" id="node5" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a631bce476ffdb5a8a3230b497bd459c7" title=" " alt="" coords="107,229,327,285"/>
+<area shape="rect" id="node6" href="$classlci__strategic__plugin_1_1LCIStrategicStateTransitionTable.html#a56893fc24b1a263a0783ba3194737b57" title=" " alt="" coords="122,309,311,365"/>
+<area shape="rect" id="node7" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#adb5f42d9458f7c1e4b7c87310c015059" title="Method for performing maneuver planning when the current plugin state is TransitState::APPROACHING Th..." alt="" coords="381,627,563,683"/>
+<area shape="rect" id="node10" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a233112b93d2ee04c2f149e46f62832e2" title="Method for performing maneuver planning when the current plugin state is TransitState::DEPARTING Ther..." alt="" coords="391,387,553,443"/>
+<area shape="rect" id="node11" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a839f2a50a5289df5b243a8355850539a" title="Method for performing maneuver planning when the current plugin state is TransitState::UNAVAILABLE Th..." alt="" coords="383,467,561,523"/>
+<area shape="rect" id="node12" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#ad8e8b761da49c63e31877814d247005d" title="Method for performing maneuver planning when the current plugin state is TransitState::WAITING Theref..." alt="" coords="401,547,543,603"/>
+<area shape="rect" id="node8" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a8b3f0877902b0153950cf4577e7b6ac0" title="Service callback for arbitrator maneuver planning." alt="" coords="148,507,285,563"/>
+<area shape="rect" id="node9" href="$lci__strategic__plugin_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,521,56,548"/>
+</map>

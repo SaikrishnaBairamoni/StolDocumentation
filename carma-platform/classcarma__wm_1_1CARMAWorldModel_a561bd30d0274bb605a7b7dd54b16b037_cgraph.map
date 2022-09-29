@@ -1,0 +1,10 @@
+<map id="carma_wm::CARMAWorldModel::routeTrackPos" name="carma_wm::CARMAWorldModel::routeTrackPos">
+<area shape="rect" id="node1" title="Returns the TrackPos, computed in 2d, of the provided point relative to the current route." alt="" coords="5,156,212,197"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1IndexedDistanceMap.html#ab89af3367270704b5467c46a7cdf3987" title="Get the distance between two points on the same linestring." alt="" coords="260,5,448,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1IndexedDistanceMap.html#a972f18c7b178a350cfdb85719eb10323" title="Get the along&#45;line distance to the point on the provided linestring." alt="" coords="496,35,723,76"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1IndexedDistanceMap.html#aaf9700fe30cc2819ca4423a2acffa27d" title="Get the distance to the start of the linestring at the specified index." alt="" coords="260,123,448,164"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1IndexedDistanceMap.html#a2ae2fda2b50db3558644bc36b1338388" title="Returns the indexes of the element identified by the provided Id NOTE: It is up to the user to know i..." alt="" coords="260,188,448,229"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="281,253,427,295"/>
+<area shape="rect" id="node8" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="537,283,682,324"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="537,217,682,259"/>
+</map>

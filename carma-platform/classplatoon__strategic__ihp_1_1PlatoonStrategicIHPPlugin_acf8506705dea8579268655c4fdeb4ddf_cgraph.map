@@ -1,0 +1,9 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_leader" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_leader">
+<area shape="rect" id="node1" title="Run Leader State." alt="" coords="5,85,188,141"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="237,21,456,62"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#afc01cfaa2979666119dff63ee09c05a6" title="Function to compose mobility operation in leader state." alt="" coords="236,85,457,141"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="788,121,1031,162"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#abf34e8d8c0c18809bf551d3b04db81d4" title="Function to compose mobility operation message with INFO params." alt="" coords="516,5,729,61"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="505,85,740,141"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af19d3e4a88f6875cf802442b183694a0" title="Returns overall length of the platoon. in m." alt="" coords="815,5,1003,61"/>
+</map>

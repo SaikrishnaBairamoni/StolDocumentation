@@ -1,0 +1,4 @@
+<map id="stop_and_wait_plugin::StopandWait::maneuvers_to_points" name="stop_and_wait_plugin::StopandWait::maneuvers_to_points">
+<area shape="rect" id="node1" title="Converts a set of requested STOP_AND_WAIT maneuvers to point speed limit pairs." alt="" coords="267,5,439,61"/>
+<area shape="rect" id="node2" href="$classstop__and__wait__plugin_1_1StopandWait.html#aacfe3c82e0d7cc47a27c67f7b9f4b83e" title="Service callback for trajectory planning." alt="" coords="5,13,219,54"/>
+</map>

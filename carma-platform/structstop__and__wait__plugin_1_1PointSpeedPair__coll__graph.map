@@ -1,0 +1,5 @@
+<map id="stop_and_wait_plugin::PointSpeedPair" name="stop_and_wait_plugin::PointSpeedPair">
+<area shape="rect" id="node1" title="Convenience class for pairing 2d points with speeds." alt="" coords="33,145,180,237"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,104,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="129,5,189,83"/>
+</map>

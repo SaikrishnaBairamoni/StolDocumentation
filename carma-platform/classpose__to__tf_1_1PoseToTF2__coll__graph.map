@@ -1,0 +1,7 @@
+<map id="pose_to_tf::PoseToTF2" name="pose_to_tf::PoseToTF2">
+<area shape="rect" id="node1" title="Primary logic class for the PoseToTF2 node." alt="" coords="211,329,422,480"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,167,196,259"/>
+<area shape="rect" id="node3" href="$structpose__to__tf_1_1PoseToTF2Config.html" title="Stuct containing the frame configuration values for pose_to_tf." alt="" coords="220,175,413,252"/>
+<area shape="rect" id="node4" title=" " alt="" coords="289,5,344,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="438,160,595,267"/>
+</map>

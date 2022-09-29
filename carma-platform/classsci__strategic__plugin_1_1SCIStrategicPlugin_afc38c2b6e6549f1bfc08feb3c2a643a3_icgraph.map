@@ -1,0 +1,4 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::composeLaneFollowingManeuverMessage" name="sci_strategic_plugin::SCIStrategicPlugin::composeLaneFollowingManeuverMessage">
+<area shape="rect" id="node1" title="Compose a lane keeping maneuver message based on input params." alt="" coords="232,5,455,76"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a5ad9628cf7d25246bc3a192c842ba8e2" title="Service callback for arbitrator maneuver planning." alt="" coords="5,13,184,69"/>
+</map>

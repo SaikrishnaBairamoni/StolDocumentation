@@ -1,0 +1,4 @@
+<map id="NS3Adapter::sendMessageFromQueue" name="NS3Adapter::sendMessageFromQueue">
+<area shape="rect" id="node1" title="Sends a message from the queue of outbound messages." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$classNS3Client.html#a3085a9d506de03255e3acc00aa778c25" title="sends a udp message" alt="" coords="264,13,459,39"/>
+</map>

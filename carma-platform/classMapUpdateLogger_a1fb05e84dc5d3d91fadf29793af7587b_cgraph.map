@@ -1,0 +1,7 @@
+<map id="MapUpdateLogger::MapUpdateLogger" name="MapUpdateLogger::MapUpdateLogger">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,208,69"/>
+<area shape="rect" id="node2" href="$classMapUpdateLogger.html#ac782a1014626a3fd5a8cd133a79b7263" title=" " alt="" coords="256,27,412,69"/>
+<area shape="rect" id="node3" href="$classMapUpdateLogger.html#afa5c600a6be77593cfb3f2a2517a7df5" title="Callback for map updates that converts them to a human readable format." alt="" coords="460,27,663,69"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm.html#a988397f5bcadc640fed21cb096f7a350" title=" " alt="" coords="733,5,896,32"/>
+<area shape="rect" id="node5" href="$classMapUpdateLogger.html#ab98014c863eaf2d66753f837be154d7d" title="Converts a TrafficControl pair into the corresponding debug message type." alt="" coords="711,57,919,98"/>
+</map>

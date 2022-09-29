@@ -1,0 +1,4 @@
+<map id="roadway_objects::RoadwayObjectsWorker::externalObjectsCallback" name="roadway_objects::RoadwayObjectsWorker::externalObjectsCallback">
+<area shape="rect" id="node1" title="Converts the provided ExternalObjectList to a RoadwayObstacleList and re&#45;publishes it." alt="" coords="232,5,436,61"/>
+<area shape="rect" id="node2" href="$classroadway__objects_1_1RoadwayObjectsNode.html#a729bffe40d05b3ca6df2b0f6c7f1b6f6" title=" " alt="" coords="5,5,184,61"/>
+</map>

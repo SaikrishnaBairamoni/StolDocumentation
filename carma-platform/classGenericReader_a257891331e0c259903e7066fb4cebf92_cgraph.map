@@ -1,0 +1,11 @@
+<map id="GenericReader::IterativeParseNext" name="GenericReader::IterativeParseNext">
+<area shape="rect" id="node1" title="Parse one token from JSON text." alt="" coords="5,141,167,182"/>
+<area shape="rect" id="node2" href="$classinternal_1_1Stack.html#a02da31665a372738e81ded2f7b7d598e" title=" " alt="" coords="236,5,376,32"/>
+<area shape="rect" id="node3" href="$classGenericReader.html#a46660019ff1ed42bc192d9b5f9119b0f" title=" " alt="" coords="215,56,397,83"/>
+<area shape="rect" id="node6" href="$classGenericReader.html#a39e26c88d998f5f26774936b2797cf67" title=" " alt="" coords="220,107,392,149"/>
+<area shape="rect" id="node7" href="$classGenericReader.html#a4fd3af4b424f9017a0bd3c86f51313e1" title=" " alt="" coords="220,173,392,214"/>
+<area shape="rect" id="node8" href="$classGenericReader.html#ae20c2989d379782f3bbf81561a67ebcd" title=" " alt="" coords="229,239,383,265"/>
+<area shape="rect" id="node9" href="$classGenericReader.html#a9b3547ce0d99a8e53177c3d193e3d462" title=" " alt="" coords="223,289,389,316"/>
+<area shape="rect" id="node4" href="$classGenericReader.html#ac417441794477ea747b63adb6d3653a9" title="Whether a parse error has occured in the last parsing." alt="" coords="445,56,644,83"/>
+<area shape="rect" id="node5" href="$structParseResult.html#adfe0ef5b994e82f8aa9ebf0b30c924b1" title="Whether the result is an error." alt="" coords="692,56,829,83"/>
+</map>

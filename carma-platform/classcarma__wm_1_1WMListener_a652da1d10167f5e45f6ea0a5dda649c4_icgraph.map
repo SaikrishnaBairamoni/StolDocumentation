@@ -1,0 +1,4 @@
+<map id="carma_wm::WMListener::checkIfReRoutingNeededWL" name="carma_wm::WMListener::checkIfReRoutingNeededWL">
+<area shape="rect" id="node1" title="Returns true if a map update has been processed which requires rerouting. This method is meant to be ..." alt="" coords="188,5,384,47"/>
+<area shape="rect" id="node2" href="$classroute_1_1Route.html#a5f6b00da6b8e1cd9238b9d60457276c8" title=" " alt="" coords="5,5,140,47"/>
+</map>

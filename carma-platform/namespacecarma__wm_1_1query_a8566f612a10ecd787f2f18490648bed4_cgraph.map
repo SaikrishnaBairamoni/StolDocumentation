@@ -1,0 +1,8 @@
+<map id="carma_wm::query::nonConnectedAdjacentLeft" name="carma_wm::query::nonConnectedAdjacentLeft">
+<area shape="rect" id="node1" title="(non&#45;const version) Given the cartesian point on the map, tries to get the opposite direction lanelet..." alt="" coords="5,39,217,80"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1query.html#a9fb50939b2ae576d2eb7fcfc42fcdc22" title="Given the cartesian point on the map, tries to get the opposite direction lanelet on the left This fu..." alt="" coords="265,39,477,80"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1query.html#a8933b74d652e02d07be1170b787d87a2" title="carma_wm::query namespace contains implementations for query functions (input and output read or writ..." alt="" coords="525,5,723,47"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="551,71,697,112"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="771,71,916,112"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="964,71,1109,112"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="localization_manager::LocalizationManager::stateTransitionCallback" name="localization_manager::LocalizationManager::stateTransitionCallback">
+<area shape="rect" id="node1" title="Callback for when a new state was triggered. Allows creation of entry/exit behavior for states." alt="" coords="200,5,364,61"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#acbb7d81be472c3ec96f3d700b7ca823c" title="Constructor." alt="" coords="5,5,152,61"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="carma_guidance_plugins::ControlPlugin::generate_command" name="carma_guidance_plugins::ControlPlugin::generate_command">
+<area shape="rect" id="node1" title="Extending class provided method which should generate a command message which will be published to th..." alt="" coords="219,5,384,61"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#ab4b73c4d2ac5c44c17c223b159a04ca1" title=" " alt="" coords="5,5,171,61"/>
+</map>

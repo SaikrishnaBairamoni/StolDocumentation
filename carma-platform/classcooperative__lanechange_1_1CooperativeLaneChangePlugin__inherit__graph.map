@@ -1,0 +1,6 @@
+<map id="cooperative_lanechange::CooperativeLaneChangePlugin" name="cooperative_lanechange::CooperativeLaneChangePlugin">
+<area shape="rect" id="node1" title="The class responsible for generating cooperative lanechange trajectories from received lane change ma..." alt="" coords="16,968,243,1735"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html" title="TacticalPlugin base class which can be extended by user provided plugins which wish to implement the ..." alt="" coords="39,681,219,920"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="35,131,223,633"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,253,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="carma_wm_ctrl::WMBroadcaster::controlRequestFromRoute" name="carma_wm_ctrl::WMBroadcaster::controlRequestFromRoute">
+<area shape="rect" id="node1" title="Pulls vehicle information from CARMA Cloud at startup by providing its selected route in a TrafficCon..." alt="" coords="5,39,216,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a8c72c6fdeb1568b078bf6131c906b377" title="composeTCRStatus() compose TCM Request visualization on UI" alt="" coords="274,5,485,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1GeofenceScheduler.html#a2fecf322a302aff00ce8d76b0965e02e" title="Get the clock type of the clock being created by the timer factory." alt="" coords="264,71,495,112"/>
+</map>

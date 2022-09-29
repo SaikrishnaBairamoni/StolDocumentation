@@ -1,0 +1,8 @@
+<map id="carma_wm::WMListenerWorker::getVehicleParticipationType" name="carma_wm::WMListenerWorker::getVehicleParticipationType">
+<area shape="rect" id="node1" title="Returns the Vehicle Participation Type value." alt="" coords="1219,35,1421,76"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1WMListenerWorker.html#a67652b9930dedc1ec0cd214f79a66948" title="Helper function to convert a routing graph message into a actual RoutingGraph object." alt="" coords="968,35,1171,76"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1WMListenerWorker.html#ac0f4e6772f76aed866391ccb17091961" title="Callback for new map update messages (geofence). Updates the underlying map." alt="" coords="717,35,920,76"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1WMListenerWorker.html#a28ae2c52d969a306dc53a9f976cfdc73" title="Callback for new map messages. Updates the underlying map." alt="" coords="216,5,419,47"/>
+<area shape="rect" id="node6" href="$classcarma__wm_1_1WMListenerWorker.html#a2d1cd5f09e980e0d4f379da18c50780a" title="Callback for route message." alt="" coords="467,64,669,105"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1WMListener.html#aa727330ec070c6631616bbc7ec2f45d1" title="Constructor which can be used to specify threading behavior of this class." alt="" coords="5,35,168,76"/>
+</map>

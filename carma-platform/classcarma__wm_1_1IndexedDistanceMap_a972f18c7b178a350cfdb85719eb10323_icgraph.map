@@ -1,0 +1,7 @@
+<map id="carma_wm::IndexedDistanceMap::distanceToPointAlongElement" name="carma_wm::IndexedDistanceMap::distanceToPointAlongElement">
+<area shape="rect" id="node1" title="Get the along&#45;line distance to the point on the provided linestring." alt="" coords="515,64,741,105"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1IndexedDistanceMap.html#ab89af3367270704b5467c46a7cdf3987" title="Get the distance between two points on the same linestring." alt="" coords="269,5,457,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a561bd30d0274bb605a7b7dd54b16b037" title="Returns the TrackPos, computed in 2d, of the provided point relative to the current route." alt="" coords="5,32,212,73"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#a1e7bf1856cd6cd7dbf1e262d378c6087" title="Converts a route track position into a map frame cartesian point." alt="" coords="260,123,467,164"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1CARMAWorldModel.html#af091e77668f082aaafea367836118dc9" title="Samples the route centerline between the provided downtracks with the provided step size...." alt="" coords="5,123,212,164"/>
+</map>

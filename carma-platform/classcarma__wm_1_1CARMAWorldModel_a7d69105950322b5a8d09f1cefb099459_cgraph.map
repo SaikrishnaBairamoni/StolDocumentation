@@ -1,0 +1,4 @@
+<map id="carma_wm::CARMAWorldModel::setRouteEndPoint" name="carma_wm::CARMAWorldModel::setRouteEndPoint">
+<area shape="rect" id="node1" title="Set endpoint of the route." alt="" coords="5,29,212,71"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a18e3077b7673f2f92fd71eeea955a597" title="Returns a pair of TrackPos, computed in 2d, of the provided area relative to the current route...." alt="" coords="260,29,467,71"/>
+</map>

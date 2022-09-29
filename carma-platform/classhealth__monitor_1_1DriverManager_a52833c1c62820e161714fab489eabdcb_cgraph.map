@@ -1,0 +1,4 @@
+<map id="health_monitor::DriverManager::update_driver_status" name="health_monitor::DriverManager::update_driver_status">
+<area shape="rect" id="node1" title="Update driver status." alt="" coords="5,5,203,47"/>
+<area shape="rect" id="node2" href="$classhealth__monitor_1_1EntryManager.html#aa70731be3af218703bb34f039a32fbd3" title="Add a new entry if the given name does not exist. Update an existing entry if the given name exists." alt="" coords="251,5,443,47"/>
+</map>

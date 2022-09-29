@@ -1,0 +1,6 @@
+<map id="object_visualizer::Node::clear_and_update_old_objects" name="object_visualizer::Node::clear_and_update_old_objects">
+<area shape="rect" id="node1" title="Adds a marker deletion for a number of markers which is the delta between the new marker count and th..." alt="" coords="449,45,611,101"/>
+<area shape="rect" id="node2" href="$classobject__visualizer_1_1Node.html#afc59564f518fc710f07e26dc343e28b2" title="External objects callback. Converts the message to a visualization message to republish." alt="" coords="239,5,393,61"/>
+<area shape="rect" id="node4" href="$classobject__visualizer_1_1Node.html#a09c959ff0839c1180ac07138c90f98bb" title="Roadway obstacles callback. Converts the message to a visualization message to republish." alt="" coords="231,85,401,141"/>
+<area shape="rect" id="node3" href="$classobject__visualizer_1_1Node.html#a47bdce39cc71549a9b236397138a78de" title=" " alt="" coords="5,53,183,94"/>
+</map>

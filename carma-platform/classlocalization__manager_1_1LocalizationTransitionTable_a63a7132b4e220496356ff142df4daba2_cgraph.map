@@ -1,0 +1,11 @@
+<map id="localization_manager::LocalizationTransitionTable::signalWhenINITIALIZING" name="localization_manager::LocalizationTransitionTable::signalWhenINITIALIZING">
+<area shape="rect" id="node1" title=" " alt="" coords="5,192,192,248"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a909aab1a6b7683b40720282de992ca42" title="Helper function for logging the provide signal." alt="" coords="240,153,427,209"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a0f5e05d562934f0e04d7f64f9d2fd95c" title="Trigger signal for the transition table." alt="" coords="475,230,661,286"/>
+<area shape="rect" id="node5" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a1b9ef45847204afb476ebb661e06454a" title="Function to change the current state and log the details of the transition." alt="" coords="1065,166,1252,222"/>
+<area shape="rect" id="node4" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a2436fd6ba3b137c8f94ae07660763e8f" title=" " alt="" coords="709,46,1017,102"/>
+<area shape="rect" id="node6" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ac0a99a2e6cff16fd3d75212ce97beb21" title=" " alt="" coords="770,286,957,342"/>
+<area shape="rect" id="node7" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#a23f60d98eb471786a4ad04d9ad18c094" title=" " alt="" coords="730,206,997,262"/>
+<area shape="rect" id="node8" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#ad6622c59f8297f8f8654de9c0208ab44" title=" " alt="" coords="769,366,958,422"/>
+<area shape="rect" id="node9" href="$classlocalization__manager_1_1LocalizationTransitionTable.html#aab9c58979971dcdabde93e222d5f5028" title=" " alt="" coords="768,126,959,182"/>
+</map>

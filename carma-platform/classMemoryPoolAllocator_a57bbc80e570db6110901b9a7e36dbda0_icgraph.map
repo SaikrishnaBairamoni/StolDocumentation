@@ -1,0 +1,4 @@
+<map id="MemoryPoolAllocator::Clear" name="MemoryPoolAllocator::Clear">
+<area shape="rect" id="node1" title="Deallocates all memory chunks, excluding the user&#45;supplied buffer." alt="" coords="212,5,357,47"/>
+<area shape="rect" id="node2" href="$classMemoryPoolAllocator.html#ad4eee0ef3cfe8cda31034fbce98b7a9b" title="Destructor." alt="" coords="5,5,164,47"/>
+</map>

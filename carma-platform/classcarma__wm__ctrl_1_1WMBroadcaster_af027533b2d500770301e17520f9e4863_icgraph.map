@@ -1,0 +1,10 @@
+<map id="carma_wm_ctrl::WMBroadcaster::shouldChangeControlLine" name="carma_wm_ctrl::WMBroadcaster::shouldChangeControlLine">
+<area shape="rect" id="node1" title="This is a helper function that returns true if the provided regem is marked to be changed by the geof..." alt="" coords="1040,39,1251,80"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#af1b3b20607c1fde289b41fc6a51ee88a" title=" " alt="" coords="781,5,992,47"/>
+<area shape="rect" id="node6" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#aa7f599cf26d1e2ff6ea7cb943de23071" title=" " alt="" coords="781,71,992,112"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a0a119e3571ef94545fc979ca3190c5f1" title=" " alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a3751e2e2dc4455fc7e3e80f1ae2c672e" title="Removes a geofence from the current map and publishes the ROS msg." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,39,216,80"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a59dfece11887f76f024c34ef7f6e0f05" title=" " alt="" coords="523,71,733,112"/>
+<area shape="rect" id="node8" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a649174a7a7270df95532cad5131bf4cb" title="Adds a geofence to the current map and publishes the ROS msg." alt="" coords="264,71,475,112"/>
+</map>

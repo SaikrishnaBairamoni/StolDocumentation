@@ -1,0 +1,6 @@
+<map id="carma_guidance_plugins::PluginBaseNode::handle_on_shutdown" name="carma_guidance_plugins::PluginBaseNode::handle_on_shutdown">
+<area shape="rect" id="node1" title=" " alt="" coords="219,85,388,141"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#acafc2457a306de072cce7cdf26362835" title=" " alt="" coords="5,5,171,61"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html#abd252801b52f6a42109a3d08bf0b28d1" title=" " alt="" coords="5,85,171,141"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html#a5e7852f4855cc11711cecdac15ef4b08" title=" " alt="" coords="5,165,171,221"/>
+</map>

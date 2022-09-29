@@ -1,0 +1,28 @@
+var basic__autonomy_8h =
+[
+    [ "basic_autonomy::waypoint_generation::PointSpeedPair", "structbasic__autonomy_1_1waypoint__generation_1_1PointSpeedPair.html", "structbasic__autonomy_1_1waypoint__generation_1_1PointSpeedPair" ],
+    [ "basic_autonomy::waypoint_generation::GeneralTrajConfig", "structbasic__autonomy_1_1waypoint__generation_1_1GeneralTrajConfig.html", "structbasic__autonomy_1_1waypoint__generation_1_1GeneralTrajConfig" ],
+    [ "basic_autonomy::waypoint_generation::DetailedTrajConfig", "structbasic__autonomy_1_1waypoint__generation_1_1DetailedTrajConfig.html", "structbasic__autonomy_1_1waypoint__generation_1_1DetailedTrajConfig" ],
+    [ "GET_MANEUVER_PROPERTY", "basic__autonomy_8h.html#a066f948508e087006568cb6c9b0674a7", null ],
+    [ "add_lanefollow_buffer", "basic__autonomy_8h.html#adf8998fd3412efde64e2747f1e35df6b", null ],
+    [ "apply_speed_limits", "basic__autonomy_8h.html#ab4974a3dfe697ccc0dd1344a8e11c5e1", null ],
+    [ "attach_past_points", "basic__autonomy_8h.html#af9a705cca66d75f0d2d8ce9e6ea2ee41", null ],
+    [ "compose_detailed_trajectory_config", "basic__autonomy_8h.html#a8be61ccb69db73e2e70d5e59f88ce446", null ],
+    [ "compose_general_trajectory_config", "basic__autonomy_8h.html#a11b8eae5903a23ecab69c2f814c1bcf8", null ],
+    [ "compose_lanechange_trajectory_from_path", "basic__autonomy_8h.html#ab23f089f091a460f4f5af78a7e021c57", null ],
+    [ "compose_lanefollow_trajectory_from_path", "basic__autonomy_8h.html#a8746a5ca630da4365cf22bba2018e346", null ],
+    [ "compute_curvature_at", "basic__autonomy_8h.html#ae4ca284ba04f4f76fb88bf8d20731835", null ],
+    [ "compute_fit", "basic__autonomy_8h.html#a9e0eab343d21d18c665083839d706f04", null ],
+    [ "compute_heading_frame", "basic__autonomy_8h.html#ada2ee63b890bfa23d67a17cf61dd0129", null ],
+    [ "constrain_to_time_boundary", "basic__autonomy_8h.html#af509efce135492493e13c9bb86329dcd", null ],
+    [ "create_geometry_profile", "basic__autonomy_8h.html#a5dd7e714fd12529219c3b63da8887e00", null ],
+    [ "create_lanechange_geometry", "basic__autonomy_8h.html#a2219ab96db87781023137bdb45af1ea2", null ],
+    [ "create_lanechange_path", "basic__autonomy_8h.html#aa1466a3966dee2e7bfb71ac6f7e62e5b", null ],
+    [ "create_lanefollow_geometry", "basic__autonomy_8h.html#ac15066696338bef3b38408c8000346d8", null ],
+    [ "create_route_geom", "basic__autonomy_8h.html#a9876518513a13a569a63f225013b686f", null ],
+    [ "get_lanechange_points_from_maneuver", "basic__autonomy_8h.html#a73ab9c892a44135816fd70e344d1e956", null ],
+    [ "min_with_exclusions", "basic__autonomy_8h.html#a9dd6a1f0fa9c6f6590b83a7cc2e0d118", null ],
+    [ "optimize_speed", "basic__autonomy_8h.html#a84a6c11da2d9736a8f277b6afd124100", null ],
+    [ "resample_linestring_pair_to_same_size", "basic__autonomy_8h.html#a19cf5cf882789e1e9ed3e92d0105a8de", null ],
+    [ "trajectory_from_points_times_orientations", "basic__autonomy_8h.html#aeaf04f0d429f5abe96d2582330e646a1", null ]
+];

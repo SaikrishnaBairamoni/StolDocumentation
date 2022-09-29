@@ -1,0 +1,7 @@
+<map id="GenericReader::HasParseError" name="GenericReader::HasParseError">
+<area shape="rect" id="node1" title="Whether a parse error has occured in the last parsing." alt="" coords="445,70,644,97"/>
+<area shape="rect" id="node2" href="$classGenericReader.html#a46660019ff1ed42bc192d9b5f9119b0f" title=" " alt="" coords="215,45,397,71"/>
+<area shape="rect" id="node5" href="$classGenericReader.html#a09637865e7aea8e50fb8f9fc25dd65ad" title=" " alt="" coords="229,95,383,122"/>
+<area shape="rect" id="node3" href="$classGenericReader.html#a55a2d3fd3d5261f26513ed303724bc3a" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node4" href="$classGenericReader.html#a257891331e0c259903e7066fb4cebf92" title="Parse one token from JSON text." alt="" coords="5,71,167,112"/>
+</map>

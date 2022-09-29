@@ -1,0 +1,5 @@
+<map id="sci_strategic_plugin::SCIStrategicPlugin::on_activate_plugin" name="sci_strategic_plugin::SCIStrategicPlugin::on_activate_plugin">
+<area shape="rect" id="node1" title="Method which is triggered when this plugin is moved from the INACTIVE to ACTIVE states...." alt="" coords="5,5,144,61"/>
+<area shape="rect" id="node2" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#a8752b537ca252a1f0607edb08c76de3d" title="Method to publish mobility operation msgs at a fixed rate of 10hz if approaching intersection." alt="" coords="192,5,361,61"/>
+<area shape="rect" id="node3" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html#ac50f2ce2d36754bf6a20a46b8b0e559c" title="Generates Mobility Operation messages." alt="" coords="409,5,588,61"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_prepare_to_join" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::run_prepare_to_join">
+<area shape="rect" id="node1" title="UCLA Run prepare to join State." alt="" coords="5,202,188,258"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="248,5,467,47"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a4e1a6de5a77b7bceab316768df37fc50" title="Function to compose mobility operation in PrepareToJoin (cut&#45;in join)" alt="" coords="244,71,471,141"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a891585489dfbd709f71347784744ed58" title="UCLA: Return joiner&#39;s desired position in terms of target platoon index to cut into the platoon...." alt="" coords="262,166,453,222"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="236,245,479,287"/>
+<area shape="rect" id="node7" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a11ffedaaa90fe358ecfdccab7c5a428c" title="Function to convert pose from map frame to ecef location." alt="" coords="266,310,449,366"/>
+<area shape="rect" id="node8" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ab1c204db4a5056621de299a9dd663c6f" title="Resets all variables that might indicate other members of the host&#39;s platoon; sets the host back to s..." alt="" coords="265,390,450,446"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#aabe87e2046da048da999758ebdd119fe" title="Function to compose mobility operation message with STATUS params." alt="" coords="527,78,761,134"/>
+</map>

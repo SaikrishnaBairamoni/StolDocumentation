@@ -1,0 +1,11 @@
+<map id="route::RouteGeneratorWorker::bumperPoseCb" name="route::RouteGeneratorWorker::bumperPoseCb">
+<area shape="rect" id="node1" title="Callback for the front bumper pose transform." alt="" coords="5,169,195,211"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#ae9b745465dd2cc6c7ae50299a422edd3" title="crosstrackErrorCheck is a function that determines when the vehicle has left the route and reports wh..." alt="" coords="271,5,461,47"/>
+<area shape="rect" id="node3" href="$classroute_1_1RouteGeneratorWorker.html#a7420856098c0e78666aaf273e4b05c9b" title="&quot;Get the closest lanelet on the route relative to the vehicle&#39;s current position. If the input list d..." alt="" coords="243,71,489,112"/>
+<area shape="rect" id="node4" href="$classroute_1_1RouteStateWorker.html#a1a9c85b2c2349f3fe3c53c074b02f5d5" title="Get current route state machine state." alt="" coords="285,136,447,177"/>
+<area shape="rect" id="node5" href="$classroute_1_1RouteStateWorker.html#ae8db8fa631f6265a5e552ae45ff79c8d" title="Process route event based on designed state machine diagram." alt="" coords="285,201,447,243"/>
+<area shape="rect" id="node6" href="$classroute_1_1RouteGeneratorWorker.html#afb3229ca1330570406ad5e766df4ed27" title=" " alt="" coords="271,267,461,308"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="293,332,439,373"/>
+<area shape="rect" id="node8" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="537,332,683,373"/>
+<area shape="rect" id="node9" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="731,332,876,373"/>
+</map>

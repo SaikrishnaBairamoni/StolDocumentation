@@ -1,0 +1,5 @@
+<map id="lci_strategic_plugin::LCIStrategicPlugin::canArriveAtGreenWithCertainty" name="lci_strategic_plugin::LCIStrategicPlugin::canArriveAtGreenWithCertainty">
+<area shape="rect" id="node1" title="Return true if the car can arrive at given arrival time within green light time buffer." alt="" coords="5,5,213,61"/>
+<area shape="rect" id="node2" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#a23192777055fbb632e0676e56a2d182e" title="Helper method that checks both if the input optional light state is set and if the state it contains ..." alt="" coords="261,5,399,61"/>
+<area shape="rect" id="node3" href="$classlci__strategic__plugin_1_1LCIStrategicPlugin.html#aedf733561a0ca72170d664f4414f624e" title="Helper method to evaluate if the given traffic light state is supported by this plugin." alt="" coords="447,5,592,61"/>
+</map>

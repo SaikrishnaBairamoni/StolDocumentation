@@ -1,0 +1,5 @@
+<map id="guidance::GuidanceWorker::spin_cb" name="guidance::GuidanceWorker::spin_cb">
+<area shape="rect" id="node1" title="Timer callback." alt="" coords="5,39,181,80"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceStateMachine.html#a0a70a93252ab7d5870ad14d338a84719" title="Get current state machine status." alt="" coords="229,5,444,47"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceStateMachine.html#a8a6e3a2bad53c9bbf23f9ead15b7c298" title="Indicate if SetEnableRobotic needs to be called in ACTIVE state." alt="" coords="229,71,444,112"/>
+</map>

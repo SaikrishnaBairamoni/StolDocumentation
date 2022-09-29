@@ -1,0 +1,4 @@
+<map id="subsystem_controllers::PluginManager::get_control_plugins_by_capability" name="subsystem_controllers::PluginManager::get_control_plugins_by_capability">
+<area shape="rect" id="node1" title="Get control plugins by capability." alt="" coords="223,5,420,61"/>
+<area shape="rect" id="node2" href="$classsubsystem__controllers_1_1GuidanceControllerNode.html#a684cb2ec92b8c7dd38c69484c0052bd1" title=" " alt="" coords="5,5,175,61"/>
+</map>

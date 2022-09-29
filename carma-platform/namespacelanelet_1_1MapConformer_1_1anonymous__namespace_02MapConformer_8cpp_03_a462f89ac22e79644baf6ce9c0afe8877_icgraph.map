@@ -1,0 +1,4 @@
+<map id="lanelet::MapConformer::anonymous_namespace{MapConformer::cpp}::buildControlLine" name="lanelet::MapConformer::anonymous_namespace{MapConformer::cpp}::buildControlLine">
+<area shape="rect" id="node1" title="Helper function constructs a PassingControlLine based off the provided bound and lane change type." alt="" coords="267,13,508,69"/>
+<area shape="rect" id="node2" href="$namespacelanelet_1_1MapConformer_1_1anonymous__namespace_02MapConformer_8cpp_03.html#a8a57b007f609dd29f9c724c7d1a17276" title="Generate PassingControlLines from the inferred regulations in the provided map and lanelet." alt="" coords="5,5,219,76"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;" name="PrettyWriter&lt; OutputStream, SourceEncoding, TargetEncoding, StackAllocator, writeFlags &gt;">
+<area shape="rect" id="node1" title="Writer with indentation and spacing." alt="" coords="755,3331,975,3995"/>
+<area shape="rect" id="node2" href="$classWriter.html" title=" " alt="" coords="558,2281,767,3268"/>
+<area shape="rect" id="node3" href="$classstatic_01const_01int.html" title=" " alt="" coords="5,1657,112,1735"/>
+<area shape="rect" id="node4" title=" " alt="" coords="327,5,383,83"/>
+<area shape="rect" id="node6" href="$classinternal_1_1Stack.html" title=" " alt="" coords="484,696,679,1125"/>
+<area shape="rect" id="node10" href="$classinternal_1_1Stack.html" title="A type&#45;unsafe stack for storing different types of data." alt="" coords="583,175,761,604"/>
+<area shape="rect" id="node14" href="$classWriter.html" title="JSON writer." alt="" coords="566,1203,786,2189"/>
+<area shape="rect" id="node5" title=" " alt="" coords="779,872,890,949"/>
+<area shape="rect" id="node7" href="$classCrtAllocator.html" title="C&#45;runtime library allocator." alt="" coords="785,336,876,443"/>
+<area shape="rect" id="node8" href="$classbool.html" title=" " alt="" coords="890,5,937,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="505,351,559,428"/>
+<area shape="rect" id="node11" href="$classrapidjson_1_1Allocator.html" title="Concept for allocating, resizing and freeing memory block." alt="" coords="553,5,626,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="683,5,730,83"/>
+<area shape="rect" id="node13" href="$classint.html" title=" " alt="" coords="981,872,1019,949"/>
+<area shape="rect" id="node15" title=" " alt="" coords="791,2736,830,2813"/>
+<area shape="rect" id="node16" title=" " alt="" coords="884,2736,959,2813"/>
+<area shape="rect" id="node17" title=" " alt="" coords="994,2736,1137,2813"/>
+</map>

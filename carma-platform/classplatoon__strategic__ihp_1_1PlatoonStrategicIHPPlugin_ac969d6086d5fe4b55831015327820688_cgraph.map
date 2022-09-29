@@ -1,0 +1,8 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_resp_cb_candidatefollower" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_resp_cb_candidatefollower">
+<area shape="rect" id="node1" title="Function to process mobility response in candidate follower state." alt="" coords="5,129,220,185"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#aa589c920c9684b42bf8f675c072ddb6b" title="Update status when state change from Leader to Follower." alt="" coords="289,5,489,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#abca93088e8980c97a1a24c4fff31c758" title="Resets all variables that describe a neighbor platoon, so that no neighbor is known." alt="" coords="559,39,768,95"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af2f0d9818d07db4a4df484f988635201" title="Resets necessary variables to indicate that the current ActionPlan is dead." alt="" coords="280,137,499,178"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="268,202,511,243"/>
+<area shape="rect" id="node6" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ab1c204db4a5056621de299a9dd663c6f" title="Resets all variables that might indicate other members of the host&#39;s platoon; sets the host back to s..." alt="" coords="297,267,482,323"/>
+</map>

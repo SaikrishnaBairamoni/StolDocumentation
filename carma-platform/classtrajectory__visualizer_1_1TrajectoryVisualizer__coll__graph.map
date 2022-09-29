@@ -1,0 +1,9 @@
+<map id="trajectory_visualizer::TrajectoryVisualizer" name="trajectory_visualizer::TrajectoryVisualizer">
+<area shape="rect" id="node1" title=" " alt="" coords="567,300,735,421"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,153,253,230"/>
+<area shape="rect" id="node3" title=" " alt="" coords="277,145,469,237"/>
+<area shape="rect" id="node4" title=" " alt="" coords="493,145,672,237"/>
+<area shape="rect" id="node5" href="$structtrajectory__visualizer_1_1Config.html" title="max_speed values for trajectory_visualizer" alt="" coords="825,145,961,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="711,5,771,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="985,153,1041,230"/>
+</map>

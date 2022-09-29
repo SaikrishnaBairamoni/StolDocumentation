@@ -1,0 +1,4 @@
+<map id="basic_autonomy::waypoint_generation::compute_heading_frame" name="basic_autonomy::waypoint_generation::compute_heading_frame">
+<area shape="rect" id="node1" title="Returns a 2D coordinate frame which is located at p1 and oriented so p2 lies on the +X axis." alt="" coords="5,5,243,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#ab51c08f5f937a6aa72b7490eeabed211" title="Builds a 2D Eigen coordinate frame transform with not applied scaling (only translation and rotation)..." alt="" coords="291,5,451,47"/>
+</map>

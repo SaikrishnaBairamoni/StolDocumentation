@@ -1,0 +1,6 @@
+<map id="cooperative_lanechange::CooperativeLaneChangePlugin::create_mobility_request" name="cooperative_lanechange::CooperativeLaneChangePlugin::create_mobility_request">
+<area shape="rect" id="node1" title="Creates a mobility request message from planned trajectory and requested maneuver info." alt="" coords="5,85,212,141"/>
+<area shape="rect" id="node2" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a927d4231a180210144c9aef17daee6dc" title="Method for extracting the BSM ID from a BSM Core Data object and converting it to a string." alt="" coords="260,5,467,61"/>
+<area shape="rect" id="node3" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#af52a03fcc4c193952e5541f2aad4638b" title="Converts Trajectory Plan to (Mobility) Trajectory." alt="" coords="260,85,467,141"/>
+<area shape="rect" id="node4" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html#a05621cd21f1e0073da4a59e7af561021" title="Converts Trajectory Point to ECEF frame using map projection." alt="" coords="515,119,721,175"/>
+</map>

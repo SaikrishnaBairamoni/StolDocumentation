@@ -1,0 +1,4 @@
+<map id="inlanecruising_plugin::InLaneCruisingPlugin::validate_yield_plan" name="inlanecruising_plugin::InLaneCruisingPlugin::validate_yield_plan">
+<area shape="rect" id="node1" title="verify if the input yield trajectory plan is valid" alt="" coords="220,5,371,61"/>
+<area shape="rect" id="node2" href="$classinlanecruising__plugin_1_1InLaneCruisingPlugin.html#a60f695c3ed54c99c6a2dcfaf77ae55e2" title="Service callback for trajectory planning." alt="" coords="5,5,172,61"/>
+</map>

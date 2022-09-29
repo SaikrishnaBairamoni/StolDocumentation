@@ -1,0 +1,47 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,816,253,843"/>
+<area shape="rect" id="node2" href="$classSUB_1_1Node.html" title="TODO for USER: Add class description." alt="" coords="947,43,1033,69"/>
+<area shape="rect" id="node3" href="$classarbitrator_1_1ArbitratorNode.html" title=" " alt="" coords="341,192,503,219"/>
+<area shape="rect" id="node4" href="$classbounding__box__to__detected__object_1_1Node.html" title=" " alt="" coords="334,243,510,285"/>
+<area shape="rect" id="node5" href="$classbsm__generator_1_1BSMGenerator.html" title="The class responsible for publishing BSM messages." alt="" coords="322,309,522,336"/>
+<area shape="rect" id="node6" href="$classcarma__guidance__plugins_1_1PluginBaseNode.html" title="PluginBaseNode provides default functionality for all carma guidance plugins. This includes basic sta..." alt="" coords="339,126,505,167"/>
+<area shape="rect" id="node20" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html" title="Node which provies exposes map publication and carma_wm update logic." alt="" coords="301,360,543,387"/>
+<area shape="rect" id="node21" href="$classframe__transformer_1_1Node.html" title="Node which subcribes to and input topic, transforms the data into a new frame and republishes it onto..." alt="" coords="339,411,505,437"/>
+<area shape="rect" id="node22" href="$classgnss__to__map__convertor_1_1Node.html" title=" " alt="" coords="341,462,503,503"/>
+<area shape="rect" id="node23" href="$classguidance_1_1GuidanceWorker.html" title="Worker class for the Guidance node." alt="" coords="334,528,510,555"/>
+<area shape="rect" id="node24" href="$classlocalization__manager_1_1Node.html" title="Core execution node for this package." alt="" coords="351,579,493,621"/>
+<area shape="rect" id="node25" href="$classmobilitypath__publisher_1_1MobilityPathPublication.html" title="The class responsible for publishing MobilityPath messages based on the latest trajectory plan." alt="" coords="341,645,503,686"/>
+<area shape="rect" id="node26" href="$classmobilitypath__visualizer_1_1MobilityPathVisualizer.html" title=" " alt="" coords="345,710,499,751"/>
+<area shape="rect" id="node27" href="$classmotion__computation_1_1MotionComputationNode.html" title="The class responsible for publishing external object predictions." alt="" coords="337,775,507,817"/>
+<area shape="rect" id="node28" href="$classmotion__prediction__visualizer_1_1Node.html" title=" " alt="" coords="329,841,515,882"/>
+<area shape="rect" id="node29" href="$classobject_1_1ObjectDetectionTrackingNode.html" title=" " alt="" coords="303,907,541,933"/>
+<area shape="rect" id="node30" href="$classobject__visualizer_1_1Node.html" title="This node provides RViz visualization messages for recieved ExternalObject and RoadwayObstacle messag..." alt="" coords="345,957,499,984"/>
+<area shape="rect" id="node31" href="$classplan__delegator_1_1PlanDelegator.html" title=" " alt="" coords="325,1008,519,1035"/>
+<area shape="rect" id="node32" href="$classpoints__map__filter_1_1Node.html" title="TODO for USER: Add class description." alt="" coords="343,1059,501,1085"/>
+<area shape="rect" id="node33" href="$classport__drayage__plugin_1_1PortDrayagePlugin.html" title=" " alt="" coords="353,1110,491,1151"/>
+<area shape="rect" id="node34" href="$classpose__to__tf_1_1PoseToTfNode.html" title="The class is responsible for processing pose to tf conversion." alt="" coords="333,1176,511,1203"/>
+<area shape="rect" id="node35" href="$classroadway__objects_1_1RoadwayObjectsNode.html" title="The class responsible for converting detected objects into objects that are mapped onto specific lane..." alt="" coords="333,1227,511,1269"/>
+<area shape="rect" id="node36" href="$classroute_1_1Route.html" title="The route package provides the following functionality:" alt="" coords="377,1293,467,1320"/>
+<area shape="rect" id="node37" href="$classsubsystem__controllers_1_1BaseSubsystemController.html" title="A base class for all subsystem_controllers which provides default lifecycle behavior for subsystems." alt="" coords="333,1345,511,1386"/>
+<area shape="rect" id="node43" href="$classtraffic__incident__parser_1_1TrafficIncidentParserNode.html" title="The class responsible for processing incoming MobilityOperation messages with strategy &quot;carma3/Incide..." alt="" coords="333,1410,511,1451"/>
+<area shape="rect" id="node44" href="$classtrajectory__executor_1_1TrajectoryExecutor.html" title=" " alt="" coords="355,1475,489,1517"/>
+<area shape="rect" id="node45" href="$classtrajectory__visualizer_1_1TrajectoryVisualizer.html" title=" " alt="" coords="351,1541,493,1582"/>
+<area shape="rect" id="node7" href="$classcarma__guidance__plugins_1_1ControlPlugin.html" title="ControlPlugin base class which can be extended by user provided plugins which wish to implement the C..." alt="" coords="632,94,797,135"/>
+<area shape="rect" id="node8" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html" title="StrategicPlugin base class which can be extended by user provided plugins which wish to implement the..." alt="" coords="632,159,797,201"/>
+<area shape="rect" id="node12" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html" title="TacticalPlugin base class which can be extended by user provided plugins which wish to implement the ..." alt="" coords="632,434,797,475"/>
+<area shape="rect" id="node9" href="$classplatoon__strategic__ihp_1_1Node.html" title="ROS Node to for Platooning Strategic Plugin IHP2 variant." alt="" coords="917,94,1063,135"/>
+<area shape="rect" id="node10" href="$classroute__following__plugin_1_1RouteFollowingPlugin.html" title=" " alt="" coords="913,159,1067,201"/>
+<area shape="rect" id="node11" href="$classsci__strategic__plugin_1_1SCIStrategicPlugin.html" title=" " alt="" coords="921,225,1059,266"/>
+<area shape="rect" id="node13" href="$classcooperative__lanechange_1_1CooperativeLaneChangePlugin.html" title="The class responsible for generating cooperative lanechange trajectories from received lane change ma..." alt="" coords="887,630,1093,671"/>
+<area shape="rect" id="node14" href="$classinlanecruising__plugin_1_1InLaneCruisingPluginNode.html" title="ROS node for the InLaneCruisingPlugin." alt="" coords="899,695,1081,737"/>
+<area shape="rect" id="node15" href="$classlight__controlled__intersection__tactical__plugin_1_1LightControlledIntersectionTransitPluginNode.html" title="ROS node for the LightControlledIntersectionTransitPluginNode." alt="" coords="887,289,1093,345"/>
+<area shape="rect" id="node16" href="$classplatooning__tactical__plugin_1_1Node.html" title="ROS node for the PlatooningTacticalPlugin." alt="" coords="925,369,1055,410"/>
+<area shape="rect" id="node17" href="$classstop__and__wait__plugin_1_1StopandWaitNode.html" title=" " alt="" coords="917,434,1063,475"/>
+<area shape="rect" id="node18" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html" title="Class containing primary business logic for the Stop Controlled Intersection Tactical Plugin." alt="" coords="889,499,1091,555"/>
+<area shape="rect" id="node19" href="$classyield__plugin_1_1YieldPluginNode.html" title="ROS node for the YieldPlugin." alt="" coords="895,579,1085,605"/>
+<area shape="rect" id="node38" href="$classsubsystem__controllers_1_1DriversControllerNode.html" title=" " alt="" coords="637,1345,792,1386"/>
+<area shape="rect" id="node39" href="$classsubsystem__controllers_1_1EnvironmentPerceptionControllerNode.html" title=" " alt="" coords="591,1410,839,1451"/>
+<area shape="rect" id="node40" href="$classsubsystem__controllers_1_1GuidanceControllerNode.html" title=" " alt="" coords="630,1475,799,1517"/>
+<area shape="rect" id="node41" href="$classsubsystem__controllers_1_1LocalizationControllerNode.html" title=" " alt="" coords="623,1214,806,1255"/>
+<area shape="rect" id="node42" href="$classsubsystem__controllers_1_1V2XControllerNode.html" title=" " alt="" coords="639,1279,791,1321"/>
+</map>

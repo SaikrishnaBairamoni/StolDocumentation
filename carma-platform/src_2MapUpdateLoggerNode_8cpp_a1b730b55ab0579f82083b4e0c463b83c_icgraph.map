@@ -1,0 +1,5 @@
+<map id="mapUpdateCallback" name="mapUpdateCallback">
+<area shape="rect" id="node1" title="Callback for map updates that converts them to a human readable format." alt="" coords="289,13,428,39"/>
+<area shape="rect" id="node2" href="$classCallbackHolder.html#ad4b60564cbe53725dd1a01df0d44b50e" title=" " alt="" coords="104,5,241,47"/>
+<area shape="rect" id="node3" href="$src_2MapUpdateLoggerNode_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,56,39"/>
+</map>

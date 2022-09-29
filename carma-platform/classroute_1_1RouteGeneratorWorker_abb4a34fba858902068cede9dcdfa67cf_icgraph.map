@@ -1,0 +1,5 @@
+<map id="route::RouteGeneratorWorker::loadRouteDestinationsInMapFrame" name="route::RouteGeneratorWorker::loadRouteDestinationsInMapFrame">
+<area shape="rect" id="node1" title="Function to take route destination points from a vector of 3D points and convert them from lat/lon va..." alt="" coords="425,5,656,47"/>
+<area shape="rect" id="node2" href="$classroute_1_1RouteGeneratorWorker.html#a0ac499df9ad47fb4c66e7163c9611a6a" title="Set_active_route service callback. User can select a route to start following by calling this service..." alt="" coords="188,5,377,47"/>
+<area shape="rect" id="node3" href="$classroute_1_1Route.html#a5f6b00da6b8e1cd9238b9d60457276c8" title=" " alt="" coords="5,5,140,47"/>
+</map>

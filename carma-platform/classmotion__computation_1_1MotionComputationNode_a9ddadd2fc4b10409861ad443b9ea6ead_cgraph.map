@@ -1,0 +1,10 @@
+<map id="motion_computation::MotionComputationNode::parameter_update_callback" name="motion_computation::MotionComputationNode::parameter_update_callback">
+<area shape="rect" id="node1" title="Function callback for dynamic parameter updates." alt="" coords="5,245,192,301"/>
+<area shape="rect" id="node2" href="$classmotion__computation_1_1MotionComputationWorker.html#a1aa33aa1c449181a67811d6384f29517" title=" " alt="" coords="240,5,421,61"/>
+<area shape="rect" id="node3" href="$classmotion__computation_1_1MotionComputationWorker.html#aa1c0d03124e0faca92fc932881fcf9c3" title=" " alt="" coords="240,85,421,141"/>
+<area shape="rect" id="node4" href="$classmotion__computation_1_1MotionComputationWorker.html#ab9f033ba771d1dbbb98c967b43da1cd5" title=" " alt="" coords="240,165,421,221"/>
+<area shape="rect" id="node5" href="$classmotion__computation_1_1MotionComputationWorker.html#af16420fdd8ee92f0c238d76c83342049" title=" " alt="" coords="240,245,421,301"/>
+<area shape="rect" id="node6" href="$classmotion__computation_1_1MotionComputationWorker.html#ad351b4970f99d385587d38351b437e04" title=" " alt="" coords="240,325,421,381"/>
+<area shape="rect" id="node7" href="$classmotion__computation_1_1MotionComputationWorker.html#ab001e498303974201377c2b784389973" title=" " alt="" coords="240,405,421,461"/>
+<area shape="rect" id="node8" href="$classmotion__computation_1_1MotionComputationWorker.html#a99826ad27ee8221471ff5dda2fdd767c" title=" " alt="" coords="240,485,421,541"/>
+</map>

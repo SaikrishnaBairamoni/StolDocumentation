@@ -1,0 +1,4 @@
+<map id="carma_wm::geometry::concatenate_line_strings" name="carma_wm::geometry::concatenate_line_strings">
+<area shape="rect" id="node1" title="Helper function to concatenate 2 linestrings together and return the result. Neither LineString is mo..." alt="" coords="5,13,177,54"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="225,5,371,61"/>
+</map>

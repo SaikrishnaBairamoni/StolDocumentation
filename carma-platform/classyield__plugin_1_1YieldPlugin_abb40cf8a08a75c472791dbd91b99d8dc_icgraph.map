@@ -1,0 +1,5 @@
+<map id="yield_plugin::YieldPlugin::detect_trajectories_intersection" name="yield_plugin::YieldPlugin::detect_trajectories_intersection">
+<area shape="rect" id="node1" title="detect intersection point(s) of two trajectories" alt="" coords="456,13,665,54"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#ad9c9e0e4278774a519de12a6a5f4398f" title="update trajectory for yielding to an incoming cooperative behavior" alt="" coords="220,5,408,61"/>
+<area shape="rect" id="node3" href="$classyield__plugin_1_1YieldPlugin.html#a0fd790e287683a2ef404e16a15e0ea29" title="Service callback for trajectory planning." alt="" coords="5,13,172,54"/>
+</map>

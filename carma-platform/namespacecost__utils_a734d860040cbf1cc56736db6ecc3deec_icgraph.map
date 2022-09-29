@@ -1,0 +1,4 @@
+<map id="cost_utils::get_maneuver_end_distance" name="cost_utils::get_maneuver_end_distance">
+<area shape="rect" id="node1" title="Get the end distance of the specified maneuver." alt="" coords="187,5,353,47"/>
+<area shape="rect" id="node2" href="$namespacecost__utils.html#a22bf179f1631588b7ca7d2530baefa32" title="Get the end distance of the first maneuver in the plan." alt="" coords="5,5,139,47"/>
+</map>

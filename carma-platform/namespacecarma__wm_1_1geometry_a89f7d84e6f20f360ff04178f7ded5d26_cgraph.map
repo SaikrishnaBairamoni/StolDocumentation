@@ -1,0 +1,11 @@
+<map id="carma_wm::geometry::rpyFromQuaternion" name="carma_wm::geometry::rpyFromQuaternion">
+<area shape="rect" id="node1" title="Extract extrinsic roll&#45;pitch&#45;yaw from quaternion." alt="" coords="5,206,151,247"/>
+<area shape="rect" id="node2" href="$namespacemotion__computation_1_1conversion.html#a9884e63460f3d5f5e2b755354984dc29" title=" " alt="" coords="201,173,341,214"/>
+<area shape="rect" id="node9" href="$namespacecarma__wm_1_1geometry.html#a31ddfa96008060a7c10c2bbd08a5739d" title="Extract extrinsic roll&#45;pitch&#45;yaw from quaternion." alt="" coords="199,238,344,279"/>
+<area shape="rect" id="node3" href="$namespacemotion__computation_1_1conversion_1_1impl.html#adcf6c7b8fa415af10c0cc489388fce40" title=" " alt="" coords="437,5,577,61"/>
+<area shape="rect" id="node4" href="$namespacemotion__computation_1_1conversion_1_1impl.html#a50c675cb23fd3a743226b22287b32945" title=" " alt="" coords="438,85,577,141"/>
+<area shape="rect" id="node6" href="$namespacemotion__computation_1_1conversion_1_1impl.html#a7cf9dd84c4528278ce20562def3047c3" title=" " alt="" coords="392,165,623,221"/>
+<area shape="rect" id="node7" href="$namespacemotion__computation_1_1conversion_1_1impl.html#ae5e3a18881b54fc666c13199ea6c7073" title=" " alt="" coords="423,245,592,301"/>
+<area shape="rect" id="node8" href="$namespacemotion__computation_1_1conversion_1_1impl.html#a48389a44ecd9e272dbbcdebea32601fb" title=" " alt="" coords="411,325,603,381"/>
+<area shape="rect" id="node5" href="$namespacecovariance__helper.html#af38530465ec3a2a40b4e9be14032f65e" title="Transform the covariance matrix of a PoseWithCovariance message to a new frame." alt="" coords="671,93,813,134"/>
+</map>

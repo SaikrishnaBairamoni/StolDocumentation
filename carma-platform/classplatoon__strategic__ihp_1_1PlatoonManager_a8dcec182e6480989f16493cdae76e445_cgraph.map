@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonManager::getPredecessorPosition" name="platoon_strategic_ihp::PlatoonManager::getPredecessorPosition">
+<area shape="rect" id="node1" title="UCLA: Return the position of the preceding vehicle, in m." alt="" coords="5,5,224,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a1de160740f47d9b0198e42dcbe67a6fe" title="Get number of vehicles in front of host vehicle inside platoon." alt="" coords="272,5,464,61"/>
+</map>

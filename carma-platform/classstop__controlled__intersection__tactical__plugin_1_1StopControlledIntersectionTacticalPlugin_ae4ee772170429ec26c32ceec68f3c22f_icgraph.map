@@ -1,0 +1,4 @@
+<map id="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::compose_trajectory_from_centerline" name="stop_controlled_intersection_tactical_plugin::StopControlledIntersectionTacticalPlugin::compose_trajectory_from_centerline">
+<area shape="rect" id="node1" title="Method converts a list of lanelet centerline points and current vehicle state into a usable list of t..." alt="" coords="256,5,487,76"/>
+<area shape="rect" id="node2" href="$classstop__controlled__intersection__tactical__plugin_1_1StopControlledIntersectionTacticalPlugin.html#ab0bf4a699bff521ffe56736d78880926" title="Extending class provided callback which should return a planned trajectory based on the provided traj..." alt="" coords="5,5,208,76"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="yield_plugin::YieldPlugin::plan_trajectory_callback" name="yield_plugin::YieldPlugin::plan_trajectory_callback">
+<area shape="rect" id="node1" title="Service callback for trajectory planning." alt="" coords="5,104,172,145"/>
+<area shape="rect" id="node2" href="$classyield__plugin_1_1YieldPlugin.html#ad9c9e0e4278774a519de12a6a5f4398f" title="update trajectory for yielding to an incoming cooperative behavior" alt="" coords="220,133,408,189"/>
+<area shape="rect" id="node11" href="$classyield__plugin_1_1YieldPlugin.html#a220292dd2a6bebb515e21256ad5b6e9c" title="trajectory is modified to safely avoid obstacles on the road" alt="" coords="234,68,394,109"/>
+<area shape="rect" id="node3" href="$classyield__plugin_1_1YieldPlugin.html#a3703b49299aa6b61b3889a8e6799ac74" title="checks trajectory for minimum gap associated with it" alt="" coords="481,61,641,117"/>
+<area shape="rect" id="node4" href="$classyield__plugin_1_1YieldPlugin.html#abb40cf8a08a75c472791dbd91b99d8dc" title="detect intersection point(s) of two trajectories" alt="" coords="456,205,665,247"/>
+<area shape="rect" id="node5" href="$classyield__plugin_1_1YieldPlugin.html#a81aa0b97ff1475887005f022c1722d79" title="generate a Jerk Minimizing Trajectory(JMT) with the provided start and end conditions" alt="" coords="475,140,646,181"/>
+<area shape="rect" id="node6" href="$classyield__plugin_1_1YieldPlugin.html#a1bc011c9c2db48289bf40214d972cec4" title="calculates distance between trajectory points in a plan" alt="" coords="713,268,883,309"/>
+<area shape="rect" id="node7" href="$classyield__plugin_1_1YieldPlugin.html#a3092a19247e5172989aa087b71570427" title="calculates the maximum speed in a set of tajectory points" alt="" coords="718,5,878,47"/>
+<area shape="rect" id="node8" href="$classyield__plugin_1_1YieldPlugin.html#acabf59c9274e6317e6abc1fc198efe50" title=" " alt="" coords="718,72,878,113"/>
+<area shape="rect" id="node9" href="$classyield__plugin_1_1YieldPlugin.html#ae7ffd46ccbae6de4b60a7f49a8cfa3d6" title="calculate quintic polynomial equation for a given x" alt="" coords="718,137,878,179"/>
+<area shape="rect" id="node10" href="$classyield__plugin_1_1YieldPlugin.html#afeab08ed138eafe6e24abd775c3163dd" title="calculate derivative of quintic polynomial equation for a given x" alt="" coords="718,203,878,244"/>
+</map>

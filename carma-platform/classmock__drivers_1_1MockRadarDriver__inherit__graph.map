@@ -1,0 +1,4 @@
+<map id="mock_drivers::MockRadarDriver" name="mock_drivers::MockRadarDriver">
+<area shape="rect" id="node1" title="Mock Radar driver. Operates as a passthrough for bag data which updates the timestamps on received me..." alt="" coords="10,351,217,516"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockDriver.html" title="The template node for the mock drivers that will handle all of the default driver logic." alt="" coords="5,5,221,303"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="localization_manager::LocalizationTransitionTable::getState" name="localization_manager::LocalizationTransitionTable::getState">
+<area shape="rect" id="node1" title="Returns the current state." alt="" coords="639,165,825,221"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#ab14aa24430db99e65ffc1fa52aa34dd0" title="Returns the current localization state." alt="" coords="437,5,584,61"/>
+<area shape="rect" id="node3" href="$classlocalization__manager_1_1LocalizationManager.html#a2804818f7ee388d2eca7bcbd3e27f908" title="Callback for new GNSS messages." alt="" coords="437,85,584,141"/>
+<area shape="rect" id="node5" href="$classlocalization__manager_1_1LocalizationManager.html#a027f5aab97b4a77bdbea02a2cf585115" title="Synced callback for the NDT reported pose and status messages." alt="" coords="431,165,591,221"/>
+<area shape="rect" id="node6" href="$classlocalization__manager_1_1LocalizationManager.html#a0ce2b35dcab57bd0abc4ad9c10f5a24e" title="Timer callback that controls the publication of the selected pose and status report." alt="" coords="437,245,584,301"/>
+<area shape="rect" id="node7" href="$classlocalization__manager_1_1LocalizationManager.html#a180b8d484c93d7faea1a707a0d586a79" title="Callback for timeouts. Used to trigger timeout signals for the state machine." alt="" coords="437,325,584,381"/>
+<area shape="rect" id="node4" href="$classlocalization__manager_1_1Node.html#afb38782f4ca8c455d8b6440b38bc62a9" title=" " alt="" coords="200,173,383,214"/>
+<area shape="rect" id="node8" href="$classlocalization__manager_1_1LocalizationManager.html#a37e91016dd16e328bec5041afaf5bc0c" title="Callback for when a new state was triggered. Allows creation of entry/exit behavior for states." alt="" coords="209,325,373,381"/>
+<area shape="rect" id="node9" href="$classlocalization__manager_1_1LocalizationManager.html#acbb7d81be472c3ec96f3d700b7ca823c" title="Constructor." alt="" coords="5,325,152,381"/>
+</map>

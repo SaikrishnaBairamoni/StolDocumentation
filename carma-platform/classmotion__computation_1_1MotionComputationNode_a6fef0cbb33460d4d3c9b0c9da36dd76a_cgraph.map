@@ -1,0 +1,25 @@
+<map id="motion_computation::MotionComputationNode::handle_on_configure" name="motion_computation::MotionComputationNode::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,492,176,548"/>
+<area shape="rect" id="node2" href="$classmotion__computation_1_1MotionComputationWorker.html#a5e3044066ec8779205710e50b90a2c08" title=" " alt="" coords="227,85,408,141"/>
+<area shape="rect" id="node10" href="$classmotion__computation_1_1MotionComputationWorker.html#a1f1f0e8054453be917cac5a0779a1ffc" title="Callback for map projection string to define lat/lon &#45;&gt; map conversion." alt="" coords="227,325,408,381"/>
+<area shape="rect" id="node11" href="$classmotion__computation_1_1MotionComputationWorker.html#ac4b94de8991236d24c73160bfcd85902" title=" " alt="" coords="227,165,408,221"/>
+<area shape="rect" id="node12" href="$classmotion__computation_1_1MotionComputationNode.html#a9ddadd2fc4b10409861ad443b9ea6ead" title="Function callback for dynamic parameter updates." alt="" coords="224,608,411,664"/>
+<area shape="rect" id="node13" href="$classmotion__computation_1_1MotionComputationWorker.html#a1aa33aa1c449181a67811d6384f29517" title=" " alt="" coords="459,332,640,388"/>
+<area shape="rect" id="node14" href="$classmotion__computation_1_1MotionComputationWorker.html#aa1c0d03124e0faca92fc932881fcf9c3" title=" " alt="" coords="459,412,640,468"/>
+<area shape="rect" id="node15" href="$classmotion__computation_1_1MotionComputationWorker.html#ab9f033ba771d1dbbb98c967b43da1cd5" title=" " alt="" coords="459,492,640,548"/>
+<area shape="rect" id="node16" href="$classmotion__computation_1_1MotionComputationWorker.html#af16420fdd8ee92f0c238d76c83342049" title=" " alt="" coords="459,572,640,628"/>
+<area shape="rect" id="node17" href="$classmotion__computation_1_1MotionComputationWorker.html#ad351b4970f99d385587d38351b437e04" title=" " alt="" coords="459,652,640,708"/>
+<area shape="rect" id="node18" href="$classmotion__computation_1_1MotionComputationWorker.html#ab001e498303974201377c2b784389973" title=" " alt="" coords="459,732,640,788"/>
+<area shape="rect" id="node19" href="$classmotion__computation_1_1MotionComputationWorker.html#a99826ad27ee8221471ff5dda2fdd767c" title=" " alt="" coords="459,812,640,868"/>
+<area shape="rect" id="node20" href="$classmotion__computation_1_1MotionComputationWorker.html#a33ea3fe0d96620798fe778aebaf5b244" title="Function to populate duplicated detected objects along with their velocity, yaw, yaw_rate and static/..." alt="" coords="227,869,408,925"/>
+<area shape="rect" id="node23" href="$classmotion__computation_1_1MotionComputationWorker.html#a4d67a9ee5932611188f5b8f9182520f2" title=" " alt="" coords="227,245,408,301"/>
+<area shape="rect" id="node3" href="$namespacemotion__computation_1_1conversion.html#a9884e63460f3d5f5e2b755354984dc29" title=" " alt="" coords="479,173,619,214"/>
+<area shape="rect" id="node4" href="$namespacemotion__computation_1_1conversion_1_1impl.html#adcf6c7b8fa415af10c0cc489388fce40" title=" " alt="" coords="733,245,873,301"/>
+<area shape="rect" id="node5" href="$namespacemotion__computation_1_1conversion_1_1impl.html#a50c675cb23fd3a743226b22287b32945" title=" " alt="" coords="734,325,873,381"/>
+<area shape="rect" id="node7" href="$namespacemotion__computation_1_1conversion_1_1impl.html#a7cf9dd84c4528278ce20562def3047c3" title=" " alt="" coords="688,5,919,61"/>
+<area shape="rect" id="node8" href="$namespacemotion__computation_1_1conversion_1_1impl.html#ae5e3a18881b54fc666c13199ea6c7073" title=" " alt="" coords="719,85,888,141"/>
+<area shape="rect" id="node9" href="$namespacemotion__computation_1_1conversion_1_1impl.html#a48389a44ecd9e272dbbcdebea32601fb" title=" " alt="" coords="707,165,899,221"/>
+<area shape="rect" id="node6" href="$namespacecovariance__helper.html#af38530465ec3a2a40b4e9be14032f65e" title="Transform the covariance matrix of a PoseWithCovariance message to a new frame." alt="" coords="967,333,1109,374"/>
+<area shape="rect" id="node21" href="$classmotion__computation_1_1MotionComputationWorker.html#a49a5ef12b634224276cc3d8efa5f64e9" title="Appends external objects list behind base_objects. This does not do sensor fusion...." alt="" coords="459,892,640,948"/>
+<area shape="rect" id="node22" href="$classmotion__computation_1_1MotionComputationWorker.html#aeef9e93bc84a885e83223b726470fb78" title="It cuts ExternalObject&#39;s prediction points before the time_to_match. And uses the average velocity in..." alt="" coords="696,892,911,948"/>
+</map>

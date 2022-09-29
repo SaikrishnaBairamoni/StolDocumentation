@@ -1,0 +1,4 @@
+<map id="carma_wm_ctrl::WMBroadcaster::participantsChecker" name="carma_wm_ctrl::WMBroadcaster::participantsChecker">
+<area shape="rect" id="node1" title="Generates participants list." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a2c6c3606e5f4b3c12a984261823c1d71" title="Combines a list of the given participants into a single &quot;vehicle&quot; type if participants cover all poss..." alt="" coords="264,5,475,47"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="carma_guidance_plugins::PluginBaseNode::handle_on_cleanup" name="carma_guidance_plugins::PluginBaseNode::handle_on_cleanup">
+<area shape="rect" id="node1" title=" " alt="" coords="219,85,388,141"/>
+<area shape="rect" id="node2" href="$classcarma__guidance__plugins_1_1ControlPlugin.html#a698113b176cd254bc9feb68c27f8f816" title=" " alt="" coords="5,5,171,61"/>
+<area shape="rect" id="node3" href="$classcarma__guidance__plugins_1_1StrategicPlugin.html#a230fc69d2946a19bc9425be8c00ed9a8" title=" " alt="" coords="5,85,171,141"/>
+<area shape="rect" id="node4" href="$classcarma__guidance__plugins_1_1TacticalPlugin.html#a5770fae197516bbd6edb90f051fbdd3f" title=" " alt="" coords="5,165,171,221"/>
+</map>

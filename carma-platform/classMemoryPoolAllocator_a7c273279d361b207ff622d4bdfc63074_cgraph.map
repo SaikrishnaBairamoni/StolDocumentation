@@ -1,0 +1,5 @@
+<map id="MemoryPoolAllocator::Realloc" name="MemoryPoolAllocator::Realloc">
+<area shape="rect" id="node1" title="Resizes a memory block (concept Allocator)" alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node2" href="$classMemoryPoolAllocator.html#a8d300531c1f556172aef1259ff55cb48" title="Allocates a memory block. (concept Allocator)" alt="" coords="199,5,344,47"/>
+<area shape="rect" id="node3" href="$classMemoryPoolAllocator.html#a41bebe49979dc69921519c7556af18fc" title="Creates a new chunk." alt="" coords="392,5,537,47"/>
+</map>

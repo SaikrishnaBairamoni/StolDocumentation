@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonManager::changeFromLeaderToFollower" name="platoon_strategic_ihp::PlatoonManager::changeFromLeaderToFollower">
+<area shape="rect" id="node1" title="Update status when state change from Leader to Follower." alt="" coords="5,5,205,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#abca93088e8980c97a1a24c4fff31c758" title="Resets all variables that describe a neighbor platoon, so that no neighbor is known." alt="" coords="253,5,463,61"/>
+</map>

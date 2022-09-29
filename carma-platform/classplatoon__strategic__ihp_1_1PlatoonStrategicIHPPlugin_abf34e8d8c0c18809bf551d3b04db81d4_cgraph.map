@@ -1,0 +1,5 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationINFO" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::composeMobilityOperationINFO">
+<area shape="rect" id="node1" title="Function to compose mobility operation message with INFO params." alt="" coords="5,41,219,97"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#af19d3e4a88f6875cf802442b183694a0" title="Returns overall length of the platoon. in m." alt="" coords="294,5,482,61"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#a8a3ef30eeb7a7cf0caccb948e6a41f92" title="Returns total size of the platoon , in number of vehicles." alt="" coords="267,85,509,126"/>
+</map>

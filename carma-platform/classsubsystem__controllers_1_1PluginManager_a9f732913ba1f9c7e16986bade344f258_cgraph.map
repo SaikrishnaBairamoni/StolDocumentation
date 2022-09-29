@@ -1,0 +1,7 @@
+<map id="subsystem_controllers::PluginManager::update_plugin_status" name="subsystem_controllers::PluginManager::update_plugin_status">
+<area shape="rect" id="node1" title="Update the status of a certain plugin." alt="" coords="5,77,164,133"/>
+<area shape="rect" id="node2" href="$classsubsystem__controllers_1_1PluginManager.html#a1823614749aa3885622ca8fbf499728a" title="Add the specified entry to our plugin management This function will attempt to move the newly detecte..." alt="" coords="219,12,371,68"/>
+<area shape="rect" id="node4" href="$classsubsystem__controllers_1_1EntryManager.html#a657eaee164195d03c44ec660fbc08c3c" title="Add a new entry if the given name does not exist. Update an existing entry if the given name exists." alt="" coords="427,85,613,126"/>
+<area shape="rect" id="node5" href="$classsubsystem__controllers_1_1EntryManager.html#a4204928cd382c992b11ff3e2b8c0da98" title="Get a entry using name as the key." alt="" coords="212,143,379,199"/>
+<area shape="rect" id="node3" href="$classsubsystem__controllers_1_1PluginManager.html#ae746a83d3ff2ae3985d73d534331f174" title="Returns true if the specified fully qualified node name is a ROS2 lifecycle node." alt="" coords="439,5,601,61"/>
+</map>

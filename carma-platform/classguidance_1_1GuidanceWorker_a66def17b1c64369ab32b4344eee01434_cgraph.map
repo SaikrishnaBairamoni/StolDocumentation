@@ -1,0 +1,8 @@
+<map id="guidance::GuidanceWorker::handle_on_activate" name="guidance::GuidanceWorker::handle_on_activate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,181,80"/>
+<area shape="rect" id="node2" href="$classguidance_1_1GuidanceStateMachine.html#a6c02e1e365b9dc81848d255ab0e04620" title="Updates Guidance State Machine with INITIALIZED signal." alt="" coords="229,5,444,47"/>
+<area shape="rect" id="node4" href="$classguidance_1_1GuidanceWorker.html#a0316f1790117cb85b900fe02aafde698" title="Timer callback." alt="" coords="249,71,425,112"/>
+<area shape="rect" id="node3" href="$classguidance_1_1GuidanceStateMachine.html#aaa75a81fec6e28dbbeb446af8355e8e0" title="Actual state machine logic driven by signal enum." alt="" coords="492,5,707,47"/>
+<area shape="rect" id="node5" href="$classguidance_1_1GuidanceStateMachine.html#a0a70a93252ab7d5870ad14d338a84719" title="Get current state machine status." alt="" coords="492,71,707,112"/>
+<area shape="rect" id="node6" href="$classguidance_1_1GuidanceStateMachine.html#a8a6e3a2bad53c9bbf23f9ead15b7c298" title="Indicate if SetEnableRobotic needs to be called in ACTIVE state." alt="" coords="492,136,707,177"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ParseResult::Code" name="ParseResult::Code">
+<area shape="rect" id="node1" title="Get the error code." alt="" coords="280,42,409,69"/>
+<area shape="rect" id="node2" href="$classGenericDocument.html#a9400a5bd3169cc6ed545e681ccc06070" title="Get the ParseErrorCode of last parsing." alt="" coords="25,5,212,47"/>
+<area shape="rect" id="node3" href="$classGenericReader.html#a937bf90919f50e1c370b312cee5833e8" title="Get the ParseErrorCode of last parsing." alt="" coords="5,71,232,98"/>
+</map>

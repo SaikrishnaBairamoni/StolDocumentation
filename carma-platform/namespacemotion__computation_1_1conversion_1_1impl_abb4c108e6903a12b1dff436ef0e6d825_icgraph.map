@@ -1,0 +1,4 @@
+<map id="motion_computation::conversion::impl::composePredictedState" name="motion_computation::conversion::impl::composePredictedState">
+<area shape="rect" id="node1" title="Composes a PredictedState message form a provided current point and previous point...." alt="" coords="193,5,355,61"/>
+<area shape="rect" id="node2" href="$namespacemotion__computation_1_1conversion.html#ac015baeed44f7d5fbf23e8a71bb12876" title=" " alt="" coords="5,13,145,54"/>
+</map>

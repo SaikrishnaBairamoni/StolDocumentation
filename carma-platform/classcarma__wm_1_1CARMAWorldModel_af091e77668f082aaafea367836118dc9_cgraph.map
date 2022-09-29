@@ -1,0 +1,11 @@
+<map id="carma_wm::CARMAWorldModel::sampleRoutePoints" name="carma_wm::CARMAWorldModel::sampleRoutePoints">
+<area shape="rect" id="node1" title="Samples the route centerline between the provided downtracks with the provided step size...." alt="" coords="5,64,212,105"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#ab4df78110aa7dd6644ecbe3e5a69eb29" title="Get trackpos of the end of route point relative to the route." alt="" coords="525,5,731,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a1e7bf1856cd6cd7dbf1e262d378c6087" title="Converts a route track position into a map frame cartesian point." alt="" coords="260,93,467,135"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1IndexedDistanceMap.html#aaf9700fe30cc2819ca4423a2acffa27d" title="Get the distance to the start of the linestring at the specified index." alt="" coords="1025,125,1213,167"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1IndexedDistanceMap.html#a972f18c7b178a350cfdb85719eb10323" title="Get the along&#45;line distance to the point on the provided linestring." alt="" coords="515,123,741,164"/>
+<area shape="rect" id="node6" href="$classcarma__wm_1_1IndexedDistanceMap.html#a8a56236ca7587395b6a5cd84c08ec811" title="Returns index of the linestring which the provided distance is within. NOTE: Unlike the rest of this ..." alt="" coords="521,188,735,229"/>
+<area shape="rect" id="node9" href="$namespacecarma__wm_1_1geometry.html#a6f156f9d93ac8bd84fa6663b1efa5db4" title="Computes the 2d orientation of the vector from the provided start point to end point." alt="" coords="555,253,701,295"/>
+<area shape="rect" id="node7" href="$classcarma__wm_1_1IndexedDistanceMap.html#a984999e739e3b5f2971da657da6d6adb" title="Returns the total along&#45;line length of this structure." alt="" coords="789,188,977,229"/>
+<area shape="rect" id="node8" href="$classcarma__wm_1_1IndexedDistanceMap.html#a7bd91613ee531f0bb715d9e89a1285f1" title="Get the length of the linestring located at the provided index." alt="" coords="1025,191,1213,232"/>
+</map>

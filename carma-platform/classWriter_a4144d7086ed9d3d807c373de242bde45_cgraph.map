@@ -1,0 +1,14 @@
+<map id="Writer::Int64" name="Writer::Int64">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,96,133"/>
+<area shape="rect" id="node2" href="$classWriter.html#adc1cadbabc309d31f19cf7463251d879" title=" " alt="" coords="146,56,263,83"/>
+<area shape="rect" id="node5" href="$classWriter.html#a1fc40f8b9f3abc2548c0c5782ce1755d" title=" " alt="" coords="157,107,252,133"/>
+<area shape="rect" id="node7" href="$classWriter.html#aa58d3f80c06394648de5055ecfb41587" title=" " alt="" coords="144,183,265,209"/>
+<area shape="rect" id="node3" href="$classinternal_1_1Stack.html#a2b8bda380e33838a99e3c73ff9785f03" title=" " alt="" coords="318,5,465,32"/>
+<area shape="rect" id="node4" href="$classWriter.html#a8ca4e364c546b2eb526caa68dde011d2" title="Flush the output stream." alt="" coords="344,56,439,83"/>
+<area shape="rect" id="node6" href="$classinternal_1_1Stack.html#ac484468a2791bd3e9ba609bd1600ab48" title=" " alt="" coords="313,107,469,133"/>
+<area shape="rect" id="node8" href="$namespaceinternal.html#a527358458754f514c249c55c27b35526" title=" " alt="" coords="339,157,444,184"/>
+<area shape="rect" id="node11" href="$stream_8h.html#aa817b00a466bb84d96c5de1616436c95" title="Reserve n characters for writing to a stream." alt="" coords="346,208,437,235"/>
+<area shape="rect" id="node12" href="$stream_8h.html#ad57ba7f2912c5509924b69dec7db4396" title="Write character to a stream, presuming buffer is reserved." alt="" coords="349,259,433,285"/>
+<area shape="rect" id="node9" href="$namespaceinternal.html#a489150922c0320e4290b455bf3c6e36c" title=" " alt="" coords="517,157,627,184"/>
+<area shape="rect" id="node10" href="$namespaceinternal.html#a76ad2b55668f695effde1971d53a5ce1" title=" " alt="" coords="675,157,817,184"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="carma_wm::geometry::local_curvatures" name="carma_wm::geometry::local_curvatures">
+<area shape="rect" id="node1" title="Specialized overload of the centerline local_curvatures method but for lanelets." alt="" coords="5,78,151,119"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#adb8e11194693e77d9be753dd84d15524" title="Helper function to a list of lanelets together and return the result. Neither LineString is modified ..." alt="" coords="199,45,349,86"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#a2bae0fef2b76bda05a8ba1f1382f027d" title="Returns a list of local (computed by discrete derivative) curvatures for the input centerlines...." alt="" coords="201,110,347,151"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#ae7d5ca280140dce2bf7bcfb78bdfd55d" title="Helper function to concatenate 2 linestrings together and return the result. Neither LineString is mo..." alt="" coords="405,13,577,54"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#a9bc48b810ba18270fcc21674b55922f0" title="Compute the Euclidean distance between the two points." alt="" coords="1056,5,1201,61"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#adebf4a245f31404e822133b23e061ed3" title=" " alt="" coords="397,110,584,151"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1geometry.html#adf1c6b7f1e33569b45074e4e5bbeff1d" title="Compute the arc length at each point around the curve." alt="" coords="647,45,799,86"/>
+<area shape="rect" id="node9" href="$namespacecarma__wm_1_1geometry.html#aef0b6f2362a5ebbf0d5dcb3b7ff78619" title="Use finite differences methods to compute the derivative of the input data set with respect to index ..." alt="" coords="632,110,815,151"/>
+<area shape="rect" id="node11" href="$namespacecarma__wm_1_1geometry.html#afad31f5a6dcbee8828814d406384635f" title="Compute the magnitude of each vector in the input list." alt="" coords="651,175,796,231"/>
+<area shape="rect" id="node12" href="$namespacecarma__wm_1_1geometry.html#a56bddbee1116988543192b2f235a692c" title="Normalize the vectors in the input list such that their magnitudes = 1." alt="" coords="651,254,796,295"/>
+<area shape="rect" id="node8" href="$namespacecarma__wm_1_1geometry.html#a4e12c2971926486d1447e44e978f8d4d" title=" " alt="" coords="863,37,1008,93"/>
+<area shape="rect" id="node10" href="$namespacecarma__wm_1_1geometry.html#ae8af6cd9c27d35849c12959ab9f1b9c3" title=" " alt="" coords="863,117,1008,173"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ParseResult::Offset" name="ParseResult::Offset">
+<area shape="rect" id="node1" title="Get the error offset, if IsError(), 0 otherwise." alt="" coords="251,42,385,69"/>
+<area shape="rect" id="node2" href="$classGenericDocument.html#ae1ef7ca99ced428e9300c68e5142afdb" title="Get the position of last parsing error in input, 0 otherwise." alt="" coords="14,5,194,47"/>
+<area shape="rect" id="node3" href="$classGenericReader.html#ae9008523ccd06d839a57335835cb4091" title="Get the position of last parsing error in input, 0 otherwise." alt="" coords="5,71,203,98"/>
+</map>

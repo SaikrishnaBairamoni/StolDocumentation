@@ -1,0 +1,4 @@
+<map id="lightbar_manager::LightBarManagerStateMachine::onEngage" name="lightbar_manager::LightBarManagerStateMachine::onEngage">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,220,47"/>
+<area shape="rect" id="node2" href="$classlightbar__manager_1_1LightBarManagerStateMachine.html#a76c496e88d00d7e6099f3755f483b1e4" title="Transition to the next state of the LightBarStateMachine." alt="" coords="268,5,451,47"/>
+</map>

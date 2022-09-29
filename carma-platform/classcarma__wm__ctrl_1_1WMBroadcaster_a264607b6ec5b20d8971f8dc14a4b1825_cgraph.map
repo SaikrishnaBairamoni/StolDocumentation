@@ -1,0 +1,9 @@
+<map id="carma_wm_ctrl::WMBroadcaster::splitOppositeLaneletWithPoint" name="carma_wm_ctrl::WMBroadcaster::splitOppositeLaneletWithPoint">
+<area shape="rect" id="node1" title="Split given lanelet&#39;s adjacent, OPPOSITE lanelet with same proportion as the given point&#39;s downtrack ..." alt="" coords="5,71,216,112"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1query.html#a9fb50939b2ae576d2eb7fcfc42fcdc22" title="Given the cartesian point on the map, tries to get the opposite direction lanelet on the left This fu..." alt="" coords="264,12,476,53"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#aebce986f21c117983313292d5e82b50a" title="Returns the TrackPos, computed in 2d, of the provided point relative to the centerline of the provide..." alt="" coords="550,71,695,112"/>
+<area shape="rect" id="node7" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a1dfc2ec5be906966916939c75874cbab" title="Split given lanelet with given downtrack ratios relative to the lanelet. Newly created lanelet will h..." alt="" coords="265,129,475,171"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1query.html#a8933b74d652e02d07be1170b787d87a2" title="carma_wm::query namespace contains implementations for query functions (input and output read or writ..." alt="" coords="524,5,721,47"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1geometry.html#ab675b2b8862a2ba9c139a8b5b353b846" title="Get the TrackPos of the provided point along the linestring and the segment of the line string which ..." alt="" coords="769,71,915,112"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1geometry.html#ae0a06818149f7430fee80e295ef04548" title="Helper function to identify whether to select the preceeding or succeeding segment of a linstring poi..." alt="" coords="963,71,1108,112"/>
+</map>

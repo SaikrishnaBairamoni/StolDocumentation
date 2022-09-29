@@ -1,0 +1,4 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_follower" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_req_cb_follower">
+<area shape="rect" id="node1" title="Function to process mobility request in follower state." alt="" coords="5,5,188,61"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonManager.html#ae696d79ca33f496082ef462fdc9ba53b" title="Returns current host static ID as a string." alt="" coords="236,13,457,54"/>
+</map>

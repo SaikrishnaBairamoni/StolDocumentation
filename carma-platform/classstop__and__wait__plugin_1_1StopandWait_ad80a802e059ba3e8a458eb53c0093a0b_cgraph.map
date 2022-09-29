@@ -1,0 +1,9 @@
+<map id="stop_and_wait_plugin::StopandWait::compose_trajectory_from_centerline" name="stop_and_wait_plugin::StopandWait::compose_trajectory_from_centerline">
+<area shape="rect" id="node1" title="Method converts a list of lanelet centerline points and current vehicle state into a usable list of t..." alt="" coords="5,107,184,163"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#ad8a3ee0bf06f85a6e7a8b5097251da2b" title="Compute an approximate orientation for the vehicle at each point along the provided centerline." alt="" coords="236,13,439,54"/>
+<area shape="rect" id="node5" href="$namespacebasic__autonomy_1_1smoothing.html#afb726e75a21ada8efa3ca5561ffc9984" title="Extremely simplie moving average filter." alt="" coords="246,78,429,119"/>
+<area shape="rect" id="node6" href="$classstop__and__wait__plugin_1_1StopandWait.html#a8dc5745955f3c287e4217b20359eb771" title="Helper method to split a list of PointSpeedPair into separate point and speed lists." alt="" coords="238,143,437,199"/>
+<area shape="rect" id="node7" href="$classstop__and__wait__plugin_1_1StopandWait.html#afda81ce6bf1b8913bad9f071b7881790" title=" " alt="" coords="232,223,443,279"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a126f739493756f0eb84183ea22912b93" title=" " alt="" coords="491,5,637,61"/>
+<area shape="rect" id="node4" href="$namespacecarma__wm_1_1geometry.html#ae8af6cd9c27d35849c12959ab9f1b9c3" title=" " alt="" coords="685,5,831,61"/>
+</map>

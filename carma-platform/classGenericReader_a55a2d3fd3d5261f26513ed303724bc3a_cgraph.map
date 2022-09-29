@@ -1,0 +1,10 @@
+<map id="GenericReader::IterativeParse" name="GenericReader::IterativeParse">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,167,115"/>
+<area shape="rect" id="node2" href="$structParseResult.html#a88b6d44f052a19e6436ae6aadc2c40b4" title="Reset error code." alt="" coords="241,5,371,32"/>
+<area shape="rect" id="node4" href="$classGenericReader.html#a46660019ff1ed42bc192d9b5f9119b0f" title=" " alt="" coords="215,56,397,83"/>
+<area shape="rect" id="node7" href="$classGenericReader.html#ae20c2989d379782f3bbf81561a67ebcd" title=" " alt="" coords="229,107,383,133"/>
+<area shape="rect" id="node8" href="$classGenericReader.html#a9b3547ce0d99a8e53177c3d193e3d462" title=" " alt="" coords="223,157,389,184"/>
+<area shape="rect" id="node3" href="$structParseResult.html#aa81b4a7b776b77216cb752385203a8c1" title="Update error code and offset." alt="" coords="485,5,604,32"/>
+<area shape="rect" id="node5" href="$classGenericReader.html#ac417441794477ea747b63adb6d3653a9" title="Whether a parse error has occured in the last parsing." alt="" coords="445,56,644,83"/>
+<area shape="rect" id="node6" href="$structParseResult.html#adfe0ef5b994e82f8aa9ebf0b30c924b1" title="Whether the result is an error." alt="" coords="692,56,829,83"/>
+</map>

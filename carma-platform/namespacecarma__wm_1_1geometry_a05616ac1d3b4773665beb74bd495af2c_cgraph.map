@@ -1,0 +1,5 @@
+<map id="carma_wm::geometry::trackPos" name="carma_wm::geometry::trackPos">
+<area shape="rect" id="node1" title="Return the track position of a point relative to a line segment defined by two other points...." alt="" coords="5,5,151,47"/>
+<area shape="rect" id="node2" href="$namespacecarma__wm_1_1geometry.html#abab7ba4e773f03d6cfc09492742c6b7b" title="Calculates the angle between two vectors." alt="" coords="199,5,373,47"/>
+<area shape="rect" id="node3" href="$namespacecarma__wm_1_1geometry.html#a50c966bd5e6ed00ea0b1a70e93cd0d4a" title="acos method that caps the input x value for 1 or &#45;1 to avoid undefined output. This is meant to preve..." alt="" coords="421,5,567,47"/>
+</map>

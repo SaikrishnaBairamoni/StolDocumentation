@@ -1,0 +1,7 @@
+<map id="carma_wm::SignalizedIntersectionManager::identifyInteriorLanelets" name="carma_wm::SignalizedIntersectionManager::identifyInteriorLanelets">
+<area shape="rect" id="node1" title="Returns carma traffic signal and saves all id relevant id mappings (signal group to lanelet id) inter..." alt="" coords="1092,5,1311,47"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1SignalizedIntersectionManager.html#aafb3ce6c267e28708924171cb88f71a9" title="Create relevant signalized intersection and carma traffic signals based on the MAP...." alt="" coords="781,5,1044,47"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#aac72e7333f997bfe19547a235f389c07" title="Fills geofence object from MAP Data ROS Msg which contains intersections&#39; static data such as geometr..." alt="" coords="523,5,733,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a649174a7a7270df95532cad5131bf4cb" title="Adds a geofence to the current map and publishes the ROS msg." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node5" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a95cb7c60682d7b455a8624534ad94706" title="Constructor." alt="" coords="5,5,216,47"/>
+</map>

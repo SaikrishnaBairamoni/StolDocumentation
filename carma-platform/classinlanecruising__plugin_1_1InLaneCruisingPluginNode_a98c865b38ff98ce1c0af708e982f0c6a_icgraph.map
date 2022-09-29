@@ -1,0 +1,4 @@
+<map id="inlanecruising_plugin::InLaneCruisingPluginNode::parameter_update_callback" name="inlanecruising_plugin::InLaneCruisingPluginNode::parameter_update_callback">
+<area shape="rect" id="node1" title=" " alt="" coords="236,5,423,61"/>
+<area shape="rect" id="node2" href="$classinlanecruising__plugin_1_1InLaneCruisingPluginNode.html#a8821a36ca82bf76b6729fe31716bfe64" title="Method which is triggered when this plugin is moved from the UNCONFIGURED to INACTIVE states...." alt="" coords="5,5,188,61"/>
+</map>

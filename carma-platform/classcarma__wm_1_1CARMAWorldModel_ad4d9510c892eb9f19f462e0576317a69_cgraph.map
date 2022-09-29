@@ -1,0 +1,12 @@
+<map id="carma_wm::CARMAWorldModel::setRoute" name="carma_wm::CARMAWorldModel::setRoute">
+<area shape="rect" id="node1" title="Set the current route. This route must match the current map for this class to function properly." alt="" coords="5,173,212,215"/>
+<area shape="rect" id="node2" href="$classcarma__wm_1_1CARMAWorldModel.html#a6f924aa42ade5d323045fdad9b7ca3a8" title="Helper function to compute the geometry of the route downtrack/crosstrack reference line This functio..." alt="" coords="260,128,484,169"/>
+<area shape="rect" id="node10" href="$classcarma__wm_1_1CARMAWorldModel.html#a18e3077b7673f2f92fd71eeea955a597" title="Returns a pair of TrackPos, computed in 2d, of the provided area relative to the current route...." alt="" coords="269,217,475,259"/>
+<area shape="rect" id="node3" href="$classcarma__wm_1_1CARMAWorldModel.html#a1f25006ada239cea8226b7f36afc267e" title="Helper function to perform a deep copy of a LineString and assign new ids to all the elements...." alt="" coords="532,5,739,47"/>
+<area shape="rect" id="node4" href="$classcarma__wm_1_1CARMAWorldModel.html#a6d75cb8cde721072cc7f69edd0ececb6" title="Get the Traffic Rules object." alt="" coords="532,95,739,136"/>
+<area shape="rect" id="node5" href="$classcarma__wm_1_1IndexedDistanceMap.html#a669e41545be3e1ee49512a56c57b7196" title="Add a linestring to this structure. This function will iterate over the line string to compute distan..." alt="" coords="541,160,729,201"/>
+<area shape="rect" id="node9" href="$classcarma__wm_1_1IndexedDistanceMap.html#ab863677638f19d38483e63ba0e763da5" title="Returns number of linestrings in this structure." alt="" coords="541,225,729,267"/>
+<area shape="rect" id="node6" href="$classcarma__wm_1_1IndexedDistanceMap.html#a984999e739e3b5f2971da657da6d6adb" title="Returns the total along&#45;line length of this structure." alt="" coords="787,160,975,201"/>
+<area shape="rect" id="node7" href="$classcarma__wm_1_1IndexedDistanceMap.html#aaf9700fe30cc2819ca4423a2acffa27d" title="Get the distance to the start of the linestring at the specified index." alt="" coords="1023,127,1211,168"/>
+<area shape="rect" id="node8" href="$classcarma__wm_1_1IndexedDistanceMap.html#a7bd91613ee531f0bb715d9e89a1285f1" title="Get the length of the linestring located at the provided index." alt="" coords="1023,192,1211,233"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="lanelet::MapConformer::anonymous_namespace{MapConformer::cpp}::addInferredPassingControlLine" name="lanelet::MapConformer::anonymous_namespace{MapConformer::cpp}::addInferredPassingControlLine">
+<area shape="rect" id="node1" title="Generate PassingControlLines from the inferred regulations in the provided map and area." alt="" coords="963,24,1176,95"/>
+<area shape="rect" id="node2" href="$namespacelanelet_1_1MapConformer.html#a20caaf0f529166126f0f4ea4d80f80d0" title="Function modifies an existing map to make a best effort attempt at ensuring the map confroms to the e..." alt="" coords="764,39,915,80"/>
+<area shape="rect" id="node3" href="$classcarma__wm__ctrl_1_1WMBroadcaster.html#a243d8d82a364aad6270e38f0202a68cb" title="Callback to set the base map when it has been loaded." alt="" coords="505,5,716,47"/>
+<area shape="rect" id="node5" href="$namespacecarma__wm_1_1test.html#a89c0e3bfedd0bf9719127896b3fcb06c" title="helper function for creating lanelet map for getGuidanceTestMap" alt="" coords="509,71,712,112"/>
+<area shape="rect" id="node4" href="$classcarma__wm__ctrl_1_1WMBroadcasterNode.html#ab0c14f6d7e30870755a4dcf6b228de82" title=" " alt="" coords="247,5,457,47"/>
+<area shape="rect" id="node6" href="$namespacecarma__wm_1_1test.html#a8f15f836dede141bcabe292a0f9a1751" title="Gets the CARMAWorldModel for the guidance test map." alt="" coords="255,71,449,112"/>
+<area shape="rect" id="node7" href="$namespacecarma__wm_1_1test.html#a12ad39e45b75cd8d450bef06a1da8020" title=" " alt="" coords="5,71,199,112"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_op_find_ecef_from_INFO_params" name="platoon_strategic_ihp::PlatoonStrategicIHPPlugin::mob_op_find_ecef_from_INFO_params">
+<area shape="rect" id="node1" title="Function to process mobility operation INFO params to find platoon leader&#39;s ecef location." alt="" coords="660,45,915,101"/>
+<area shape="rect" id="node2" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#afd00a90158f773100543b3f56f964d74" title="Function to process mobility operation in leader state." alt="" coords="429,5,612,61"/>
+<area shape="rect" id="node5" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#afe00eb7730952e85faccf8032637983f" title="Function to process mobility operation in PrepareToJoin state (cut&#45;in join)" alt="" coords="429,85,612,141"/>
+<area shape="rect" id="node3" href="$classplatoon__strategic__ihp_1_1PlatoonStrategicIHPPlugin.html#a9f77f3abf67b6006fd6c9b965cbb1c10" title="Callback function for Mobility Operation Message." alt="" coords="199,45,381,101"/>
+<area shape="rect" id="node4" href="$classplatoon__strategic__ihp_1_1Node.html#ab473b2bc25d4250b7b4eee8dfa29a2a9" title="This method should be used to load parameters and will be called on the configure state transition." alt="" coords="5,45,151,101"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="localization_manager::LocalizationTransitionTable::setTransitionCallback" name="localization_manager::LocalizationTransitionTable::setTransitionCallback">
+<area shape="rect" id="node1" title="Callback setting function. The provided callback will be triggered any time the current state changes..." alt="" coords="200,5,387,61"/>
+<area shape="rect" id="node2" href="$classlocalization__manager_1_1LocalizationManager.html#acbb7d81be472c3ec96f3d700b7ca823c" title="Constructor." alt="" coords="5,5,152,61"/>
+</map>

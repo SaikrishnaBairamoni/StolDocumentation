@@ -1,0 +1,4 @@
+<map id="mock_drivers::MockControllerDriver::vehicleCmdCallback" name="mock_drivers::MockControllerDriver::vehicleCmdCallback">
+<area shape="rect" id="node1" title="Callback for the vehicle command topic. This callback must be triggered at least once before the enab..." alt="" coords="247,5,440,47"/>
+<area shape="rect" id="node2" href="$classmock__drivers_1_1MockControllerDriver.html#a28c9c2d10a3ae05e462526bd9829075c" title=" " alt="" coords="5,5,199,47"/>
+</map>
