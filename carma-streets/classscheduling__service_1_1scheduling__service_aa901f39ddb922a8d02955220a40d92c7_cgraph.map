@@ -1,0 +1,7 @@
+<map id="scheduling_service::scheduling_service::config_vehicle_list" name="scheduling_service::scheduling_service::config_vehicle_list">
+<area shape="rect" id="node1" title="Create the vehicle list processor and configure it." alt="" coords="5,63,144,119"/>
+<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#ae1ce5cdd4b4d28cc8e4034c429aabb66" title="Retreive configuration parameter double value with provide name." alt="" coords="192,5,404,47"/>
+<area shape="rect" id="node4" href="$classstreets__service_1_1streets__configuration.html#ab33a5d183c0ca2b2f0d757f5466f200b" title="Retreive configuration parameter integer value with provided name." alt="" coords="204,71,392,112"/>
+<area shape="rect" id="node5" href="$classstreets__service_1_1streets__configuration.html#a03603871626201e07690effb9f2440bf" title="Retreive configuration parameter string value with provided name." alt="" coords="195,136,401,177"/>
+<area shape="rect" id="node3" href="$classstreets__service_1_1streets__configuration.html#a92ea5469cbab9198efb4696b7e5598eb" title=" " alt="" coords="452,71,637,112"/>
+</map>

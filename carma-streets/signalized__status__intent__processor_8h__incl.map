@@ -1,0 +1,11 @@
+<map id="streets_utils/streets_vehicle_list/include/signalized_status_intent_processor.h" name="streets_utils/streets_vehicle_list/include/signalized_status_intent_processor.h">
+<area shape="rect" id="node1" title=" " alt="" coords="81,5,247,76"/>
+<area shape="rect" id="node2" title=" " alt="" coords="38,295,178,322"/>
+<area shape="rect" id="node3" title=" " alt="" coords="185,377,297,404"/>
+<area shape="rect" id="node4" href="$vehicle_8h.html" title=" " alt="" coords="495,295,569,322"/>
+<area shape="rect" id="node6" href="$all__stop__status__intent__processor_8h.html" title=" " alt="" coords="145,124,295,165"/>
+<area shape="rect" id="node5" title=" " alt="" coords="459,377,605,404"/>
+<area shape="rect" id="node7" href="$status__intent__processor_8h.html" title=" " alt="" coords="253,213,424,240"/>
+<area shape="rect" id="node8" href="$status__intent__processing__exception_8h.html" title=" " alt="" coords="305,288,471,329"/>
+<area shape="rect" id="node9" title=" " alt="" coords="349,377,427,404"/>
+</map>

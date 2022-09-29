@@ -1,0 +1,6 @@
+<map id="streets_service::streets_configuration::update_configuration" name="streets_service::streets_configuration::update_configuration">
+<area shape="rect" id="node1" title="Update configuration parameters using json Document." alt="" coords="5,5,163,61"/>
+<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#abf6b664ead9e4d6f9f77c2ad26cec13b" title="Helper method that reads the configurations array inside the manifest.json configuration file." alt="" coords="211,13,473,54"/>
+<area shape="rect" id="node3" href="$structstreets__service_1_1configuration.html#a879fd3a8c15c4167ca1ba4d3a1bb3753" title="Method to translate json object to configuration struct." alt="" coords="521,13,712,54"/>
+<area shape="rect" id="node4" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="760,20,832,47"/>
+</map>

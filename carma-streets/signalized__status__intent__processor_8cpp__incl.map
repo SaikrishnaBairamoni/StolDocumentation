@@ -1,0 +1,12 @@
+<map id="streets_utils/streets_vehicle_list/src/message_processors/signalized_status_intent_processor.cpp" name="streets_utils/streets_vehicle_list/src/message_processors/signalized_status_intent_processor.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="64,5,262,76"/>
+<area shape="rect" id="node2" href="$signalized__status__intent__processor_8h.html" title=" " alt="" coords="82,124,244,165"/>
+<area shape="rect" id="node3" title=" " alt="" coords="37,385,177,411"/>
+<area shape="rect" id="node4" title=" " alt="" coords="184,467,296,493"/>
+<area shape="rect" id="node5" href="$vehicle_8h.html" title=" " alt="" coords="494,385,568,411"/>
+<area shape="rect" id="node7" href="$all__stop__status__intent__processor_8h.html" title=" " alt="" coords="144,213,294,255"/>
+<area shape="rect" id="node6" title=" " alt="" coords="458,467,604,493"/>
+<area shape="rect" id="node8" href="$status__intent__processor_8h.html" title=" " alt="" coords="252,303,423,329"/>
+<area shape="rect" id="node9" href="$status__intent__processing__exception_8h.html" title=" " alt="" coords="304,377,470,419"/>
+<area shape="rect" id="node10" title=" " alt="" coords="348,467,426,493"/>
+</map>

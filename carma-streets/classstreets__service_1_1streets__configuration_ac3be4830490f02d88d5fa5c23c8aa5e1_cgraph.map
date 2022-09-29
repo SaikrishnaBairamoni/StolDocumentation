@@ -1,0 +1,4 @@
+<map id="streets_service::streets_configuration::update_log_level" name="streets_service::streets_configuration::update_log_level">
+<area shape="rect" id="node1" title="Update loglevel for logger using json Document." alt="" coords="5,5,163,61"/>
+<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#af65edea791c4df09b00836dd0dbf164d" title="Method to set the spdlog::default." alt="" coords="211,13,388,54"/>
+</map>

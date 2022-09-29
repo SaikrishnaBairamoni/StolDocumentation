@@ -1,0 +1,4 @@
+<map id="streets_vehicles::vehicle_list::update_vehicle" name="streets_vehicles::vehicle_list::update_vehicle">
+<area shape="rect" id="node1" title="Updates a vehicle in the vehicle map, with new vehicle information." alt="" coords="217,5,381,47"/>
+<area shape="rect" id="node2" href="$classstreets__vehicles_1_1vehicle__list.html#a4c70ccdc6e01a3bda8dd6ede9a29ad46" title="Process JSON status and intent update into vehicle update and modifies vehicle map with update." alt="" coords="5,5,169,47"/>
+</map>

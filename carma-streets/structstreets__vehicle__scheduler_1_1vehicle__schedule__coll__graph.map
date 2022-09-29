@@ -1,0 +1,5 @@
+<map id="streets_vehicle_scheduler::vehicle_schedule" name="streets_vehicle_scheduler::vehicle_schedule">
+<area shape="rect" id="node1" title="Object to represent schedule for single vehicle." alt="" coords="5,160,179,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="30,5,85,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="109,5,147,83"/>
+</map>

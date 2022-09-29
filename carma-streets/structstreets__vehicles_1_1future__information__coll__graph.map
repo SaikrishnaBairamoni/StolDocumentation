@@ -1,0 +1,6 @@
+<map id="streets_vehicles::future_information" name="streets_vehicles::future_information">
+<area shape="rect" id="node1" title="Future path information for vehicles." alt="" coords="65,145,221,237"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,73,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="124,5,163,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="197,5,257,83"/>
+</map>

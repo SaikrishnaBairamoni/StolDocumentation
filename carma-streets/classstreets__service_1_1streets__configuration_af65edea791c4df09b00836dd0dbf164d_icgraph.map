@@ -1,0 +1,7 @@
+<map id="streets_service::streets_configuration::set_loglevel" name="streets_service::streets_configuration::set_loglevel">
+<area shape="rect" id="node1" title="Method to set the spdlog::default." alt="" coords="493,49,671,90"/>
+<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#a3a54dfe5fa3466b8568229a458d344fc" title="Method to read service level configurations from manifest.json file to configure default logger and s..." alt="" coords="243,13,445,54"/>
+<area shape="rect" id="node4" href="$classstreets__service_1_1streets__configuration.html#ac3be4830490f02d88d5fa5c23c8aa5e1" title="Update loglevel for logger using json Document." alt="" coords="265,77,423,133"/>
+<area shape="rect" id="node3" href="$classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="21,5,179,61"/>
+<area shape="rect" id="node5" href="$classstreets__service_1_1streets__configuration.html#a595d66c854ec6d7bb85d975721b5cde3" title="Method to check last modified time of file to see if a file update is necessary." alt="" coords="5,85,195,126"/>
+</map>
