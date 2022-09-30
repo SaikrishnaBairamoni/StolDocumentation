@@ -1,0 +1,5 @@
+var unionITIScodesAndText____Member_1_1ITIScodesAndText____Member____item_1_1ITIScodesAndText____Member____item__u =
+[
+    [ "itis", "unionITIScodesAndText____Member_1_1ITIScodesAndText____Member____item_1_1ITIScodesAndText____Member____item__u.html#aeb3b5473aaefb648f39bd9d611b8482f", null ],
+    [ "text", "unionITIScodesAndText____Member_1_1ITIScodesAndText____Member____item_1_1ITIScodesAndText____Member____item__u.html#a4636b002a47ab0bc7ec932bc8b855885", null ]
+];

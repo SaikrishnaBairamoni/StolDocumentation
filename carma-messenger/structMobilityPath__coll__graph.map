@@ -1,0 +1,14 @@
+<map id="MobilityPath" name="MobilityPath">
+<area shape="rect" id="node1" title=" " alt="" coords="329,643,423,720"/>
+<area shape="rect" id="node2" href="$structMobilityLocation.html" title=" " alt="" coords="161,503,277,580"/>
+<area shape="rect" id="node3" title=" " alt="" coords="34,300,81,377"/>
+<area shape="rect" id="node4" href="$structOCTET__STRING.html" title=" " alt="" coords="105,300,228,377"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,160,75,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="99,160,155,237"/>
+<area shape="rect" id="node7" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="266,160,387,237"/>
+<area shape="rect" id="node12" href="$structMobilityLocationOffsets.html" title=" " alt="" coords="297,401,455,479"/>
+<area shape="rect" id="node8" title=" " alt="" coords="183,5,233,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="266,5,305,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="342,5,397,83"/>
+<area shape="rect" id="node11" title=" " alt="" coords="421,5,483,83"/>
+</map>

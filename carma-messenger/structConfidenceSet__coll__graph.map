@@ -1,0 +1,12 @@
+<map id="ConfidenceSet" name="ConfidenceSet">
+<area shape="rect" id="node1" title=" " alt="" coords="423,484,529,561"/>
+<area shape="rect" id="node2" href="$structAccelSteerYawRateConfidence.html" title=" " alt="" coords="375,337,577,414"/>
+<area shape="rect" id="node3" title=" " alt="" coords="193,160,239,237"/>
+<area shape="rect" id="node9" href="$structSpeedandHeadingandThrottleConfidence.html" title=" " alt="" coords="157,329,350,421"/>
+<area shape="rect" id="node10" href="$structPositionConfidenceSet.html" title=" " alt="" coords="602,337,755,414"/>
+<area shape="rect" id="node4" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="590,160,711,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="507,5,557,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="590,5,629,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="666,5,721,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="745,5,807,83"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cpp_message::Node::outbound_mobility_request_message_callback" name="cpp_message::Node::outbound_mobility_request_message_callback">
+<area shape="rect" id="node1" title="function callback when there is an outgoing mobility request message. ." alt="" coords="5,5,181,61"/>
+<area shape="rect" id="node2" href="$classcpp__message_1_1Mobility__Request.html#acaa4a360bd1d9262445cbb241ba3342f" title="Mobility Request message encoding function." alt="" coords="229,5,405,61"/>
+<area shape="rect" id="node3" href="$per__encoder_8h.html#ad9d25a879d4499db83fb133c1b8636b9" title=" " alt="" coords="453,20,607,47"/>
+</map>

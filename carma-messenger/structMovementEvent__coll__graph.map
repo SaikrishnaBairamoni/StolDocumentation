@@ -1,0 +1,12 @@
+<map id="MovementEvent" name="MovementEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="248,528,364,605"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,160,60,237"/>
+<area shape="rect" id="node3" href="$structTimeChangeDetails.html" title=" " alt="" coords="122,381,257,458"/>
+<area shape="rect" id="node4" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="297,160,418,237"/>
+<area shape="rect" id="node9" href="$structAdvisorySpeedList.html" title=" " alt="" coords="394,381,548,458"/>
+<area shape="rect" id="node10" href="$structMovementEvent_1_1MovementEvent____regional.html" title=" " alt="" coords="572,373,788,465"/>
+<area shape="rect" id="node5" title=" " alt="" coords="214,5,264,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="297,5,336,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="373,5,428,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="452,5,514,83"/>
+</map>

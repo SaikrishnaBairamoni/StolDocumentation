@@ -1,0 +1,13 @@
+<map id="ObstacleDetection" name="ObstacleDetection">
+<area shape="rect" id="node1" title=" " alt="" coords="161,528,290,605"/>
+<area shape="rect" id="node2" title=" " alt="" coords="26,160,73,237"/>
+<area shape="rect" id="node3" href="$structDDateTime.html" title=" " alt="" coords="134,388,221,465"/>
+<area shape="rect" id="node4" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="209,160,330,237"/>
+<area shape="rect" id="node9" href="$structBIT__STRING__s.html" title=" " alt="" coords="358,388,472,465"/>
+<area shape="rect" id="node5" title=" " alt="" coords="162,5,212,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="420,5,458,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="237,5,292,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="316,5,378,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="579,160,648,237"/>
+<area shape="rect" id="node11" title=" " alt="" coords="370,160,426,237"/>
+</map>
