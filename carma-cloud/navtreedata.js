@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Carma-streets", "index.html", [
+  [ "Carma-cloud", "index.html", [
     [ "CARMAcloud", "md_README.html", [
       [ "Documentation", "md_README.html#autotoc_md1", null ],
       [ "Deployment", "md_README.html#autotoc_md2", null ],
@@ -34,13 +34,30 @@ var NAVTREE =
       [ "Attribution", "md_README.html#autotoc_md6", null ],
       [ "License", "md_README.html#autotoc_md7", null ],
       [ "Contact", "md_README.html#autotoc_md8", null ]
+    ] ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", null ]
+    ] ],
+    [ "Data Structures", "annotated.html", [
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Structure Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Data Fields", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"Arrays_8java.html",
+"classcc_1_1ws_1_1ReplayMgr.html#ab1beff23507994bc78297decd08b332f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

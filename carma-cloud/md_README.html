@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Carma-streets: CARMAcloud</title>
+<title>Carma-cloud: CARMAcloud</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Carma-streets<span id="projectnumber">&#160;v4.2.0</span>
+   <div id="projectname">Carma-cloud<span id="projectnumber">&#160;v4.2.0</span>
    </div>
-   <div id="projectbrief">CARMA Streets is a component of CARMA ecosystem that improves the efficiency and performance of the Transportation Systems Management and Operations (TSMO) strategies.</div>
+   <div id="projectbrief">CARMAcloud provides some of the infrastructure components for CARMA. It enables users to define geofences, rules of practice, replay storms to test weather-related rules of practice, as well as monitor CARMA-enabled vehicles and the messages and controls exchanged with them.</div>
   </td>
  </tr>
  </tbody>
@@ -108,7 +108,7 @@ Deployment</h1>
 <div class="line">mv CARMACloud/osmbin tomcat/webapps/carmacloud/</div>
 <div class="line">rm -f sources.txt &amp;&amp; rm -rf CARMACloud</div>
 <div class="line">sudo -u root mv tomcat /opt/</div>
-</div><!-- fragment --><p> These commands will download the CARMAcloud source code from github, necessary dependencies, and the tomcat webserver. Changes to the tomcat version might be necessary if version 9.0.34 is no longer available on the Apache mirror. Next the java code will be compiled and the .class files will be placed in the correct directory. Tomcat's server.xml file will have the carmacloud host entry inserted in the correct location. Carmacloud will be added to the /etc/hosts file. The java command that runs cc.ws.UserMgr will create the ccadmin user for the system. It is suggested to change to password to something more secure by replacing "admin_testpw" with the desired password in the command. </p>
+</div><!-- fragment --><p> These commands will download the CARMAcloud source code from github, necessary dependencies, and the tomcat webserver. Changes to the tomcat version might be necessary if version 9.0.34 is no longer available on the Apache mirror. Next the java code will be compiled and the .class files will be placed in the correct directory. Tomcat's server.xml file will have the carmacloud host entry inserted in the correct location. Carmacloud will be added to the /etc/hosts file. The java command that runs <a class="el" href="classcc_1_1ws_1_1UserMgr.html">cc.ws.UserMgr</a> will create the ccadmin user for the system. It is suggested to change to password to something more secure by replacing "admin_testpw" with the desired password in the command. </p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Configuration</h1>
 <p >The Tomcat webserver must be configured to run on the deployment server. Click <a href="https://tomcat.apache.org/tomcat-9.0-doc/index.html">here</a> to find the documentation for Tomcat. There are many configuration items to considered but two that must be addressed for any deployment are adding the domain name and SSL Certificate to the server.xml file. Proper security measures dealing with file permissions should be taken as well. According to Tomcat's <a href="https://tomcat.apache.org/tomcat-9.0-doc/security-howto.html#System_Properties">documentation</a> a tomcat user and group should be created in the operating system. The standard configuration for file permissions is to have all Tomcat files owned by root with group tomcat. Owner should have read/write permissions, group should have read permission, and world has no permissions. The exceptions are the logs, temp and work directory that are owned by the tomcat user rather than root. Additional users can be added to CARMAcloud by run the following command and replacing &lt;username&gt; and &lt;password&gt; with the desired user name and password respectively: </p><div class="fragment"><div class="line">java -cp tomcat/webapps/carmacloud/ROOT/WEB-INF/classes/:tomcat/lib/servlet-api.jar cc.ws.UserMgr &lt;username&gt; &lt;password&gt; &gt;&gt; /opt/tomcat/webapps/carmacloud/user.csv</div>
@@ -135,7 +135,7 @@ Contact</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 3 2022 17:07:26 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 3 2022 19:44:54 for Carma-cloud by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
