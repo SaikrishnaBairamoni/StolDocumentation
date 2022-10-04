@@ -1,0 +1,4 @@
+<map id="cpp_message::Node::outbound_mobility_path_message_callback" name="cpp_message::Node::outbound_mobility_path_message_callback">
+<area shape="rect" id="node1" title="function callback when there is an outgoing mobility path message. ." alt="" coords="200,5,359,61"/>
+<area shape="rect" id="node2" href="$classcpp__message_1_1Node.html#a04489e2beaa23d24330e507c97649bbc" title="Initialize pub/sub and params." alt="" coords="5,13,152,54"/>
+</map>

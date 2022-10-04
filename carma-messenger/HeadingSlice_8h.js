@@ -1,0 +1,36 @@
+var HeadingSlice_8h =
+[
+    [ "e_HeadingSlice", "HeadingSlice_8h.html#adb2bf489ab466f60c7b1483ae32f9f23", null ],
+    [ "HeadingSlice_t", "HeadingSlice_8h.html#a7be0e7c80638ff43d26d5b70fd965671", null ],
+    [ "HeadingSlice", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7", [
+      [ "HeadingSlice_from000_0to022_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a71ccef6186ba7c3aad279b93d6221329", null ],
+      [ "HeadingSlice_from022_5to045_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a52bf38597798887627bfbe601186c181", null ],
+      [ "HeadingSlice_from045_0to067_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a181e896a5a1dbe3f52d43c45628688f3", null ],
+      [ "HeadingSlice_from067_5to090_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7adb84ff34c6208cb72488ea7feee639d7", null ],
+      [ "HeadingSlice_from090_0to112_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7ad60f3bd4c5c70ad9defb59febadc5090", null ],
+      [ "HeadingSlice_from112_5to135_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7adf79fc4fe6411bccb22a70408ff6b03b", null ],
+      [ "HeadingSlice_from135_0to157_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a2e3216f2060e7528fd8d3e64afae73da", null ],
+      [ "HeadingSlice_from157_5to180_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a49c8716e1e0817ff90b8c2f0479f6c0f", null ],
+      [ "HeadingSlice_from180_0to202_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7ad71a35b1b07e7f55d3c1c8267e36b44c", null ],
+      [ "HeadingSlice_from202_5to225_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7af06f48291e177577aae26fbaa6633c67", null ],
+      [ "HeadingSlice_from225_0to247_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a9ed400c57cd7db1bc5ae59ae7cf6640e", null ],
+      [ "HeadingSlice_from247_5to270_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7aa4a9f034dc2cf12786cc0091620fd649", null ],
+      [ "HeadingSlice_from270_0to292_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a90e05bd4760aebcb824cd726fca52705", null ],
+      [ "HeadingSlice_from292_5to315_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a03337818b937a987102b34215f03245f", null ],
+      [ "HeadingSlice_from315_0to337_5degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a043ab3e2db0b3db0ae43838efea7c162", null ],
+      [ "HeadingSlice_from337_5to360_0degrees", "HeadingSlice_8h.html#a12bc3c195e449cb9608816e5c4ebf5c7a0b3d1e8fe12cf4ee90d5b146fd1f2e69", null ]
+    ] ],
+    [ "asn_DEF_HeadingSlice", "HeadingSlice_8h.html#aecee120cea1875cae28ed1f7bc1be471", null ],
+    [ "asn_PER_type_HeadingSlice_constr_1", "HeadingSlice_8h.html#abd172b030f069264f25f96b796f32e30", null ],
+    [ "HeadingSlice_constraint", "HeadingSlice_8h.html#affc733472b6848a298c0a07629073b3d", null ],
+    [ "HeadingSlice_decode_ber", "HeadingSlice_8h.html#a9c0ec7434b61929113dec8d6e6cf66b6", null ],
+    [ "HeadingSlice_decode_oer", "HeadingSlice_8h.html#ab56d6897e142aa1e8a0f3f021ecb2bcd", null ],
+    [ "HeadingSlice_decode_uper", "HeadingSlice_8h.html#a236c107a0ca7446e3a51ec4a53aba921", null ],
+    [ "HeadingSlice_decode_xer", "HeadingSlice_8h.html#ab6b609d33f0b44d9c44e30cd5ab7999b", null ],
+    [ "HeadingSlice_encode_der", "HeadingSlice_8h.html#a59b51cac83122ac0569d024373e1c817", null ],
+    [ "HeadingSlice_encode_oer", "HeadingSlice_8h.html#a3455a1b2a3b88ee63d14ffc439eaf420", null ],
+    [ "HeadingSlice_encode_uper", "HeadingSlice_8h.html#aced5db837b31768e52751519a12a832a", null ],
+    [ "HeadingSlice_encode_xer", "HeadingSlice_8h.html#ad1eb60aaebde8db238c7cf100e20b168", null ],
+    [ "HeadingSlice_free", "HeadingSlice_8h.html#a67562edef7f54a6a408a2874e84ca7a0", null ],
+    [ "HeadingSlice_print", "HeadingSlice_8h.html#a5cac1caf14593066abebf23e34c0be0a", null ]
+];

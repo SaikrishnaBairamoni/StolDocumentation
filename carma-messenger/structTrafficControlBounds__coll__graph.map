@@ -1,0 +1,13 @@
+<map id="TrafficControlBounds" name="TrafficControlBounds">
+<area shape="rect" id="node1" title=" " alt="" coords="203,484,345,561"/>
+<area shape="rect" id="node2" href="$structASN____PRIMITIVE__TYPE__s.html" title=" " alt="" coords="5,315,191,392"/>
+<area shape="rect" id="node3" title=" " alt="" coords="21,160,90,237"/>
+<area shape="rect" id="node4" title=" " alt="" coords="114,160,170,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="215,315,261,392"/>
+<area shape="rect" id="node6" href="$structTrafficControlBounds_1_1TrafficControlBounds____offsets.html" title=" " alt="" coords="398,300,553,407"/>
+<area shape="rect" id="node7" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="301,160,423,237"/>
+<area shape="rect" id="node8" title=" " alt="" coords="218,5,269,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="301,5,340,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="377,5,432,83"/>
+<area shape="rect" id="node11" title=" " alt="" coords="456,5,519,83"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="truck_inspection_plugin::Node" name="truck_inspection_plugin::Node">
+<area shape="rect" id="node1" title=" " alt="" coords="883,329,1085,524"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,153,253,230"/>
+<area shape="rect" id="node3" title=" " alt="" coords="278,145,453,237"/>
+<area shape="rect" id="node4" title=" " alt="" coords="477,145,638,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="662,145,837,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="861,145,1005,237"/>
+<area shape="rect" id="node7" href="$structtruck__inspection__plugin_1_1Config.html" title="Stuct containing the algorithm configuration values for truck_inspection_plugin." alt="" coords="1193,145,1351,237"/>
+<area shape="rect" id="node8" title=" " alt="" coords="1055,5,1094,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="1375,153,1430,230"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1454,153,1509,230"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1545,153,1625,230"/>
+</map>

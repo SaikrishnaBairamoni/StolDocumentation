@@ -1,0 +1,4 @@
+<map id="j2735_convertor::Node::BsmHandler" name="j2735_convertor::Node::BsmHandler">
+<area shape="rect" id="node1" title="Converts carma_v2x_msgs::msg::BSM messages to j2735_v2x_msgs::msg::BSM and publishes the converted me..." alt="" coords="5,29,156,71"/>
+<area shape="rect" id="node2" href="$classj2735__convertor_1_1BSMConvertor.html#aec756d7d2446d79c7ea9fc433ae1caa3" title="Convert the contents of a j2735_v2x_msgs::msg::BSM into a carma_v2x_msgs::msg::BSM." alt="" coords="204,29,409,71"/>
+</map>

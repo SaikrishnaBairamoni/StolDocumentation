@@ -1,0 +1,13 @@
+<map id="traffic::TrafficIncidentNode" name="traffic::TrafficIncidentNode">
+<area shape="rect" id="node1" title=" " alt="" coords="481,696,692,861"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,358,147,435"/>
+<area shape="rect" id="node3" title=" " alt="" coords="171,358,255,435"/>
+<area shape="rect" id="node4" title=" " alt="" coords="333,358,409,435"/>
+<area shape="rect" id="node5" title=" " alt="" coords="535,358,639,435"/>
+<area shape="rect" id="node6" href="$classtraffic_1_1TrafficIncidentWorker.html" title=" " alt="" coords="899,204,1093,589"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1133,13,1187,90"/>
+<area shape="rect" id="node8" title=" " alt="" coords="810,5,1025,97"/>
+<area shape="rect" id="node9" title=" " alt="" coords="730,13,785,90"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1049,13,1109,90"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1323,13,1389,90"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="cpp_message::Mobility_Operation::encode_mobility_operation_message" name="cpp_message::Mobility_Operation::encode_mobility_operation_message">
+<area shape="rect" id="node1" title="helper functions for Mobility Operation message encoding." alt="" coords="435,5,619,61"/>
+<area shape="rect" id="node2" href="$classcpp__message_1_1Node.html#ae695b8d73a1f48e1e23eeb1f65c48b03" title="function callback when there is an outgoing mobility operation message. ." alt="" coords="200,5,387,61"/>
+<area shape="rect" id="node3" href="$classcpp__message_1_1Node.html#a04489e2beaa23d24330e507c97649bbc" title="Initialize pub/sub and params." alt="" coords="5,13,152,54"/>
+</map>

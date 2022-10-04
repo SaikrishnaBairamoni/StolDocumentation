@@ -1,0 +1,17 @@
+<map id="MapData" name="MapData">
+<area shape="rect" id="node1" title=" " alt="" coords="477,687,552,764"/>
+<area shape="rect" id="node2" title=" " alt="" coords="77,503,123,580"/>
+<area shape="rect" id="node3" href="$structIntersectionGeometryList.html" title=" " alt="" coords="819,401,987,479"/>
+<area shape="rect" id="node4" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="421,160,542,237"/>
+<area shape="rect" id="node9" href="$structRoadSegmentList.html" title=" " alt="" coords="296,401,451,479"/>
+<area shape="rect" id="node10" href="$structDataParameters.html" title=" " alt="" coords="189,503,305,580"/>
+<area shape="rect" id="node11" href="$structOCTET__STRING.html" title=" " alt="" coords="71,300,193,377"/>
+<area shape="rect" id="node14" href="$structRestrictionClassList.html" title=" " alt="" coords="457,401,612,479"/>
+<area shape="rect" id="node15" href="$structMapData_1_1MapData____regional.html" title=" " alt="" coords="519,300,710,377"/>
+<area shape="rect" id="node5" title=" " alt="" coords="337,5,388,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="421,5,459,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="497,5,551,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="575,5,638,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="5,160,75,237"/>
+<area shape="rect" id="node13" title=" " alt="" coords="99,160,155,237"/>
+</map>

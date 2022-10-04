@@ -1,0 +1,5 @@
+<map id="cpp_message::Node::outbound_bsm_message_callback" name="cpp_message::Node::outbound_bsm_message_callback">
+<area shape="rect" id="node1" title="function callback when there is an outgoing bsm message." alt="" coords="5,5,172,61"/>
+<area shape="rect" id="node2" href="$classcpp__message_1_1BSM__Message.html#af59e4f30ebaac3dd77c494ee8648c523" title="helper functions for BSM message encoding." alt="" coords="220,13,419,54"/>
+<area shape="rect" id="node3" href="$per__encoder_8h.html#ad9d25a879d4499db83fb133c1b8636b9" title=" " alt="" coords="467,20,620,47"/>
+</map>

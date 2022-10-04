@@ -1,0 +1,14 @@
+<map id="FullPositionVector" name="FullPositionVector">
+<area shape="rect" id="node1" title=" " alt="" coords="554,543,682,620"/>
+<area shape="rect" id="node2" href="$structDDateTime.html" title=" " alt="" coords="893,395,980,473"/>
+<area shape="rect" id="node3" title=" " alt="" coords="248,160,294,237"/>
+<area shape="rect" id="node9" href="$structTransmissionAndSpeed.html" title=" " alt="" coords="708,395,868,473"/>
+<area shape="rect" id="node10" href="$structPositionalAccuracy.html" title=" " alt="" coords="551,395,684,473"/>
+<area shape="rect" id="node11" href="$structPositionConfidenceSet.html" title=" " alt="" coords="156,395,309,473"/>
+<area shape="rect" id="node12" href="$structSpeedandHeadingandThrottleConfidence.html" title=" " alt="" coords="333,388,526,480"/>
+<area shape="rect" id="node4" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="697,160,818,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="614,5,664,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="697,5,736,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="773,5,828,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="852,5,914,83"/>
+</map>

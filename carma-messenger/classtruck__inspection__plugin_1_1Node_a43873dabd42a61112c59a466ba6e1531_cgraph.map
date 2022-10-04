@@ -1,0 +1,8 @@
+<map id="truck_inspection_plugin::Node::handle_on_configure" name="truck_inspection_plugin::Node::handle_on_configure">
+<area shape="rect" id="node1" title=" " alt="" coords="5,118,188,159"/>
+<area shape="rect" id="node2" href="$classtruck__inspection__plugin_1_1Node.html#aa0a40b9002312e0d5ced2570b26dfa4a" title=" " alt="" coords="261,5,433,61"/>
+<area shape="rect" id="node3" href="$classtruck__inspection__plugin_1_1Node.html#a32ef91cdf5f4eec9beeb842857227da3" title="service callback" alt="" coords="236,85,459,126"/>
+<area shape="rect" id="node4" href="$classtruck__inspection__plugin_1_1Node.html#ab39b02c0ab51f394216ff872fdd2a290" title="subscription callback" alt="" coords="240,150,455,191"/>
+<area shape="rect" id="node6" href="$classtruck__inspection__plugin_1_1Node.html#aa5056756f7dad2366d974254d4b571d5" title="callback for dynamic parameter updates" alt="" coords="263,215,432,271"/>
+<area shape="rect" id="node5" href="$classtruck__inspection__plugin_1_1Node.html#adf98fc49b341399ac86ccb57b46fb6a1" title=" " alt="" coords="507,150,669,191"/>
+</map>

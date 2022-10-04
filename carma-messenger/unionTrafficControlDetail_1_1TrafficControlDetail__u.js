@@ -1,0 +1,26 @@
+var unionTrafficControlDetail_1_1TrafficControlDetail__u =
+[
+    [ "TrafficControlDetail__latperm", "structTrafficControlDetail_1_1TrafficControlDetail__u_1_1TrafficControlDetail____latperm.html", "structTrafficControlDetail_1_1TrafficControlDetail__u_1_1TrafficControlDetail____latperm" ],
+    [ "chains", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a85186176a7b921bc63776f077f15feea", null ],
+    [ "closed", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#aa9a61cd9848372e7abf9a515156ad443", null ],
+    [ "direction", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a3204bbc5f2450e3613a0476695028228", null ],
+    [ "lataffinity", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#abad99d41f313b43df70549b0d87830fc", null ],
+    [ "latperm", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#af7dee4e8e3c708f034735e5044539b31", null ],
+    [ "maxplatoonsize", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a4f9a8b666f6138a3b5c03092f89daae3", null ],
+    [ "maxspeed", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#ad413ae18e8d538595af580f6701b414c", null ],
+    [ "maxvehaxles", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#ad932a1061cbb2163b78be4cff894d946", null ],
+    [ "maxvehheight", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#adc1d219f8b1c698767484d19b6b7b061", null ],
+    [ "maxvehlength", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a07bc3c32df33dde8eab8f39a7c65fc30", null ],
+    [ "maxvehmass", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a2dc96222fac1b5bd39ebfe2fc6b76ec3", null ],
+    [ "maxvehwidth", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a73f4923c046ba20851271c4f207559f5", null ],
+    [ "minhdwy", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a6706240c50ff27667944983849c7293b", null ],
+    [ "minplatoonhdwy", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#acbe5979884e78e5c32db7929cb04a074", null ],
+    [ "minspeed", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a39f8dcc8fee131be4d9a8063f316baa2", null ],
+    [ "minvehocc", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#af40f5f7e6c1afec6653f7b9c11eb1893", null ],
+    [ "notowing", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#aa33f8a843a5766ff1404cb9f17ffe72d", null ],
+    [ "parking", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#ab2447b5a50056ae194d095bd77f1fbdf", null ],
+    [ "restricted", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a8aed55c345c0dcacd6f723596f6daa50", null ],
+    [ "signal", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#aaa1cbb10bb499ca976434293726f709b", null ],
+    [ "stop", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#aab30da81294b206625b6d806323b5271", null ],
+    [ "yield", "unionTrafficControlDetail_1_1TrafficControlDetail__u.html#a4d0a1f2e7a05551453346a344be018b6", null ]
+];

@@ -1,0 +1,17 @@
+<map id="TestMessage04" name="TestMessage04">
+<area shape="rect" id="node1" title=" " alt="" coords="623,919,737,996"/>
+<area shape="rect" id="node2" href="$structTrafficControlRequest.html" title=" " alt="" coords="460,779,607,856"/>
+<area shape="rect" id="node3" title=" " alt="" coords="129,631,335,709"/>
+<area shape="rect" id="node4" href="$unionTrafficControlRequest_1_1TrafficControlRequest__u.html" title=" " alt="" coords="359,624,526,716"/>
+<area shape="rect" id="node5" title=" " alt="" coords="82,5,121,83"/>
+<area shape="rect" id="node10" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="297,160,418,237"/>
+<area shape="rect" id="node6" href="$structTrafficControlRequestV01.html" title=" " alt="" coords="289,484,458,561"/>
+<area shape="rect" id="node7" href="$structOCTET__STRING.html" title=" " alt="" coords="91,315,213,392"/>
+<area shape="rect" id="node8" title=" " alt="" coords="43,160,112,237"/>
+<area shape="rect" id="node9" title=" " alt="" coords="136,160,192,237"/>
+<area shape="rect" id="node15" href="$structTrafficControlRequestV01_1_1TrafficControlRequestV01____bounds.html" title=" " alt="" coords="421,300,595,407"/>
+<area shape="rect" id="node11" title=" " alt="" coords="255,5,305,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="330,5,385,83"/>
+<area shape="rect" id="node13" title=" " alt="" coords="409,5,471,83"/>
+<area shape="rect" id="node14" title=" " alt="" coords="350,315,397,392"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="TestMessage02" name="TestMessage02">
+<area shape="rect" id="node1" title=" " alt="" coords="163,783,277,860"/>
+<area shape="rect" id="node2" href="$structMobilityHeader.html" title=" " alt="" coords="438,503,546,580"/>
+<area shape="rect" id="node3" href="$structOCTET__STRING.html" title=" " alt="" coords="580,300,703,377"/>
+<area shape="rect" id="node12" href="$structMobilityLocation.html" title=" " alt="" coords="278,503,394,580"/>
+<area shape="rect" id="node4" title=" " alt="" coords="604,160,673,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="697,160,753,237"/>
+<area shape="rect" id="node6" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="239,160,361,237"/>
+<area shape="rect" id="node11" href="$structMobilityPath.html" title=" " alt="" coords="173,643,267,720"/>
+<area shape="rect" id="node14" href="$structMobilityLocationOffsets.html" title=" " alt="" coords="30,401,189,479"/>
+<area shape="rect" id="node7" title=" " alt="" coords="156,5,207,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="239,5,278,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="315,5,370,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="394,5,457,83"/>
+<area shape="rect" id="node13" title=" " alt="" coords="285,300,331,377"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="RTCMPackage" name="RTCMPackage">
+<area shape="rect" id="node1" title=" " alt="" coords="111,672,222,749"/>
+<area shape="rect" id="node2" href="$structRTCMheader.html" title=" " alt="" coords="293,532,392,609"/>
+<area shape="rect" id="node3" href="$structBIT__STRING__s.html" title=" " alt="" coords="540,329,655,407"/>
+<area shape="rect" id="node4" title=" " alt="" coords="757,160,827,237"/>
+<area shape="rect" id="node5" title=" " alt="" coords="548,160,604,237"/>
+<area shape="rect" id="node6" title=" " alt="" coords="519,5,558,83"/>
+<area shape="rect" id="node7" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="222,160,343,237"/>
+<area shape="rect" id="node11" href="$structAntennaOffsetSet.html" title=" " alt="" coords="348,329,473,407"/>
+<area shape="rect" id="node13" href="$structRTCMmessageList.html" title=" " alt="" coords="89,431,244,508"/>
+<area shape="rect" id="node8" title=" " alt="" coords="180,5,231,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="255,5,310,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="334,5,397,83"/>
+<area shape="rect" id="node12" title=" " alt="" coords="470,160,517,237"/>
+</map>

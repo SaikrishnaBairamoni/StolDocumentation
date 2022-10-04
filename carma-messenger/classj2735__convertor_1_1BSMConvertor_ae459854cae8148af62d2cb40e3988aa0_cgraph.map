@@ -1,0 +1,4 @@
+<map id="j2735_convertor::BSMConvertor::convert" name="j2735_convertor::BSMConvertor::convert">
+<area shape="rect" id="node1" title="Convert the contents of a carma_v2x_msgs::msg::BSMCoreData into a j2735_v2x_msgs::msg::BSMCoreData." alt="" coords="5,29,211,71"/>
+<area shape="rect" id="node2" href="$classj2735__convertor_1_1BSMConvertor.html#aec756d7d2446d79c7ea9fc433ae1caa3" title="Convert the contents of a j2735_v2x_msgs::msg::BSM into a carma_v2x_msgs::msg::BSM." alt="" coords="259,29,464,71"/>
+</map>

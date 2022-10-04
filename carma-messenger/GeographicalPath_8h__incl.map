@@ -1,0 +1,133 @@
+<map id="carma&#45;messenger&#45;core/cpp_message/include/generated/GeographicalPath.h" name="carma&#45;messenger&#45;core/cpp_message/include/generated/GeographicalPath.h">
+<area shape="rect" id="node1" title=" " alt="" coords="2828,5,3028,61"/>
+<area shape="rect" id="node2" href="$asn__application_8h.html" title=" " alt="" coords="5699,1229,5821,1256"/>
+<area shape="rect" id="node30" href="$DescriptiveName_8h.html" title=" " alt="" coords="299,856,431,883"/>
+<area shape="rect" id="node33" href="$asn__internal_8h.html" title=" " alt="" coords="5405,1005,5507,1032"/>
+<area shape="rect" id="node35" href="$LaneWidth_8h.html" title=" " alt="" coords="1967,707,2062,733"/>
+<area shape="rect" id="node39" href="$DirectionOfUse_8h.html" title=" " alt="" coords="3867,856,3989,883"/>
+<area shape="rect" id="node41" href="$BOOLEAN_8h.html" title=" " alt="" coords="10196,557,10292,584"/>
+<area shape="rect" id="node42" href="$HeadingSlice_8h.html" title=" " alt="" coords="420,707,529,733"/>
+<area shape="rect" id="node44" href="$OffsetSystem_8h.html" title=" " alt="" coords="1029,184,1139,211"/>
+<area shape="rect" id="node48" href="$asn__SEQUENCE__OF_8h.html" title=" " alt="" coords="4993,856,5151,883"/>
+<area shape="rect" id="node50" href="$constr__SEQUENCE__OF_8h.html" title=" " alt="" coords="5327,856,5499,883"/>
+<area shape="rect" id="node56" href="$constr__SEQUENCE_8h.html" title=" " alt="" coords="6965,931,7112,957"/>
+<area shape="rect" id="node70" href="$RegionalExtension_8h.html" title=" " alt="" coords="2203,856,2341,883"/>
+<area shape="rect" id="node75" href="$constr__CHOICE_8h.html" title=" " alt="" coords="965,931,1091,957"/>
+<area shape="rect" id="node117" href="$GeometricProjection_8h.html" title=" " alt="" coords="2405,632,2555,659"/>
+<area shape="rect" id="node120" href="$Position3D_8h.html" title=" " alt="" coords="7482,781,7577,808"/>
+<area shape="rect" id="node124" href="$ValidRegion_8h.html" title=" " alt="" coords="5293,109,5395,136"/>
+<area shape="rect" id="node129" href="$RoadSegmentReferenceID_8h.html" title=" " alt="" coords="9456,856,9643,883"/>
+<area shape="rect" id="node3" href="$asn__system_8h.html" title=" " alt="" coords="4954,1603,5057,1629"/>
+<area shape="rect" id="node13" href="$asn__codecs_8h.html" title=" " alt="" coords="5925,1304,6027,1331"/>
+<area shape="rect" id="node14" href="$constr__TYPE_8h.html" title=" " alt="" coords="5464,1304,5573,1331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="4603,1677,4663,1704"/>
+<area shape="rect" id="node5" title=" " alt="" coords="4687,1677,4750,1704"/>
+<area shape="rect" id="node6" title=" " alt="" coords="4775,1677,4839,1704"/>
+<area shape="rect" id="node7" title=" " alt="" coords="4863,1677,4950,1704"/>
+<area shape="rect" id="node8" title=" " alt="" coords="4974,1677,5037,1704"/>
+<area shape="rect" id="node9" title=" " alt="" coords="5061,1677,5129,1704"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5153,1677,5221,1704"/>
+<area shape="rect" id="node11" title=" " alt="" coords="5245,1677,5323,1704"/>
+<area shape="rect" id="node12" title=" " alt="" coords="5347,1677,5432,1704"/>
+<area shape="rect" id="node15" href="$ber__tlv__length_8h.html" title=" " alt="" coords="5101,1379,5214,1405"/>
+<area shape="rect" id="node16" href="$ber__tlv__tag_8h.html" title=" " alt="" coords="5239,1379,5335,1405"/>
+<area shape="rect" id="node17" href="$ber__decoder_8h.html" title=" " alt="" coords="5557,1379,5659,1405"/>
+<area shape="rect" id="node18" href="$der__encoder_8h.html" title=" " alt="" coords="5683,1379,5786,1405"/>
+<area shape="rect" id="node19" href="$xer__decoder_8h.html" title=" " alt="" coords="5810,1379,5913,1405"/>
+<area shape="rect" id="node20" href="$xer__encoder_8h.html" title=" " alt="" coords="5937,1379,6039,1405"/>
+<area shape="rect" id="node21" href="$per__decoder_8h.html" title=" " alt="" coords="4721,1379,4823,1405"/>
+<area shape="rect" id="node24" href="$per__encoder_8h.html" title=" " alt="" coords="4847,1379,4950,1405"/>
+<area shape="rect" id="node25" href="$constraints_8h.html" title=" " alt="" coords="5267,1528,5363,1555"/>
+<area shape="rect" id="node26" href="$asn__random__fill_8h.html" title=" " alt="" coords="5359,1379,5481,1405"/>
+<area shape="rect" id="node27" href="$oer__decoder_8h.html" title=" " alt="" coords="4974,1379,5077,1405"/>
+<area shape="rect" id="node29" href="$oer__encoder_8h.html" title=" " alt="" coords="6063,1379,6166,1405"/>
+<area shape="rect" id="node22" href="$per__support_8h.html" title=" " alt="" coords="4846,1453,4946,1480"/>
+<area shape="rect" id="node23" href="$asn__bit__data_8h.html" title=" " alt="" coords="4836,1528,4943,1555"/>
+<area shape="rect" id="node28" href="$oer__support_8h.html" title=" " alt="" coords="4977,1453,5077,1480"/>
+<area shape="rect" id="node31" href="$IA5String_8h.html" title=" " alt="" coords="347,931,434,957"/>
+<area shape="rect" id="node32" href="$OCTET__STRING_8h.html" title=" " alt="" coords="353,1005,485,1032"/>
+<area shape="rect" id="node34" title=" " alt="" coords="5494,1080,5562,1107"/>
+<area shape="rect" id="node36" href="$NativeInteger_8h.html" title=" " alt="" coords="7441,1005,7551,1032"/>
+<area shape="rect" id="node37" href="$INTEGER_8h.html" title=" " alt="" coords="7141,1080,7230,1107"/>
+<area shape="rect" id="node38" href="$asn__codecs__prim_8h.html" title=" " alt="" coords="7118,1155,7253,1181"/>
+<area shape="rect" id="node40" href="$NativeEnumerated_8h.html" title=" " alt="" coords="4237,931,4376,957"/>
+<area shape="rect" id="node43" href="$BIT__STRING_8h.html" title=" " alt="" coords="398,781,509,808"/>
+<area shape="rect" id="node45" href="$Zoom_8h.html" title=" " alt="" coords="9397,931,9462,957"/>
+<area shape="rect" id="node46" href="$NodeListXY_8h.html" title=" " alt="" coords="5551,259,5654,285"/>
+<area shape="rect" id="node96" href="$NodeListLL_8h.html" title=" " alt="" coords="1029,259,1131,285"/>
+<area shape="rect" id="node47" href="$NodeSetXY_8h.html" title=" " alt="" coords="5564,333,5665,360"/>
+<area shape="rect" id="node90" href="$ComputedLane_8h.html" title=" " alt="" coords="7875,781,7995,808"/>
+<area shape="rect" id="node52" href="$NodeXY_8h.html" title=" " alt="" coords="6595,408,6677,435"/>
+<area shape="rect" id="node49" href="$asn__SET__OF_8h.html" title=" " alt="" coords="5307,931,5418,957"/>
+<area shape="rect" id="node51" href="$constr__SET__OF_8h.html" title=" " alt="" coords="5799,1155,5924,1181"/>
+<area shape="rect" id="node53" href="$NodeOffsetPointXY_8h.html" title=" " alt="" coords="7704,781,7851,808"/>
+<area shape="rect" id="node76" href="$NodeAttributeSetXY_8h.html" title=" " alt="" coords="5957,483,6107,509"/>
+<area shape="rect" id="node54" href="$Node-XY-20b_8h.html" title=" " alt="" coords="6839,856,6950,883"/>
+<area shape="rect" id="node57" href="$Node-XY-22b_8h.html" title=" " alt="" coords="7887,856,7998,883"/>
+<area shape="rect" id="node59" href="$Node-XY-24b_8h.html" title=" " alt="" coords="8209,856,8319,883"/>
+<area shape="rect" id="node61" href="$Node-XY-26b_8h.html" title=" " alt="" coords="8395,856,8506,883"/>
+<area shape="rect" id="node63" href="$Node-XY-28b_8h.html" title=" " alt="" coords="8022,856,8133,883"/>
+<area shape="rect" id="node65" href="$Node-XY-32b_8h.html" title=" " alt="" coords="8530,856,8641,883"/>
+<area shape="rect" id="node67" href="$Node-LLmD-64b_8h.html" title=" " alt="" coords="7633,856,7761,883"/>
+<area shape="rect" id="node55" href="$Offset-B10_8h.html" title=" " alt="" coords="6795,931,6890,957"/>
+<area shape="rect" id="node58" href="$Offset-B11_8h.html" title=" " alt="" coords="7542,931,7637,957"/>
+<area shape="rect" id="node60" href="$Offset-B12_8h.html" title=" " alt="" coords="7893,931,7987,957"/>
+<area shape="rect" id="node62" href="$Offset-B13_8h.html" title=" " alt="" coords="8114,931,8209,957"/>
+<area shape="rect" id="node64" href="$Offset-B14_8h.html" title=" " alt="" coords="7661,931,7755,957"/>
+<area shape="rect" id="node66" href="$Offset-B16_8h.html" title=" " alt="" coords="8233,931,8327,957"/>
+<area shape="rect" id="node68" href="$Longitude_8h.html" title=" " alt="" coords="7779,931,7869,957"/>
+<area shape="rect" id="node69" href="$Latitude_8h.html" title=" " alt="" coords="8011,931,8090,957"/>
+<area shape="rect" id="node71" href="$RegionId_8h.html" title=" " alt="" coords="2568,931,2651,957"/>
+<area shape="rect" id="node72" href="$ANY_8h.html" title=" " alt="" coords="1267,931,1327,957"/>
+<area shape="rect" id="node73" href="$asn__ioc_8h.html" title=" " alt="" coords="2112,1229,2189,1256"/>
+<area shape="rect" id="node74" href="$OPEN__TYPE_8h.html" title=" " alt="" coords="1419,1080,1530,1107"/>
+<area shape="rect" id="node77" href="$NodeAttributeXYList_8h.html" title=" " alt="" coords="6115,781,6267,808"/>
+<area shape="rect" id="node79" href="$SegmentAttributeXYList_8h.html" title=" " alt="" coords="5917,781,6091,808"/>
+<area shape="rect" id="node81" href="$LaneDataAttributeList_8h.html" title=" " alt="" coords="4289,557,4447,584"/>
+<area shape="rect" id="node78" href="$NodeAttributeXY_8h.html" title=" " alt="" coords="5903,856,6033,883"/>
+<area shape="rect" id="node80" href="$SegmentAttributeXY_8h.html" title=" " alt="" coords="5677,856,5827,883"/>
+<area shape="rect" id="node82" href="$LaneDataAttribute_8h.html" title=" " alt="" coords="4299,632,4437,659"/>
+<area shape="rect" id="node83" href="$DeltaAngle_8h.html" title=" " alt="" coords="4502,931,4597,957"/>
+<area shape="rect" id="node84" href="$RoadwayCrownAngle_8h.html" title=" " alt="" coords="4621,931,4776,957"/>
+<area shape="rect" id="node85" href="$MergeDivergeNodeAngle_8h.html" title=" " alt="" coords="4800,931,4976,957"/>
+<area shape="rect" id="node86" href="$SpeedLimitList_8h.html" title=" " alt="" coords="4436,707,4556,733"/>
+<area shape="rect" id="node87" href="$RegulatorySpeedLimit_8h.html" title=" " alt="" coords="4467,781,4626,808"/>
+<area shape="rect" id="node88" href="$SpeedLimitType_8h.html" title=" " alt="" coords="4254,856,4381,883"/>
+<area shape="rect" id="node89" href="$Velocity_8h.html" title=" " alt="" coords="5102,931,5181,957"/>
+<area shape="rect" id="node91" href="$LaneID_8h.html" title=" " alt="" coords="8504,931,8579,957"/>
+<area shape="rect" id="node92" href="$DSRC__Angle_8h.html" title=" " alt="" coords="8603,931,8711,957"/>
+<area shape="rect" id="node93" href="$Scale-B12_8h.html" title=" " alt="" coords="8735,931,8827,957"/>
+<area shape="rect" id="node94" href="$DrivenLineOffsetSm_8h.html" title=" " alt="" coords="8852,931,9001,957"/>
+<area shape="rect" id="node95" href="$DrivenLineOffsetLg_8h.html" title=" " alt="" coords="9025,931,9169,957"/>
+<area shape="rect" id="node97" href="$NodeSetLL_8h.html" title=" " alt="" coords="1667,333,1765,360"/>
+<area shape="rect" id="node98" href="$NodeLL_8h.html" title=" " alt="" coords="2053,408,2131,435"/>
+<area shape="rect" id="node99" href="$NodeOffsetPointLL_8h.html" title=" " alt="" coords="3121,781,3265,808"/>
+<area shape="rect" id="node112" href="$NodeAttributeSetLL_8h.html" title=" " alt="" coords="2793,483,2941,509"/>
+<area shape="rect" id="node100" href="$Node-LL-24B_8h.html" title=" " alt="" coords="3733,856,3843,883"/>
+<area shape="rect" id="node102" href="$Node-LL-28B_8h.html" title=" " alt="" coords="3138,856,3249,883"/>
+<area shape="rect" id="node104" href="$Node-LL-32B_8h.html" title=" " alt="" coords="6058,856,6169,883"/>
+<area shape="rect" id="node106" href="$Node-LL-36B_8h.html" title=" " alt="" coords="3273,856,3383,883"/>
+<area shape="rect" id="node108" href="$Node-LL-44B_8h.html" title=" " alt="" coords="3407,856,3518,883"/>
+<area shape="rect" id="node110" href="$Node-LL-48B_8h.html" title=" " alt="" coords="3542,856,3653,883"/>
+<area shape="rect" id="node101" href="$OffsetLL-B12_8h.html" title=" " alt="" coords="3777,931,3887,957"/>
+<area shape="rect" id="node103" href="$OffsetLL-B14_8h.html" title=" " alt="" coords="2979,931,3090,957"/>
+<area shape="rect" id="node105" href="$OffsetLL-B16_8h.html" title=" " alt="" coords="6558,931,6669,957"/>
+<area shape="rect" id="node107" href="$OffsetLL-B18_8h.html" title=" " alt="" coords="3217,931,3327,957"/>
+<area shape="rect" id="node109" href="$OffsetLL-B22_8h.html" title=" " alt="" coords="3403,931,3514,957"/>
+<area shape="rect" id="node111" href="$OffsetLL-B24_8h.html" title=" " alt="" coords="3590,931,3701,957"/>
+<area shape="rect" id="node113" href="$NodeAttributeLLList_8h.html" title=" " alt="" coords="2569,781,2719,808"/>
+<area shape="rect" id="node115" href="$SegmentAttributeLLList_8h.html" title=" " alt="" coords="2816,781,2987,808"/>
+<area shape="rect" id="node114" href="$NodeAttributeLL_8h.html" title=" " alt="" coords="2568,856,2696,883"/>
+<area shape="rect" id="node116" href="$SegmentAttributeLL_8h.html" title=" " alt="" coords="2821,856,2971,883"/>
+<area shape="rect" id="node118" href="$Extent_8h.html" title=" " alt="" coords="2994,856,3062,883"/>
+<area shape="rect" id="node119" href="$Circle_8h.html" title=" " alt="" coords="4097,707,4162,733"/>
+<area shape="rect" id="node122" href="$Radius-B12_8h.html" title=" " alt="" coords="4064,931,4163,957"/>
+<area shape="rect" id="node123" href="$DistanceUnits_8h.html" title=" " alt="" coords="4115,856,4229,883"/>
+<area shape="rect" id="node121" href="$DSRC__Elevation_8h.html" title=" " alt="" coords="8352,931,8480,957"/>
+<area shape="rect" id="node125" href="$ShapePointSet_8h.html" title=" " alt="" coords="5498,184,5617,211"/>
+<area shape="rect" id="node126" href="$RegionPointSet_8h.html" title=" " alt="" coords="7617,707,7740,733"/>
+<area shape="rect" id="node127" href="$RegionList_8h.html" title=" " alt="" coords="6403,781,6498,808"/>
+<area shape="rect" id="node128" href="$RegionOffsets_8h.html" title=" " alt="" coords="6548,856,6663,883"/>
+<area shape="rect" id="node130" href="$RoadRegulatorID_8h.html" title=" " alt="" coords="9485,931,9616,957"/>
+<area shape="rect" id="node131" href="$RoadSegmentID_8h.html" title=" " alt="" coords="9641,931,9767,957"/>
+</map>

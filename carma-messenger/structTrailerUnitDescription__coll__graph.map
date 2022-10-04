@@ -1,0 +1,13 @@
+<map id="TrailerUnitDescription" name="TrailerUnitDescription">
+<area shape="rect" id="node1" title=" " alt="" coords="345,495,492,572"/>
+<area shape="rect" id="node2" title=" " alt="" coords="79,5,118,83"/>
+<area shape="rect" id="node5" href="$structasn__struct__ctx__s.html" title=" " alt="" coords="476,160,598,237"/>
+<area shape="rect" id="node9" href="$structPivotPointDescription.html" title=" " alt="" coords="44,327,190,405"/>
+<area shape="rect" id="node3" title=" " alt="" coords="234,160,280,237"/>
+<area shape="rect" id="node4" href="$structBumperHeights.html" title=" " alt="" coords="496,327,608,405"/>
+<area shape="rect" id="node10" href="$structNode__XY__24b.html" title=" " alt="" coords="365,327,472,405"/>
+<area shape="rect" id="node11" href="$structTrailerHistoryPointList.html" title=" " alt="" coords="757,327,912,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="593,5,644,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="427,5,482,83"/>
+<area shape="rect" id="node8" title=" " alt="" coords="506,5,568,83"/>
+</map>
