@@ -1,0 +1,7 @@
+<map id="streets_vehicle_scheduler::signalized_vehicle_scheduler::calculate_deceleration_time" name="streets_vehicle_scheduler::signalized_vehicle_scheduler::calculate_deceleration_time">
+<area shape="rect" id="node1" title="Method to calculate time interval necessary for deceleration from v_hat to departure speed...." alt="" coords="1000,5,1196,61"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#a616f990b94f85cbe7c8ac5ecc215d41c" title="Method to use vehicle kinematic information to estimate earliest possible entering time (EET) for an ..." alt="" coords="737,5,952,61"/>
+<area shape="rect" id="node3" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#a4d00a1ab964b44569653d414280a3419" title="Estimate an entering time (ET) for a given Entering Vehicle (EV). ET is estimated based on the EV&#39;s e..." alt="" coords="493,5,689,61"/>
+<area shape="rect" id="node4" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#ac41bc42db46cbbf7a037486fa46dd7e0" title="Schedule all Entering Vehicles (EVs). Method first organizes all EVs into lists based on their entry ..." alt="" coords="249,5,445,61"/>
+<area shape="rect" id="node5" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#a2572fdbb86e141df40174d618fe2a3d0" title="Method to schedule vehicles. Given and empty intersection_schedule shared pointer and a map of vehicl..." alt="" coords="5,5,201,61"/>
+</map>

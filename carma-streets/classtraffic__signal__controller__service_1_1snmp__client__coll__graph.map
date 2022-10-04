@@ -1,0 +1,9 @@
+<map id="traffic_signal_controller_service::snmp_client" name="traffic_signal_controller_service::snmp_client">
+<area shape="rect" id="node1" title=" " alt="" coords="215,175,391,325"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,112,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="136,5,227,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="251,5,290,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="313,5,369,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="394,5,449,83"/>
+<area shape="rect" id="node7" title=" " alt="" coords="510,5,549,83"/>
+</map>

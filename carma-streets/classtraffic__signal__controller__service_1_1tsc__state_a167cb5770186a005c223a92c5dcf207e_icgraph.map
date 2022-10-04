@@ -1,0 +1,4 @@
+<map id="traffic_signal_controller_service::tsc_state::get_following_event" name="traffic_signal_controller_service::tsc_state::get_following_event">
+<area shape="rect" id="node1" title="Get predicted next movement event given a current event." alt="" coords="229,5,384,61"/>
+<area shape="rect" id="node2" href="$classtraffic__signal__controller__service_1_1tsc__state.html#af739a1bdb23638f28315e8680f407fdd" title="Updates spat with future movement events for vehicle phases." alt="" coords="5,5,181,61"/>
+</map>

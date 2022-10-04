@@ -1,0 +1,7 @@
+<map id="traffic_signal_controller_service::tsc_state::add_future_movement_events" name="traffic_signal_controller_service::tsc_state::add_future_movement_events">
+<area shape="rect" id="node1" title="Updates spat with future movement events for vehicle phases." alt="" coords="5,104,181,160"/>
+<area shape="rect" id="node2" href="$classtraffic__signal__controller__service_1_1tsc__state.html#a6ac79c6f55b96327e9ad3ef8de6f0f5a" title="Helper function to convert hour&#45;tenths time to epoch time." alt="" coords="229,5,415,61"/>
+<area shape="rect" id="node3" href="$classtraffic__signal__controller__service_1_1tsc__state.html#ab63c22e776c61212200f708edc26159f" title="Helper function to convert epoch time to hour&#45;tenths time." alt="" coords="463,104,665,160"/>
+<area shape="rect" id="node4" href="$classtraffic__signal__controller__service_1_1tsc__state.html#a167cb5770186a005c223a92c5dcf207e" title="Get predicted next movement event given a current event." alt="" coords="245,136,399,192"/>
+<area shape="rect" id="node5" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="528,200,600,227"/>
+</map>

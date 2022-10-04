@@ -1,0 +1,8 @@
+<map id="streets_vehicle_scheduler::signalized_vehicle_scheduler::estimate_clearance_time" name="streets_vehicle_scheduler::signalized_vehicle_scheduler::estimate_clearance_time">
+<area shape="rect" id="node1" title="Estimate clearance time of a vehicle given it&#39;s current speed." alt="" coords="5,99,201,155"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1vehicle__scheduler.html#af2c80eb87e5a9cabaad660544003663c" title="Helper method to get link lane OAILanelet_info from intersection information given a vehicle." alt="" coords="249,27,423,83"/>
+<area shape="rect" id="node5" href="$classOpenAPI_1_1OAILanelet__info.html#abc1c4d5d24a2dafb175874ecad09cfad" title=" " alt="" coords="263,107,409,148"/>
+<area shape="rect" id="node6" href="$classOpenAPI_1_1OAILanelet__info.html#a9ed2860829d5aeba3062f26e78afcbdc" title=" " alt="" coords="263,172,409,213"/>
+<area shape="rect" id="node3" href="$classOpenAPI_1_1OAILanelet__info.html#a489d1a475686159298697bccabd2bd52" title=" " alt="" coords="471,5,617,47"/>
+<area shape="rect" id="node4" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="508,71,580,98"/>
+</map>

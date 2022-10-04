@@ -1,0 +1,10 @@
+<map id="streets_vehicles::vehicle" name="streets_vehicles::vehicle">
+<area shape="rect" id="node1" title="Data struct for vehicle status and intent information." alt="" coords="325,263,489,340"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,60,90"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,13,161,90"/>
+<area shape="rect" id="node4" title=" " alt="" coords="236,13,275,90"/>
+<area shape="rect" id="node5" title=" " alt="" coords="384,13,431,90"/>
+<area shape="rect" id="node6" title=" " alt="" coords="458,13,533,90"/>
+<area shape="rect" id="node7" title=" " alt="" coords="557,13,655,90"/>
+<area shape="rect" id="node8" title=" " alt="" coords="680,5,844,97"/>
+</map>

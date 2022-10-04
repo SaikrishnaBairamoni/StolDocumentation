@@ -1,0 +1,3 @@
+<map id="traffic_signal_controller_service::tsc_service::enable_spat" name="traffic_signal_controller_service::tsc_service::enable_spat">
+<area shape="rect" id="node1" title="Method to enable spat using the TSC Service SNMP Client." alt="" coords="5,29,160,85"/>
+</map>
