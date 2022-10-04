@@ -1,5 +1,0 @@
-<map id="message_services::models::vehicle_status_intent::setBsm_id" name="message_services::models::vehicle_status_intent::setBsm_id">
-<area shape="rect" id="node1" title=" " alt="" coords="271,61,449,117"/>
-<area shape="rect" id="node2" href="$classmessage__services_1_1workers_1_1vehicle__status__intent__worker.html#a0203b3d7780e0bbdd10eebbb99eaf2a0" title="If the vehicle id from the MobilityOperation message exist in vehicle status and intent map,..." alt="" coords="5,5,223,76"/>
-<area shape="rect" id="node3" href="$classmessage__services_1_1workers_1_1vehicle__status__intent__worker.html#a26398faa5205b06efa6d35291d17288e" title="If the vehicle id from the mobilitypath message exist in vehicle status and intent map,..." alt="" coords="19,100,209,171"/>
-</map>

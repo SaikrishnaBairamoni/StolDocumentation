@@ -1,5 +1,0 @@
-<map id="traffic_signal_controller_service::tsc_service::initialize_kafka_producer" name="traffic_signal_controller_service::tsc_service::initialize_kafka_producer">
-<area shape="rect" id="node1" title="Initialize Kafka SPaT producer." alt="" coords="307,5,471,61"/>
-<area shape="rect" id="node2" href="$classtraffic__signal__controller__service_1_1tsc__service.html#a0f10530cccdd582172877692d6f480f5" title="Method to initialize the tsc_service." alt="" coords="104,5,259,61"/>
-<area shape="rect" id="node3" href="$tsc__client__service_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,20,56,47"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="streets_vehicle_scheduler::signalized_vehicle_scheduler::find_movement_state_for_lane" name="streets_vehicle_scheduler::signalized_vehicle_scheduler::find_movement_state_for_lane">
-<area shape="rect" id="node1" title="find the movement state info from the modified spat for a given entry lane." alt="" coords="5,5,211,61"/>
-<area shape="rect" id="node2" href="$classOpenAPI_1_1OAILanelet__info.html#a71c6691fa0f9af797b4540f8a94ad9be" title=" " alt="" coords="259,13,415,54"/>
-</map>

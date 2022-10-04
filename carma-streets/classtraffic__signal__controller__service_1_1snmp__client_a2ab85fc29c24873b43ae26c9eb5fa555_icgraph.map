@@ -1,4 +1,0 @@
-<map id="traffic_signal_controller_service::snmp_client::log_error" name="traffic_signal_controller_service::snmp_client::log_error">
-<area shape="rect" id="node1" title="Finds error type from status and logs an error." alt="" coords="211,5,365,61"/>
-<area shape="rect" id="node2" href="$classtraffic__signal__controller__service_1_1snmp__client.html#aae8b1a53ede8a44967b8d3f75f68f58c" title="Returns true or false depending on whether the request could be processed for given input OID at the ..." alt="" coords="5,5,163,61"/>
-</map>
