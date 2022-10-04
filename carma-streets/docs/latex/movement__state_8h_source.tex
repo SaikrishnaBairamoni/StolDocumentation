@@ -1,0 +1,34 @@
+\hypertarget{movement__state_8h_source}{}\doxysection{movement\+\_\+state.\+h}
+\label{movement__state_8h_source}\index{streets\_utils/streets\_signal\_phase\_and\_timing/include/movement\_state.h@{streets\_utils/streets\_signal\_phase\_and\_timing/include/movement\_state.h}}
+\mbox{\hyperlink{movement__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{movement__event_8h}{movement\_event.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{connection__maneuver__assist_8h}{connection\_maneuver\_assist.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{signal__phase__and__timing__exception_8h}{signal\_phase\_and\_timing\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <rapidjson/rapidjson.h>}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00014}00014 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacesignal__phase__and__timing}{signal\_phase\_and\_timing}}\{}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00015}\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{00015}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{movement\_state}}\{}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00020}\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_a1de3e024b500c0b85ebc30fcfba0f9ab}{00020}}         std::string \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_a1de3e024b500c0b85ebc30fcfba0f9ab}{movement\_name}};}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00025}\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_ad403f25c761b6ef77b4bbc6bacbfc888}{00025}}         uint8\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_ad403f25c761b6ef77b4bbc6bacbfc888}{signal\_group}} = 0;}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00034}\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_a087beaba691971b31df26e90bf4e81c4}{00034}}         std::list<movement\_event> \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_a087beaba691971b31df26e90bf4e81c4}{state\_time\_speed}};}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00039}\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_aa3d4d3985d6aeb065506bc71a30479d3}{00039}}         std::list<connection\_maneuver\_assist> \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_aa3d4d3985d6aeb065506bc71a30479d3}{maneuver\_assist\_list}};}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00046}00046         rapidjson::Value \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_aa872f4da276fd17264851264ed1dde73}{toJson}}(rapidjson::Document::AllocatorType \&allocator) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00052}00052         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_add078711d1cf73ce1f433c4b34532fcc}{fromJson}}(\textcolor{keyword}{const} rapidjson::Value \&val);}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00060}00060         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_a5d194d48be7e68acd6725161fbd9b00d}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{movement\_state}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00068}00068         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_aa13a66411886587bb468d9bfb9ab94cd}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{movement\_state}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00069}00069     }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00070}00070     \};}
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{movement__state_8h_source_l00072}00072 \}}
+
+\end{DoxyCode}

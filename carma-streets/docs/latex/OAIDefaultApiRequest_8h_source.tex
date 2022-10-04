@@ -1,0 +1,89 @@
+\hypertarget{OAIDefaultApiRequest_8h_source}{}\doxysection{OAIDefault\+Api\+Request.\+h}
+\label{OAIDefaultApiRequest_8h_source}\index{streets\_utils/streets\_api/intersection\_server\_api/src/requests/OAIDefaultApiRequest.h@{streets\_utils/streets\_api/intersection\_server\_api/src/requests/OAIDefaultApiRequest.h}}
+\mbox{\hyperlink{OAIDefaultApiRequest_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00012}00012 \textcolor{preprocessor}{\#ifndef OAI\_OAIDefaultApiRequest\_H}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00013}00013 \textcolor{preprocessor}{\#define OAI\_OAIDefaultApiRequest\_H}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00016}00016 \textcolor{preprocessor}{\#include <QStringList>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <QMultiMap>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00018}00018 \textcolor{preprocessor}{\#include <QNetworkReply>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00019}00019 \textcolor{preprocessor}{\#include <QSharedPointer>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00021}00021 \textcolor{preprocessor}{\#include <qhttpengine/socket.h>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00022}00022 \textcolor{preprocessor}{\#include "{}OAIIntersection\_info.h"{}}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00023}00023 \textcolor{preprocessor}{\#include "{}OAILanelet\_info.h"{}}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00024}00024 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00025}00025 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{OAIDefaultApiHandler_8h}{OAIDefaultApiHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00027}00027 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00029}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest}{00029}} \textcolor{keyword}{class }\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest}{OAIDefaultApiRequest}} : \textcolor{keyword}{public} \mbox{\hyperlink{classQObject}{QObject}}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00030}00030 \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00031}00031     Q\_OBJECT}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00033}00033 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00034}00034     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aeedbcc671900c2cd999c43b7f6b03a69}{OAIDefaultApiRequest}}(QHttpEngine::Socket *s, QSharedPointer<OAIDefaultApiHandler> \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aaf4e607b20a3b81d44872c3fec505fab}{handler}});}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00035}00035     \textcolor{keyword}{virtual} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a5ffb5d4e832a2950fab26826f79ad30e}{\string~OAIDefaultApiRequest}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00037}00037     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a443d74de54ecf54cf72e131247b31e1a}{getConflictLaneletsRequest}}(\textcolor{keyword}{const} QString\& link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00038}00038     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_acf9bd751a5a06efa07fcf4abd8c48743}{getIntersectionInfoRequest}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00039}00039     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a1512951034600f24e7bb6357d1c4bb0b}{listDepartureLaneletsRequest}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00040}00040     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a2131548b5865878d0af20639b3892f28}{listEntryLaneletsRequest}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00041}00041     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_acad07b267b8894ad424edc3b26d01b56}{listLinkLaneletsRequest}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00042}00042     }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00044}00044     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a6b3fba564ad635c29493c9e8b3b908cd}{getConflictLaneletsResponse}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00045}00045     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a0cf20d36dd13537496545f22c68d7e7a}{getIntersectionInfoResponse}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\_info}}\& res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00046}00046     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a3a351ff00bf2321da4961aca419594d0}{listDepartureLaneletsResponse}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00047}00047     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a6f0463ae25b3b4324e1cc48443c4ad26}{listEntryLaneletsResponse}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00048}00048     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_ac387a360b1c0d0c5a00a13427087b854}{listLinkLaneletsResponse}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00049}00049     }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00051}00051     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a47c315511e2ccb30325d10e311699bb2}{getConflictLaneletsError}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res, QNetworkReply::NetworkError error\_type, QString\& error\_str);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00052}00052     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aed6f4046ba9205a865775797ff684843}{getIntersectionInfoError}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\_info}}\& res, QNetworkReply::NetworkError error\_type, QString\& error\_str);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00053}00053     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a2ac96e7f0ccd4d3df34c16118d78c951}{listDepartureLaneletsError}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res, QNetworkReply::NetworkError error\_type, QString\& error\_str);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00054}00054     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a188a6c56aac9feda59578f689db634a7}{listEntryLaneletsError}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res, QNetworkReply::NetworkError error\_type, QString\& error\_str);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00055}00055     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a3f13cec772a135a85bfd7a47dc6da2a4}{listLinkLaneletsError}}(\textcolor{keyword}{const} QList<OAILanelet\_info>\& res, QNetworkReply::NetworkError error\_type, QString\& error\_str);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00056}00056     }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00058}00058     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a1522b0b1a767ace685cb72f5abfa3dd3}{sendCustomResponse}}(QByteArray \& res, QNetworkReply::NetworkError error\_type);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00060}00060     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a1522b0b1a767ace685cb72f5abfa3dd3}{sendCustomResponse}}(QIODevice *res, QNetworkReply::NetworkError error\_type);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00062}00062     QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a6c24fd88fbda3b73897fd83210f08267}{getRequestHeaders}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00064}00064     QHttpEngine::Socket* \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_ae3e73f5f191c8eca6ba60ad8925292a7}{getRawSocket}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00066}00066     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a78124323d848254a200f7f94312f50df}{setResponseHeaders}}(\textcolor{keyword}{const} QMultiMap<QString,QString>\& headers);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00068}00068 signals:}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00069}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a78901c764654073f35a5580353ab141a}{00069}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a78901c764654073f35a5580353ab141a}{getConflictLanelets}}(qint32 link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00070}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a34d46c8e4ce7dd307eaf2e2d5f1dcf98}{00070}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a34d46c8e4ce7dd307eaf2e2d5f1dcf98}{getIntersectionInfo}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00071}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aebcf8359681090dac0c880aad539203d}{00071}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aebcf8359681090dac0c880aad539203d}{listDepartureLanelets}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00072}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a4e4421cdda0dfae542d34a32a5e5a335}{00072}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a4e4421cdda0dfae542d34a32a5e5a335}{listEntryLanelets}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00073}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a42e83929c0a50a09e3684fbc60b9a6c0}{00073}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a42e83929c0a50a09e3684fbc60b9a6c0}{listLinkLanelets}}();}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00074}00074     }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00076}00076 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00077}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a8b07467ae3cd6208f57deef66a729876}{00077}}     QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a8b07467ae3cd6208f57deef66a729876}{requestHeaders}};}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00078}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_ad0b819abd9617dff16f7a7ea499f9630}{00078}}     QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_ad0b819abd9617dff16f7a7ea499f9630}{responseHeaders}};}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00079}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aeaea03a7a91c12d3b226836ac2a2f53b}{00079}}     QHttpEngine::Socket  *\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aeaea03a7a91c12d3b226836ac2a2f53b}{socket}};}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00080}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aaf4e607b20a3b81d44872c3fec505fab}{00080}}     QSharedPointer<OAIDefaultApiHandler> \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aaf4e607b20a3b81d44872c3fec505fab}{handler}};}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00082}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a6cf85d9e2bc06d0df7b303002a015826}{00082}}     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_a6cf85d9e2bc06d0df7b303002a015826}{setSocketResponseHeaders}}()\{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00083}00083         QHttpEngine::Socket::HeaderMap resHeaders;}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00084}00084         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} itr = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_ad0b819abd9617dff16f7a7ea499f9630}{responseHeaders}}.begin(); itr != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_ad0b819abd9617dff16f7a7ea499f9630}{responseHeaders}}.end(); ++itr) \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00085}00085             resHeaders.insert(itr.key().toUtf8(), itr.value().toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00086}00086         \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00087}00087         \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest_aeaea03a7a91c12d3b226836ac2a2f53b}{socket}}-\/>setHeaders(resHeaders);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00088}00088     \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00089}00089 \};}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00091}00091 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiRequest_8h_source_l00093}00093 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// OAI\_OAIDefaultApiRequest\_H}}
+
+\end{DoxyCode}

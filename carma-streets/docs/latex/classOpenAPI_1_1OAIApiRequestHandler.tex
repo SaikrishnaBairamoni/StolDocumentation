@@ -1,0 +1,100 @@
+\hypertarget{classOpenAPI_1_1OAIApiRequestHandler}{}\doxysection{Open\+API\+::OAIApi\+Request\+Handler Class Reference}
+\label{classOpenAPI_1_1OAIApiRequestHandler}\index{OpenAPI::OAIApiRequestHandler@{OpenAPI::OAIApiRequestHandler}}
+
+
+{\ttfamily \#include $<$OAIApi\+Router.\+h$>$}
+
+
+
+Inheritance diagram for Open\+API\+::OAIApi\+Request\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classOpenAPI_1_1OAIApiRequestHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Open\+API\+::OAIApi\+Request\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classOpenAPI_1_1OAIApiRequestHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIApiRequestHandler_a2c97293f6c187426dbec8898d6a0991c}{request\+Received}} (QHttp\+Engine\+::\+Socket $\ast$socket)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classOpenAPI_1_1OAIApiRequestHandler_affa0f6a3535f666772ec0b91c8375814}{process}} (QHttp\+Engine\+::\+Socket $\ast$socket, const QString \&path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{OAIApiRouter_8h_source_l00032}{32}} of file \mbox{\hyperlink{OAIApiRouter_8h_source}{OAIApi\+Router.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIApiRequestHandler_affa0f6a3535f666772ec0b91c8375814}\label{classOpenAPI_1_1OAIApiRequestHandler_affa0f6a3535f666772ec0b91c8375814}} 
+\index{OpenAPI::OAIApiRequestHandler@{OpenAPI::OAIApiRequestHandler}!process@{process}}
+\index{process@{process}!OpenAPI::OAIApiRequestHandler@{OpenAPI::OAIApiRequestHandler}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily virtual void Open\+API\+::\+OAIApi\+Request\+Handler\+::process (\begin{DoxyParamCaption}\item[{QHttp\+Engine\+::\+Socket $\ast$}]{socket,  }\item[{const QString \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIApiRouter_8h_source_l00039}{39}} of file \mbox{\hyperlink{OAIApiRouter_8h_source}{OAIApi\+Router.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00039                                                                         \{}
+\DoxyCodeLine{00040         Q\_UNUSED(path);}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042         \textcolor{comment}{// If the slot requires all data to be received, check to see if this is}}
+\DoxyCodeLine{00043         \textcolor{comment}{// already the case, otherwise, wait until the rest of it arrives}}
+\DoxyCodeLine{00044         \textcolor{keywordflow}{if} (socket-\/>bytesAvailable() >= socket-\/>contentLength()) \{}
+\DoxyCodeLine{00045             emit \mbox{\hyperlink{classOpenAPI_1_1OAIApiRequestHandler_a2c97293f6c187426dbec8898d6a0991c}{requestReceived}}(socket);}
+\DoxyCodeLine{00046         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00047             connect(socket, \&QHttpEngine::Socket::readChannelFinished, [\textcolor{keyword}{this}, socket]() \{}
+\DoxyCodeLine{00048                 emit \mbox{\hyperlink{classOpenAPI_1_1OAIApiRequestHandler_a2c97293f6c187426dbec8898d6a0991c}{requestReceived}}(socket);}
+\DoxyCodeLine{00049             \});}
+\DoxyCodeLine{00050         \}}
+\DoxyCodeLine{00051     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classOpenAPI_1_1OAIApiRequestHandler_a2c97293f6c187426dbec8898d6a0991c}{request\+Received()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIApiRequestHandler_a2c97293f6c187426dbec8898d6a0991c}\label{classOpenAPI_1_1OAIApiRequestHandler_a2c97293f6c187426dbec8898d6a0991c}} 
+\index{OpenAPI::OAIApiRequestHandler@{OpenAPI::OAIApiRequestHandler}!requestReceived@{requestReceived}}
+\index{requestReceived@{requestReceived}!OpenAPI::OAIApiRequestHandler@{OpenAPI::OAIApiRequestHandler}}
+\doxysubsubsection{\texorpdfstring{requestReceived}{requestReceived}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIApi\+Request\+Handler\+::request\+Received (\begin{DoxyParamCaption}\item[{QHttp\+Engine\+::\+Socket $\ast$}]{socket }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{intersection__model_2src_2server_2src_2main_8cpp_source_l00077}{main()}}, and \mbox{\hyperlink{OAIApiRouter_8h_source_l00039}{process()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIApiRequestHandler_a2c97293f6c187426dbec8898d6a0991c_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+api/intersection\+\_\+server\+\_\+api/src/handlers/\mbox{\hyperlink{OAIApiRouter_8h}{OAIApi\+Router.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,549 @@
+\hypertarget{classmessage__services_1_1models_1_1mobilitypath}{}\doxysection{message\+\_\+services\+::models\+::mobilitypath Class Reference}
+\label{classmessage__services_1_1models_1_1mobilitypath}\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+
+
+{\ttfamily \#include $<$mobilitypath.\+h$>$}
+
+
+
+Inheritance diagram for message\+\_\+services\+::models\+::mobilitypath\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classmessage__services_1_1models_1_1mobilitypath__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for message\+\_\+services\+::models\+::mobilitypath\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1models_1_1mobilitypath__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_ad3429c6f0cff5f6e9a1dce86d7c733e5}{mobilitypath}} ()
+\item 
+virtual \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_ae88e7c701167a4807123e99d80d3a6d1}{$\sim$mobilitypath}} ()
+\item 
+virtual void \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_afbbc3ef6af17798073a50b031d75a041}{from\+Json\+Object}} (const rapidjson\+::\+Value \&obj)
+\item 
+virtual bool \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_aecad2aa5c33292a001797fd583dd7017}{as\+Json\+Object}} (rapidjson\+::\+Writer$<$ rapidjson\+::\+String\+Buffer $>$ $\ast$writer) const
+\item 
+std\+::string \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_abff8b6060f26397a69d6d252391cbb80}{generate\+\_\+hash\+\_\+sender\+\_\+timestamp\+\_\+id}} (std\+::string sender\+\_\+bsm\+\_\+id, uint64\+\_\+t timestamp)
+\item 
+\mbox{\hyperlink{namespacemessage__services_1_1models_a9e03cd19834d0c325d36186863373663}{trajectory\+\_\+t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{get\+Trajectory}} () const
+\item 
+void \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_ab7d0aef62353f87501bfa2f704185331}{set\+Trajectory}} (\mbox{\hyperlink{namespacemessage__services_1_1models_a9e03cd19834d0c325d36186863373663}{trajectory\+\_\+t}} \mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory}{trajectory}})
+\item 
+\mbox{\hyperlink{namespacemessage__services_1_1models_a570b713faafff4221c10023ae8051c77}{mobility\+\_\+header\+\_\+t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc}{get\+Header}} () const
+\item 
+void \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_ae687737a1e1830a6db1ae0330156e1a5}{set\+Header}} (\mbox{\hyperlink{namespacemessage__services_1_1models_a570b713faafff4221c10023ae8051c77}{mobility\+\_\+header\+\_\+t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::time\+\_\+t \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a2879743c7dca177828d67342cc0cda83}{msg\+\_\+received\+\_\+timestamp\+\_\+}} = std\+::chrono\+::duration\+\_\+cast$<$std\+::chrono\+::milliseconds$>$(std\+::chrono\+::system\+\_\+clock\+::now().time\+\_\+since\+\_\+epoch()).count()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemessage__services_1_1models_a570b713faafff4221c10023ae8051c77}{mobility\+\_\+header\+\_\+t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}}
+\item 
+\mbox{\hyperlink{namespacemessage__services_1_1models_a9e03cd19834d0c325d36186863373663}{trajectory\+\_\+t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a39cacdac837350e33207b341c8e54237}{operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath}{mobilitypath}} \&mobilitypath\+\_\+obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8h_source_l00017}{17}} of file \mbox{\hyperlink{mobilitypath_8h_source}{mobilitypath.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_ad3429c6f0cff5f6e9a1dce86d7c733e5}\label{classmessage__services_1_1models_1_1mobilitypath_ad3429c6f0cff5f6e9a1dce86d7c733e5}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!mobilitypath@{mobilitypath}}
+\index{mobilitypath@{mobilitypath}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{mobilitypath()}{mobilitypath()}}
+{\footnotesize\ttfamily message\+\_\+services\+::models\+::mobilitypath\+::mobilitypath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013 : \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}}(), \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}}() \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_ae88e7c701167a4807123e99d80d3a6d1}\label{classmessage__services_1_1models_1_1mobilitypath_ae88e7c701167a4807123e99d80d3a6d1}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!````~mobilitypath@{$\sim$mobilitypath}}
+\index{````~mobilitypath@{$\sim$mobilitypath}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{$\sim$mobilitypath()}{~mobilitypath()}}
+{\footnotesize\ttfamily message\+\_\+services\+::models\+::mobilitypath\+::$\sim$mobilitypath (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_aecad2aa5c33292a001797fd583dd7017}\label{classmessage__services_1_1models_1_1mobilitypath_aecad2aa5c33292a001797fd583dd7017}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!asJsonObject@{asJsonObject}}
+\index{asJsonObject@{asJsonObject}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{asJsonObject()}{asJsonObject()}}
+{\footnotesize\ttfamily bool message\+\_\+services\+::models\+::mobilitypath\+::as\+Json\+Object (\begin{DoxyParamCaption}\item[{rapidjson\+::\+Writer$<$ rapidjson\+::\+String\+Buffer $>$ $\ast$}]{writer }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmessage__services_1_1models_1_1baseMessage_af4f0e051256d8e1377cba89120a34689}{message\+\_\+services\+::models\+::base\+Message}}.
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00119}{119}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00120         \{}
+\DoxyCodeLine{00121             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00122             \{}
+\DoxyCodeLine{00123                 writer-\/>StartObject();}
+\DoxyCodeLine{00124                 writer-\/>Key(\textcolor{stringliteral}{"{}header"{}});}
+\DoxyCodeLine{00125                 writer-\/>StartObject();}
+\DoxyCodeLine{00126                 writer-\/>Key(\textcolor{stringliteral}{"{}sender\_id"{}});}
+\DoxyCodeLine{00127                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc}{getHeader}}().sender\_id.c\_str());}
+\DoxyCodeLine{00128                 writer-\/>Key(\textcolor{stringliteral}{"{}recipient\_id"{}});}
+\DoxyCodeLine{00129                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc}{getHeader}}().recipient\_id.c\_str());}
+\DoxyCodeLine{00130                 writer-\/>Key(\textcolor{stringliteral}{"{}plan\_id"{}});}
+\DoxyCodeLine{00131                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc}{getHeader}}().plan\_id.c\_str());}
+\DoxyCodeLine{00132                 writer-\/>Key(\textcolor{stringliteral}{"{}timestamp"{}});}
+\DoxyCodeLine{00133                 writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc}{getHeader}}().\mbox{\hyperlink{namespacesimulate__mobilityoperation_a53dff21a6d447ca660693de3432b79d0}{timestamp}});}
+\DoxyCodeLine{00134                 writer-\/>EndObject();}
+\DoxyCodeLine{00135                 writer-\/>Key(\textcolor{stringliteral}{"{}trajectory"{}});}
+\DoxyCodeLine{00136                 writer-\/>StartObject();}
+\DoxyCodeLine{00137                 writer-\/>Key(\textcolor{stringliteral}{"{}location"{}});}
+\DoxyCodeLine{00138                 writer-\/>StartObject();}
+\DoxyCodeLine{00139                 writer-\/>Key(\textcolor{stringliteral}{"{}ecef\_x"{}});}
+\DoxyCodeLine{00140                 writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().location.ecef\_x);}
+\DoxyCodeLine{00141                 writer-\/>Key(\textcolor{stringliteral}{"{}ecef\_y"{}});}
+\DoxyCodeLine{00142                 writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().location.ecef\_y);}
+\DoxyCodeLine{00143                 writer-\/>Key(\textcolor{stringliteral}{"{}ecef\_z"{}});}
+\DoxyCodeLine{00144                 writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().location.ecef\_z);}
+\DoxyCodeLine{00145                 writer-\/>Key(\textcolor{stringliteral}{"{}timestamp"{}});}
+\DoxyCodeLine{00146                 writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().location.timestamp);}
+\DoxyCodeLine{00147                 writer-\/>EndObject();}
+\DoxyCodeLine{00148                 writer-\/>Key(\textcolor{stringliteral}{"{}offsets"{}});}
+\DoxyCodeLine{00149                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} = 0; \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} < this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_a5568404ca707f44c9fd0c0ba673e31e9}{MAX\_POINTS\_IN\_MESSAGE}}; \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}++)}
+\DoxyCodeLine{00150                 \{}
+\DoxyCodeLine{00151                     writer-\/>StartObject();}
+\DoxyCodeLine{00152                     writer-\/>Key(\textcolor{stringliteral}{"{}offset\_x"{}});}
+\DoxyCodeLine{00153                     writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_a150c97e34c1bdf6d9ed8f8908e521ef4}{offsets}}[\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}].offset\_z);}
+\DoxyCodeLine{00154                     writer-\/>Key(\textcolor{stringliteral}{"{}offset\_y"{}});}
+\DoxyCodeLine{00155                     writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_a150c97e34c1bdf6d9ed8f8908e521ef4}{offsets}}[\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}].offset\_z);}
+\DoxyCodeLine{00156                     writer-\/>Key(\textcolor{stringliteral}{"{}offset\_z"{}});}
+\DoxyCodeLine{00157                     writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}{getTrajectory}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_a150c97e34c1bdf6d9ed8f8908e521ef4}{offsets}}[\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}].offset\_z);}
+\DoxyCodeLine{00158                     writer-\/>EndObject();}
+\DoxyCodeLine{00159                 \}}
+\DoxyCodeLine{00160 }
+\DoxyCodeLine{00161                 writer-\/>EndObject();}
+\DoxyCodeLine{00162                 writer-\/>EndObject();}
+\DoxyCodeLine{00163 }
+\DoxyCodeLine{00164                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00165             \}}
+\DoxyCodeLine{00166             \textcolor{keywordflow}{catch} (std::exception \&ex)}
+\DoxyCodeLine{00167             \{}
+\DoxyCodeLine{00168                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}mobilitypath model: "{}}, ex.what());}
+\DoxyCodeLine{00169                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00170             \}}
+\DoxyCodeLine{00171         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{mobilitypath_8cpp_source_l00192}{get\+Header()}}, \mbox{\hyperlink{mobilitypath_8cpp_source_l00201}{get\+Trajectory()}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00019}{simulate\+\_\+bsm\+::i}}, \mbox{\hyperlink{trajectory_8h_source_l00032}{message\+\_\+services\+::models\+::trajectory\+::\+MAX\+\_\+\+POINTS\+\_\+\+IN\+\_\+\+MESSAGE}}, \mbox{\hyperlink{trajectory_8h_source_l00034}{message\+\_\+services\+::models\+::trajectory\+::offsets}}, and \mbox{\hyperlink{simulate__mobilityoperation_8py_source_l00026}{simulate\+\_\+mobilityoperation\+::timestamp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1models_1_1mobilitypath_aecad2aa5c33292a001797fd583dd7017_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_afbbc3ef6af17798073a50b031d75a041}\label{classmessage__services_1_1models_1_1mobilitypath_afbbc3ef6af17798073a50b031d75a041}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!fromJsonObject@{fromJsonObject}}
+\index{fromJsonObject@{fromJsonObject}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{fromJsonObject()}{fromJsonObject()}}
+{\footnotesize\ttfamily void message\+\_\+services\+::models\+::mobilitypath\+::from\+Json\+Object (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Value \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmessage__services_1_1models_1_1baseMessage_a4fedff3ceb673e0200e7738bd6099d5d}{message\+\_\+services\+::models\+::base\+Message}}.
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00018         \{}
+\DoxyCodeLine{00019             \textcolor{keywordflow}{if} (obj.IsObject())}
+\DoxyCodeLine{00020             \{}
+\DoxyCodeLine{00021                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator obj\_itr = obj.MemberBegin(); obj\_itr != obj.MemberEnd(); obj\_itr++)}
+\DoxyCodeLine{00022                 \{}
+\DoxyCodeLine{00023                     \textcolor{keywordflow}{if} (obj\_itr-\/>value.IsObject() \&\& boost::iequals(std::string(obj\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}metadata"{}})))}
+\DoxyCodeLine{00024                     \{}
+\DoxyCodeLine{00025                         \mbox{\hyperlink{namespacemessage__services_1_1models_a570b713faafff4221c10023ae8051c77}{mobility\_header\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}};}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027                         \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator header\_itr = obj\_itr-\/>value.MemberBegin(); header\_itr != obj\_itr-\/>value.MemberEnd(); header\_itr++)}
+\DoxyCodeLine{00028                         \{}
+\DoxyCodeLine{00029                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}hostStaticId"{}}))}
+\DoxyCodeLine{00030                             \{}
+\DoxyCodeLine{00031                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ab1e13a6163e4364c8555b1f76266b90e}{sender\_id}} = header\_itr-\/>value.GetString();}
+\DoxyCodeLine{00032                             \}}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}targetStaticId"{}}))}
+\DoxyCodeLine{00035                             \{}
+\DoxyCodeLine{00036                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ab01fbf2ad0fe327960b8f4ae0427ad30}{recipient\_id}} = (header\_itr-\/>value.GetString());}
+\DoxyCodeLine{00037                             \}}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}hostBSMId"{}}))}
+\DoxyCodeLine{00040                             \{}
+\DoxyCodeLine{00041                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_aa255791d982853fa272bed31d3e33dd1}{sender\_bsm\_id}} = (header\_itr-\/>value.GetString());}
+\DoxyCodeLine{00042                             \}}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}planId"{}}))}
+\DoxyCodeLine{00045                             \{}
+\DoxyCodeLine{00046                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ad2f506286283588e3455eaf8e47236b4}{plan\_id}} = (header\_itr-\/>value.GetString());}
+\DoxyCodeLine{00047                             \}}
+\DoxyCodeLine{00048                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}timestamp"{}}))}
+\DoxyCodeLine{00049                             \{}
+\DoxyCodeLine{00050                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_a950a8571b2b4426afbe2d26979c2dff4}{timestamp}} = std::stol(header\_itr-\/>value.GetString());}
+\DoxyCodeLine{00051                             \}}
+\DoxyCodeLine{00052                         \}}
+\DoxyCodeLine{00053                         \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_ae687737a1e1830a6db1ae0330156e1a5}{setHeader}}(\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}});}
+\DoxyCodeLine{00054                     \}}
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056                     \textcolor{keywordflow}{if} (obj\_itr-\/>value.IsObject() \&\& boost::iequals(std::string(obj\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}trajectory"{}})))}
+\DoxyCodeLine{00057                     \{}
+\DoxyCodeLine{00058                         \textcolor{comment}{// trajectory\_t trajectory;}}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060                         \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator tr\_itr = obj\_itr-\/>value.MemberBegin(); tr\_itr != obj\_itr-\/>value.MemberEnd(); tr\_itr++)}
+\DoxyCodeLine{00061                         \{}
+\DoxyCodeLine{00062                             \textcolor{keywordflow}{if} (tr\_itr-\/>value.IsObject() \&\& boost::iequals(std::string(tr\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}location"{}})))}
+\DoxyCodeLine{00063                             \{}
+\DoxyCodeLine{00064                                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator loc\_itr = tr\_itr-\/>value.MemberBegin(); loc\_itr != tr\_itr-\/>value.MemberEnd(); loc\_itr++)}
+\DoxyCodeLine{00065                                 \{}
+\DoxyCodeLine{00066                                     \textcolor{keywordflow}{if} (std::string(loc\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}ecefX"{}}))}
+\DoxyCodeLine{00067                                     \{}
+\DoxyCodeLine{00068                                         this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_ab0eb62121303460bdd28cce240378592}{location}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1locationECEF_a84d4dac32167a8ce7204edb46c4c56a9}{ecef\_x}} = (loc\_itr-\/>value.GetInt64());}
+\DoxyCodeLine{00069                                     \}}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071                                     \textcolor{keywordflow}{if} (std::string(loc\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}ecefY"{}}))}
+\DoxyCodeLine{00072                                     \{}
+\DoxyCodeLine{00073                                         this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_ab0eb62121303460bdd28cce240378592}{location}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1locationECEF_aca77d28c85d51c76f60a3a2380ad55a4}{ecef\_y}} = (loc\_itr-\/>value.GetInt64());}
+\DoxyCodeLine{00074                                     \}}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076                                     \textcolor{keywordflow}{if} (std::string(loc\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}ecefZ"{}}))}
+\DoxyCodeLine{00077                                     \{}
+\DoxyCodeLine{00078                                         this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_ab0eb62121303460bdd28cce240378592}{location}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1locationECEF_af72f93d975711dc915ba7fecd5838fe5}{ecef\_z}} = (loc\_itr-\/>value.GetInt64());}
+\DoxyCodeLine{00079                                     \}}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081                                     \textcolor{keywordflow}{if} (std::string(loc\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}timestamp"{}}))}
+\DoxyCodeLine{00082                                     \{}
+\DoxyCodeLine{00083                                         this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_ab0eb62121303460bdd28cce240378592}{location}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1locationECEF_a71a43c3823f0cd9f417805667469a685}{timestamp}} = std::stol(loc\_itr-\/>value.GetString());}
+\DoxyCodeLine{00084                                     \}}
+\DoxyCodeLine{00085                                 \}}
+\DoxyCodeLine{00086                             \}}
+\DoxyCodeLine{00087                             \textcolor{keywordflow}{if} (boost::iequals(std::string(tr\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}offsets"{}})) \&\& tr\_itr-\/>value.IsArray())}
+\DoxyCodeLine{00088                             \{}
+\DoxyCodeLine{00089                                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstValueIterator offset\_itr = tr\_itr-\/>value.Begin(); offset\_itr != tr\_itr-\/>value.End(); offset\_itr++)}
+\DoxyCodeLine{00090                                 \{}
+\DoxyCodeLine{00091                                     models::locationOffsetECEF offset;}
+\DoxyCodeLine{00092                                     \textcolor{keyword}{const} rapidjson::Value \&offset\_value = *offset\_itr;}
+\DoxyCodeLine{00093                                     \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator each\_offset\_itr = offset\_value.MemberBegin(); each\_offset\_itr != offset\_value.MemberEnd(); each\_offset\_itr++)}
+\DoxyCodeLine{00094                                     \{}
+\DoxyCodeLine{00095                                         \textcolor{keywordflow}{if} (std::string(each\_offset\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}offsetX"{}}))}
+\DoxyCodeLine{00096                                         \{}
+\DoxyCodeLine{00097                                             offset.offset\_x = (each\_offset\_itr-\/>value.GetInt());}
+\DoxyCodeLine{00098                                         \}}
+\DoxyCodeLine{00099 }
+\DoxyCodeLine{00100                                         \textcolor{keywordflow}{if} (std::string(each\_offset\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}offsetY"{}}))}
+\DoxyCodeLine{00101                                         \{}
+\DoxyCodeLine{00102                                             offset.offset\_y = (each\_offset\_itr-\/>value.GetInt());}
+\DoxyCodeLine{00103                                         \}}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105                                         \textcolor{keywordflow}{if} (std::string(each\_offset\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}offsetZ"{}}))}
+\DoxyCodeLine{00106                                         \{}
+\DoxyCodeLine{00107                                             offset.offset\_z = (each\_offset\_itr-\/>value.GetInt());}
+\DoxyCodeLine{00108                                         \}}
+\DoxyCodeLine{00109                                     \}}
+\DoxyCodeLine{00110                                     this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1trajectory_a150c97e34c1bdf6d9ed8f8908e521ef4}{offsets}}.push\_back(offset);}
+\DoxyCodeLine{00111                                 \}}
+\DoxyCodeLine{00112                             \}}
+\DoxyCodeLine{00113                         \}}
+\DoxyCodeLine{00114                     \}}
+\DoxyCodeLine{00115                 \}}
+\DoxyCodeLine{00116             \}}
+\DoxyCodeLine{00117         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{locationECEF_8h_source_l00035}{message\+\_\+services\+::models\+::location\+ECEF\+::ecef\+\_\+x}}, \mbox{\hyperlink{locationECEF_8h_source_l00036}{message\+\_\+services\+::models\+::location\+ECEF\+::ecef\+\_\+y}}, \mbox{\hyperlink{locationECEF_8h_source_l00037}{message\+\_\+services\+::models\+::location\+ECEF\+::ecef\+\_\+z}}, \mbox{\hyperlink{mobilitypath_8h_source_l00022}{header}}, \mbox{\hyperlink{trajectory_8h_source_l00033}{message\+\_\+services\+::models\+::trajectory\+::location}}, \mbox{\hyperlink{locationOffsetECEF_8h_source_l00033}{message\+\_\+services\+::models\+::location\+Offset\+ECEF\+::offset\+\_\+x}}, \mbox{\hyperlink{locationOffsetECEF_8h_source_l00034}{message\+\_\+services\+::models\+::location\+Offset\+ECEF\+::offset\+\_\+y}}, \mbox{\hyperlink{locationOffsetECEF_8h_source_l00035}{message\+\_\+services\+::models\+::location\+Offset\+ECEF\+::offset\+\_\+z}}, \mbox{\hyperlink{trajectory_8h_source_l00034}{message\+\_\+services\+::models\+::trajectory\+::offsets}}, \mbox{\hyperlink{mobilityHeader_8h_source_l00037}{message\+\_\+services\+::models\+::mobility\+\_\+header\+::plan\+\_\+id}}, \mbox{\hyperlink{mobilityHeader_8h_source_l00036}{message\+\_\+services\+::models\+::mobility\+\_\+header\+::recipient\+\_\+id}}, \mbox{\hyperlink{mobilityHeader_8h_source_l00038}{message\+\_\+services\+::models\+::mobility\+\_\+header\+::sender\+\_\+bsm\+\_\+id}}, \mbox{\hyperlink{mobilityHeader_8h_source_l00035}{message\+\_\+services\+::models\+::mobility\+\_\+header\+::sender\+\_\+id}}, \mbox{\hyperlink{mobilitypath_8cpp_source_l00196}{set\+Header()}}, \mbox{\hyperlink{locationECEF_8h_source_l00038}{message\+\_\+services\+::models\+::location\+ECEF\+::timestamp}}, and \mbox{\hyperlink{mobilityHeader_8h_source_l00039}{message\+\_\+services\+::models\+::mobility\+\_\+header\+::timestamp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1models_1_1mobilitypath_afbbc3ef6af17798073a50b031d75a041_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_abff8b6060f26397a69d6d252391cbb80}\label{classmessage__services_1_1models_1_1mobilitypath_abff8b6060f26397a69d6d252391cbb80}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!generate\_hash\_sender\_timestamp\_id@{generate\_hash\_sender\_timestamp\_id}}
+\index{generate\_hash\_sender\_timestamp\_id@{generate\_hash\_sender\_timestamp\_id}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{generate\_hash\_sender\_timestamp\_id()}{generate\_hash\_sender\_timestamp\_id()}}
+{\footnotesize\ttfamily std\+::string message\+\_\+services\+::models\+::mobilitypath\+::generate\+\_\+hash\+\_\+sender\+\_\+timestamp\+\_\+id (\begin{DoxyParamCaption}\item[{std\+::string}]{sender\+\_\+bsm\+\_\+id,  }\item[{uint64\+\_\+t}]{timestamp }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00186}{186}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00187         \{}
+\DoxyCodeLine{00188             std::stringstream hash\_ss;}
+\DoxyCodeLine{00189             hash\_ss << sender\_bsm\_id << \mbox{\hyperlink{namespacesimulate__mobilityoperation_a53dff21a6d447ca660693de3432b79d0}{timestamp}};}
+\DoxyCodeLine{00190             \textcolor{keywordflow}{return} hash\_ss.str();}
+\DoxyCodeLine{00191         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{simulate__mobilityoperation_8py_source_l00026}{simulate\+\_\+mobilityoperation\+::timestamp}}.
+
+
+
+Referenced by \mbox{\hyperlink{mobilitypath__worker_8cpp_source_l00023}{message\+\_\+services\+::workers\+::mobilitypath\+\_\+worker\+::process\+\_\+incoming\+\_\+msg()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1models_1_1mobilitypath_abff8b6060f26397a69d6d252391cbb80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc}\label{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{getHeader()}{getHeader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemessage__services_1_1models_a570b713faafff4221c10023ae8051c77}{mobility\+\_\+header\+\_\+t}} message\+\_\+services\+::models\+::mobilitypath\+::get\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00192}{192}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00193         \{}
+\DoxyCodeLine{00194             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}};}
+\DoxyCodeLine{00195         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{mobilitypath_8h_source_l00022}{header}}.
+
+
+
+Referenced by \mbox{\hyperlink{mobilitypath_8cpp_source_l00119}{as\+Json\+Object()}}, \mbox{\hyperlink{vehicle__status__intent__service_8cpp_source_l00241}{message\+\_\+services\+::services\+::vehicle\+\_\+status\+\_\+intent\+\_\+service\+::compose\+\_\+vehicle\+\_\+status\+\_\+intent()}}, \mbox{\hyperlink{mobilitypath__worker_8cpp_source_l00023}{message\+\_\+services\+::workers\+::mobilitypath\+\_\+worker\+::process\+\_\+incoming\+\_\+msg()}}, and \mbox{\hyperlink{vehicle__status__intent__worker_8cpp_source_l00088}{message\+\_\+services\+::workers\+::vehicle\+\_\+status\+\_\+intent\+\_\+worker\+::update\+\_\+insert\+\_\+by\+\_\+incoming\+\_\+mobilitypath\+\_\+msg()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1models_1_1mobilitypath_a5c2a26862cf57b6ecf5a925f877ab5dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}\label{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!getTrajectory@{getTrajectory}}
+\index{getTrajectory@{getTrajectory}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{getTrajectory()}{getTrajectory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemessage__services_1_1models_a9e03cd19834d0c325d36186863373663}{trajectory\+\_\+t}} message\+\_\+services\+::models\+::mobilitypath\+::get\+Trajectory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00201}{201}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00202         \{}
+\DoxyCodeLine{00203             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}};}
+\DoxyCodeLine{00204         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{mobilitypath_8h_source_l00023}{trajectory}}.
+
+
+
+Referenced by \mbox{\hyperlink{mobilitypath_8cpp_source_l00119}{as\+Json\+Object()}}, and \mbox{\hyperlink{vehicle__status__intent__service_8cpp_source_l00241}{message\+\_\+services\+::services\+::vehicle\+\_\+status\+\_\+intent\+\_\+service\+::compose\+\_\+vehicle\+\_\+status\+\_\+intent()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1models_1_1mobilitypath_a120136307c1694b847f330a0b9ac046c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_ae687737a1e1830a6db1ae0330156e1a5}\label{classmessage__services_1_1models_1_1mobilitypath_ae687737a1e1830a6db1ae0330156e1a5}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily void message\+\_\+services\+::models\+::mobilitypath\+::set\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemessage__services_1_1models_a570b713faafff4221c10023ae8051c77}{mobility\+\_\+header\+\_\+t}}}]{header }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00196}{196}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00197         \{}
+\DoxyCodeLine{00198             this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}} = \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}{header}};}
+\DoxyCodeLine{00199         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{mobilitypath_8h_source_l00022}{header}}.
+
+
+
+Referenced by \mbox{\hyperlink{mobilitypath_8cpp_source_l00017}{from\+Json\+Object()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1models_1_1mobilitypath_ae687737a1e1830a6db1ae0330156e1a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_ab7d0aef62353f87501bfa2f704185331}\label{classmessage__services_1_1models_1_1mobilitypath_ab7d0aef62353f87501bfa2f704185331}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!setTrajectory@{setTrajectory}}
+\index{setTrajectory@{setTrajectory}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{setTrajectory()}{setTrajectory()}}
+{\footnotesize\ttfamily void message\+\_\+services\+::models\+::mobilitypath\+::set\+Trajectory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacemessage__services_1_1models_a9e03cd19834d0c325d36186863373663}{trajectory\+\_\+t}}}]{trajectory }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00205}{205}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00206         \{}
+\DoxyCodeLine{00207             this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}} = \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}{trajectory}};}
+\DoxyCodeLine{00208         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{mobilitypath_8h_source_l00023}{trajectory}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_a39cacdac837350e33207b341c8e54237}\label{classmessage__services_1_1models_1_1mobilitypath_a39cacdac837350e33207b341c8e54237}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilitypath}{mobilitypath}} \&}]{mobilitypath\+\_\+obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8cpp_source_l00173}{173}} of file \mbox{\hyperlink{mobilitypath_8cpp_source}{mobilitypath.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00174         \{}
+\DoxyCodeLine{00175             out << std::fixed;}
+\DoxyCodeLine{00176             out << std::setprecision(6);}
+\DoxyCodeLine{00177             out << \textcolor{stringliteral}{"{}mobilitypath model: sender\_id =  "{}} << mobilitypath\_obj.header.sender\_id}
+\DoxyCodeLine{00178                       << \textcolor{stringliteral}{"{}, sender\_bsm\_id ="{}} << mobilitypath\_obj.header.sender\_bsm\_id}
+\DoxyCodeLine{00179                       << \textcolor{stringliteral}{"{}, timestamp = "{}} << mobilitypath\_obj.header.timestamp}
+\DoxyCodeLine{00180                       << \textcolor{stringliteral}{"{}, location = \{ ecef\_x= "{}} << mobilitypath\_obj.trajectory.location.ecef\_x << \textcolor{stringliteral}{"{}, ecef\_y= "{}}}
+\DoxyCodeLine{00181                       << mobilitypath\_obj.trajectory.location.ecef\_y << \textcolor{stringliteral}{"{}, ecef\_z= "{}} << mobilitypath\_obj.trajectory.offsets[0].offset\_x << \textcolor{stringliteral}{"{}, offsets = \{ offset\_x= "{}} << mobilitypath\_obj.trajectory.location.ecef\_x << \textcolor{stringliteral}{"{}, ecef\_y= "{}}}
+\DoxyCodeLine{00182                       << mobilitypath\_obj.trajectory.offsets[0].offset\_y << \textcolor{stringliteral}{"{}, offset\_z= "{}} << mobilitypath\_obj.trajectory.offsets[0].offset\_z << \textcolor{stringliteral}{"{}\}"{}} << std::endl;}
+\DoxyCodeLine{00183             \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{00184         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}\label{classmessage__services_1_1models_1_1mobilitypath_a0a38411f6f7c24852e72c451b34556d6}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!header@{header}}
+\index{header@{header}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{header}{header}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemessage__services_1_1models_a570b713faafff4221c10023ae8051c77}{mobility\+\_\+header\+\_\+t}} message\+\_\+services\+::models\+::mobilitypath\+::header\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8h_source_l00022}{22}} of file \mbox{\hyperlink{mobilitypath_8h_source}{mobilitypath.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{mobilitypath_8cpp_source_l00017}{from\+Json\+Object()}}, \mbox{\hyperlink{mobilitypath_8cpp_source_l00192}{get\+Header()}}, and \mbox{\hyperlink{mobilitypath_8cpp_source_l00196}{set\+Header()}}.
+
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_a2879743c7dca177828d67342cc0cda83}\label{classmessage__services_1_1models_1_1mobilitypath_a2879743c7dca177828d67342cc0cda83}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!msg\_received\_timestamp\_@{msg\_received\_timestamp\_}}
+\index{msg\_received\_timestamp\_@{msg\_received\_timestamp\_}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{msg\_received\_timestamp\_}{msg\_received\_timestamp\_}}
+{\footnotesize\ttfamily std\+::time\+\_\+t message\+\_\+services\+::models\+::mobilitypath\+::msg\+\_\+received\+\_\+timestamp\+\_\+ = std\+::chrono\+::duration\+\_\+cast$<$std\+::chrono\+::milliseconds$>$(std\+::chrono\+::system\+\_\+clock\+::now().time\+\_\+since\+\_\+epoch()).count()}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8h_source_l00030}{30}} of file \mbox{\hyperlink{mobilitypath_8h_source}{mobilitypath.\+h}}.
+
+\mbox{\Hypertarget{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}\label{classmessage__services_1_1models_1_1mobilitypath_a38cd2fbc0b964493d22605748804414e}} 
+\index{message\_services::models::mobilitypath@{message\_services::models::mobilitypath}!trajectory@{trajectory}}
+\index{trajectory@{trajectory}!message\_services::models::mobilitypath@{message\_services::models::mobilitypath}}
+\doxysubsubsection{\texorpdfstring{trajectory}{trajectory}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacemessage__services_1_1models_a9e03cd19834d0c325d36186863373663}{trajectory\+\_\+t}} message\+\_\+services\+::models\+::mobilitypath\+::trajectory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{mobilitypath_8h_source_l00023}{23}} of file \mbox{\hyperlink{mobilitypath_8h_source}{mobilitypath.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{mobilitypath_8cpp_source_l00201}{get\+Trajectory()}}, and \mbox{\hyperlink{mobilitypath_8cpp_source_l00205}{set\+Trajectory()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+message\+\_\+services/src/models/\mbox{\hyperlink{mobilitypath_8h}{mobilitypath.\+h}}\item 
+message\+\_\+services/src/models/\mbox{\hyperlink{mobilitypath_8cpp}{mobilitypath.\+cpp}}\end{DoxyCompactItemize}

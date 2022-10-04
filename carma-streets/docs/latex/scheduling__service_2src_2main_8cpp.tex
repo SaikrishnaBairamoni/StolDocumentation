@@ -1,0 +1,66 @@
+\hypertarget{scheduling__service_2src_2main_8cpp}{}\doxysection{scheduling\+\_\+service/src/main.cpp File Reference}
+\label{scheduling__service_2src_2main_8cpp}\index{scheduling\_service/src/main.cpp@{scheduling\_service/src/main.cpp}}
+{\ttfamily \#include $<$QCore\+Application$>$}\newline
+{\ttfamily \#include \char`\"{}streets\+\_\+configuration.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scheduling\+\_\+service.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}intersection\+\_\+client.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scheduling__service_2src_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{scheduling__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{scheduling__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{scheduling__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{scheduling__service_2src_2main_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{scheduling__service_2src_2main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008 \{}
+\DoxyCodeLine{00009     QCoreApplication a(argc, argv);}
+\DoxyCodeLine{00010     \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a8f1dd2ae49aae6b730a041889177c8e6}{streets\_service::streets\_configuration::initialize\_logger}}();}
+\DoxyCodeLine{00011 }
+\DoxyCodeLine{00012     \textcolor{keyword}{auto} sleep\_millisecs = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}sleep\_millisecs"{}});}
+\DoxyCodeLine{00013     \textcolor{keyword}{auto} int\_client\_request\_attempts = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}int\_client\_request\_attempts"{}});}
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{00015     \mbox{\hyperlink{classscheduling__service_1_1scheduling__service}{scheduling\_service::scheduling\_service}} sched\_service;}
+\DoxyCodeLine{00016     \textcolor{keywordflow}{if} (sched\_service.\mbox{\hyperlink{classscheduling__service_1_1scheduling__service_a29432e862ffe2f710ed92bd1a7ea66dd}{initialize}}(sleep\_millisecs, int\_client\_request\_attempts))}
+\DoxyCodeLine{00017     \{}
+\DoxyCodeLine{00018         sched\_service.\mbox{\hyperlink{classscheduling__service_1_1scheduling__service_af7adc4a45f194a6aace56a3eafed61fa}{start}}();}
+\DoxyCodeLine{00019     \}}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021 }
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023     \textcolor{keywordflow}{return} QCoreApplication::exec();}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{streets__configuration_8cpp_source_l00118}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+int\+\_\+config()}}, \mbox{\hyperlink{scheduling__service_8cpp_source_l00005}{scheduling\+\_\+service\+::scheduling\+\_\+service\+::initialize()}}, \mbox{\hyperlink{streets__configuration_8cpp_source_l00200}{streets\+\_\+service\+::streets\+\_\+configuration\+::initialize\+\_\+logger()}}, and \mbox{\hyperlink{scheduling__service_8cpp_source_l00094}{scheduling\+\_\+service\+::scheduling\+\_\+service\+::start()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{scheduling__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}

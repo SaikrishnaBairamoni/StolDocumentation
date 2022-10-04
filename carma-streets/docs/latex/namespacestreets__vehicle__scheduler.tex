@@ -1,0 +1,249 @@
+\hypertarget{namespacestreets__vehicle__scheduler}{}\doxysection{streets\+\_\+vehicle\+\_\+scheduler Namespace Reference}
+\label{namespacestreets__vehicle__scheduler}\index{streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1all__stop__intersection__schedule}{all\+\_\+stop\+\_\+intersection\+\_\+schedule}}
+\begin{DoxyCompactList}\small\item\em Struct to store vehicle schedules for all vehicle in an intersection. Includes a timestamp in milliseconds since epoch. Also includes a get\+\_\+delay method that will get each vehicle schedules delay and sum them for a total intersection delay. Delay is the difference between scheduled Entering Time (et) and scheduled Stopping time (st) and represents the time a vehicle would be waiting at the stop bar before gaining access to the intersection. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1all__stop__vehicle__schedule}{all\+\_\+stop\+\_\+vehicle\+\_\+schedule}}
+\begin{DoxyCompactList}\small\item\em Object to represent all\+\_\+stop schedule for single vehicle. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler}{all\+\_\+stop\+\_\+vehicle\+\_\+scheduler}}
+\item 
+struct \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}}
+\begin{DoxyCompactList}\small\item\em Struct to store vehicle schedules for all vehicle in an intersection. Includes a timestamp in milliseconds since epoch. Also includes a get\+\_\+delay method that will get each vehicle schedules delay and sum them for a total intersection delay. Delay is the difference between scheduled Entering Time (et) and scheduled Stopping time (st) and represents the time a vehicle would be waiting at the stop bar before gaining access to the intersection. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1scheduling__exception}{scheduling\+\_\+exception}}
+\begin{DoxyCompactList}\small\item\em Runtime error related to processing status intent vehicle updates. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}}
+\begin{DoxyCompactList}\small\item\em Struct to store vehicle schedules for all vehicle in an intersection. Includes a timestamp in milliseconds since epoch. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__vehicle__schedule}{signalized\+\_\+vehicle\+\_\+schedule}}
+\begin{DoxyCompactList}\small\item\em Object to represent schedule for single vehicle. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler}{signalized\+\_\+vehicle\+\_\+scheduler}}
+\item 
+struct \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1vehicle__schedule}{vehicle\+\_\+schedule}}
+\begin{DoxyCompactList}\small\item\em Object to represent schedule for single vehicle. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler}{vehicle\+\_\+scheduler}}
+\begin{DoxyCompactList}\small\item\em Abstract Class for extend to implement scheduling business logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacestreets__vehicle__scheduler_aa9f946d7c588b2697fd379fbed72f382}{departure\+\_\+position\+\_\+comparator}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&prev\+\_\+veh, const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&next\+\_\+veh)
+\begin{DoxyCompactList}\small\item\em Comparator for vehicle collections. Used for sorting vehicle objects in a collection in ascending order with respect to their departure position value. Values lower than one are treated as unset and order last after the largest positive departure position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacestreets__vehicle__scheduler_a62007ad8cbd331963378ff836d2ce767}{st\+\_\+comparator}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&prev\+\_\+veh, const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&next\+\_\+veh)
+\begin{DoxyCompactList}\small\item\em Comparator for vehicle collections. Used for sorting vehicle objects in a collection in ascending order with respect to their stopping time value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacestreets__vehicle__scheduler_ab550673e6a269f9f374ca3ca7ff6ba82}{distance\+\_\+comparator}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&prev\+\_\+veh, const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&next\+\_\+veh)
+\begin{DoxyCompactList}\small\item\em Comparator for vehicle collections. Used for sorting vehicle objects in a collection in ascending order with respect to their distance value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacestreets__vehicle__scheduler_ab6598f6bcdf2edaadecc3f4b68debb66}{delay\+\_\+comparator}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1all__stop__intersection__schedule}{all\+\_\+stop\+\_\+intersection\+\_\+schedule}} $>$ \&prev\+\_\+sched, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1all__stop__intersection__schedule}{all\+\_\+stop\+\_\+intersection\+\_\+schedule}} $>$ \&next\+\_\+sched)
+\begin{DoxyCompactList}\small\item\em Comparator for \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} collections. Used for sorting \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} objects in a collection in ascending order with respect to their delay value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacestreets__vehicle__scheduler_ab6598f6bcdf2edaadecc3f4b68debb66}\label{namespacestreets__vehicle__scheduler_ab6598f6bcdf2edaadecc3f4b68debb66}} 
+\index{streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}!delay\_comparator@{delay\_comparator}}
+\index{delay\_comparator@{delay\_comparator}!streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{delay\_comparator()}{delay\_comparator()}}
+{\footnotesize\ttfamily bool streets\+\_\+vehicle\+\_\+scheduler\+::delay\+\_\+comparator (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1all__stop__intersection__schedule}{all\+\_\+stop\+\_\+intersection\+\_\+schedule}} $>$ \&}]{prev\+\_\+sched,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1all__stop__intersection__schedule}{all\+\_\+stop\+\_\+intersection\+\_\+schedule}} $>$ \&}]{next\+\_\+sched }\end{DoxyParamCaption})}
+
+
+
+Comparator for \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} collections. Used for sorting \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} objects in a collection in ascending order with respect to their delay value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\+\_\+sched} & first \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}}. \\
+\hline
+{\em next\+\_\+sched} & next \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if first should come before next. 
+
+false if first should not come before next. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{vehicle__sorting_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{vehicle__sorting_8cpp_source}{vehicle\+\_\+sorting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033                                                                                                                                                              \{}
+\DoxyCodeLine{00034         \textcolor{keywordflow}{return} prev\_sched-\/>get\_delay() < next\_sched-\/>get\_delay();}
+\DoxyCodeLine{00035     \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{all__stop__vehicle__scheduler_8cpp_source_l00171}{streets\+\_\+vehicle\+\_\+scheduler\+::all\+\_\+stop\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+rdvs()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestreets__vehicle__scheduler_ab6598f6bcdf2edaadecc3f4b68debb66_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestreets__vehicle__scheduler_aa9f946d7c588b2697fd379fbed72f382}\label{namespacestreets__vehicle__scheduler_aa9f946d7c588b2697fd379fbed72f382}} 
+\index{streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}!departure\_position\_comparator@{departure\_position\_comparator}}
+\index{departure\_position\_comparator@{departure\_position\_comparator}!streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{departure\_position\_comparator()}{departure\_position\_comparator()}}
+{\footnotesize\ttfamily bool streets\+\_\+vehicle\+\_\+scheduler\+::departure\+\_\+position\+\_\+comparator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{prev\+\_\+veh,  }\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{next\+\_\+veh }\end{DoxyParamCaption})}
+
+
+
+Comparator for vehicle collections. Used for sorting vehicle objects in a collection in ascending order with respect to their departure position value. Values lower than one are treated as unset and order last after the largest positive departure position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\+\_\+veh} & first vehicle. \\
+\hline
+{\em next\+\_\+veh} & next vehicle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if first should come before next. 
+
+false if first should not come before next. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{vehicle__sorting_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{vehicle__sorting_8cpp_source}{vehicle\+\_\+sorting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004                                                                                                                         \{}
+\DoxyCodeLine{00005         \textcolor{comment}{// -\/1 indicates unassigned departure position which should be last when sorted in ascending order}}
+\DoxyCodeLine{00006         \textcolor{keywordflow}{if} ((prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5aaf317105b29db5a564b0a5c5468d7d}{\_departure\_position}} < 1  \&\& next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5aaf317105b29db5a564b0a5c5468d7d}{\_departure\_position}} < 1) ||  prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5aaf317105b29db5a564b0a5c5468d7d}{\_departure\_position}} < 1) \{}
+\DoxyCodeLine{00007             \textcolor{keywordflow}{return} prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5aaf317105b29db5a564b0a5c5468d7d}{\_departure\_position}} > next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5aaf317105b29db5a564b0a5c5468d7d}{\_departure\_position}};}
+\DoxyCodeLine{00008         \}}
+\DoxyCodeLine{00009         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00010             \textcolor{keywordflow}{return} prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5aaf317105b29db5a564b0a5c5468d7d}{\_departure\_position}} < next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5aaf317105b29db5a564b0a5c5468d7d}{\_departure\_position}}; }
+\DoxyCodeLine{00011         \}}
+\DoxyCodeLine{00012     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00063}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+departure\+\_\+position}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__vehicle__scheduler_8cpp_source_l00117}{streets\+\_\+vehicle\+\_\+scheduler\+::all\+\_\+stop\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+dvs()}}, and \mbox{\hyperlink{all__stop__vehicle__scheduler_8cpp_source_l00171}{streets\+\_\+vehicle\+\_\+scheduler\+::all\+\_\+stop\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+rdvs()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestreets__vehicle__scheduler_aa9f946d7c588b2697fd379fbed72f382_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestreets__vehicle__scheduler_ab550673e6a269f9f374ca3ca7ff6ba82}\label{namespacestreets__vehicle__scheduler_ab550673e6a269f9f374ca3ca7ff6ba82}} 
+\index{streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}!distance\_comparator@{distance\_comparator}}
+\index{distance\_comparator@{distance\_comparator}!streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{distance\_comparator()}{distance\_comparator()}}
+{\footnotesize\ttfamily bool streets\+\_\+vehicle\+\_\+scheduler\+::distance\+\_\+comparator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{prev\+\_\+veh,  }\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{next\+\_\+veh }\end{DoxyParamCaption})}
+
+
+
+Comparator for vehicle collections. Used for sorting vehicle objects in a collection in ascending order with respect to their distance value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\+\_\+veh} & first vehicle. \\
+\hline
+{\em next\+\_\+veh} & next vehicle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if first should come before next. 
+
+false if first should not come before next. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{vehicle__sorting_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{vehicle__sorting_8cpp_source}{vehicle\+\_\+sorting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029                                                                                                                 \{}
+\DoxyCodeLine{00030         \textcolor{keywordflow}{return} prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a21a6378ca2401ac4bc9ca6f6364833fb}{\_cur\_distance}} < next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a21a6378ca2401ac4bc9ca6f6364833fb}{\_cur\_distance}};}
+\DoxyCodeLine{00031     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00073}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+distance}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__vehicle__scheduler_8cpp_source_l00230}{streets\+\_\+vehicle\+\_\+scheduler\+::all\+\_\+stop\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+evs()}}, and \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00078}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+evs()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacestreets__vehicle__scheduler_ab550673e6a269f9f374ca3ca7ff6ba82_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacestreets__vehicle__scheduler_a62007ad8cbd331963378ff836d2ce767}\label{namespacestreets__vehicle__scheduler_a62007ad8cbd331963378ff836d2ce767}} 
+\index{streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}!st\_comparator@{st\_comparator}}
+\index{st\_comparator@{st\_comparator}!streets\_vehicle\_scheduler@{streets\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{st\_comparator()}{st\_comparator()}}
+{\footnotesize\ttfamily bool streets\+\_\+vehicle\+\_\+scheduler\+::st\+\_\+comparator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{prev\+\_\+veh,  }\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{next\+\_\+veh }\end{DoxyParamCaption})}
+
+
+
+Comparator for vehicle collections. Used for sorting vehicle objects in a collection in ascending order with respect to their stopping time value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prev\+\_\+veh} & first vehicle. \\
+\hline
+{\em next\+\_\+veh} & next vehicle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if first should come before next. 
+
+false if first should not come before next. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1scheduling__exception}{scheduling\+\_\+exception}}} & if stopping time is 0 which is an invalid stopping time and can not be sorted. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{vehicle__sorting_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{vehicle__sorting_8cpp_source}{vehicle\+\_\+sorting.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014                                                                                                          \{}
+\DoxyCodeLine{00015         \textcolor{comment}{// -\/1 indicates unassigned departure position which should be last when sorted in ascending order}}
+\DoxyCodeLine{00016         \textcolor{keywordflow}{if} (prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}} == 0  || next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}} == 0) \{}
+\DoxyCodeLine{00017             \textcolor{keywordflow}{if} ( prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}} < 1)}
+\DoxyCodeLine{00018                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1scheduling__exception}{scheduling\_exception}}(\textcolor{stringliteral}{"{}Vehicle "{}} + prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}} + \textcolor{stringliteral}{"{} has invalid actual st of "{}} + \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}}) + \textcolor{stringliteral}{"{}!"{}});}
+\DoxyCodeLine{00019             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}} < 1 )}
+\DoxyCodeLine{00020                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1scheduling__exception}{scheduling\_exception}}(\textcolor{stringliteral}{"{}Vehicle "{}} + next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}} + \textcolor{stringliteral}{"{} has invalid actual st of "{}} + \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}}) + \textcolor{stringliteral}{"{}!"{}});}
+\DoxyCodeLine{00021             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00022         \}}
+\DoxyCodeLine{00023         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00024             \textcolor{keywordflow}{return} prev\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}} < next\_veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_ab142b19b021e3ac4908714eaa94cd47e}{\_actual\_st}}; }
+\DoxyCodeLine{00025         \}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00065}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+actual\+\_\+st}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, and \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{to\+\_\+string()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{namespacestreets__vehicle__scheduler_a62007ad8cbd331963378ff836d2ce767_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,853 @@
+\hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor}{}\doxysection{streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor Class Reference}
+\label{classstreets__vehicles_1_1all__stop__status__intent__processor}\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+
+
+Status Intent processor implementation for all stop use case. Updates vehicle states based on the condition that all vehicles must stop before entering a stop sign controlled intersection.  
+
+
+
+
+{\ttfamily \#include $<$all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+h$>$}
+
+
+
+Inheritance diagram for streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classstreets__vehicles_1_1all__stop__status__intent__processor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_af0bc8ce9258293c04a798cff18eee398}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor}} (const double stopping\+\_\+distance=1.\+0, const double stopping\+\_\+speed=0.\+1, const uint64\+\_\+t timeout=30000)
+\begin{DoxyCompactList}\small\item\em Construct a new all stop status intent processor object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_ab9df0a1a3f5a77fe4fcd0b405bfab0f4}{set\+\_\+stopping\+\_\+distance}} (const double stopping\+\_\+distance)
+\begin{DoxyCompactList}\small\item\em Set stopping\+\_\+distance stopping condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_af89822b6c6f045b584f622f7a604b33b}{set\+\_\+stopping\+\_\+speed}} (const double stopping\+\_\+speed)
+\begin{DoxyCompactList}\small\item\em Set stopping\+\_\+speed stopping condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a7308fe8b861031993792d0c95cf82d90}{from\+\_\+json}} (const rapidjson\+::\+Generic\+Object$<$ true, rapidjson\+::\+Value $>$ \&json, \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}}) const override
+\begin{DoxyCompactList}\small\item\em Process JSON status and intent update and convert it to an streets\+\_\+vehicle\+\_\+update. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a701e67611fa726d7693f82b3302f0324}{get\+\_\+timeout}} () const override
+\begin{DoxyCompactList}\small\item\em Get the timeout in milliseconds. Timeout value controls when updates are no longer considered valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a12a1b270d0eced95feb9e5062420a6f6}{set\+\_\+timeout}} (const uint64\+\_\+t timeout) override
+\begin{DoxyCompactList}\small\item\em Set the timeout in milliseconds Timeout value controls when updates are no longer considered valid. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a141c395b9b3fde39caa20a5433c1c3aa}{$\sim$all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor}} () override=default
+\begin{DoxyCompactList}\small\item\em Destroy the all stop status intent processor object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a4315db81a214ecf564076d78397cb467}{read\+\_\+metadata}} (const rapidjson\+::\+Generic\+Object$<$ true, rapidjson\+::\+Value $>$ \&json, \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}}) const
+\begin{DoxyCompactList}\small\item\em Reads metadata element in status and intent vehicle update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_aecf488ec3917a0ca3ca8ca2c627f24fc}{read\+\_\+payload}} (const rapidjson\+::\+Generic\+Object$<$ true, rapidjson\+::\+Value $>$ \&json, \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}}) const
+\begin{DoxyCompactList}\small\item\em Reads payload element in status and intent vehicle update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a5fb338e07c0bd7aa48c490d29823dd0d}{read\+\_\+est\+\_\+path}} (const rapidjson\+::\+Generic\+Array$<$ true, rapidjson\+::\+Value $>$ \&json, \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}}) const
+\begin{DoxyCompactList}\small\item\em Reads estimated path element in status and intent vehicle update. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_ae4a3f6bc8f4d1066c476a6b8d5e8e2f9}{update\+\_\+vehicle\+\_\+state}} (\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}}) const
+\begin{DoxyCompactList}\small\item\em Updates vehicle state based on previous state and stopping condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a6d0b32c2cde092c20061998225df7442}{is\+\_\+vehicle\+\_\+stopped}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}}) const
+\begin{DoxyCompactList}\small\item\em Is vehicle considered stopped at stopping line according to stopping conditions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a7acafb46aa506f52816a47e259120b7c}{\+\_\+stopping\+\_\+distance}}
+\item 
+double \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a0db9d9f3c3ff3e7373afeaab4e8872a5}{\+\_\+stopping\+\_\+speed}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a2a4f2c264bedd086bd48c8b074e9ffa4}{\+\_\+timeout}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Status Intent processor implementation for all stop use case. Updates vehicle states based on the condition that all vehicles must stop before entering a stop sign controlled intersection. 
+
+\begin{DoxyAuthor}{Author}
+Paul Bourelly 
+\end{DoxyAuthor}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00018}{18}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8h_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_af0bc8ce9258293c04a798cff18eee398}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_af0bc8ce9258293c04a798cff18eee398}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!all\_stop\_status\_intent\_processor@{all\_stop\_status\_intent\_processor}}
+\index{all\_stop\_status\_intent\_processor@{all\_stop\_status\_intent\_processor}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{all\_stop\_status\_intent\_processor()}{all\_stop\_status\_intent\_processor()}}
+{\footnotesize\ttfamily streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor (\begin{DoxyParamCaption}\item[{const double}]{stopping\+\_\+distance = {\ttfamily 1.0},  }\item[{const double}]{stopping\+\_\+speed = {\ttfamily 0.1},  }\item[{const uint64\+\_\+t}]{timeout = {\ttfamily 30000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new all stop status intent processor object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopping\+\_\+distance} & min distance from stop line in meters to be considered stopped(default = 5 m). \\
+\hline
+{\em stopping\+\_\+speed} & min speed in m/s to be considered stopped(default = 0.\+1 m/s). \\
+\hline
+{\em timeout} & time interval after which vehicle updates will no longer be considered valid in milliseconds(default = 30s). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00027}{27}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8h_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027                                                                                                                                                   : }
+\DoxyCodeLine{00028                 \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a7acafb46aa506f52816a47e259120b7c}{\_stopping\_distance}}(stopping\_distance), \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a0db9d9f3c3ff3e7373afeaab4e8872a5}{\_stopping\_speed}}(stopping\_speed), \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a2a4f2c264bedd086bd48c8b074e9ffa4}{\_timeout}}(timeout) \{}
+\DoxyCodeLine{00029                     SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}All stop status and intent processor initialization."{}});}
+\DoxyCodeLine{00030                 \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a141c395b9b3fde39caa20a5433c1c3aa}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a141c395b9b3fde39caa20a5433c1c3aa}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!````~all\_stop\_status\_intent\_processor@{$\sim$all\_stop\_status\_intent\_processor}}
+\index{````~all\_stop\_status\_intent\_processor@{$\sim$all\_stop\_status\_intent\_processor}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{$\sim$all\_stop\_status\_intent\_processor()}{~all\_stop\_status\_intent\_processor()}}
+{\footnotesize\ttfamily streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::$\sim$all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destroy the all stop status intent processor object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a7308fe8b861031993792d0c95cf82d90}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a7308fe8b861031993792d0c95cf82d90}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!from\_json@{from\_json}}
+\index{from\_json@{from\_json}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{from\_json()}{from\_json()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::from\+\_\+json (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Generic\+Object$<$ true, rapidjson\+::\+Value $>$ \&}]{json,  }\item[{\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Process JSON status and intent update and convert it to an streets\+\_\+vehicle\+\_\+update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status\+\_\+intent\+\_\+msg} & rapidjson\+::\+Value JSON status and intent update. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+streets\+\_\+vehicle\+\_\+update. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classstreets__vehicles_1_1status__intent__processor_aade7f4f98fdf41c0c9d512f6a9494d95}{streets\+\_\+vehicles\+::status\+\_\+intent\+\_\+processor}}.
+
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006                                                                                                                                    \{}
+\DoxyCodeLine{00007         }
+\DoxyCodeLine{00008         \textcolor{comment}{/* the main function will check whether veh\_id is included in the message or not}}
+\DoxyCodeLine{00009 \textcolor{comment}{        *  if it is not included, this function cannot be executed!}}
+\DoxyCodeLine{00010 \textcolor{comment}{        */}}
+\DoxyCodeLine{00011         \textcolor{comment}{// Get Meta Data}}
+\DoxyCodeLine{00012         \textcolor{keywordflow}{if} (json.FindMember(\textcolor{stringliteral}{"{}metadata"{}})-\/>value.IsObject())\{}
+\DoxyCodeLine{00013             rapidjson::GenericObject<true, rapidjson::Value> metadata = json.FindMember(\textcolor{stringliteral}{"{}metadata"{}})-\/>value.GetObject();}
+\DoxyCodeLine{00014             \textcolor{keywordflow}{if} (json.FindMember(\textcolor{stringliteral}{"{}payload"{}})-\/>value.IsObject())\{}
+\DoxyCodeLine{00015                 rapidjson::GenericObject<true, rapidjson::Value> payload = json.FindMember(\textcolor{stringliteral}{"{}payload"{}})-\/>value.GetObject();}
+\DoxyCodeLine{00016                 \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a4315db81a214ecf564076d78397cb467}{read\_metadata}}( metadata, vehicle );}
+\DoxyCodeLine{00017                 \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_aecf488ec3917a0ca3ca8ca2c627f24fc}{read\_payload}}( payload, vehicle );  }
+\DoxyCodeLine{00018                 \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}est\_paths"{}})-\/>value.IsArray()) \{}
+\DoxyCodeLine{00019                     rapidjson::GenericArray<true, rapidjson::Value> est\_path = payload.FindMember(\textcolor{stringliteral}{"{}est\_paths"{}})-\/>value.GetArray();}
+\DoxyCodeLine{00020                     \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a5fb338e07c0bd7aa48c490d29823dd0d}{read\_est\_path}}(est\_path, vehicle);}
+\DoxyCodeLine{00021                 \}}
+\DoxyCodeLine{00022                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00023                     SPDLOG\_WARN(\textcolor{stringliteral}{"{}The \(\backslash\)"{}est\_paths\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing in received update!"{}});}
+\DoxyCodeLine{00024                 \}}
+\DoxyCodeLine{00025                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle Class Vehicle Info Update -\/ timestamp = \{0\}, vehicle = \{1\}, lane\_id = \{2\}, state = \{3\}, speed = \{4\} m/s, distance = \{5\} m, access = \{6\}"{}}, }
+\DoxyCodeLine{00026                     \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_speed, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_distance, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_access);}
+\DoxyCodeLine{00027             \}}
+\DoxyCodeLine{00028         \}  }
+\DoxyCodeLine{00029     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00061}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+access}}, \mbox{\hyperlink{vehicle_8h_source_l00073}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+distance}}, \mbox{\hyperlink{vehicle_8h_source_l00049}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, \mbox{\hyperlink{vehicle_8h_source_l00071}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+time}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00208}{read\+\_\+est\+\_\+path()}}, \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00031}{read\+\_\+metadata()}}, and \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00053}{read\+\_\+payload()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_a7308fe8b861031993792d0c95cf82d90_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a701e67611fa726d7693f82b3302f0324}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a701e67611fa726d7693f82b3302f0324}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!get\_timeout@{get\_timeout}}
+\index{get\_timeout@{get\_timeout}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{get\_timeout()}{get\_timeout()}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::get\+\_\+timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the timeout in milliseconds. Timeout value controls when updates are no longer considered valid. 
+
+\begin{DoxyReturn}{Returns}
+uint64\+\_\+t timeout value in milliseconds. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classstreets__vehicles_1_1status__intent__processor_a59822b56e0589dba350c907f79385e76}{streets\+\_\+vehicles\+::status\+\_\+intent\+\_\+processor}}.
+
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00276}{276}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00276                                                                  \{}
+\DoxyCodeLine{00277         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a2a4f2c264bedd086bd48c8b074e9ffa4}{\_timeout}};}
+\DoxyCodeLine{00278     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00102}{\+\_\+timeout}}.
+
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a6d0b32c2cde092c20061998225df7442}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a6d0b32c2cde092c20061998225df7442}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!is\_vehicle\_stopped@{is\_vehicle\_stopped}}
+\index{is\_vehicle\_stopped@{is\_vehicle\_stopped}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{is\_vehicle\_stopped()}{is\_vehicle\_stopped()}}
+{\footnotesize\ttfamily bool streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::is\+\_\+vehicle\+\_\+stopped (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Is vehicle considered stopped at stopping line according to stopping conditions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if considered stopped . 
+
+false if not considered stopped. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00266}{266}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00266                                                                                           \{}
+\DoxyCodeLine{00267         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Stopping condition spd: \{0\}, dst: \{1\}; Vehicle condition spd: \{2\}, dst: \{3\} ."{}}, }
+\DoxyCodeLine{00268             \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a0db9d9f3c3ff3e7373afeaab4e8872a5}{\_stopping\_speed}}, \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a7acafb46aa506f52816a47e259120b7c}{\_stopping\_distance}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_speed, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_distance);}
+\DoxyCodeLine{00269         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_speed <= \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a0db9d9f3c3ff3e7373afeaab4e8872a5}{\_stopping\_speed}} \&\& \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_distance <= \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a7acafb46aa506f52816a47e259120b7c}{\_stopping\_distance}};}
+\DoxyCodeLine{00270     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00073}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+distance}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00098}{\+\_\+stopping\+\_\+distance}}, and \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00100}{\+\_\+stopping\+\_\+speed}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00166}{update\+\_\+vehicle\+\_\+state()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_a6d0b32c2cde092c20061998225df7442_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a5fb338e07c0bd7aa48c490d29823dd0d}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a5fb338e07c0bd7aa48c490d29823dd0d}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!read\_est\_path@{read\_est\_path}}
+\index{read\_est\_path@{read\_est\_path}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{read\_est\_path()}{read\_est\_path()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::read\+\_\+est\+\_\+path (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Generic\+Array$<$ true, rapidjson\+::\+Value $>$ \&}]{json,  }\item[{\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reads estimated path element in status and intent vehicle update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & est\+\_\+path json object \\
+\hline
+{\em vehicle} & reference to update \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00208}{208}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00208                                                                                                                                            \{}
+\DoxyCodeLine{00209 }
+\DoxyCodeLine{00210                 }
+\DoxyCodeLine{00211         \textcolor{comment}{/* the first point in the future path is the current point */}}
+\DoxyCodeLine{00212         std::vector<future\_information> future\_info;}
+\DoxyCodeLine{00213         future\_information fi;}
+\DoxyCodeLine{00214         fi.timestamp = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time;}
+\DoxyCodeLine{00215         fi.lane\_id = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id;}
+\DoxyCodeLine{00216         fi.distance = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_distance;}
+\DoxyCodeLine{00217         future\_info.push\_back(fi);}
+\DoxyCodeLine{00218         \textcolor{keywordflow}{for} (rapidjson::SizeType \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} = 0; \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} < est\_path.Size(); ++\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}})\{}
+\DoxyCodeLine{00219             rapidjson::GenericObject<true, rapidjson::Value> path\_point = est\_path[\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}].GetObject();}
+\DoxyCodeLine{00220             \textcolor{comment}{/* adding checks to make sure the necessary data exist in the future point */}}
+\DoxyCodeLine{00221             \textcolor{comment}{// Added member end check for Int64 type}}
+\DoxyCodeLine{00222             \textcolor{keywordflow}{if} (path\_point.FindMember(\textcolor{stringliteral}{"{}ts"{}}) != path\_point.MemberEnd() \&\&}
+\DoxyCodeLine{00223                 path\_point.FindMember(\textcolor{stringliteral}{"{}ts"{}})-\/>value.IsUint64() \&\& }
+\DoxyCodeLine{00224                 path\_point.FindMember(\textcolor{stringliteral}{"{}id"{}})-\/>value.IsInt() \&\& }
+\DoxyCodeLine{00225                 path\_point.FindMember(\textcolor{stringliteral}{"{}ds"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00226 }
+\DoxyCodeLine{00227                 \textcolor{comment}{/* adding checks to make sure only valid future points will be saved */}}
+\DoxyCodeLine{00228                 \textcolor{keywordflow}{if} (path\_point[\textcolor{stringliteral}{"{}id"{}}].GetInt() == 0)\{}
+\DoxyCodeLine{00229                     SPDLOG\_WARN(\textcolor{stringliteral}{"{}Ignoring incorrect future point with index \{0\} for vehicle \{1\}: \(\backslash\)"{}id\(\backslash\)"{} cannot be 0!"{}}, \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id );}
+\DoxyCodeLine{00230                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00231                 \}}
+\DoxyCodeLine{00232                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (path\_point[\textcolor{stringliteral}{"{}ds"{}}].GetDouble() < 0)\{}
+\DoxyCodeLine{00233                     SPDLOG\_WARN(\textcolor{stringliteral}{"{}Ignoring incorrect future point with index \{0\} for vehicle \{1\}: \(\backslash\)"{}ds\(\backslash\)"{} cannot be negative!"{}}, \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id );}
+\DoxyCodeLine{00234                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00235                 \}}
+\DoxyCodeLine{00236             }
+\DoxyCodeLine{00237                 \textcolor{comment}{/* the future path received from CARMA Platform does not consider the stopping requirement at the stop bar.}}
+\DoxyCodeLine{00238 \textcolor{comment}{                *  therefore, CARMA Streets will force the stopping requirement to the vehicle's future path.}}
+\DoxyCodeLine{00239 \textcolor{comment}{                *  basically, if the vehicle is an EV, or and RDV without access, if the vehicle lane id in the future path is not the same as the vehicle entry lane id, the scheduling service will ignore the future points.}}
+\DoxyCodeLine{00240 \textcolor{comment}{                * */}}
+\DoxyCodeLine{00241                 \textcolor{keywordflow}{if} (future\_info[future\_info.size() -\/ 1].distance >= path\_point[\textcolor{stringliteral}{"{}ds"{}}].GetDouble())\{}
+\DoxyCodeLine{00242                     fi = future\_information();}
+\DoxyCodeLine{00243                     \textcolor{comment}{// the unit of timestamp in here is sec with decimal places.}}
+\DoxyCodeLine{00244                     fi.timestamp = path\_point[\textcolor{stringliteral}{"{}ts"{}}].GetInt64();}
+\DoxyCodeLine{00245                     fi.distance = path\_point[\textcolor{stringliteral}{"{}ds"{}}].GetDouble();}
+\DoxyCodeLine{00246                     fi.lane\_id = path\_point[\textcolor{stringliteral}{"{}id"{}}].GetInt();}
+\DoxyCodeLine{00247                     SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}future path \{0\}: \{1\}, \{2\}, \{3\}, \{4\}"{}}, \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}, fi.lane\_id, fi.distance);}
+\DoxyCodeLine{00248                     future\_info.push\_back(fi);}
+\DoxyCodeLine{00249                 \} }
+\DoxyCodeLine{00250                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00251                     SPDLOG\_INFO(\textcolor{stringliteral}{"{}Vehicle \{0\}: the lane id of the vehicle in the est\_path has changed!"{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);}
+\DoxyCodeLine{00252                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00253                 \}}
+\DoxyCodeLine{00254 }
+\DoxyCodeLine{00255                 }
+\DoxyCodeLine{00256             \}}
+\DoxyCodeLine{00257             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00258                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}Ignoring incorrect/incomplete future point with index "{}} }
+\DoxyCodeLine{00259                     + \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}) +\textcolor{stringliteral}{"{} for vehicle "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{}!"{}} );}
+\DoxyCodeLine{00260             \}}
+\DoxyCodeLine{00261         \}}
+\DoxyCodeLine{00262         }
+\DoxyCodeLine{00263         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_future\_info = future\_info;}
+\DoxyCodeLine{00264     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00073}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+distance}}, \mbox{\hyperlink{vehicle_8h_source_l00049}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00071}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+time}}, \mbox{\hyperlink{vehicle_8h_source_l00081}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+future\+\_\+info}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00019}{streets\+\_\+vehicles\+::future\+\_\+information\+::distance}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00019}{simulate\+\_\+bsm\+::i}}, \mbox{\hyperlink{vehicle_8h_source_l00017}{streets\+\_\+vehicles\+::future\+\_\+information\+::lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00015}{streets\+\_\+vehicles\+::future\+\_\+information\+::timestamp}}, and \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{to\+\_\+string()}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00006}{from\+\_\+json()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_a5fb338e07c0bd7aa48c490d29823dd0d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_a5fb338e07c0bd7aa48c490d29823dd0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a4315db81a214ecf564076d78397cb467}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a4315db81a214ecf564076d78397cb467}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!read\_metadata@{read\_metadata}}
+\index{read\_metadata@{read\_metadata}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{read\_metadata()}{read\_metadata()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::read\+\_\+metadata (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Generic\+Object$<$ true, rapidjson\+::\+Value $>$ \&}]{json,  }\item[{\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reads metadata element in status and intent vehicle update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & metadata json object. \\
+\hline
+{\em vehicle} & reference to update. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031                                                                                                                                              \{}
+\DoxyCodeLine{00032         \textcolor{comment}{// MemberEnd check required for empty object possibility}}
+\DoxyCodeLine{00033         \textcolor{keywordflow}{if} ( metadata.FindMember(\textcolor{stringliteral}{"{}timestamp"{}}) != metadata.MemberEnd() \&\& metadata.FindMember(\textcolor{stringliteral}{"{}timestamp"{}})-\/>value.IsUint64()) \{}
+\DoxyCodeLine{00034             \textcolor{comment}{// timestamp in milliseconds }}
+\DoxyCodeLine{00035             u\_int64\_t timeout\_time = std::chrono::duration\_cast<std::chrono::milliseconds>(std::chrono::system\_clock::now().time\_since\_epoch()).count() -\/ \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a2a4f2c264bedd086bd48c8b074e9ffa4}{\_timeout}};}
+\DoxyCodeLine{00036             u\_int64\_t cur\_time = metadata.FindMember(\textcolor{stringliteral}{"{}timestamp"{}})-\/>value.GetUint64();}
+\DoxyCodeLine{00037             \textcolor{keywordflow}{if} ( timeout\_time > cur\_time ) \{}
+\DoxyCodeLine{00038                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}timestamp\(\backslash\)"{} "{}} + \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(cur\_time) + \textcolor{stringliteral}{"{} for update older than "{}} + \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(timeout\_time) + \textcolor{stringliteral}{"{}!"{}});}
+\DoxyCodeLine{00039             \}}
+\DoxyCodeLine{00040             \textcolor{comment}{// convert to seconds.}}
+\DoxyCodeLine{00041             \textcolor{keywordflow}{if} ( cur\_time > \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time) \{}
+\DoxyCodeLine{00042                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time = cur\_time;}
+\DoxyCodeLine{00043             \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00044                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}Ignore incoming \(\backslash\)"{}timestamp\(\backslash\)"{} "{}} + \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(cur\_time) + }
+\DoxyCodeLine{00045                     \textcolor{stringliteral}{"{} older than stored last update "{}} + \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time) + \textcolor{stringliteral}{"{}!"{}});}
+\DoxyCodeLine{00046             \}}
+\DoxyCodeLine{00047         \}}
+\DoxyCodeLine{00048         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00049             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}timestamp\(\backslash\)"{} is missing/incorrect in update!"{}});}
+\DoxyCodeLine{00050         \}}
+\DoxyCodeLine{00051     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00071}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+time}}, \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00102}{\+\_\+timeout}}, and \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{to\+\_\+string()}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00006}{from\+\_\+json()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_a4315db81a214ecf564076d78397cb467_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_a4315db81a214ecf564076d78397cb467_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_aecf488ec3917a0ca3ca8ca2c627f24fc}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_aecf488ec3917a0ca3ca8ca2c627f24fc}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!read\_payload@{read\_payload}}
+\index{read\_payload@{read\_payload}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{read\_payload()}{read\_payload()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::read\+\_\+payload (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Generic\+Object$<$ true, rapidjson\+::\+Value $>$ \&}]{json,  }\item[{\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reads payload element in status and intent vehicle update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & payload json object. \\
+\hline
+{\em vehicle} & reference to update. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00053                                                                                                                                           \{}
+\DoxyCodeLine{00054         }
+\DoxyCodeLine{00055         \textcolor{comment}{/* this if condition checks whether the vehicle has been seen before or not */}}
+\DoxyCodeLine{00056         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id == \textcolor{stringliteral}{"{}"{}})\{}
+\DoxyCodeLine{00057             }
+\DoxyCodeLine{00058             \textcolor{keywordflow}{if} ( payload.FindMember(\textcolor{stringliteral}{"{}v\_id"{}})-\/>value.IsString() ) \{}
+\DoxyCodeLine{00059                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id = payload[\textcolor{stringliteral}{"{}v\_id"{}}].GetString();}
+\DoxyCodeLine{00060             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00061                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}Update is missing \(\backslash\)"{}v\_id\(\backslash\)"{}! Cannot be processed!"{}});}
+\DoxyCodeLine{00062             \}}
+\DoxyCodeLine{00063             \textcolor{comment}{/* the unit of the received vehicle length from the message is centimeter without decimal places}}
+\DoxyCodeLine{00064 \textcolor{comment}{            *  but the unit of the vehicle length defined in the vehicle class is meter with decimal places. }}
+\DoxyCodeLine{00065 \textcolor{comment}{            *  Therefore, a conversion has been added here.}}
+\DoxyCodeLine{00066 \textcolor{comment}{            */}}
+\DoxyCodeLine{00067             \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}v\_length"{}})-\/>value.IsInt())\{}
+\DoxyCodeLine{00068                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_length =(double)payload[\textcolor{stringliteral}{"{}v\_length"{}}].GetInt() / 100;}
+\DoxyCodeLine{00069             \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00070                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}v\_length\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in the received update!"{}});}
+\DoxyCodeLine{00071             \}}
+\DoxyCodeLine{00072             }
+\DoxyCodeLine{00073             \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}min\_gap"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00074                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_min\_gap = payload[\textcolor{stringliteral}{"{}min\_gap"{}}].GetDouble();}
+\DoxyCodeLine{00075             \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00076                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}min\_gap\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00077             \}}
+\DoxyCodeLine{00078             }
+\DoxyCodeLine{00079             \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}react\_t"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00080                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_reaction\_time = payload[\textcolor{stringliteral}{"{}react\_t"{}}].GetDouble();}
+\DoxyCodeLine{00081             \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00082                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}react\_t\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in the received update!"{}});}
+\DoxyCodeLine{00083             \}}
+\DoxyCodeLine{00084             }
+\DoxyCodeLine{00085             \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}max\_accel"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00086                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_accel\_max = payload[\textcolor{stringliteral}{"{}max\_accel"{}}].GetDouble();}
+\DoxyCodeLine{00087             \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00088                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}max\_accel\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in the received update!"{}});}
+\DoxyCodeLine{00089             \}}
+\DoxyCodeLine{00090 }
+\DoxyCodeLine{00091             \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}max\_decel"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00092                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_decel\_max = payload[\textcolor{stringliteral}{"{}max\_decel"{}}].GetDouble();}
+\DoxyCodeLine{00093             \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00094                 \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}max\_decel\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in the received update!"{}});}
+\DoxyCodeLine{00095             \}}
+\DoxyCodeLine{00096         \}}
+\DoxyCodeLine{00097 }
+\DoxyCodeLine{00098             }
+\DoxyCodeLine{00099         \textcolor{comment}{/* the unit of the received speed from the message is 0.02 of meter per second}}
+\DoxyCodeLine{00100 \textcolor{comment}{        *  the unit of the speed defined in the vehicle class is meter per second. }}
+\DoxyCodeLine{00101 \textcolor{comment}{        */}}
+\DoxyCodeLine{00102         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}cur\_speed"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00103             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_speed = payload[\textcolor{stringliteral}{"{}cur\_speed"{}}].GetDouble() * 0.02;}
+\DoxyCodeLine{00104         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00105             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}cur\_speed\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00106         \}}
+\DoxyCodeLine{00107 }
+\DoxyCodeLine{00108         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}cur\_accel"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00109             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_accel = payload[\textcolor{stringliteral}{"{}cur\_accel"{}}].GetDouble();}
+\DoxyCodeLine{00110         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00111             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}cur\_accel\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00112         \}}
+\DoxyCodeLine{00113 }
+\DoxyCodeLine{00114         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}cur\_lane\_id"{}})-\/>value.IsInt())\{}
+\DoxyCodeLine{00115             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id = payload[\textcolor{stringliteral}{"{}cur\_lane\_id"{}}].GetInt();}
+\DoxyCodeLine{00116         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00117             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}cur\_lane\_id\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00118         \}}
+\DoxyCodeLine{00119         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}cur\_ds"{}})-\/>value.IsDouble())\{}
+\DoxyCodeLine{00120             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_distance = payload[\textcolor{stringliteral}{"{}cur\_ds"{}}].GetDouble();}
+\DoxyCodeLine{00121         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00122             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}cur\_ds\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00123         \}}
+\DoxyCodeLine{00124             }
+\DoxyCodeLine{00125         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}is\_allowed"{}})-\/>value.IsBool())\{}
+\DoxyCodeLine{00126             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_access = payload[\textcolor{stringliteral}{"{}is\_allowed"{}}].GetBool();}
+\DoxyCodeLine{00127         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00128             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}is\_allowed\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00129         \}}
+\DoxyCodeLine{00130 }
+\DoxyCodeLine{00131         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}depart\_pos"{}})-\/>value.IsInt64())\{}
+\DoxyCodeLine{00132             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_departure\_position = payload[\textcolor{stringliteral}{"{}depart\_pos"{}}].GetInt();}
+\DoxyCodeLine{00133         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00134             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}depart\_pos\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00135 }
+\DoxyCodeLine{00136         \}}
+\DoxyCodeLine{00137 }
+\DoxyCodeLine{00138         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}entry\_lane\_id"{}})-\/>value.IsInt() \&\& payload[\textcolor{stringliteral}{"{}entry\_lane\_id"{}}].GetInt() != 0)\{}
+\DoxyCodeLine{00139             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id = payload[\textcolor{stringliteral}{"{}entry\_lane\_id"{}}].GetInt();}
+\DoxyCodeLine{00140         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00141             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}entry\_lane\_id\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00142         \}}
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}dest\_lane\_id"{}})-\/>value.IsInt() \&\& payload[\textcolor{stringliteral}{"{}dest\_lane\_id"{}}].GetInt() != 0)\{}
+\DoxyCodeLine{00145             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_exit\_lane\_id =payload[\textcolor{stringliteral}{"{}dest\_lane\_id"{}}].GetInt();}
+\DoxyCodeLine{00146         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00147             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}dest\_lane\_id\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00148         \}}
+\DoxyCodeLine{00149         }
+\DoxyCodeLine{00150         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}link\_lane\_id"{}})-\/>value.IsInt() \&\& payload[\textcolor{stringliteral}{"{}link\_lane\_id"{}}].GetInt() != 0)\{}
+\DoxyCodeLine{00151             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_link\_id = payload[\textcolor{stringliteral}{"{}link\_lane\_id"{}}].GetInt();}
+\DoxyCodeLine{00152         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00153             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}link\_lane\_id\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00154         \}}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156         \textcolor{keywordflow}{if} (payload.FindMember(\textcolor{stringliteral}{"{}direction"{}})-\/>value.IsString() )\{}
+\DoxyCodeLine{00157             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_direction = payload[\textcolor{stringliteral}{"{}direction"{}}].GetString();}
+\DoxyCodeLine{00158         \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00159             \textcolor{keywordflow}{throw} status\_intent\_processing\_exception(\textcolor{stringliteral}{"{}The \(\backslash\)"{}direction\(\backslash\)"{} "{}} + \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id + \textcolor{stringliteral}{"{} is missing/incorrect in received update!"{}});}
+\DoxyCodeLine{00160         \}}
+\DoxyCodeLine{00161 }
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163         \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_ae4a3f6bc8f4d1066c476a6b8d5e8e2f9}{update\_vehicle\_state}}(vehicle);}
+\DoxyCodeLine{00164     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00045}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+accel\+\_\+max}}, \mbox{\hyperlink{vehicle_8h_source_l00061}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+access}}, \mbox{\hyperlink{vehicle_8h_source_l00077}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+accel}}, \mbox{\hyperlink{vehicle_8h_source_l00073}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+distance}}, \mbox{\hyperlink{vehicle_8h_source_l00049}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, \mbox{\hyperlink{vehicle_8h_source_l00047}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+decel\+\_\+max}}, \mbox{\hyperlink{vehicle_8h_source_l00063}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+departure\+\_\+position}}, \mbox{\hyperlink{vehicle_8h_source_l00057}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+direction}}, \mbox{\hyperlink{vehicle_8h_source_l00051}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+entry\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00053}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+exit\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00039}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+length}}, \mbox{\hyperlink{vehicle_8h_source_l00055}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+link\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00041}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+min\+\_\+gap}}, \mbox{\hyperlink{vehicle_8h_source_l00043}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+reaction\+\_\+time}}, and \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00166}{update\+\_\+vehicle\+\_\+state()}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00006}{from\+\_\+json()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_aecf488ec3917a0ca3ca8ca2c627f24fc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_aecf488ec3917a0ca3ca8ca2c627f24fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_ab9df0a1a3f5a77fe4fcd0b405bfab0f4}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_ab9df0a1a3f5a77fe4fcd0b405bfab0f4}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!set\_stopping\_distance@{set\_stopping\_distance}}
+\index{set\_stopping\_distance@{set\_stopping\_distance}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{set\_stopping\_distance()}{set\_stopping\_distance()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::set\+\_\+stopping\+\_\+distance (\begin{DoxyParamCaption}\item[{const double}]{stopping\+\_\+distance }\end{DoxyParamCaption})}
+
+
+
+Set stopping\+\_\+distance stopping condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopping\+\_\+distance} & max distance from stop line at which vehicle can be considered stopped in meters. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00280}{280}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00280                                                                                                \{}
+\DoxyCodeLine{00281         \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a7acafb46aa506f52816a47e259120b7c}{\_stopping\_distance}} = stopping\_distance;}
+\DoxyCodeLine{00282     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00098}{\+\_\+stopping\+\_\+distance}}.
+
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_af89822b6c6f045b584f622f7a604b33b}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_af89822b6c6f045b584f622f7a604b33b}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!set\_stopping\_speed@{set\_stopping\_speed}}
+\index{set\_stopping\_speed@{set\_stopping\_speed}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{set\_stopping\_speed()}{set\_stopping\_speed()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::set\+\_\+stopping\+\_\+speed (\begin{DoxyParamCaption}\item[{const double}]{stopping\+\_\+speed }\end{DoxyParamCaption})}
+
+
+
+Set stopping\+\_\+speed stopping condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stopping\+\_\+speed} & max speed at which vehicle can be considered stopped in m/s. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00284}{284}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00284                                                                                          \{}
+\DoxyCodeLine{00285         \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a0db9d9f3c3ff3e7373afeaab4e8872a5}{\_stopping\_speed}} = stopping\_speed;}
+\DoxyCodeLine{00286     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00100}{\+\_\+stopping\+\_\+speed}}.
+
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a12a1b270d0eced95feb9e5062420a6f6}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a12a1b270d0eced95feb9e5062420a6f6}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!set\_timeout@{set\_timeout}}
+\index{set\_timeout@{set\_timeout}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{set\_timeout()}{set\_timeout()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::set\+\_\+timeout (\begin{DoxyParamCaption}\item[{const uint64\+\_\+t}]{timeout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the timeout in milliseconds Timeout value controls when updates are no longer considered valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timeout} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classstreets__vehicles_1_1status__intent__processor_a274ba0955f451100de8e340545538542}{streets\+\_\+vehicles\+::status\+\_\+intent\+\_\+processor}}.
+
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00272}{272}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00272                                                                        \{}
+\DoxyCodeLine{00273         \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a2a4f2c264bedd086bd48c8b074e9ffa4}{\_timeout}} = timeout;}
+\DoxyCodeLine{00274     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00102}{\+\_\+timeout}}.
+
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_ae4a3f6bc8f4d1066c476a6b8d5e8e2f9}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_ae4a3f6bc8f4d1066c476a6b8d5e8e2f9}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!update\_vehicle\_state@{update\_vehicle\_state}}
+\index{update\_vehicle\_state@{update\_vehicle\_state}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{update\_vehicle\_state()}{update\_vehicle\_state()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::update\+\_\+vehicle\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Updates vehicle state based on previous state and stopping condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle} & reference to update \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classstreets__vehicles_1_1signalized__status__intent__processor_a50ef00017c88c5b111bab425b28de778}{streets\+\_\+vehicles\+::signalized\+\_\+status\+\_\+intent\+\_\+processor}}.
+
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00166}{166}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00166                                                                                         \{}
+\DoxyCodeLine{00167         SPDLOG\_INFO(\textcolor{stringliteral}{"{}Update vehilce status with all stop status and intent processor."{}});}
+\DoxyCodeLine{00168         }
+\DoxyCodeLine{00169         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca9a116c50d133c8648404081885194300}{vehicle\_state::ND}} )\{}
+\DoxyCodeLine{00170             \textcolor{keywordflow}{if} ( \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id == \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id ) \{}
+\DoxyCodeLine{00171                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state = \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{vehicle\_state::EV}} ;}
+\DoxyCodeLine{00172                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle \{0\} state is updated from ND to EV."{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);     }
+\DoxyCodeLine{00173 }
+\DoxyCodeLine{00174             \}}
+\DoxyCodeLine{00175             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00176                 SPDLOG\_CRITICAL( \textcolor{stringliteral}{"{}Vehicle with ND (Not Defined) STATE is NOT in entry lane \{0\} != \{1\}"{}},}
+\DoxyCodeLine{00177                     \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id);}
+\DoxyCodeLine{00178             \}}
+\DoxyCodeLine{00179 }
+\DoxyCodeLine{00180         \}}
+\DoxyCodeLine{00181         \textcolor{comment}{// Asssume vehicle is in entry lane if previous state is EV}}
+\DoxyCodeLine{00182         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{vehicle\_state::EV}} \&\& \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_a6d0b32c2cde092c20061998225df7442}{is\_vehicle\_stopped}}( vehicle ) )\{}
+\DoxyCodeLine{00183             \textcolor{keywordflow}{if} ( \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id != \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id )\{}
+\DoxyCodeLine{00184                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Stopped vehicle with EV (Entering Vehicle) STATE is NOT in entry lane \{0\} != \{1\}"{}} ,}
+\DoxyCodeLine{00185                     \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id );}
+\DoxyCodeLine{00186             \}}
+\DoxyCodeLine{00187             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state =  \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405acab08ef04fe84cf4f6645fef073717f36f}{vehicle\_state::RDV}};}
+\DoxyCodeLine{00188             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_actual\_st = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time;}
+\DoxyCodeLine{00189             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle \{0\} state is updated from EV to RDV."{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);    }
+\DoxyCodeLine{00190         \}}
+\DoxyCodeLine{00191         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405acab08ef04fe84cf4f6645fef073717f36f}{vehicle\_state::RDV}} \&\& \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_access )\{}
+\DoxyCodeLine{00192             \textcolor{keywordflow}{if} ( \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id != \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id )\{}
+\DoxyCodeLine{00193                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Departing vehicle with RDV (Ready to Depart Vehicle) VEHICLE STATE is NOT in entry lane \{0\} != \{1\}"{}} ,}
+\DoxyCodeLine{00194                     \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id );}
+\DoxyCodeLine{00195             \}}
+\DoxyCodeLine{00196             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state = \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{vehicle\_state::DV}};}
+\DoxyCodeLine{00197             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_actual\_et = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time;}
+\DoxyCodeLine{00198             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle \{0\} state is updated from RDV to DV."{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);    }
+\DoxyCodeLine{00199 }
+\DoxyCodeLine{00200         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id == \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_exit\_lane\_id \&\& \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{vehicle\_state::DV}}) \{}
+\DoxyCodeLine{00201             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state = \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405acaa7bdee32cb21f0abbf9f878cb06cfe16}{vehicle\_state::LV}};}
+\DoxyCodeLine{00202             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_actual\_dt = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time;}
+\DoxyCodeLine{00203             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle \{0\} state is updated from DV to LV."{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);     }
+\DoxyCodeLine{00204 }
+\DoxyCodeLine{00205         \}}
+\DoxyCodeLine{00206     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00061}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+access}}, \mbox{\hyperlink{vehicle_8h_source_l00069}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+actual\+\_\+dt}}, \mbox{\hyperlink{vehicle_8h_source_l00067}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+actual\+\_\+et}}, \mbox{\hyperlink{vehicle_8h_source_l00065}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+actual\+\_\+st}}, \mbox{\hyperlink{vehicle_8h_source_l00049}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00079}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+state}}, \mbox{\hyperlink{vehicle_8h_source_l00071}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+time}}, \mbox{\hyperlink{vehicle_8h_source_l00051}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+entry\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00053}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+exit\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\+\_\+vehicles\+::\+DV}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\+\_\+vehicles\+::\+EV}}, \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00266}{is\+\_\+vehicle\+\_\+stopped()}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405acaa7bdee32cb21f0abbf9f878cb06cfe16}{streets\+\_\+vehicles\+::\+LV}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca9a116c50d133c8648404081885194300}{streets\+\_\+vehicles\+::\+ND}}, and \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405acab08ef04fe84cf4f6645fef073717f36f}{streets\+\_\+vehicles\+::\+RDV}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00053}{read\+\_\+payload()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_ae4a3f6bc8f4d1066c476a6b8d5e8e2f9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1all__stop__status__intent__processor_ae4a3f6bc8f4d1066c476a6b8d5e8e2f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a7acafb46aa506f52816a47e259120b7c}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a7acafb46aa506f52816a47e259120b7c}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!\_stopping\_distance@{\_stopping\_distance}}
+\index{\_stopping\_distance@{\_stopping\_distance}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{\_stopping\_distance}{\_stopping\_distance}}
+{\footnotesize\ttfamily double streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::\+\_\+stopping\+\_\+distance\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00098}{98}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8h_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00266}{is\+\_\+vehicle\+\_\+stopped()}}, and \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00280}{set\+\_\+stopping\+\_\+distance()}}.
+
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a0db9d9f3c3ff3e7373afeaab4e8872a5}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a0db9d9f3c3ff3e7373afeaab4e8872a5}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!\_stopping\_speed@{\_stopping\_speed}}
+\index{\_stopping\_speed@{\_stopping\_speed}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{\_stopping\_speed}{\_stopping\_speed}}
+{\footnotesize\ttfamily double streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::\+\_\+stopping\+\_\+speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00100}{100}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8h_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00266}{is\+\_\+vehicle\+\_\+stopped()}}, and \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00284}{set\+\_\+stopping\+\_\+speed()}}.
+
+\mbox{\Hypertarget{classstreets__vehicles_1_1all__stop__status__intent__processor_a2a4f2c264bedd086bd48c8b074e9ffa4}\label{classstreets__vehicles_1_1all__stop__status__intent__processor_a2a4f2c264bedd086bd48c8b074e9ffa4}} 
+\index{streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}!\_timeout@{\_timeout}}
+\index{\_timeout@{\_timeout}!streets\_vehicles::all\_stop\_status\_intent\_processor@{streets\_vehicles::all\_stop\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{\_timeout}{\_timeout}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor\+::\+\_\+timeout\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{all__stop__status__intent__processor_8h_source_l00102}{102}} of file \mbox{\hyperlink{all__stop__status__intent__processor_8h_source}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00276}{get\+\_\+timeout()}}, \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00031}{read\+\_\+metadata()}}, and \mbox{\hyperlink{all__stop__status__intent__processor_8cpp_source_l00272}{set\+\_\+timeout()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+vehicle\+\_\+list/include/\mbox{\hyperlink{all__stop__status__intent__processor_8h}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+h}}\item 
+streets\+\_\+utils/streets\+\_\+vehicle\+\_\+list/src/message\+\_\+processors/\mbox{\hyperlink{all__stop__status__intent__processor_8cpp}{all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,2032 @@
+\hypertarget{classOpenAPI_1_1OAIDefaultApi}{}\doxysection{Open\+API\+::OAIDefault\+Api Class Reference}
+\label{classOpenAPI_1_1OAIDefaultApi}\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+
+
+{\ttfamily \#include $<$OAIDefault\+Api.\+h$>$}
+
+
+
+Inheritance diagram for Open\+API\+::OAIDefault\+Api\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classOpenAPI_1_1OAIDefaultApi__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Open\+API\+::OAIDefault\+Api\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a7ca74efc9731df255300986aa99676c5}{get\+Conflict\+Lanelets\+Signal}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1d28886ea13c3f1818c0477fe309f9fd}{get\+Intersection\+Info\+Signal}} (\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\+\_\+info}} summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a288d8613523caa2a53673d2d7d0a5f6f}{list\+Departure\+Lanelets\+Signal}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a01785eb2946fc4209f71ea21b03864c4}{list\+Entry\+Lanelets\+Signal}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a044b3fbbc13515cd297cd1fb2a62acb1}{list\+Link\+Lanelets\+Signal}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae0e26ee654808adc5d8ad739790e9e7c}{get\+Conflict\+Lanelets\+Signal\+Full}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ac8c77dfdd942d7362392fe1f2193b5ac}{get\+Intersection\+Info\+Signal\+Full}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, \mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\+\_\+info}} summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab79cd931c66889740465d0a2d1a34f9f}{list\+Departure\+Lanelets\+Signal\+Full}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a8ab76a7247bbf64a08b9c1cd462699f0}{list\+Entry\+Lanelets\+Signal\+Full}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1196771ab82aaf2549da7a1f93043cc9}{list\+Link\+Lanelets\+Signal\+Full}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6fab48ca50f3a472cf73715b12c59a62}{get\+Conflict\+Lanelets\+SignalE}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a115becc3a08d245dc8591b7d263497d1}{get\+Intersection\+Info\+SignalE}} (\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\+\_\+info}} summary, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a57ce5f75cc76fc071ab3997e87ac450c}{list\+Departure\+Lanelets\+SignalE}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae3ac0f90fc38543a91bed437532a5dcc}{list\+Entry\+Lanelets\+SignalE}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aad9983788b0730354752657618880d2c}{list\+Link\+Lanelets\+SignalE}} (QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$ summary, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade86d3199876262b0bdae542504b0a54}{get\+Conflict\+Lanelets\+Signal\+EFull}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a11f9e4311fff0a0fb049a65f1d64e7f6}{get\+Intersection\+Info\+Signal\+EFull}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ac71f52ffd61dcb3efac5ccfa6a1831b5}{list\+Departure\+Lanelets\+Signal\+EFull}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aff83f58c2a1ea333cb16acf6f8711b96}{list\+Entry\+Lanelets\+Signal\+EFull}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a58d97691af9faef8abab44cbd2dfc8dd}{list\+Link\+Lanelets\+Signal\+EFull}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker, QNetwork\+Reply\+::\+Network\+Error error\+\_\+type, QString error\+\_\+str)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abort\+Requests\+Signal}} ()
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{all\+Pending\+Requests\+Completed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a210c16e1c6a677c23eeb8c0a3e3d0a67}{OAIDefault\+Api}} (const int time\+Out=0)
+\item 
+\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_afec49d7901182b1c9c8c0b93df557e2d}{$\sim$\+OAIDefault\+Api}} ()
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a81e98559344863d68c6422a57a46ad0d}{initialize\+Server\+Configs}} ()
+\item 
+int \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a3100b11b592c2134295f470c74085a72}{set\+Default\+Server\+Value}} (int server\+Index, const QString \&operation, const QString \&variable, const QString \&val)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aebc221f687714f8e3da7947eb028ab70}{set\+Server\+Index}} (const QString \&operation, int server\+Index)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ac9fa66c5b6cae9aacfd8aa64a49a2e6d}{set\+Api\+Key}} (const QString \&api\+Key\+Name, const QString \&api\+Key)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aef1d29f9c33f140e5ec7885ea85de52c}{set\+Bearer\+Token}} (const QString \&token)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a545a32ab1aeb8b2ad4110c0a34c5a3e8}{set\+Username}} (const QString \&username)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a44be5b7a0ae18dbd0becdaebd37636fd}{set\+Password}} (const QString \&password)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a925fefd273766397a629bf48785d4f64}{set\+Time\+Out}} (const int time\+Out)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a46071b8aab2321990b40e4bad46eea95}{set\+Working\+Directory}} (const QString \&path)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a06d92754b44b443b392cd6cd86493aae}{set\+Network\+Access\+Manager}} (QNetwork\+Access\+Manager $\ast$manager)
+\item 
+int \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1da1e529161e9d0e85c02e7c98856be3}{add\+Server\+Configuration}} (const QString \&operation, const QUrl \&url, const QString \&description=\char`\"{}\char`\"{}, const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&variables=QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$())
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a0e6cacc6eb5f4f5696fd0a8671c92a57}{set\+New\+Server\+For\+All\+Operations}} (const QUrl \&url, const QString \&description=\char`\"{}\char`\"{}, const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&variables=QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$())
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_afe9e6d215004e43ac5315939ceab47c4}{set\+New\+Server}} (const QString \&operation, const QUrl \&url, const QString \&description=\char`\"{}\char`\"{}, const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&variables=QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$())
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_af75acc9cfaf5267d33643fa9589826d6}{add\+Headers}} (const QString \&key, const QString \&value)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae98260216475beeb03c9970a9135e64b}{enable\+Request\+Compression}} ()
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aa3c6e4f2bf2b620d08afac0bdcef6fee}{enable\+Response\+Compression}} ()
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a195d7cf55511d96e0d367db548ce6572}{abort\+Requests}} ()
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a59a992908c9e84dc8345ad2e8bf4b459}{get\+Param\+Style\+Prefix}} (const QString \&style)
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae4346069c665cdeb9952c8fbe9d9d3aa}{get\+Param\+Style\+Suffix}} (const QString \&style)
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab533ea1c4c92dcfa76afc91413f189a9}{get\+Param\+Style\+Delimiter}} (const QString \&style, const QString \&name, bool is\+Explode)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a0fc1f5bb1e8b2492cbfdd828e562a519}{get\+Conflict\+Lanelets}} (const qint32 \&link\+\_\+lanelet\+\_\+id)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a682ffe8581eaecb7e32df4d3c66b6762}{get\+Intersection\+Info}} ()
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ad98fac116cce0c0da2857a821286288e}{list\+Departure\+Lanelets}} ()
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae94784bf95d9dccf1ed6b4d7a977d5ac}{list\+Entry\+Lanelets}} ()
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a650caa304c144a93bbc145e997a6d144}{list\+Link\+Lanelets}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aceb17048827a7d3a1a9c8782f25466d1}{get\+Conflict\+Lanelets\+Callback}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1eccf42ed0a02f35dce86f1fef9d7238}{get\+Intersection\+Info\+Callback}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ad27b5abe849c76db47b9a1a3e48219fa}{list\+Departure\+Lanelets\+Callback}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a116eee6d9b7e6d1a3eb444a6f1bde5a6}{list\+Entry\+Lanelets\+Callback}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker)
+\item 
+void \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aea22aac554430e175c14e9b775d4c669}{list\+Link\+Lanelets\+Callback}} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$worker)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QMap$<$ QString, int $>$ \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\+\_\+server\+Indices}}
+\item 
+QMap$<$ QString, QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration}{OAIServer\+Configuration}} $>$ $>$ \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\+\_\+server\+Configs}}
+\item 
+QMap$<$ QString, QString $>$ \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ad1af9da2229116ab1676f30447a9a3cf}{\+\_\+api\+Keys}}
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ad8e2ee3cb8394cb5e534a574748f62e6}{\+\_\+bearer\+Token}}
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_acd519749363655f29ae2d6f12886e5eb}{\+\_\+username}}
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a609211c65b2e013280592eaddc49c939}{\+\_\+password}}
+\item 
+int \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\+\_\+time\+Out}}
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}{\+\_\+working\+Directory}}
+\item 
+QNetwork\+Access\+Manager $\ast$ \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\+\_\+manager}}
+\item 
+QMap$<$ QString, QString $>$ \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\+\_\+default\+Headers}}
+\item 
+bool \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a20955ddd7f38baebc96911b7f2c99a31}{\+\_\+is\+Response\+Compression\+Enabled}}
+\item 
+bool \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a564f88a89b8093332618fa8665514737}{\+\_\+is\+Request\+Compression\+Enabled}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00031}{31}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a210c16e1c6a677c23eeb8c0a3e3d0a67}\label{classOpenAPI_1_1OAIDefaultApi_a210c16e1c6a677c23eeb8c0a3e3d0a67}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!OAIDefaultApi@{OAIDefaultApi}}
+\index{OAIDefaultApi@{OAIDefaultApi}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{OAIDefaultApi()}{OAIDefaultApi()}}
+{\footnotesize\ttfamily Open\+API\+::\+OAIDefault\+Api\+::\+OAIDefault\+Api (\begin{DoxyParamCaption}\item[{const int}]{time\+Out = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020     : \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\_timeOut}}(timeOut),}
+\DoxyCodeLine{00021       \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\_manager}}(\textcolor{keyword}{nullptr}),}
+\DoxyCodeLine{00022       \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a20955ddd7f38baebc96911b7f2c99a31}{\_isResponseCompressionEnabled}}(\textcolor{keyword}{false}),}
+\DoxyCodeLine{00023       \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a564f88a89b8093332618fa8665514737}{\_isRequestCompressionEnabled}}(\textcolor{keyword}{false}) \{}
+\DoxyCodeLine{00024     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a81e98559344863d68c6422a57a46ad0d}{initializeServerConfigs}}();}
+\DoxyCodeLine{00025 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00030}{initialize\+Server\+Configs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a210c16e1c6a677c23eeb8c0a3e3d0a67_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_afec49d7901182b1c9c8c0b93df557e2d}\label{classOpenAPI_1_1OAIDefaultApi_afec49d7901182b1c9c8c0b93df557e2d}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!````~OAIDefaultApi@{$\sim$OAIDefaultApi}}
+\index{````~OAIDefaultApi@{$\sim$OAIDefaultApi}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{$\sim$OAIDefaultApi()}{~OAIDefaultApi()}}
+{\footnotesize\ttfamily Open\+API\+::\+OAIDefault\+Api\+::$\sim$\+OAIDefault\+Api (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027                               \{}
+\DoxyCodeLine{00028 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a195d7cf55511d96e0d367db548ce6572}\label{classOpenAPI_1_1OAIDefaultApi_a195d7cf55511d96e0d367db548ce6572}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!abortRequests@{abortRequests}}
+\index{abortRequests@{abortRequests}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{abortRequests()}{abortRequests()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::abort\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00156}{156}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00156                                   \{}
+\DoxyCodeLine{00157     emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abortRequestsSignal}}();}
+\DoxyCodeLine{00158 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abort\+Requests\+Signal()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}\label{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!abortRequestsSignal@{abortRequestsSignal}}
+\index{abortRequestsSignal@{abortRequestsSignal}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{abortRequestsSignal}{abortRequestsSignal}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::abort\+Requests\+Signal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00156}{abort\+Requests()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_af75acc9cfaf5267d33643fa9589826d6}\label{classOpenAPI_1_1OAIDefaultApi_af75acc9cfaf5267d33643fa9589826d6}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!addHeaders@{addHeaders}}
+\index{addHeaders@{addHeaders}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{addHeaders()}{addHeaders()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::add\+Headers (\begin{DoxyParamCaption}\item[{const QString \&}]{key,  }\item[{const QString \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00144}{144}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00144                                                                        \{}
+\DoxyCodeLine{00145     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.insert(key, \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{00146 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00087}{\+\_\+default\+Headers}}, and \mbox{\hyperlink{simulate__bsm_8py_source_l00024}{simulate\+\_\+bsm\+::value}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a1da1e529161e9d0e85c02e7c98856be3}\label{classOpenAPI_1_1OAIDefaultApi_a1da1e529161e9d0e85c02e7c98856be3}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!addServerConfiguration@{addServerConfiguration}}
+\index{addServerConfiguration@{addServerConfiguration}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{addServerConfiguration()}{addServerConfiguration()}}
+{\footnotesize\ttfamily int Open\+API\+::\+OAIDefault\+Api\+::add\+Server\+Configuration (\begin{DoxyParamCaption}\item[{const QString \&}]{operation,  }\item[{const QUrl \&}]{url,  }\item[{const QString \&}]{description = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&}]{variables = {\ttfamily QMap$<$QString,~\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}}$>$()} }\end{DoxyParamCaption})}
+
+Appends a new Server\+Configuration to the config map for a specific operation. 
+\begin{DoxyParams}{Parameters}
+{\em operation} & The id to the target operation. \\
+\hline
+{\em url} & A string that contains the URL of the server \\
+\hline
+{\em description} & A String that describes the server \\
+\hline
+{\em variables} & A map between a variable name and its value. The value is used for substitution in the server\textquotesingle{}s URL template. returns the index of the new server config on success and -\/1 if the operation is not found \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00104}{104}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00104                                                                                                                                                                   \{}
+\DoxyCodeLine{00105     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.contains(operation)) \{}
+\DoxyCodeLine{00106         \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[operation].append(OAIServerConfiguration(}
+\DoxyCodeLine{00107                     url,}
+\DoxyCodeLine{00108                     description,}
+\DoxyCodeLine{00109                     variables));}
+\DoxyCodeLine{00110         \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[operation].size()-\/1;}
+\DoxyCodeLine{00111     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00112         \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{00113     \}}
+\DoxyCodeLine{00114 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00140}{set\+New\+Server()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00122}{set\+New\+Server\+For\+All\+Operations()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a1da1e529161e9d0e85c02e7c98856be3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}\label{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!allPendingRequestsCompleted@{allPendingRequestsCompleted}}
+\index{allPendingRequestsCompleted@{allPendingRequestsCompleted}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{allPendingRequestsCompleted}{allPendingRequestsCompleted}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::all\+Pending\+Requests\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ae98260216475beeb03c9970a9135e64b}\label{classOpenAPI_1_1OAIDefaultApi_ae98260216475beeb03c9970a9135e64b}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!enableRequestCompression@{enableRequestCompression}}
+\index{enableRequestCompression@{enableRequestCompression}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{enableRequestCompression()}{enableRequestCompression()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::enable\+Request\+Compression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00148}{148}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00148                                              \{}
+\DoxyCodeLine{00149     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a564f88a89b8093332618fa8665514737}{\_isRequestCompressionEnabled}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00150 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00089}{\+\_\+is\+Request\+Compression\+Enabled}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_aa3c6e4f2bf2b620d08afac0bdcef6fee}\label{classOpenAPI_1_1OAIDefaultApi_aa3c6e4f2bf2b620d08afac0bdcef6fee}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!enableResponseCompression@{enableResponseCompression}}
+\index{enableResponseCompression@{enableResponseCompression}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{enableResponseCompression()}{enableResponseCompression()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::enable\+Response\+Compression (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00152}{152}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00152                                               \{}
+\DoxyCodeLine{00153     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a20955ddd7f38baebc96911b7f2c99a31}{\_isResponseCompressionEnabled}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00154 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00088}{\+\_\+is\+Response\+Compression\+Enabled}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a0fc1f5bb1e8b2492cbfdd828e562a519}\label{classOpenAPI_1_1OAIDefaultApi_a0fc1f5bb1e8b2492cbfdd828e562a519}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getConflictLanelets@{getConflictLanelets}}
+\index{getConflictLanelets@{getConflictLanelets}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getConflictLanelets()}{getConflictLanelets()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Conflict\+Lanelets (\begin{DoxyParamCaption}\item[{const qint32 \&}]{link\+\_\+lanelet\+\_\+id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em link\+\_\+lanelet\+\_\+id} & qint32 \mbox{[}required\mbox{]} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{223}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00223                                                                      \{}
+\DoxyCodeLine{00224     QString fullPath = QString(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[\textcolor{stringliteral}{"{}getConflictLanelets"{}}][\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.value(\textcolor{stringliteral}{"{}getConflictLanelets"{}})].URL()+\textcolor{stringliteral}{"{}/get\_conflict\_lanelets/\{link\_lanelet\_id\}"{}});}
+\DoxyCodeLine{00225     }
+\DoxyCodeLine{00226     }
+\DoxyCodeLine{00227     \{}
+\DoxyCodeLine{00228         QString link\_lanelet\_idPathParam(\textcolor{stringliteral}{"{}\{"{}});}
+\DoxyCodeLine{00229         link\_lanelet\_idPathParam.append(\textcolor{stringliteral}{"{}link\_lanelet\_id"{}}).append(\textcolor{stringliteral}{"{}\}"{}});}
+\DoxyCodeLine{00230         QString pathPrefix, pathSuffix, pathDelimiter;}
+\DoxyCodeLine{00231         QString pathStyle = \textcolor{stringliteral}{"{}simple"{}};}
+\DoxyCodeLine{00232         \textcolor{keywordflow}{if} (pathStyle == \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00233             pathStyle = \textcolor{stringliteral}{"{}simple"{}};}
+\DoxyCodeLine{00234         pathPrefix = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a59a992908c9e84dc8345ad2e8bf4b459}{getParamStylePrefix}}(pathStyle);}
+\DoxyCodeLine{00235         pathSuffix = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae4346069c665cdeb9952c8fbe9d9d3aa}{getParamStyleSuffix}}(pathStyle);}
+\DoxyCodeLine{00236         pathDelimiter = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab533ea1c4c92dcfa76afc91413f189a9}{getParamStyleDelimiter}}(pathStyle, \textcolor{stringliteral}{"{}link\_lanelet\_id"{}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{00237         QString paramString = (pathStyle == \textcolor{stringliteral}{"{}matrix"{}}) ? pathPrefix+\textcolor{stringliteral}{"{}link\_lanelet\_id"{}}+pathSuffix : pathPrefix;}
+\DoxyCodeLine{00238         fullPath.replace(link\_lanelet\_idPathParam, paramString+QUrl::toPercentEncoding(\mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{::OpenAPI::toStringValue}}(link\_lanelet\_id)));}
+\DoxyCodeLine{00239     \}}
+\DoxyCodeLine{00240     OAIHttpRequestWorker *worker = \textcolor{keyword}{new} OAIHttpRequestWorker(\textcolor{keyword}{this}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\_manager}});}
+\DoxyCodeLine{00241     worker-\/>setTimeOut(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\_timeOut}});}
+\DoxyCodeLine{00242     worker-\/>setWorkingDirectory(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}{\_workingDirectory}});}
+\DoxyCodeLine{00243     OAIHttpRequestInput input(fullPath, \textcolor{stringliteral}{"{}GET"{}});}
+\DoxyCodeLine{00244 }
+\DoxyCodeLine{00245 }
+\DoxyCodeLine{00246 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{00247     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} keyValueIt = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueBegin(); keyValueIt != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueEnd(); keyValueIt++) \{}
+\DoxyCodeLine{00248         input.headers.insert(keyValueIt-\/>first, keyValueIt-\/>second);}
+\DoxyCodeLine{00249     \}}
+\DoxyCodeLine{00250 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00251     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} key : \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keys()) \{}
+\DoxyCodeLine{00252         input.headers.insert(key, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}[key]);}
+\DoxyCodeLine{00253     \}}
+\DoxyCodeLine{00254 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00255 }
+\DoxyCodeLine{00256     connect(worker, \&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{OAIHttpRequestWorker::on\_execution\_finished}}, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aceb17048827a7d3a1a9c8782f25466d1}{OAIDefaultApi::getConflictLaneletsCallback}});}
+\DoxyCodeLine{00257     connect(\textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{OAIDefaultApi::abortRequestsSignal}}, worker, \&QObject::deleteLater);}
+\DoxyCodeLine{00258     connect(worker, \&QObject::destroyed, \textcolor{keyword}{this}, [\textcolor{keyword}{this}]() \{}
+\DoxyCodeLine{00259         \textcolor{keywordflow}{if} (findChildren<OAIHttpRequestWorker*>().\mbox{\hyperlink{namespacesimulate__bsm_a76f645adf8af768fa959ecb6f90d7831}{count}}() == 0) \{}
+\DoxyCodeLine{00260             emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{allPendingRequestsCompleted}}();}
+\DoxyCodeLine{00261         \}}
+\DoxyCodeLine{00262     \});}
+\DoxyCodeLine{00263 }
+\DoxyCodeLine{00264     worker-\/>execute(\&input);}
+\DoxyCodeLine{00265 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00087}{\+\_\+default\+Headers}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00086}{\+\_\+manager}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00084}{\+\_\+time\+Out}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00085}{\+\_\+working\+Directory}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abort\+Requests\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{all\+Pending\+Requests\+Completed()}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00018}{simulate\+\_\+bsm\+::count}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00177}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::execute()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00267}{get\+Conflict\+Lanelets\+Callback()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00196}{get\+Param\+Style\+Delimiter()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00160}{get\+Param\+Style\+Prefix()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00178}{get\+Param\+Style\+Suffix()}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00049}{Open\+API\+::\+OAIHttp\+Request\+Input\+::headers}}, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::on\+\_\+execution\+\_\+finished()}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00111}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Time\+Out()}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00118}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Working\+Directory()}}, and \mbox{\hyperlink{intersection__client__api_2OAIHelpers_8cpp_source_l00082}{Open\+API\+::to\+String\+Value()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a0fc1f5bb1e8b2492cbfdd828e562a519_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_aceb17048827a7d3a1a9c8782f25466d1}\label{classOpenAPI_1_1OAIDefaultApi_aceb17048827a7d3a1a9c8782f25466d1}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getConflictLaneletsCallback@{getConflictLaneletsCallback}}
+\index{getConflictLaneletsCallback@{getConflictLaneletsCallback}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getConflictLaneletsCallback()}{getConflictLaneletsCallback()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Conflict\+Lanelets\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00267}{267}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00267                                                                             \{}
+\DoxyCodeLine{00268     QString error\_str = worker-\/>error\_str;}
+\DoxyCodeLine{00269     QNetworkReply::NetworkError error\_type = worker-\/>error\_type;}
+\DoxyCodeLine{00270 }
+\DoxyCodeLine{00271     \textcolor{keywordflow}{if} (worker-\/>error\_type != QNetworkReply::NoError) \{}
+\DoxyCodeLine{00272         error\_str = QString(\textcolor{stringliteral}{"{}\%1, \%2"{}}).arg(worker-\/>error\_str, QString(worker-\/>response));}
+\DoxyCodeLine{00273     \}}
+\DoxyCodeLine{00274     QList<OAILanelet\_info> output;}
+\DoxyCodeLine{00275     QString json(worker-\/>response);}
+\DoxyCodeLine{00276     QByteArray array(json.toStdString().c\_str());}
+\DoxyCodeLine{00277     QJsonDocument doc = QJsonDocument::fromJson(array);}
+\DoxyCodeLine{00278     QJsonArray jsonArray = doc.array();}
+\DoxyCodeLine{00279     \textcolor{keywordflow}{foreach} (QJsonValue obj, jsonArray) \{}
+\DoxyCodeLine{00280         OAILanelet\_info val;}
+\DoxyCodeLine{00281         \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{::OpenAPI::fromJsonValue}}(val, obj);}
+\DoxyCodeLine{00282         output.append(val);}
+\DoxyCodeLine{00283     \}}
+\DoxyCodeLine{00284     worker-\/>deleteLater();}
+\DoxyCodeLine{00285 }
+\DoxyCodeLine{00286     \textcolor{keywordflow}{if} (worker-\/>error\_type == QNetworkReply::NoError) \{}
+\DoxyCodeLine{00287         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a7ca74efc9731df255300986aa99676c5}{getConflictLaneletsSignal}}(output);}
+\DoxyCodeLine{00288         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae0e26ee654808adc5d8ad739790e9e7c}{getConflictLaneletsSignalFull}}(worker, output);}
+\DoxyCodeLine{00289     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00290         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6fab48ca50f3a472cf73715b12c59a62}{getConflictLaneletsSignalE}}(output, error\_type, error\_str);}
+\DoxyCodeLine{00291         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade86d3199876262b0bdae542504b0a54}{getConflictLaneletsSignalEFull}}(worker, error\_type, error\_str);}
+\DoxyCodeLine{00292     \}}
+\DoxyCodeLine{00293 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIHttpRequest_8h_source_l00069}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+str}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00068}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+type}}, \mbox{\hyperlink{intersection__client__api_2OAIHelpers_8cpp_source_l00299}{Open\+API\+::from\+Json\+Value()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a7ca74efc9731df255300986aa99676c5}{get\+Conflict\+Lanelets\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6fab48ca50f3a472cf73715b12c59a62}{get\+Conflict\+Lanelets\+Signal\+E()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade86d3199876262b0bdae542504b0a54}{get\+Conflict\+Lanelets\+Signal\+EFull()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae0e26ee654808adc5d8ad739790e9e7c}{get\+Conflict\+Lanelets\+Signal\+Full()}}, and \mbox{\hyperlink{OAIHttpRequest_8h_source_l00067}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::response}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_aceb17048827a7d3a1a9c8782f25466d1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_aceb17048827a7d3a1a9c8782f25466d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a7ca74efc9731df255300986aa99676c5}\label{classOpenAPI_1_1OAIDefaultApi_a7ca74efc9731df255300986aa99676c5}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getConflictLaneletsSignal@{getConflictLaneletsSignal}}
+\index{getConflictLaneletsSignal@{getConflictLaneletsSignal}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getConflictLaneletsSignal}{getConflictLaneletsSignal}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Conflict\+Lanelets\+Signal (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00267}{get\+Conflict\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a7ca74efc9731df255300986aa99676c5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a6fab48ca50f3a472cf73715b12c59a62}\label{classOpenAPI_1_1OAIDefaultApi_a6fab48ca50f3a472cf73715b12c59a62}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getConflictLaneletsSignalE@{getConflictLaneletsSignalE}}
+\index{getConflictLaneletsSignalE@{getConflictLaneletsSignalE}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getConflictLaneletsSignalE}{getConflictLaneletsSignalE}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Conflict\+Lanelets\+SignalE (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00267}{get\+Conflict\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a6fab48ca50f3a472cf73715b12c59a62_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ade86d3199876262b0bdae542504b0a54}\label{classOpenAPI_1_1OAIDefaultApi_ade86d3199876262b0bdae542504b0a54}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getConflictLaneletsSignalEFull@{getConflictLaneletsSignalEFull}}
+\index{getConflictLaneletsSignalEFull@{getConflictLaneletsSignalEFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getConflictLaneletsSignalEFull}{getConflictLaneletsSignalEFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Conflict\+Lanelets\+Signal\+EFull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00267}{get\+Conflict\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ade86d3199876262b0bdae542504b0a54_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ae0e26ee654808adc5d8ad739790e9e7c}\label{classOpenAPI_1_1OAIDefaultApi_ae0e26ee654808adc5d8ad739790e9e7c}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getConflictLaneletsSignalFull@{getConflictLaneletsSignalFull}}
+\index{getConflictLaneletsSignalFull@{getConflictLaneletsSignalFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getConflictLaneletsSignalFull}{getConflictLaneletsSignalFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Conflict\+Lanelets\+Signal\+Full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00267}{get\+Conflict\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ae0e26ee654808adc5d8ad739790e9e7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a682ffe8581eaecb7e32df4d3c66b6762}\label{classOpenAPI_1_1OAIDefaultApi_a682ffe8581eaecb7e32df4d3c66b6762}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getIntersectionInfo@{getIntersectionInfo}}
+\index{getIntersectionInfo@{getIntersectionInfo}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getIntersectionInfo()}{getIntersectionInfo()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Intersection\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{295}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00295                                         \{}
+\DoxyCodeLine{00296     QString fullPath = QString(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[\textcolor{stringliteral}{"{}getIntersectionInfo"{}}][\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.value(\textcolor{stringliteral}{"{}getIntersectionInfo"{}})].URL()+\textcolor{stringliteral}{"{}/info"{}});}
+\DoxyCodeLine{00297     }
+\DoxyCodeLine{00298     OAIHttpRequestWorker *worker = \textcolor{keyword}{new} OAIHttpRequestWorker(\textcolor{keyword}{this}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\_manager}});}
+\DoxyCodeLine{00299     worker-\/>setTimeOut(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\_timeOut}});}
+\DoxyCodeLine{00300     worker-\/>setWorkingDirectory(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}{\_workingDirectory}});}
+\DoxyCodeLine{00301     OAIHttpRequestInput input(fullPath, \textcolor{stringliteral}{"{}GET"{}});}
+\DoxyCodeLine{00302 }
+\DoxyCodeLine{00303 }
+\DoxyCodeLine{00304 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{00305     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} keyValueIt = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueBegin(); keyValueIt != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueEnd(); keyValueIt++) \{}
+\DoxyCodeLine{00306         input.headers.insert(keyValueIt-\/>first, keyValueIt-\/>second);}
+\DoxyCodeLine{00307     \}}
+\DoxyCodeLine{00308 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00309     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} key : \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keys()) \{}
+\DoxyCodeLine{00310         input.headers.insert(key, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}[key]);}
+\DoxyCodeLine{00311     \}}
+\DoxyCodeLine{00312 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00313 }
+\DoxyCodeLine{00314     connect(worker, \&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{OAIHttpRequestWorker::on\_execution\_finished}}, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1eccf42ed0a02f35dce86f1fef9d7238}{OAIDefaultApi::getIntersectionInfoCallback}});}
+\DoxyCodeLine{00315     connect(\textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{OAIDefaultApi::abortRequestsSignal}}, worker, \&QObject::deleteLater);}
+\DoxyCodeLine{00316     connect(worker, \&QObject::destroyed, \textcolor{keyword}{this}, [\textcolor{keyword}{this}]() \{}
+\DoxyCodeLine{00317         \textcolor{keywordflow}{if} (findChildren<OAIHttpRequestWorker*>().\mbox{\hyperlink{namespacesimulate__bsm_a76f645adf8af768fa959ecb6f90d7831}{count}}() == 0) \{}
+\DoxyCodeLine{00318             emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{allPendingRequestsCompleted}}();}
+\DoxyCodeLine{00319         \}}
+\DoxyCodeLine{00320     \});}
+\DoxyCodeLine{00321 }
+\DoxyCodeLine{00322     worker-\/>execute(\&input);}
+\DoxyCodeLine{00323 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00087}{\+\_\+default\+Headers}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00086}{\+\_\+manager}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00084}{\+\_\+time\+Out}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00085}{\+\_\+working\+Directory}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abort\+Requests\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{all\+Pending\+Requests\+Completed()}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00018}{simulate\+\_\+bsm\+::count}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00177}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::execute()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00325}{get\+Intersection\+Info\+Callback()}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00049}{Open\+API\+::\+OAIHttp\+Request\+Input\+::headers}}, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::on\+\_\+execution\+\_\+finished()}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00111}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Time\+Out()}}, and \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00118}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Working\+Directory()}}.
+
+
+
+Referenced by \mbox{\hyperlink{examples_2qt__rest__clients__api_2intersection__client_2intersection__client_8cpp_source_l00006}{intersection\+\_\+client\+::call()}}, \mbox{\hyperlink{scheduling__service_2src_2intersection__client_8cpp_source_l00028}{scheduling\+\_\+service\+::intersection\+\_\+client\+::request\+\_\+intersection\+\_\+info()}}, \mbox{\hyperlink{signal__opt__messages__worker_8cpp_source_l00035}{signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+messages\+\_\+worker\+::request\+\_\+intersection\+\_\+info()}}, and \mbox{\hyperlink{tsc__client__service_2src_2intersection__client_8cpp_source_l00005}{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::intersection\+\_\+client\+::request\+\_\+intersection\+\_\+info()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a682ffe8581eaecb7e32df4d3c66b6762_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a682ffe8581eaecb7e32df4d3c66b6762_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a1eccf42ed0a02f35dce86f1fef9d7238}\label{classOpenAPI_1_1OAIDefaultApi_a1eccf42ed0a02f35dce86f1fef9d7238}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getIntersectionInfoCallback@{getIntersectionInfoCallback}}
+\index{getIntersectionInfoCallback@{getIntersectionInfoCallback}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getIntersectionInfoCallback()}{getIntersectionInfoCallback()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Intersection\+Info\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00325}{325}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00325                                                                             \{}
+\DoxyCodeLine{00326     QString error\_str = worker-\/>error\_str;}
+\DoxyCodeLine{00327     QNetworkReply::NetworkError error\_type = worker-\/>error\_type;}
+\DoxyCodeLine{00328 }
+\DoxyCodeLine{00329     \textcolor{keywordflow}{if} (worker-\/>error\_type != QNetworkReply::NoError) \{}
+\DoxyCodeLine{00330         error\_str = QString(\textcolor{stringliteral}{"{}\%1, \%2"{}}).arg(worker-\/>error\_str, QString(worker-\/>response));}
+\DoxyCodeLine{00331     \}}
+\DoxyCodeLine{00332     OAIIntersection\_info output(QString(worker-\/>response));}
+\DoxyCodeLine{00333     worker-\/>deleteLater();}
+\DoxyCodeLine{00334 }
+\DoxyCodeLine{00335     \textcolor{keywordflow}{if} (worker-\/>error\_type == QNetworkReply::NoError) \{}
+\DoxyCodeLine{00336         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1d28886ea13c3f1818c0477fe309f9fd}{getIntersectionInfoSignal}}(output);}
+\DoxyCodeLine{00337         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ac8c77dfdd942d7362392fe1f2193b5ac}{getIntersectionInfoSignalFull}}(worker, output);}
+\DoxyCodeLine{00338     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00339         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a115becc3a08d245dc8591b7d263497d1}{getIntersectionInfoSignalE}}(output, error\_type, error\_str);}
+\DoxyCodeLine{00340         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a11f9e4311fff0a0fb049a65f1d64e7f6}{getIntersectionInfoSignalEFull}}(worker, error\_type, error\_str);}
+\DoxyCodeLine{00341     \}}
+\DoxyCodeLine{00342 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIHttpRequest_8h_source_l00069}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+str}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00068}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+type}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1d28886ea13c3f1818c0477fe309f9fd}{get\+Intersection\+Info\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a115becc3a08d245dc8591b7d263497d1}{get\+Intersection\+Info\+Signal\+E()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a11f9e4311fff0a0fb049a65f1d64e7f6}{get\+Intersection\+Info\+Signal\+EFull()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ac8c77dfdd942d7362392fe1f2193b5ac}{get\+Intersection\+Info\+Signal\+Full()}}, and \mbox{\hyperlink{OAIHttpRequest_8h_source_l00067}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::response}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a1eccf42ed0a02f35dce86f1fef9d7238_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a1d28886ea13c3f1818c0477fe309f9fd}\label{classOpenAPI_1_1OAIDefaultApi_a1d28886ea13c3f1818c0477fe309f9fd}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getIntersectionInfoSignal@{getIntersectionInfoSignal}}
+\index{getIntersectionInfoSignal@{getIntersectionInfoSignal}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getIntersectionInfoSignal}{getIntersectionInfoSignal}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Intersection\+Info\+Signal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\+\_\+info}}}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00325}{get\+Intersection\+Info\+Callback()}}, \mbox{\hyperlink{scheduling__service_2src_2intersection__client_8cpp_source_l00028}{scheduling\+\_\+service\+::intersection\+\_\+client\+::request\+\_\+intersection\+\_\+info()}}, \mbox{\hyperlink{signal__opt__messages__worker_8cpp_source_l00035}{signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+messages\+\_\+worker\+::request\+\_\+intersection\+\_\+info()}}, and \mbox{\hyperlink{tsc__client__service_2src_2intersection__client_8cpp_source_l00005}{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::intersection\+\_\+client\+::request\+\_\+intersection\+\_\+info()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a1d28886ea13c3f1818c0477fe309f9fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a115becc3a08d245dc8591b7d263497d1}\label{classOpenAPI_1_1OAIDefaultApi_a115becc3a08d245dc8591b7d263497d1}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getIntersectionInfoSignalE@{getIntersectionInfoSignalE}}
+\index{getIntersectionInfoSignalE@{getIntersectionInfoSignalE}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getIntersectionInfoSignalE}{getIntersectionInfoSignalE}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Intersection\+Info\+SignalE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\+\_\+info}}}]{summary,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00325}{get\+Intersection\+Info\+Callback()}}, \mbox{\hyperlink{scheduling__service_2src_2intersection__client_8cpp_source_l00028}{scheduling\+\_\+service\+::intersection\+\_\+client\+::request\+\_\+intersection\+\_\+info()}}, \mbox{\hyperlink{signal__opt__messages__worker_8cpp_source_l00035}{signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+messages\+\_\+worker\+::request\+\_\+intersection\+\_\+info()}}, and \mbox{\hyperlink{tsc__client__service_2src_2intersection__client_8cpp_source_l00005}{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::intersection\+\_\+client\+::request\+\_\+intersection\+\_\+info()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a115becc3a08d245dc8591b7d263497d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a11f9e4311fff0a0fb049a65f1d64e7f6}\label{classOpenAPI_1_1OAIDefaultApi_a11f9e4311fff0a0fb049a65f1d64e7f6}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getIntersectionInfoSignalEFull@{getIntersectionInfoSignalEFull}}
+\index{getIntersectionInfoSignalEFull@{getIntersectionInfoSignalEFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getIntersectionInfoSignalEFull}{getIntersectionInfoSignalEFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Intersection\+Info\+Signal\+EFull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00325}{get\+Intersection\+Info\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a11f9e4311fff0a0fb049a65f1d64e7f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ac8c77dfdd942d7362392fe1f2193b5ac}\label{classOpenAPI_1_1OAIDefaultApi_ac8c77dfdd942d7362392fe1f2193b5ac}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getIntersectionInfoSignalFull@{getIntersectionInfoSignalFull}}
+\index{getIntersectionInfoSignalFull@{getIntersectionInfoSignalFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getIntersectionInfoSignalFull}{getIntersectionInfoSignalFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::get\+Intersection\+Info\+Signal\+Full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\+\_\+info}}}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00325}{get\+Intersection\+Info\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ac8c77dfdd942d7362392fe1f2193b5ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ab533ea1c4c92dcfa76afc91413f189a9}\label{classOpenAPI_1_1OAIDefaultApi_ab533ea1c4c92dcfa76afc91413f189a9}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getParamStyleDelimiter@{getParamStyleDelimiter}}
+\index{getParamStyleDelimiter@{getParamStyleDelimiter}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getParamStyleDelimiter()}{getParamStyleDelimiter()}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIDefault\+Api\+::get\+Param\+Style\+Delimiter (\begin{DoxyParamCaption}\item[{const QString \&}]{style,  }\item[{const QString \&}]{name,  }\item[{bool}]{is\+Explode }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00196}{196}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00196                                                                                                        \{}
+\DoxyCodeLine{00197 }
+\DoxyCodeLine{00198     \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}matrix"{}}) \{}
+\DoxyCodeLine{00199         \textcolor{keywordflow}{return} (isExplode) ? \textcolor{stringliteral}{"{};"{}} + name + \textcolor{stringliteral}{"{}="{}} : \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00200 }
+\DoxyCodeLine{00201     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}label"{}}) \{}
+\DoxyCodeLine{00202         \textcolor{keywordflow}{return} (isExplode) ? \textcolor{stringliteral}{"{}."{}} : \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00203 }
+\DoxyCodeLine{00204     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}form"{}}) \{}
+\DoxyCodeLine{00205         \textcolor{keywordflow}{return} (isExplode) ? \textcolor{stringliteral}{"{}\&"{}} + name + \textcolor{stringliteral}{"{}="{}} : \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00207     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}simple"{}}) \{}
+\DoxyCodeLine{00208         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00209     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}spaceDelimited"{}}) \{}
+\DoxyCodeLine{00210         \textcolor{keywordflow}{return} (isExplode) ? \textcolor{stringliteral}{"{}\&"{}} + name + \textcolor{stringliteral}{"{}="{}} : \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{00211 }
+\DoxyCodeLine{00212     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}pipeDelimited"{}}) \{}
+\DoxyCodeLine{00213         \textcolor{keywordflow}{return} (isExplode) ? \textcolor{stringliteral}{"{}\&"{}} + name + \textcolor{stringliteral}{"{}="{}} : \textcolor{stringliteral}{"{}|"{}};}
+\DoxyCodeLine{00214 }
+\DoxyCodeLine{00215     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}deepObject"{}}) \{}
+\DoxyCodeLine{00216         \textcolor{keywordflow}{return} (isExplode) ? \textcolor{stringliteral}{"{}\&"{}} : \textcolor{stringliteral}{"{}none"{}};}
+\DoxyCodeLine{00217 }
+\DoxyCodeLine{00218     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00219         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}none"{}};}
+\DoxyCodeLine{00220     \}}
+\DoxyCodeLine{00221 \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ab533ea1c4c92dcfa76afc91413f189a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a59a992908c9e84dc8345ad2e8bf4b459}\label{classOpenAPI_1_1OAIDefaultApi_a59a992908c9e84dc8345ad2e8bf4b459}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getParamStylePrefix@{getParamStylePrefix}}
+\index{getParamStylePrefix@{getParamStylePrefix}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getParamStylePrefix()}{getParamStylePrefix()}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIDefault\+Api\+::get\+Param\+Style\+Prefix (\begin{DoxyParamCaption}\item[{const QString \&}]{style }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00160}{160}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00160                                                                \{}
+\DoxyCodeLine{00161     \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}matrix"{}}) \{}
+\DoxyCodeLine{00162         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{};"{}};}
+\DoxyCodeLine{00163     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}label"{}}) \{}
+\DoxyCodeLine{00164         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}."{}};}
+\DoxyCodeLine{00165     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}form"{}}) \{}
+\DoxyCodeLine{00166         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}\&"{}};}
+\DoxyCodeLine{00167     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}simple"{}}) \{}
+\DoxyCodeLine{00168         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00169     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}spaceDelimited"{}}) \{}
+\DoxyCodeLine{00170         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}\&"{}};}
+\DoxyCodeLine{00171     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}pipeDelimited"{}}) \{}
+\DoxyCodeLine{00172         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}\&"{}};}
+\DoxyCodeLine{00173     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00174         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}none"{}};}
+\DoxyCodeLine{00175     \}}
+\DoxyCodeLine{00176 \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a59a992908c9e84dc8345ad2e8bf4b459_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ae4346069c665cdeb9952c8fbe9d9d3aa}\label{classOpenAPI_1_1OAIDefaultApi_ae4346069c665cdeb9952c8fbe9d9d3aa}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!getParamStyleSuffix@{getParamStyleSuffix}}
+\index{getParamStyleSuffix@{getParamStyleSuffix}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{getParamStyleSuffix()}{getParamStyleSuffix()}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIDefault\+Api\+::get\+Param\+Style\+Suffix (\begin{DoxyParamCaption}\item[{const QString \&}]{style }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00178}{178}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00178                                                                \{}
+\DoxyCodeLine{00179     \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}matrix"{}}) \{}
+\DoxyCodeLine{00180         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}="{}};}
+\DoxyCodeLine{00181     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}label"{}}) \{}
+\DoxyCodeLine{00182         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00183     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}form"{}}) \{}
+\DoxyCodeLine{00184         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}="{}};}
+\DoxyCodeLine{00185     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}simple"{}}) \{}
+\DoxyCodeLine{00186         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00187     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}spaceDelimited"{}}) \{}
+\DoxyCodeLine{00188         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}="{}};}
+\DoxyCodeLine{00189     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (style == \textcolor{stringliteral}{"{}pipeDelimited"{}}) \{}
+\DoxyCodeLine{00190         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}="{}};}
+\DoxyCodeLine{00191     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00192         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}none"{}};}
+\DoxyCodeLine{00193     \}}
+\DoxyCodeLine{00194 \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ae4346069c665cdeb9952c8fbe9d9d3aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a81e98559344863d68c6422a57a46ad0d}\label{classOpenAPI_1_1OAIDefaultApi_a81e98559344863d68c6422a57a46ad0d}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!initializeServerConfigs@{initializeServerConfigs}}
+\index{initializeServerConfigs@{initializeServerConfigs}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{initializeServerConfigs()}{initializeServerConfigs()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::initialize\+Server\+Configs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00030}{30}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030                                             \{}
+\DoxyCodeLine{00031     \textcolor{comment}{//Default server}}
+\DoxyCodeLine{00032     QList<OAIServerConfiguration> defaultConf = QList<OAIServerConfiguration>();}
+\DoxyCodeLine{00033     \textcolor{comment}{//varying endpoint server}}
+\DoxyCodeLine{00034     defaultConf.append(OAIServerConfiguration(}
+\DoxyCodeLine{00035     QUrl(\textcolor{stringliteral}{"{}http://localhost:8080/intersection\_model/v1"{}}),}
+\DoxyCodeLine{00036     \textcolor{stringliteral}{"{}No description provided"{}},}
+\DoxyCodeLine{00037     QMap<QString, OAIServerVariable>()));}
+\DoxyCodeLine{00038     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.insert(\textcolor{stringliteral}{"{}getConflictLanelets"{}}, defaultConf);}
+\DoxyCodeLine{00039     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.insert(\textcolor{stringliteral}{"{}getConflictLanelets"{}}, 0);}
+\DoxyCodeLine{00040     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.insert(\textcolor{stringliteral}{"{}getIntersectionInfo"{}}, defaultConf);}
+\DoxyCodeLine{00041     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.insert(\textcolor{stringliteral}{"{}getIntersectionInfo"{}}, 0);}
+\DoxyCodeLine{00042     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.insert(\textcolor{stringliteral}{"{}listDepartureLanelets"{}}, defaultConf);}
+\DoxyCodeLine{00043     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.insert(\textcolor{stringliteral}{"{}listDepartureLanelets"{}}, 0);}
+\DoxyCodeLine{00044     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.insert(\textcolor{stringliteral}{"{}listEntryLanelets"{}}, defaultConf);}
+\DoxyCodeLine{00045     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.insert(\textcolor{stringliteral}{"{}listEntryLanelets"{}}, 0);}
+\DoxyCodeLine{00046     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.insert(\textcolor{stringliteral}{"{}listLinkLanelets"{}}, defaultConf);}
+\DoxyCodeLine{00047     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.insert(\textcolor{stringliteral}{"{}listLinkLanelets"{}}, 0);}
+\DoxyCodeLine{00048 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, and \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00019}{OAIDefault\+Api()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a81e98559344863d68c6422a57a46ad0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ad98fac116cce0c0da2857a821286288e}\label{classOpenAPI_1_1OAIDefaultApi_ad98fac116cce0c0da2857a821286288e}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listDepartureLanelets@{listDepartureLanelets}}
+\index{listDepartureLanelets@{listDepartureLanelets}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listDepartureLanelets()}{listDepartureLanelets()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Departure\+Lanelets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{344}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00344                                           \{}
+\DoxyCodeLine{00345     QString fullPath = QString(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[\textcolor{stringliteral}{"{}listDepartureLanelets"{}}][\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.value(\textcolor{stringliteral}{"{}listDepartureLanelets"{}})].URL()+\textcolor{stringliteral}{"{}/departure\_lanelets"{}});}
+\DoxyCodeLine{00346     }
+\DoxyCodeLine{00347     OAIHttpRequestWorker *worker = \textcolor{keyword}{new} OAIHttpRequestWorker(\textcolor{keyword}{this}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\_manager}});}
+\DoxyCodeLine{00348     worker-\/>setTimeOut(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\_timeOut}});}
+\DoxyCodeLine{00349     worker-\/>setWorkingDirectory(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}{\_workingDirectory}});}
+\DoxyCodeLine{00350     OAIHttpRequestInput input(fullPath, \textcolor{stringliteral}{"{}GET"{}});}
+\DoxyCodeLine{00351 }
+\DoxyCodeLine{00352 }
+\DoxyCodeLine{00353 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{00354     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} keyValueIt = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueBegin(); keyValueIt != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueEnd(); keyValueIt++) \{}
+\DoxyCodeLine{00355         input.headers.insert(keyValueIt-\/>first, keyValueIt-\/>second);}
+\DoxyCodeLine{00356     \}}
+\DoxyCodeLine{00357 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00358     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} key : \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keys()) \{}
+\DoxyCodeLine{00359         input.headers.insert(key, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}[key]);}
+\DoxyCodeLine{00360     \}}
+\DoxyCodeLine{00361 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00362 }
+\DoxyCodeLine{00363     connect(worker, \&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{OAIHttpRequestWorker::on\_execution\_finished}}, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ad27b5abe849c76db47b9a1a3e48219fa}{OAIDefaultApi::listDepartureLaneletsCallback}});}
+\DoxyCodeLine{00364     connect(\textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{OAIDefaultApi::abortRequestsSignal}}, worker, \&QObject::deleteLater);}
+\DoxyCodeLine{00365     connect(worker, \&QObject::destroyed, \textcolor{keyword}{this}, [\textcolor{keyword}{this}]() \{}
+\DoxyCodeLine{00366         \textcolor{keywordflow}{if} (findChildren<OAIHttpRequestWorker*>().\mbox{\hyperlink{namespacesimulate__bsm_a76f645adf8af768fa959ecb6f90d7831}{count}}() == 0) \{}
+\DoxyCodeLine{00367             emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{allPendingRequestsCompleted}}();}
+\DoxyCodeLine{00368         \}}
+\DoxyCodeLine{00369     \});}
+\DoxyCodeLine{00370 }
+\DoxyCodeLine{00371     worker-\/>execute(\&input);}
+\DoxyCodeLine{00372 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00087}{\+\_\+default\+Headers}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00086}{\+\_\+manager}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00084}{\+\_\+time\+Out}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00085}{\+\_\+working\+Directory}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abort\+Requests\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{all\+Pending\+Requests\+Completed()}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00018}{simulate\+\_\+bsm\+::count}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00177}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::execute()}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00049}{Open\+API\+::\+OAIHttp\+Request\+Input\+::headers}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00374}{list\+Departure\+Lanelets\+Callback()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::on\+\_\+execution\+\_\+finished()}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00111}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Time\+Out()}}, and \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00118}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Working\+Directory()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ad98fac116cce0c0da2857a821286288e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ad27b5abe849c76db47b9a1a3e48219fa}\label{classOpenAPI_1_1OAIDefaultApi_ad27b5abe849c76db47b9a1a3e48219fa}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listDepartureLaneletsCallback@{listDepartureLaneletsCallback}}
+\index{listDepartureLaneletsCallback@{listDepartureLaneletsCallback}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listDepartureLaneletsCallback()}{listDepartureLaneletsCallback()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Departure\+Lanelets\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00374}{374}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00374                                                                               \{}
+\DoxyCodeLine{00375     QString error\_str = worker-\/>error\_str;}
+\DoxyCodeLine{00376     QNetworkReply::NetworkError error\_type = worker-\/>error\_type;}
+\DoxyCodeLine{00377 }
+\DoxyCodeLine{00378     \textcolor{keywordflow}{if} (worker-\/>error\_type != QNetworkReply::NoError) \{}
+\DoxyCodeLine{00379         error\_str = QString(\textcolor{stringliteral}{"{}\%1, \%2"{}}).arg(worker-\/>error\_str, QString(worker-\/>response));}
+\DoxyCodeLine{00380     \}}
+\DoxyCodeLine{00381     QList<OAILanelet\_info> output;}
+\DoxyCodeLine{00382     QString json(worker-\/>response);}
+\DoxyCodeLine{00383     QByteArray array(json.toStdString().c\_str());}
+\DoxyCodeLine{00384     QJsonDocument doc = QJsonDocument::fromJson(array);}
+\DoxyCodeLine{00385     QJsonArray jsonArray = doc.array();}
+\DoxyCodeLine{00386     \textcolor{keywordflow}{foreach} (QJsonValue obj, jsonArray) \{}
+\DoxyCodeLine{00387         OAILanelet\_info val;}
+\DoxyCodeLine{00388         \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{::OpenAPI::fromJsonValue}}(val, obj);}
+\DoxyCodeLine{00389         output.append(val);}
+\DoxyCodeLine{00390     \}}
+\DoxyCodeLine{00391     worker-\/>deleteLater();}
+\DoxyCodeLine{00392 }
+\DoxyCodeLine{00393     \textcolor{keywordflow}{if} (worker-\/>error\_type == QNetworkReply::NoError) \{}
+\DoxyCodeLine{00394         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a288d8613523caa2a53673d2d7d0a5f6f}{listDepartureLaneletsSignal}}(output);}
+\DoxyCodeLine{00395         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab79cd931c66889740465d0a2d1a34f9f}{listDepartureLaneletsSignalFull}}(worker, output);}
+\DoxyCodeLine{00396     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00397         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a57ce5f75cc76fc071ab3997e87ac450c}{listDepartureLaneletsSignalE}}(output, error\_type, error\_str);}
+\DoxyCodeLine{00398         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ac71f52ffd61dcb3efac5ccfa6a1831b5}{listDepartureLaneletsSignalEFull}}(worker, error\_type, error\_str);}
+\DoxyCodeLine{00399     \}}
+\DoxyCodeLine{00400 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIHttpRequest_8h_source_l00069}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+str}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00068}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+type}}, \mbox{\hyperlink{intersection__client__api_2OAIHelpers_8cpp_source_l00299}{Open\+API\+::from\+Json\+Value()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a288d8613523caa2a53673d2d7d0a5f6f}{list\+Departure\+Lanelets\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a57ce5f75cc76fc071ab3997e87ac450c}{list\+Departure\+Lanelets\+Signal\+E()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ac71f52ffd61dcb3efac5ccfa6a1831b5}{list\+Departure\+Lanelets\+Signal\+EFull()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab79cd931c66889740465d0a2d1a34f9f}{list\+Departure\+Lanelets\+Signal\+Full()}}, and \mbox{\hyperlink{OAIHttpRequest_8h_source_l00067}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::response}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ad27b5abe849c76db47b9a1a3e48219fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ad27b5abe849c76db47b9a1a3e48219fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a288d8613523caa2a53673d2d7d0a5f6f}\label{classOpenAPI_1_1OAIDefaultApi_a288d8613523caa2a53673d2d7d0a5f6f}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listDepartureLaneletsSignal@{listDepartureLaneletsSignal}}
+\index{listDepartureLaneletsSignal@{listDepartureLaneletsSignal}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listDepartureLaneletsSignal}{listDepartureLaneletsSignal}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Departure\+Lanelets\+Signal (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00374}{list\+Departure\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a288d8613523caa2a53673d2d7d0a5f6f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a57ce5f75cc76fc071ab3997e87ac450c}\label{classOpenAPI_1_1OAIDefaultApi_a57ce5f75cc76fc071ab3997e87ac450c}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listDepartureLaneletsSignalE@{listDepartureLaneletsSignalE}}
+\index{listDepartureLaneletsSignalE@{listDepartureLaneletsSignalE}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listDepartureLaneletsSignalE}{listDepartureLaneletsSignalE}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Departure\+Lanelets\+SignalE (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00374}{list\+Departure\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a57ce5f75cc76fc071ab3997e87ac450c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ac71f52ffd61dcb3efac5ccfa6a1831b5}\label{classOpenAPI_1_1OAIDefaultApi_ac71f52ffd61dcb3efac5ccfa6a1831b5}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listDepartureLaneletsSignalEFull@{listDepartureLaneletsSignalEFull}}
+\index{listDepartureLaneletsSignalEFull@{listDepartureLaneletsSignalEFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listDepartureLaneletsSignalEFull}{listDepartureLaneletsSignalEFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Departure\+Lanelets\+Signal\+EFull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00374}{list\+Departure\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ac71f52ffd61dcb3efac5ccfa6a1831b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ab79cd931c66889740465d0a2d1a34f9f}\label{classOpenAPI_1_1OAIDefaultApi_ab79cd931c66889740465d0a2d1a34f9f}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listDepartureLaneletsSignalFull@{listDepartureLaneletsSignalFull}}
+\index{listDepartureLaneletsSignalFull@{listDepartureLaneletsSignalFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listDepartureLaneletsSignalFull}{listDepartureLaneletsSignalFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Departure\+Lanelets\+Signal\+Full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00374}{list\+Departure\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ab79cd931c66889740465d0a2d1a34f9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ae94784bf95d9dccf1ed6b4d7a977d5ac}\label{classOpenAPI_1_1OAIDefaultApi_ae94784bf95d9dccf1ed6b4d7a977d5ac}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listEntryLanelets@{listEntryLanelets}}
+\index{listEntryLanelets@{listEntryLanelets}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listEntryLanelets()}{listEntryLanelets()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Entry\+Lanelets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{402}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00402                                       \{}
+\DoxyCodeLine{00403     QString fullPath = QString(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[\textcolor{stringliteral}{"{}listEntryLanelets"{}}][\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.value(\textcolor{stringliteral}{"{}listEntryLanelets"{}})].URL()+\textcolor{stringliteral}{"{}/entry\_lanelets"{}});}
+\DoxyCodeLine{00404     }
+\DoxyCodeLine{00405     OAIHttpRequestWorker *worker = \textcolor{keyword}{new} OAIHttpRequestWorker(\textcolor{keyword}{this}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\_manager}});}
+\DoxyCodeLine{00406     worker-\/>setTimeOut(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\_timeOut}});}
+\DoxyCodeLine{00407     worker-\/>setWorkingDirectory(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}{\_workingDirectory}});}
+\DoxyCodeLine{00408     OAIHttpRequestInput input(fullPath, \textcolor{stringliteral}{"{}GET"{}});}
+\DoxyCodeLine{00409 }
+\DoxyCodeLine{00410 }
+\DoxyCodeLine{00411 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{00412     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} keyValueIt = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueBegin(); keyValueIt != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueEnd(); keyValueIt++) \{}
+\DoxyCodeLine{00413         input.headers.insert(keyValueIt-\/>first, keyValueIt-\/>second);}
+\DoxyCodeLine{00414     \}}
+\DoxyCodeLine{00415 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00416     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} key : \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keys()) \{}
+\DoxyCodeLine{00417         input.headers.insert(key, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}[key]);}
+\DoxyCodeLine{00418     \}}
+\DoxyCodeLine{00419 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00420 }
+\DoxyCodeLine{00421     connect(worker, \&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{OAIHttpRequestWorker::on\_execution\_finished}}, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a116eee6d9b7e6d1a3eb444a6f1bde5a6}{OAIDefaultApi::listEntryLaneletsCallback}});}
+\DoxyCodeLine{00422     connect(\textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{OAIDefaultApi::abortRequestsSignal}}, worker, \&QObject::deleteLater);}
+\DoxyCodeLine{00423     connect(worker, \&QObject::destroyed, \textcolor{keyword}{this}, [\textcolor{keyword}{this}]() \{}
+\DoxyCodeLine{00424         \textcolor{keywordflow}{if} (findChildren<OAIHttpRequestWorker*>().\mbox{\hyperlink{namespacesimulate__bsm_a76f645adf8af768fa959ecb6f90d7831}{count}}() == 0) \{}
+\DoxyCodeLine{00425             emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{allPendingRequestsCompleted}}();}
+\DoxyCodeLine{00426         \}}
+\DoxyCodeLine{00427     \});}
+\DoxyCodeLine{00428 }
+\DoxyCodeLine{00429     worker-\/>execute(\&input);}
+\DoxyCodeLine{00430 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00087}{\+\_\+default\+Headers}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00086}{\+\_\+manager}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00084}{\+\_\+time\+Out}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00085}{\+\_\+working\+Directory}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abort\+Requests\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{all\+Pending\+Requests\+Completed()}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00018}{simulate\+\_\+bsm\+::count}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00177}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::execute()}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00049}{Open\+API\+::\+OAIHttp\+Request\+Input\+::headers}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00432}{list\+Entry\+Lanelets\+Callback()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::on\+\_\+execution\+\_\+finished()}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00111}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Time\+Out()}}, and \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00118}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Working\+Directory()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ae94784bf95d9dccf1ed6b4d7a977d5ac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a116eee6d9b7e6d1a3eb444a6f1bde5a6}\label{classOpenAPI_1_1OAIDefaultApi_a116eee6d9b7e6d1a3eb444a6f1bde5a6}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listEntryLaneletsCallback@{listEntryLaneletsCallback}}
+\index{listEntryLaneletsCallback@{listEntryLaneletsCallback}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listEntryLaneletsCallback()}{listEntryLaneletsCallback()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Entry\+Lanelets\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00432}{432}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00432                                                                           \{}
+\DoxyCodeLine{00433     QString error\_str = worker-\/>error\_str;}
+\DoxyCodeLine{00434     QNetworkReply::NetworkError error\_type = worker-\/>error\_type;}
+\DoxyCodeLine{00435 }
+\DoxyCodeLine{00436     \textcolor{keywordflow}{if} (worker-\/>error\_type != QNetworkReply::NoError) \{}
+\DoxyCodeLine{00437         error\_str = QString(\textcolor{stringliteral}{"{}\%1, \%2"{}}).arg(worker-\/>error\_str, QString(worker-\/>response));}
+\DoxyCodeLine{00438     \}}
+\DoxyCodeLine{00439     QList<OAILanelet\_info> output;}
+\DoxyCodeLine{00440     QString json(worker-\/>response);}
+\DoxyCodeLine{00441     QByteArray array(json.toStdString().c\_str());}
+\DoxyCodeLine{00442     QJsonDocument doc = QJsonDocument::fromJson(array);}
+\DoxyCodeLine{00443     QJsonArray jsonArray = doc.array();}
+\DoxyCodeLine{00444     \textcolor{keywordflow}{foreach} (QJsonValue obj, jsonArray) \{}
+\DoxyCodeLine{00445         OAILanelet\_info val;}
+\DoxyCodeLine{00446         \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{::OpenAPI::fromJsonValue}}(val, obj);}
+\DoxyCodeLine{00447         output.append(val);}
+\DoxyCodeLine{00448     \}}
+\DoxyCodeLine{00449     worker-\/>deleteLater();}
+\DoxyCodeLine{00450 }
+\DoxyCodeLine{00451     \textcolor{keywordflow}{if} (worker-\/>error\_type == QNetworkReply::NoError) \{}
+\DoxyCodeLine{00452         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a01785eb2946fc4209f71ea21b03864c4}{listEntryLaneletsSignal}}(output);}
+\DoxyCodeLine{00453         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a8ab76a7247bbf64a08b9c1cd462699f0}{listEntryLaneletsSignalFull}}(worker, output);}
+\DoxyCodeLine{00454     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00455         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae3ac0f90fc38543a91bed437532a5dcc}{listEntryLaneletsSignalE}}(output, error\_type, error\_str);}
+\DoxyCodeLine{00456         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aff83f58c2a1ea333cb16acf6f8711b96}{listEntryLaneletsSignalEFull}}(worker, error\_type, error\_str);}
+\DoxyCodeLine{00457     \}}
+\DoxyCodeLine{00458 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIHttpRequest_8h_source_l00069}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+str}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00068}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+type}}, \mbox{\hyperlink{intersection__client__api_2OAIHelpers_8cpp_source_l00299}{Open\+API\+::from\+Json\+Value()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a01785eb2946fc4209f71ea21b03864c4}{list\+Entry\+Lanelets\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ae3ac0f90fc38543a91bed437532a5dcc}{list\+Entry\+Lanelets\+Signal\+E()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aff83f58c2a1ea333cb16acf6f8711b96}{list\+Entry\+Lanelets\+Signal\+EFull()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a8ab76a7247bbf64a08b9c1cd462699f0}{list\+Entry\+Lanelets\+Signal\+Full()}}, and \mbox{\hyperlink{OAIHttpRequest_8h_source_l00067}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::response}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a116eee6d9b7e6d1a3eb444a6f1bde5a6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a116eee6d9b7e6d1a3eb444a6f1bde5a6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a01785eb2946fc4209f71ea21b03864c4}\label{classOpenAPI_1_1OAIDefaultApi_a01785eb2946fc4209f71ea21b03864c4}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listEntryLaneletsSignal@{listEntryLaneletsSignal}}
+\index{listEntryLaneletsSignal@{listEntryLaneletsSignal}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listEntryLaneletsSignal}{listEntryLaneletsSignal}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Entry\+Lanelets\+Signal (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00432}{list\+Entry\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a01785eb2946fc4209f71ea21b03864c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ae3ac0f90fc38543a91bed437532a5dcc}\label{classOpenAPI_1_1OAIDefaultApi_ae3ac0f90fc38543a91bed437532a5dcc}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listEntryLaneletsSignalE@{listEntryLaneletsSignalE}}
+\index{listEntryLaneletsSignalE@{listEntryLaneletsSignalE}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listEntryLaneletsSignalE}{listEntryLaneletsSignalE}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Entry\+Lanelets\+SignalE (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00432}{list\+Entry\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_ae3ac0f90fc38543a91bed437532a5dcc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_aff83f58c2a1ea333cb16acf6f8711b96}\label{classOpenAPI_1_1OAIDefaultApi_aff83f58c2a1ea333cb16acf6f8711b96}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listEntryLaneletsSignalEFull@{listEntryLaneletsSignalEFull}}
+\index{listEntryLaneletsSignalEFull@{listEntryLaneletsSignalEFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listEntryLaneletsSignalEFull}{listEntryLaneletsSignalEFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Entry\+Lanelets\+Signal\+EFull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00432}{list\+Entry\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_aff83f58c2a1ea333cb16acf6f8711b96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a8ab76a7247bbf64a08b9c1cd462699f0}\label{classOpenAPI_1_1OAIDefaultApi_a8ab76a7247bbf64a08b9c1cd462699f0}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listEntryLaneletsSignalFull@{listEntryLaneletsSignalFull}}
+\index{listEntryLaneletsSignalFull@{listEntryLaneletsSignalFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listEntryLaneletsSignalFull}{listEntryLaneletsSignalFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Entry\+Lanelets\+Signal\+Full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00432}{list\+Entry\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a8ab76a7247bbf64a08b9c1cd462699f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a650caa304c144a93bbc145e997a6d144}\label{classOpenAPI_1_1OAIDefaultApi_a650caa304c144a93bbc145e997a6d144}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listLinkLanelets@{listLinkLanelets}}
+\index{listLinkLanelets@{listLinkLanelets}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listLinkLanelets()}{listLinkLanelets()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Link\+Lanelets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{460}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00460                                      \{}
+\DoxyCodeLine{00461     QString fullPath = QString(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[\textcolor{stringliteral}{"{}listLinkLanelets"{}}][\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.value(\textcolor{stringliteral}{"{}listLinkLanelets"{}})].URL()+\textcolor{stringliteral}{"{}/link\_lanelets"{}});}
+\DoxyCodeLine{00462     }
+\DoxyCodeLine{00463     OAIHttpRequestWorker *worker = \textcolor{keyword}{new} OAIHttpRequestWorker(\textcolor{keyword}{this}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\_manager}});}
+\DoxyCodeLine{00464     worker-\/>setTimeOut(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\_timeOut}});}
+\DoxyCodeLine{00465     worker-\/>setWorkingDirectory(\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}{\_workingDirectory}});}
+\DoxyCodeLine{00466     OAIHttpRequestInput input(fullPath, \textcolor{stringliteral}{"{}GET"{}});}
+\DoxyCodeLine{00467 }
+\DoxyCodeLine{00468 }
+\DoxyCodeLine{00469 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{00470     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} keyValueIt = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueBegin(); keyValueIt != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keyValueEnd(); keyValueIt++) \{}
+\DoxyCodeLine{00471         input.headers.insert(keyValueIt-\/>first, keyValueIt-\/>second);}
+\DoxyCodeLine{00472     \}}
+\DoxyCodeLine{00473 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00474     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} key : \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}.keys()) \{}
+\DoxyCodeLine{00475         input.headers.insert(key, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}{\_defaultHeaders}}[key]);}
+\DoxyCodeLine{00476     \}}
+\DoxyCodeLine{00477 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00478 }
+\DoxyCodeLine{00479     connect(worker, \&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{OAIHttpRequestWorker::on\_execution\_finished}}, \textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aea22aac554430e175c14e9b775d4c669}{OAIDefaultApi::listLinkLaneletsCallback}});}
+\DoxyCodeLine{00480     connect(\textcolor{keyword}{this}, \&\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{OAIDefaultApi::abortRequestsSignal}}, worker, \&QObject::deleteLater);}
+\DoxyCodeLine{00481     connect(worker, \&QObject::destroyed, \textcolor{keyword}{this}, [\textcolor{keyword}{this}]() \{}
+\DoxyCodeLine{00482         \textcolor{keywordflow}{if} (findChildren<OAIHttpRequestWorker*>().\mbox{\hyperlink{namespacesimulate__bsm_a76f645adf8af768fa959ecb6f90d7831}{count}}() == 0) \{}
+\DoxyCodeLine{00483             emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{allPendingRequestsCompleted}}();}
+\DoxyCodeLine{00484         \}}
+\DoxyCodeLine{00485     \});}
+\DoxyCodeLine{00486 }
+\DoxyCodeLine{00487     worker-\/>execute(\&input);}
+\DoxyCodeLine{00488 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00087}{\+\_\+default\+Headers}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00086}{\+\_\+manager}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00084}{\+\_\+time\+Out}}, \mbox{\hyperlink{OAIDefaultApi_8h_source_l00085}{\+\_\+working\+Directory}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ab796bf85d3f50c882f9a99fe159523e8}{abort\+Requests\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a022b83dd67576024baf2ea759931fba3}{all\+Pending\+Requests\+Completed()}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00018}{simulate\+\_\+bsm\+::count}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00177}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::execute()}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00049}{Open\+API\+::\+OAIHttp\+Request\+Input\+::headers}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00490}{list\+Link\+Lanelets\+Callback()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::on\+\_\+execution\+\_\+finished()}}, \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00111}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Time\+Out()}}, and \mbox{\hyperlink{OAIHttpRequest_8cpp_source_l00118}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::set\+Working\+Directory()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a650caa304c144a93bbc145e997a6d144_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_aea22aac554430e175c14e9b775d4c669}\label{classOpenAPI_1_1OAIDefaultApi_aea22aac554430e175c14e9b775d4c669}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listLinkLaneletsCallback@{listLinkLaneletsCallback}}
+\index{listLinkLaneletsCallback@{listLinkLaneletsCallback}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listLinkLaneletsCallback()}{listLinkLaneletsCallback()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Link\+Lanelets\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00490}{490}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00490                                                                          \{}
+\DoxyCodeLine{00491     QString error\_str = worker-\/>error\_str;}
+\DoxyCodeLine{00492     QNetworkReply::NetworkError error\_type = worker-\/>error\_type;}
+\DoxyCodeLine{00493 }
+\DoxyCodeLine{00494     \textcolor{keywordflow}{if} (worker-\/>error\_type != QNetworkReply::NoError) \{}
+\DoxyCodeLine{00495         error\_str = QString(\textcolor{stringliteral}{"{}\%1, \%2"{}}).arg(worker-\/>error\_str, QString(worker-\/>response));}
+\DoxyCodeLine{00496     \}}
+\DoxyCodeLine{00497     QList<OAILanelet\_info> output;}
+\DoxyCodeLine{00498     QString json(worker-\/>response);}
+\DoxyCodeLine{00499     QByteArray array(json.toStdString().c\_str());}
+\DoxyCodeLine{00500     QJsonDocument doc = QJsonDocument::fromJson(array);}
+\DoxyCodeLine{00501     QJsonArray jsonArray = doc.array();}
+\DoxyCodeLine{00502     \textcolor{keywordflow}{foreach} (QJsonValue obj, jsonArray) \{}
+\DoxyCodeLine{00503         OAILanelet\_info val;}
+\DoxyCodeLine{00504         \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{::OpenAPI::fromJsonValue}}(val, obj);}
+\DoxyCodeLine{00505         output.append(val);}
+\DoxyCodeLine{00506     \}}
+\DoxyCodeLine{00507     worker-\/>deleteLater();}
+\DoxyCodeLine{00508 }
+\DoxyCodeLine{00509     \textcolor{keywordflow}{if} (worker-\/>error\_type == QNetworkReply::NoError) \{}
+\DoxyCodeLine{00510         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a044b3fbbc13515cd297cd1fb2a62acb1}{listLinkLaneletsSignal}}(output);}
+\DoxyCodeLine{00511         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1196771ab82aaf2549da7a1f93043cc9}{listLinkLaneletsSignalFull}}(worker, output);}
+\DoxyCodeLine{00512     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00513         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aad9983788b0730354752657618880d2c}{listLinkLaneletsSignalE}}(output, error\_type, error\_str);}
+\DoxyCodeLine{00514         emit \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a58d97691af9faef8abab44cbd2dfc8dd}{listLinkLaneletsSignalEFull}}(worker, error\_type, error\_str);}
+\DoxyCodeLine{00515     \}}
+\DoxyCodeLine{00516 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIHttpRequest_8h_source_l00069}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+str}}, \mbox{\hyperlink{OAIHttpRequest_8h_source_l00068}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::error\+\_\+type}}, \mbox{\hyperlink{intersection__client__api_2OAIHelpers_8cpp_source_l00299}{Open\+API\+::from\+Json\+Value()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a044b3fbbc13515cd297cd1fb2a62acb1}{list\+Link\+Lanelets\+Signal()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aad9983788b0730354752657618880d2c}{list\+Link\+Lanelets\+Signal\+E()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a58d97691af9faef8abab44cbd2dfc8dd}{list\+Link\+Lanelets\+Signal\+EFull()}}, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1196771ab82aaf2549da7a1f93043cc9}{list\+Link\+Lanelets\+Signal\+Full()}}, and \mbox{\hyperlink{OAIHttpRequest_8h_source_l00067}{Open\+API\+::\+OAIHttp\+Request\+Worker\+::response}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_aea22aac554430e175c14e9b775d4c669_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_aea22aac554430e175c14e9b775d4c669_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a044b3fbbc13515cd297cd1fb2a62acb1}\label{classOpenAPI_1_1OAIDefaultApi_a044b3fbbc13515cd297cd1fb2a62acb1}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listLinkLaneletsSignal@{listLinkLaneletsSignal}}
+\index{listLinkLaneletsSignal@{listLinkLaneletsSignal}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listLinkLaneletsSignal}{listLinkLaneletsSignal}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Link\+Lanelets\+Signal (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00490}{list\+Link\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a044b3fbbc13515cd297cd1fb2a62acb1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_aad9983788b0730354752657618880d2c}\label{classOpenAPI_1_1OAIDefaultApi_aad9983788b0730354752657618880d2c}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listLinkLaneletsSignalE@{listLinkLaneletsSignalE}}
+\index{listLinkLaneletsSignalE@{listLinkLaneletsSignalE}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listLinkLaneletsSignalE}{listLinkLaneletsSignalE}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Link\+Lanelets\+SignalE (\begin{DoxyParamCaption}\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00490}{list\+Link\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_aad9983788b0730354752657618880d2c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a58d97691af9faef8abab44cbd2dfc8dd}\label{classOpenAPI_1_1OAIDefaultApi_a58d97691af9faef8abab44cbd2dfc8dd}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listLinkLaneletsSignalEFull@{listLinkLaneletsSignalEFull}}
+\index{listLinkLaneletsSignalEFull@{listLinkLaneletsSignalEFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listLinkLaneletsSignalEFull}{listLinkLaneletsSignalEFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Link\+Lanelets\+Signal\+EFull (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QNetwork\+Reply\+::\+Network\+Error}]{error\+\_\+type,  }\item[{QString}]{error\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00490}{list\+Link\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a58d97691af9faef8abab44cbd2dfc8dd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a1196771ab82aaf2549da7a1f93043cc9}\label{classOpenAPI_1_1OAIDefaultApi_a1196771ab82aaf2549da7a1f93043cc9}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!listLinkLaneletsSignalFull@{listLinkLaneletsSignalFull}}
+\index{listLinkLaneletsSignalFull@{listLinkLaneletsSignalFull}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{listLinkLaneletsSignalFull}{listLinkLaneletsSignalFull}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::list\+Link\+Lanelets\+Signal\+Full (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttp\+Request\+Worker}} $\ast$}]{worker,  }\item[{QList$<$ \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OAILanelet\+\_\+info}} $>$}]{summary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00490}{list\+Link\+Lanelets\+Callback()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a1196771ab82aaf2549da7a1f93043cc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ac9fa66c5b6cae9aacfd8aa64a49a2e6d}\label{classOpenAPI_1_1OAIDefaultApi_ac9fa66c5b6cae9aacfd8aa64a49a2e6d}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setApiKey@{setApiKey}}
+\index{setApiKey@{setApiKey}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setApiKey()}{setApiKey()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Api\+Key (\begin{DoxyParamCaption}\item[{const QString \&}]{api\+Key\+Name,  }\item[{const QString \&}]{api\+Key }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067                                                                               \{}
+\DoxyCodeLine{00068     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ad1af9da2229116ab1676f30447a9a3cf}{\_apiKeys}}.insert(apiKeyName,apiKey);}
+\DoxyCodeLine{00069 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00080}{\+\_\+api\+Keys}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_aef1d29f9c33f140e5ec7885ea85de52c}\label{classOpenAPI_1_1OAIDefaultApi_aef1d29f9c33f140e5ec7885ea85de52c}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setBearerToken@{setBearerToken}}
+\index{setBearerToken@{setBearerToken}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setBearerToken()}{setBearerToken()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Bearer\+Token (\begin{DoxyParamCaption}\item[{const QString \&}]{token }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00071}{71}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00071                                                        \{}
+\DoxyCodeLine{00072     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ad8e2ee3cb8394cb5e534a574748f62e6}{\_bearerToken}} = token;}
+\DoxyCodeLine{00073 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00081}{\+\_\+bearer\+Token}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a3100b11b592c2134295f470c74085a72}\label{classOpenAPI_1_1OAIDefaultApi_a3100b11b592c2134295f470c74085a72}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setDefaultServerValue@{setDefaultServerValue}}
+\index{setDefaultServerValue@{setDefaultServerValue}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setDefaultServerValue()}{setDefaultServerValue()}}
+{\footnotesize\ttfamily int Open\+API\+::\+OAIDefault\+Api\+::set\+Default\+Server\+Value (\begin{DoxyParamCaption}\item[{int}]{server\+Index,  }\item[{const QString \&}]{operation,  }\item[{const QString \&}]{variable,  }\item[{const QString \&}]{value }\end{DoxyParamCaption})}
+
+returns 0 on success and -\/1, -\/2 or -\/3 on failure. -\/1 when the variable does not exist and -\/2 if the value is not defined in the enum and -\/3 if the operation or server index is not found 
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054                                                                                                                                  \{}
+\DoxyCodeLine{00055     \textcolor{keyword}{auto} it = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.find(operation);}
+\DoxyCodeLine{00056     \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.end() \&\& serverIndex < it.value().size()) \{}
+\DoxyCodeLine{00057       \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}[operation][serverIndex].setDefaultValue(variable,\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{00058     \}}
+\DoxyCodeLine{00059     \textcolor{keywordflow}{return} -\/3;}
+\DoxyCodeLine{00060 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, and \mbox{\hyperlink{simulate__bsm_8py_source_l00024}{simulate\+\_\+bsm\+::value}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a06d92754b44b443b392cd6cd86493aae}\label{classOpenAPI_1_1OAIDefaultApi_a06d92754b44b443b392cd6cd86493aae}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setNetworkAccessManager@{setNetworkAccessManager}}
+\index{setNetworkAccessManager@{setNetworkAccessManager}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setNetworkAccessManager()}{setNetworkAccessManager()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Network\+Access\+Manager (\begin{DoxyParamCaption}\item[{QNetwork\+Access\+Manager $\ast$}]{manager }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00092}{92}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00092                                                                           \{}
+\DoxyCodeLine{00093     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}{\_manager}} = manager;}
+\DoxyCodeLine{00094 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00086}{\+\_\+manager}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_afe9e6d215004e43ac5315939ceab47c4}\label{classOpenAPI_1_1OAIDefaultApi_afe9e6d215004e43ac5315939ceab47c4}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setNewServer@{setNewServer}}
+\index{setNewServer@{setNewServer}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setNewServer()}{setNewServer()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+New\+Server (\begin{DoxyParamCaption}\item[{const QString \&}]{operation,  }\item[{const QUrl \&}]{url,  }\item[{const QString \&}]{description = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&}]{variables = {\ttfamily QMap$<$QString,~\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}}$>$()} }\end{DoxyParamCaption})}
+
+Appends a new Server\+Configuration to the config map for an operations and sets the index to that server. 
+\begin{DoxyParams}{Parameters}
+{\em URL} & A string that contains the URL of the server \\
+\hline
+{\em description} & A String that describes the server \\
+\hline
+{\em variables} & A map between a variable name and its value. The value is used for substitution in the server\textquotesingle{}s URL template. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00140                                                                                                                                                          \{}
+\DoxyCodeLine{00141     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aebc221f687714f8e3da7947eb028ab70}{setServerIndex}}(operation, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1da1e529161e9d0e85c02e7c98856be3}{addServerConfiguration}}(operation, url, description, variables));}
+\DoxyCodeLine{00142 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00104}{add\+Server\+Configuration()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00061}{set\+Server\+Index()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_afe9e6d215004e43ac5315939ceab47c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a0e6cacc6eb5f4f5696fd0a8671c92a57}\label{classOpenAPI_1_1OAIDefaultApi_a0e6cacc6eb5f4f5696fd0a8671c92a57}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setNewServerForAllOperations@{setNewServerForAllOperations}}
+\index{setNewServerForAllOperations@{setNewServerForAllOperations}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setNewServerForAllOperations()}{setNewServerForAllOperations()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+New\+Server\+For\+All\+Operations (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url,  }\item[{const QString \&}]{description = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&}]{variables = {\ttfamily QMap$<$QString,~\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}}$>$()} }\end{DoxyParamCaption})}
+
+Appends a new Server\+Configuration to the config map for a all operations and sets the index to that server. 
+\begin{DoxyParams}{Parameters}
+{\em url} & A string that contains the URL of the server \\
+\hline
+{\em description} & A String that describes the server \\
+\hline
+{\em variables} & A map between a variable name and its value. The value is used for substitution in the server\textquotesingle{}s URL template. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00122}{122}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00122                                                                                                                                                \{}
+\DoxyCodeLine{00123 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 12, 0)}}
+\DoxyCodeLine{00124     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} keyIt = \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.keyBegin(); keyIt != \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.keyEnd(); keyIt++) \{}
+\DoxyCodeLine{00125         \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aebc221f687714f8e3da7947eb028ab70}{setServerIndex}}(*keyIt, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1da1e529161e9d0e85c02e7c98856be3}{addServerConfiguration}}(*keyIt, url, description, variables));}
+\DoxyCodeLine{00126     \}}
+\DoxyCodeLine{00127 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00128     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&e : \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.keys()) \{}
+\DoxyCodeLine{00129         \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_aebc221f687714f8e3da7947eb028ab70}{setServerIndex}}(e, \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a1da1e529161e9d0e85c02e7c98856be3}{addServerConfiguration}}(e, url, description, variables));}
+\DoxyCodeLine{00130     \}}
+\DoxyCodeLine{00131 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00132 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00104}{add\+Server\+Configuration()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00061}{set\+Server\+Index()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_a0e6cacc6eb5f4f5696fd0a8671c92a57_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a44be5b7a0ae18dbd0becdaebd37636fd}\label{classOpenAPI_1_1OAIDefaultApi_a44be5b7a0ae18dbd0becdaebd37636fd}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Password (\begin{DoxyParamCaption}\item[{const QString \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079                                                        \{}
+\DoxyCodeLine{00080     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a609211c65b2e013280592eaddc49c939}{\_password}} = password;}
+\DoxyCodeLine{00081 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00083}{\+\_\+password}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_aebc221f687714f8e3da7947eb028ab70}\label{classOpenAPI_1_1OAIDefaultApi_aebc221f687714f8e3da7947eb028ab70}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setServerIndex@{setServerIndex}}
+\index{setServerIndex@{setServerIndex}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setServerIndex()}{setServerIndex()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Server\+Index (\begin{DoxyParamCaption}\item[{const QString \&}]{operation,  }\item[{int}]{server\+Index }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00061                                                                             \{}
+\DoxyCodeLine{00062     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}.contains(operation) \&\& serverIndex < \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}{\_serverConfigs}}.find(operation).value().size()) \{}
+\DoxyCodeLine{00063         \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}{\_serverIndices}}[operation] = serverIndex;}
+\DoxyCodeLine{00064     \}}
+\DoxyCodeLine{00065 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{\+\_\+server\+Configs}}, and \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{\+\_\+server\+Indices}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00140}{set\+New\+Server()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00122}{set\+New\+Server\+For\+All\+Operations()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classOpenAPI_1_1OAIDefaultApi_aebc221f687714f8e3da7947eb028ab70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a925fefd273766397a629bf48785d4f64}\label{classOpenAPI_1_1OAIDefaultApi_a925fefd273766397a629bf48785d4f64}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setTimeOut@{setTimeOut}}
+\index{setTimeOut@{setTimeOut}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setTimeOut()}{setTimeOut()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Time\+Out (\begin{DoxyParamCaption}\item[{const int}]{time\+Out }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00084}{84}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00084                                                 \{}
+\DoxyCodeLine{00085     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}{\_timeOut}} = timeOut;}
+\DoxyCodeLine{00086 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00084}{\+\_\+time\+Out}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a545a32ab1aeb8b2ad4110c0a34c5a3e8}\label{classOpenAPI_1_1OAIDefaultApi_a545a32ab1aeb8b2ad4110c0a34c5a3e8}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setUsername@{setUsername}}
+\index{setUsername@{setUsername}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setUsername()}{setUsername()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Username (\begin{DoxyParamCaption}\item[{const QString \&}]{username }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075                                                        \{}
+\DoxyCodeLine{00076     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_acd519749363655f29ae2d6f12886e5eb}{\_username}} = username;}
+\DoxyCodeLine{00077 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00082}{\+\_\+username}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a46071b8aab2321990b40e4bad46eea95}\label{classOpenAPI_1_1OAIDefaultApi_a46071b8aab2321990b40e4bad46eea95}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!setWorkingDirectory@{setWorkingDirectory}}
+\index{setWorkingDirectory@{setWorkingDirectory}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{setWorkingDirectory()}{setWorkingDirectory()}}
+{\footnotesize\ttfamily void Open\+API\+::\+OAIDefault\+Api\+::set\+Working\+Directory (\begin{DoxyParamCaption}\item[{const QString \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00088}{88}} of file \mbox{\hyperlink{OAIDefaultApi_8cpp_source}{OAIDefault\+Api.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088                                                            \{}
+\DoxyCodeLine{00089     \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}{\_workingDirectory}} = path;}
+\DoxyCodeLine{00090 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIDefaultApi_8h_source_l00085}{\+\_\+working\+Directory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ad1af9da2229116ab1676f30447a9a3cf}\label{classOpenAPI_1_1OAIDefaultApi_ad1af9da2229116ab1676f30447a9a3cf}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_apiKeys@{\_apiKeys}}
+\index{\_apiKeys@{\_apiKeys}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_apiKeys}{\_apiKeys}}
+{\footnotesize\ttfamily QMap$<$QString, QString$>$ Open\+API\+::\+OAIDefault\+Api\+::\+\_\+api\+Keys\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00080}{80}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00067}{set\+Api\+Key()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ad8e2ee3cb8394cb5e534a574748f62e6}\label{classOpenAPI_1_1OAIDefaultApi_ad8e2ee3cb8394cb5e534a574748f62e6}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_bearerToken@{\_bearerToken}}
+\index{\_bearerToken@{\_bearerToken}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_bearerToken}{\_bearerToken}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIDefault\+Api\+::\+\_\+bearer\+Token\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00081}{81}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00071}{set\+Bearer\+Token()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}\label{classOpenAPI_1_1OAIDefaultApi_a30e344ed699ce2be147da06000487d8e}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_defaultHeaders@{\_defaultHeaders}}
+\index{\_defaultHeaders@{\_defaultHeaders}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_defaultHeaders}{\_defaultHeaders}}
+{\footnotesize\ttfamily QMap$<$QString, QString$>$ Open\+API\+::\+OAIDefault\+Api\+::\+\_\+default\+Headers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00087}{87}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00144}{add\+Headers()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a564f88a89b8093332618fa8665514737}\label{classOpenAPI_1_1OAIDefaultApi_a564f88a89b8093332618fa8665514737}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_isRequestCompressionEnabled@{\_isRequestCompressionEnabled}}
+\index{\_isRequestCompressionEnabled@{\_isRequestCompressionEnabled}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_isRequestCompressionEnabled}{\_isRequestCompressionEnabled}}
+{\footnotesize\ttfamily bool Open\+API\+::\+OAIDefault\+Api\+::\+\_\+is\+Request\+Compression\+Enabled\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00089}{89}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00148}{enable\+Request\+Compression()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a20955ddd7f38baebc96911b7f2c99a31}\label{classOpenAPI_1_1OAIDefaultApi_a20955ddd7f38baebc96911b7f2c99a31}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_isResponseCompressionEnabled@{\_isResponseCompressionEnabled}}
+\index{\_isResponseCompressionEnabled@{\_isResponseCompressionEnabled}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_isResponseCompressionEnabled}{\_isResponseCompressionEnabled}}
+{\footnotesize\ttfamily bool Open\+API\+::\+OAIDefault\+Api\+::\+\_\+is\+Response\+Compression\+Enabled\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00088}{88}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00152}{enable\+Response\+Compression()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}\label{classOpenAPI_1_1OAIDefaultApi_a027e5cabb62e3c4dc887a5296963a0ed}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_manager@{\_manager}}
+\index{\_manager@{\_manager}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_manager}{\_manager}}
+{\footnotesize\ttfamily QNetwork\+Access\+Manager$\ast$ Open\+API\+::\+OAIDefault\+Api\+::\+\_\+manager\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00086}{86}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00092}{set\+Network\+Access\+Manager()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a609211c65b2e013280592eaddc49c939}\label{classOpenAPI_1_1OAIDefaultApi_a609211c65b2e013280592eaddc49c939}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_password@{\_password}}
+\index{\_password@{\_password}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_password}{\_password}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIDefault\+Api\+::\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00083}{83}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00079}{set\+Password()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}\label{classOpenAPI_1_1OAIDefaultApi_abd3a1c783c11c71b7258642b321b24d8}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_serverConfigs@{\_serverConfigs}}
+\index{\_serverConfigs@{\_serverConfigs}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_serverConfigs}{\_serverConfigs}}
+{\footnotesize\ttfamily QMap$<$QString,QList$<$\mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration}{OAIServer\+Configuration}}$>$ $>$ Open\+API\+::\+OAIDefault\+Api\+::\+\_\+server\+Configs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00079}{79}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00104}{add\+Server\+Configuration()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00030}{initialize\+Server\+Configs()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00054}{set\+Default\+Server\+Value()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00061}{set\+Server\+Index()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}\label{classOpenAPI_1_1OAIDefaultApi_a80eb720bbd701996aa26a3845c6bb2f0}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_serverIndices@{\_serverIndices}}
+\index{\_serverIndices@{\_serverIndices}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_serverIndices}{\_serverIndices}}
+{\footnotesize\ttfamily QMap$<$QString,int$>$ Open\+API\+::\+OAIDefault\+Api\+::\+\_\+server\+Indices\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00078}{78}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00030}{initialize\+Server\+Configs()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00122}{set\+New\+Server\+For\+All\+Operations()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00061}{set\+Server\+Index()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}\label{classOpenAPI_1_1OAIDefaultApi_ade5737238189ed52378730a8c8582643}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_timeOut@{\_timeOut}}
+\index{\_timeOut@{\_timeOut}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_timeOut}{\_timeOut}}
+{\footnotesize\ttfamily int Open\+API\+::\+OAIDefault\+Api\+::\+\_\+time\+Out\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00084}{84}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00084}{set\+Time\+Out()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_acd519749363655f29ae2d6f12886e5eb}\label{classOpenAPI_1_1OAIDefaultApi_acd519749363655f29ae2d6f12886e5eb}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_username@{\_username}}
+\index{\_username@{\_username}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_username}{\_username}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIDefault\+Api\+::\+\_\+username\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00082}{82}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00075}{set\+Username()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}\label{classOpenAPI_1_1OAIDefaultApi_a6680f6a7b07118823fc85ff6d565935b}} 
+\index{OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}!\_workingDirectory@{\_workingDirectory}}
+\index{\_workingDirectory@{\_workingDirectory}!OpenAPI::OAIDefaultApi@{OpenAPI::OAIDefaultApi}}
+\doxysubsubsection{\texorpdfstring{\_workingDirectory}{\_workingDirectory}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIDefault\+Api\+::\+\_\+working\+Directory\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIDefaultApi_8h_source_l00085}{85}} of file \mbox{\hyperlink{OAIDefaultApi_8h_source}{OAIDefault\+Api.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00223}{get\+Conflict\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00295}{get\+Intersection\+Info()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00344}{list\+Departure\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00402}{list\+Entry\+Lanelets()}}, \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00460}{list\+Link\+Lanelets()}}, and \mbox{\hyperlink{OAIDefaultApi_8cpp_source_l00088}{set\+Working\+Directory()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+api/intersection\+\_\+client\+\_\+api/\mbox{\hyperlink{OAIDefaultApi_8h}{OAIDefault\+Api.\+h}}\item 
+streets\+\_\+utils/streets\+\_\+api/intersection\+\_\+client\+\_\+api/\mbox{\hyperlink{OAIDefaultApi_8cpp}{OAIDefault\+Api.\+cpp}}\end{DoxyCompactItemize}

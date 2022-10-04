@@ -1,0 +1,70 @@
+\hypertarget{OAIDefaultApiHandler_8cpp_source}{}\doxysection{OAIDefault\+Api\+Handler.\+cpp}
+\label{OAIDefaultApiHandler_8cpp_source}\index{streets\_utils/streets\_api/intersection\_server\_api/src/handlers/OAIDefaultApiHandler.cpp@{streets\_utils/streets\_api/intersection\_server\_api/src/handlers/OAIDefaultApiHandler.cpp}}
+\mbox{\hyperlink{OAIDefaultApiHandler_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00012}00012 \textcolor{preprocessor}{\#include <QJsonArray>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00013}00013 \textcolor{preprocessor}{\#include <QJsonDocument>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00014}00014 \textcolor{preprocessor}{\#include <QJsonObject>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00015}00015 \textcolor{preprocessor}{\#include <QVariantMap>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00016}00016 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00018}00018 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{OAIDefaultApiHandler_8h}{OAIDefaultApiHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00019}00019 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{OAIDefaultApiRequest_8h}{OAIDefaultApiRequest.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00021}00021 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00023}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_ad9502b793db8e179a2cdea28b4d44205}{00023}} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_ad9502b793db8e179a2cdea28b4d44205}{OAIDefaultApiHandler::OAIDefaultApiHandler}}()\{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00027}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a9f43c60c1d2b916bedc063e15e6cc2fb}{00027}} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a9f43c60c1d2b916bedc063e15e6cc2fb}{OAIDefaultApiHandler::\string~OAIDefaultApiHandler}}()\{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00031}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a28a6e6463cddeaf25cab7ded294fae60}{00031}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a28a6e6463cddeaf25cab7ded294fae60}{OAIDefaultApiHandler::getConflictLanelets}}(qint32 link\_lanelet\_id) \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00032}00032     Q\_UNUSED(link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00033}00033     \textcolor{keyword}{auto} reqObj = qobject\_cast<OAIDefaultApiRequest*>(sender());}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00034}00034     \textcolor{keywordflow}{if}( reqObj != \textcolor{keyword}{nullptr} )}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00035}00035     \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00036}00036         QList<OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00037}00037         reqObj-\/>getConflictLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00038}00038     \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00040}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a22cac2763a15936e9a90896f72514ff7}{00040}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a22cac2763a15936e9a90896f72514ff7}{OAIDefaultApiHandler::getIntersectionInfo}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00041}00041     \textcolor{keyword}{auto} reqObj = qobject\_cast<OAIDefaultApiRequest*>(sender());}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00042}00042     \textcolor{keywordflow}{if}( reqObj != \textcolor{keyword}{nullptr} )}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00043}00043     \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00044}00044         \mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OAIIntersection\_info}} res;}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00045}00045         reqObj-\/>getIntersectionInfoResponse(res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00046}00046     \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00047}00047 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00048}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a0616c483426addb3ba452aef8e7ff59b}{00048}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_a0616c483426addb3ba452aef8e7ff59b}{OAIDefaultApiHandler::listDepartureLanelets}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00049}00049     \textcolor{keyword}{auto} reqObj = qobject\_cast<OAIDefaultApiRequest*>(sender());}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00050}00050     \textcolor{keywordflow}{if}( reqObj != \textcolor{keyword}{nullptr} )}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00051}00051     \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00052}00052         QList<OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00053}00053         reqObj-\/>listDepartureLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00056}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_ae86c3869e36ac739881bc4a08aa2fca1}{00056}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_ae86c3869e36ac739881bc4a08aa2fca1}{OAIDefaultApiHandler::listEntryLanelets}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00057}00057     \textcolor{keyword}{auto} reqObj = qobject\_cast<OAIDefaultApiRequest*>(sender());}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00058}00058     \textcolor{keywordflow}{if}( reqObj != \textcolor{keyword}{nullptr} )}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00059}00059     \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00060}00060         QList<OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00061}00061         reqObj-\/>listEntryLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00063}00063 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00064}\mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_ae572c1a371bf3712e22594f25ba9f73a}{00064}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler_ae572c1a371bf3712e22594f25ba9f73a}{OAIDefaultApiHandler::listLinkLanelets}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00065}00065     \textcolor{keyword}{auto} reqObj = qobject\_cast<OAIDefaultApiRequest*>(sender());}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00066}00066     \textcolor{keywordflow}{if}( reqObj != \textcolor{keyword}{nullptr} )}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00067}00067     \{}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00068}00068         QList<OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00069}00069         reqObj-\/>listLinkLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00071}00071 \}}
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{OAIDefaultApiHandler_8cpp_source_l00074}00074 \}}
+
+\end{DoxyCode}

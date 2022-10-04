@@ -1,0 +1,6 @@
+<map id="OpenAPI::OAILanelet_info::getSignalGroupId" name="OpenAPI::OAILanelet_info::getSignalGroupId">
+<area shape="rect" id="node1" title=" " alt="" coords="747,46,903,87"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#aed159065f9086c0c9e8b7c7476f3e7aa" title="find the movement state info from the modified spat for a given entry lane." alt="" coords="493,5,699,61"/>
+<area shape="rect" id="node3" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#ac41bc42db46cbbf7a037486fa46dd7e0" title="Schedule all Entering Vehicles (EVs). Method first organizes all EVs into lists based on their entry ..." alt="" coords="249,39,445,95"/>
+<area shape="rect" id="node4" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#a2572fdbb86e141df40174d618fe2a3d0" title="Method to schedule vehicles. Given and empty intersection_schedule shared pointer and a map of vehicl..." alt="" coords="5,39,201,95"/>
+</map>

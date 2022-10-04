@@ -1,0 +1,5 @@
+<map id="streets_vehicle_scheduler::vehicle_scheduler" name="streets_vehicle_scheduler::vehicle_scheduler">
+<area shape="rect" id="node1" title="Abstract Class for extend to implement scheduling business logic." alt="" coords="133,5,306,215"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html" title=" " alt="" coords="5,270,209,831"/>
+<area shape="rect" id="node3" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html" title=" " alt="" coords="233,263,429,839"/>
+</map>

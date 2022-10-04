@@ -1,0 +1,9 @@
+<map id="streets_vehicle_scheduler::signalized_vehicle_scheduler::schedule_dvs" name="streets_vehicle_scheduler::signalized_vehicle_scheduler::schedule_dvs">
+<area shape="rect" id="node1" title="Estimate the intersection departure times (dt&#39;s) for all currently Departing Vehicle (DVs) based on k..." alt="" coords="5,65,201,121"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler.html#a1cce3f6e4da6ae1804dfd6a49305baf2" title="Estimate clearance time of a vehicle given it&#39;s current speed." alt="" coords="249,97,445,153"/>
+<area shape="rect" id="node3" href="$classstreets__vehicle__scheduler_1_1vehicle__scheduler.html#af2c80eb87e5a9cabaad660544003663c" title="Helper method to get link lane OAILanelet_info from intersection information given a vehicle." alt="" coords="493,27,667,83"/>
+<area shape="rect" id="node6" href="$classOpenAPI_1_1OAILanelet__info.html#abc1c4d5d24a2dafb175874ecad09cfad" title=" " alt="" coords="507,107,653,148"/>
+<area shape="rect" id="node7" href="$classOpenAPI_1_1OAILanelet__info.html#a9ed2860829d5aeba3062f26e78afcbdc" title=" " alt="" coords="507,172,653,213"/>
+<area shape="rect" id="node4" href="$classOpenAPI_1_1OAILanelet__info.html#a489d1a475686159298697bccabd2bd52" title=" " alt="" coords="715,5,861,47"/>
+<area shape="rect" id="node5" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="752,71,824,98"/>
+</map>

@@ -1,0 +1,198 @@
+\hypertarget{intersection__model_8h_source}{}\doxysection{intersection\+\_\+model.\+h}
+\label{intersection__model_8h_source}\index{intersection\_model/include/intersection\_model.h@{intersection\_model/include/intersection\_model.h}}
+\mbox{\hyperlink{intersection__model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef INTERSECTION\_MODEL\_H}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00002}00002 \textcolor{preprocessor}{\#define INTERSECTION\_MODEL\_H}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00004}00004 \textcolor{comment}{//Lanelet2 libraries}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <lanelet2\_core/LaneletMap.h>} }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <lanelet2\_projection/UTM.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <lanelet2\_io/Io.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <lanelet2\_core/geometry/Area.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <lanelet2\_core/geometry/Lanelet.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <lanelet2\_core/primitives/Area.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <lanelet2\_core/primitives/Lanelet.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <lanelet2\_core/primitives/LineString.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <lanelet2\_core/primitives/Point.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <lanelet2\_core/primitives/Polygon.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <lanelet2\_core/utility/Units.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00016}00016 \textcolor{preprocessor}{\#include <lanelet2\_core/geometry/BoundingBox.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <lanelet2\_core/primitives/BoundingBox.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00018}00018 \textcolor{preprocessor}{\#include "{}lanelet2\_core/primitives/RegulatoryElement.h"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00019}00019 \textcolor{preprocessor}{\#include <boost/optional/optional.hpp>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00020}00020 \textcolor{preprocessor}{\#include "{}lanelet2\_core/primitives/BasicRegulatoryElements.h"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00021}00021 \textcolor{preprocessor}{\#include <lanelet2\_extension/projection/mgrs\_projector.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00022}00022 \textcolor{preprocessor}{\#include <lanelet2\_extension/projection/local\_frame\_projector.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00023}00023 \textcolor{preprocessor}{\#include <lanelet2\_extension/io/autoware\_osm\_parser.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00024}00024 \textcolor{preprocessor}{\#include <lanelet2\_core/primitives/Lanelet.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00025}00025 \textcolor{preprocessor}{\#include <lanelet2\_io/Io.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <lanelet2\_io/io\_handlers/Factory.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00027}00027 \textcolor{preprocessor}{\#include <lanelet2\_extension/regulatory\_elements/DigitalSpeedLimit.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00028}00028 \textcolor{preprocessor}{\#include <lanelet2\_matching/LaneletMatching.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00029}00029 \textcolor{preprocessor}{\#include "{}lanelet2\_routing/RoutingGraph.h"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00030}00030 \textcolor{preprocessor}{\#include "{}lanelet2\_routing/Route.h"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00031}00031 \textcolor{preprocessor}{\#include <lanelet2\_io/io\_handlers/Writer.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00032}00032 \textcolor{preprocessor}{\#include <lanelet2\_projection/UTM.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00033}00033 \textcolor{preprocessor}{\#include <lanelet2\_core/geometry/Point.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00034}00034 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{map__msg__worker_8h}{map\_msg\_worker.h}}>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00036}00036 \textcolor{comment}{// Standard library}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00037}00037 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00038}00038 \textcolor{preprocessor}{\#include <iterator>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00039}00039 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00040}00040 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00041}00041 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00042}00042 \textcolor{preprocessor}{\#include <type\_traits>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00043}00043 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00044}00044 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00045}00045 \textcolor{preprocessor}{\#include <regex>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00046}00046 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00047}00047 \textcolor{preprocessor}{\#include <rapidjson/istreamwrapper.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00048}00048 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00049}00049 \textcolor{preprocessor}{\#include <rapidjson/stringbuffer.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00050}00050 \textcolor{preprocessor}{\#include <rapidjson/writer.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00052}\mbox{\hyperlink{namespaceintersection__model}{00052}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceintersection__model}{intersection\_model}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00053}00053 \{    }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00054}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t}{00054}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t}{lanelet\_info\_t}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00055}00055     \{}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00056}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_a8657dcadd09f1207854926e31adb29c7}{00056}}         int64\_t \textcolor{keywordtype}{id}                      = 0;    \textcolor{comment}{//Uniquely identify the lanelet id within an OSM file}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00057}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_af7d913fce176218be34fe9dface89cb6}{00057}}         \textcolor{keywordtype}{double} \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_af7d913fce176218be34fe9dface89cb6}{speed\_limit}}               = 0;    \textcolor{comment}{//Unit of measure m/s}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00058}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_ac750881374f43a6427ba0d3716243105}{00058}}         \textcolor{keywordtype}{double} \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_ac750881374f43a6427ba0d3716243105}{length}}                   = 0.0;  \textcolor{comment}{//Unit of meter}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00059}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_aab3bf2f066e59d25dd8c854113b38297}{00059}}         int32\_t \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_aab3bf2f066e59d25dd8c854113b38297}{signal\_group\_id}}         = 0;    \textcolor{comment}{//0 = Not available}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00060}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_ae26cc8da122d62bdb3e5a4bba1620f58}{00060}}         std::string \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_ae26cc8da122d62bdb3e5a4bba1620f58}{turn\_direction}}      = \textcolor{stringliteral}{"{}NA"{}}; \textcolor{comment}{//Turn direction of current lanelet}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00061}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_ab754512774441a60e2e379f1971233f3}{00061}}         std::vector<int64\_t> \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_ab754512774441a60e2e379f1971233f3}{connecting\_lanelet\_ids}}; \textcolor{comment}{// Following lanelet ids}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00063}00063         \textcolor{comment}{//Override comparison operator}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00064}\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_a4946b335afb210308cf200d6b52db905}{00064}}         \textcolor{keyword}{friend} \textcolor{keywordtype}{bool} \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_a4946b335afb210308cf200d6b52db905}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t}{lanelet\_info\_t}} \&l, \textcolor{keyword}{const} \mbox{\hyperlink{structintersection__model_1_1lanelet__info__t}{lanelet\_info\_t}} \&r)}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00065}00065         \{}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00066}00066             \textcolor{keywordflow}{return} std::tie(l.\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_a8657dcadd09f1207854926e31adb29c7}{id}}, l.\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_af7d913fce176218be34fe9dface89cb6}{speed\_limit}}) < std::tie(r.\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_a8657dcadd09f1207854926e31adb29c7}{id}}, r.\mbox{\hyperlink{structintersection__model_1_1lanelet__info__t_af7d913fce176218be34fe9dface89cb6}{speed\_limit}});}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00067}00067         \}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00068}00068     \};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00070}\mbox{\hyperlink{structintersection__model_1_1intersection__info__t}{00070}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1intersection__info__t}{intersection\_info\_t}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00071}00071     \{}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00072}\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_abcc95c3378f3a915c718e3804315f42b}{00072}}         std::string \mbox{\hyperlink{structintersection__model_1_1intersection__info__t_abcc95c3378f3a915c718e3804315f42b}{intersection\_name}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00073}\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a4acc0084181c1fbdb453f5301998a2ed}{00073}}         std::int64\_t \mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a4acc0084181c1fbdb453f5301998a2ed}{intersection\_id}}  = 0;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00075}00075         \textcolor{comment}{//In the context of an intersection and OSM map, the link/bridge lanelet within an intersection is to connect the entry lanelet and departure lanelet.}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00076}\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a98ef36c3c2bcb89fe26f277a0e6f13b5}{00076}}         std::vector<lanelet\_info\_t> \mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a98ef36c3c2bcb89fe26f277a0e6f13b5}{link\_lanelets\_info}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00078}00078         \textcolor{comment}{//The entering lanelet is an atomic lane segment where vehicles need to take, stop and wait for infrastructure signal before entering the intersection.         }}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00079}\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_aaec275e8e8b2d9ab62c83f6e04087f15}{00079}}         std::vector<lanelet\_info\_t> \mbox{\hyperlink{structintersection__model_1_1intersection__info__t_aaec275e8e8b2d9ab62c83f6e04087f15}{entering\_lanelets\_info}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00085}\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a3247132d260b9048c39f51d33d1cb0bb}{00085}}         std::set<lanelet\_info\_t>    \mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a3247132d260b9048c39f51d33d1cb0bb}{departure\_lanelets\_info}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00086}00086     \};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00088}\mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets}{00088}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets}{signalized\_intersection\_lanelets}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00089}00089     \{}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00090}\mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_a0c2f6ceb707dd892be5adff4117fbf61}{00090}}         lanelet::Id \mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_a0c2f6ceb707dd892be5adff4117fbf61}{enter\_lanelet\_id}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00091}\mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_acfc1ef925bddf7fe097dcb5d7daf0006}{00091}}         lanelet::Id \mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_acfc1ef925bddf7fe097dcb5d7daf0006}{link\_lanelet\_id}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00092}\mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_a42b69d0b8933f6898705be448de69085}{00092}}         lanelet::Id \mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_a42b69d0b8933f6898705be448de69085}{depart\_lanelet\_id}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00093}\mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_ace46d005dc0799b7639c0b1c9657b505}{00093}}         int32\_t \mbox{\hyperlink{structintersection__model_1_1signalized__intersection__lanelets_ace46d005dc0799b7639c0b1c9657b505}{signal\_group\_id}} = 0;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00094}00094     \};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00096}\mbox{\hyperlink{classintersection__model_1_1intersection__model}{00096}}     \textcolor{keyword}{class }\mbox{\hyperlink{namespaceintersection__model}{intersection\_model}}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00097}00097     \{}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00098}00098         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00099}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a3809622500b524209ff1f6789974755f}{00099}}             \mbox{\hyperlink{classintersection__model_1_1intersection__model_a3809622500b524209ff1f6789974755f}{intersection\_model}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00100}00100             \mbox{\hyperlink{namespaceintersection__model}{intersection\_model}}(\textcolor{keyword}{const} std::string \&intersection\_name, \textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id, \textcolor{keyword}{const} std::string \&osm\_file\_path ) ;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00101}00101             \mbox{\hyperlink{namespaceintersection__model}{\string~intersection\_model}}();}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00102}00102             }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00106}00106             \textcolor{keywordtype}{void} initialization(\textcolor{keyword}{const} std::string \&intersection\_name, \textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id,\textcolor{keyword}{const} std::string \&osm\_file\_path);            }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00111}00111             lanelet::LaneletMapPtr get\_lanelet2\_map();}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00118}00118             lanelet::Lanelet get\_lanelet(\textcolor{keywordtype}{double} lat, \textcolor{keywordtype}{double} lon );}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00125}00125             \textcolor{keywordtype}{bool} update\_intersection\_info();}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00131}00131             \textcolor{keyword}{const}  \mbox{\hyperlink{structintersection__model_1_1intersection__info__t}{intersection\_info\_t}}\& get\_intersection\_info() \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00137}00137             \textcolor{keyword}{const} std::vector<lanelet\_info\_t>\& get\_entry\_lanelets\_info() \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00143}00143             \textcolor{keyword}{const} std::vector<lanelet\_info\_t>\& get\_link\_lanelets\_info() \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00150}00150             \textcolor{keyword}{const} std::vector<lanelet\_info\_t> get\_conflict\_lanelets\_info(int64\_t sub\_link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00156}00156             \textcolor{keyword}{const} std::set<lanelet\_info\_t>\& get\_departure\_lanelets\_info() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00164}00164             \textcolor{keywordtype}{bool} is\_valid\_link\_lanelet\_id(int64\_t lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00170}00170             \textcolor{keywordtype}{double} get\_speed\_limit\_by\_lanelet(\textcolor{keyword}{const} lanelet::ConstLanelet\& subj\_lanelet) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00171}00171 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00176}00176             \textcolor{keyword}{const} std::vector<int> get\_shared\_entry\_link\_lanelet\_ids(int64\_t subject\_link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00185}00185             \textcolor{keywordtype}{bool} update\_intersection\_info\_by\_all\_way\_stop\_reg(\textcolor{keyword}{const} lanelet::RegulatoryElement * all\_way\_stop\_reg\_elem\_ptr);}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00192}00192             \textcolor{keywordtype}{bool} update\_link\_departure\_lanelets\_info\_by\_entry\_lanelet(\textcolor{keyword}{const} lanelet::Lanelet \&entry\_lanelet);}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00193}00193 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00199}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a184d2317731c78f5ed4084b9bd5ef23a}{00199}}             rapidjson::Document \mbox{\hyperlink{classintersection__model_1_1intersection__model_a184d2317731c78f5ed4084b9bd5ef23a}{read\_json\_file}}(\textcolor{keyword}{const} std::string \&json\_file\_name) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00200}00200             }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00205}00205             \textcolor{keywordtype}{void} read\_lanelet2\_map( std::string filename );}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00206}00206 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00207}00207             \textcolor{keyword}{const} std::shared\_ptr<lanelet::routing::RoutingGraph> get\_vehicleGraph\_ptr() \textcolor{keyword}{const} ;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00213}00213             \textcolor{keywordtype}{bool} update\_vehicle\_routing\_graph();}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00214}00214             }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00215}00215 \textcolor{comment}{            /***}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00216}00216 \textcolor{comment}{             * @brief Update intersection info structure with incoming map msg consumed by kafka map consumer}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00217}00217 \textcolor{comment}{             * @param intersection\_map populated with MAP message published by v2xhub. This map message describes intersection geometry and signal group ids}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00218}00218 \textcolor{comment}{             * @return True if the intersection info is updated, otherwise false}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00219}00219 \textcolor{comment}{             **/}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00220}00220             \textcolor{keywordtype}{bool} update\_intersecion\_info\_by\_map\_msg(\textcolor{keyword}{const} std::shared\_ptr<intersection\_map> int\_map\_msg);}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00229}00229             \textcolor{keywordtype}{void} mapping\_lane\_id\_2\_lanelet\_id(\textcolor{keyword}{const} \mbox{\hyperlink{structintersection__model_1_1map__referencepoint}{map\_referencepoint}}\& ref\_point, \textcolor{keyword}{const} \mbox{\hyperlink{structintersection__model_1_1map__lane}{map\_lane}}\& lane, \textcolor{keyword}{const} \textcolor{keywordtype}{long} lane\_width, \textcolor{keyword}{const} std::vector<lanelet::ConstLanelet>\& subj\_lanelets, std::unordered\_map<long,lanelet::ConstLanelet>\& lane2lanelet\_m) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00230}00230 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00237}00237             std::vector<lanelet::BasicPoint3d>  convert\_lane\_path\_2\_basic\_points(\textcolor{keyword}{const} \mbox{\hyperlink{structintersection__model_1_1map__referencepoint}{map\_referencepoint}}\& ref\_point, \textcolor{keyword}{const} \mbox{\hyperlink{structintersection__model_1_1map__lane}{map\_lane}}\& lane) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00245}00245             \textcolor{keywordtype}{double} compute\_points\_2\_lanelet\_avg\_distance(\textcolor{keyword}{const} std::vector<lanelet::BasicPoint3d>\&  basic\_points, lanelet::ConstLanelet subj\_lanelet) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00246}00246 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00254}00254             lanelet::BasicPoint3d gps\_2\_map\_point(\textcolor{keywordtype}{double} lat, \textcolor{keywordtype}{double} lon, \textcolor{keywordtype}{double} elev ) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00255}00255 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00263}00263             lanelet::GPSPoint map\_point2\_gps(\textcolor{keywordtype}{double} x, \textcolor{keywordtype}{double} y, \textcolor{keywordtype}{double} z) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00264}00264 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00271}00271             lanelet::Id find\_link\_lanelet\_id\_by\_enter\_depart\_lanelet\_ids(\textcolor{keyword}{const} lanelet::Id enter\_lanelet\_id, \textcolor{keyword}{const} lanelet::Id depart\_lanelet\_id ) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00272}00272 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00278}00278             lanelet::ConstLanelet get\_enter\_lanelet\_by\_id(lanelet::Id \textcolor{keywordtype}{id}) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00279}00279 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00285}00285             lanelet::ConstLanelet get\_link\_lanelet\_by\_id(lanelet::Id \textcolor{keywordtype}{id}) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00286}00286 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00292}00292             lanelet::ConstLanelet get\_departure\_lanelet\_by\_id(lanelet::Id \textcolor{keywordtype}{id}) \textcolor{keyword}{const};   }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00293}00293 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00294}00294         \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00295}\mbox{\hyperlink{classintersection__model_1_1intersection__model_acd7fb425262d6b03265696f7627e0278}{00295}}             lanelet::LaneletMapPtr \mbox{\hyperlink{classintersection__model_1_1intersection__model_acd7fb425262d6b03265696f7627e0278}{map}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00296}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a977419605570156a8a750c392b4173b1}{00296}}             lanelet::projection::LocalFrameProjector *\mbox{\hyperlink{classintersection__model_1_1intersection__model_a977419605570156a8a750c392b4173b1}{projector}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00297}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a17c468daf3fe3bec06f5ec114ecf407a}{00297}}             \textcolor{keywordtype}{double} laneChangeCost               = 2.;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00298}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a05f36d30ef6ee0b983b45694d339c808}{00298}}             \textcolor{keywordtype}{double} participantHeight            = 2.;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00299}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a893f0183442d6cff5cd483f1bb03888e}{00299}}             \textcolor{keywordtype}{double} minLaneChangeLength          = 0.;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00300}\mbox{\hyperlink{classintersection__model_1_1intersection__model_ac4ce6d5c3c0858861d66a11887a3cafb}{00300}}             \textcolor{keywordtype}{int} projector\_type                  = 0;}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00301}\mbox{\hyperlink{classintersection__model_1_1intersection__model_ac34654195a06c9fdca69dbea15323202}{00301}}             \textcolor{keyword}{const} \textcolor{keywordtype}{char}* osm\_file\_path\_key       = \textcolor{stringliteral}{"{}osm\_file\_path"{}};      \textcolor{comment}{//The osm\_file\_path should match configuration name in the manifest.json}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00302}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a20f5a8ceffad3c27eb143e1845e0287d}{00302}}             \textcolor{keyword}{const} \textcolor{keywordtype}{char}* intersection\_name\_key   = \textcolor{stringliteral}{"{}intersection\_name"{}};  \textcolor{comment}{//The intersection\_name should match configuration name in the manifest.json}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00303}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a9fffa118bf325c8522d6cb5deebd81c0}{00303}}             \textcolor{keyword}{const} \textcolor{keywordtype}{char}* intersection\_id\_key     = \textcolor{stringliteral}{"{}intersection\_id"{}};    \textcolor{comment}{//The intersection\_id should match configuration name in the manifest.json}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00304}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a568022e2edf49ac2affc4e8afa071a89}{00304}}             \textcolor{keyword}{const} \textcolor{keywordtype}{double} MPH\_TO\_MS              = 0.44704;              \textcolor{comment}{//Miles per hour to meters per seconds conversion}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00305}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a2f30ceb399815b78659653156d9146ab}{00305}}             \textcolor{keyword}{const} \textcolor{keywordtype}{double} CM\_TO\_M                = 0.01;                 \textcolor{comment}{//Centimiter to meter conversion}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00306}\mbox{\hyperlink{classintersection__model_1_1intersection__model_afadc8d9da878c2d32160fd20f27203b0}{00306}}             \textcolor{keyword}{const} \textcolor{keywordtype}{double} DM\_TO\_M                = 0.1;                  \textcolor{comment}{//Decimeter to meter conversion}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00307}\mbox{\hyperlink{classintersection__model_1_1intersection__model_adeca1b8be7badffd9608fdca14f594cb}{00307}}             \textcolor{keyword}{const} \textcolor{keywordtype}{double} MICRO\_DEGREE\_TO\_DEGREE = 0.000001;             \textcolor{comment}{//Microdegree to degree conversion}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00308}\mbox{\hyperlink{classintersection__model_1_1intersection__model_aaa809df3b5cb2dae4e0e69dcff627104}{00308}}             \textcolor{keyword}{const} \textcolor{keywordtype}{double} TENTH\_TO\_ONE           = 0.1;                  \textcolor{comment}{//One-\/tenth of a unit to one}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00309}00309 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00310}00310             \textcolor{comment}{//Routing graph is used to store the possible routing set}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00311}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a1753c5644d021007f9ae2fc29209337d}{00311}}             lanelet::routing::RoutingGraphPtr  \mbox{\hyperlink{classintersection__model_1_1intersection__model_a1753c5644d021007f9ae2fc29209337d}{vehicleGraph\_ptr}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00312}00312 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00313}00313             \textcolor{comment}{//Define intersection information}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00314}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a1032d6ae6000f6ffd2531b82f848464d}{00314}}             \mbox{\hyperlink{structintersection__model_1_1intersection__info__t}{intersection\_info\_t}} \mbox{\hyperlink{classintersection__model_1_1intersection__model_a1032d6ae6000f6ffd2531b82f848464d}{int\_info}};   }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00315}00315 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00316}00316             \textcolor{comment}{//In the context of an intersection and OSM map, the link/bridge lanelet within an intersection is to connect the entry lanelet and departure lanelet.}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00317}00317             \textcolor{comment}{//Keep a private copy of link lanelets geometry for intersection}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00318}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a78c1fac3bf4bed4ced3a15ce4e4f0dd3}{00318}}             std::vector<lanelet::ConstLanelet> \mbox{\hyperlink{classintersection__model_1_1intersection__model_a78c1fac3bf4bed4ced3a15ce4e4f0dd3}{link\_lanelets}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00319}00319 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00320}00320             \textcolor{comment}{//The entering lanelet is an atomic lane segment where vehicles need to take, stop and wait for infrastructure signal before entering the intersection.         }}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00321}00321             \textcolor{comment}{//Keep a private copy of entering lanelets geometry for intersection}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00322}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a2fa6f1a15d9c4c27443f978cb8fcf0c8}{00322}}             std::vector<lanelet::ConstLanelet> \mbox{\hyperlink{classintersection__model_1_1intersection__model_a2fa6f1a15d9c4c27443f978cb8fcf0c8}{entering\_lanelets}};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00323}00323 }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00328}00328             \textcolor{comment}{//Keep a private copy of departure lanelets geometry for intersection}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00329}\mbox{\hyperlink{classintersection__model_1_1intersection__model_a8fc934b7a4f927d12e5cdd1098774be3}{00329}}             std::vector<lanelet::ConstLanelet> \mbox{\hyperlink{classintersection__model_1_1intersection__model_a8fc934b7a4f927d12e5cdd1098774be3}{departure\_lanelets}};    }
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00330}00330     \};}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00331}00331 \}}
+\DoxyCodeLine{\Hypertarget{intersection__model_8h_source_l00332}00332 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

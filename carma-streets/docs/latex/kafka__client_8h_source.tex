@@ -1,0 +1,33 @@
+\hypertarget{kafka__client_8h_source}{}\doxysection{kafka\+\_\+client.\+h}
+\label{kafka__client_8h_source}\index{kafka\_clients/include/kafka\_client.h@{kafka\_clients/include/kafka\_client.h}}
+\mbox{\hyperlink{kafka__client_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef KAFKA\_CLIENT\_H}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00002}00002 \textcolor{preprocessor}{\#define KAFKA\_CLIENT\_H}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kafka__producer__worker_8h}{kafka\_producer\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kafka__consumer__worker_8h}{kafka\_consumer\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <boost/thread.hpp>}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <boost/chrono.hpp>}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00012}\mbox{\hyperlink{namespacekafka__clients}{00012}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacekafka__clients}{kafka\_clients}}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00013}00013 \{}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00015}\mbox{\hyperlink{classkafka__clients_1_1kafka__client}{00015}}     \textcolor{keyword}{class }\mbox{\hyperlink{classkafka__clients_1_1kafka__client}{kafka\_client}}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00016}00016     \{}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00017}00017     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00018}00018         std::shared\_ptr<kafka\_clients::kafka\_consumer\_worker> \mbox{\hyperlink{classkafka__clients_1_1kafka__client_a654347e562e95f46170daac1f3cc5f3d}{create\_consumer}}(\textcolor{keyword}{const} std::string \&broker\_str, \textcolor{keyword}{const} std::string \&topic\_str,}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00019}00019                                                                               std::string \&group\_id\_str) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00020}00020         std::shared\_ptr<kafka\_clients::kafka\_producer\_worker> \mbox{\hyperlink{classkafka__clients_1_1kafka__client_ae0e5d76c5b916a834b909ca23e657e2a}{create\_producer}}(\textcolor{keyword}{const} std::string \&broker\_str, \textcolor{keyword}{const} std::string \&topic\_str) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00021}\mbox{\hyperlink{classkafka__clients_1_1kafka__client_ab506789cf084a91e0bdf5c80a93d44cb}{00021}}         rapidjson::Document \mbox{\hyperlink{classkafka__clients_1_1kafka__client_ab506789cf084a91e0bdf5c80a93d44cb}{read\_json\_file}}(\textcolor{keyword}{const} std::string \&json\_file) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00022}\mbox{\hyperlink{classkafka__clients_1_1kafka__client_a0d7a56622cdc4f2b2cc20d9bbeee4607}{00022}}         std::string \mbox{\hyperlink{classkafka__clients_1_1kafka__client_a0d7a56622cdc4f2b2cc20d9bbeee4607}{get\_value\_by\_doc}}(rapidjson::Document \&doc, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *key) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00023}00023     \};}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{kafka__client_8h_source_l00027}00027 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// !KAFKA\_CLIENT\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,288 @@
+\hypertarget{classmessage__services_1_1workers_1_1bsm__worker}{}\doxysection{message\+\_\+services\+::workers\+::bsm\+\_\+worker Class Reference}
+\label{classmessage__services_1_1workers_1_1bsm__worker}\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+
+
+{\ttfamily \#include $<$bsm\+\_\+worker.\+h$>$}
+
+
+
+Inheritance diagram for message\+\_\+services\+::workers\+::bsm\+\_\+worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classmessage__services_1_1workers_1_1bsm__worker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for message\+\_\+services\+::workers\+::bsm\+\_\+worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1workers_1_1bsm__worker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a23a9cf2712507612b1838a8e7e913695}{bsm\+\_\+worker}} ()
+\item 
+\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_afac4bfa86699f026bf0032473cee9bd6}{$\sim$bsm\+\_\+worker}} ()
+\item 
+std\+::deque$<$ \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{models\+::bsm}} $>$ \& \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a619c3919dfcca4fb22438aacb0d9b130}{get\+\_\+curr\+\_\+list}} ()
+\begin{DoxyCompactList}\small\item\em Return the vector of bsm stored in the \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker}{bsm\+\_\+worker}}. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\+\_\+services\+::models\+::bsm}} $>$ \& \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_af6b660b02ee9e7aa3c1d2f710bdb4b62}{get\+\_\+curr\+\_\+map}} ()
+\item 
+void \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad8f5adaf397d5f270ae387c5aa0f83ce}{process\+\_\+incoming\+\_\+msg}} (const std\+::string json\+\_\+str)
+\item 
+void \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a8866091959ffe165d8f499f75076b1bc}{pop\+\_\+cur\+\_\+element\+\_\+from\+\_\+list}} (long element\+\_\+position)
+\begin{DoxyCompactList}\small\item\em Remove an element from bsm vector based on the element position. If the position is greater than the deque current size, the last element is removed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad32959a37f2edef877e5fe0ca6d74683}{worker\+\_\+mtx}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::deque$<$ \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\+\_\+services\+::models\+::bsm}} $>$ \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\+\_\+v}}
+\item 
+std\+::map$<$ std\+::string,\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\+\_\+services\+::models\+::bsm}} $>$ \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\+\_\+m}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8h_source_l00017}{17}} of file \mbox{\hyperlink{bsm__worker_8h_source}{bsm\+\_\+worker.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_a23a9cf2712507612b1838a8e7e913695}\label{classmessage__services_1_1workers_1_1bsm__worker_a23a9cf2712507612b1838a8e7e913695}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!bsm\_worker@{bsm\_worker}}
+\index{bsm\_worker@{bsm\_worker}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{bsm\_worker()}{bsm\_worker()}}
+{\footnotesize\ttfamily message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::bsm\+\_\+worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{bsm__worker_8cpp_source}{bsm\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008         \{}
+\DoxyCodeLine{00009         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_afac4bfa86699f026bf0032473cee9bd6}\label{classmessage__services_1_1workers_1_1bsm__worker_afac4bfa86699f026bf0032473cee9bd6}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!````~bsm\_worker@{$\sim$bsm\_worker}}
+\index{````~bsm\_worker@{$\sim$bsm\_worker}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{$\sim$bsm\_worker()}{~bsm\_worker()}}
+{\footnotesize\ttfamily message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::$\sim$bsm\+\_\+worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{bsm__worker_8cpp_source}{bsm\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012         \{}
+\DoxyCodeLine{00013             this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.clear();}
+\DoxyCodeLine{00014         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{bsm__worker_8h_source_l00020}{bsm\+\_\+v}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_a619c3919dfcca4fb22438aacb0d9b130}\label{classmessage__services_1_1workers_1_1bsm__worker_a619c3919dfcca4fb22438aacb0d9b130}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!get\_curr\_list@{get\_curr\_list}}
+\index{get\_curr\_list@{get\_curr\_list}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{get\_curr\_list()}{get\_curr\_list()}}
+{\footnotesize\ttfamily std\+::deque$<$ \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{models\+::bsm}} $>$ \& message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::get\+\_\+curr\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return the vector of bsm stored in the \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker}{bsm\+\_\+worker}}. 
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{bsm__worker_8cpp_source}{bsm\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017         \{}
+\DoxyCodeLine{00018             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}};}
+\DoxyCodeLine{00019         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{bsm__worker_8h_source_l00020}{bsm\+\_\+v}}.
+
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_af6b660b02ee9e7aa3c1d2f710bdb4b62}\label{classmessage__services_1_1workers_1_1bsm__worker_af6b660b02ee9e7aa3c1d2f710bdb4b62}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!get\_curr\_map@{get\_curr\_map}}
+\index{get\_curr\_map@{get\_curr\_map}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{get\_curr\_map()}{get\_curr\_map()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\+\_\+services\+::models\+::bsm}} $>$ \& message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::get\+\_\+curr\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{bsm__worker_8cpp_source}{bsm\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022         \{}
+\DoxyCodeLine{00023             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}};}
+\DoxyCodeLine{00024         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{bsm__worker_8h_source_l00021}{bsm\+\_\+m}}.
+
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_a8866091959ffe165d8f499f75076b1bc}\label{classmessage__services_1_1workers_1_1bsm__worker_a8866091959ffe165d8f499f75076b1bc}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!pop\_cur\_element\_from\_list@{pop\_cur\_element\_from\_list}}
+\index{pop\_cur\_element\_from\_list@{pop\_cur\_element\_from\_list}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{pop\_cur\_element\_from\_list()}{pop\_cur\_element\_from\_list()}}
+{\footnotesize\ttfamily void message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::pop\+\_\+cur\+\_\+element\+\_\+from\+\_\+list (\begin{DoxyParamCaption}\item[{long}]{element\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Remove an element from bsm vector based on the element position. If the position is greater than the deque current size, the last element is removed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em long} & Current element position in the bsm deque. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{bsm__worker_8cpp_source}{bsm\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045         \{}
+\DoxyCodeLine{00046             \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.size() > 0)}
+\DoxyCodeLine{00047             \{}
+\DoxyCodeLine{00048                 std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad32959a37f2edef877e5fe0ca6d74683}{worker\_mtx}});}
+\DoxyCodeLine{00049                 \textcolor{keywordflow}{if} (element\_position == 0)}
+\DoxyCodeLine{00050                 \{}
+\DoxyCodeLine{00051                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.pop\_front();}
+\DoxyCodeLine{00052                 \}}
+\DoxyCodeLine{00053                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00054                 \{}
+\DoxyCodeLine{00055                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.erase(this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.begin() + element\_position);}
+\DoxyCodeLine{00056                 \}}
+\DoxyCodeLine{00057             \}}
+\DoxyCodeLine{00058         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{bsm__worker_8h_source_l00020}{bsm\+\_\+v}}, and \mbox{\hyperlink{bsm__worker_8h_source_l00032}{worker\+\_\+mtx}}.
+
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_ad8f5adaf397d5f270ae387c5aa0f83ce}\label{classmessage__services_1_1workers_1_1bsm__worker_ad8f5adaf397d5f270ae387c5aa0f83ce}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!process\_incoming\_msg@{process\_incoming\_msg}}
+\index{process\_incoming\_msg@{process\_incoming\_msg}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{process\_incoming\_msg()}{process\_incoming\_msg()}}
+{\footnotesize\ttfamily void message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::process\+\_\+incoming\+\_\+msg (\begin{DoxyParamCaption}\item[{const std\+::string}]{json\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classmessage__services_1_1workers_1_1base__worker_a2ad5dc4783ea3fe10147aa8d3e1f0e27}{message\+\_\+services\+::workers\+::base\+\_\+worker}}.
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{bsm__worker_8cpp_source}{bsm\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026         \{}
+\DoxyCodeLine{00027             \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\_services::models::bsm}} bsm\_obj;}
+\DoxyCodeLine{00028             \textcolor{keywordflow}{if} (bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1baseMessage_a3f9c04935a000829b2ef25300d2fb57b}{fromJson}}(json\_str.c\_str()))}
+\DoxyCodeLine{00029             \{}
+\DoxyCodeLine{00030                 std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad32959a37f2edef877e5fe0ca6d74683}{worker\_mtx}});}
+\DoxyCodeLine{00031                 std::string bsm\_msg\_id = bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a31f50e14ec5295d0397ad02048755862}{generate\_hash\_bsm\_msg\_id}}(bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a02e3d31e027dc8f053beb32b7a1a913f}{temprary\_id}}, bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a8cf426e92275412a60d3f22e4ec21b89}{msg\_count}}, bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_af87ea45d83fa065457ac41839c7f466a}{sec\_mark}});}
+\DoxyCodeLine{00032                 \textcolor{keywordflow}{if}(!this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}}.empty() \&\&  this-\/>bsm\_m.find(bsm\_msg\_id) != this-\/>bsm\_m.end())}
+\DoxyCodeLine{00033                 \{}
+\DoxyCodeLine{00034                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}}.erase(bsm\_msg\_id);}
+\DoxyCodeLine{00035                 \}}
+\DoxyCodeLine{00036                 this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}}.insert(\{bsm\_msg\_id, bsm\_obj\});}
+\DoxyCodeLine{00037             \}}
+\DoxyCodeLine{00038             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00039             \{}
+\DoxyCodeLine{00040                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}bsm\_worker: Document parse error"{}});}
+\DoxyCodeLine{00041             \}}
+\DoxyCodeLine{00042         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{bsm__worker_8h_source_l00021}{bsm\+\_\+m}}, \mbox{\hyperlink{baseMessage_8cpp_source_l00016}{message\+\_\+services\+::models\+::base\+Message\+::from\+Json()}}, \mbox{\hyperlink{bsm_8cpp_source_l00220}{message\+\_\+services\+::models\+::bsm\+::generate\+\_\+hash\+\_\+bsm\+\_\+msg\+\_\+id()}}, \mbox{\hyperlink{bsm_8cpp_source_l00227}{message\+\_\+services\+::models\+::bsm\+::get\+Core\+\_\+data()}}, \mbox{\hyperlink{bsmCoreData_8h_source_l00056}{message\+\_\+services\+::models\+::bsm\+Core\+Data\+::msg\+\_\+count}}, \mbox{\hyperlink{bsmCoreData_8h_source_l00057}{message\+\_\+services\+::models\+::bsm\+Core\+Data\+::sec\+\_\+mark}}, \mbox{\hyperlink{bsmCoreData_8h_source_l00055}{message\+\_\+services\+::models\+::bsm\+Core\+Data\+::temprary\+\_\+id}}, and \mbox{\hyperlink{bsm__worker_8h_source_l00032}{worker\+\_\+mtx}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmessage__services_1_1workers_1_1bsm__worker_ad8f5adaf397d5f270ae387c5aa0f83ce_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}\label{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!bsm\_m@{bsm\_m}}
+\index{bsm\_m@{bsm\_m}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{bsm\_m}{bsm\_m}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string ,\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\+\_\+services\+::models\+::bsm}}$>$ message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::bsm\+\_\+m\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8h_source_l00021}{21}} of file \mbox{\hyperlink{bsm__worker_8h_source}{bsm\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{bsm__worker_8cpp_source_l00021}{get\+\_\+curr\+\_\+map()}}, and \mbox{\hyperlink{bsm__worker_8cpp_source_l00025}{process\+\_\+incoming\+\_\+msg()}}.
+
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}\label{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!bsm\_v@{bsm\_v}}
+\index{bsm\_v@{bsm\_v}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{bsm\_v}{bsm\_v}}
+{\footnotesize\ttfamily std\+::deque$<$\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\+\_\+services\+::models\+::bsm}}$>$ message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::bsm\+\_\+v\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8h_source_l00020}{20}} of file \mbox{\hyperlink{bsm__worker_8h_source}{bsm\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{bsm__worker_8cpp_source_l00011}{$\sim$bsm\+\_\+worker()}}, \mbox{\hyperlink{bsm__worker_8cpp_source_l00016}{get\+\_\+curr\+\_\+list()}}, and \mbox{\hyperlink{bsm__worker_8cpp_source_l00044}{pop\+\_\+cur\+\_\+element\+\_\+from\+\_\+list()}}.
+
+\mbox{\Hypertarget{classmessage__services_1_1workers_1_1bsm__worker_ad32959a37f2edef877e5fe0ca6d74683}\label{classmessage__services_1_1workers_1_1bsm__worker_ad32959a37f2edef877e5fe0ca6d74683}} 
+\index{message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}!worker\_mtx@{worker\_mtx}}
+\index{worker\_mtx@{worker\_mtx}!message\_services::workers::bsm\_worker@{message\_services::workers::bsm\_worker}}
+\doxysubsubsection{\texorpdfstring{worker\_mtx}{worker\_mtx}}
+{\footnotesize\ttfamily std\+::mutex message\+\_\+services\+::workers\+::bsm\+\_\+worker\+::worker\+\_\+mtx}
+
+
+
+Definition at line \mbox{\hyperlink{bsm__worker_8h_source_l00032}{32}} of file \mbox{\hyperlink{bsm__worker_8h_source}{bsm\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{bsm__worker_8cpp_source_l00044}{pop\+\_\+cur\+\_\+element\+\_\+from\+\_\+list()}}, and \mbox{\hyperlink{bsm__worker_8cpp_source_l00025}{process\+\_\+incoming\+\_\+msg()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+message\+\_\+services/include/\mbox{\hyperlink{bsm__worker_8h}{bsm\+\_\+worker.\+h}}\item 
+message\+\_\+services/src/workers/\mbox{\hyperlink{bsm__worker_8cpp}{bsm\+\_\+worker.\+cpp}}\end{DoxyCompactItemize}

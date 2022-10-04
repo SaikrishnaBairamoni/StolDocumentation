@@ -1,0 +1,50 @@
+\hypertarget{dtcompatible-role_8py_source}{}\doxysection{dtcompatible-\/role.py}
+\label{dtcompatible-role_8py_source}\index{doc/\_extensions/zephyr/dtcompatible-\/role.py@{doc/\_extensions/zephyr/dtcompatible-\/role.py}}
+\mbox{\hyperlink{dtcompatible-role_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00001}\mbox{\hyperlink{namespacezephyr_1_1dtcompatible-role}{00001}} \textcolor{comment}{\# Copyright (c) 2020 Nordic Semiconductor ASA}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00002}00002 \textcolor{comment}{\#}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00003}00003 \textcolor{comment}{\# SPDX-\/License-\/Identifier: Apache-\/2.0}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00005}00005 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00006}00006 \textcolor{stringliteral}{A Sphinx extension for documenting devicetree content. It adds a role and a}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00007}00007 \textcolor{stringliteral}{directive with the same name, 'dtcompatible'.}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00008}00008 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00009}00009 \textcolor{stringliteral}{:dtcompatible:`vnd,foo`}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00010}00010 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00011}00011 \textcolor{stringliteral}{  This role can be used inline to make a reference to the generated}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00012}00012 \textcolor{stringliteral}{  documentation }\textcolor{keywordflow}{for} a devicetree}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00013}00013   compatible given \textcolor{keyword}{as} argument.}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00015}00015   For example, :dtcompatible:`vnd,foo` would create a reference to the}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00016}00016   generated documentation page \textcolor{keywordflow}{for} the devicetree binding handling}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00017}00017   compatible \textcolor{stringliteral}{"{}vnd,foo"{}}.}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00019}00019   There may be more than one page \textcolor{keywordflow}{for} a single compatible. For example,}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00020}00020   that happens \textcolor{keywordflow}{if} a binding behaves differently depending on the bus the}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00021}00021   node \textcolor{keywordflow}{is} on. If that occurs, the reference points at a \textcolor{stringliteral}{"{}disambiguation"{}}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00022}00022   page which links out to all the possibilities, similarly to how Wikipedia}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00023}00023   disambiguation pages work.}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00025}00025   The Zephyr documentation uses the standard :option: role to refer}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00026}00026   to Kconfig options. The :dtcompatible: option \textcolor{keywordflow}{is} like that, \textcolor{keywordflow}{except}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00027}00027   using its own role to avoid using one that already has a standard meaning.}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00028}00028   (The :option: role \textcolor{keywordflow}{is} meant \textcolor{keywordflow}{for} documenting options to command-\/line programs,}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00029}00029   \textcolor{keywordflow}{not} Kconfig symbols.)}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00031}00031 .. dtcompatible:: vnd,foo}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00033}00033   This directive marks the page where the :dtcompatible: role link goes.}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00034}00034   Do \textcolor{keywordflow}{not} use it directly. The generated bindings documentation puts these}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00035}00035   \textcolor{keywordflow}{in} the right places.}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00036}00036 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00037}00037 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00038}\mbox{\hyperlink{namespacezephyr_1_1dtcompatible-role_aa978a0921b3d66dca60974e0befe73c2}{00038}} \textcolor{stringliteral}{def setup(app):}}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00039}00039 \textcolor{stringliteral}{    app.add\_crossref\_type('dtcompatible'}, \textcolor{stringliteral}{'dtcompatible'})}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00041}00041     \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00042}00042         \textcolor{stringliteral}{'parallel\_read\_safe'}: \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00043}00043         \textcolor{stringliteral}{'parallel\_write\_safe'}: \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{dtcompatible-role_8py_source_l00044}00044     \}}
+
+\end{DoxyCode}

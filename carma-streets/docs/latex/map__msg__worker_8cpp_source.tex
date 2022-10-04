@@ -1,0 +1,155 @@
+\hypertarget{map__msg__worker_8cpp_source}{}\doxysection{map\+\_\+msg\+\_\+worker.\+cpp}
+\label{map__msg__worker_8cpp_source}\index{intersection\_model/src/map\_msg\_worker.cpp@{intersection\_model/src/map\_msg\_worker.cpp}}
+\mbox{\hyperlink{map__msg__worker_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{map__msg__worker_8h}{map\_msg\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00005}00005 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceintersection__model}{intersection\_model}}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00007}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a4e23adab93b592974e71481e85ef6c5c}{00007}}     \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}{map\_msg\_worker::map\_msg\_worker}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id, \textcolor{keyword}{const} std::string \&bootstrap\_server, \textcolor{keyword}{const} std::string \&map\_msg\_group\_id, \textcolor{keyword}{const} std::string \&map\_msg\_topic\_name):bootstrap\_server(bootstrap\_server), map\_msg\_group\_id(map\_msg\_group\_id),map\_msg\_topic\_name(map\_msg\_topic\_name)}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00008}00008     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00012}00012         \textcolor{keyword}{auto} client = std::make\_shared<kafka\_clients::kafka\_client>();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00013}00013         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}} = client-\/>create\_consumer(this-\/>bootstrap\_server, this-\/>map\_msg\_topic\_name, this-\/>map\_msg\_group\_id);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00014}00014         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}} || !\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}}-\/>init())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00016}00016             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}kafka consumers (\_map\_msg\_consumer) initialize error"{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00017}00017             exit(-\/1);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00018}00018         \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00019}00019         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00020}00020         \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00021}00021             \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}}-\/>subscribe();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00022}00022             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}}-\/>is\_running())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00023}00023             \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00024}00024                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}consumer\_workers (\_map\_msg\_consumer) is not running"{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00025}00025                 exit(-\/1);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00026}00026             \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00027}00027         \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00028}00028         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}} = std::make\_shared<intersection\_map>();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00029}00029         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid = intersection\_id;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00030}00030         SPDLOG\_INFO(\textcolor{stringliteral}{"{}map\_msg\_worker constructor done"{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00033}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad60ea9e2f1b18e870fbb17c52fdaf512}{00033}}     \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}{map\_msg\_worker::map\_msg\_worker}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id)}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00034}00034     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00035}00035         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}} = std::make\_shared<intersection\_map>();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00036}00036         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid = intersection\_id;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00039}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad59f4cb6f6e4afc090fdda3937f1b672}{00039}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad59f4cb6f6e4afc090fdda3937f1b672}{map\_msg\_worker::update\_map\_msg}}(\textcolor{keyword}{const} std::string \&payload)}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00040}00040     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00041}00041         \textcolor{keywordtype}{bool} is\_updated = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00042}00042         std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aab2d3179da1e6be47a1ee35c170a6ab6}{intersection\_map\_msg\_mtx}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00043}00043         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00044}00044         \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00045}00045             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Intersection map msg is nullptr"{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00046}00046             \textcolor{keywordflow}{return} is\_updated;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00047}00047         \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00048}00048         rapidjson::Document doc = \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}{parse\_JSON\_string}}(payload);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00049}00049         \textcolor{comment}{// Map data}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00050}00050         \textcolor{keywordflow}{if} (!doc.HasParseError() \&\& doc.FindMember(\textcolor{stringliteral}{"{}map\_data"{}})-\/>value.IsObject())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00051}00051         \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00052}00052             \textcolor{keyword}{auto} mapData = doc.FindMember(\textcolor{stringliteral}{"{}map\_data"{}})-\/>value.GetObject();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00053}00053             \textcolor{comment}{// Intersections}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00054}00054             \textcolor{keywordflow}{if} (mapData.FindMember(\textcolor{stringliteral}{"{}intersections"{}})-\/>value.IsObject())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00055}00055             \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00056}00056                 \textcolor{keyword}{auto} intersections = mapData.FindMember(\textcolor{stringliteral}{"{}intersections"{}})-\/>value.GetObject();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00057}00057                 \textcolor{comment}{// Intersection geometry}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00058}00058                 \textcolor{keywordflow}{if} (intersections.FindMember(\textcolor{stringliteral}{"{}intersection\_geometry"{}})-\/>value.IsObject())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00059}00059                 \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00060}00060                     \textcolor{keyword}{auto} intersection\_geometry = intersections.FindMember(\textcolor{stringliteral}{"{}intersection\_geometry"{}})-\/>value.GetObject();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00061}00061                     \textcolor{keyword}{auto} \textcolor{keywordtype}{id} = intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}id"{}})-\/>value.GetObject();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00062}00062                     \textcolor{keyword}{auto} id\_id = std::stoul(\textcolor{keywordtype}{id}.FindMember(\textcolor{stringliteral}{"{}id"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.GetString()); \textcolor{comment}{// id is getting from kafka consumer}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00063}00063                     \textcolor{keywordtype}{bool} is\_intersection\_id\_match = (id\_id == \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid) ? \textcolor{keyword}{true} : \textcolor{keyword}{false}; \textcolor{comment}{//intersectionid is initialized value from manifest.json}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00064}00064                     \textcolor{keywordflow}{if} (is\_intersection\_id\_match) \textcolor{comment}{//Make sure the intersection id in the manifest.json match the id from the MAP message}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00065}00065                     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00066}00066                         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Find mapping intersection ID."{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00067}00067                         \mbox{\hyperlink{structintersection__model_1_1map__geometry}{map\_geometry}} mapGeo;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00068}00068                         \textcolor{keywordflow}{if} (intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}ref\_point"{}})-\/>value.IsObject())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00069}00069                         \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00070}00070                             \textcolor{keyword}{auto} ref\_point = intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}ref\_point"{}})-\/>value.GetObject();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00071}00071                             mapGeo.\mbox{\hyperlink{structintersection__model_1_1map__geometry_a841cbc84684057f49f73bd5d7058d644}{refpoint}}.\mbox{\hyperlink{structintersection__model_1_1map__referencepoint_ab8a02f1563f5fa2f4661f0010b4d56cb}{latitude}} = std::stol(ref\_point.FindMember(\textcolor{stringliteral}{"{}lat"{}})-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00072}00072                             mapGeo.\mbox{\hyperlink{structintersection__model_1_1map__geometry_a841cbc84684057f49f73bd5d7058d644}{refpoint}}.\mbox{\hyperlink{structintersection__model_1_1map__referencepoint_a69698a85463a50f3775e5ac652258e9d}{longitude}} = std::stol(ref\_point.FindMember(\textcolor{stringliteral}{"{}long"{}})-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00073}00073                             mapGeo.\mbox{\hyperlink{structintersection__model_1_1map__geometry_a841cbc84684057f49f73bd5d7058d644}{refpoint}}.\mbox{\hyperlink{structintersection__model_1_1map__referencepoint_aa889188b7f990edcf3831b3f45595c65}{elevation}} = std::stol(ref\_point.FindMember(\textcolor{stringliteral}{"{}elevation"{}})-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00074}00074                         \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00075}00075                         mapGeo.\mbox{\hyperlink{structintersection__model_1_1map__geometry_a9ef30bd06f804f96ad2b6a5d1c5edd62}{approach}}.\mbox{\hyperlink{structintersection__model_1_1map__group_ab9f2eb961753525d5473fcb28ebd4e23}{width}} = std::stol(intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}lane\_width"{}})-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00077}00077                         \textcolor{comment}{// Lane set}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00078}00078                         \textcolor{keywordflow}{if} (intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}lane\_set"{}})-\/>value.IsArray())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00079}00079                         \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00080}00080                             \textcolor{keyword}{auto} lane\_set = intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}lane\_set"{}})-\/>value.GetArray();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00081}00081                             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} j = 0; j < lane\_set.Size(); j++)}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00082}00082                             \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00083}00083                                 \mbox{\hyperlink{structintersection__model_1_1map__lane}{map\_lane}} lane;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00084}00084                                 lane.\mbox{\hyperlink{structintersection__model_1_1map__lane_a388905939c55bdd78886367554a05e2d}{lane\_id}} = std::stol(lane\_set[j].FindMember(\textcolor{stringliteral}{"{}lane\_id"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00086}00086                                 \textcolor{comment}{// Node list}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00087}00087                                 \textcolor{keywordflow}{if} (lane\_set[j].FindMember(\textcolor{stringliteral}{"{}node\_list"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}nodes"{}})-\/>value.IsArray())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00088}00088                                 \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00089}00089                                     \textcolor{keyword}{auto} nodes = lane\_set[j].FindMember(\textcolor{stringliteral}{"{}node\_list"{}})-\/>value.FindMember(\textcolor{stringliteral}{"{}nodes"{}})-\/>value.GetArray();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00090}00090                                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} k = 0; k < nodes.Size(); k++)}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00091}00091                                     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00092}00092                                         \mbox{\hyperlink{structintersection__model_1_1map__node}{map\_node}} \mbox{\hyperlink{structintersection__model_1_1map__node}{map\_node}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00093}00093                                         \mbox{\hyperlink{structintersection__model_1_1map__node}{map\_node}}.\mbox{\hyperlink{structintersection__model_1_1map__node_a499d453609507e45ef7e06adb25e95bc}{x}} = std::stol(nodes[k].FindMember(\textcolor{stringliteral}{"{}delta"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}node-\/xy"{}})-\/>value.FindMember(\textcolor{stringliteral}{"{}x"{}})-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00094}00094                                         \mbox{\hyperlink{structintersection__model_1_1map__node}{map\_node}}.\mbox{\hyperlink{structintersection__model_1_1map__node_a8d85d7106032724efd2c0cc980c928af}{y}} = std::stol(nodes[k].FindMember(\textcolor{stringliteral}{"{}delta"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}node-\/xy"{}})-\/>value.FindMember(\textcolor{stringliteral}{"{}y"{}})-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00095}00095                                         lane.\mbox{\hyperlink{structintersection__model_1_1map__lane_a1550fb18d5de5553a0ac7645c88c668c}{nodes}}.push\_back(\mbox{\hyperlink{structintersection__model_1_1map__node}{map\_node}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00096}00096                                     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00097}00097                                 \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00099}00099                                 \textcolor{keywordflow}{if} (lane\_set[j].FindMember(\textcolor{stringliteral}{"{}connects\_to"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.IsArray())}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00100}00100                                 \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00101}00101                                     \textcolor{comment}{// Lane connections with signal group ids}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00102}00102                                     \textcolor{keyword}{auto} connectsto = lane\_set[j].FindMember(\textcolor{stringliteral}{"{}connects\_to"{}})-\/>value.GetArray();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00103}00103                                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} k = 0; k < connectsto.Size(); k++)}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00104}00104                                     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00105}00105                                         \mbox{\hyperlink{structintersection__model_1_1map__connection}{map\_connection}} map\_connect;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00106}00106                                         map\_connect.\mbox{\hyperlink{structintersection__model_1_1map__connection_a96f6647bfcb41c60294d43988b9a230e}{lane\_id}} = std::stol(connectsto[k].FindMember(\textcolor{stringliteral}{"{}connecting\_lane"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}lane"{}})-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00107}00107                                         map\_connect.\mbox{\hyperlink{structintersection__model_1_1map__connection_a3e580bd9ee96a88173d32f08e789cb32}{signalGroup}} = std::stoi(connectsto[k].FindMember(\textcolor{stringliteral}{"{}signal\_group"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.GetString());}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00108}00108                                         lane.\mbox{\hyperlink{structintersection__model_1_1map__lane_a42d905ba7a90846fd4edc5beb54bbd61}{connection}}.push\_back(map\_connect);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00109}00109                                     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00110}00110                                 \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00111}00111                                 mapGeo.\mbox{\hyperlink{structintersection__model_1_1map__geometry_a9ef30bd06f804f96ad2b6a5d1c5edd62}{approach}}.\mbox{\hyperlink{structintersection__model_1_1map__group_a6220b488cc884795ec1dd0a01d7208e1}{lanes}}.push\_back(lane);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00112}00112                             \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00113}00113                             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Updated lane set."{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00114}00114                         \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00115}00115                         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>geometries.clear();}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00116}00116                         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>geometries.push\_back(mapGeo);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00117}00117                         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Update map msg done."{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00118}00118                         is\_updated = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00119}00119                     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00120}00120                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00121}00121                     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00122}00122                         SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Cannot find intersection model intersection\_id \{0\} mapping to MAP msg intersection geometry id \{1\}."{}}, \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid, id\_id);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00123}00123                     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00124}00124                 \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00125}00125             \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00126}00126         \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00127}00127         \textcolor{keywordflow}{return} is\_updated;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00128}00128     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00130}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aa18c01177386e52a8c31c185ac3a9f9b}{00130}}     \textcolor{keyword}{const} std::shared\_ptr<intersection\_map>\& \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aa18c01177386e52a8c31c185ac3a9f9b}{map\_msg\_worker::get\_map\_msg\_ptr}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00131}00131 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00132}00132         \textcolor{keywordflow}{return} \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00133}00133     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00135}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0379ce194582140e930c2e3b3ccc5ad8}{00135}}     \textcolor{keyword}{const} std::shared\_ptr<kafka\_clients::kafka\_consumer\_worker>\& \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0379ce194582140e930c2e3b3ccc5ad8}{map\_msg\_worker::get\_map\_msg\_consumer\_ptr}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00136}00136 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00137}00137         \textcolor{keywordflow}{return} \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00138}00138     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00140}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}{00140}}     rapidjson::Document \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}{map\_msg\_worker::parse\_JSON\_string}}(\textcolor{keyword}{const} std::string \&jsonString)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00141}00141 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00142}00142         rapidjson::Document doc;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00143}00143         \textcolor{keywordtype}{bool} has\_parse\_error = doc.Parse(jsonString.c\_str()).HasParseError() ? true : \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00145}00145         \textcolor{keywordflow}{if} (has\_parse\_error)}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00146}00146         \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00147}00147             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Document parse error: Cannot parse map JSON string"{}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00148}00148         \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00149}00149         \textcolor{keywordflow}{return} doc;}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00150}00150     \}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00151}00151 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8cpp_source_l00152}00152 \}}
+
+\end{DoxyCode}

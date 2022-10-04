@@ -1,0 +1,433 @@
+\hypertarget{classsignal__opt__service_1_1signal__opt__service}{}\doxysection{signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service Class Reference}
+\label{classsignal__opt__service_1_1signal__opt__service}\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+
+
+{\ttfamily \#include $<$signal\+\_\+opt\+\_\+service.\+h$>$}
+
+
+
+Collaboration diagram for signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsignal__opt__service_1_1signal__opt__service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afd84585cb22897ece5f6cb02cebdf4c9}{signal\+\_\+opt\+\_\+service}} ()=default
+\begin{DoxyCompactList}\small\item\em Initialize the consumer and producer configurations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a0d08faf7254086e5e9507957fa4b2acc}{$\sim$signal\+\_\+opt\+\_\+service}} ()
+\begin{DoxyCompactList}\small\item\em stop the consumer and producer \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac5270550fc00e6e7b4f7822fcac522dc}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the consumer and producer configurations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a27c7129220640b4974bdb247ab1bbc26}{start}} () const
+\begin{DoxyCompactList}\small\item\em Create threads and consume messages. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a37dcccaf7c65aa1ff8b974e52cfe4850}{consume\+\_\+msg}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}} $>$ consumer, \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4}{CONSUME\+\_\+\+MSG\+\_\+\+TYPE}} consume\+\_\+msg\+\_\+type) const
+\begin{DoxyCompactList}\small\item\em Consume the different types of kafka stream via kafka consumers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a605d6fc843afcaf4f667be4bd8db65c4}{update\+\_\+intersection\+\_\+info}} (unsigned long sleep\+\_\+millisecs, unsigned long int\+\_\+client\+\_\+request\+\_\+attempts) const
+\begin{DoxyCompactList}\small\item\em Updating the intersection info. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__messages__worker}{signal\+\_\+opt\+\_\+messages\+\_\+worker}} $>$ \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\+\_\+so\+\_\+msgs\+\_\+worker\+\_\+ptr}}
+\item 
+std\+::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}{\+\_\+bootstrap\+\_\+server}}
+\item 
+std\+::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a255149a2d37457917f8caa8d3be9338f}{\+\_\+spat\+\_\+group\+\_\+id}}
+\item 
+std\+::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aad2215a642361fd7d2aea0e3deca6e9f}{\+\_\+spat\+\_\+topic\+\_\+name}}
+\item 
+std\+::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a1bc6138e550e75240fc960b5bdc42167}{\+\_\+vsi\+\_\+group\+\_\+id}}
+\item 
+std\+::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afffacb7300b6b824cb57e3909b507f44}{\+\_\+vsi\+\_\+topic\+\_\+name}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}} $>$ \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\+\_\+vsi\+\_\+consumer}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}} $>$ \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\+\_\+spat\+\_\+consumer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00014}{14}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_afd84585cb22897ece5f6cb02cebdf4c9}\label{classsignal__opt__service_1_1signal__opt__service_afd84585cb22897ece5f6cb02cebdf4c9}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!signal\_opt\_service@{signal\_opt\_service}}
+\index{signal\_opt\_service@{signal\_opt\_service}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{signal\_opt\_service()}{signal\_opt\_service()}}
+{\footnotesize\ttfamily signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Initialize the consumer and producer configurations. 
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_a0d08faf7254086e5e9507957fa4b2acc}\label{classsignal__opt__service_1_1signal__opt__service_a0d08faf7254086e5e9507957fa4b2acc}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!````~signal\_opt\_service@{$\sim$signal\_opt\_service}}
+\index{````~signal\_opt\_service@{$\sim$signal\_opt\_service}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{$\sim$signal\_opt\_service()}{~signal\_opt\_service()}}
+{\footnotesize\ttfamily signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::$\sim$signal\+\_\+opt\+\_\+service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+stop the consumer and producer 
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8cpp_source_l00122}{122}} of file \mbox{\hyperlink{signal__opt__service_8cpp_source}{signal\+\_\+opt\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00123     \{}
+\DoxyCodeLine{00124         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}})}
+\DoxyCodeLine{00125         \{}
+\DoxyCodeLine{00126             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}}-\/>stop();}
+\DoxyCodeLine{00127         \}}
+\DoxyCodeLine{00128 }
+\DoxyCodeLine{00129         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}})}
+\DoxyCodeLine{00130         \{}
+\DoxyCodeLine{00131             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}}-\/>stop();}
+\DoxyCodeLine{00132         \}}
+\DoxyCodeLine{00133     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_a37dcccaf7c65aa1ff8b974e52cfe4850}\label{classsignal__opt__service_1_1signal__opt__service_a37dcccaf7c65aa1ff8b974e52cfe4850}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!consume\_msg@{consume\_msg}}
+\index{consume\_msg@{consume\_msg}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{consume\_msg()}{consume\_msg()}}
+{\footnotesize\ttfamily void signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::consume\+\_\+msg (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}} $>$}]{consumer,  }\item[{\mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4}{CONSUME\+\_\+\+MSG\+\_\+\+TYPE}}}]{consume\+\_\+msg\+\_\+type }\end{DoxyParamCaption}) const}
+
+
+
+Consume the different types of kafka stream via kafka consumers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg\+\_\+json} & The consumed kafka stream in JSON format \\
+\hline
+{\em consume\+\_\+msg\+\_\+type} & The type of message consumed by the kafka consumer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{signal__opt__service_8cpp_source}{signal\+\_\+opt\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067     \{}
+\DoxyCodeLine{00068         \textcolor{keywordflow}{while} (consumer-\/>is\_running())}
+\DoxyCodeLine{00069         \{}
+\DoxyCodeLine{00070             \textcolor{keyword}{const} std::string payload = consumer-\/>consume(1000);}
+\DoxyCodeLine{00071             \textcolor{keywordflow}{if} (payload.length() != 0)}
+\DoxyCodeLine{00072             \{}
+\DoxyCodeLine{00073                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Consumed: \{0\}"{}}, payload);}
+\DoxyCodeLine{00074                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\_so\_msgs\_worker\_ptr}})}
+\DoxyCodeLine{00075                 \{}
+\DoxyCodeLine{00076                     SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Message worker is not initialized"{}});}
+\DoxyCodeLine{00077                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00078                 \}}
+\DoxyCodeLine{00079 }
+\DoxyCodeLine{00080                 \textcolor{keywordflow}{switch} (consume\_msg\_type)}
+\DoxyCodeLine{00081                 \{}
+\DoxyCodeLine{00082                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4a939a2eaa3056608a0f3a65c88f11a8d4}{CONSUME\_MSG\_TYPE::SPAT}}:}
+\DoxyCodeLine{00083                     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\_so\_msgs\_worker\_ptr}}-\/>update\_spat(payload))}
+\DoxyCodeLine{00084                     \{}
+\DoxyCodeLine{00085                         SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Error occurred when updating SPAT."{}});                       }
+\DoxyCodeLine{00086                     \}}
+\DoxyCodeLine{00087                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00088                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4acf90a87df6565c5cc280ba6ef2bb32e3}{CONSUME\_MSG\_TYPE::VEHICLE\_STATUS\_INTENT}}:}
+\DoxyCodeLine{00089                     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\_so\_msgs\_worker\_ptr}}-\/>add\_update\_vehicle(payload))}
+\DoxyCodeLine{00090                     \{}
+\DoxyCodeLine{00091                         SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Error occurred when updating vehicle list."{}});}
+\DoxyCodeLine{00092                     \}}
+\DoxyCodeLine{00093                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00094                 \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00095                     SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Unknown consumer type!"{}});}
+\DoxyCodeLine{00096                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00097                 \}}
+\DoxyCodeLine{00098             \}}
+\DoxyCodeLine{00099         \}}
+\DoxyCodeLine{00100     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4a939a2eaa3056608a0f3a65c88f11a8d4}{signal\+\_\+opt\+\_\+service\+::\+SPAT}}, and \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4acf90a87df6565c5cc280ba6ef2bb32e3}{signal\+\_\+opt\+\_\+service\+::\+VEHICLE\+\_\+\+STATUS\+\_\+\+INTENT}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_ac5270550fc00e6e7b4f7822fcac522dc}\label{classsignal__opt__service_1_1signal__opt__service_ac5270550fc00e6e7b4f7822fcac522dc}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!initialize@{initialize}}
+\index{initialize@{initialize}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize the consumer and producer configurations. 
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{signal__opt__service_8cpp_source}{signal\+\_\+opt\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006     \{}
+\DoxyCodeLine{00007         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00008         \{}
+\DoxyCodeLine{00009             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\_so\_msgs\_worker\_ptr}} = std::make\_shared<signal\_opt\_messages\_worker>();}
+\DoxyCodeLine{00010 }
+\DoxyCodeLine{00011             \textcolor{comment}{// Kafka config}}
+\DoxyCodeLine{00012             \textcolor{keyword}{auto} client = std::make\_unique<kafka\_clients::kafka\_client>();}
+\DoxyCodeLine{00013             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}{\_bootstrap\_server}} = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}bootstrap\_server"{}});}
+\DoxyCodeLine{00014             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aad2215a642361fd7d2aea0e3deca6e9f}{\_spat\_topic\_name}} = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}spat\_consumer\_topic"{}});}
+\DoxyCodeLine{00015             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a255149a2d37457917f8caa8d3be9338f}{\_spat\_group\_id}} = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}spat\_group\_id"{}});}
+\DoxyCodeLine{00016             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afffacb7300b6b824cb57e3909b507f44}{\_vsi\_topic\_name}} = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}vsi\_consumer\_topic"{}});}
+\DoxyCodeLine{00017             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a1bc6138e550e75240fc960b5bdc42167}{\_vsi\_group\_id}} = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}vsi\_group\_id"{}});}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}} = client-\/>create\_consumer(\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}{\_bootstrap\_server}}, \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aad2215a642361fd7d2aea0e3deca6e9f}{\_spat\_topic\_name}}, \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a255149a2d37457917f8caa8d3be9338f}{\_spat\_group\_id}});}
+\DoxyCodeLine{00020             \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}} = client-\/>create\_consumer(\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}{\_bootstrap\_server}}, \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afffacb7300b6b824cb57e3909b507f44}{\_vsi\_topic\_name}}, \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a1bc6138e550e75240fc960b5bdc42167}{\_vsi\_group\_id}});}
+\DoxyCodeLine{00021 }
+\DoxyCodeLine{00022             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}}-\/>init() || !\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}}-\/>init())}
+\DoxyCodeLine{00023             \{}
+\DoxyCodeLine{00024                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}kafka consumers ( \_spat\_consumer\_worker  or \_vsi\_consumer\_worker) initialize error"{}});}
+\DoxyCodeLine{00025                 exit(EXIT\_FAILURE);}
+\DoxyCodeLine{00026             \}}
+\DoxyCodeLine{00027             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00028             \{}
+\DoxyCodeLine{00029                 \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}}-\/>subscribe();}
+\DoxyCodeLine{00030                 \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}}-\/>subscribe();}
+\DoxyCodeLine{00031                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}}-\/>is\_running() || !\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}}-\/>is\_running())}
+\DoxyCodeLine{00032                 \{}
+\DoxyCodeLine{00033                     SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}kafka consumers ( \_spat\_consumer\_worker or \_vsi\_consumer\_worker) is not running"{}});}
+\DoxyCodeLine{00034                     exit(EXIT\_FAILURE);}
+\DoxyCodeLine{00035                 \}}
+\DoxyCodeLine{00036             \}}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038             \textcolor{comment}{// Serice config}}
+\DoxyCodeLine{00039             \textcolor{keyword}{auto} sleep\_millisecs = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}sleep\_millisecs"{}});}
+\DoxyCodeLine{00040             \textcolor{keyword}{auto} int\_client\_request\_attempts = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}int\_client\_request\_attempts"{}});            }
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042             \textcolor{comment}{// HTTP request to update intersection information}}
+\DoxyCodeLine{00043             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a605d6fc843afcaf4f667be4bd8db65c4}{update\_intersection\_info}}(sleep\_millisecs, int\_client\_request\_attempts))}
+\DoxyCodeLine{00044             \{}
+\DoxyCodeLine{00045                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Failed to initialize signal\_opt\_service due to intersection client request failure!"{}});}
+\DoxyCodeLine{00046                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00047             \}}
+\DoxyCodeLine{00048             SPDLOG\_INFO(\textcolor{stringliteral}{"{}signal\_opt\_service initialized successfully!!!"{}});}
+\DoxyCodeLine{00049             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00050         \}}
+\DoxyCodeLine{00051         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}} \&ex)}
+\DoxyCodeLine{00052         \{}
+\DoxyCodeLine{00053             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Signal Optimization Service Initialization failure: \{0\} "{}}, ex.what());}
+\DoxyCodeLine{00054             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00055         \}}
+\DoxyCodeLine{00056     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{streets__configuration_8cpp_source_l00118}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+int\+\_\+config()}}, and \mbox{\hyperlink{streets__configuration_8cpp_source_l00103}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+string\+\_\+config()}}.
+
+
+
+Referenced by \mbox{\hyperlink{signal__opt__service_2src_2main_8cpp_source_l00004}{main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classsignal__opt__service_1_1signal__opt__service_ac5270550fc00e6e7b4f7822fcac522dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classsignal__opt__service_1_1signal__opt__service_ac5270550fc00e6e7b4f7822fcac522dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_a27c7129220640b4974bdb247ab1bbc26}\label{classsignal__opt__service_1_1signal__opt__service_a27c7129220640b4974bdb247ab1bbc26}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!start@{start}}
+\index{start@{start}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Create threads and consume messages. 
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{signal__opt__service_8cpp_source}{signal\+\_\+opt\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059     \{}
+\DoxyCodeLine{00060         std::thread spat\_t(\&signal\_opt\_service::consume\_msg, \textcolor{keyword}{this}, std::ref(\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}}), \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4a939a2eaa3056608a0f3a65c88f11a8d4}{CONSUME\_MSG\_TYPE::SPAT}});}
+\DoxyCodeLine{00061         std::thread vsi\_t(\&signal\_opt\_service::consume\_msg, \textcolor{keyword}{this}, std::ref(\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}}), \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4acf90a87df6565c5cc280ba6ef2bb32e3}{CONSUME\_MSG\_TYPE::VEHICLE\_STATUS\_INTENT}});}
+\DoxyCodeLine{00062         spat\_t.join();}
+\DoxyCodeLine{00063         vsi\_t.join();}
+\DoxyCodeLine{00064     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4a939a2eaa3056608a0f3a65c88f11a8d4}{signal\+\_\+opt\+\_\+service\+::\+SPAT}}, and \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4acf90a87df6565c5cc280ba6ef2bb32e3}{signal\+\_\+opt\+\_\+service\+::\+VEHICLE\+\_\+\+STATUS\+\_\+\+INTENT}}.
+
+
+
+Referenced by \mbox{\hyperlink{signal__opt__service_2src_2main_8cpp_source_l00004}{main()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classsignal__opt__service_1_1signal__opt__service_a27c7129220640b4974bdb247ab1bbc26_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_a605d6fc843afcaf4f667be4bd8db65c4}\label{classsignal__opt__service_1_1signal__opt__service_a605d6fc843afcaf4f667be4bd8db65c4}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!update\_intersection\_info@{update\_intersection\_info}}
+\index{update\_intersection\_info@{update\_intersection\_info}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{update\_intersection\_info()}{update\_intersection\_info()}}
+{\footnotesize\ttfamily bool signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::update\+\_\+intersection\+\_\+info (\begin{DoxyParamCaption}\item[{unsigned long}]{sleep\+\_\+millisecs,  }\item[{unsigned long}]{int\+\_\+client\+\_\+request\+\_\+attempts }\end{DoxyParamCaption}) const}
+
+
+
+Updating the intersection info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sleep\+\_\+millisecs} & The current thread sleep for milliseconds after each update attempt \\
+\hline
+{\em int\+\_\+client\+\_\+request\+\_\+attempts} & The number of attempts for the loop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean. True if intersection information is updated, otherwise failed to update intersection information 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8cpp_source_l00102}{102}} of file \mbox{\hyperlink{signal__opt__service_8cpp_source}{signal\+\_\+opt\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00103     \{}
+\DoxyCodeLine{00104         \textcolor{keyword}{auto} sleep\_secs = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}\textcolor{keyword}{>}(sleep\_millisecs / 1000);}
+\DoxyCodeLine{00105         SPDLOG\_INFO(\textcolor{stringliteral}{"{}Send client request to update intersection inforamtion every \{0\} seconds for maximum \{1\} times."{}}, sleep\_secs, int\_client\_request\_attempts);}
+\DoxyCodeLine{00106         \textcolor{keywordtype}{int} attempt\_count = 0;}
+\DoxyCodeLine{00107         \textcolor{keywordflow}{while} (attempt\_count < int\_client\_request\_attempts)}
+\DoxyCodeLine{00108         \{}
+\DoxyCodeLine{00109             \textcolor{comment}{// Send HTTP request, and update intersection information. If updated successfully, it returns true and exit the while loop.}}
+\DoxyCodeLine{00110             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\_so\_msgs\_worker\_ptr}} \&\& \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\_so\_msgs\_worker\_ptr}}-\/>request\_intersection\_info())}
+\DoxyCodeLine{00111             \{}
+\DoxyCodeLine{00112                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00113             \}}
+\DoxyCodeLine{00114             sleep(sleep\_secs);}
+\DoxyCodeLine{00115             attempt\_count++;}
+\DoxyCodeLine{00116         \}}
+\DoxyCodeLine{00117         \textcolor{comment}{// If failed to update the intersection information after certain numbers of attempts}}
+\DoxyCodeLine{00118         SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Updating Intersection information failed. "{}});}
+\DoxyCodeLine{00119         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00120     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}\label{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_bootstrap\_server@{\_bootstrap\_server}}
+\index{\_bootstrap\_server@{\_bootstrap\_server}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_bootstrap\_server}{\_bootstrap\_server}}
+{\footnotesize\ttfamily std\+::string signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+bootstrap\+\_\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00018}{18}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}\label{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_so\_msgs\_worker\_ptr@{\_so\_msgs\_worker\_ptr}}
+\index{\_so\_msgs\_worker\_ptr@{\_so\_msgs\_worker\_ptr}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_so\_msgs\_worker\_ptr}{\_so\_msgs\_worker\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__messages__worker}{signal\+\_\+opt\+\_\+messages\+\_\+worker}}$>$ signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+so\+\_\+msgs\+\_\+worker\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00017}{17}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}\label{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_spat\_consumer@{\_spat\_consumer}}
+\index{\_spat\_consumer@{\_spat\_consumer}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_spat\_consumer}{\_spat\_consumer}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}}$>$ signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+spat\+\_\+consumer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00024}{24}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_a255149a2d37457917f8caa8d3be9338f}\label{classsignal__opt__service_1_1signal__opt__service_a255149a2d37457917f8caa8d3be9338f}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_spat\_group\_id@{\_spat\_group\_id}}
+\index{\_spat\_group\_id@{\_spat\_group\_id}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_spat\_group\_id}{\_spat\_group\_id}}
+{\footnotesize\ttfamily std\+::string signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+spat\+\_\+group\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00019}{19}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_aad2215a642361fd7d2aea0e3deca6e9f}\label{classsignal__opt__service_1_1signal__opt__service_aad2215a642361fd7d2aea0e3deca6e9f}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_spat\_topic\_name@{\_spat\_topic\_name}}
+\index{\_spat\_topic\_name@{\_spat\_topic\_name}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_spat\_topic\_name}{\_spat\_topic\_name}}
+{\footnotesize\ttfamily std\+::string signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+spat\+\_\+topic\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00020}{20}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}\label{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_vsi\_consumer@{\_vsi\_consumer}}
+\index{\_vsi\_consumer@{\_vsi\_consumer}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_vsi\_consumer}{\_vsi\_consumer}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}}$>$ signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+vsi\+\_\+consumer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00023}{23}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_a1bc6138e550e75240fc960b5bdc42167}\label{classsignal__opt__service_1_1signal__opt__service_a1bc6138e550e75240fc960b5bdc42167}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_vsi\_group\_id@{\_vsi\_group\_id}}
+\index{\_vsi\_group\_id@{\_vsi\_group\_id}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_vsi\_group\_id}{\_vsi\_group\_id}}
+{\footnotesize\ttfamily std\+::string signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+vsi\+\_\+group\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00021}{21}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+\mbox{\Hypertarget{classsignal__opt__service_1_1signal__opt__service_afffacb7300b6b824cb57e3909b507f44}\label{classsignal__opt__service_1_1signal__opt__service_afffacb7300b6b824cb57e3909b507f44}} 
+\index{signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}!\_vsi\_topic\_name@{\_vsi\_topic\_name}}
+\index{\_vsi\_topic\_name@{\_vsi\_topic\_name}!signal\_opt\_service::signal\_opt\_service@{signal\_opt\_service::signal\_opt\_service}}
+\doxysubsubsection{\texorpdfstring{\_vsi\_topic\_name}{\_vsi\_topic\_name}}
+{\footnotesize\ttfamily std\+::string signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::\+\_\+vsi\+\_\+topic\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_8h_source_l00022}{22}} of file \mbox{\hyperlink{signal__opt__service_8h_source}{signal\+\_\+opt\+\_\+service.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+signal\+\_\+opt\+\_\+service/include/\mbox{\hyperlink{signal__opt__service_8h}{signal\+\_\+opt\+\_\+service.\+h}}\item 
+signal\+\_\+opt\+\_\+service/src/\mbox{\hyperlink{signal__opt__service_8cpp}{signal\+\_\+opt\+\_\+service.\+cpp}}\end{DoxyCompactItemize}

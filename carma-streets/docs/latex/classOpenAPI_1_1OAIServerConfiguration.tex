@@ -1,0 +1,224 @@
+\hypertarget{classOpenAPI_1_1OAIServerConfiguration}{}\doxysection{Open\+API\+::OAIServer\+Configuration Class Reference}
+\label{classOpenAPI_1_1OAIServerConfiguration}\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+
+
+{\ttfamily \#include $<$OAIServer\+Configuration.\+h$>$}
+
+
+
+Collaboration diagram for Open\+API\+::OAIServer\+Configuration\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classOpenAPI_1_1OAIServerConfiguration__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_a28bba4fe107db8821ad2925e0bcca23d}{OAIServer\+Configuration}} (const QUrl \&url, const QString \&description, const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&variables)
+\item 
+\mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_ace7db01cf19bebfc02e2703f790481f7}{OAIServer\+Configuration}} ()
+\item 
+\mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_a22323b5129054dfca9167b581944a475}{$\sim$\+OAIServer\+Configuration}} ()
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_a513dfd7eea328f85ecfad5ae8ade0903}{URL}} ()
+\item 
+int \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_aff74d1e2df580aff9fc2b346255a185b}{set\+Default\+Value}} (const QString \&variable, const QString \&value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_a3376faebdfff9383346afc7cc4174235}{\+\_\+description}}
+\item 
+QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}{\+\_\+variables}}
+\item 
+QUrl \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_ad8e13612187ccb43f6e3c321ac7d68d8}{\+\_\+url}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00027}{27}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_a28bba4fe107db8821ad2925e0bcca23d}\label{classOpenAPI_1_1OAIServerConfiguration_a28bba4fe107db8821ad2925e0bcca23d}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!OAIServerConfiguration@{OAIServerConfiguration}}
+\index{OAIServerConfiguration@{OAIServerConfiguration}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{OAIServerConfiguration()}{OAIServerConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Open\+API\+::\+OAIServer\+Configuration\+::\+OAIServer\+Configuration (\begin{DoxyParamCaption}\item[{const QUrl \&}]{url,  }\item[{const QString \&}]{description,  }\item[{const QMap$<$ QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}} $>$ \&}]{variables }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & A URL to the target host. \\
+\hline
+{\em description} & A description of the host designated by the URL. \\
+\hline
+{\em variables} & A map between a variable name and its value. The value is used for substitution in the server\textquotesingle{}s URL template. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00034}{34}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035     : \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_a3376faebdfff9383346afc7cc4174235}{\_description}}(description),}
+\DoxyCodeLine{00036       \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}{\_variables}}(variables),}
+\DoxyCodeLine{00037       \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_ad8e13612187ccb43f6e3c321ac7d68d8}{\_url}}(url)\{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_ace7db01cf19bebfc02e2703f790481f7}\label{classOpenAPI_1_1OAIServerConfiguration_ace7db01cf19bebfc02e2703f790481f7}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!OAIServerConfiguration@{OAIServerConfiguration}}
+\index{OAIServerConfiguration@{OAIServerConfiguration}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{OAIServerConfiguration()}{OAIServerConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Open\+API\+::\+OAIServer\+Configuration\+::\+OAIServer\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00038}{38}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_a22323b5129054dfca9167b581944a475}\label{classOpenAPI_1_1OAIServerConfiguration_a22323b5129054dfca9167b581944a475}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!````~OAIServerConfiguration@{$\sim$OAIServerConfiguration}}
+\index{````~OAIServerConfiguration@{$\sim$OAIServerConfiguration}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{$\sim$OAIServerConfiguration()}{~OAIServerConfiguration()}}
+{\footnotesize\ttfamily Open\+API\+::\+OAIServer\+Configuration\+::$\sim$\+OAIServer\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00039}{39}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00039 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_aff74d1e2df580aff9fc2b346255a185b}\label{classOpenAPI_1_1OAIServerConfiguration_aff74d1e2df580aff9fc2b346255a185b}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!setDefaultValue@{setDefaultValue}}
+\index{setDefaultValue@{setDefaultValue}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{setDefaultValue()}{setDefaultValue()}}
+{\footnotesize\ttfamily int Open\+API\+::\+OAIServer\+Configuration\+::set\+Default\+Value (\begin{DoxyParamCaption}\item[{const QString \&}]{variable,  }\item[{const QString \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00068}{68}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00068                                                                      \{}
+\DoxyCodeLine{00069       \textcolor{keywordflow}{if}(\mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}{\_variables}}.contains(variable))}
+\DoxyCodeLine{00070         \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}{\_variables}}[variable].setDefaultValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{00071       \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{00072     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00075}{\+\_\+variables}}, and \mbox{\hyperlink{simulate__bsm_8py_source_l00024}{simulate\+\_\+bsm\+::value}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_a513dfd7eea328f85ecfad5ae8ade0903}\label{classOpenAPI_1_1OAIServerConfiguration_a513dfd7eea328f85ecfad5ae8ade0903}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!URL@{URL}}
+\index{URL@{URL}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{URL()}{URL()}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIServer\+Configuration\+::\+URL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Format URL template using given variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em variables} & A map between a variable name and its value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Formatted URL. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00047}{47}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047                   \{}
+\DoxyCodeLine{00048         QString url = \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_ad8e13612187ccb43f6e3c321ac7d68d8}{\_url}}.toString();}
+\DoxyCodeLine{00049         \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}{\_variables}}.empty())\{}
+\DoxyCodeLine{00050             \textcolor{comment}{// go through variables and replace placeholders}}
+\DoxyCodeLine{00051             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \textcolor{keyword}{const}\& v : \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}{\_variables}}.keys()) \{}
+\DoxyCodeLine{00052                 QString name = v;}
+\DoxyCodeLine{00053                 OAIServerVariable serverVariable = \mbox{\hyperlink{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}{\_variables}}.value(v);}
+\DoxyCodeLine{00054                 QString \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = serverVariable.\_defaultValue;}
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056                 \textcolor{keywordflow}{if} (!serverVariable.\_enumValues.empty() \&\& !serverVariable.\_enumValues.contains(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}})) \{}
+\DoxyCodeLine{00057                     \textcolor{keywordflow}{throw} std::runtime\_error(QString(\textcolor{stringliteral}{"{}The variable "{}} + name + \textcolor{stringliteral}{"{} in the server URL has invalid value "{}} + \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} + \textcolor{stringliteral}{"{}."{}}).toUtf8().toStdString());}
+\DoxyCodeLine{00058                 \}}
+\DoxyCodeLine{00059                 QRegularExpression regex(QString(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)\{"{}} + name + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)\}"{}}));}
+\DoxyCodeLine{00060                 url = url.replace(regex, \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062             \}}
+\DoxyCodeLine{00063             \textcolor{keywordflow}{return} url;}
+\DoxyCodeLine{00064         \}}
+\DoxyCodeLine{00065         \textcolor{keywordflow}{return} url;}
+\DoxyCodeLine{00066     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{OAIServerVariable_8h_source_l00050}{Open\+API\+::\+OAIServer\+Variable\+::\+\_\+default\+Value}}, \mbox{\hyperlink{OAIServerVariable_8h_source_l00052}{Open\+API\+::\+OAIServer\+Variable\+::\+\_\+enum\+Values}}, \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00076}{\+\_\+url}}, \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00075}{\+\_\+variables}}, and \mbox{\hyperlink{simulate__bsm_8py_source_l00024}{simulate\+\_\+bsm\+::value}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_a3376faebdfff9383346afc7cc4174235}\label{classOpenAPI_1_1OAIServerConfiguration_a3376faebdfff9383346afc7cc4174235}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!\_description@{\_description}}
+\index{\_description@{\_description}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{\_description}{\_description}}
+{\footnotesize\ttfamily QString Open\+API\+::\+OAIServer\+Configuration\+::\+\_\+description}
+
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00074}{74}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_ad8e13612187ccb43f6e3c321ac7d68d8}\label{classOpenAPI_1_1OAIServerConfiguration_ad8e13612187ccb43f6e3c321ac7d68d8}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!\_url@{\_url}}
+\index{\_url@{\_url}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{\_url}{\_url}}
+{\footnotesize\ttfamily QUrl Open\+API\+::\+OAIServer\+Configuration\+::\+\_\+url}
+
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00076}{76}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00047}{URL()}}.
+
+\mbox{\Hypertarget{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}\label{classOpenAPI_1_1OAIServerConfiguration_af964d1595b6867fa9616323266683dbe}} 
+\index{OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}!\_variables@{\_variables}}
+\index{\_variables@{\_variables}!OpenAPI::OAIServerConfiguration@{OpenAPI::OAIServerConfiguration}}
+\doxysubsubsection{\texorpdfstring{\_variables}{\_variables}}
+{\footnotesize\ttfamily QMap$<$QString, \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServer\+Variable}}$>$ Open\+API\+::\+OAIServer\+Configuration\+::\+\_\+variables}
+
+
+
+Definition at line \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00075}{75}} of file \mbox{\hyperlink{OAIServerConfiguration_8h_source}{OAIServer\+Configuration.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00068}{set\+Default\+Value()}}, and \mbox{\hyperlink{OAIServerConfiguration_8h_source_l00047}{URL()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+api/intersection\+\_\+client\+\_\+api/\mbox{\hyperlink{OAIServerConfiguration_8h}{OAIServer\+Configuration.\+h}}\end{DoxyCompactItemize}

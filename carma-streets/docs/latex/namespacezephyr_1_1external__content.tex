@@ -1,0 +1,277 @@
+\hypertarget{namespacezephyr_1_1external__content}{}\doxysection{zephyr.\+external\+\_\+content Namespace Reference}
+\label{namespacezephyr_1_1external__content}\index{zephyr.external\_content@{zephyr.external\_content}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacezephyr_1_1external__content_ae4c560a73827fbe74bb01403d54ceec0}{adjust\+\_\+includes}} (Path fname, Path basepath, List\mbox{[}str\mbox{]} directives, str encoding, Optional\mbox{[}Path\mbox{]} dstpath=None)
+\item 
+None \mbox{\hyperlink{namespacezephyr_1_1external__content_a6a9f192f2fd867d5768c59a81ae51ca7}{sync\+\_\+contents}} (Sphinx app)
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{namespacezephyr_1_1external__content_a0dcf308d6f664210596abd84c82a26c7}{setup}} (Sphinx app)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacezephyr_1_1external__content_ab733259d136b61d033974b890a451df8}{\+\_\+\+\_\+version\+\_\+\+\_\+}} = \char`\"{}0.\+1.\+0\char`\"{}
+\item 
+tuple \mbox{\hyperlink{namespacezephyr_1_1external__content_a9939d12d69003f1f6a1b9e2ec6233850}{DEFAULT\+\_\+\+DIRECTIVES}} = (\char`\"{}figure\char`\"{}, \char`\"{}image\char`\"{}, \char`\"{}include\char`\"{}, \char`\"{}literalinclude\char`\"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}External content
+################
+
+Copyright (c) 2021 Nordic Semiconductor ASA
+SPDX-License-Identifier: Apache-2.0
+
+Introduction
+============
+
+This extension allows to import sources from directories out of the Sphinx
+source directory. They are copied to the source directory before starting the
+build. Note that the copy is *smart*, that is, only updated files are actually
+copied. Therefore, incremental builds detect changes correctly and behave as
+expected.
+
+Paths for external content included via e.g. figure, literalinclude, etc.
+are adjusted as needed.
+
+Configuration options
+=====================
+
+- ``external_content_contents``: A list of external contents. Each entry is
+  a tuple with two fields: the external base directory and a file glob pattern.
+- ``external_content_directives``: A list of directives that should be analyzed
+  and their paths adjusted if necessary. Defaults to ``DEFAULT_DIRECTIVES``.
+- ``external_content_keep``: A list of file globs (relative to the destination
+  directory) that should be kept even if they do not exist in the source
+  directory. This option can be useful for auto-generated files in the
+  destination directory.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1external__content_ae4c560a73827fbe74bb01403d54ceec0}\label{namespacezephyr_1_1external__content_ae4c560a73827fbe74bb01403d54ceec0}} 
+\index{zephyr.external\_content@{zephyr.external\_content}!adjust\_includes@{adjust\_includes}}
+\index{adjust\_includes@{adjust\_includes}!zephyr.external\_content@{zephyr.external\_content}}
+\doxysubsubsection{\texorpdfstring{adjust\_includes()}{adjust\_includes()}}
+{\footnotesize\ttfamily  None zephyr.\+external\+\_\+content.\+adjust\+\_\+includes (\begin{DoxyParamCaption}\item[{Path}]{fname,  }\item[{Path}]{basepath,  }\item[{List\mbox{[}str\mbox{]}}]{directives,  }\item[{str}]{encoding,  }\item[{Optional\mbox{[}Path\mbox{]} }]{dstpath = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adjust included content paths.
+
+Args:
+    fname: File to be processed.
+    basepath: Base path to be used to resolve content location.
+    directives: Directives to be parsed and adjusted.
+    encoding: Sources encoding.
+    dstpath: Destination path for fname if its path is not the actual destination.
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{external__content_8py_source_l00051}{51}} of file \mbox{\hyperlink{external__content_8py_source}{external\+\_\+content.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057 ) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00058     \textcolor{stringliteral}{"{}"{}"{}Adjust included content paths.}}
+\DoxyCodeLine{00059 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00060 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{00061 \textcolor{stringliteral}{        fname: File to be processed.}}
+\DoxyCodeLine{00062 \textcolor{stringliteral}{        basepath: Base path to be used to resolve content location.}}
+\DoxyCodeLine{00063 \textcolor{stringliteral}{        directives: Directives to be parsed }\textcolor{keywordflow}{and} adjusted.}
+\DoxyCodeLine{00064         encoding: Sources encoding.}
+\DoxyCodeLine{00065         dstpath: Destination path \textcolor{keywordflow}{for} fname \textcolor{keywordflow}{if} its path \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} the actual destination.}
+\DoxyCodeLine{00066     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00067 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00068 \textcolor{stringliteral}{    }\textcolor{keywordflow}{if} fname.suffix != \textcolor{stringliteral}{"{}.rst"{}}:}
+\DoxyCodeLine{00069         \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071     dstpath = dstpath \textcolor{keywordflow}{or} fname.parent}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073     \textcolor{keyword}{def }\_adjust(m):}
+\DoxyCodeLine{00074         directive, fpath = m.groups()}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076         \textcolor{comment}{\# ignore absolute paths}}
+\DoxyCodeLine{00077         \textcolor{keywordflow}{if} fpath.startswith(\textcolor{stringliteral}{"{}/"{}}):}
+\DoxyCodeLine{00078             fpath\_adj = fpath}
+\DoxyCodeLine{00079         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00080             fpath\_adj = Path(os.path.relpath(basepath / fpath, dstpath)).as\_posix()}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082         \textcolor{keywordflow}{return} f\textcolor{stringliteral}{"{}.. \{directive\}:: \{fpath\_adj\}"{}}}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084     \textcolor{keyword}{with} open(fname, \textcolor{stringliteral}{"{}r+"{}}, encoding=encoding) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{00085         content = f.read()}
+\DoxyCodeLine{00086         content\_adj, modified = re.subn(}
+\DoxyCodeLine{00087             \textcolor{stringliteral}{r"{}\(\backslash\).\(\backslash\). ("{}} + \textcolor{stringliteral}{"{}|"{}}.join(directives) + \textcolor{stringliteral}{r"{})::\(\backslash\)s*([\string^`\(\backslash\)n]+)"{}}, \_adjust, content}
+\DoxyCodeLine{00088         )}
+\DoxyCodeLine{00089         \textcolor{keywordflow}{if} modified:}
+\DoxyCodeLine{00090             f.seek(0)}
+\DoxyCodeLine{00091             f.write(content\_adj)}
+\DoxyCodeLine{00092             f.truncate()}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094 }
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{external__content_8py_source_l00095}{zephyr.\+external\+\_\+content.\+sync\+\_\+contents()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacezephyr_1_1external__content_ae4c560a73827fbe74bb01403d54ceec0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacezephyr_1_1external__content_a0dcf308d6f664210596abd84c82a26c7}\label{namespacezephyr_1_1external__content_a0dcf308d6f664210596abd84c82a26c7}} 
+\index{zephyr.external\_content@{zephyr.external\_content}!setup@{setup}}
+\index{setup@{setup}!zephyr.external\_content@{zephyr.external\_content}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily  Dict\mbox{[}str, Any\mbox{]} zephyr.\+external\+\_\+content.\+setup (\begin{DoxyParamCaption}\item[{Sphinx}]{app }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{external__content_8py_source_l00165}{165}} of file \mbox{\hyperlink{external__content_8py_source}{external\+\_\+content.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00165 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1external__content_a0dcf308d6f664210596abd84c82a26c7}{setup}}(app: Sphinx) -\/> Dict[str, Any]:}
+\DoxyCodeLine{00166     app.add\_config\_value(\textcolor{stringliteral}{"{}external\_content\_contents"{}}, [], \textcolor{stringliteral}{"{}env"{}})}
+\DoxyCodeLine{00167     app.add\_config\_value(\textcolor{stringliteral}{"{}external\_content\_directives"{}}, DEFAULT\_DIRECTIVES, \textcolor{stringliteral}{"{}env"{}})}
+\DoxyCodeLine{00168     app.add\_config\_value(\textcolor{stringliteral}{"{}external\_content\_keep"{}}, [], \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00169 }
+\DoxyCodeLine{00170     app.connect(\textcolor{stringliteral}{"{}builder-\/inited"{}}, sync\_contents)}
+\DoxyCodeLine{00171 }
+\DoxyCodeLine{00172     \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{00173         \textcolor{stringliteral}{"{}version"{}}: \_\_version\_\_,}
+\DoxyCodeLine{00174         \textcolor{stringliteral}{"{}parallel\_read\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00175         \textcolor{stringliteral}{"{}parallel\_write\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00176     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1external__content_a6a9f192f2fd867d5768c59a81ae51ca7}\label{namespacezephyr_1_1external__content_a6a9f192f2fd867d5768c59a81ae51ca7}} 
+\index{zephyr.external\_content@{zephyr.external\_content}!sync\_contents@{sync\_contents}}
+\index{sync\_contents@{sync\_contents}!zephyr.external\_content@{zephyr.external\_content}}
+\doxysubsubsection{\texorpdfstring{sync\_contents()}{sync\_contents()}}
+{\footnotesize\ttfamily  None zephyr.\+external\+\_\+content.\+sync\+\_\+contents (\begin{DoxyParamCaption}\item[{Sphinx}]{app }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Synchronize external contents.
+
+Args:
+    app: Sphinx application instance.
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{external__content_8py_source_l00095}{95}} of file \mbox{\hyperlink{external__content_8py_source}{external\+\_\+content.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1external__content_a6a9f192f2fd867d5768c59a81ae51ca7}{sync\_contents}}(app: Sphinx) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00096     \textcolor{stringliteral}{"{}"{}"{}Synchronize external contents.}}
+\DoxyCodeLine{00097 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00098 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{00099 \textcolor{stringliteral}{        app: Sphinx application instance.}}
+\DoxyCodeLine{00100 \textcolor{stringliteral}{    "{}"{}"{}}}
+\DoxyCodeLine{00101 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00102 \textcolor{stringliteral}{    srcdir = Path(app.srcdir).resolve()}}
+\DoxyCodeLine{00103 \textcolor{stringliteral}{    to\_copy = []}}
+\DoxyCodeLine{00104 \textcolor{stringliteral}{    to\_delete = set(f }\textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} srcdir.glob(\textcolor{stringliteral}{"{}**/*"{}}) \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} f.is\_dir())}
+\DoxyCodeLine{00105     to\_keep = set(}
+\DoxyCodeLine{00106         f}
+\DoxyCodeLine{00107         \textcolor{keywordflow}{for} k \textcolor{keywordflow}{in} app.config.external\_content\_keep}
+\DoxyCodeLine{00108         \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} srcdir.glob(k)}
+\DoxyCodeLine{00109         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} f.is\_dir()}
+\DoxyCodeLine{00110     )}
+\DoxyCodeLine{00111 }
+\DoxyCodeLine{00112     \textcolor{keywordflow}{for} content \textcolor{keywordflow}{in} app.config.external\_content\_contents:}
+\DoxyCodeLine{00113         prefix\_src, glob = content}
+\DoxyCodeLine{00114         \textcolor{keywordflow}{for} src \textcolor{keywordflow}{in} prefix\_src.glob(glob):}
+\DoxyCodeLine{00115             \textcolor{keywordflow}{if} src.is\_dir():}
+\DoxyCodeLine{00116                 to\_copy.extend(}
+\DoxyCodeLine{00117                     [(f, prefix\_src) \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} src.glob(\textcolor{stringliteral}{"{}**/*"{}}) \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} f.is\_dir()]}
+\DoxyCodeLine{00118                 )}
+\DoxyCodeLine{00119             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00120                 to\_copy.append((src, prefix\_src))}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122     \textcolor{keywordflow}{for} entry \textcolor{keywordflow}{in} to\_copy:}
+\DoxyCodeLine{00123         src, prefix\_src = entry}
+\DoxyCodeLine{00124         dst = (srcdir / src.relative\_to(prefix\_src)).resolve()}
+\DoxyCodeLine{00125 }
+\DoxyCodeLine{00126         \textcolor{keywordflow}{if} dst \textcolor{keywordflow}{in} to\_delete:}
+\DoxyCodeLine{00127             to\_delete.remove(dst)}
+\DoxyCodeLine{00128 }
+\DoxyCodeLine{00129         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} dst.parent.exists():}
+\DoxyCodeLine{00130             dst.parent.mkdir(parents=\textcolor{keyword}{True})}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132         \textcolor{comment}{\# just copy if it does not exist}}
+\DoxyCodeLine{00133         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} dst.exists():}
+\DoxyCodeLine{00134             shutil.copy(src, dst)}
+\DoxyCodeLine{00135             \mbox{\hyperlink{namespacezephyr_1_1external__content_ae4c560a73827fbe74bb01403d54ceec0}{adjust\_includes}}(}
+\DoxyCodeLine{00136                 dst,}
+\DoxyCodeLine{00137                 src.parent,}
+\DoxyCodeLine{00138                 app.config.external\_content\_directives,}
+\DoxyCodeLine{00139                 app.config.source\_encoding,}
+\DoxyCodeLine{00140             )}
+\DoxyCodeLine{00141         \textcolor{comment}{\# if origin file is modified only copy if different}}
+\DoxyCodeLine{00142         \textcolor{keywordflow}{elif} src.stat().st\_mtime > dst.stat().st\_mtime:}
+\DoxyCodeLine{00143             \textcolor{keyword}{with} tempfile.TemporaryDirectory() \textcolor{keyword}{as} td:}
+\DoxyCodeLine{00144                 \textcolor{comment}{\# adjust origin includes before comparing}}
+\DoxyCodeLine{00145                 src\_adjusted = Path(td) / src.name}
+\DoxyCodeLine{00146                 shutil.copy(src, src\_adjusted)}
+\DoxyCodeLine{00147                 \mbox{\hyperlink{namespacezephyr_1_1external__content_ae4c560a73827fbe74bb01403d54ceec0}{adjust\_includes}}(}
+\DoxyCodeLine{00148                     src\_adjusted,}
+\DoxyCodeLine{00149                     src.parent,}
+\DoxyCodeLine{00150                     app.config.external\_content\_directives,}
+\DoxyCodeLine{00151                     app.config.source\_encoding,}
+\DoxyCodeLine{00152                     dstpath=dst.parent,}
+\DoxyCodeLine{00153                 )}
+\DoxyCodeLine{00154 }
+\DoxyCodeLine{00155                 \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} filecmp.cmp(src\_adjusted, dst):}
+\DoxyCodeLine{00156                     dst.unlink()}
+\DoxyCodeLine{00157                     shutil.move(os.fspath(src\_adjusted), os.fspath(dst))}
+\DoxyCodeLine{00158 }
+\DoxyCodeLine{00159     \textcolor{comment}{\# remove any previously copied file not present in the origin folder,}}
+\DoxyCodeLine{00160     \textcolor{comment}{\# excepting those marked to be kept.}}
+\DoxyCodeLine{00161     \textcolor{keywordflow}{for} file \textcolor{keywordflow}{in} to\_delete -\/ to\_keep:}
+\DoxyCodeLine{00162         file.unlink()}
+\DoxyCodeLine{00163 }
+\DoxyCodeLine{00164 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{external__content_8py_source_l00057}{zephyr.\+external\+\_\+content.\+adjust\+\_\+includes()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacezephyr_1_1external__content_a6a9f192f2fd867d5768c59a81ae51ca7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1external__content_ab733259d136b61d033974b890a451df8}\label{namespacezephyr_1_1external__content_ab733259d136b61d033974b890a451df8}} 
+\index{zephyr.external\_content@{zephyr.external\_content}!\_\_version\_\_@{\_\_version\_\_}}
+\index{\_\_version\_\_@{\_\_version\_\_}!zephyr.external\_content@{zephyr.external\_content}}
+\doxysubsubsection{\texorpdfstring{\_\_version\_\_}{\_\_version\_\_}}
+{\footnotesize\ttfamily string zephyr.\+external\+\_\+content.\+\_\+\+\_\+version\+\_\+\+\_\+ = \char`\"{}0.\+1.\+0\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{external__content_8py_source_l00044}{44}} of file \mbox{\hyperlink{external__content_8py_source}{external\+\_\+content.\+py}}.
+
+\mbox{\Hypertarget{namespacezephyr_1_1external__content_a9939d12d69003f1f6a1b9e2ec6233850}\label{namespacezephyr_1_1external__content_a9939d12d69003f1f6a1b9e2ec6233850}} 
+\index{zephyr.external\_content@{zephyr.external\_content}!DEFAULT\_DIRECTIVES@{DEFAULT\_DIRECTIVES}}
+\index{DEFAULT\_DIRECTIVES@{DEFAULT\_DIRECTIVES}!zephyr.external\_content@{zephyr.external\_content}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_DIRECTIVES}{DEFAULT\_DIRECTIVES}}
+{\footnotesize\ttfamily tuple zephyr.\+external\+\_\+content.\+DEFAULT\+\_\+\+DIRECTIVES = (\char`\"{}figure\char`\"{}, \char`\"{}image\char`\"{}, \char`\"{}include\char`\"{}, \char`\"{}literalinclude\char`\"{})}
+
+
+
+Definition at line \mbox{\hyperlink{external__content_8py_source_l00047}{47}} of file \mbox{\hyperlink{external__content_8py_source}{external\+\_\+content.\+py}}.
+

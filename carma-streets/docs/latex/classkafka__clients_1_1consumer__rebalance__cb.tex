@@ -1,0 +1,144 @@
+\hypertarget{classkafka__clients_1_1consumer__rebalance__cb}{}\doxysection{kafka\+\_\+clients\+::consumer\+\_\+rebalance\+\_\+cb Class Reference}
+\label{classkafka__clients_1_1consumer__rebalance__cb}\index{kafka\_clients::consumer\_rebalance\_cb@{kafka\_clients::consumer\_rebalance\_cb}}
+
+
+{\ttfamily \#include $<$kafka\+\_\+consumer\+\_\+worker.\+h$>$}
+
+
+
+Inheritance diagram for kafka\+\_\+clients\+::consumer\+\_\+rebalance\+\_\+cb\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classkafka__clients_1_1consumer__rebalance__cb__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for kafka\+\_\+clients\+::consumer\+\_\+rebalance\+\_\+cb\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classkafka__clients_1_1consumer__rebalance__cb__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classkafka__clients_1_1consumer__rebalance__cb_a3fc710d285ad5ffcd2e9491fb077d8a4}{rebalance\+\_\+cb}} (Rd\+Kafka\+::\+Kafka\+Consumer $\ast$consumer, Rd\+Kafka\+::\+Error\+Code err, std\+::vector$<$ Rd\+Kafka\+::\+Topic\+Partition $\ast$ $>$ \&partitions)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classkafka__clients_1_1consumer__rebalance__cb_a5c1448f81083c7e46fe9c1ff98571850}{part\+\_\+list\+\_\+print}} (const std\+::vector$<$ Rd\+Kafka\+::\+Topic\+Partition $\ast$ $>$ \&partitions)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00030}{30}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classkafka__clients_1_1consumer__rebalance__cb_a5c1448f81083c7e46fe9c1ff98571850}\label{classkafka__clients_1_1consumer__rebalance__cb_a5c1448f81083c7e46fe9c1ff98571850}} 
+\index{kafka\_clients::consumer\_rebalance\_cb@{kafka\_clients::consumer\_rebalance\_cb}!part\_list\_print@{part\_list\_print}}
+\index{part\_list\_print@{part\_list\_print}!kafka\_clients::consumer\_rebalance\_cb@{kafka\_clients::consumer\_rebalance\_cb}}
+\doxysubsubsection{\texorpdfstring{part\_list\_print()}{part\_list\_print()}}
+{\footnotesize\ttfamily static void kafka\+\_\+clients\+::consumer\+\_\+rebalance\+\_\+cb\+::part\+\_\+list\+\_\+print (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ Rd\+Kafka\+::\+Topic\+Partition $\ast$ $>$ \&}]{partitions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00033}{33}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034             \{}
+\DoxyCodeLine{00035                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} = 0 ; \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} < partitions.size() ; \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}++)}
+\DoxyCodeLine{00036                   SPDLOG\_INFO(\textcolor{stringliteral}{"{}Topic \{0\} , Partition \{1\}"{}}, partitions[\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}]-\/>topic() , partitions[\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}]-\/>partition());}
+\DoxyCodeLine{00037             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{simulate__bsm_8py_source_l00019}{simulate\+\_\+bsm\+::i}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00040}{rebalance\+\_\+cb()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1consumer__rebalance__cb_a5c1448f81083c7e46fe9c1ff98571850_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classkafka__clients_1_1consumer__rebalance__cb_a3fc710d285ad5ffcd2e9491fb077d8a4}\label{classkafka__clients_1_1consumer__rebalance__cb_a3fc710d285ad5ffcd2e9491fb077d8a4}} 
+\index{kafka\_clients::consumer\_rebalance\_cb@{kafka\_clients::consumer\_rebalance\_cb}!rebalance\_cb@{rebalance\_cb}}
+\index{rebalance\_cb@{rebalance\_cb}!kafka\_clients::consumer\_rebalance\_cb@{kafka\_clients::consumer\_rebalance\_cb}}
+\doxysubsubsection{\texorpdfstring{rebalance\_cb()}{rebalance\_cb()}}
+{\footnotesize\ttfamily void kafka\+\_\+clients\+::consumer\+\_\+rebalance\+\_\+cb\+::rebalance\+\_\+cb (\begin{DoxyParamCaption}\item[{Rd\+Kafka\+::\+Kafka\+Consumer $\ast$}]{consumer,  }\item[{Rd\+Kafka\+::\+Error\+Code}]{err,  }\item[{std\+::vector$<$ Rd\+Kafka\+::\+Topic\+Partition $\ast$ $>$ \&}]{partitions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00040}{40}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041             \{}
+\DoxyCodeLine{00042                 SPDLOG\_INFO(\textcolor{stringliteral}{"{}RebalanceCb: \{0\} "{}}, RdKafka::err2str(err) );}
+\DoxyCodeLine{00043                 \mbox{\hyperlink{classkafka__clients_1_1consumer__rebalance__cb_a5c1448f81083c7e46fe9c1ff98571850}{part\_list\_print}}(partitions);}
+\DoxyCodeLine{00044 }
+\DoxyCodeLine{00045                 RdKafka::Error *error = NULL;}
+\DoxyCodeLine{00046                 RdKafka::ErrorCode ret\_err = RdKafka::ERR\_NO\_ERROR;}
+\DoxyCodeLine{00047 }
+\DoxyCodeLine{00048                 \textcolor{keywordflow}{if} (err == RdKafka::ERR\_\_ASSIGN\_PARTITIONS) \{}
+\DoxyCodeLine{00049                 \textcolor{keywordflow}{if} (consumer-\/>rebalance\_protocol() == \textcolor{stringliteral}{"{}COOPERATIVE"{}})}
+\DoxyCodeLine{00050                     error = consumer-\/>incremental\_assign(partitions);}
+\DoxyCodeLine{00051                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00052                     ret\_err = consumer-\/>assign(partitions);}
+\DoxyCodeLine{00053                     \mbox{\hyperlink{namespacekafka__clients_ac9c4b37a5cf02b6a9e2e5ae1884ccbd7}{partition\_cnt}} += (int)partitions.size();}
+\DoxyCodeLine{00054                 \} }
+\DoxyCodeLine{00055                 \textcolor{keywordflow}{else} }
+\DoxyCodeLine{00056                 \{}
+\DoxyCodeLine{00057                     \textcolor{keywordflow}{if} (consumer-\/>rebalance\_protocol() == \textcolor{stringliteral}{"{}COOPERATIVE"{}}) }
+\DoxyCodeLine{00058                     \{}
+\DoxyCodeLine{00059                         error = consumer-\/>incremental\_unassign(partitions);}
+\DoxyCodeLine{00060                         \mbox{\hyperlink{namespacekafka__clients_ac9c4b37a5cf02b6a9e2e5ae1884ccbd7}{partition\_cnt}} -\/= (int)partitions.size();}
+\DoxyCodeLine{00061                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00062                         ret\_err = consumer-\/>unassign();}
+\DoxyCodeLine{00063                         \mbox{\hyperlink{namespacekafka__clients_ac9c4b37a5cf02b6a9e2e5ae1884ccbd7}{partition\_cnt}} = 0;}
+\DoxyCodeLine{00064                     \}}
+\DoxyCodeLine{00065                 \}}
+\DoxyCodeLine{00066                 \mbox{\hyperlink{namespacekafka__clients_ae4fbee381b5cbd9bdd27b0e738566d85}{eof\_cnt}} = 0; \textcolor{comment}{/* FIXME: Won't work with COOPERATIVE */}}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068                 \textcolor{keywordflow}{if} (error) \{}
+\DoxyCodeLine{00069                     SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}incremental assign failed:  \{0\} "{}},error-\/>str() );}
+\DoxyCodeLine{00070                     \textcolor{keyword}{delete} error;}
+\DoxyCodeLine{00071                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ret\_err)}
+\DoxyCodeLine{00072                     SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}assign failed:  \{0\} "{}},error-\/>str() );}
+\DoxyCodeLine{00073             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00028}{kafka\+\_\+clients\+::eof\+\_\+cnt}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00033}{part\+\_\+list\+\_\+print()}}, and \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00027}{kafka\+\_\+clients\+::partition\+\_\+cnt}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1consumer__rebalance__cb_a3fc710d285ad5ffcd2e9491fb077d8a4_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+kafka\+\_\+clients/include/\mbox{\hyperlink{kafka__consumer__worker_8h}{kafka\+\_\+consumer\+\_\+worker.\+h}}\end{DoxyCompactItemize}

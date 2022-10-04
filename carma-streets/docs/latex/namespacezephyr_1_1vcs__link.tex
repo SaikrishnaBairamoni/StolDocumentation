@@ -1,0 +1,162 @@
+\hypertarget{namespacezephyr_1_1vcs__link}{}\doxysection{zephyr.\+vcs\+\_\+link Namespace Reference}
+\label{namespacezephyr_1_1vcs__link}\index{zephyr.vcs\_link@{zephyr.vcs\_link}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacezephyr_1_1vcs__link_a356627d8c6161117de52b5e45793ab20}{vcs\+\_\+link\+\_\+get\+\_\+url}} (Sphinx app, str pagename)
+\item 
+def \mbox{\hyperlink{namespacezephyr_1_1vcs__link_a5560a238ab32063bbda716cb803beac1}{add\+\_\+jinja\+\_\+filter}} (Sphinx app)
+\item 
+def \mbox{\hyperlink{namespacezephyr_1_1vcs__link_a3f68721b97db3331f1f3e0061872fed7}{setup}} (Sphinx app)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacezephyr_1_1vcs__link_a14eaa8e7f04f3765da3e755069ecb836}{\+\_\+\+\_\+version\+\_\+\+\_\+}} = \char`\"{}0.\+1.\+0\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}VCS Link
+########
+
+Copyright (c) 2021 Nordic Semiconductor ASA
+SPDX-License-Identifier: Apache-2.0
+
+Introduction
+============
+
+This Sphinx extension can be used to obtain the VCS URL for a given Sphinx page.
+This is useful, for example, when adding features like "Open on GitHub" on top
+of pages. The extension installs a Jinja filter which can be used on the
+template to obtain VCS page URLs.
+
+Configuration options
+=====================
+
+- ``vcs_link_base_url``: Base URL used as a prefix for generated URLs.
+- ``vcs_link_prefixes``: Mapping of pages (regex) <> VCS prefix.
+- ``vcs_link_exclude``: List of pages (regex) that will not report a URL. Useful
+  for, e.g., auto-generated pages not in VCS.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1vcs__link_a5560a238ab32063bbda716cb803beac1}\label{namespacezephyr_1_1vcs__link_a5560a238ab32063bbda716cb803beac1}} 
+\index{zephyr.vcs\_link@{zephyr.vcs\_link}!add\_jinja\_filter@{add\_jinja\_filter}}
+\index{add\_jinja\_filter@{add\_jinja\_filter}!zephyr.vcs\_link@{zephyr.vcs\_link}}
+\doxysubsubsection{\texorpdfstring{add\_jinja\_filter()}{add\_jinja\_filter()}}
+{\footnotesize\ttfamily def zephyr.\+vcs\+\_\+link.\+add\+\_\+jinja\+\_\+filter (\begin{DoxyParamCaption}\item[{Sphinx}]{app }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vcs__link_8py_source_l00069}{69}} of file \mbox{\hyperlink{vcs__link_8py_source}{vcs\+\_\+link.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1vcs__link_a5560a238ab32063bbda716cb803beac1}{add\_jinja\_filter}}(app: Sphinx):}
+\DoxyCodeLine{00070     \textcolor{keywordflow}{if} app.builder.name != \textcolor{stringliteral}{"{}html"{}}:}
+\DoxyCodeLine{00071         \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073     app.builder.templates.environment.filters[\textcolor{stringliteral}{"{}vcs\_link\_get\_url"{}}] = partial(}
+\DoxyCodeLine{00074         vcs\_link\_get\_url, app}
+\DoxyCodeLine{00075     )}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1vcs__link_a3f68721b97db3331f1f3e0061872fed7}\label{namespacezephyr_1_1vcs__link_a3f68721b97db3331f1f3e0061872fed7}} 
+\index{zephyr.vcs\_link@{zephyr.vcs\_link}!setup@{setup}}
+\index{setup@{setup}!zephyr.vcs\_link@{zephyr.vcs\_link}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily def zephyr.\+vcs\+\_\+link.\+setup (\begin{DoxyParamCaption}\item[{Sphinx}]{app }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{vcs__link_8py_source_l00078}{78}} of file \mbox{\hyperlink{vcs__link_8py_source}{vcs\+\_\+link.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1vcs__link_a3f68721b97db3331f1f3e0061872fed7}{setup}}(app: Sphinx):}
+\DoxyCodeLine{00079     app.add\_config\_value(\textcolor{stringliteral}{"{}vcs\_link\_base\_url"{}}, \textcolor{stringliteral}{"{}"{}}, \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00080     app.add\_config\_value(\textcolor{stringliteral}{"{}vcs\_link\_prefixes"{}}, \{\}, \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00081     app.add\_config\_value(\textcolor{stringliteral}{"{}vcs\_link\_exclude"{}}, [], \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00082 }
+\DoxyCodeLine{00083     app.connect(\textcolor{stringliteral}{"{}builder-\/inited"{}}, add\_jinja\_filter)}
+\DoxyCodeLine{00084 }
+\DoxyCodeLine{00085     \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{00086         \textcolor{stringliteral}{"{}version"{}}: \_\_version\_\_,}
+\DoxyCodeLine{00087         \textcolor{stringliteral}{"{}parallel\_read\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00088         \textcolor{stringliteral}{"{}parallel\_write\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00089     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1vcs__link_a356627d8c6161117de52b5e45793ab20}\label{namespacezephyr_1_1vcs__link_a356627d8c6161117de52b5e45793ab20}} 
+\index{zephyr.vcs\_link@{zephyr.vcs\_link}!vcs\_link\_get\_url@{vcs\_link\_get\_url}}
+\index{vcs\_link\_get\_url@{vcs\_link\_get\_url}!zephyr.vcs\_link@{zephyr.vcs\_link}}
+\doxysubsubsection{\texorpdfstring{vcs\_link\_get\_url()}{vcs\_link\_get\_url()}}
+{\footnotesize\ttfamily  Optional\mbox{[}str\mbox{]} zephyr.\+vcs\+\_\+link.\+vcs\+\_\+link\+\_\+get\+\_\+url (\begin{DoxyParamCaption}\item[{Sphinx}]{app,  }\item[{str}]{pagename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Obtain VCS URL for the given page.
+
+Args:
+    app: Sphinx instance.
+    pagename: Page name (path).
+
+Returns:
+    VCS URL if applicable, None otherwise.
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{vcs__link_8py_source_l00036}{36}} of file \mbox{\hyperlink{vcs__link_8py_source}{vcs\+\_\+link.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1vcs__link_a356627d8c6161117de52b5e45793ab20}{vcs\_link\_get\_url}}(app: Sphinx, pagename: str) -\/> Optional[str]:}
+\DoxyCodeLine{00037     \textcolor{stringliteral}{"{}"{}"{}Obtain VCS URL for the given page.}}
+\DoxyCodeLine{00038 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00039 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{00040 \textcolor{stringliteral}{        app: Sphinx instance.}}
+\DoxyCodeLine{00041 \textcolor{stringliteral}{        pagename: Page name (path).}}
+\DoxyCodeLine{00042 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00043 \textcolor{stringliteral}{    Returns:}}
+\DoxyCodeLine{00044 \textcolor{stringliteral}{        VCS URL }\textcolor{keywordflow}{if} applicable, \textcolor{keywordtype}{None} otherwise.}
+\DoxyCodeLine{00045     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00046 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00047 \textcolor{stringliteral}{    }\textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.isfile(app.env.project.doc2path(pagename)):}
+\DoxyCodeLine{00048         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00049 }
+\DoxyCodeLine{00050     \textcolor{keywordflow}{for} exclude \textcolor{keywordflow}{in} app.config.vcs\_link\_exclude:}
+\DoxyCodeLine{00051         \textcolor{keywordflow}{if} re.match(exclude, pagename):}
+\DoxyCodeLine{00052             \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00053 }
+\DoxyCodeLine{00054     found\_prefix = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{00055     \textcolor{keywordflow}{for} pattern, prefix \textcolor{keywordflow}{in} app.config.vcs\_link\_prefixes.items():}
+\DoxyCodeLine{00056         \textcolor{keywordflow}{if} re.match(pattern, pagename):}
+\DoxyCodeLine{00057             found\_prefix = prefix}
+\DoxyCodeLine{00058             \textcolor{keywordflow}{break}}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}/"{}}.join(}
+\DoxyCodeLine{00061         [}
+\DoxyCodeLine{00062             app.config.vcs\_link\_base\_url,}
+\DoxyCodeLine{00063             found\_prefix,}
+\DoxyCodeLine{00064             app.env.project.doc2path(pagename, basedir=\textcolor{keyword}{False}),}
+\DoxyCodeLine{00065         ]}
+\DoxyCodeLine{00066     )}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1vcs__link_a14eaa8e7f04f3765da3e755069ecb836}\label{namespacezephyr_1_1vcs__link_a14eaa8e7f04f3765da3e755069ecb836}} 
+\index{zephyr.vcs\_link@{zephyr.vcs\_link}!\_\_version\_\_@{\_\_version\_\_}}
+\index{\_\_version\_\_@{\_\_version\_\_}!zephyr.vcs\_link@{zephyr.vcs\_link}}
+\doxysubsubsection{\texorpdfstring{\_\_version\_\_}{\_\_version\_\_}}
+{\footnotesize\ttfamily string zephyr.\+vcs\+\_\+link.\+\_\+\+\_\+version\+\_\+\+\_\+ = \char`\"{}0.\+1.\+0\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{vcs__link_8py_source_l00033}{33}} of file \mbox{\hyperlink{vcs__link_8py_source}{vcs\+\_\+link.\+py}}.
+

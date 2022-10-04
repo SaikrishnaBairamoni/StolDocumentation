@@ -1,0 +1,37 @@
+\hypertarget{namespacezephyr_1_1application}{}\doxysection{zephyr.\+application Namespace Reference}
+\label{namespacezephyr_1_1application}\index{zephyr.application@{zephyr.application}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective}{Zephyr\+App\+Commands\+Directive}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacezephyr_1_1application_a472b23f642f0c43ddb39b901b215ff67}{setup}} (app)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1application_a472b23f642f0c43ddb39b901b215ff67}\label{namespacezephyr_1_1application_a472b23f642f0c43ddb39b901b215ff67}} 
+\index{zephyr.application@{zephyr.application}!setup@{setup}}
+\index{setup@{setup}!zephyr.application@{zephyr.application}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+setup (\begin{DoxyParamCaption}\item[{}]{app }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00423}{423}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00423 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1application_a472b23f642f0c43ddb39b901b215ff67}{setup}}(app):}
+\DoxyCodeLine{00424     app.add\_directive(\textcolor{stringliteral}{'zephyr-\/app-\/commands'}, ZephyrAppCommandsDirective)}
+\DoxyCodeLine{00425 }
+\DoxyCodeLine{00426     \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{00427         \textcolor{stringliteral}{'version'}: \textcolor{stringliteral}{'1.0'},}
+\DoxyCodeLine{00428         \textcolor{stringliteral}{'parallel\_read\_safe'}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00429         \textcolor{stringliteral}{'parallel\_write\_safe'}: \textcolor{keyword}{True}}
+\DoxyCodeLine{00430     \}}
+
+\end{DoxyCode}

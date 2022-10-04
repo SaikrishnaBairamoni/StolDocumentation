@@ -1,0 +1,5 @@
+<map id="intersection_model::signalized_intersection_lanelets" name="intersection_model::signalized_intersection_lanelets">
+<area shape="rect" id="node1" title=" " alt="" coords="15,175,173,281"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,44,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="134,5,195,83"/>
+</map>

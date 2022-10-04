@@ -1,0 +1,9 @@
+<map id="streets_vehicle_scheduler::all_stop_vehicle_schedule" name="streets_vehicle_scheduler::all_stop_vehicle_schedule">
+<area shape="rect" id="node1" title="Object to represent all_stop schedule for single vehicle." alt="" coords="213,388,413,509"/>
+<area shape="rect" id="node2" href="$structstreets__vehicle__scheduler_1_1vehicle__schedule.html" title="Object to represent schedule for single vehicle." alt="" coords="5,160,179,281"/>
+<area shape="rect" id="node3" title=" " alt="" coords="42,5,97,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="163,5,202,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="276,182,351,259"/>
+<area shape="rect" id="node6" title=" " alt="" coords="375,182,422,259"/>
+<area shape="rect" id="node7" title=" " alt="" coords="447,182,545,259"/>
+</map>

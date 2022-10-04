@@ -1,0 +1,244 @@
+\hypertarget{bsm_8cpp_source}{}\doxysection{bsm.\+cpp}
+\label{bsm_8cpp_source}\index{message\_services/src/models/bsm.cpp@{message\_services/src/models/bsm.cpp}}
+\mbox{\hyperlink{bsm_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}rapidjson/writer.h"{}}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include "{}rapidjson/stringbuffer.h"{}}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bsm_8h}{bsm.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00008}00008 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacemessage__services}{message\_services}}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00011}00011     \textcolor{keyword}{namespace }models}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00014}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a2835250fe1a3aebecccf68808cefa4b2}{00014}}         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a2835250fe1a3aebecccf68808cefa4b2}{bsm::bsm}}() : core\_data()}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00016}00016         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00018}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_aab3dcf44c418cd3dbf6ea94bdb96c76f}{00018}}         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_aab3dcf44c418cd3dbf6ea94bdb96c76f}{bsm::\string~bsm}}()}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00019}00019         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00020}00020         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00022}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a47ced6158eabc3894dd283ebc031b19c}{00022}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a47ced6158eabc3894dd283ebc031b19c}{bsm::fromJsonObject}}(\textcolor{keyword}{const} rapidjson::Value \&obj)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00023}00023         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00024}00024             \textcolor{keywordflow}{if} (obj.IsObject())}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00025}00025             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00026}00026                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator obj\_itr = obj.MemberBegin(); obj\_itr != obj.MemberEnd(); obj\_itr++)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00027}00027                 \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00029}00029                     \textcolor{keywordflow}{if} (obj\_itr-\/>value.IsObject() \&\& boost::iequals(std::string(obj\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}core\_data"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00030}00030                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00031}00031                         \mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData}{bsmCoreData\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}};}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00032}00032                         \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator core\_data\_itr = obj\_itr-\/>value.MemberBegin(); core\_data\_itr != obj\_itr-\/>value.MemberEnd(); core\_data\_itr++)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00033}00033                         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00034}00034                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}id"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00035}00035                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00036}00036                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a02e3d31e027dc8f053beb32b7a1a913f}{temprary\_id}} = (core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00037}00037                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00039}00039                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}angle"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00040}00040                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00041}00041                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a31f1a14129c60835a33ff3a3ddefbe49}{angle}} = std::stof(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00042}00042                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00044}00044                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}sec\_mark"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00045}00045                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00046}00046                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_af87ea45d83fa065457ac41839c7f466a}{sec\_mark}} = std::stol(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00047}00047                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00049}00049                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}lat"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00050}00050                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00051}00051                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_ae96757537c164f592eeff804e4397947}{latitude}} = std::stod(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00052}00052                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00054}00054                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}msg\_count"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00055}00055                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00056}00056                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a8cf426e92275412a60d3f22e4ec21b89}{msg\_count}} = std::stol(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00057}00057                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00059}00059                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}long"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00060}00060                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00061}00061                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a778dd89ea45af3e2681efac05abf4837}{longitude}} = std::stod(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00062}00062                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00064}00064                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}elev"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00065}00065                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00066}00066                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a99465f25b24825bb55f1fcec742bbdcd}{elev}} = std::stof(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00067}00067                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00069}00069                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}heading"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00070}00070                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00071}00071                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_ad0970f3f45cace9569cb8c600ec1e1a2}{heading}} = std::stof(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00072}00072                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00074}00074                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}transmission"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00075}00075                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00076}00076                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_aef892b5bf67de59c77b1cc923e87059c}{transmission}} = (core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00077}00077                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00079}00079                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}speed"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00080}00080                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00081}00081                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a1bb652763866025572a769be1bc34965}{speed}} = std::stof(core\_data\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00082}00082                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00084}00084                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}size"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00085}00085                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00086}00086                                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator size\_itr = core\_data\_itr-\/>value.MemberBegin(); size\_itr != core\_data\_itr-\/>value.MemberEnd(); size\_itr++)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00087}00087                                 \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00088}00088                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}length"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00089}00089                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00090}00090                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a11ac591da5fdab224ecf04337797cd57}{size}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1VehicleSize_a02f241146023ea7262630275e05601f4}{length}} = std::stol(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00091}00091                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00092}00092                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}width"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00093}00093                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00094}00094                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a11ac591da5fdab224ecf04337797cd57}{size}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1VehicleSize_afbf989a0b7fd667d5a87f01d22f2a724}{width}} = std::stol(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00095}00095                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00096}00096                                 \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00097}00097                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00099}00099                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}accuracy"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00100}00100                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00101}00101                                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator size\_itr = core\_data\_itr-\/>value.MemberBegin(); size\_itr != core\_data\_itr-\/>value.MemberEnd(); size\_itr++)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00102}00102                                 \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00103}00103                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}orientation"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00104}00104                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00105}00105                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a9c8d68220d19d56125a8d17c9a3a65e1}{accuracy}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1PositionalAccuracy_a8a7a6a427f8822bd102ab00ed162c472}{orientation}} = std::stof(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00106}00106                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00107}00107                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}semi\_major"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00108}00108                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00109}00109                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a9c8d68220d19d56125a8d17c9a3a65e1}{accuracy}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1PositionalAccuracy_a96fe1a4bad55899c419bb9c9054d2d1f}{semiMajor}} = std::stof(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00110}00110                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00111}00111                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}semi\_minor"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00112}00112                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00113}00113                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a9c8d68220d19d56125a8d17c9a3a65e1}{accuracy}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1PositionalAccuracy_a0da6fff855968c8fa8c85cd8e36ac622}{semiMinor}} = std::stof(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00114}00114                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00115}00115                                 \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00116}00116                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00118}00118                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}accel\_set"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00119}00119                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00120}00120                                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator size\_itr = core\_data\_itr-\/>value.MemberBegin(); size\_itr != core\_data\_itr-\/>value.MemberEnd(); size\_itr++)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00121}00121                                 \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00122}00122                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}lat"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00123}00123                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00124}00124                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_adb14f5bb5cbc6c5bfeafb1bfd19c8871}{accelSet}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1AccelerationSet4Way_a973fd7b615e690c92aa3e3f453362cb8}{lat}} = std::stof(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00125}00125                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00126}00126                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}long"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00127}00127                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00128}00128                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_adb14f5bb5cbc6c5bfeafb1bfd19c8871}{accelSet}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1AccelerationSet4Way_a2b255ad1e49f1e752f2fa4710d943eb0}{Long}} = std::stof(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00129}00129                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00130}00130                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}vert"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00131}00131                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00132}00132                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_adb14f5bb5cbc6c5bfeafb1bfd19c8871}{accelSet}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1AccelerationSet4Way_ac45250c20f28e378def1768f30779aae}{vert}} = std::stof(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00133}00133                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00134}00134                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}yaw"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00135}00135                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00136}00136                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_adb14f5bb5cbc6c5bfeafb1bfd19c8871}{accelSet}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1AccelerationSet4Way_a769b279471986a270ab8f770310e8c83}{yaw}} = std::stof(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00137}00137                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00138}00138                                 \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00139}00139                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00141}00141                             \textcolor{keywordflow}{if} (std::string(core\_data\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}brakes"{}}))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00142}00142                             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00143}00143                                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator size\_itr = core\_data\_itr-\/>value.MemberBegin(); size\_itr != core\_data\_itr-\/>value.MemberEnd(); size\_itr++)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00144}00144                                 \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00145}00145                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}abs"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00146}00146                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00147}00147                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a46527f547c7babead2ff5069b45ededb}{brakes}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1BrakeSystemStatus_ad6141e0512d536251514950ddc06e1b9}{abs}} = std::stol(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00148}00148                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00149}00149                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}aux\_brakes"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00150}00150                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00151}00151                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a46527f547c7babead2ff5069b45ededb}{brakes}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1BrakeSystemStatus_aef3817ccce6b9a2784e366772a3a1997}{auxBrakes}} = std::stol(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00152}00152                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00153}00153                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}brake\_boost"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00154}00154                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00155}00155                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a46527f547c7babead2ff5069b45ededb}{brakes}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1BrakeSystemStatus_a9cdc396d74d8dce3bf9171b5dfa33382}{brakeBoost}} = std::stol(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00156}00156                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00158}00158                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}scs"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00159}00159                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00160}00160                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a46527f547c7babead2ff5069b45ededb}{brakes}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1BrakeSystemStatus_ad2398cdc48e64b34e397cc97cd4a4e7f}{scs}} = std::stol(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00161}00161                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00163}00163                                     \textcolor{keywordflow}{if} (boost::iequals(std::string(size\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}traction"{}})))}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00164}00164                                     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00165}00165                                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a46527f547c7babead2ff5069b45ededb}{brakes}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1BrakeSystemStatus_aef2a744b6f642add3d57f338b07f6803}{traction}} = std::stol(size\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00166}00166                                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00167}00167                                 \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00168}00168                             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00169}00169                         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00170}00170                         \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_abf442fb7679805e7834fd556e23b48b0}{setCore\_data}}(\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00171}00171                     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00172}00172                 \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00173}00173             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00174}00174         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00175}00175 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00176}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_af873065f2764928e411802eaf519323d}{00176}}         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_af873065f2764928e411802eaf519323d}{bsm::asJsonObject}}(rapidjson::Writer<rapidjson::StringBuffer> *writer)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00177}00177 \textcolor{keyword}{        }\{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00178}00178             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00179}00179             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00180}00180                 rapidjson::Value val\_core\_data;}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00181}00181                 writer-\/>Key(\textcolor{stringliteral}{"{}bsmCoreData"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00182}00182                 writer-\/>StartObject();}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00183}00183                 writer-\/>Key(\textcolor{stringliteral}{"{}temprary\_id"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00184}00184                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().temprary\_id.c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00185}00185                 writer-\/>String(\textcolor{stringliteral}{"{}secMark"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00186}00186                 writer-\/>String(\mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().sec\_mark).c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00187}00187                 writer-\/>String(\textcolor{stringliteral}{"{}latitude"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00188}00188                 writer-\/>String(\mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().latitude).c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00189}00189                 writer-\/>String(\textcolor{stringliteral}{"{}longitude"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00190}00190                 writer-\/>String(\mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().longitude).c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00191}00191                 writer-\/>String(\textcolor{stringliteral}{"{}elev"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00192}00192                 writer-\/>String(\mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().elev).c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00193}00193                 writer-\/>String(\textcolor{stringliteral}{"{}heading"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00194}00194                 writer-\/>String(\mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().heading).c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00195}00195                 writer-\/>String(\textcolor{stringliteral}{"{}transmission"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00196}00196                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().transmission.c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00197}00197                 writer-\/>String(\textcolor{stringliteral}{"{}speed"{}});}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00198}00198                 writer-\/>String(\mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().speed).c\_str());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00199}00199                 writer-\/>EndObject();}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00200}00200                 writer-\/>EndObject();}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00201}00201                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00202}00202             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00203}00203             \textcolor{keywordflow}{catch} (std::exception \&ex)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00204}00204             \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00205}00205                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}BSM model: asJsonObject error.: "{}}, ex.what());}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00206}00206                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00207}00207             \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00208}00208         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00209}00209 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00210}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a53d45e9bdc619cbb89192fd014fae9c7}{00210}}         std::ostream \&\mbox{\hyperlink{namespacemessage__services_1_1models_a47572499c3356ac71fa06f41ccbe980d}{operator<<}}(std::ostream \&out, \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{bsm}} \&bsm\_obj)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00211}00211         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00212}00212             out << std::fixed;}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00213}00213             out << std::setprecision(6);}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00214}00214             out << \textcolor{stringliteral}{"{}bsm model: core\_data: \{ temprary\_id = "{}} << bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a02e3d31e027dc8f053beb32b7a1a913f}{temprary\_id}} << \textcolor{stringliteral}{"{}, sec\_mark = "{}} << bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_af87ea45d83fa065457ac41839c7f466a}{sec\_mark}}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00215}00215                       << \textcolor{stringliteral}{"{}, latitude= "{}} << bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_ae96757537c164f592eeff804e4397947}{latitude}} << \textcolor{stringliteral}{"{}, longitude = "{}} << bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a778dd89ea45af3e2681efac05abf4837}{longitude}}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00216}00216                       << \textcolor{stringliteral}{"{}, size: \{length = "{}} << bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a11ac591da5fdab224ecf04337797cd57}{size}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1VehicleSize_a02f241146023ea7262630275e05601f4}{length}} << \textcolor{stringliteral}{"{}\}, speed = "{}} << bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a1bb652763866025572a769be1bc34965}{speed}} << \textcolor{stringliteral}{"{}\}"{}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00217}00217             \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00218}00218         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00219}00219 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00220}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a31f50e14ec5295d0397ad02048755862}{00220}}         std::string \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a31f50e14ec5295d0397ad02048755862}{bsm::generate\_hash\_bsm\_msg\_id}}(std::string temprary\_id, \textcolor{keywordtype}{long} msg\_count, \textcolor{keywordtype}{long} sec\_mark)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00221}00221         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00222}00222             std::stringstream hash\_ss;}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00223}00223             hash\_ss << temprary\_id << msg\_count << sec\_mark;}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00224}00224             \textcolor{keywordflow}{return} hash\_ss.str();}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00225}00225         \}      }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00227}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{00227}}         \mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData}{bsmCoreData\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{bsm::getCore\_data}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00228}00228 \textcolor{keyword}{        }\{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00229}00229             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}};}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00230}00230         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00231}00231 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00232}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_abf442fb7679805e7834fd556e23b48b0}{00232}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_abf442fb7679805e7834fd556e23b48b0}{bsm::setCore\_data}}(\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData}{bsmCoreData\_t}} core\_data)}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00233}00233         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00234}00234             this-\/>core\_data = \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}};}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00235}00235         \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00236}00236 }
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00237}00237     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8cpp_source_l00238}00238 \}}
+
+\end{DoxyCode}

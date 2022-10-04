@@ -1,0 +1,41 @@
+\hypertarget{scheduling__worker_8cpp_source}{}\doxysection{scheduling\+\_\+worker.\+cpp}
+\label{scheduling__worker_8cpp_source}\index{scheduling\_service/src/scheduling\_worker.cpp@{scheduling\_service/src/scheduling\_worker.cpp}}
+\mbox{\hyperlink{scheduling__worker_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{scheduling__worker_8h}{scheduling\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00003}00003 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacescheduling__service}{scheduling\_service}}\{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00007}\mbox{\hyperlink{classscheduling__service_1_1scheduling__worker_ae8e70252fc78b11963c52a73b8af8025}{00007}}     std::shared\_ptr<streets\_vehicle\_scheduler::intersection\_schedule> \mbox{\hyperlink{classscheduling__service_1_1scheduling__worker_ae8e70252fc78b11963c52a73b8af8025}{scheduling\_worker::schedule\_vehicles}}(std::unordered\_map<std::string, streets\_vehicles::vehicle> veh\_map, std::shared\_ptr<streets\_vehicle\_scheduler::vehicle\_scheduler> scheduler)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00008}00008 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00010}00010         std::shared\_ptr<streets\_vehicle\_scheduler::intersection\_schedule> int\_schedule;}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00011}00011         \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}intersection\_type"{}}).compare(\textcolor{stringliteral}{"{}stop\_controlled\_intersection"{}}) == 0 ) \{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00012}00012             int\_schedule = std::make\_shared<streets\_vehicle\_scheduler::all\_stop\_intersection\_schedule>();}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00013}00013         \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00014}00014         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}intersection\_type"{}}).compare(\textcolor{stringliteral}{"{}signalized\_intersection"{}}) == 0 ) \{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00015}00015             int\_schedule = std::make\_shared<streets\_vehicle\_scheduler::signalized\_intersection\_schedule>();}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00016}00016         \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00017}00017         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00018}00018             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed scheduling vehicles. Scheduling Service does not support intersection\_type : \{0\}!"{}}, \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}intersection\_type"{}}));}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00019}00019         \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00021}00021         int\_schedule-\/>timestamp = std::chrono::duration\_cast<std::chrono::milliseconds>(std::chrono::system\_clock::now().time\_since\_epoch()).count();}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00022}00022         scheduler-\/>schedule\_vehicles(veh\_map, int\_schedule);}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00024}00024         \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a48f38b0b6ecb3043cc051b624f12824b}{streets\_service::streets\_configuration::get\_boolean\_config}}(\textcolor{stringliteral}{"{}enable\_schedule\_logging"{}}) ) \{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00025}00025             \textcolor{keyword}{auto} \mbox{\hyperlink{namespacezephyr_1_1doxyrunner_a3b3f9cff00699ea6c32f73702fc7e861}{logger}} = spdlog::get(\textcolor{stringliteral}{"{}csv\_logger"{}});}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00026}00026             \textcolor{keywordflow}{if} ( \mbox{\hyperlink{namespacezephyr_1_1doxyrunner_a3b3f9cff00699ea6c32f73702fc7e861}{logger}} != \textcolor{keyword}{nullptr} )\{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00027}00027                 \mbox{\hyperlink{namespacezephyr_1_1doxyrunner_a3b3f9cff00699ea6c32f73702fc7e861}{logger}}-\/>info( int\_schedule-\/>toCSV());}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00028}00028             \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00029}00029         \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00031}00031         \textcolor{keywordflow}{return} int\_schedule;}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00034}00034 \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8cpp_source_l00035}00035 }
+
+\end{DoxyCode}

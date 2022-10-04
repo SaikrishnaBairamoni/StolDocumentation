@@ -1,0 +1,461 @@
+\hypertarget{classintersection__model_1_1map__msg__worker}{}\doxysection{intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker Class Reference}
+\label{classintersection__model_1_1map__msg__worker}\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+
+
+{\ttfamily \#include $<$map\+\_\+msg\+\_\+worker.\+h$>$}
+
+
+
+Collaboration diagram for intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classintersection__model_1_1map__msg__worker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}{map\+\_\+msg\+\_\+worker}} ()=default
+\item 
+\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad60ea9e2f1b18e870fbb17c52fdaf512}{map\+\_\+msg\+\_\+worker}} (const int intersection\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Construct a new map msg worker object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a4e23adab93b592974e71481e85ef6c5c}{map\+\_\+msg\+\_\+worker}} (const int intersection\+\_\+id, const std\+::string \&\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{bootstrap\+\_\+server}}, const std\+::string \&\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{map\+\_\+msg\+\_\+group\+\_\+id}}, const std\+::string \&\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{map\+\_\+msg\+\_\+topic\+\_\+name}})
+\begin{DoxyCompactList}\small\item\em Construct a new map msg worker object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a24ba3b8fbac71ec535483c400beabd99}{$\sim$map\+\_\+msg\+\_\+worker}} ()=default
+\item 
+bool \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad59f4cb6f6e4afc090fdda3937f1b672}{update\+\_\+map\+\_\+msg}} (const std\+::string \&payload)
+\begin{DoxyCompactList}\small\item\em Update intesection map structure. It will only update when both kafka consumer consumes MAP message and intersection id from MAP message matches id from MAP message. \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structintersection__model_1_1intersection__map}{intersection\+\_\+map}} $>$ \& \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aa18c01177386e52a8c31c185ac3a9f9b}{get\+\_\+map\+\_\+msg\+\_\+ptr}} () const
+\begin{DoxyCompactList}\small\item\em Get the const map msg ptr object and prevent external class from modifying it. \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}} $>$ \& \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0379ce194582140e930c2e3b3ccc5ad8}{get\+\_\+map\+\_\+msg\+\_\+consumer\+\_\+ptr}} () const
+\begin{DoxyCompactList}\small\item\em Get the map msg consumer ptr object and prevent external class from modifying it. \end{DoxyCompactList}\item 
+rapidjson\+::\+Document \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}{parse\+\_\+\+JSON\+\_\+string}} (const std\+::string \&json\+String) const
+\begin{DoxyCompactList}\small\item\em parse MAP msg json string with rapidjson document \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{bootstrap\+\_\+server}}
+\item 
+std\+::string \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{map\+\_\+msg\+\_\+group\+\_\+id}}
+\item 
+std\+::string \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{map\+\_\+msg\+\_\+topic\+\_\+name}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}} $>$ \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\+\_\+map\+\_\+msg\+\_\+consumer}}
+\item 
+std\+::mutex \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aab2d3179da1e6be47a1ee35c170a6ab6}{intersection\+\_\+map\+\_\+msg\+\_\+mtx}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structintersection__model_1_1intersection__map}{intersection\+\_\+map}} $>$ \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\+\_\+intersection\+\_\+map\+\_\+ptr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8h_source_l00018}{18}} of file \mbox{\hyperlink{map__msg__worker_8h_source}{map\+\_\+msg\+\_\+worker.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}\label{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!map\_msg\_worker@{map\_msg\_worker}}
+\index{map\_msg\_worker@{map\_msg\_worker}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{map\_msg\_worker()}{map\_msg\_worker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::map\+\_\+msg\+\_\+worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_ad60ea9e2f1b18e870fbb17c52fdaf512}\label{classintersection__model_1_1map__msg__worker_ad60ea9e2f1b18e870fbb17c52fdaf512}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!map\_msg\_worker@{map\_msg\_worker}}
+\index{map\_msg\_worker@{map\_msg\_worker}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{map\_msg\_worker()}{map\_msg\_worker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::map\+\_\+msg\+\_\+worker (\begin{DoxyParamCaption}\item[{const int}]{intersection\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Construct a new map msg worker object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intersection\+\_\+id} & configuration value from intersection model manifest.\+json. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{map__msg__worker_8cpp_source}{map\+\_\+msg\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034     \{}
+\DoxyCodeLine{00035         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}} = std::make\_shared<intersection\_map>();}
+\DoxyCodeLine{00036         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid = intersection\_id;}
+\DoxyCodeLine{00037     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{map__msg__worker_8h_source_l00027}{\+\_\+intersection\+\_\+map\+\_\+ptr}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a4e23adab93b592974e71481e85ef6c5c}\label{classintersection__model_1_1map__msg__worker_a4e23adab93b592974e71481e85ef6c5c}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!map\_msg\_worker@{map\_msg\_worker}}
+\index{map\_msg\_worker@{map\_msg\_worker}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{map\_msg\_worker()}{map\_msg\_worker()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::map\+\_\+msg\+\_\+worker (\begin{DoxyParamCaption}\item[{const int}]{intersection\+\_\+id,  }\item[{const std\+::string \&}]{bootstrap\+\_\+server,  }\item[{const std\+::string \&}]{map\+\_\+msg\+\_\+group\+\_\+id,  }\item[{const std\+::string \&}]{map\+\_\+msg\+\_\+topic\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Construct a new map msg worker object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intersection\+\_\+id} & configuration value from intersection model manifest.\+json. It is used to identofy the intersection from MAP message. \\
+\hline
+\end{DoxyParams}
+Kafka client config
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{map__msg__worker_8cpp_source}{map\+\_\+msg\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007                                                                                                                                                                       :\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{bootstrap\_server}}(\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{bootstrap\_server}}), \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{map\_msg\_group\_id}}(\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{map\_msg\_group\_id}}),\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{map\_msg\_topic\_name}}(\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{map\_msg\_topic\_name}})}
+\DoxyCodeLine{00008     \{}
+\DoxyCodeLine{00012         \textcolor{keyword}{auto} client = std::make\_shared<kafka\_clients::kafka\_client>();}
+\DoxyCodeLine{00013         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}} = client-\/>create\_consumer(this-\/>\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{bootstrap\_server}}, this-\/>\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{map\_msg\_topic\_name}}, this-\/>\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{map\_msg\_group\_id}});}
+\DoxyCodeLine{00014         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}} || !\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}}-\/>init())}
+\DoxyCodeLine{00015         \{}
+\DoxyCodeLine{00016             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}kafka consumers (\_map\_msg\_consumer) initialize error"{}});}
+\DoxyCodeLine{00017             exit(-\/1);}
+\DoxyCodeLine{00018         \}}
+\DoxyCodeLine{00019         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00020         \{}
+\DoxyCodeLine{00021             \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}}-\/>subscribe();}
+\DoxyCodeLine{00022             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}}-\/>is\_running())}
+\DoxyCodeLine{00023             \{}
+\DoxyCodeLine{00024                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}consumer\_workers (\_map\_msg\_consumer) is not running"{}});}
+\DoxyCodeLine{00025                 exit(-\/1);}
+\DoxyCodeLine{00026             \}}
+\DoxyCodeLine{00027         \}}
+\DoxyCodeLine{00028         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}} = std::make\_shared<intersection\_map>();}
+\DoxyCodeLine{00029         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid = intersection\_id;}
+\DoxyCodeLine{00030         SPDLOG\_INFO(\textcolor{stringliteral}{"{}map\_msg\_worker constructor done"{}});}
+\DoxyCodeLine{00031     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{map__msg__worker_8h_source_l00027}{\+\_\+intersection\+\_\+map\+\_\+ptr}}, and \mbox{\hyperlink{map__msg__worker_8h_source_l00025}{\+\_\+map\+\_\+msg\+\_\+consumer}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a24ba3b8fbac71ec535483c400beabd99}\label{classintersection__model_1_1map__msg__worker_a24ba3b8fbac71ec535483c400beabd99}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!````~map\_msg\_worker@{$\sim$map\_msg\_worker}}
+\index{````~map\_msg\_worker@{$\sim$map\_msg\_worker}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{$\sim$map\_msg\_worker()}{~map\_msg\_worker()}}
+{\footnotesize\ttfamily intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::$\sim$map\+\_\+msg\+\_\+worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a0379ce194582140e930c2e3b3ccc5ad8}\label{classintersection__model_1_1map__msg__worker_a0379ce194582140e930c2e3b3ccc5ad8}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!get\_map\_msg\_consumer\_ptr@{get\_map\_msg\_consumer\_ptr}}
+\index{get\_map\_msg\_consumer\_ptr@{get\_map\_msg\_consumer\_ptr}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{get\_map\_msg\_consumer\_ptr()}{get\_map\_msg\_consumer\_ptr()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}} $>$ \& intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::get\+\_\+map\+\_\+msg\+\_\+consumer\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the map msg consumer ptr object and prevent external class from modifying it. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::shared\+\_\+ptr$<$kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker$>$ 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8cpp_source_l00135}{135}} of file \mbox{\hyperlink{map__msg__worker_8cpp_source}{map\+\_\+msg\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00136     \{}
+\DoxyCodeLine{00137         \textcolor{keywordflow}{return} \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}};}
+\DoxyCodeLine{00138     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{map__msg__worker_8h_source_l00025}{\+\_\+map\+\_\+msg\+\_\+consumer}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_aa18c01177386e52a8c31c185ac3a9f9b}\label{classintersection__model_1_1map__msg__worker_aa18c01177386e52a8c31c185ac3a9f9b}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!get\_map\_msg\_ptr@{get\_map\_msg\_ptr}}
+\index{get\_map\_msg\_ptr@{get\_map\_msg\_ptr}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{get\_map\_msg\_ptr()}{get\_map\_msg\_ptr()}}
+{\footnotesize\ttfamily const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structintersection__model_1_1intersection__map}{intersection\+\_\+map}} $>$ \& intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::get\+\_\+map\+\_\+msg\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the const map msg ptr object and prevent external class from modifying it. 
+
+\begin{DoxyReturn}{Returns}
+const std\+::shared\+\_\+ptr$<$intersection\+\_\+map$>$ 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{map__msg__worker_8cpp_source}{map\+\_\+msg\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131     \{}
+\DoxyCodeLine{00132         \textcolor{keywordflow}{return} \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}};}
+\DoxyCodeLine{00133     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{map__msg__worker_8h_source_l00027}{\+\_\+intersection\+\_\+map\+\_\+ptr}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}\label{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!parse\_JSON\_string@{parse\_JSON\_string}}
+\index{parse\_JSON\_string@{parse\_JSON\_string}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{parse\_JSON\_string()}{parse\_JSON\_string()}}
+{\footnotesize\ttfamily rapidjson\+::\+Document intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::parse\+\_\+\+JSON\+\_\+string (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json\+String }\end{DoxyParamCaption}) const}
+
+
+
+parse MAP msg json string with rapidjson document 
+
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{map__msg__worker_8cpp_source}{map\+\_\+msg\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00141     \{}
+\DoxyCodeLine{00142         rapidjson::Document doc;}
+\DoxyCodeLine{00143         \textcolor{keywordtype}{bool} has\_parse\_error = doc.Parse(jsonString.c\_str()).HasParseError() ? true : \textcolor{keyword}{false};}
+\DoxyCodeLine{00144 }
+\DoxyCodeLine{00145         \textcolor{keywordflow}{if} (has\_parse\_error)}
+\DoxyCodeLine{00146         \{}
+\DoxyCodeLine{00147             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Document parse error: Cannot parse map JSON string"{}});}
+\DoxyCodeLine{00148         \}}
+\DoxyCodeLine{00149         \textcolor{keywordflow}{return} doc;}
+\DoxyCodeLine{00150     \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{map__msg__worker_8cpp_source_l00039}{update\+\_\+map\+\_\+msg()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_ad59f4cb6f6e4afc090fdda3937f1b672}\label{classintersection__model_1_1map__msg__worker_ad59f4cb6f6e4afc090fdda3937f1b672}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!update\_map\_msg@{update\_map\_msg}}
+\index{update\_map\_msg@{update\_map\_msg}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{update\_map\_msg()}{update\_map\_msg()}}
+{\footnotesize\ttfamily bool intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::update\+\_\+map\+\_\+msg (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{payload }\end{DoxyParamCaption})}
+
+
+
+Update intesection map structure. It will only update when both kafka consumer consumes MAP message and intersection id from MAP message matches id from MAP message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em payload} & from consumed MAP message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if intersection map is updated 
+
+false if intersection map is not updated 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{map__msg__worker_8cpp_source}{map\+\_\+msg\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040     \{}
+\DoxyCodeLine{00041         \textcolor{keywordtype}{bool} is\_updated = \textcolor{keyword}{false};}
+\DoxyCodeLine{00042         std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aab2d3179da1e6be47a1ee35c170a6ab6}{intersection\_map\_msg\_mtx}});}
+\DoxyCodeLine{00043         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00044         \{}
+\DoxyCodeLine{00045             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Intersection map msg is nullptr"{}});}
+\DoxyCodeLine{00046             \textcolor{keywordflow}{return} is\_updated;}
+\DoxyCodeLine{00047         \}}
+\DoxyCodeLine{00048         rapidjson::Document doc = \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}{parse\_JSON\_string}}(payload);}
+\DoxyCodeLine{00049         \textcolor{comment}{// Map data}}
+\DoxyCodeLine{00050         \textcolor{keywordflow}{if} (!doc.HasParseError() \&\& doc.FindMember(\textcolor{stringliteral}{"{}map\_data"{}})-\/>value.IsObject())}
+\DoxyCodeLine{00051         \{}
+\DoxyCodeLine{00052             \textcolor{keyword}{auto} mapData = doc.FindMember(\textcolor{stringliteral}{"{}map\_data"{}})-\/>value.GetObject();}
+\DoxyCodeLine{00053             \textcolor{comment}{// Intersections}}
+\DoxyCodeLine{00054             \textcolor{keywordflow}{if} (mapData.FindMember(\textcolor{stringliteral}{"{}intersections"{}})-\/>value.IsObject())}
+\DoxyCodeLine{00055             \{}
+\DoxyCodeLine{00056                 \textcolor{keyword}{auto} intersections = mapData.FindMember(\textcolor{stringliteral}{"{}intersections"{}})-\/>value.GetObject();}
+\DoxyCodeLine{00057                 \textcolor{comment}{// Intersection geometry}}
+\DoxyCodeLine{00058                 \textcolor{keywordflow}{if} (intersections.FindMember(\textcolor{stringliteral}{"{}intersection\_geometry"{}})-\/>value.IsObject())}
+\DoxyCodeLine{00059                 \{}
+\DoxyCodeLine{00060                     \textcolor{keyword}{auto} intersection\_geometry = intersections.FindMember(\textcolor{stringliteral}{"{}intersection\_geometry"{}})-\/>value.GetObject();}
+\DoxyCodeLine{00061                     \textcolor{keyword}{auto} \textcolor{keywordtype}{id} = intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}id"{}})-\/>value.GetObject();}
+\DoxyCodeLine{00062                     \textcolor{keyword}{auto} id\_id = std::stoul(\textcolor{keywordtype}{id}.FindMember(\textcolor{stringliteral}{"{}id"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.GetString()); \textcolor{comment}{// id is getting from kafka consumer}}
+\DoxyCodeLine{00063                     \textcolor{keywordtype}{bool} is\_intersection\_id\_match = (id\_id == \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid) ? \textcolor{keyword}{true} : \textcolor{keyword}{false}; \textcolor{comment}{//intersectionid is initialized value from manifest.json}}
+\DoxyCodeLine{00064                     \textcolor{keywordflow}{if} (is\_intersection\_id\_match) \textcolor{comment}{//Make sure the intersection id in the manifest.json match the id from the MAP message}}
+\DoxyCodeLine{00065                     \{}
+\DoxyCodeLine{00066                         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Find mapping intersection ID."{}});}
+\DoxyCodeLine{00067                         map\_geometry mapGeo;}
+\DoxyCodeLine{00068                         \textcolor{keywordflow}{if} (intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}ref\_point"{}})-\/>value.IsObject())}
+\DoxyCodeLine{00069                         \{}
+\DoxyCodeLine{00070                             \textcolor{keyword}{auto} ref\_point = intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}ref\_point"{}})-\/>value.GetObject();}
+\DoxyCodeLine{00071                             mapGeo.refpoint.latitude = std::stol(ref\_point.FindMember(\textcolor{stringliteral}{"{}lat"{}})-\/>value.GetString());}
+\DoxyCodeLine{00072                             mapGeo.refpoint.longitude = std::stol(ref\_point.FindMember(\textcolor{stringliteral}{"{}long"{}})-\/>value.GetString());}
+\DoxyCodeLine{00073                             mapGeo.refpoint.elevation = std::stol(ref\_point.FindMember(\textcolor{stringliteral}{"{}elevation"{}})-\/>value.GetString());}
+\DoxyCodeLine{00074                         \}}
+\DoxyCodeLine{00075                         mapGeo.approach.width = std::stol(intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}lane\_width"{}})-\/>value.GetString());}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077                         \textcolor{comment}{// Lane set}}
+\DoxyCodeLine{00078                         \textcolor{keywordflow}{if} (intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}lane\_set"{}})-\/>value.IsArray())}
+\DoxyCodeLine{00079                         \{}
+\DoxyCodeLine{00080                             \textcolor{keyword}{auto} lane\_set = intersection\_geometry.FindMember(\textcolor{stringliteral}{"{}lane\_set"{}})-\/>value.GetArray();}
+\DoxyCodeLine{00081                             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} j = 0; j < lane\_set.Size(); j++)}
+\DoxyCodeLine{00082                             \{}
+\DoxyCodeLine{00083                                 map\_lane lane;}
+\DoxyCodeLine{00084                                 lane.lane\_id = std::stol(lane\_set[j].FindMember(\textcolor{stringliteral}{"{}lane\_id"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.GetString());}
+\DoxyCodeLine{00085 }
+\DoxyCodeLine{00086                                 \textcolor{comment}{// Node list}}
+\DoxyCodeLine{00087                                 \textcolor{keywordflow}{if} (lane\_set[j].FindMember(\textcolor{stringliteral}{"{}node\_list"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}nodes"{}})-\/>value.IsArray())}
+\DoxyCodeLine{00088                                 \{}
+\DoxyCodeLine{00089                                     \textcolor{keyword}{auto} nodes = lane\_set[j].FindMember(\textcolor{stringliteral}{"{}node\_list"{}})-\/>value.FindMember(\textcolor{stringliteral}{"{}nodes"{}})-\/>value.GetArray();}
+\DoxyCodeLine{00090                                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} k = 0; k < nodes.Size(); k++)}
+\DoxyCodeLine{00091                                     \{}
+\DoxyCodeLine{00092                                         map\_node map\_node;}
+\DoxyCodeLine{00093                                         map\_node.x = std::stol(nodes[k].FindMember(\textcolor{stringliteral}{"{}delta"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}node-\/xy"{}})-\/>value.FindMember(\textcolor{stringliteral}{"{}x"{}})-\/>value.GetString());}
+\DoxyCodeLine{00094                                         map\_node.y = std::stol(nodes[k].FindMember(\textcolor{stringliteral}{"{}delta"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}node-\/xy"{}})-\/>value.FindMember(\textcolor{stringliteral}{"{}y"{}})-\/>value.GetString());}
+\DoxyCodeLine{00095                                         lane.nodes.push\_back(map\_node);}
+\DoxyCodeLine{00096                                     \}}
+\DoxyCodeLine{00097                                 \}}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099                                 \textcolor{keywordflow}{if} (lane\_set[j].FindMember(\textcolor{stringliteral}{"{}connects\_to"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.IsArray())}
+\DoxyCodeLine{00100                                 \{}
+\DoxyCodeLine{00101                                     \textcolor{comment}{// Lane connections with signal group ids}}
+\DoxyCodeLine{00102                                     \textcolor{keyword}{auto} connectsto = lane\_set[j].FindMember(\textcolor{stringliteral}{"{}connects\_to"{}})-\/>value.GetArray();}
+\DoxyCodeLine{00103                                     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} k = 0; k < connectsto.Size(); k++)}
+\DoxyCodeLine{00104                                     \{}
+\DoxyCodeLine{00105                                         map\_connection map\_connect;}
+\DoxyCodeLine{00106                                         map\_connect.lane\_id = std::stol(connectsto[k].FindMember(\textcolor{stringliteral}{"{}connecting\_lane"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.FindMember(\textcolor{stringliteral}{"{}lane"{}})-\/>value.GetString());}
+\DoxyCodeLine{00107                                         map\_connect.signalGroup = std::stoi(connectsto[k].FindMember(\textcolor{stringliteral}{"{}signal\_group"{}})-\/>\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.GetString());}
+\DoxyCodeLine{00108                                         lane.connection.push\_back(map\_connect);}
+\DoxyCodeLine{00109                                     \}}
+\DoxyCodeLine{00110                                 \}}
+\DoxyCodeLine{00111                                 mapGeo.approach.lanes.push\_back(lane);}
+\DoxyCodeLine{00112                             \}}
+\DoxyCodeLine{00113                             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Updated lane set."{}});}
+\DoxyCodeLine{00114                         \}}
+\DoxyCodeLine{00115                         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>geometries.clear();}
+\DoxyCodeLine{00116                         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>geometries.push\_back(mapGeo);}
+\DoxyCodeLine{00117                         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Update map msg done."{}});}
+\DoxyCodeLine{00118                         is\_updated = \textcolor{keyword}{true};}
+\DoxyCodeLine{00119                     \}}
+\DoxyCodeLine{00120                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00121                     \{}
+\DoxyCodeLine{00122                         SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Cannot find intersection model intersection\_id \{0\} mapping to MAP msg intersection geometry id \{1\}."{}}, \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}}-\/>intersectionid, id\_id);}
+\DoxyCodeLine{00123                     \}}
+\DoxyCodeLine{00124                 \}}
+\DoxyCodeLine{00125             \}}
+\DoxyCodeLine{00126         \}}
+\DoxyCodeLine{00127         \textcolor{keywordflow}{return} is\_updated;}
+\DoxyCodeLine{00128     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{map__msg__worker_8h_source_l00027}{\+\_\+intersection\+\_\+map\+\_\+ptr}}, \mbox{\hyperlink{map_8h_source_l00093}{intersection\+\_\+model\+::map\+\_\+geometry\+::approach}}, \mbox{\hyperlink{map_8h_source_l00077}{intersection\+\_\+model\+::map\+\_\+lane\+::connection}}, \mbox{\hyperlink{map_8h_source_l00088}{intersection\+\_\+model\+::map\+\_\+referencepoint\+::elevation}}, \mbox{\hyperlink{map__msg__worker_8h_source_l00026}{intersection\+\_\+map\+\_\+msg\+\_\+mtx}}, \mbox{\hyperlink{map_8h_source_l00058}{intersection\+\_\+model\+::map\+\_\+connection\+::lane\+\_\+id}}, \mbox{\hyperlink{map_8h_source_l00070}{intersection\+\_\+model\+::map\+\_\+lane\+::lane\+\_\+id}}, \mbox{\hyperlink{map_8h_source_l00082}{intersection\+\_\+model\+::map\+\_\+group\+::lanes}}, \mbox{\hyperlink{map_8h_source_l00086}{intersection\+\_\+model\+::map\+\_\+referencepoint\+::latitude}}, \mbox{\hyperlink{map_8h_source_l00087}{intersection\+\_\+model\+::map\+\_\+referencepoint\+::longitude}}, \mbox{\hyperlink{map_8h_source_l00075}{intersection\+\_\+model\+::map\+\_\+lane\+::nodes}}, \mbox{\hyperlink{map__msg__worker_8cpp_source_l00140}{parse\+\_\+\+JSON\+\_\+string()}}, \mbox{\hyperlink{map_8h_source_l00092}{intersection\+\_\+model\+::map\+\_\+geometry\+::refpoint}}, \mbox{\hyperlink{map_8h_source_l00060}{intersection\+\_\+model\+::map\+\_\+connection\+::signal\+Group}}, \mbox{\hyperlink{simulate__bsm_8py_source_l00024}{simulate\+\_\+bsm\+::value}}, \mbox{\hyperlink{map_8h_source_l00081}{intersection\+\_\+model\+::map\+\_\+group\+::width}}, \mbox{\hyperlink{map_8h_source_l00065}{intersection\+\_\+model\+::map\+\_\+node\+::x}}, and \mbox{\hyperlink{map_8h_source_l00066}{intersection\+\_\+model\+::map\+\_\+node\+::y}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classintersection__model_1_1map__msg__worker_ad59f4cb6f6e4afc090fdda3937f1b672_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}\label{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!\_intersection\_map\_ptr@{\_intersection\_map\_ptr}}
+\index{\_intersection\_map\_ptr@{\_intersection\_map\_ptr}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{\_intersection\_map\_ptr}{\_intersection\_map\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structintersection__model_1_1intersection__map}{intersection\+\_\+map}}$>$ intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::\+\_\+intersection\+\_\+map\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8h_source_l00027}{27}} of file \mbox{\hyperlink{map__msg__worker_8h_source}{map\+\_\+msg\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{map__msg__worker_8cpp_source_l00007}{map\+\_\+msg\+\_\+worker()}}, \mbox{\hyperlink{map__msg__worker_8cpp_source_l00130}{get\+\_\+map\+\_\+msg\+\_\+ptr()}}, and \mbox{\hyperlink{map__msg__worker_8cpp_source_l00039}{update\+\_\+map\+\_\+msg()}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}\label{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!\_map\_msg\_consumer@{\_map\_msg\_consumer}}
+\index{\_map\_msg\_consumer@{\_map\_msg\_consumer}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{\_map\_msg\_consumer}{\_map\_msg\_consumer}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker}{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker}}$>$ intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::\+\_\+map\+\_\+msg\+\_\+consumer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8h_source_l00025}{25}} of file \mbox{\hyperlink{map__msg__worker_8h_source}{map\+\_\+msg\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{map__msg__worker_8cpp_source_l00007}{map\+\_\+msg\+\_\+worker()}}, and \mbox{\hyperlink{map__msg__worker_8cpp_source_l00135}{get\+\_\+map\+\_\+msg\+\_\+consumer\+\_\+ptr()}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}\label{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!bootstrap\_server@{bootstrap\_server}}
+\index{bootstrap\_server@{bootstrap\_server}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{bootstrap\_server}{bootstrap\_server}}
+{\footnotesize\ttfamily std\+::string intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::bootstrap\+\_\+server\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8h_source_l00022}{22}} of file \mbox{\hyperlink{map__msg__worker_8h_source}{map\+\_\+msg\+\_\+worker.\+h}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_aab2d3179da1e6be47a1ee35c170a6ab6}\label{classintersection__model_1_1map__msg__worker_aab2d3179da1e6be47a1ee35c170a6ab6}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!intersection\_map\_msg\_mtx@{intersection\_map\_msg\_mtx}}
+\index{intersection\_map\_msg\_mtx@{intersection\_map\_msg\_mtx}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{intersection\_map\_msg\_mtx}{intersection\_map\_msg\_mtx}}
+{\footnotesize\ttfamily std\+::mutex intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::intersection\+\_\+map\+\_\+msg\+\_\+mtx\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8h_source_l00026}{26}} of file \mbox{\hyperlink{map__msg__worker_8h_source}{map\+\_\+msg\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{map__msg__worker_8cpp_source_l00039}{update\+\_\+map\+\_\+msg()}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}\label{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!map\_msg\_group\_id@{map\_msg\_group\_id}}
+\index{map\_msg\_group\_id@{map\_msg\_group\_id}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{map\_msg\_group\_id}{map\_msg\_group\_id}}
+{\footnotesize\ttfamily std\+::string intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::map\+\_\+msg\+\_\+group\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8h_source_l00023}{23}} of file \mbox{\hyperlink{map__msg__worker_8h_source}{map\+\_\+msg\+\_\+worker.\+h}}.
+
+\mbox{\Hypertarget{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}\label{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}} 
+\index{intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}!map\_msg\_topic\_name@{map\_msg\_topic\_name}}
+\index{map\_msg\_topic\_name@{map\_msg\_topic\_name}!intersection\_model::map\_msg\_worker@{intersection\_model::map\_msg\_worker}}
+\doxysubsubsection{\texorpdfstring{map\_msg\_topic\_name}{map\_msg\_topic\_name}}
+{\footnotesize\ttfamily std\+::string intersection\+\_\+model\+::map\+\_\+msg\+\_\+worker\+::map\+\_\+msg\+\_\+topic\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{map__msg__worker_8h_source_l00024}{24}} of file \mbox{\hyperlink{map__msg__worker_8h_source}{map\+\_\+msg\+\_\+worker.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+intersection\+\_\+model/include/\mbox{\hyperlink{map__msg__worker_8h}{map\+\_\+msg\+\_\+worker.\+h}}\item 
+intersection\+\_\+model/src/\mbox{\hyperlink{map__msg__worker_8cpp}{map\+\_\+msg\+\_\+worker.\+cpp}}\end{DoxyCompactItemize}

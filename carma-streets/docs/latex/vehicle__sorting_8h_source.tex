@@ -1,0 +1,22 @@
+\hypertarget{vehicle__sorting_8h_source}{}\doxysection{vehicle\+\_\+sorting.\+h}
+\label{vehicle__sorting_8h_source}\index{streets\_utils/streets\_vehicle\_scheduler/include/vehicle\_sorting.h@{streets\_utils/streets\_vehicle\_scheduler/include/vehicle\_sorting.h}}
+\mbox{\hyperlink{vehicle__sorting_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{vehicle_8h}{vehicle.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{scheduling__exception_8h}{scheduling\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__schedule_8h}{intersection\_schedule.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{all__stop__intersection__schedule_8h}{all\_stop\_intersection\_schedule.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00009}00009 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacestreets__vehicle__scheduler}{streets\_vehicle\_scheduler}}\{}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00020}00020     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespacestreets__vehicle__scheduler_aa9f946d7c588b2697fd379fbed72f382}{departure\_position\_comparator}}(\textcolor{keyword}{const} \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\_vehicles::vehicle}} \&prev\_veh, \textcolor{keyword}{const} \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\_vehicles::vehicle}} \&next\_veh) ;}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00032}00032     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespacestreets__vehicle__scheduler_a62007ad8cbd331963378ff836d2ce767}{st\_comparator}}(\textcolor{keyword}{const} \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\_vehicles::vehicle}} \&prev\_veh, \textcolor{keyword}{const} \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\_vehicles::vehicle}} \&next\_veh) ;}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00042}00042     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespacestreets__vehicle__scheduler_ab550673e6a269f9f374ca3ca7ff6ba82}{distance\_comparator}}( \textcolor{keyword}{const} \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\_vehicles::vehicle}} \&prev\_veh,  \textcolor{keyword}{const} \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\_vehicles::vehicle}} \&next\_veh );}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00052}00052     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespacestreets__vehicle__scheduler_ab6598f6bcdf2edaadecc3f4b68debb66}{delay\_comparator}}( \textcolor{keyword}{const} std::shared\_ptr<all\_stop\_intersection\_schedule> \&prev\_sched, \textcolor{keyword}{const} std::shared\_ptr<all\_stop\_intersection\_schedule> \&next\_sched) ;}
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{vehicle__sorting_8h_source_l00054}00054 \}}
+
+\end{DoxyCode}

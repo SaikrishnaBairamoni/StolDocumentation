@@ -1,0 +1,6 @@
+<map id="streets_vehicle_scheduler::all_stop_vehicle_scheduler::calculate_cruising_time" name="streets_vehicle_scheduler::all_stop_vehicle_scheduler::calculate_cruising_time">
+<area shape="rect" id="node1" title="Method to calculate time interval necessary for cruising at a constant speed v_hat (speed limit) grea..." alt="" coords="701,13,885,69"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#ad5f0462b2d82168b7b71dcfd15eaa7f2" title="Method to use vehicle kinematic information to estimate earliest possible time stopping time for a ve..." alt="" coords="469,5,653,76"/>
+<area shape="rect" id="node3" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#acd0ec98c5efc93aadb38563e3b98d1bb" title="Schedule all Entering Vehicles (EVs). Method first organizes all EVs into lists based on their entry ..." alt="" coords="237,13,421,69"/>
+<area shape="rect" id="node4" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#a930961b3e285b2a2d08f4276ffa22658" title="Method to schedule vehicles. Given and empty intersection_schedule object and a map of vehicles and v..." alt="" coords="5,13,189,69"/>
+</map>

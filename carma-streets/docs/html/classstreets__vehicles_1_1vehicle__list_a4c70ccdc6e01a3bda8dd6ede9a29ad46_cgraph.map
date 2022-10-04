@@ -1,0 +1,6 @@
+<map id="streets_vehicles::vehicle_list::process_update" name="streets_vehicles::vehicle_list::process_update">
+<area shape="rect" id="node1" title="Process JSON status and intent update into vehicle update and modifies vehicle map with update." alt="" coords="5,71,169,112"/>
+<area shape="rect" id="node2" href="$classstreets__vehicles_1_1vehicle__list.html#a832fa570b8e2cf14e2844df1ef3b4f24" title="Adds a vehicle to the vehicle map." alt="" coords="217,5,381,47"/>
+<area shape="rect" id="node3" href="$classstreets__vehicles_1_1vehicle__list.html#a6bffe794f9109491bf6c5c9d2b673b5d" title="Removes all vehicles in map that have not been updated in timeout period." alt="" coords="217,71,381,112"/>
+<area shape="rect" id="node4" href="$classstreets__vehicles_1_1vehicle__list.html#a57317c5236b9aa537f63271a7af1dfda" title="Updates a vehicle in the vehicle map, with new vehicle information." alt="" coords="217,136,381,177"/>
+</map>

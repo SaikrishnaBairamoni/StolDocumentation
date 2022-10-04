@@ -1,0 +1,62 @@
+\hypertarget{namespacegen__helpers}{}\doxysection{gen\+\_\+helpers Namespace Reference}
+\label{namespacegen__helpers}\index{gen\_helpers@{gen\_helpers}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacegen__helpers_a5cbbd41b74a2b603576d99a9ba3bb07d}{write\+\_\+if\+\_\+updated}} (path, s)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacegen__helpers_a5cbbd41b74a2b603576d99a9ba3bb07d}\label{namespacegen__helpers_a5cbbd41b74a2b603576d99a9ba3bb07d}} 
+\index{gen\_helpers@{gen\_helpers}!write\_if\_updated@{write\_if\_updated}}
+\index{write\_if\_updated@{write\_if\_updated}!gen\_helpers@{gen\_helpers}}
+\doxysubsubsection{\texorpdfstring{write\_if\_updated()}{write\_if\_updated()}}
+{\footnotesize\ttfamily def gen\+\_\+helpers.\+write\+\_\+if\+\_\+updated (\begin{DoxyParamCaption}\item[{}]{path,  }\item[{}]{s }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes 's' as the contents of <out_dir>/<filename>, but only if it
+differs from the current contents of the file. This avoids unnecessary
+timestamp updates, which trigger documentation rebuilds.
+
+Returns True if the file was updated, False otherwise.
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{gen__helpers_8py_source_l00010}{10}} of file \mbox{\hyperlink{gen__helpers_8py_source}{gen\+\_\+helpers.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010 \textcolor{keyword}{def }\mbox{\hyperlink{namespacegen__helpers_a5cbbd41b74a2b603576d99a9ba3bb07d}{write\_if\_updated}}(path, s):}
+\DoxyCodeLine{00011     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00012 \textcolor{stringliteral}{    Writes 's'} \textcolor{keyword}{as} the contents of <out\_dir>/<filename>, but only \textcolor{keywordflow}{if} it}
+\DoxyCodeLine{00013     differs \textcolor{keyword}{from} the current contents of the file. This avoids unnecessary}
+\DoxyCodeLine{00014     timestamp updates, which trigger documentation rebuilds.}
+\DoxyCodeLine{00015 }
+\DoxyCodeLine{00016     Returns \textcolor{keyword}{True} \textcolor{keywordflow}{if} the file was updated, \textcolor{keyword}{False} otherwise.}
+\DoxyCodeLine{00017     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00018 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00019 \textcolor{stringliteral}{    }\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{00020         \textcolor{keyword}{with} open(path, \textcolor{stringliteral}{"{}r"{}}, encoding=\textcolor{stringliteral}{"{}utf-\/8"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{00021             \textcolor{keywordflow}{if} s == f.read():}
+\DoxyCodeLine{00022                 \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{00023     \textcolor{keywordflow}{except} OSError \textcolor{keyword}{as} e:}
+\DoxyCodeLine{00024         \textcolor{keywordflow}{if} e.errno != errno.ENOENT:}
+\DoxyCodeLine{00025             \textcolor{keywordflow}{raise}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     \textcolor{keyword}{with} open(path, \textcolor{stringliteral}{"{}w"{}}, encoding=\textcolor{stringliteral}{"{}utf-\/8"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{00028         f.write(s)}
+\DoxyCodeLine{00029     \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00809}{gen\+\_\+devicetree\+\_\+rest.\+write\+\_\+if\+\_\+updated()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacegen__helpers_a5cbbd41b74a2b603576d99a9ba3bb07d_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,46 @@
+\hypertarget{simulate__vehicle__status__intent__pub_8py_source}{}\doxysection{simulate\+\_\+vehicle\+\_\+status\+\_\+intent\+\_\+pub.\+py}
+\label{simulate__vehicle__status__intent__pub_8py_source}\index{scripts/simulate\_vehicle\_status\_intent\_pub.py@{scripts/simulate\_vehicle\_status\_intent\_pub.py}}
+\mbox{\hyperlink{simulate__vehicle__status__intent__pub_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00001}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub}{00001}} \textcolor{keyword}{from} os \textcolor{keyword}{import} read}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00002}00002 \textcolor{keyword}{from} kafka \textcolor{keyword}{import} KafkaProducer}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00003}00003 \textcolor{keyword}{import} time}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00004}00004 \textcolor{keyword}{from} time \textcolor{keyword}{import} sleep}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00005}00005 \textcolor{keyword}{import} json}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00007}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_afe95b15056aa03d636f9f6901c687686}{00007}} \textcolor{keyword}{def }\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_afe95b15056aa03d636f9f6901c687686}{read\_json}}(json\_name):}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00008}00008     data = \{\}}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00009}00009     \textcolor{keyword}{with} open(json\_name, \textcolor{stringliteral}{"{}r"{}}) \textcolor{keyword}{as} json\_file:}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00010}00010         data = json.load(json\_file)}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00011}00011     \textcolor{keywordflow}{return} data}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00013}00013 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00016}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_aa163f7e5217dbb7cb5d93e6354c4a3ae}{00016}}     producer = KafkaProducer(bootstrap\_servers=[\textcolor{stringliteral}{"{}127.0.0.1:9092"{}}],}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00017}00017                             value\_serializer=\textcolor{keyword}{lambda} x: json.dumps(x).encode(\textcolor{stringliteral}{'utf-\/8'}))}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00018}00018     }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00019}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_ad86f6a5071984b43c2fb616e6e486ff2}{00019}}     manifest\_json = \mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_afe95b15056aa03d636f9f6901c687686}{read\_json}}(\textcolor{stringliteral}{'manifest.json'})  }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00020}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_a716ef439efeddcb0b3ca1a988b297999}{00020}}     sleeping\_time = manifest\_json[\textcolor{stringliteral}{"{}sleeping\_time"{}}]}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00021}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_a0d5ee3835bd32fd5c9eb2d210021f74c}{00021}}     vehicle\_count = manifest\_json[\textcolor{stringliteral}{"{}vehicle\_count"{}}]}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00023}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_af014be48edcc596dcb10be0105537a1d}{00023}}     data = \mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_afe95b15056aa03d636f9f6901c687686}{read\_json}}(\textcolor{stringliteral}{'vehicle\_status\_intent\_test\_access.json'})}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00024}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_a09b619d152cf3de85e8e1a7d3cf419ed}{00024}}     indicator = 0}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00025}00025     \textcolor{keywordflow}{for} key, items \textcolor{keywordflow}{in} data.items():        }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00026}00026          \textcolor{keywordflow}{for} item \textcolor{keywordflow}{in} items:             }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00027}00027             item[\textcolor{stringliteral}{'metadata'}][\textcolor{stringliteral}{'timestamp'}] = int(time.time() * 1000)}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00028}00028             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, len(item[\textcolor{stringliteral}{'payload'}][\textcolor{stringliteral}{'est\_paths'}])):}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00029}00029                 item[\textcolor{stringliteral}{'payload'}][\textcolor{stringliteral}{'est\_paths'}][i][\textcolor{stringliteral}{'ts'}] = int(item[\textcolor{stringliteral}{'metadata'}][\textcolor{stringliteral}{'timestamp'}] + ((i + 1) * 200))}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00031}\mbox{\hyperlink{namespacesimulate__vehicle__status__intent__pub_a63e26d3c342be69862bd3a154d23f761}{00031}}             producer.send(\textcolor{stringliteral}{'vehicle\_status\_intent\_output'}, value=item)}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00032}00032             producer.flush()}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00033}00033             \textcolor{comment}{\#print(item)}}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00034}00034             print(\textcolor{stringliteral}{'Sent a vehicle status and intent.'})}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00035}00035             indicator += 1}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00036}00036             \textcolor{keywordflow}{if} (indicator == vehicle\_count):}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00037}00037                 indicator = 0}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00038}00038                 sleep(sleeping\_time) \textcolor{comment}{\# produce vehicle status and intent every one second}}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00039}00039             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{simulate__vehicle__status__intent__pub_8py_source_l00040}00040                 sleep(0.1)}
+
+\end{DoxyCode}

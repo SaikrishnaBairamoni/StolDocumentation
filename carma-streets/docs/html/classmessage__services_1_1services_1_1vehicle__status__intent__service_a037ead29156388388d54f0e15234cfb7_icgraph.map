@@ -1,0 +1,5 @@
+<map id="message_services::services::vehicle_status_intent_service::initialize" name="message_services::services::vehicle_status_intent_service::initialize">
+<area shape="rect" id="node1" title="read configuration file and determine the producer and consumer topics, bootstrap server" alt="" coords="297,5,484,61"/>
+<area shape="rect" id="node2" href="$message__services_8cpp.html#ab4838180becdec72c62eb8756c933d97" title=" " alt="" coords="104,13,249,54"/>
+<area shape="rect" id="node3" href="$message__services_8cpp.html#a217dbf8b442f20279ea00b898af96f52" title=" " alt="" coords="5,20,56,47"/>
+</map>

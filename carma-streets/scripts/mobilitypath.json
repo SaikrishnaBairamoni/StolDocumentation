@@ -1,0 +1,264 @@
+{
+    "metadata": {
+        "hostBSMId": "2405821416",
+        "hostStaticId": "DOT-45254",
+        "planId": "312a8bbb-b31e-4e2b-a940-940-ae7c64e761ec",
+        "targetStaticId": "UNSET",
+        "timestamp": "0000001638981850925"
+    },
+    "trajectory": {
+        "location": {
+            "ecefX": 110456509,
+            "ecefY": -484207708,
+            "ecefZ": 398843923,
+            "timestamp": "0000000000000000000"
+        },
+        "offsets": [
+            {
+                "offsetX": 31,
+                "offsetY": 8,
+                "offsetZ": 0
+            },
+            {
+                "offsetX": 31,
+                "offsetY": 8,
+                "offsetZ": 0
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -2,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -2,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 98,
+                "offsetY": -2,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 98,
+                "offsetY": -2,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -2,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 98,
+                "offsetY": -2,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -2,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -2,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -2,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 98,
+                "offsetY": -2,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -2,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -29
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 98,
+                "offsetY": -2,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": -1,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 98,
+                "offsetY": 0,
+                "offsetZ": -28
+            },
+            {
+                "offsetX": 97,
+                "offsetY": 0,
+                "offsetZ": -27
+            },
+            {
+                "offsetX": 98,
+                "offsetY": 0,
+                "offsetZ": -27
+            },
+            {
+                "offsetX": 98,
+                "offsetY": 0,
+                "offsetZ": -26
+            },
+            {
+                "offsetX": 98,
+                "offsetY": 1,
+                "offsetZ": -26
+            },
+            {
+                "offsetX": 98,
+                "offsetY": 2,
+                "offsetZ": -25
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 2,
+                "offsetZ": -24
+            },
+            {
+                "offsetX": 98,
+                "offsetY": 3,
+                "offsetZ": -23
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 4,
+                "offsetZ": -23
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 4,
+                "offsetZ": -22
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 5,
+                "offsetZ": -22
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 5,
+                "offsetZ": -21
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 6,
+                "offsetZ": -20
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 7,
+                "offsetZ": -19
+            },
+            {
+                "offsetX": 100,
+                "offsetY": 7,
+                "offsetZ": -19
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 8,
+                "offsetZ": -18
+            },
+            {
+                "offsetX": 100,
+                "offsetY": 8,
+                "offsetZ": -17
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 9,
+                "offsetZ": -17
+            },
+            {
+                "offsetX": 100,
+                "offsetY": 9,
+                "offsetZ": -16
+            },
+            {
+                "offsetX": 100,
+                "offsetY": 10,
+                "offsetZ": -16
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 10,
+                "offsetZ": -15
+            },
+            {
+                "offsetX": 100,
+                "offsetY": 10,
+                "offsetZ": -15
+            },
+            {
+                "offsetX": 100,
+                "offsetY": 11,
+                "offsetZ": -15
+            },
+            {
+                "offsetX": 100,
+                "offsetY": 10,
+                "offsetZ": -14
+            },
+            {
+                "offsetX": 99,
+                "offsetY": 11,
+                "offsetZ": -15
+            }
+        ]
+    }
+}

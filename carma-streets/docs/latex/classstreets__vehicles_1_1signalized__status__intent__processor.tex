@@ -1,0 +1,144 @@
+\hypertarget{classstreets__vehicles_1_1signalized__status__intent__processor}{}\doxysection{streets\+\_\+vehicles\+::signalized\+\_\+status\+\_\+intent\+\_\+processor Class Reference}
+\label{classstreets__vehicles_1_1signalized__status__intent__processor}\index{streets\_vehicles::signalized\_status\_intent\_processor@{streets\_vehicles::signalized\_status\_intent\_processor}}
+
+
+{\ttfamily \#include $<$signalized\+\_\+status\+\_\+intent\+\_\+processor.\+h$>$}
+
+
+
+Inheritance diagram for streets\+\_\+vehicles\+::signalized\+\_\+status\+\_\+intent\+\_\+processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classstreets__vehicles_1_1signalized__status__intent__processor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for streets\+\_\+vehicles\+::signalized\+\_\+status\+\_\+intent\+\_\+processor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicles_1_1signalized__status__intent__processor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstreets__vehicles_1_1signalized__status__intent__processor_a8803569788ab85961f1573f85c54292c}{signalized\+\_\+status\+\_\+intent\+\_\+processor}} ()
+\item 
+\mbox{\hyperlink{classstreets__vehicles_1_1signalized__status__intent__processor_a120475f30db1764ae7f787160b10ae80}{$\sim$signalized\+\_\+status\+\_\+intent\+\_\+processor}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstreets__vehicles_1_1signalized__status__intent__processor_a50ef00017c88c5b111bab425b28de778}{update\+\_\+vehicle\+\_\+state}} (\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}}) const
+\begin{DoxyCompactList}\small\item\em Updates vehicle state based on previous state and stopping condition. Override the all\+\_\+stop\+\_\+processor vehicle update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{signalized__status__intent__processor_8h_source_l00011}{11}} of file \mbox{\hyperlink{signalized__status__intent__processor_8h_source}{signalized\+\_\+status\+\_\+intent\+\_\+processor.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstreets__vehicles_1_1signalized__status__intent__processor_a8803569788ab85961f1573f85c54292c}\label{classstreets__vehicles_1_1signalized__status__intent__processor_a8803569788ab85961f1573f85c54292c}} 
+\index{streets\_vehicles::signalized\_status\_intent\_processor@{streets\_vehicles::signalized\_status\_intent\_processor}!signalized\_status\_intent\_processor@{signalized\_status\_intent\_processor}}
+\index{signalized\_status\_intent\_processor@{signalized\_status\_intent\_processor}!streets\_vehicles::signalized\_status\_intent\_processor@{streets\_vehicles::signalized\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{signalized\_status\_intent\_processor()}{signalized\_status\_intent\_processor()}}
+{\footnotesize\ttfamily streets\+\_\+vehicles\+::signalized\+\_\+status\+\_\+intent\+\_\+processor\+::signalized\+\_\+status\+\_\+intent\+\_\+processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{signalized__status__intent__processor_8h_source_l00014}{14}} of file \mbox{\hyperlink{signalized__status__intent__processor_8h_source}{signalized\+\_\+status\+\_\+intent\+\_\+processor.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014                                              : \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_af0bc8ce9258293c04a798cff18eee398}{all\_stop\_status\_intent\_processor}}()}
+\DoxyCodeLine{00015         \{}
+\DoxyCodeLine{00016             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Signalized status and intent processor initialization."{}});}
+\DoxyCodeLine{00017         \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classstreets__vehicles_1_1signalized__status__intent__processor_a120475f30db1764ae7f787160b10ae80}\label{classstreets__vehicles_1_1signalized__status__intent__processor_a120475f30db1764ae7f787160b10ae80}} 
+\index{streets\_vehicles::signalized\_status\_intent\_processor@{streets\_vehicles::signalized\_status\_intent\_processor}!````~signalized\_status\_intent\_processor@{$\sim$signalized\_status\_intent\_processor}}
+\index{````~signalized\_status\_intent\_processor@{$\sim$signalized\_status\_intent\_processor}!streets\_vehicles::signalized\_status\_intent\_processor@{streets\_vehicles::signalized\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{$\sim$signalized\_status\_intent\_processor()}{~signalized\_status\_intent\_processor()}}
+{\footnotesize\ttfamily streets\+\_\+vehicles\+::signalized\+\_\+status\+\_\+intent\+\_\+processor\+::$\sim$signalized\+\_\+status\+\_\+intent\+\_\+processor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstreets__vehicles_1_1signalized__status__intent__processor_a50ef00017c88c5b111bab425b28de778}\label{classstreets__vehicles_1_1signalized__status__intent__processor_a50ef00017c88c5b111bab425b28de778}} 
+\index{streets\_vehicles::signalized\_status\_intent\_processor@{streets\_vehicles::signalized\_status\_intent\_processor}!update\_vehicle\_state@{update\_vehicle\_state}}
+\index{update\_vehicle\_state@{update\_vehicle\_state}!streets\_vehicles::signalized\_status\_intent\_processor@{streets\_vehicles::signalized\_status\_intent\_processor}}
+\doxysubsubsection{\texorpdfstring{update\_vehicle\_state()}{update\_vehicle\_state()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicles\+::signalized\+\_\+status\+\_\+intent\+\_\+processor\+::update\+\_\+vehicle\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{vehicle}} \&}]{vehicle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Updates vehicle state based on previous state and stopping condition. Override the all\+\_\+stop\+\_\+processor vehicle update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicle} & reference to update \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classstreets__vehicles_1_1all__stop__status__intent__processor_ae4a3f6bc8f4d1066c476a6b8d5e8e2f9}{streets\+\_\+vehicles\+::all\+\_\+stop\+\_\+status\+\_\+intent\+\_\+processor}}.
+
+
+
+Definition at line \mbox{\hyperlink{signalized__status__intent__processor_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{signalized__status__intent__processor_8cpp_source}{signalized\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007     \{}
+\DoxyCodeLine{00008         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Update vehilce status with signalized status and intent processor."{}});}
+\DoxyCodeLine{00009         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca9a116c50d133c8648404081885194300}{vehicle\_state::ND}})}
+\DoxyCodeLine{00010         \{}
+\DoxyCodeLine{00011             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id == \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id)}
+\DoxyCodeLine{00012             \{}
+\DoxyCodeLine{00013                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state = \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{vehicle\_state::EV}};}
+\DoxyCodeLine{00014                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle \{0\} state is updated from ND to EV."{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);}
+\DoxyCodeLine{00015             \}}
+\DoxyCodeLine{00016             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00017             \{}
+\DoxyCodeLine{00018                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Vehicle with ND (Not Defined) STATE is NOT in entry lane \{0\} != \{1\}"{}},}
+\DoxyCodeLine{00019                                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id);}
+\DoxyCodeLine{00020             \}}
+\DoxyCodeLine{00021         \}}
+\DoxyCodeLine{00022         \textcolor{comment}{// If vehicle is currently entering vehicle, but not located in entry lane}}
+\DoxyCodeLine{00023         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{vehicle\_state::EV}})}
+\DoxyCodeLine{00024         \{}
+\DoxyCodeLine{00025             \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id != \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_entry\_lane\_id)}
+\DoxyCodeLine{00026             \{}
+\DoxyCodeLine{00027                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state = \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{vehicle\_state::DV}};}
+\DoxyCodeLine{00028                 \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_actual\_et = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time;}
+\DoxyCodeLine{00029                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle \{0\} state is updated from EV to DV."{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);                }
+\DoxyCodeLine{00030             \}}
+\DoxyCodeLine{00031         \}}
+\DoxyCodeLine{00032         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{vehicle\_state::DV}} \&\& \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_lane\_id == \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_exit\_lane\_id)}
+\DoxyCodeLine{00033         \{}
+\DoxyCodeLine{00034             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_state = \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405acaa7bdee32cb21f0abbf9f878cb06cfe16}{vehicle\_state::LV}};}
+\DoxyCodeLine{00035             \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_actual\_dt = \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_cur\_time;}
+\DoxyCodeLine{00036             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Vehicle \{0\} state is updated from DV to LV."{}}, \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}}.\_id);}
+\DoxyCodeLine{00037         \}}
+\DoxyCodeLine{00038     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00069}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+actual\+\_\+dt}}, \mbox{\hyperlink{vehicle_8h_source_l00067}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+actual\+\_\+et}}, \mbox{\hyperlink{vehicle_8h_source_l00049}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00079}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+state}}, \mbox{\hyperlink{vehicle_8h_source_l00071}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+time}}, \mbox{\hyperlink{vehicle_8h_source_l00051}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+entry\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00053}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+exit\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\+\_\+vehicles\+::\+DV}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\+\_\+vehicles\+::\+EV}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405acaa7bdee32cb21f0abbf9f878cb06cfe16}{streets\+\_\+vehicles\+::\+LV}}, and \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca9a116c50d133c8648404081885194300}{streets\+\_\+vehicles\+::\+ND}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+vehicle\+\_\+list/include/\mbox{\hyperlink{signalized__status__intent__processor_8h}{signalized\+\_\+status\+\_\+intent\+\_\+processor.\+h}}\item 
+streets\+\_\+utils/streets\+\_\+vehicle\+\_\+list/src/message\+\_\+processors/\mbox{\hyperlink{signalized__status__intent__processor_8cpp}{signalized\+\_\+status\+\_\+intent\+\_\+processor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{streets__configuration_8h_source}{}\doxysection{streets\+\_\+configuration.\+h}
+\label{streets__configuration_8h_source}\index{streets\_utils/streets\_service\_base/include/streets\_configuration.h@{streets\_utils/streets\_service\_base/include/streets\_configuration.h}}
+\mbox{\hyperlink{streets__configuration_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00001}\mbox{\hyperlink{classstreets__service_1_1streets__configuration_abd4f1d45bc4408d5ed68ded4e27cb8ed}{00001}} \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__singleton_8h}{streets\_singleton.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__configuration__exception_8h}{streets\_configuration\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{configuration_8h}{configuration.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <spdlog/async.h>} \textcolor{comment}{//support for async logging.}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <spdlog/sinks/daily\_file\_sink.h>} \textcolor{comment}{// support for dailty file sink}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <spdlog/sinks/stdout\_color\_sinks.h>} \textcolor{comment}{// or "{}../stdout\_sinks.h"{} if no colors needed}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <rapidjson/istreamwrapper.h>}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <mutex>}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00016}00016 \textcolor{preprocessor}{\#include <boost/filesystem/operations.hpp>}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00020}00020 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacestreets__service}{streets\_service}} \{}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00027}\mbox{\hyperlink{classstreets__service_1_1streets__configuration}{00027}}     \textcolor{keyword}{class }\mbox{\hyperlink{classstreets__service_1_1streets__configuration}{streets\_configuration}} : \textcolor{keyword}{public} \mbox{\hyperlink{classstreets__service_1_1streets__singleton}{streets\_singleton}}<streets\_configuration> \{}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00028}00028         \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classstreets__service_1_1streets__singleton}{streets\_singleton}}<\mbox{\hyperlink{classstreets__service_1_1streets__configuration}{streets\_configuration}}>;}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00030}00030         \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00031}00031             \textcolor{comment}{/* String filepath to manifest.json configuration file */}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00032}\mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab1a84cf8b3857cbd5b56ce5605d7f94b}{00032}}             std::string \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab1a84cf8b3857cbd5b56ce5605d7f94b}{filepath}};}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00033}00033             \textcolor{comment}{/* mutex lock for streets\_configuration*/}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00034}\mbox{\hyperlink{classstreets__service_1_1streets__configuration_aa31c96e5213b3acf6d524d153ad2da96}{00034}}             std::mutex \mbox{\hyperlink{classstreets__service_1_1streets__configuration_aa31c96e5213b3acf6d524d153ad2da96}{config\_lock}};}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00035}00035             \textcolor{comment}{/* Map of configuration names and values*/}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00036}\mbox{\hyperlink{classstreets__service_1_1streets__configuration_a6ceb469d069f142cf0248d26cbc9d923}{00036}}             std::map< std::string, configuration > \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a6ceb469d069f142cf0248d26cbc9d923}{configuration\_map}};}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00037}00037             \textcolor{comment}{/* Time stamp for when the configuration file was last modified to only update on modifications*/}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00038}\mbox{\hyperlink{classstreets__service_1_1streets__configuration_acf2ca83b379de046704d714586086a3f}{00038}}             std::time\_t \mbox{\hyperlink{classstreets__service_1_1streets__configuration_acf2ca83b379de046704d714586086a3f}{last\_modified}};}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00044}00044             \textcolor{keyword}{explicit} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ad7a494e7147c8bbd2872e663340037b8}{streets\_configuration}}(\textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab1a84cf8b3857cbd5b56ce5605d7f94b}{filepath}} = \textcolor{stringliteral}{"{}../manifest.json"{}});}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00047}00047         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00054}00054             \textcolor{keyword}{static} std::string \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{get\_string\_config}}( \textcolor{keyword}{const} std::string \&config\_param\_name);}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00061}00061             \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{get\_int\_config}}( \textcolor{keyword}{const} std::string \&config\_param\_name);}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00068}00068             \textcolor{keyword}{static} \textcolor{keywordtype}{double} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ae1ce5cdd4b4d28cc8e4034c429aabb66}{get\_double\_config}}( \textcolor{keyword}{const} std::string \&config\_param\_name);}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00075}00075             \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a48f38b0b6ecb3043cc051b624f12824b}{get\_boolean\_config}}( \textcolor{keyword}{const} std::string \&config\_param\_name);}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00079}00079             \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a8f1dd2ae49aae6b730a041889177c8e6}{initialize\_logger}}();}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00080}00080         }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00081}00081         \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00089}00089             rapidjson::Document \mbox{\hyperlink{classstreets__service_1_1streets__configuration_acf5b0a74be5323a4efe6e623f230ef85}{parse\_configuration\_file}}();}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00094}00094             \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_add8020786e63d730992680e57bde66b3}{update\_configuration}}(\textcolor{keyword}{const} rapidjson::Document \&doc);}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00099}00099             \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ac3be4830490f02d88d5fa5c23c8aa5e1}{update\_log\_level}}( \textcolor{keyword}{const} rapidjson::Document \&doc );}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00106}00106             \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_abf6b664ead9e4d6f9f77c2ad26cec13b}{parse\_configurations\_array}}( \textcolor{keyword}{const} rapidjson::GenericArray<true,rapidjson::Value> \&arr);}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00114}00114             \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a3a54dfe5fa3466b8568229a458d344fc}{configure\_logger}}(\textcolor{keyword}{const} rapidjson::Document \&doc) \textcolor{keyword}{const}; }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00121}00121             \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a73e05345064161cb34c629881622c068}{create\_default\_logger}}( \textcolor{keyword}{const} std::string \&service\_name) \textcolor{keyword}{const}; }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00126}00126             \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_af65edea791c4df09b00836dd0dbf164d}{set\_loglevel}}( \textcolor{keyword}{const} std::string \&loglevel) \textcolor{keyword}{const}; }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00132}00132             \textcolor{keywordtype}{void} \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a595d66c854ec6d7bb85d975721b5cde3}{check\_update}}();}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00134}00134             \textcolor{comment}{// Hide get\_singleton method. Use static methods instead.}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00135}00135             \textcolor{keyword}{using }\mbox{\hyperlink{classstreets__service_1_1streets__singleton_a92ea5469cbab9198efb4696b7e5598eb}{streets\_singleton::get\_singleton}};}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00136}00136 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00137}00137     \};}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00138}00138 \}}
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{streets__configuration_8h_source_l00141}00141 }
+
+\end{DoxyCode}

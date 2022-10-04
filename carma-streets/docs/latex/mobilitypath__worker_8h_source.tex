@@ -1,0 +1,48 @@
+\hypertarget{mobilitypath__worker_8h_source}{}\doxysection{mobilitypath\+\_\+worker.\+h}
+\label{mobilitypath__worker_8h_source}\index{message\_services/include/mobilitypath\_worker.h@{message\_services/include/mobilitypath\_worker.h}}
+\mbox{\hyperlink{mobilitypath__worker_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef MOBILITYPATH\_WORKER\_H}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00002}00002 \textcolor{preprocessor}{\#define MOBILITYPATH\_WORKER\_H}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kafka__client_8h}{kafka\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mobilitypath_8h}{mobilitypath.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{base__worker_8h}{base\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00010}00010 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacemessage__services}{message\_services}}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00012}00012     \textcolor{keyword}{namespace }workers}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00013}00013     \{}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00014}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker}{00014}}         \textcolor{keyword}{class }\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker}{mobilitypath\_worker}} : \textcolor{keyword}{public} \mbox{\hyperlink{classmessage__services_1_1workers_1_1base__worker}{base\_worker}}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00016}00016         \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00017}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_ae8863aef62d9325ec552bd681e053908}{00017}}             std::deque<message\_services::models::mobilitypath> \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_ae8863aef62d9325ec552bd681e053908}{mobilitypath\_v}};}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00018}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_ab5e6d0ce94c5195ceffd194c0e5d0a5c}{00018}}             std::map<std::string ,message\_services::models::mobilitypath> \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_ab5e6d0ce94c5195ceffd194c0e5d0a5c}{mobilitypath\_m}};}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00020}00020         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00021}00021             \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a5bfa32c6925ca529926d59494985c93a}{mobilitypath\_worker}}();}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00022}00022             \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a569eb29be6e00a8fe755a842fe0a0ce9}{\string~mobilitypath\_worker}}();}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00024}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a241f051dde9daefe9b62ad3136d8f73c}{00024}}             std::mutex \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a241f051dde9daefe9b62ad3136d8f73c}{worker\_mtx}};}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00025}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a7b63b4c4b109938549b5a40ce918b5fe}{00025}}             uint16\_t \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a7b63b4c4b109938549b5a40ce918b5fe}{MOBILITY\_OPERATION\_PATH\_MAX\_DURATION}} = 1000;}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00030}00030             std::deque<models::mobilitypath> \&\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_afb0f176823c4c9f243e710410119968f}{get\_curr\_list}}();}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00031}00031             std::map<std::string ,message\_services::models::mobilitypath> \&\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a7248055cafa4f1b218933b1e8d0aa944}{get\_curr\_map}}();}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00033}00033 \textcolor{comment}{            /***}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00034}00034 \textcolor{comment}{            * @brief process incoming mobilitypath json string and create mobilitypath object.}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00035}00035 \textcolor{comment}{              Appending the mobilitypath object to the mobilitypath\_list}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00036}00036 \textcolor{comment}{              @param std::string json\_string}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00037}00037 \textcolor{comment}{            */}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00038}00038             \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_af0507254a31f916e0944e5801f29b38c}{process\_incoming\_msg}}(\textcolor{keyword}{const} std::string json\_str);}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00046}00046             \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilitypath__worker_a65f91ac4048380768a197b71a70abec1}{pop\_cur\_element\_from\_list}}(\textcolor{keywordtype}{long} element\_position);}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00047}00047         \};}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00049}00049 \}}
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{mobilitypath__worker_8h_source_l00051}00051 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

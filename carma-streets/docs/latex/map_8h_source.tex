@@ -1,0 +1,109 @@
+\hypertarget{map_8h_source}{}\doxysection{map.\+h}
+\label{map_8h_source}\index{intersection\_model/include/map.h@{intersection\_model/include/map.h}}
+\mbox{\hyperlink{map_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00008}00008 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceintersection__model}{intersection\_model}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00010}00010     \textcolor{comment}{/* MAP Enumerations */}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00011}\mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4}{00011}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4}{map\_type}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00013}00013         \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}} = 1,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00014}00014         \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a63f15d788c265b303ddfebff7b8503d3}{roadway}} = 2}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00015}00015     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00016}\mbox{\hyperlink{namespaceintersection__model_a46cdfc6ed74c650a70c2f6cd1ade7a5a}{00016}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{namespaceintersection__model_a46cdfc6ed74c650a70c2f6cd1ade7a5a}{map\_message\_attributes}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00017}00017     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00018}00018         \mbox{\hyperlink{namespaceintersection__model_a46cdfc6ed74c650a70c2f6cd1ade7a5aa8c6ac9887f33b5f79188a4eae7fb2803}{elevation}} = 1,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00019}00019         \mbox{\hyperlink{namespaceintersection__model_a46cdfc6ed74c650a70c2f6cd1ade7a5aa5f7e3405d1d04dae7c8affc36714d0fe}{decimeter}} = 2,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00020}00020         \mbox{\hyperlink{namespaceintersection__model_a46cdfc6ed74c650a70c2f6cd1ade7a5aa65a383f3960a0cb2b8b0ace54817d575}{geometric}} = 4,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00021}00021         \mbox{\hyperlink{namespaceintersection__model_a46cdfc6ed74c650a70c2f6cd1ade7a5aa8e204e51a4d94ac694300a67a5793078}{navigational}} = 8}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00022}00022     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00023}\mbox{\hyperlink{namespaceintersection__model_a636d7a45dcacadc8139f3e24e3d6393d}{00023}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{namespaceintersection__model_a636d7a45dcacadc8139f3e24e3d6393d}{map\_node\_attributes}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00024}00024     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00025}00025         \mbox{\hyperlink{namespaceintersection__model_a636d7a45dcacadc8139f3e24e3d6393daeaae26a6fb20ed3ef54fb23bfa0b1fcc}{width}} = 1,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00026}00026         \mbox{\hyperlink{namespaceintersection__model_a636d7a45dcacadc8139f3e24e3d6393daf59dcd306ec32930f1e78a1d82280b48}{packed}} = 2}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00027}00027     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00028}\mbox{\hyperlink{namespaceintersection__model_ae4b706d1cdee7b78ec5df5cf141a3e1a}{00028}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{namespaceintersection__model_ae4b706d1cdee7b78ec5df5cf141a3e1a}{map\_group\_direction}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00029}00029     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00030}00030         \mbox{\hyperlink{namespaceintersection__model_ae4b706d1cdee7b78ec5df5cf141a3e1aaf36acfa3674037fc4f43dab0f06c14b0}{approach}} = 1,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00031}00031         \mbox{\hyperlink{namespaceintersection__model_ae4b706d1cdee7b78ec5df5cf141a3e1aa9928c88a1235388e8d82bcc09db13c7c}{egress}} = 2}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00032}00032     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00033}\mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8}{00033}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8}{map\_lane\_type}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00034}00034     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00035}00035         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a76e813d6a0a40548b91acc11557bd2}{vehicle}} = 1,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00036}00036         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a5a317d3dd3f7a2f675975a6d0c11c629}{computed}} = 2,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00037}00037         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a9d12c2a0e16c88b9a8d8e8f9f05350bc}{pedestrian}} = 3,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00038}00038         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a0bd6506986ec42e732ffb866d33bb14e}{special}} = 4,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00039}00039         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a0e6f2aa57946950687930fd3e48c11ff}{crosswalk}} = 10,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00040}00040         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8adde2c7ad63ad86d6a18de781205d194f}{bike}} = 11,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00041}00041         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8ab788ae8f05bb1f7184564c71a5963d95}{sidewalk}} = 12,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00042}00042         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8afa9c8ab925b4a1cd4c75b1886fac8f61}{barrier}} = 13,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00043}00043         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a409b522f10afa7c261f950129ce23ba8}{striping}} = 14,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00044}00044         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a8caf877ecc26ccba4de1770e20a71605}{trackedVehicle}} = 15,}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00045}00045         \mbox{\hyperlink{namespaceintersection__model_aa7ffa99ba647ab571c0bbeb2591c40b8a3ac156eead4ae6b40e9c498d532b4448}{parking}} = 16}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00046}00046     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00048}00048     \textcolor{comment}{/* MAP Structures */}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00049}\mbox{\hyperlink{structintersection__model_1_1map__referencelane}{00049}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1map__referencelane}{map\_referencelane}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00050}00050     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00051}\mbox{\hyperlink{structintersection__model_1_1map__referencelane_aee9ecd00dae0fdbf775bc4e0a4dd5a5a}{00051}}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{structintersection__model_1_1map__referencelane_aee9ecd00dae0fdbf775bc4e0a4dd5a5a}{lanenumber}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00052}\mbox{\hyperlink{structintersection__model_1_1map__referencelane_a3d0704ace3c92e3ecca1531d3cae8a3c}{00052}}         \textcolor{keywordtype}{signed} \textcolor{keywordtype}{short} \mbox{\hyperlink{structintersection__model_1_1map__referencelane_a3d0704ace3c92e3ecca1531d3cae8a3c}{lateraloffset}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00053}\mbox{\hyperlink{structintersection__model_1_1map__referencelane_aedea9584fe1e0ab86a533d752b8cc88a}{00053}}         \textcolor{keywordtype}{signed} \textcolor{keywordtype}{short} \mbox{\hyperlink{structintersection__model_1_1map__referencelane_aedea9584fe1e0ab86a533d752b8cc88a}{xoffset}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00054}\mbox{\hyperlink{structintersection__model_1_1map__referencelane_a1db35d4a971c6b069be0952ec0311bd2}{00054}}         \textcolor{keywordtype}{signed} \textcolor{keywordtype}{short} \mbox{\hyperlink{structintersection__model_1_1map__referencelane_a1db35d4a971c6b069be0952ec0311bd2}{yoffset}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00055}00055     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00056}\mbox{\hyperlink{structintersection__model_1_1map__connection}{00056}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1map__connection}{map\_connection}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00057}00057     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00058}\mbox{\hyperlink{structintersection__model_1_1map__connection_a96f6647bfcb41c60294d43988b9a230e}{00058}}         \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__connection_a96f6647bfcb41c60294d43988b9a230e}{lane\_id}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00059}\mbox{\hyperlink{structintersection__model_1_1map__connection_a421c6fbe4be8a62bb2c3404fde2677e7}{00059}}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{structintersection__model_1_1map__connection_a421c6fbe4be8a62bb2c3404fde2677e7}{connectionID}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00060}\mbox{\hyperlink{structintersection__model_1_1map__connection_a3e580bd9ee96a88173d32f08e789cb32}{00060}}         int32\_t \mbox{\hyperlink{structintersection__model_1_1map__connection_a3e580bd9ee96a88173d32f08e789cb32}{signalGroup}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00061}\mbox{\hyperlink{structintersection__model_1_1map__connection_aac47e3f8f1f8794d9ccf1667921a19e5}{00061}}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} \mbox{\hyperlink{structintersection__model_1_1map__connection_aac47e3f8f1f8794d9ccf1667921a19e5}{maneuver}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00062}00062     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00063}\mbox{\hyperlink{structintersection__model_1_1map__node}{00063}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1map__node}{map\_node}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00064}00064     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00065}\mbox{\hyperlink{structintersection__model_1_1map__node_a499d453609507e45ef7e06adb25e95bc}{00065}}         \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__node_a499d453609507e45ef7e06adb25e95bc}{x}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00066}\mbox{\hyperlink{structintersection__model_1_1map__node_a8d85d7106032724efd2c0cc980c928af}{00066}}         \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__node_a8d85d7106032724efd2c0cc980c928af}{y}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00067}00067     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00068}\mbox{\hyperlink{structintersection__model_1_1map__lane}{00068}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1map__lane}{map\_lane}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00069}00069     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00070}\mbox{\hyperlink{structintersection__model_1_1map__lane_a388905939c55bdd78886367554a05e2d}{00070}}         \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__lane_a388905939c55bdd78886367554a05e2d}{lane\_id}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00071}\mbox{\hyperlink{structintersection__model_1_1map__lane_ac8bafdaaff6a8f5eff3fdd39429e7748}{00071}}         std::string \mbox{\hyperlink{structintersection__model_1_1map__lane_ac8bafdaaff6a8f5eff3fdd39429e7748}{laneName}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00072}\mbox{\hyperlink{structintersection__model_1_1map__lane_af8da596d44afd3defbdc37db17b56885}{00072}}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{structintersection__model_1_1map__lane_af8da596d44afd3defbdc37db17b56885}{type}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00073}\mbox{\hyperlink{structintersection__model_1_1map__lane_ab8c449edd3189b3bea030400f2f75c89}{00073}}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} \mbox{\hyperlink{structintersection__model_1_1map__lane_ab8c449edd3189b3bea030400f2f75c89}{attributes}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00074}\mbox{\hyperlink{structintersection__model_1_1map__lane_af31ade688777e6378c8e28f9464ec385}{00074}}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} \mbox{\hyperlink{structintersection__model_1_1map__lane_af31ade688777e6378c8e28f9464ec385}{width}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00075}\mbox{\hyperlink{structintersection__model_1_1map__lane_a1550fb18d5de5553a0ac7645c88c668c}{00075}}         std::vector<map\_node> \mbox{\hyperlink{structintersection__model_1_1map__lane_a1550fb18d5de5553a0ac7645c88c668c}{nodes}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00076}\mbox{\hyperlink{structintersection__model_1_1map__lane_a03a080bbe4e6c43c25d2467282b5728b}{00076}}         \mbox{\hyperlink{structintersection__model_1_1map__referencelane}{map\_referencelane}} \mbox{\hyperlink{structintersection__model_1_1map__lane_a03a080bbe4e6c43c25d2467282b5728b}{referencelane}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00077}\mbox{\hyperlink{structintersection__model_1_1map__lane_a42d905ba7a90846fd4edc5beb54bbd61}{00077}}         std::vector<map\_connection> \mbox{\hyperlink{structintersection__model_1_1map__lane_a42d905ba7a90846fd4edc5beb54bbd61}{connection}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00078}00078     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00079}\mbox{\hyperlink{structintersection__model_1_1map__group}{00079}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1map__group}{map\_group}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00080}00080     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00081}\mbox{\hyperlink{structintersection__model_1_1map__group_ab9f2eb961753525d5473fcb28ebd4e23}{00081}}         \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__group_ab9f2eb961753525d5473fcb28ebd4e23}{width}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00082}\mbox{\hyperlink{structintersection__model_1_1map__group_a6220b488cc884795ec1dd0a01d7208e1}{00082}}         std::vector<map\_lane> \mbox{\hyperlink{structintersection__model_1_1map__group_a6220b488cc884795ec1dd0a01d7208e1}{lanes}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00083}00083     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00084}\mbox{\hyperlink{structintersection__model_1_1map__referencepoint}{00084}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1map__referencepoint}{map\_referencepoint}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00085}00085     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00086}\mbox{\hyperlink{structintersection__model_1_1map__referencepoint_ab8a02f1563f5fa2f4661f0010b4d56cb}{00086}}         \textcolor{keywordtype}{signed} \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__referencepoint_ab8a02f1563f5fa2f4661f0010b4d56cb}{latitude}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00087}\mbox{\hyperlink{structintersection__model_1_1map__referencepoint_a69698a85463a50f3775e5ac652258e9d}{00087}}         \textcolor{keywordtype}{signed} \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__referencepoint_a69698a85463a50f3775e5ac652258e9d}{longitude}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00088}\mbox{\hyperlink{structintersection__model_1_1map__referencepoint_aa889188b7f990edcf3831b3f45595c65}{00088}}         \textcolor{keywordtype}{signed} \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1map__referencepoint_aa889188b7f990edcf3831b3f45595c65}{elevation}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00089}00089     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00090}\mbox{\hyperlink{structintersection__model_1_1map__geometry}{00090}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1map__geometry}{map\_geometry}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00091}00091     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00092}\mbox{\hyperlink{structintersection__model_1_1map__geometry_a841cbc84684057f49f73bd5d7058d644}{00092}}         \mbox{\hyperlink{structintersection__model_1_1map__referencepoint}{map\_referencepoint}} \mbox{\hyperlink{structintersection__model_1_1map__geometry_a841cbc84684057f49f73bd5d7058d644}{refpoint}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00093}\mbox{\hyperlink{structintersection__model_1_1map__geometry_a9ef30bd06f804f96ad2b6a5d1c5edd62}{00093}}         \mbox{\hyperlink{structintersection__model_1_1map__group}{map\_group}} \mbox{\hyperlink{structintersection__model_1_1map__geometry_a9ef30bd06f804f96ad2b6a5d1c5edd62}{approach}}; \textcolor{comment}{// ingress}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00094}\mbox{\hyperlink{structintersection__model_1_1map__geometry_af125848f451e5e79823012c5bf0d2d76}{00094}}         \mbox{\hyperlink{structintersection__model_1_1map__group}{map\_group}} \mbox{\hyperlink{structintersection__model_1_1map__geometry_af125848f451e5e79823012c5bf0d2d76}{egress}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00095}00095     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00101}\mbox{\hyperlink{structintersection__model_1_1intersection__map}{00101}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structintersection__model_1_1intersection__map}{intersection\_map}}}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00102}00102     \{}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00103}\mbox{\hyperlink{structintersection__model_1_1intersection__map_ac4f345d30ff1150d5f70f713d28411d6}{00103}}         \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4}{map\_type}} \mbox{\hyperlink{structintersection__model_1_1intersection__map_ac4f345d30ff1150d5f70f713d28411d6}{mapType}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00104}\mbox{\hyperlink{structintersection__model_1_1intersection__map_aa431297df6352a663f734f4b91cd8abc}{00104}}         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{structintersection__model_1_1intersection__map_aa431297df6352a663f734f4b91cd8abc}{intersectionid}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00105}\mbox{\hyperlink{structintersection__model_1_1intersection__map_a8fe7ecdb88b9c59558207c14dc5e3dbc}{00105}}         std::vector<map\_geometry> \mbox{\hyperlink{structintersection__model_1_1intersection__map_a8fe7ecdb88b9c59558207c14dc5e3dbc}{geometries}};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00106}00106     \};}
+\DoxyCodeLine{\Hypertarget{map_8h_source_l00107}00107 \}}
+
+\end{DoxyCode}

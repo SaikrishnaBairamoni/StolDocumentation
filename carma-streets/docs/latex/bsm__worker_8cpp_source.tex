@@ -1,0 +1,66 @@
+\hypertarget{bsm__worker_8cpp_source}{}\doxysection{bsm\+\_\+worker.\+cpp}
+\label{bsm__worker_8cpp_source}\index{message\_services/src/workers/bsm\_worker.cpp@{message\_services/src/workers/bsm\_worker.cpp}}
+\mbox{\hyperlink{bsm__worker_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bsm__worker_8h}{bsm\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00003}00003 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacemessage__services}{message\_services}}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00005}00005     \textcolor{keyword}{namespace }workers}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00006}00006     \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00007}\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a23a9cf2712507612b1838a8e7e913695}{00007}}         \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a23a9cf2712507612b1838a8e7e913695}{bsm\_worker::bsm\_worker}}()}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00008}00008         \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00009}00009         \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00011}\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_afac4bfa86699f026bf0032473cee9bd6}{00011}}         \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_afac4bfa86699f026bf0032473cee9bd6}{bsm\_worker::\string~bsm\_worker}}()}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00012}00012         \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00013}00013             this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.clear();}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00014}00014         \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00016}\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a619c3919dfcca4fb22438aacb0d9b130}{00016}}         std::deque<models::bsm> \&\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a619c3919dfcca4fb22438aacb0d9b130}{bsm\_worker::get\_curr\_list}}()}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00017}00017         \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00018}00018             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}};}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00019}00019         \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00021}\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_af6b660b02ee9e7aa3c1d2f710bdb4b62}{00021}}         std::map<std::string, message\_services::models::bsm> \&\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_af6b660b02ee9e7aa3c1d2f710bdb4b62}{bsm\_worker::get\_curr\_map}}()}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00022}00022         \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00023}00023             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}};}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00024}00024         \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00025}\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad8f5adaf397d5f270ae387c5aa0f83ce}{00025}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad8f5adaf397d5f270ae387c5aa0f83ce}{bsm\_worker::process\_incoming\_msg}}(\textcolor{keyword}{const} std::string json\_str)}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00026}00026         \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00027}00027             \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{message\_services::models::bsm}} bsm\_obj;}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00028}00028             \textcolor{keywordflow}{if} (bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1baseMessage_a3f9c04935a000829b2ef25300d2fb57b}{fromJson}}(json\_str.c\_str()))}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00029}00029             \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00030}00030                 std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad32959a37f2edef877e5fe0ca6d74683}{worker\_mtx}});}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00031}00031                 std::string bsm\_msg\_id = bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a31f50e14ec5295d0397ad02048755862}{generate\_hash\_bsm\_msg\_id}}(bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a02e3d31e027dc8f053beb32b7a1a913f}{temprary\_id}}, bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_a8cf426e92275412a60d3f22e4ec21b89}{msg\_count}}, bsm\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}().\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData_af87ea45d83fa065457ac41839c7f466a}{sec\_mark}});}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00032}00032                 \textcolor{keywordflow}{if}(!this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}}.empty() \&\&  this-\/>bsm\_m.find(bsm\_msg\_id) != this-\/>bsm\_m.end())}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00033}00033                 \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00034}00034                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}}.erase(bsm\_msg\_id);}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00035}00035                 \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00036}00036                 this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a775886b76f7547cba7dc33bac1bec54a}{bsm\_m}}.insert(\{bsm\_msg\_id, bsm\_obj\});}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00037}00037             \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00038}00038             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00039}00039             \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00040}00040                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}bsm\_worker: Document parse error"{}});}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00041}00041             \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00042}00042         \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00044}\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a8866091959ffe165d8f499f75076b1bc}{00044}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a8866091959ffe165d8f499f75076b1bc}{bsm\_worker::pop\_cur\_element\_from\_list}}(\textcolor{keywordtype}{long} element\_position)}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00045}00045         \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00046}00046             \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.size() > 0)}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00047}00047             \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00048}00048                 std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_ad32959a37f2edef877e5fe0ca6d74683}{worker\_mtx}});}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00049}00049                 \textcolor{keywordflow}{if} (element\_position == 0)}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00050}00050                 \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00051}00051                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.pop\_front();}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00052}00052                 \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00053}00053                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00054}00054                 \{}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00055}00055                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.erase(this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1bsm__worker_a35db98e99e0597d689c8d25bef2d715e}{bsm\_v}}.begin() + element\_position);}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00056}00056                 \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00057}00057             \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00058}00058         \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00059}00059     \}}
+\DoxyCodeLine{\Hypertarget{bsm__worker_8cpp_source_l00060}00060 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,730 @@
+\hypertarget{classkafka__clients_1_1kafka__consumer__worker}{}\doxysection{kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker Class Reference}
+\label{classkafka__clients_1_1kafka__consumer__worker}\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+
+
+{\ttfamily \#include $<$kafka\+\_\+consumer\+\_\+worker.\+h$>$}
+
+
+
+Collaboration diagram for kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_adf3002f09100c517c7b89f822040dc1c}{kafka\+\_\+consumer\+\_\+worker}} (const std\+::string \&broker\+\_\+str, const std\+::string \&topic\+\_\+str, const std\+::string \&group\+\_\+id, int64\+\_\+t cur\+\_\+offset=0, int32\+\_\+t partition=0)
+\item 
+bool \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_acf1e722c898d99c45c54cb16ba50d1b0}{init}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a3578a2abd82b20715659c9784a43b035}{consume}} (int timeout\+\_\+ms)
+\item 
+void \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a4187daea3df819ac26e6efc65da6631d}{subscribe}} ()
+\item 
+void \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a43c96012dc78c2deaf7aad1cf2f7e94c}{stop}} ()
+\item 
+void \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a9ed1c1586aadc2b41a0d7605f6b90dc9}{print\+Curr\+Conf}} ()
+\item 
+bool \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a5e1fa977ccf844b1e8d9df7d45956422}{is\+\_\+running}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_afe6dbad81e23024916594351983aefc0}{msg\+\_\+consume}} (Rd\+Kafka\+::\+Message $\ast$message, void $\ast$opaque)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a1be63784601962e39be2c4273c8d8a10}{BOOTSTRAP\+\_\+\+SERVER}} =\char`\"{}bootstrap.\+servers\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a6278195651df7246924b50f25be2bdb9}{DR\+\_\+\+CB}} =\char`\"{}dr\+\_\+cb\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_af4035adb29186d82e02a421f60e6c20c}{EVENT\+\_\+\+CB}} =\char`\"{}event\+\_\+cb\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a1351347e3181003cafa0483c2b52da30}{GROUP\+\_\+\+ID}} =\char`\"{}group.\+id\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7da998a85ddc3bb03dfaaa22f3247657}{MAX\+\_\+\+PARTITION\+\_\+\+FETCH\+\_\+\+SIZE}} =\char`\"{}max.\+partition.\+fetch.\+bytes\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7f4316c560cc365bed44c44d85f602a6}{ENABLE\+\_\+\+PARTITION\+\_\+\+END\+\_\+\+OF}} =\char`\"{}enable.\+partition.\+eof\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_ab2ec9e7d75acb7cafcf7f4266c18cc1f}{STR\+\_\+\+FETCH\+\_\+\+NUM}} = \char`\"{}10240000\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}{\+\_\+topics\+\_\+str}} = \char`\"{}\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_adbbd5da9da27879872833432f0356cf9}{\+\_\+broker\+\_\+str}} = \char`\"{}\char`\"{}
+\item 
+std\+::string \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7190a9c36158ae34bee8e82f76e36c08}{\+\_\+group\+\_\+id\+\_\+str}} = \char`\"{}\char`\"{}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a54c6dbde0ef293374118f6e0753842c4}{\+\_\+last\+\_\+offset}} = 0
+\item 
+Rd\+Kafka\+::\+Kafka\+Consumer $\ast$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\+\_\+consumer}} = nullptr
+\item 
+Rd\+Kafka\+::\+Topic $\ast$ \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a15ea8e10412f436bbd2ae2bf992d5c56}{\+\_\+topic}} = nullptr
+\item 
+int64\+\_\+t \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_af7e20733b65a75cebc2d8ace8434e325}{\+\_\+cur\+\_\+offet}} = Rd\+Kafka\+::\+Topic\+::\+OFFSET\+\_\+\+BEGINNING
+\item 
+int32\+\_\+t \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a5309cebb82d652936e523f5b136c731f}{\+\_\+partition}} = 0
+\item 
+bool \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_ae4c07a85eebb901f3809103982e04530}{\+\_\+run}} = false
+\item 
+\mbox{\hyperlink{classkafka__clients_1_1consumer__event__cb}{consumer\+\_\+event\+\_\+cb}} \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_afa22d9563c7fa1c1f4b7649d2d916234}{\+\_\+consumer\+\_\+event\+\_\+cb}}
+\item 
+\mbox{\hyperlink{classkafka__clients_1_1consumer__rebalance__cb}{consumer\+\_\+rebalance\+\_\+cb}} \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_abd9eb27ab295bedcf83079cd76be0dca}{\+\_\+consumer\+\_\+rebalance\+\_\+cb}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00112}{112}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_adf3002f09100c517c7b89f822040dc1c}\label{classkafka__clients_1_1kafka__consumer__worker_adf3002f09100c517c7b89f822040dc1c}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!kafka\_consumer\_worker@{kafka\_consumer\_worker}}
+\index{kafka\_consumer\_worker@{kafka\_consumer\_worker}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{kafka\_consumer\_worker()}{kafka\_consumer\_worker()}}
+{\footnotesize\ttfamily kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::kafka\+\_\+consumer\+\_\+worker (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{broker\+\_\+str,  }\item[{const std\+::string \&}]{topic\+\_\+str,  }\item[{const std\+::string \&}]{group\+\_\+id,  }\item[{int64\+\_\+t}]{cur\+\_\+offset = {\ttfamily 0},  }\item[{int32\+\_\+t}]{partition = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008         :\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}{\_topics\_str}}(topic\_str), \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_adbbd5da9da27879872833432f0356cf9}{\_broker\_str}}(broker\_str), \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7190a9c36158ae34bee8e82f76e36c08}{\_group\_id\_str}}(group\_id\_str), \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_af7e20733b65a75cebc2d8ace8434e325}{\_cur\_offet}}(cur\_offset),}
+\DoxyCodeLine{00009           \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a5309cebb82d652936e523f5b136c731f}{\_partition}}(partition)}
+\DoxyCodeLine{00010     \{}
+\DoxyCodeLine{00011     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a3578a2abd82b20715659c9784a43b035}\label{classkafka__clients_1_1kafka__consumer__worker_a3578a2abd82b20715659c9784a43b035}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!consume@{consume}}
+\index{consume@{consume}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily const char $\ast$ kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::consume (\begin{DoxyParamCaption}\item[{int}]{timeout\+\_\+ms }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00112}{112}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00113     \{}
+\DoxyCodeLine{00114         RdKafka::Message *msg = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00115         msg = \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>consume(timeout\_ms);}
+\DoxyCodeLine{00116         \textcolor{keyword}{const} \textcolor{keywordtype}{char} *msg\_str = \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_afe6dbad81e23024916594351983aefc0}{msg\_consume}}(msg, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00117         \textcolor{keywordflow}{return} msg\_str;}
+\DoxyCodeLine{00118     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00129}{\+\_\+consumer}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00130}{msg\+\_\+consume()}}.
+
+
+
+Referenced by \mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_source_l00006}{call\+\_\+consumer\+\_\+thread()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_a3578a2abd82b20715659c9784a43b035_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_a3578a2abd82b20715659c9784a43b035_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_acf1e722c898d99c45c54cb16ba50d1b0}\label{classkafka__clients_1_1kafka__consumer__worker_acf1e722c898d99c45c54cb16ba50d1b0}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!init@{init}}
+\index{init@{init}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014     \{}
+\DoxyCodeLine{00015         SPDLOG\_INFO(\textcolor{stringliteral}{"{}kafka\_consumer\_worker init()... "{}});}
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00017         std::string errstr;}
+\DoxyCodeLine{00018         RdKafka::Conf *\mbox{\hyperlink{namespaceconf}{conf}} = RdKafka::Conf::create(RdKafka::Conf::CONF\_GLOBAL);}
+\DoxyCodeLine{00019         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{namespaceconf}{conf}})}
+\DoxyCodeLine{00020         \{}
+\DoxyCodeLine{00021             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka create global conf failed "{}});}
+\DoxyCodeLine{00022             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00023         \}}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025         \textcolor{comment}{// set bootstrap server}}
+\DoxyCodeLine{00026         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceconf}{conf}}-\/>set(\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a1be63784601962e39be2c4273c8d8a10}{BOOTSTRAP\_SERVER}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_adbbd5da9da27879872833432f0356cf9}{\_broker\_str}}, errstr) != RdKafka::Conf::CONF\_OK)}
+\DoxyCodeLine{00027         \{}
+\DoxyCodeLine{00028             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka conf set bootstrap server failed: \{0\} "{}}, errstr.c\_str());}
+\DoxyCodeLine{00029             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00030         \}}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032         \mbox{\hyperlink{namespaceconf}{conf}}-\/>set(\textcolor{stringliteral}{"{}rebalance\_cb"{}}, \&\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_abd9eb27ab295bedcf83079cd76be0dca}{\_consumer\_rebalance\_cb}}, errstr);}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceconf}{conf}}-\/>set(\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_af4035adb29186d82e02a421f60e6c20c}{EVENT\_CB}}, \&\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_afa22d9563c7fa1c1f4b7649d2d916234}{\_consumer\_event\_cb}}, errstr) != RdKafka::Conf::CONF\_OK)}
+\DoxyCodeLine{00035         \{}
+\DoxyCodeLine{00036             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka conf set event call back failed:  \{0\} "{}}, errstr.c\_str());}
+\DoxyCodeLine{00037             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00038         \}}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceconf}{conf}}-\/>set(\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7f4316c560cc365bed44c44d85f602a6}{ENABLE\_PARTITION\_END\_OF}}, \textcolor{stringliteral}{"{}true"{}}, errstr) != RdKafka::Conf::CONF\_OK)}
+\DoxyCodeLine{00041         \{}
+\DoxyCodeLine{00042             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka conf set partition end of failed: \{0\} "{}}, errstr.c\_str());}
+\DoxyCodeLine{00043             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00044         \}}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046         \textcolor{comment}{// set consumer group}}
+\DoxyCodeLine{00047         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceconf}{conf}}-\/>set(\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a1351347e3181003cafa0483c2b52da30}{GROUP\_ID}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7190a9c36158ae34bee8e82f76e36c08}{\_group\_id\_str}}, errstr) != RdKafka::Conf::CONF\_OK)}
+\DoxyCodeLine{00048         \{}
+\DoxyCodeLine{00049             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka conf set group id failed:  \{0\} "{}}, errstr.c\_str());}
+\DoxyCodeLine{00050             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00051         \}}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053         \textcolor{keywordflow}{if} (\mbox{\hyperlink{namespaceconf}{conf}}-\/>set(\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7da998a85ddc3bb03dfaaa22f3247657}{MAX\_PARTITION\_FETCH\_SIZE}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_ab2ec9e7d75acb7cafcf7f4266c18cc1f}{STR\_FETCH\_NUM}}, errstr) != RdKafka::Conf::CONF\_OK)}
+\DoxyCodeLine{00054         \{}
+\DoxyCodeLine{00055             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka cof set max.partition failed:  \{0\} "{}}, errstr.c\_str());}
+\DoxyCodeLine{00056         \}}
+\DoxyCodeLine{00057 }
+\DoxyCodeLine{00058         \textcolor{comment}{// create consumer}}
+\DoxyCodeLine{00059         \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}} = RdKafka::KafkaConsumer::create(\mbox{\hyperlink{namespaceconf}{conf}}, errstr);}
+\DoxyCodeLine{00060         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}})}
+\DoxyCodeLine{00061         \{}
+\DoxyCodeLine{00062             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}failed to create consumer:  \{0\}"{}}, errstr.c\_str());}
+\DoxyCodeLine{00063             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00064         \}}
+\DoxyCodeLine{00065 }
+\DoxyCodeLine{00066         SPDLOG\_INFO(\textcolor{stringliteral}{"{}created consumer: \{0\} "{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name());}
+\DoxyCodeLine{00067         \textcolor{keyword}{delete} \mbox{\hyperlink{namespaceconf}{conf}};}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{00069         \textcolor{comment}{// create kafka topic}}
+\DoxyCodeLine{00070         RdKafka::Conf *tconf = RdKafka::Conf::create(RdKafka::Conf::CONF\_TOPIC);}
+\DoxyCodeLine{00071         \textcolor{keywordflow}{if} (!tconf)}
+\DoxyCodeLine{00072         \{}
+\DoxyCodeLine{00073             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka create topic conf failed "{}});}
+\DoxyCodeLine{00074             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00075         \}}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077         \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a15ea8e10412f436bbd2ae2bf992d5c56}{\_topic}} = RdKafka::Topic::create(\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}{\_topics\_str}}, tconf, errstr);}
+\DoxyCodeLine{00078         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a15ea8e10412f436bbd2ae2bf992d5c56}{\_topic}})}
+\DoxyCodeLine{00079         \{}
+\DoxyCodeLine{00080             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}RDKafka create topic failed:  \{0\}"{}}, errstr.c\_str());}
+\DoxyCodeLine{00081             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00082         \}}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084         \textcolor{keyword}{delete} tconf;}
+\DoxyCodeLine{00085         \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a9ed1c1586aadc2b41a0d7605f6b90dc9}{printCurrConf}}();}
+\DoxyCodeLine{00086         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00087     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00126}{\+\_\+broker\+\_\+str}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00129}{\+\_\+consumer}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00134}{\+\_\+consumer\+\_\+event\+\_\+cb}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00135}{\+\_\+consumer\+\_\+rebalance\+\_\+cb}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00127}{\+\_\+group\+\_\+id\+\_\+str}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00130}{\+\_\+topic}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00125}{\+\_\+topics\+\_\+str}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00115}{BOOTSTRAP\+\_\+\+SERVER}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00120}{ENABLE\+\_\+\+PARTITION\+\_\+\+END\+\_\+\+OF}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00117}{EVENT\+\_\+\+CB}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00118}{GROUP\+\_\+\+ID}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00119}{MAX\+\_\+\+PARTITION\+\_\+\+FETCH\+\_\+\+SIZE}}, \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00124}{print\+Curr\+Conf()}}, and \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00123}{STR\+\_\+\+FETCH\+\_\+\+NUM}}.
+
+
+
+Referenced by \mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_source_l00006}{call\+\_\+consumer\+\_\+thread()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_acf1e722c898d99c45c54cb16ba50d1b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_acf1e722c898d99c45c54cb16ba50d1b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a5e1fa977ccf844b1e8d9df7d45956422}\label{classkafka__clients_1_1kafka__consumer__worker_a5e1fa977ccf844b1e8d9df7d45956422}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!is\_running@{is\_running}}
+\index{is\_running@{is\_running}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{is\_running()}{is\_running()}}
+{\footnotesize\ttfamily bool kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::is\+\_\+running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00120}{120}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00121     \{}
+\DoxyCodeLine{00122         \textcolor{keywordflow}{return} \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_ae4c07a85eebb901f3809103982e04530}{\_run}};}
+\DoxyCodeLine{00123     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00133}{\+\_\+run}}.
+
+
+
+Referenced by \mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_source_l00006}{call\+\_\+consumer\+\_\+thread()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_a5e1fa977ccf844b1e8d9df7d45956422_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_afe6dbad81e23024916594351983aefc0}\label{classkafka__clients_1_1kafka__consumer__worker_afe6dbad81e23024916594351983aefc0}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!msg\_consume@{msg\_consume}}
+\index{msg\_consume@{msg\_consume}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{msg\_consume()}{msg\_consume()}}
+{\footnotesize\ttfamily const char $\ast$ kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::msg\+\_\+consume (\begin{DoxyParamCaption}\item[{Rd\+Kafka\+::\+Message $\ast$}]{message,  }\item[{void $\ast$}]{opaque }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131     \{}
+\DoxyCodeLine{00132         \textcolor{keyword}{const} \textcolor{keywordtype}{char} *return\_msg\_str = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00133         \textcolor{keywordflow}{switch} (message-\/>err())}
+\DoxyCodeLine{00134         \{}
+\DoxyCodeLine{00135         \textcolor{keywordflow}{case} RdKafka::ERR\_\_TIMED\_OUT:}
+\DoxyCodeLine{00136             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00137         \textcolor{keywordflow}{case} RdKafka::ERR\_NO\_ERROR:}
+\DoxyCodeLine{00138             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{} \{0\} Read message at offset \{1\} "{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name(), message-\/>offset());}
+\DoxyCodeLine{00139             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{} \{0\} Message Consumed: \{1\}   bytes ):  \{2\}"{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name(), \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(message-\/>len()), \textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(message-\/>payload()));}
+\DoxyCodeLine{00140             \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a54c6dbde0ef293374118f6e0753842c4}{\_last\_offset}} = message-\/>offset();}
+\DoxyCodeLine{00141             return\_msg\_str = \textcolor{keyword}{static\_cast<}\textcolor{keyword}{const }\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(message-\/>payload());}
+\DoxyCodeLine{00142             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00143         \textcolor{keywordflow}{case} RdKafka::ERR\_\_PARTITION\_EOF:}
+\DoxyCodeLine{00144             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}\{0\} Reached the end of the queue, offset : \{1\}"{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name(), \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a54c6dbde0ef293374118f6e0753842c4}{\_last\_offset}});}
+\DoxyCodeLine{00145             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00146         \textcolor{keywordflow}{case} RdKafka::ERR\_\_UNKNOWN\_TOPIC:}
+\DoxyCodeLine{00147         \textcolor{keywordflow}{case} RdKafka::ERR\_\_UNKNOWN\_PARTITION:}
+\DoxyCodeLine{00148             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}\{0\} Consume failed:  \{1\} "{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name(), message-\/>errstr());}
+\DoxyCodeLine{00149             \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a43c96012dc78c2deaf7aad1cf2f7e94c}{stop}}();}
+\DoxyCodeLine{00150             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00151 }
+\DoxyCodeLine{00152         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00153             \textcolor{comment}{/* Errors */}}
+\DoxyCodeLine{00154             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}\{0\} Consume failed:  \{1\} "{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name(), message-\/>errstr());}
+\DoxyCodeLine{00155             \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a43c96012dc78c2deaf7aad1cf2f7e94c}{stop}}();}
+\DoxyCodeLine{00156             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00157         \}}
+\DoxyCodeLine{00158         \textcolor{keywordflow}{return} return\_msg\_str;}
+\DoxyCodeLine{00159     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00129}{\+\_\+consumer}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00128}{\+\_\+last\+\_\+offset}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00089}{stop()}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00112}{consume()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_afe6dbad81e23024916594351983aefc0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_afe6dbad81e23024916594351983aefc0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a9ed1c1586aadc2b41a0d7605f6b90dc9}\label{classkafka__clients_1_1kafka__consumer__worker_a9ed1c1586aadc2b41a0d7605f6b90dc9}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!printCurrConf@{printCurrConf}}
+\index{printCurrConf@{printCurrConf}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{printCurrConf()}{printCurrConf()}}
+{\footnotesize\ttfamily void kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::print\+Curr\+Conf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00125     \{}
+\DoxyCodeLine{00126         SPDLOG\_INFO(\textcolor{stringliteral}{"{}Consumer connect to bootstrap\_server: \{0\} , topic:  \{1\} , partition:  \{2\}, group id: \{3\} "{}},}
+\DoxyCodeLine{00127                      (\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_adbbd5da9da27879872833432f0356cf9}{\_broker\_str}}.empty() ? \textcolor{stringliteral}{"{}UNKNOWN"{}} : \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_adbbd5da9da27879872833432f0356cf9}{\_broker\_str}}), (\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}{\_topics\_str}}.empty() ? \textcolor{stringliteral}{"{}UNKNOWN"{}} : \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}{\_topics\_str}}), \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a5309cebb82d652936e523f5b136c731f}{\_partition}}, (\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7190a9c36158ae34bee8e82f76e36c08}{\_group\_id\_str}}.empty() ? \textcolor{stringliteral}{"{}UNKNOWN"{}} : \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a7190a9c36158ae34bee8e82f76e36c08}{\_group\_id\_str}}));}
+\DoxyCodeLine{00128     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00126}{\+\_\+broker\+\_\+str}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00127}{\+\_\+group\+\_\+id\+\_\+str}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00132}{\+\_\+partition}}, and \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00125}{\+\_\+topics\+\_\+str}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_a9ed1c1586aadc2b41a0d7605f6b90dc9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a43c96012dc78c2deaf7aad1cf2f7e94c}\label{classkafka__clients_1_1kafka__consumer__worker_a43c96012dc78c2deaf7aad1cf2f7e94c}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!stop@{stop}}
+\index{stop@{stop}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00090     \{}
+\DoxyCodeLine{00091         \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_ae4c07a85eebb901f3809103982e04530}{\_run}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{00092         \textcolor{comment}{/*Destroy kafka instance*/} \textcolor{comment}{// Wait for RdKafka to decommission.}}
+\DoxyCodeLine{00093         RdKafka::wait\_destroyed(5000);}
+\DoxyCodeLine{00094     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00133}{\+\_\+run}}.
+
+
+
+Referenced by \mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_source_l00006}{call\+\_\+consumer\+\_\+thread()}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00130}{msg\+\_\+consume()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_a43c96012dc78c2deaf7aad1cf2f7e94c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a4187daea3df819ac26e6efc65da6631d}\label{classkafka__clients_1_1kafka__consumer__worker_a4187daea3df819ac26e6efc65da6631d}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily void kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::subscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00096}{96}} of file \mbox{\hyperlink{kafka__consumer__worker_8cpp_source}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00097     \{}
+\DoxyCodeLine{00098         std::vector<std::string> \_topics\_str\_list;}
+\DoxyCodeLine{00099         \_topics\_str\_list.push\_back(\mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}{\_topics\_str}});}
+\DoxyCodeLine{00100         RdKafka::ErrorCode err = \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>subscribe(\_topics\_str\_list);}
+\DoxyCodeLine{00101         \textcolor{keywordflow}{if} (err)}
+\DoxyCodeLine{00102         \{}
+\DoxyCodeLine{00103             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{} \{0\} Failed to subscribe to   \{1\} topics: \{2\} "{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name(), \_topics\_str\_list.size(), RdKafka::err2str(err).c\_str());}
+\DoxyCodeLine{00104             \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_ae4c07a85eebb901f3809103982e04530}{\_run}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{00105             exit(1);}
+\DoxyCodeLine{00106         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00107             SPDLOG\_INFO(\textcolor{stringliteral}{"{}\{0\} Successfully to subscribe to   \{1\} topics: \{2\} "{}}, \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}{\_consumer}}-\/>name(), \_topics\_str\_list.size(), RdKafka::err2str(err).c\_str());}
+\DoxyCodeLine{00108             \mbox{\hyperlink{classkafka__clients_1_1kafka__consumer__worker_ae4c07a85eebb901f3809103982e04530}{\_run}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00109         \}}
+\DoxyCodeLine{00110     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00129}{\+\_\+consumer}}, \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00133}{\+\_\+run}}, and \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00125}{\+\_\+topics\+\_\+str}}.
+
+
+
+Referenced by \mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_source_l00006}{call\+\_\+consumer\+\_\+thread()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classkafka__clients_1_1kafka__consumer__worker_a4187daea3df819ac26e6efc65da6631d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_adbbd5da9da27879872833432f0356cf9}\label{classkafka__clients_1_1kafka__consumer__worker_adbbd5da9da27879872833432f0356cf9}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_broker\_str@{\_broker\_str}}
+\index{\_broker\_str@{\_broker\_str}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_broker\_str}{\_broker\_str}}
+{\footnotesize\ttfamily std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+broker\+\_\+str = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00126}{126}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00124}{print\+Curr\+Conf()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}\label{classkafka__clients_1_1kafka__consumer__worker_a150a975764638c8d35d3c9b721880e7b}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_consumer@{\_consumer}}
+\index{\_consumer@{\_consumer}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_consumer}{\_consumer}}
+{\footnotesize\ttfamily Rd\+Kafka\+::\+Kafka\+Consumer$\ast$ kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+consumer = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00129}{129}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00112}{consume()}}, \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}, \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00130}{msg\+\_\+consume()}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00096}{subscribe()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_afa22d9563c7fa1c1f4b7649d2d916234}\label{classkafka__clients_1_1kafka__consumer__worker_afa22d9563c7fa1c1f4b7649d2d916234}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_consumer\_event\_cb@{\_consumer\_event\_cb}}
+\index{\_consumer\_event\_cb@{\_consumer\_event\_cb}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_consumer\_event\_cb}{\_consumer\_event\_cb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkafka__clients_1_1consumer__event__cb}{consumer\+\_\+event\+\_\+cb}} kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+consumer\+\_\+event\+\_\+cb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00134}{134}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_abd9eb27ab295bedcf83079cd76be0dca}\label{classkafka__clients_1_1kafka__consumer__worker_abd9eb27ab295bedcf83079cd76be0dca}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_consumer\_rebalance\_cb@{\_consumer\_rebalance\_cb}}
+\index{\_consumer\_rebalance\_cb@{\_consumer\_rebalance\_cb}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_consumer\_rebalance\_cb}{\_consumer\_rebalance\_cb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classkafka__clients_1_1consumer__rebalance__cb}{consumer\+\_\+rebalance\+\_\+cb}} kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+consumer\+\_\+rebalance\+\_\+cb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00135}{135}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_af7e20733b65a75cebc2d8ace8434e325}\label{classkafka__clients_1_1kafka__consumer__worker_af7e20733b65a75cebc2d8ace8434e325}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_cur\_offet@{\_cur\_offet}}
+\index{\_cur\_offet@{\_cur\_offet}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_cur\_offet}{\_cur\_offet}}
+{\footnotesize\ttfamily int64\+\_\+t kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+cur\+\_\+offet = Rd\+Kafka\+::\+Topic\+::\+OFFSET\+\_\+\+BEGINNING\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00131}{131}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a7190a9c36158ae34bee8e82f76e36c08}\label{classkafka__clients_1_1kafka__consumer__worker_a7190a9c36158ae34bee8e82f76e36c08}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_group\_id\_str@{\_group\_id\_str}}
+\index{\_group\_id\_str@{\_group\_id\_str}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_group\_id\_str}{\_group\_id\_str}}
+{\footnotesize\ttfamily std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+group\+\_\+id\+\_\+str = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00127}{127}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00124}{print\+Curr\+Conf()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a54c6dbde0ef293374118f6e0753842c4}\label{classkafka__clients_1_1kafka__consumer__worker_a54c6dbde0ef293374118f6e0753842c4}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_last\_offset@{\_last\_offset}}
+\index{\_last\_offset@{\_last\_offset}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_last\_offset}{\_last\_offset}}
+{\footnotesize\ttfamily int64\+\_\+t kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+last\+\_\+offset = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00128}{128}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00130}{msg\+\_\+consume()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a5309cebb82d652936e523f5b136c731f}\label{classkafka__clients_1_1kafka__consumer__worker_a5309cebb82d652936e523f5b136c731f}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_partition@{\_partition}}
+\index{\_partition@{\_partition}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_partition}{\_partition}}
+{\footnotesize\ttfamily int32\+\_\+t kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+partition = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00132}{132}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00124}{print\+Curr\+Conf()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_ae4c07a85eebb901f3809103982e04530}\label{classkafka__clients_1_1kafka__consumer__worker_ae4c07a85eebb901f3809103982e04530}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_run@{\_run}}
+\index{\_run@{\_run}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_run}{\_run}}
+{\footnotesize\ttfamily bool kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+run = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00133}{133}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00120}{is\+\_\+running()}}, \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00089}{stop()}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00096}{subscribe()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a15ea8e10412f436bbd2ae2bf992d5c56}\label{classkafka__clients_1_1kafka__consumer__worker_a15ea8e10412f436bbd2ae2bf992d5c56}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_topic@{\_topic}}
+\index{\_topic@{\_topic}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_topic}{\_topic}}
+{\footnotesize\ttfamily Rd\+Kafka\+::\+Topic$\ast$ kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+topic = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00130}{130}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}\label{classkafka__clients_1_1kafka__consumer__worker_aa7b8ee8246dd91e2986ef8d6402428c2}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!\_topics\_str@{\_topics\_str}}
+\index{\_topics\_str@{\_topics\_str}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{\_topics\_str}{\_topics\_str}}
+{\footnotesize\ttfamily std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+\_\+topics\+\_\+str = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00125}{125}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}, \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00124}{print\+Curr\+Conf()}}, and \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00096}{subscribe()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a1be63784601962e39be2c4273c8d8a10}\label{classkafka__clients_1_1kafka__consumer__worker_a1be63784601962e39be2c4273c8d8a10}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!BOOTSTRAP\_SERVER@{BOOTSTRAP\_SERVER}}
+\index{BOOTSTRAP\_SERVER@{BOOTSTRAP\_SERVER}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{BOOTSTRAP\_SERVER}{BOOTSTRAP\_SERVER}}
+{\footnotesize\ttfamily const std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+BOOTSTRAP\+\_\+\+SERVER =\char`\"{}bootstrap.\+servers\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00115}{115}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a6278195651df7246924b50f25be2bdb9}\label{classkafka__clients_1_1kafka__consumer__worker_a6278195651df7246924b50f25be2bdb9}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!DR\_CB@{DR\_CB}}
+\index{DR\_CB@{DR\_CB}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{DR\_CB}{DR\_CB}}
+{\footnotesize\ttfamily const std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+DR\+\_\+\+CB =\char`\"{}dr\+\_\+cb\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00116}{116}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a7f4316c560cc365bed44c44d85f602a6}\label{classkafka__clients_1_1kafka__consumer__worker_a7f4316c560cc365bed44c44d85f602a6}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!ENABLE\_PARTITION\_END\_OF@{ENABLE\_PARTITION\_END\_OF}}
+\index{ENABLE\_PARTITION\_END\_OF@{ENABLE\_PARTITION\_END\_OF}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_PARTITION\_END\_OF}{ENABLE\_PARTITION\_END\_OF}}
+{\footnotesize\ttfamily const std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+ENABLE\+\_\+\+PARTITION\+\_\+\+END\+\_\+\+OF =\char`\"{}enable.\+partition.\+eof\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00120}{120}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_af4035adb29186d82e02a421f60e6c20c}\label{classkafka__clients_1_1kafka__consumer__worker_af4035adb29186d82e02a421f60e6c20c}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!EVENT\_CB@{EVENT\_CB}}
+\index{EVENT\_CB@{EVENT\_CB}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{EVENT\_CB}{EVENT\_CB}}
+{\footnotesize\ttfamily const std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+EVENT\+\_\+\+CB =\char`\"{}event\+\_\+cb\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00117}{117}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a1351347e3181003cafa0483c2b52da30}\label{classkafka__clients_1_1kafka__consumer__worker_a1351347e3181003cafa0483c2b52da30}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!GROUP\_ID@{GROUP\_ID}}
+\index{GROUP\_ID@{GROUP\_ID}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{GROUP\_ID}{GROUP\_ID}}
+{\footnotesize\ttfamily const std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+GROUP\+\_\+\+ID =\char`\"{}group.\+id\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00118}{118}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_a7da998a85ddc3bb03dfaaa22f3247657}\label{classkafka__clients_1_1kafka__consumer__worker_a7da998a85ddc3bb03dfaaa22f3247657}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!MAX\_PARTITION\_FETCH\_SIZE@{MAX\_PARTITION\_FETCH\_SIZE}}
+\index{MAX\_PARTITION\_FETCH\_SIZE@{MAX\_PARTITION\_FETCH\_SIZE}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{MAX\_PARTITION\_FETCH\_SIZE}{MAX\_PARTITION\_FETCH\_SIZE}}
+{\footnotesize\ttfamily const std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+MAX\+\_\+\+PARTITION\+\_\+\+FETCH\+\_\+\+SIZE =\char`\"{}max.\+partition.\+fetch.\+bytes\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00119}{119}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+\mbox{\Hypertarget{classkafka__clients_1_1kafka__consumer__worker_ab2ec9e7d75acb7cafcf7f4266c18cc1f}\label{classkafka__clients_1_1kafka__consumer__worker_ab2ec9e7d75acb7cafcf7f4266c18cc1f}} 
+\index{kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}!STR\_FETCH\_NUM@{STR\_FETCH\_NUM}}
+\index{STR\_FETCH\_NUM@{STR\_FETCH\_NUM}!kafka\_clients::kafka\_consumer\_worker@{kafka\_clients::kafka\_consumer\_worker}}
+\doxysubsubsection{\texorpdfstring{STR\_FETCH\_NUM}{STR\_FETCH\_NUM}}
+{\footnotesize\ttfamily std\+::string kafka\+\_\+clients\+::kafka\+\_\+consumer\+\_\+worker\+::\+STR\+\_\+\+FETCH\+\_\+\+NUM = \char`\"{}10240000\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__consumer__worker_8h_source_l00123}{123}} of file \mbox{\hyperlink{kafka__consumer__worker_8h_source}{kafka\+\_\+consumer\+\_\+worker.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{kafka__consumer__worker_8cpp_source_l00013}{init()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+kafka\+\_\+clients/include/\mbox{\hyperlink{kafka__consumer__worker_8h}{kafka\+\_\+consumer\+\_\+worker.\+h}}\item 
+kafka\+\_\+clients/src/\mbox{\hyperlink{kafka__consumer__worker_8cpp}{kafka\+\_\+consumer\+\_\+worker.\+cpp}}\end{DoxyCompactItemize}

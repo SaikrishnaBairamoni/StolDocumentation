@@ -1,0 +1,11 @@
+<map id="streets_vehicle_scheduler::all_stop_vehicle_scheduler::consider_departure_position_permutation" name="streets_vehicle_scheduler::all_stop_vehicle_scheduler::consider_departure_position_permutation">
+<area shape="rect" id="node1" title="Creates and intersection schedule for a given RDV departure order. RDV departure order is based on rd..." alt="" coords="5,129,196,200"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#a15b4da36dba827263da4c844028c6db1" title="Estimate clearance time any vehicle given it&#39;s link lanelet information." alt="" coords="244,57,428,113"/>
+<area shape="rect" id="node5" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#aa06721804b8a4075b98c2e8ad40c84da" title="Given a link lane and a vector of vehicle schedules, this method returns a pointer to a vehicle sched..." alt="" coords="244,137,428,193"/>
+<area shape="rect" id="node7" href="$classstreets__vehicle__scheduler_1_1vehicle__scheduler.html#af2c80eb87e5a9cabaad660544003663c" title="Helper method to get link lane OAILanelet_info from intersection information given a vehicle." alt="" coords="249,217,423,273"/>
+<area shape="rect" id="node3" href="$classOpenAPI_1_1OAILanelet__info.html#abc1c4d5d24a2dafb175874ecad09cfad" title=" " alt="" coords="492,5,639,47"/>
+<area shape="rect" id="node4" href="$classOpenAPI_1_1OAILanelet__info.html#a9ed2860829d5aeba3062f26e78afcbdc" title=" " alt="" coords="492,71,639,112"/>
+<area shape="rect" id="node6" href="$classOpenAPI_1_1OAILanelet__info.html#ae71cdbd0f92de4b223a654f03d2112c6" title=" " alt="" coords="476,144,655,185"/>
+<area shape="rect" id="node8" href="$classOpenAPI_1_1OAILanelet__info.html#a489d1a475686159298697bccabd2bd52" title=" " alt="" coords="492,216,639,257"/>
+<area shape="rect" id="node9" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="529,282,601,309"/>
+</map>

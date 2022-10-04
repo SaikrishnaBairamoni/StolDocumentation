@@ -1,0 +1,195 @@
+\hypertarget{mobilityoperation_8cpp_source}{}\doxysection{mobilityoperation.\+cpp}
+\label{mobilityoperation_8cpp_source}\index{message\_services/src/models/mobilityoperation.cpp@{message\_services/src/models/mobilityoperation.cpp}}
+\mbox{\hyperlink{mobilityoperation_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include <boost/algorithm/string.hpp>}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mobilityoperation_8h}{mobilityoperation.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00008}00008 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacemessage__services}{message\_services}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00011}00011     \textcolor{keyword}{namespace }models}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00014}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a30c8d1158cfc71e74c5efca5582e7195}{00014}}         \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a30c8d1158cfc71e74c5efca5582e7195}{mobilityoperation::mobilityoperation}}() : strategy(\textcolor{stringliteral}{"{}"{}}), \mbox{\hyperlink{namespacesimulate__mobilityoperation_a5e2eb405c9e19653e75ab7e8e81219d8}{strategy\_params}}(\textcolor{stringliteral}{"{}"{}}), \mbox{\hyperlink{ntcip__1202__ext_8h_a99005febfbff3af69e81b42ffcbbe3fb}{header}}()}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00016}00016         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00018}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_aa3b3cc72e127f82b39bba4ddc609b435}{00018}}         \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_aa3b3cc72e127f82b39bba4ddc609b435}{mobilityoperation::\string~mobilityoperation}}()}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00019}00019         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00020}00020         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00022}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af4081f414e3a8a3515f1191dc91811e3}{00022}}         std::string \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af4081f414e3a8a3515f1191dc91811e3}{mobilityoperation::generate\_hash\_sender\_timestamp\_id}}(std::string sender\_bsm\_id, uint64\_t \mbox{\hyperlink{namespacesimulate__mobilityoperation_a53dff21a6d447ca660693de3432b79d0}{timestamp}})}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00023}00023         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00024}00024             std::stringstream hash\_ss;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00025}00025             hash\_ss << sender\_bsm\_id << \mbox{\hyperlink{namespacesimulate__mobilityoperation_a53dff21a6d447ca660693de3432b79d0}{timestamp}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00026}00026             \textcolor{keywordflow}{return} hash\_ss.str();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00027}00027         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00028}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_abb41d37473812aedacd229dc295d098b}{00028}}         std::string \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_abb41d37473812aedacd229dc295d098b}{mobilityoperation::generate\_hash\_bsm\_msg\_id}}(std::string temprary\_id, \textcolor{keywordtype}{long} msg\_count, \textcolor{keywordtype}{long} sec\_mark)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00029}00029         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00030}00030             std::stringstream hash\_ss;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00031}00031             hash\_ss << temprary\_id << msg\_count << sec\_mark;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00032}00032             \textcolor{keywordflow}{return} hash\_ss.str();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00033}00033         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00034}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a68e0d75ea6a2e2ecc18d5588bb946637}{00034}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a68e0d75ea6a2e2ecc18d5588bb946637}{mobilityoperation::fromJsonObject}}(\textcolor{keyword}{const} rapidjson::Value \&obj)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00035}00035         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00036}00036             \textcolor{keywordflow}{if} (obj.IsObject())}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00037}00037             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00038}00038                 \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator obj\_itr = obj.MemberBegin(); obj\_itr != obj.MemberEnd(); obj\_itr++)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00039}00039                 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00041}00041                     \textcolor{keywordflow}{if} (obj\_itr-\/>value.IsObject() \&\& boost::iequals(std::string(obj\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}metadata"{}})))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00042}00042                     \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00043}00043                         \mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header}{mobility\_header\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00045}00045                         \textcolor{keywordflow}{for} (rapidjson::Value::ConstMemberIterator header\_itr = obj\_itr-\/>value.MemberBegin(); header\_itr != obj\_itr-\/>value.MemberEnd(); header\_itr++)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00046}00046                         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00048}00048                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}hostStaticId"{}}))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00049}00049                             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00050}00050                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ab1e13a6163e4364c8555b1f76266b90e}{sender\_id}} = header\_itr-\/>value.GetString();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00051}00051                             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00053}00053                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}hostBSMId"{}}))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00054}00054                             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00055}00055                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_aa255791d982853fa272bed31d3e33dd1}{sender\_bsm\_id}} = header\_itr-\/>value.GetString();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00056}00056                             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00058}00058                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}planId"{}}))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00059}00059                             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00060}00060                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ad2f506286283588e3455eaf8e47236b4}{plan\_id}} = (header\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00061}00061                             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00063}00063                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}targetStaticId"{}}))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00064}00064                             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00065}00065                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ab01fbf2ad0fe327960b8f4ae0427ad30}{recipient\_id}} = (header\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00066}00066                             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00067}00067                             \textcolor{keywordflow}{if} (std::string(header\_itr-\/>name.GetString()) == std::string(\textcolor{stringliteral}{"{}timestamp"{}}))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00068}00068                             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00069}00069                                 \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_a950a8571b2b4426afbe2d26979c2dff4}{timestamp}} = std::stol(header\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00070}00070                             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00071}00071                         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00072}00072                         \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a988bc9f2b356b2e729786fbeb8b603ac}{setHeader}}(\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00073}00073                     \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00075}00075                     \textcolor{keywordflow}{if} (obj\_itr-\/>value.IsString() \&\& boost::iequals(std::string(obj\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}strategy"{}})))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00076}00076                     \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00077}00077                         \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a49d21a75bfa5a95557de2698faa6519e}{setStrategy}}(obj\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00078}00078                     \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00080}00080                     \textcolor{keywordflow}{if} (obj\_itr-\/>value.IsString() \&\& boost::iequals(std::string(obj\_itr-\/>name.GetString()), std::string(\textcolor{stringliteral}{"{}strategy\_params"{}})))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00081}00081                     \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00082}00082                         \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_aee2f18923b83bbfda262711daba910cb}{setStrategy\_params}}(obj\_itr-\/>value.GetString());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00083}00083                     \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00084}00084                 \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00085}00085             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00086}00086         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00088}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_aaf4e9acf15c287b9380f33787fbeadf1}{00088}}         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_aaf4e9acf15c287b9380f33787fbeadf1}{mobilityoperation::asJsonObject}}(rapidjson::Writer<rapidjson::StringBuffer> *writer)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00089}00089 \textcolor{keyword}{        }\{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00090}00090             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00091}00091             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00092}00092                 writer-\/>StartObject();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00093}00093                 writer-\/>Key(\textcolor{stringliteral}{"{}header"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00094}00094                 writer-\/>StartObject();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00095}00095                 writer-\/>Key(\textcolor{stringliteral}{"{}sender\_id"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00096}00096                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af120e50b8d8d7609cfba3ff620d34f82}{getHeader}}().sender\_id.c\_str());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00097}00097                 writer-\/>Key(\textcolor{stringliteral}{"{}recipient\_id"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00098}00098                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af120e50b8d8d7609cfba3ff620d34f82}{getHeader}}().recipient\_id.c\_str());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00099}00099                 writer-\/>Key(\textcolor{stringliteral}{"{}plan\_id"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00100}00100                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af120e50b8d8d7609cfba3ff620d34f82}{getHeader}}().plan\_id.c\_str());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00101}00101                 writer-\/>Key(\textcolor{stringliteral}{"{}timestamp"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00102}00102                 writer-\/>Uint64(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af120e50b8d8d7609cfba3ff620d34f82}{getHeader}}().\mbox{\hyperlink{namespacesimulate__mobilityoperation_a53dff21a6d447ca660693de3432b79d0}{timestamp}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00103}00103                 writer-\/>EndObject();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00104}00104                 writer-\/>Key(\textcolor{stringliteral}{"{}strategy\_params"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00105}00105                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a9b640ee6d30bcd6a1b9548367f246555}{getStrategy\_params}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00106}00106                 writer-\/>Key(\textcolor{stringliteral}{"{}strategy"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00107}00107                 writer-\/>String(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_ae494ac3adca59be35c8042aae8c4b6b2}{getStrategy}}().c\_str());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00108}00108                 writer-\/>EndObject();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00109}00109                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00110}00110             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00111}00111             \textcolor{keywordflow}{catch} (std::exception \&ex)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00112}00112             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00113}00113                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}mobilityoperation model: \{0\} "{}}, ex.what());}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00114}00114                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00115}00115             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00116}00116         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00118}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a556c84b1faf40bbd5ec80daf36312ff6}{00118}}         std::string \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a556c84b1faf40bbd5ec80daf36312ff6}{mobilityoperation::get\_value\_from\_strategy\_params}}(std::string key)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00119}00119 \textcolor{keyword}{        }\{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00120}00120             \textcolor{keyword}{const} \textcolor{keywordtype}{char} *delimiter = \textcolor{stringliteral}{"{},:"{}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00121}00121             std::string key\_value\_str = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00122}00122             std::vector<std::string> key\_value\_v = \{\};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00123}00123             std::stringstream strategy\_params\_stream(this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a5bec3900b48dd621f828be276d9bfebb}{strategy\_params}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00124}00124             \textcolor{comment}{// strategy\_params are key value pairs separate by comma}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00125}00125             \textcolor{keywordflow}{while} (std::getline(strategy\_params\_stream, key\_value\_str, *delimiter))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00126}00126             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00127}00127                 std::stringstream key\_value\_str\_stream(key\_value\_str);}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00128}00128                 std::string key\_or\_value = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00130}00130                 \textcolor{keywordflow}{while} (std::getline(key\_value\_str\_stream, key\_or\_value, *(delimiter + 1)))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00131}00131                 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00132}00132                     boost::algorithm::trim(key\_or\_value);}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00133}00133                     key\_value\_v.push\_back(key\_or\_value);}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00134}00134                 \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00136}00136                 \textcolor{keywordflow}{if} (key\_value\_v.size() > 0 \&\& key\_value\_v.front() == key)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00137}00137                 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00138}00138                     \textcolor{keywordflow}{return} key\_value\_v.back();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00139}00139                 \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00141}00141                 \textcolor{keywordflow}{if} (key\_value\_v.size() > 0)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00142}00142                 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00143}00143                     key\_value\_v.clear();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00144}00144                 \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00145}00145 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00146}00146                 key\_value\_str = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00147}00147             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00148}00148             \textcolor{keywordflow}{return} key\_value\_str;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00149}00149         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00151}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a451ef169bc80e4c48756ecc38cc96d75}{00151}}         std::ostream \&\mbox{\hyperlink{namespacemessage__services_1_1models_a47572499c3356ac71fa06f41ccbe980d}{operator<<}}(std::ostream \&out, \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation}{mobilityoperation}} \&mobilityoperation\_obj)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00152}00152         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00153}00153             out << std::fixed;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00154}00154             out << std::setprecision(6);}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00155}00155             out << \textcolor{stringliteral}{"{}mobilityoperation model: sender\_id =  "{}} << mobilityoperation\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ab1e13a6163e4364c8555b1f76266b90e}{sender\_id}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00156}00156                       << \textcolor{stringliteral}{"{}, sender\_bsm\_id ="{}} << mobilityoperation\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_aa255791d982853fa272bed31d3e33dd1}{sender\_bsm\_id}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00157}00157                       << \textcolor{stringliteral}{"{}, timestamp = "{}} << mobilityoperation\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_a950a8571b2b4426afbe2d26979c2dff4}{timestamp}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00158}00158                       << \textcolor{stringliteral}{"{}, sender id = "{}} << mobilityoperation\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}}.\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header_ab1e13a6163e4364c8555b1f76266b90e}{sender\_id}} << \textcolor{stringliteral}{"{}, strategy= "{}} << mobilityoperation\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a8c250c464b28f7fd66ca519626b2e9b8}{strategy}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00159}00159                       << \textcolor{stringliteral}{"{}, strategy\_params= "{}} << mobilityoperation\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a5bec3900b48dd621f828be276d9bfebb}{strategy\_params}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00160}00160             \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00161}00161         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00163}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af120e50b8d8d7609cfba3ff620d34f82}{00163}}         \mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header}{mobility\_header\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_af120e50b8d8d7609cfba3ff620d34f82}{mobilityoperation::getHeader}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00164}00164 \textcolor{keyword}{        }\{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00165}00165             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00166}00166         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00167}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a988bc9f2b356b2e729786fbeb8b603ac}{00167}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a988bc9f2b356b2e729786fbeb8b603ac}{mobilityoperation::setHeader}}(\mbox{\hyperlink{structmessage__services_1_1models_1_1mobility__header}{mobility\_header\_t}} \mbox{\hyperlink{ntcip__1202__ext_8h_a99005febfbff3af69e81b42ffcbbe3fb}{header}})}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00168}00168         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00169}00169             this-\/>header = \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a1895afd1e479fc93fe08627aacb1a21d}{header}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00170}00170         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00171}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a9b640ee6d30bcd6a1b9548367f246555}{00171}}         std::string \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a9b640ee6d30bcd6a1b9548367f246555}{mobilityoperation::getStrategy\_params}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00172}00172 \textcolor{keyword}{        }\{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00173}00173             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a5bec3900b48dd621f828be276d9bfebb}{strategy\_params}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00174}00174         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00175}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_aee2f18923b83bbfda262711daba910cb}{00175}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_aee2f18923b83bbfda262711daba910cb}{mobilityoperation::setStrategy\_params}}(std::string \mbox{\hyperlink{namespacesimulate__mobilityoperation_a5e2eb405c9e19653e75ab7e8e81219d8}{strategy\_params}})}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00176}00176         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00177}00177             this-\/>strategy\_params = \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a5bec3900b48dd621f828be276d9bfebb}{strategy\_params}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00178}00178         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00179}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_ae494ac3adca59be35c8042aae8c4b6b2}{00179}}         std::string \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_ae494ac3adca59be35c8042aae8c4b6b2}{mobilityoperation::getStrategy}}()\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00180}00180 \textcolor{keyword}{        }\{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00181}00181             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a8c250c464b28f7fd66ca519626b2e9b8}{strategy}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00182}00182         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00183}\mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a49d21a75bfa5a95557de2698faa6519e}{00183}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a49d21a75bfa5a95557de2698faa6519e}{mobilityoperation::setStrategy}}(std::string strategy)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00184}00184         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00185}00185             this-\/>strategy = \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation_a8c250c464b28f7fd66ca519626b2e9b8}{strategy}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00186}00186         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00187}00187 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00188}00188     \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation_8cpp_source_l00189}00189 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,518 @@
+\hypertarget{namespacezephyr_1_1kconfig}{}\doxysection{zephyr.\+kconfig Namespace Reference}
+\label{namespacezephyr_1_1kconfig}\index{zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classzephyr_1_1kconfig_1_1__FindKconfigSearchDirectiveVisitor}{\+\_\+\+Find\+Kconfig\+Search\+Directive\+Visitor}}
+\item 
+class \mbox{\hyperlink{classzephyr_1_1kconfig_1_1KconfigDomain}{Kconfig\+Domain}}
+\item 
+class \mbox{\hyperlink{classzephyr_1_1kconfig_1_1KconfigSearch}{Kconfig\+Search}}
+\item 
+class \mbox{\hyperlink{classzephyr_1_1kconfig_1_1KconfigSearchNode}{Kconfig\+Search\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}kconfiglib.\+Kconfig, Dict\mbox{[}str, str\mbox{]}\mbox{]} \mbox{\hyperlink{namespacezephyr_1_1kconfig_a471f8d756833931b2d2f0950ca91fd11}{kconfig\+\_\+load}} (Sphinx app)
+\item 
+None \mbox{\hyperlink{namespacezephyr_1_1kconfig_aee2563c27a400cdd2f59aabe9026c0be}{kconfig\+\_\+search\+\_\+visit\+\_\+html}} (self, nodes.\+Node node)
+\item 
+None \mbox{\hyperlink{namespacezephyr_1_1kconfig_ab5f57ef3e10e3a5a6b7e387f3d57da0f}{kconfig\+\_\+search\+\_\+visit\+\_\+latex}} (self, nodes.\+Node node)
+\item 
+def \mbox{\hyperlink{namespacezephyr_1_1kconfig_aac19e4a5ba2c91d07edf7f76c8cc94fb}{sc\+\_\+fmt}} (sc)
+\item 
+None \mbox{\hyperlink{namespacezephyr_1_1kconfig_aaaff48838fec438ed79f15944649db94}{kconfig\+\_\+build\+\_\+resources}} (Sphinx app)
+\item 
+None \mbox{\hyperlink{namespacezephyr_1_1kconfig_a6c6ecff3527982fe3193c11b7ba48335}{kconfig\+\_\+install}} (Sphinx app, str pagename, str templatename, Dict context, Optional\mbox{[}nodes.\+Node\mbox{]} doctree)
+\item 
+def \mbox{\hyperlink{namespacezephyr_1_1kconfig_a66bcf540eb73ce291d3451330e23eee9}{setup}} (Sphinx app)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacezephyr_1_1kconfig_a2aea884e72ee809d2eaf27a2a515fc56}{\+\_\+\+\_\+version\+\_\+\+\_\+}} = \char`\"{}0.\+1.\+0\char`\"{}
+\item 
+string \mbox{\hyperlink{namespacezephyr_1_1kconfig_affc8e2661375c6e1b54b02d2052b3e06}{RESOURCES\+\_\+\+DIR}} = Path(\+\_\+\+\_\+file\+\_\+\+\_\+).parent / \char`\"{}static\char`\"{}
+\item 
+\mbox{\hyperlink{namespacezephyr_1_1kconfig_a440d802ca63df53704023d9cfda85b31}{ZEPHYR\+\_\+\+BASE}} = Path(\+\_\+\+\_\+file\+\_\+\+\_\+).parents\mbox{[}4\mbox{]}
+\item 
+string \mbox{\hyperlink{namespacezephyr_1_1kconfig_a8e949dfff4e576316f091d0d44e36aaa}{SCRIPTS}} = \mbox{\hyperlink{namespacezephyr_1_1kconfig_a440d802ca63df53704023d9cfda85b31}{ZEPHYR\+\_\+\+BASE}} / \char`\"{}scripts\char`\"{}
+\item 
+string \mbox{\hyperlink{namespacezephyr_1_1kconfig_a46c1bace6d126d063a0fdc3e48a22603}{KCONFIGLIB}} = \mbox{\hyperlink{namespacezephyr_1_1kconfig_a8e949dfff4e576316f091d0d44e36aaa}{SCRIPTS}} / \char`\"{}kconfig\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Kconfig Extension
+#################
+
+Copyright (c) 2022 Nordic Semiconductor ASA
+SPDX-License-Identifier: Apache-2.0
+
+Introduction
+============
+
+This extension adds a new domain (``kconfig``) for the Kconfig language. Unlike
+many other domains, the Kconfig options are not rendered by Sphinx directly but
+on the client side using a database built by the extension. A special directive
+``.. kconfig:search::`` can be inserted on any page to render a search box that
+allows to browse the database. References to Kconfig options can be created by
+using the ``:kconfig:option:`` role. Kconfig options behave as regular domain
+objects, so they can also be referenced by other projects using Intersphinx.
+
+Options
+=======
+
+- kconfig_generate_db: Set to True if you want to generate the Kconfig database.
+  This is only required if you want to use the ``.. kconfig:search::``
+  directive, not if you just need support for Kconfig domain (e.g. when using
+  Intersphinx in another project). Defaults to False.
+- kconfig_ext_paths: A list of base paths where to search for external modules
+  Kconfig files when they use ``kconfig-ext: True``. The extension will look for
+  ${BASE_PATH}/modules/${MODULE_NAME}/Kconfig.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_aaaff48838fec438ed79f15944649db94}\label{namespacezephyr_1_1kconfig_aaaff48838fec438ed79f15944649db94}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!kconfig\_build\_resources@{kconfig\_build\_resources}}
+\index{kconfig\_build\_resources@{kconfig\_build\_resources}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{kconfig\_build\_resources()}{kconfig\_build\_resources()}}
+{\footnotesize\ttfamily  None zephyr.\+kconfig.\+kconfig\+\_\+build\+\_\+resources (\begin{DoxyParamCaption}\item[{Sphinx}]{app }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build the Kconfig database and install HTML resources.\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00244}{244}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00244 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1kconfig_aaaff48838fec438ed79f15944649db94}{kconfig\_build\_resources}}(app: Sphinx) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00245     \textcolor{stringliteral}{"{}"{}"{}Build the Kconfig database and install HTML resources."{}"{}"{}}}
+\DoxyCodeLine{00246 }
+\DoxyCodeLine{00247     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} app.config.kconfig\_generate\_db:}
+\DoxyCodeLine{00248         \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00249 }
+\DoxyCodeLine{00250     \textcolor{keyword}{with} progress\_message(\textcolor{stringliteral}{"{}Building Kconfig database..."{}}):}
+\DoxyCodeLine{00251         kconfig, module\_paths = \mbox{\hyperlink{namespacezephyr_1_1kconfig_a471f8d756833931b2d2f0950ca91fd11}{kconfig\_load}}(app)}
+\DoxyCodeLine{00252         db = list()}
+\DoxyCodeLine{00253 }
+\DoxyCodeLine{00254         \textcolor{keywordflow}{for} sc \textcolor{keywordflow}{in} sorted(}
+\DoxyCodeLine{00255             chain(kconfig.unique\_defined\_syms, kconfig.unique\_choices),}
+\DoxyCodeLine{00256             key=\textcolor{keyword}{lambda} sc: sc.name \textcolor{keywordflow}{if} sc.name \textcolor{keywordflow}{else} \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{00257         ):}
+\DoxyCodeLine{00258             \textcolor{comment}{\# skip nameless symbols}}
+\DoxyCodeLine{00259             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} sc.name:}
+\DoxyCodeLine{00260                 \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00261 }
+\DoxyCodeLine{00262             \textcolor{comment}{\# store alternative defaults (from defconfig files)}}
+\DoxyCodeLine{00263             alt\_defaults = list()}
+\DoxyCodeLine{00264             \textcolor{keywordflow}{for} node \textcolor{keywordflow}{in} sc.nodes:}
+\DoxyCodeLine{00265                 \textcolor{keywordflow}{if} \textcolor{stringliteral}{"{}defconfig"{}} \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} node.filename:}
+\DoxyCodeLine{00266                     \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00267 }
+\DoxyCodeLine{00268                 \textcolor{keywordflow}{for} value, cond \textcolor{keywordflow}{in} node.orig\_defaults:}
+\DoxyCodeLine{00269                     fmt = kconfiglib.expr\_str(value, sc\_fmt)}
+\DoxyCodeLine{00270                     \textcolor{keywordflow}{if} cond \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} sc.kconfig.y:}
+\DoxyCodeLine{00271                         fmt += f\textcolor{stringliteral}{"{} if \{kconfiglib.expr\_str(cond, sc\_fmt)\}"{}}}
+\DoxyCodeLine{00272                     alt\_defaults.append([fmt, node.filename])}
+\DoxyCodeLine{00273 }
+\DoxyCodeLine{00274             \textcolor{comment}{\# build list of symbols that select/imply the current one}}
+\DoxyCodeLine{00275             \textcolor{comment}{\# note: all reverse dependencies are ORed together, and conditionals}}
+\DoxyCodeLine{00276             \textcolor{comment}{\# (e.g. select/imply A if B) turns into A \&\& B. So we first split}}
+\DoxyCodeLine{00277             \textcolor{comment}{\# by OR to include all entries, and we split each one by AND to just}}
+\DoxyCodeLine{00278             \textcolor{comment}{\# take the first entry.}}
+\DoxyCodeLine{00279             selected\_by = list()}
+\DoxyCodeLine{00280             \textcolor{keywordflow}{if} isinstance(sc, kconfiglib.Symbol) \textcolor{keywordflow}{and} sc.rev\_dep != sc.kconfig.n:}
+\DoxyCodeLine{00281                 \textcolor{keywordflow}{for} select \textcolor{keywordflow}{in} kconfiglib.split\_expr(sc.rev\_dep, kconfiglib.OR):}
+\DoxyCodeLine{00282                     sym = kconfiglib.split\_expr(select, kconfiglib.AND)[0]}
+\DoxyCodeLine{00283                     selected\_by.append(f\textcolor{stringliteral}{"{}CONFIG\_\{sym.name\}"{}})}
+\DoxyCodeLine{00284 }
+\DoxyCodeLine{00285             implied\_by = list()}
+\DoxyCodeLine{00286             \textcolor{keywordflow}{if} isinstance(sc, kconfiglib.Symbol) \textcolor{keywordflow}{and} sc.weak\_rev\_dep != sc.kconfig.n:}
+\DoxyCodeLine{00287                 \textcolor{keywordflow}{for} select \textcolor{keywordflow}{in} kconfiglib.split\_expr(sc.weak\_rev\_dep, kconfiglib.OR):}
+\DoxyCodeLine{00288                     sym = kconfiglib.split\_expr(select, kconfiglib.AND)[0]}
+\DoxyCodeLine{00289                     implied\_by.append(f\textcolor{stringliteral}{"{}CONFIG\_\{sym.name\}"{}})}
+\DoxyCodeLine{00290 }
+\DoxyCodeLine{00291             \textcolor{comment}{\# only process nodes with prompt or help}}
+\DoxyCodeLine{00292             nodes = [node \textcolor{keywordflow}{for} node \textcolor{keywordflow}{in} sc.nodes \textcolor{keywordflow}{if} node.prompt \textcolor{keywordflow}{or} node.help]}
+\DoxyCodeLine{00293 }
+\DoxyCodeLine{00294             inserted\_paths = list()}
+\DoxyCodeLine{00295             \textcolor{keywordflow}{for} node \textcolor{keywordflow}{in} nodes:}
+\DoxyCodeLine{00296                 \textcolor{comment}{\# avoid duplicate symbols by forcing unique paths. this can}}
+\DoxyCodeLine{00297                 \textcolor{comment}{\# happen due to dependencies on 0, a trick used by some modules}}
+\DoxyCodeLine{00298                 path = f\textcolor{stringliteral}{"{}\{node.filename\}:\{node.linenr\}"{}}}
+\DoxyCodeLine{00299                 \textcolor{keywordflow}{if} path \textcolor{keywordflow}{in} inserted\_paths:}
+\DoxyCodeLine{00300                     \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00301                 inserted\_paths.append(path)}
+\DoxyCodeLine{00302 }
+\DoxyCodeLine{00303                 dependencies = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00304                 \textcolor{keywordflow}{if} node.dep \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} sc.kconfig.y:}
+\DoxyCodeLine{00305                     dependencies = kconfiglib.expr\_str(node.dep, sc\_fmt)}
+\DoxyCodeLine{00306 }
+\DoxyCodeLine{00307                 defaults = list()}
+\DoxyCodeLine{00308                 \textcolor{keywordflow}{for} value, cond \textcolor{keywordflow}{in} node.orig\_defaults:}
+\DoxyCodeLine{00309                     fmt = kconfiglib.expr\_str(value, sc\_fmt)}
+\DoxyCodeLine{00310                     \textcolor{keywordflow}{if} cond \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} sc.kconfig.y:}
+\DoxyCodeLine{00311                         fmt += f\textcolor{stringliteral}{"{} if \{kconfiglib.expr\_str(cond, sc\_fmt)\}"{}}}
+\DoxyCodeLine{00312                     defaults.append(fmt)}
+\DoxyCodeLine{00313 }
+\DoxyCodeLine{00314                 selects = list()}
+\DoxyCodeLine{00315                 \textcolor{keywordflow}{for} value, cond \textcolor{keywordflow}{in} node.orig\_selects:}
+\DoxyCodeLine{00316                     fmt = kconfiglib.expr\_str(value, sc\_fmt)}
+\DoxyCodeLine{00317                     \textcolor{keywordflow}{if} cond \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} sc.kconfig.y:}
+\DoxyCodeLine{00318                         fmt += f\textcolor{stringliteral}{"{} if \{kconfiglib.expr\_str(cond, sc\_fmt)\}"{}}}
+\DoxyCodeLine{00319                     selects.append(fmt)}
+\DoxyCodeLine{00320 }
+\DoxyCodeLine{00321                 implies = list()}
+\DoxyCodeLine{00322                 \textcolor{keywordflow}{for} value, cond \textcolor{keywordflow}{in} node.orig\_implies:}
+\DoxyCodeLine{00323                     fmt = kconfiglib.expr\_str(value, sc\_fmt)}
+\DoxyCodeLine{00324                     \textcolor{keywordflow}{if} cond \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} sc.kconfig.y:}
+\DoxyCodeLine{00325                         fmt += f\textcolor{stringliteral}{"{} if \{kconfiglib.expr\_str(cond, sc\_fmt)\}"{}}}
+\DoxyCodeLine{00326                     implies.append(fmt)}
+\DoxyCodeLine{00327 }
+\DoxyCodeLine{00328                 ranges = list()}
+\DoxyCodeLine{00329                 \textcolor{keywordflow}{for} min, max, cond \textcolor{keywordflow}{in} node.orig\_ranges:}
+\DoxyCodeLine{00330                     fmt = (}
+\DoxyCodeLine{00331                         f\textcolor{stringliteral}{"{}[\{kconfiglib.expr\_str(min, sc\_fmt)\}, "{}}}
+\DoxyCodeLine{00332                         f\textcolor{stringliteral}{"{}\{kconfiglib.expr\_str(max, sc\_fmt)\}]"{}}}
+\DoxyCodeLine{00333                     )}
+\DoxyCodeLine{00334                     \textcolor{keywordflow}{if} cond \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} sc.kconfig.y:}
+\DoxyCodeLine{00335                         fmt += f\textcolor{stringliteral}{"{} if \{kconfiglib.expr\_str(cond, sc\_fmt)\}"{}}}
+\DoxyCodeLine{00336                     ranges.append(fmt)}
+\DoxyCodeLine{00337 }
+\DoxyCodeLine{00338                 choices = list()}
+\DoxyCodeLine{00339                 \textcolor{keywordflow}{if} isinstance(sc, kconfiglib.Choice):}
+\DoxyCodeLine{00340                     \textcolor{keywordflow}{for} sym \textcolor{keywordflow}{in} sc.syms:}
+\DoxyCodeLine{00341                         choices.append(kconfiglib.expr\_str(sym, sc\_fmt))}
+\DoxyCodeLine{00342 }
+\DoxyCodeLine{00343                 menupath = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{00344                 iternode = node}
+\DoxyCodeLine{00345                 \textcolor{keywordflow}{while} iternode.parent \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} iternode.kconfig.top\_node:}
+\DoxyCodeLine{00346                     iternode = iternode.parent}
+\DoxyCodeLine{00347                     \textcolor{keywordflow}{if} iternode.prompt:}
+\DoxyCodeLine{00348                         title = iternode.prompt[0]}
+\DoxyCodeLine{00349                     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00350                         title = kconfiglib.standard\_sc\_expr\_str(iternode.item)}
+\DoxyCodeLine{00351                     menupath = f\textcolor{stringliteral}{"{} > \{title\}"{}} + menupath}
+\DoxyCodeLine{00352 }
+\DoxyCodeLine{00353                 menupath = \textcolor{stringliteral}{"{}(Top)"{}} + menupath}
+\DoxyCodeLine{00354 }
+\DoxyCodeLine{00355                 filename = node.filename}
+\DoxyCodeLine{00356                 \textcolor{keywordflow}{for} name, path \textcolor{keywordflow}{in} module\_paths.items():}
+\DoxyCodeLine{00357                     \textcolor{keywordflow}{if} node.filename.startswith(path):}
+\DoxyCodeLine{00358                         filename = node.filename.replace(path, f\textcolor{stringliteral}{"{}<module:\{name\}>"{}})}
+\DoxyCodeLine{00359                         \textcolor{keywordflow}{break}}
+\DoxyCodeLine{00360 }
+\DoxyCodeLine{00361                 db.append(}
+\DoxyCodeLine{00362                     \{}
+\DoxyCodeLine{00363                         \textcolor{stringliteral}{"{}name"{}}: f\textcolor{stringliteral}{"{}CONFIG\_\{sc.name\}"{}},}
+\DoxyCodeLine{00364                         \textcolor{stringliteral}{"{}prompt"{}}: node.prompt[0] \textcolor{keywordflow}{if} node.prompt \textcolor{keywordflow}{else} \textcolor{keywordtype}{None},}
+\DoxyCodeLine{00365                         \textcolor{stringliteral}{"{}type"{}}: kconfiglib.TYPE\_TO\_STR[sc.type],}
+\DoxyCodeLine{00366                         \textcolor{stringliteral}{"{}help"{}}: node.help,}
+\DoxyCodeLine{00367                         \textcolor{stringliteral}{"{}dependencies"{}}: dependencies,}
+\DoxyCodeLine{00368                         \textcolor{stringliteral}{"{}defaults"{}}: defaults,}
+\DoxyCodeLine{00369                         \textcolor{stringliteral}{"{}alt\_defaults"{}}: alt\_defaults,}
+\DoxyCodeLine{00370                         \textcolor{stringliteral}{"{}selects"{}}: selects,}
+\DoxyCodeLine{00371                         \textcolor{stringliteral}{"{}selected\_by"{}}: selected\_by,}
+\DoxyCodeLine{00372                         \textcolor{stringliteral}{"{}implies"{}}: implies,}
+\DoxyCodeLine{00373                         \textcolor{stringliteral}{"{}implied\_by"{}}: implied\_by,}
+\DoxyCodeLine{00374                         \textcolor{stringliteral}{"{}ranges"{}}: ranges,}
+\DoxyCodeLine{00375                         \textcolor{stringliteral}{"{}choices"{}}: choices,}
+\DoxyCodeLine{00376                         \textcolor{stringliteral}{"{}filename"{}}: filename,}
+\DoxyCodeLine{00377                         \textcolor{stringliteral}{"{}linenr"{}}: node.linenr,}
+\DoxyCodeLine{00378                         \textcolor{stringliteral}{"{}menupath"{}}: menupath,}
+\DoxyCodeLine{00379                     \}}
+\DoxyCodeLine{00380                 )}
+\DoxyCodeLine{00381 }
+\DoxyCodeLine{00382         app.env.kconfig\_db = db  \textcolor{comment}{\# type: ignore}}
+\DoxyCodeLine{00383 }
+\DoxyCodeLine{00384         outdir = Path(app.outdir) / \textcolor{stringliteral}{"{}kconfig"{}}}
+\DoxyCodeLine{00385         outdir.mkdir(exist\_ok=\textcolor{keyword}{True})}
+\DoxyCodeLine{00386 }
+\DoxyCodeLine{00387         kconfig\_db\_file = outdir / \textcolor{stringliteral}{"{}kconfig.json"{}}}
+\DoxyCodeLine{00388 }
+\DoxyCodeLine{00389         \textcolor{keyword}{with} open(kconfig\_db\_file, \textcolor{stringliteral}{"{}w"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{00390             json.dump(db, f)}
+\DoxyCodeLine{00391 }
+\DoxyCodeLine{00392     app.config.html\_extra\_path.append(kconfig\_db\_file.as\_posix())}
+\DoxyCodeLine{00393     app.config.html\_static\_path.append(RESOURCES\_DIR.as\_posix())}
+\DoxyCodeLine{00394 }
+\DoxyCodeLine{00395 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{kconfig_2____init_____8py_source_l00071}{zephyr.\+kconfig.\+kconfig\+\_\+load()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacezephyr_1_1kconfig_aaaff48838fec438ed79f15944649db94_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_a6c6ecff3527982fe3193c11b7ba48335}\label{namespacezephyr_1_1kconfig_a6c6ecff3527982fe3193c11b7ba48335}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!kconfig\_install@{kconfig\_install}}
+\index{kconfig\_install@{kconfig\_install}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{kconfig\_install()}{kconfig\_install()}}
+{\footnotesize\ttfamily  None zephyr.\+kconfig.\+kconfig\+\_\+install (\begin{DoxyParamCaption}\item[{Sphinx}]{app,  }\item[{str}]{pagename,  }\item[{str}]{templatename,  }\item[{Dict}]{context,  }\item[{Optional\mbox{[}nodes.\+Node\mbox{]}}]{doctree }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Install the Kconfig library files on pages that require it.\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00396}{396}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00402 ) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00403     \textcolor{stringliteral}{"{}"{}"{}Install the Kconfig library files on pages that require it."{}"{}"{}}}
+\DoxyCodeLine{00404     \textcolor{keywordflow}{if} (}
+\DoxyCodeLine{00405         \textcolor{keywordflow}{not} app.config.kconfig\_generate\_db}
+\DoxyCodeLine{00406         \textcolor{keywordflow}{or} app.builder.format != \textcolor{stringliteral}{"{}html"{}}}
+\DoxyCodeLine{00407         \textcolor{keywordflow}{or} \textcolor{keywordflow}{not} doctree}
+\DoxyCodeLine{00408     ):}
+\DoxyCodeLine{00409         \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00410 }
+\DoxyCodeLine{00411     visitor = \_FindKconfigSearchDirectiveVisitor(doctree)}
+\DoxyCodeLine{00412     doctree.walk(visitor)}
+\DoxyCodeLine{00413     \textcolor{keywordflow}{if} visitor.found\_kconfig\_search\_directive:}
+\DoxyCodeLine{00414         app.add\_css\_file(\textcolor{stringliteral}{"{}kconfig.css"{}})}
+\DoxyCodeLine{00415         app.add\_js\_file(\textcolor{stringliteral}{"{}kconfig.mjs"{}}, type=\textcolor{stringliteral}{"{}module"{}})}
+\DoxyCodeLine{00416 }
+\DoxyCodeLine{00417 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_a471f8d756833931b2d2f0950ca91fd11}\label{namespacezephyr_1_1kconfig_a471f8d756833931b2d2f0950ca91fd11}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!kconfig\_load@{kconfig\_load}}
+\index{kconfig\_load@{kconfig\_load}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{kconfig\_load()}{kconfig\_load()}}
+{\footnotesize\ttfamily  Tuple\mbox{[}kconfiglib.\+Kconfig, Dict\mbox{[}str, str\mbox{]}\mbox{]} zephyr.\+kconfig.\+kconfig\+\_\+load (\begin{DoxyParamCaption}\item[{Sphinx}]{app }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load Kconfig\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00071}{71}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00071 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1kconfig_a471f8d756833931b2d2f0950ca91fd11}{kconfig\_load}}(app: Sphinx) -\/> Tuple[kconfiglib.Kconfig, Dict[str, str]]:}
+\DoxyCodeLine{00072     \textcolor{stringliteral}{"{}"{}"{}Load Kconfig"{}"{}"{}}}
+\DoxyCodeLine{00073     \textcolor{keyword}{with} TemporaryDirectory() \textcolor{keyword}{as} td:}
+\DoxyCodeLine{00074         modules = zephyr\_module.parse\_modules(ZEPHYR\_BASE)}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076         \textcolor{comment}{\# generate Kconfig.modules file}}
+\DoxyCodeLine{00077         kconfig = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{00078         \textcolor{keywordflow}{for} module \textcolor{keywordflow}{in} modules:}
+\DoxyCodeLine{00079             kconfig += zephyr\_module.process\_kconfig(module.project, module.meta)}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081         \textcolor{keyword}{with} open(Path(td) / \textcolor{stringliteral}{"{}Kconfig.modules"{}}, \textcolor{stringliteral}{"{}w"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{00082             f.write(kconfig)}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084         \textcolor{comment}{\# generate dummy Kconfig.dts file}}
+\DoxyCodeLine{00085         kconfig = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087         \textcolor{keyword}{with} open(Path(td) / \textcolor{stringliteral}{"{}Kconfig.dts"{}}, \textcolor{stringliteral}{"{}w"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{00088             f.write(kconfig)}
+\DoxyCodeLine{00089 }
+\DoxyCodeLine{00090         \textcolor{comment}{\# base environment}}
+\DoxyCodeLine{00091         os.environ[\textcolor{stringliteral}{"{}ZEPHYR\_BASE"{}}] = str(ZEPHYR\_BASE)}
+\DoxyCodeLine{00092         os.environ[\textcolor{stringliteral}{"{}srctree"{}}] = str(ZEPHYR\_BASE)}
+\DoxyCodeLine{00093         os.environ[\textcolor{stringliteral}{"{}KCONFIG\_DOC\_MODE"{}}] = \textcolor{stringliteral}{"{}1"{}}}
+\DoxyCodeLine{00094         os.environ[\textcolor{stringliteral}{"{}KCONFIG\_BINARY\_DIR"{}}] = td}
+\DoxyCodeLine{00095 }
+\DoxyCodeLine{00096         \textcolor{comment}{\# include all archs and boards}}
+\DoxyCodeLine{00097         os.environ[\textcolor{stringliteral}{"{}ARCH\_DIR"{}}] = \textcolor{stringliteral}{"{}arch"{}}}
+\DoxyCodeLine{00098         os.environ[\textcolor{stringliteral}{"{}ARCH"{}}] = \textcolor{stringliteral}{"{}*"{}}}
+\DoxyCodeLine{00099         os.environ[\textcolor{stringliteral}{"{}BOARD\_DIR"{}}] = \textcolor{stringliteral}{"{}boards/*/*"{}}}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101         \textcolor{comment}{\# insert external Kconfigs to the environment}}
+\DoxyCodeLine{00102         module\_paths = dict()}
+\DoxyCodeLine{00103         \textcolor{keywordflow}{for} module \textcolor{keywordflow}{in} modules:}
+\DoxyCodeLine{00104             name = module.meta[\textcolor{stringliteral}{"{}name"{}}]}
+\DoxyCodeLine{00105             name\_var = module.meta[\textcolor{stringliteral}{"{}name-\/sanitized"{}}].upper()}
+\DoxyCodeLine{00106             module\_paths[name] = module.project}
+\DoxyCodeLine{00107 }
+\DoxyCodeLine{00108             build\_conf = module.meta.get(\textcolor{stringliteral}{"{}build"{}})}
+\DoxyCodeLine{00109             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} build\_conf:}
+\DoxyCodeLine{00110                 \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00111 }
+\DoxyCodeLine{00112             \textcolor{keywordflow}{if} build\_conf.get(\textcolor{stringliteral}{"{}kconfig"{}}):}
+\DoxyCodeLine{00113                 kconfig = Path(module.project) / build\_conf[\textcolor{stringliteral}{"{}kconfig"{}}]}
+\DoxyCodeLine{00114                 os.environ[f\textcolor{stringliteral}{"{}ZEPHYR\_\{name\_var\}\_KCONFIG"{}}] = str(kconfig)}
+\DoxyCodeLine{00115             \textcolor{keywordflow}{elif} build\_conf.get(\textcolor{stringliteral}{"{}kconfig-\/ext"{}}):}
+\DoxyCodeLine{00116                 \textcolor{keywordflow}{for} path \textcolor{keywordflow}{in} app.config.kconfig\_ext\_paths:}
+\DoxyCodeLine{00117                     kconfig = Path(path) / \textcolor{stringliteral}{"{}modules"{}} / name / \textcolor{stringliteral}{"{}Kconfig"{}}}
+\DoxyCodeLine{00118                     \textcolor{keywordflow}{if} kconfig.exists():}
+\DoxyCodeLine{00119                         os.environ[f\textcolor{stringliteral}{"{}ZEPHYR\_\{name\_var\}\_KCONFIG"{}}] = str(kconfig)}
+\DoxyCodeLine{00120 }
+\DoxyCodeLine{00121         \textcolor{keywordflow}{return} kconfiglib.Kconfig(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}Kconfig"{}}), module\_paths}
+\DoxyCodeLine{00122 }
+\DoxyCodeLine{00123 }
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{kconfig_2____init_____8py_source_l00244}{zephyr.\+kconfig.\+kconfig\+\_\+build\+\_\+resources()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacezephyr_1_1kconfig_a471f8d756833931b2d2f0950ca91fd11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_aee2563c27a400cdd2f59aabe9026c0be}\label{namespacezephyr_1_1kconfig_aee2563c27a400cdd2f59aabe9026c0be}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!kconfig\_search\_visit\_html@{kconfig\_search\_visit\_html}}
+\index{kconfig\_search\_visit\_html@{kconfig\_search\_visit\_html}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{kconfig\_search\_visit\_html()}{kconfig\_search\_visit\_html()}}
+{\footnotesize\ttfamily  None zephyr.\+kconfig.\+kconfig\+\_\+search\+\_\+visit\+\_\+html (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{nodes.\+Node}]{node }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00130}{130}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1kconfig_aee2563c27a400cdd2f59aabe9026c0be}{kconfig\_search\_visit\_html}}(self, node: nodes.Node) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00131     self.body.append(node.html())}
+\DoxyCodeLine{00132     \textcolor{keywordflow}{raise} nodes.SkipNode}
+\DoxyCodeLine{00133 }
+\DoxyCodeLine{00134 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_ab5f57ef3e10e3a5a6b7e387f3d57da0f}\label{namespacezephyr_1_1kconfig_ab5f57ef3e10e3a5a6b7e387f3d57da0f}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!kconfig\_search\_visit\_latex@{kconfig\_search\_visit\_latex}}
+\index{kconfig\_search\_visit\_latex@{kconfig\_search\_visit\_latex}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{kconfig\_search\_visit\_latex()}{kconfig\_search\_visit\_latex()}}
+{\footnotesize\ttfamily  None zephyr.\+kconfig.\+kconfig\+\_\+search\+\_\+visit\+\_\+latex (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{nodes.\+Node}]{node }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00135}{135}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00135 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1kconfig_ab5f57ef3e10e3a5a6b7e387f3d57da0f}{kconfig\_search\_visit\_latex}}(self, node: nodes.Node) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00136     self.body.append(\textcolor{stringliteral}{"{}Kconfig search is only available on HTML output"{}})}
+\DoxyCodeLine{00137     \textcolor{keywordflow}{raise} nodes.SkipNode}
+\DoxyCodeLine{00138 }
+\DoxyCodeLine{00139 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_aac19e4a5ba2c91d07edf7f76c8cc94fb}\label{namespacezephyr_1_1kconfig_aac19e4a5ba2c91d07edf7f76c8cc94fb}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!sc\_fmt@{sc\_fmt}}
+\index{sc\_fmt@{sc\_fmt}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{sc\_fmt()}{sc\_fmt()}}
+{\footnotesize\ttfamily def zephyr.\+kconfig.\+sc\+\_\+fmt (\begin{DoxyParamCaption}\item[{}]{sc }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00232}{232}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00232 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1kconfig_aac19e4a5ba2c91d07edf7f76c8cc94fb}{sc\_fmt}}(sc):}
+\DoxyCodeLine{00233     \textcolor{keywordflow}{if} isinstance(sc, kconfiglib.Symbol):}
+\DoxyCodeLine{00234         \textcolor{keywordflow}{if} sc.nodes:}
+\DoxyCodeLine{00235             \textcolor{keywordflow}{return} f\textcolor{stringliteral}{'<a href="{}\#CONFIG\_\{sc.name\}"{}>CONFIG\_\{sc.name\}</a>'}}
+\DoxyCodeLine{00236     \textcolor{keywordflow}{elif} isinstance(sc, kconfiglib.Choice):}
+\DoxyCodeLine{00237         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} sc.name:}
+\DoxyCodeLine{00238             \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}\&ltchoice\&gt"{}}}
+\DoxyCodeLine{00239         \textcolor{keywordflow}{return} f\textcolor{stringliteral}{'\&ltchoice <a href="{}\#CONFIG\_\{sc.name\}"{}>CONFIG\_\{sc.name\}</a>\&gt'}}
+\DoxyCodeLine{00240 }
+\DoxyCodeLine{00241     \textcolor{keywordflow}{return} kconfiglib.standard\_sc\_expr\_str(sc)}
+\DoxyCodeLine{00242 }
+\DoxyCodeLine{00243 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_a66bcf540eb73ce291d3451330e23eee9}\label{namespacezephyr_1_1kconfig_a66bcf540eb73ce291d3451330e23eee9}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!setup@{setup}}
+\index{setup@{setup}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily def zephyr.\+kconfig.\+setup (\begin{DoxyParamCaption}\item[{Sphinx}]{app }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00418}{418}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00418 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1kconfig_a66bcf540eb73ce291d3451330e23eee9}{setup}}(app: Sphinx):}
+\DoxyCodeLine{00419     app.add\_config\_value(\textcolor{stringliteral}{"{}kconfig\_generate\_db"{}}, \textcolor{keyword}{False}, \textcolor{stringliteral}{"{}env"{}})}
+\DoxyCodeLine{00420     app.add\_config\_value(\textcolor{stringliteral}{"{}kconfig\_ext\_paths"{}}, [], \textcolor{stringliteral}{"{}env"{}})}
+\DoxyCodeLine{00421 }
+\DoxyCodeLine{00422     app.add\_node(}
+\DoxyCodeLine{00423         KconfigSearchNode,}
+\DoxyCodeLine{00424         html=(kconfig\_search\_visit\_html, \textcolor{keywordtype}{None}),}
+\DoxyCodeLine{00425         latex=(kconfig\_search\_visit\_latex, \textcolor{keywordtype}{None}),}
+\DoxyCodeLine{00426     )}
+\DoxyCodeLine{00427 }
+\DoxyCodeLine{00428     app.add\_domain(KconfigDomain)}
+\DoxyCodeLine{00429 }
+\DoxyCodeLine{00430     app.connect(\textcolor{stringliteral}{"{}builder-\/inited"{}}, kconfig\_build\_resources)}
+\DoxyCodeLine{00431     app.connect(\textcolor{stringliteral}{"{}html-\/page-\/context"{}}, kconfig\_install)}
+\DoxyCodeLine{00432 }
+\DoxyCodeLine{00433     \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{00434         \textcolor{stringliteral}{"{}version"{}}: \_\_version\_\_,}
+\DoxyCodeLine{00435         \textcolor{stringliteral}{"{}parallel\_read\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00436         \textcolor{stringliteral}{"{}parallel\_write\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00437     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_a2aea884e72ee809d2eaf27a2a515fc56}\label{namespacezephyr_1_1kconfig_a2aea884e72ee809d2eaf27a2a515fc56}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!\_\_version\_\_@{\_\_version\_\_}}
+\index{\_\_version\_\_@{\_\_version\_\_}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{\_\_version\_\_}{\_\_version\_\_}}
+{\footnotesize\ttfamily string zephyr.\+kconfig.\+\_\+\+\_\+version\+\_\+\+\_\+ = \char`\"{}0.\+1.\+0\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00055}{55}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_a46c1bace6d126d063a0fdc3e48a22603}\label{namespacezephyr_1_1kconfig_a46c1bace6d126d063a0fdc3e48a22603}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!KCONFIGLIB@{KCONFIGLIB}}
+\index{KCONFIGLIB@{KCONFIGLIB}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{KCONFIGLIB}{KCONFIGLIB}}
+{\footnotesize\ttfamily string zephyr.\+kconfig.\+KCONFIGLIB = \mbox{\hyperlink{namespacezephyr_1_1kconfig_a8e949dfff4e576316f091d0d44e36aaa}{SCRIPTS}} / \char`\"{}kconfig\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00064}{64}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_affc8e2661375c6e1b54b02d2052b3e06}\label{namespacezephyr_1_1kconfig_affc8e2661375c6e1b54b02d2052b3e06}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!RESOURCES\_DIR@{RESOURCES\_DIR}}
+\index{RESOURCES\_DIR@{RESOURCES\_DIR}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{RESOURCES\_DIR}{RESOURCES\_DIR}}
+{\footnotesize\ttfamily string zephyr.\+kconfig.\+RESOURCES\+\_\+\+DIR = Path(\+\_\+\+\_\+file\+\_\+\+\_\+).parent / \char`\"{}static\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00058}{58}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_a8e949dfff4e576316f091d0d44e36aaa}\label{namespacezephyr_1_1kconfig_a8e949dfff4e576316f091d0d44e36aaa}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!SCRIPTS@{SCRIPTS}}
+\index{SCRIPTS@{SCRIPTS}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{SCRIPTS}{SCRIPTS}}
+{\footnotesize\ttfamily string zephyr.\+kconfig.\+SCRIPTS = \mbox{\hyperlink{namespacezephyr_1_1kconfig_a440d802ca63df53704023d9cfda85b31}{ZEPHYR\+\_\+\+BASE}} / \char`\"{}scripts\char`\"{}}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00061}{61}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+\mbox{\Hypertarget{namespacezephyr_1_1kconfig_a440d802ca63df53704023d9cfda85b31}\label{namespacezephyr_1_1kconfig_a440d802ca63df53704023d9cfda85b31}} 
+\index{zephyr.kconfig@{zephyr.kconfig}!ZEPHYR\_BASE@{ZEPHYR\_BASE}}
+\index{ZEPHYR\_BASE@{ZEPHYR\_BASE}!zephyr.kconfig@{zephyr.kconfig}}
+\doxysubsubsection{\texorpdfstring{ZEPHYR\_BASE}{ZEPHYR\_BASE}}
+{\footnotesize\ttfamily zephyr.\+kconfig.\+ZEPHYR\+\_\+\+BASE = Path(\+\_\+\+\_\+file\+\_\+\+\_\+).parents\mbox{[}4\mbox{]}}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00059}{59}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+

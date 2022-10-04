@@ -1,0 +1,83 @@
+{
+    "service_name": "snmp_client",
+    "loglevel": "debug",
+    "configurations": [
+        {
+            
+            "name": "target_ip",
+            "value": "192.168.120.50",
+            "description": "Target device IP address",
+            "type": "STRING"
+        }, 
+        {
+           "name": "target_port",
+           "value": 6053,
+           "description": "Target device NTCIP port",
+           "type": "INTEGER" 
+        },
+        {
+            "name": "community",
+            "value": "public",
+            "description": "Target community for establishing snmp communication",
+            "type": "STRING"  
+        },
+        {
+            "name": "snmp_version",
+            "value": 0,
+            "description": "snmp version being used. net-snmp version definition: SNMP_VERSION_1:0 SNMP_VERSION_2c:1 SNMP_VERSION_2u:2 SNMP_VERSION_3:3",
+            "type": "INTEGER" 
+        },
+        {
+            "name": "timeout",
+            "value": 10000,
+            "description": "Time in millisecond after which the the snmp request times out",
+            "type": "INTEGER" 
+        },
+        {
+            
+            "name": "udp_socket_ip",
+            "value": "127.0.0.1",
+            "description": "IP for UDP socket listener to listen on. Should be localhost IP of container or VM running TSC Service.",
+            "type": "STRING"
+        },
+        {
+            
+            "name": "udp_socket_port",
+            "value": 6053,
+            "description": "Port for UDP Socket Listener to list on. TSC configuration sets which port/host NTCIP SPaT data will be broadcast to.",
+            "type": "INTEGER"
+        },
+        {
+            
+            "name": "socket_timeout",
+            "value": 100,
+            "description": "Timeout in seconds for UDP Socket Listener. If UDP Socket Listener does not receive messages for this amount of time it will shutdown and thrown an exception. ",
+            "type": "INTEGER"
+        },
+        {
+            "name": "bootstrap_server",
+            "value": "127.0.0.1:9092",
+            "description": "Kafka Broker Server Address.",
+            "type": "STRING"
+        },
+        {
+            "name": "spat_producer_topic",
+            "value": "modified_spat",
+            "description": "Kafka topic for streets internal SPAT messages",
+            "type": "STRING"
+        },
+        {
+            "name": "use_tsc_timestamp",
+            "value": false,
+            "description": "If false will use host machine unix time for SPaT timestamp, If true will use ntcip message provided timestamp for SPaT timestamp.",
+            "type": "BOOL"
+        },
+        {
+            "name": "use_tsc_state_spat_update",
+            "value": true,
+            "description": "If true will enable tsc_state to update incoming spat with calculated future movement events, using traffic signal controller configuration information",
+            "type": "BOOL"
+        }
+
+    ]
+}

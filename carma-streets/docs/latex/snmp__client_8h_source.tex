@@ -1,0 +1,96 @@
+\hypertarget{snmp__client_8h_source}{}\doxysection{snmp\+\_\+client.\+h}
+\label{snmp__client_8h_source}\index{tsc\_client\_service/include/snmp\_client.h@{tsc\_client\_service/include/snmp\_client.h}}
+\mbox{\hyperlink{snmp__client_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <net-\/snmp/net-\/snmp-\/config.h>}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <net-\/snmp/net-\/snmp-\/includes.h>}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <bits/stdc++.h>} }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ntcip__oids_8h}{ntcip\_oids.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00012}00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{snmp__client__exception_8h}{snmp\_client\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00015}00015 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacetraffic__signal__controller__service}{traffic\_signal\_controller\_service}}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00016}00016 \{}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00018}\mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{00018}} \textcolor{keyword}{enum class} \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{request\_type}}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00019}00019 \{}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00020}00020     \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a7528035a93ee69cedb1dbddb2f0bfcc8}{GET}},}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00021}00021     \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a8c52684db8f49511e9b44471716bf164}{SET}},}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00022}00022     \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a03570470bad94692ce93e32700d2e1cb}{OTHER}} \textcolor{comment}{//Processing this request type is not a defined behavior, included for testing only}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00023}00023 \};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00026}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj}{00026}} \textcolor{keyword}{struct }\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj}{snmp\_response\_obj}}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00029}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a7379a4a3fcabddd7000d9be76111c38a}{00029}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a7379a4a3fcabddd7000d9be76111c38a}{response\_type}}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00030}00030     \{}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00031}00031         INTEGER,}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00032}00032         STRING}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00033}00033     \};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00035}00035     \textcolor{comment}{//snmp response values can be any asn.1 supported types. }}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00036}00036     \textcolor{comment}{//Integer and string values can be processed here}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00037}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_abbd5d90ba42fc8e1c7747f97b965da30}{00037}}     int64\_t \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_abbd5d90ba42fc8e1c7747f97b965da30}{val\_int}} = 0;}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00038}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_ac6119d52c9266dab1f7fc8463155eb34}{00038}}     std::vector<char> \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_ac6119d52c9266dab1f7fc8463155eb34}{val\_string}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00039}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a9a3e45ceab9b7e8c6aa18fb00e242331}{00039}}     \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a7379a4a3fcabddd7000d9be76111c38a}{response\_type}} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a9a3e45ceab9b7e8c6aa18fb00e242331}{type}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00041}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_ae56005d5f8ab69fb245e24b51363c6e5}{00041}}     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_ae56005d5f8ab69fb245e24b51363c6e5}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj}{snmp\_response\_obj}}\& obj2)\textcolor{keyword}{ const}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00042}00042 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00043}00043         \textcolor{keywordflow}{return} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_abbd5d90ba42fc8e1c7747f97b965da30}{val\_int}} == obj2.\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_abbd5d90ba42fc8e1c7747f97b965da30}{val\_int}} \&\& \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_ac6119d52c9266dab1f7fc8463155eb34}{val\_string}} == obj2.\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_ac6119d52c9266dab1f7fc8463155eb34}{val\_string}} \&\& \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a9a3e45ceab9b7e8c6aa18fb00e242331}{type}} == obj2.\mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a9a3e45ceab9b7e8c6aa18fb00e242331}{type}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00045}00045 \};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00047}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{00047}} \textcolor{keyword}{class }\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\_client}}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00048}00048 \{}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00049}00049     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00051}00051         \textcolor{comment}{/*variables to store an snmp session*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00052}00052         \textcolor{comment}{// struct that holds information about who we're going to be talking to}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00053}00053         \textcolor{comment}{// We need to declare 2 of these, one to fill info with and second which is }}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00054}00054         \textcolor{comment}{// a pointer returned by the library}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00055}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a1e412bcb68120f12e14e098da1d9c287}{00055}}         snmp\_session \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a1e412bcb68120f12e14e098da1d9c287}{session}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00056}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a64cb68344815e02b9d7c72541b59cc37}{00056}}         snmp\_session *\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a64cb68344815e02b9d7c72541b59cc37}{ss}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00058}00058         \textcolor{comment}{/*Structure to hold all of the information that we're going to send to the remote host*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00059}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a3ff1755d9120fd159e8ffc5c33bdec8a}{00059}}         snmp\_pdu *\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a3ff1755d9120fd159e8ffc5c33bdec8a}{pdu}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00061}00061         }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00062}00062         \textcolor{comment}{/*OID is going to hold the location of the information which we want to receive. It will need a size as well*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00063}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a5cd5523753710b778674fc09222c25e0}{00063}}         oid \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a5cd5523753710b778674fc09222c25e0}{OID}}[MAX\_OID\_LEN];}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00064}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a81f5a68e78785a51e68a311f76992a1f}{00064}}         \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a81f5a68e78785a51e68a311f76992a1f}{OID\_len}} = MAX\_OID\_LEN;}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00066}00066         \textcolor{comment}{// Values from config}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00067}00067         \textcolor{comment}{/*Target device IP address*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00068}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a1547b803b4edc124012a3f22ae6208f2}{00068}}         std::string \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a1547b803b4edc124012a3f22ae6208f2}{ip\_}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00069}00069         \textcolor{comment}{/*Target device NTCIP port*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00070}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_ad7af16f9f063c8cb45454bc697c1caae}{00070}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_ad7af16f9f063c8cb45454bc697c1caae}{port\_}} = 0;}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00071}00071         \textcolor{comment}{/*Target community for establishing snmp communication*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00072}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a2c0be7f5137db2896b1fdb7cf1fff07f}{00072}}         std::string \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a2c0be7f5137db2896b1fdb7cf1fff07f}{community\_}} = \textcolor{stringliteral}{"{}public"{}};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00073}00073         \textcolor{comment}{/* net-\/snmp version definition: SNMP\_VERSION\_1:0 SNMP\_VERSION\_2c:1 SNMP\_VERSION\_2u:2 SNMP\_VERSION\_3:3 }}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00074}00074 \textcolor{comment}{        https://github.com/net-\/snmp/net-\/snmp/blob/master/include/net-\/snmp/library/snmp.h */}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00075}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_acf0ab65d68fb0ffe4ca56f34d4d98204}{00075}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_acf0ab65d68fb0ffe4ca56f34d4d98204}{snmp\_version\_}} = 0;}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00076}00076         \textcolor{comment}{/*Time after which the the snmp request times out*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00077}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_ac9f177424aa02e6231dfe99685452bea}{00077}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_ac9f177424aa02e6231dfe99685452bea}{timeout\_}} = 10000;}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00080}00080     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00090}00090         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a5401f9ad0e151a9313f93aec4454a53b}{snmp\_client}}(\textcolor{keyword}{const} std::string\& ip, \textcolor{keyword}{const} \textcolor{keywordtype}{int}\& port, \textcolor{keyword}{const} std::string\& community = \textcolor{stringliteral}{"{}public"{}}, \textcolor{keywordtype}{int} snmp\_version = 0, \textcolor{keywordtype}{int} timeout = 100);}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00091}00091         }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00092}00092         \textcolor{comment}{/*Disable default copy constructor*/}}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00093}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a5401f9ad0e151a9313f93aec4454a53b}{00093}}         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a5401f9ad0e151a9313f93aec4454a53b}{snmp\_client}}() = \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00104}00104         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_aae8b1a53ede8a44967b8d3f75f68f58c}{process\_snmp\_request}}(\textcolor{keyword}{const} std::string\& input\_oid, \textcolor{keyword}{const} \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{request\_type}}\& \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{request\_type}}, \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj}{snmp\_response\_obj}}\& val);}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00109}00109         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a2ab85fc29c24873b43ae26c9eb5fa555}{log\_error}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int}\& status, \textcolor{keyword}{const} \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{request\_type}}\& \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{request\_type}}, snmp\_pdu *response) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00112}00112         \textcolor{keyword}{virtual} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client_a941a982d632653cf009eeeb158de1a91}{\string~snmp\_client}}();}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00114}00114 \};}
+\DoxyCodeLine{\Hypertarget{snmp__client_8h_source_l00115}00115 \} \textcolor{comment}{//namespace traffic\_signal\_controller\_service}}
+
+\end{DoxyCode}

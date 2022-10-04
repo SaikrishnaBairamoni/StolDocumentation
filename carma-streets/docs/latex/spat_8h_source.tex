@@ -1,0 +1,48 @@
+\hypertarget{spat_8h_source}{}\doxysection{spat.\+h}
+\label{spat_8h_source}\index{streets\_utils/streets\_signal\_phase\_and\_timing/include/spat.h@{streets\_utils/streets\_signal\_phase\_and\_timing/include/spat.h}}
+\mbox{\hyperlink{spat_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__state_8h}{intersection\_state.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{signal__phase__and__timing__exception_8h}{signal\_phase\_and\_timing\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ntcip__1202__ext_8h}{ntcip\_1202\_ext.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <rapidjson/rapidjson.h>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <rapidjson/writer.h>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <rapidjson/stringbuffer.h>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00017}00017 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacesignal__phase__and__timing}{signal\_phase\_and\_timing}}\{}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00018}\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{00018}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{spat}}\{}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00022}\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{00022}}         u\_int32\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{timestamp}} = 0;}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00026}\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}{00026}}         std::string \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}{name}};}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00030}\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{00030}}         std::list<intersection\_state> \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}};}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00031}00031         }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00035}\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}{00035}}         std::unordered\_map<int,int> \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}{phase\_to\_signal\_group}};}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00042}00042         std::string \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1610241d89b9b84063f248803546a70b}{toJson}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00048}00048         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a034410d8e6254100552d88d21ca5bedd}{fromJson}}(\textcolor{keyword}{const} std::string \&json);}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00058}00058         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_abf3e0ae490abd77f4c168e34222c21dc}{update}}(\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip::ntcip\_1202\_ext}} \&ntcip\_data, \textcolor{keywordtype}{bool} use\_ntcip\_timestamp );}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00069}00069         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a8225fc5b13a6faaf4d1e309dadd76858}{initialize\_intersection}}(\textcolor{keyword}{const} std::string \&intersection\_name, \textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id, \textcolor{keyword}{const} std::unordered\_map<int,int> \&phase\_number\_to\_signal\_group);}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00079}00079         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a59f4842ab1588deac2746ecdafcd29b3}{set\_timestamp\_ntcip}}(\textcolor{keyword}{const} uint32\_t second\_of\_day , \textcolor{keyword}{const} uint16\_t millisecond\_of\_second );}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00085}00085         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac664acbcf145d92f92605e3bfde11ce7}{set\_timestamp\_local}}();}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00093}00093         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ae02c2e6b6a732834be0f8472270f7931}{update\_intersection\_state}}( \mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip::ntcip\_1202\_ext}} \&ntcip\_data );}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00102}00102         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ae09b881219e3f51e7d9839668abbb52e}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{spat}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00110}00110         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a5c73cc279f79a8bfcbd3fbbb1dc31889}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{spat}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00111}00111     }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00112}00112     \};}
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{spat_8h_source_l00114}00114 \}}
+
+\end{DoxyCode}

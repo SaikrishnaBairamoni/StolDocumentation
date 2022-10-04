@@ -1,0 +1,4 @@
+<map id="streets_service::streets_configuration::initialize_logger" name="streets_service::streets_configuration::initialize_logger">
+<area shape="rect" id="node1" title="Static method to initialize spdlog default logger." alt="" coords="5,5,201,47"/>
+<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#a92ea5469cbab9198efb4696b7e5598eb" title=" " alt="" coords="249,5,435,47"/>
+</map>

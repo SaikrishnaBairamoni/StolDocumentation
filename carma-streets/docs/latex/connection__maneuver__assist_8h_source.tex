@@ -1,0 +1,39 @@
+\hypertarget{connection__maneuver__assist_8h_source}{}\doxysection{connection\+\_\+maneuver\+\_\+assist.\+h}
+\label{connection__maneuver__assist_8h_source}\index{streets\_utils/streets\_signal\_phase\_and\_timing/include/connection\_maneuver\_assist.h@{streets\_utils/streets\_signal\_phase\_and\_timing/include/connection\_maneuver\_assist.h}}
+\mbox{\hyperlink{connection__maneuver__assist_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{signal__phase__and__timing__exception_8h}{signal\_phase\_and\_timing\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <rapidjson/rapidjson.h>}}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00011}00011 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacesignal__phase__and__timing}{signal\_phase\_and\_timing}} \{}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00012}\mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist}{00012}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist}{connection\_maneuver\_assist}}\{}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00017}\mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a27cec91f7517fa45f81237e430a7fa41}{00017}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a27cec91f7517fa45f81237e430a7fa41}{connection\_id}} = 0;}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00019}00019         \textcolor{comment}{// Expected Clearance Information}}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00025}\mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a57bbd0ca0229027c0e5267cc35fa49aa}{00025}}         uint16\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a57bbd0ca0229027c0e5267cc35fa49aa}{queue\_length}} = 0;}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00035}\mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a1e6ed40423cb48714c7ccdf0a61bef4f}{00035}}         uint16\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a1e6ed40423cb48714c7ccdf0a61bef4f}{available\_storage\_length}} = 0;}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00041}\mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_af6ef42514ed79b0769e8862ac636cb11}{00041}}         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_af6ef42514ed79b0769e8862ac636cb11}{wait\_on\_stop}};}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00047}\mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a724884d4285e01fd8eb9c7e2245561cf}{00047}}         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a724884d4285e01fd8eb9c7e2245561cf}{ped\_bicycle\_detect}};}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00055}00055         rapidjson::Value \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_ac9d89b4be71fc4bf98c8f4a1c175d08b}{toJson}}(rapidjson::Document::AllocatorType \&allocator) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00061}00061         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a0a1eb4c8b7054414b2a771d67d78404e}{fromJson}}(\textcolor{keyword}{const} rapidjson::Value \&val);}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00070}00070         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a6254e1d976472c463fe9e771f318436f}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist}{connection\_maneuver\_assist}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00078}00078         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist_a238c4011461f3c1aecdf55c4009a3ee6}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1connection__maneuver__assist}{connection\_maneuver\_assist}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00080}00080     \};}
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{connection__maneuver__assist_8h_source_l00082}00082 \}}
+
+\end{DoxyCode}

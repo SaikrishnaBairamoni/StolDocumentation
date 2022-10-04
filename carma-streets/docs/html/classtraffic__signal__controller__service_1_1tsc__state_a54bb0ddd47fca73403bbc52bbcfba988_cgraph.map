@@ -1,0 +1,4 @@
+<map id="traffic_signal_controller_service::tsc_state::get_phase_channels" name="traffic_signal_controller_service::tsc_state::get_phase_channels">
+<area shape="rect" id="node1" title="Creates vectors of channels associated with a vehicle phase and a pedestrian. Ignores overlap,..." alt="" coords="5,5,160,61"/>
+<area shape="rect" id="node2" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="208,20,280,47"/>
+</map>

@@ -1,0 +1,271 @@
+\hypertarget{intersection__client__api_2OAIHelpers_8h_source}{}\doxysection{OAIHelpers.\+h}
+\label{intersection__client__api_2OAIHelpers_8h_source}\index{streets\_utils/streets\_api/intersection\_client\_api/OAIHelpers.h@{streets\_utils/streets\_api/intersection\_client\_api/OAIHelpers.h}}
+\mbox{\hyperlink{intersection__client__api_2OAIHelpers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00012}00012 \textcolor{preprocessor}{\#ifndef OAI\_HELPERS\_H}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00013}00013 \textcolor{preprocessor}{\#define OAI\_HELPERS\_H}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00015}00015 \textcolor{preprocessor}{\#include <QByteArray>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00016}00016 \textcolor{preprocessor}{\#include <QDate>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <QDateTime>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00018}00018 \textcolor{preprocessor}{\#include <QJsonArray>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00019}00019 \textcolor{preprocessor}{\#include <QJsonObject>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00020}00020 \textcolor{preprocessor}{\#include <QJsonValue>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00021}00021 \textcolor{preprocessor}{\#include <QList>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00022}00022 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00023}00023 \textcolor{preprocessor}{\#include <QSet>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00024}00024 \textcolor{preprocessor}{\#include <QVariant>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00026}00026 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__server__api_2src_2models_2OAIEnum_8h}{OAIEnum.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00027}00027 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__server__api_2src_2models_2OAIHttpFileElement_8h}{OAIHttpFileElement.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__server__api_2src_2models_2OAIObject_8h}{OAIObject.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00030}00030 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00032}00032 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00033}\mbox{\hyperlink{classOpenAPI_1_1OptionalParam}{00033}} \textcolor{keyword}{class }\mbox{\hyperlink{classOpenAPI_1_1OptionalParam}{OptionalParam}} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00034}00034 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00035}\mbox{\hyperlink{classOpenAPI_1_1OptionalParam_afa744d34993ac4abf2359af2fa00093e}{00035}}     T \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_afa744d34993ac4abf2359af2fa00093e}{m\_Value}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00036}\mbox{\hyperlink{classOpenAPI_1_1OptionalParam_adb1dd6248d3c63435e8e50748201eca9}{00036}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_adb1dd6248d3c63435e8e50748201eca9}{m\_hasValue}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00037}00037 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00038}\mbox{\hyperlink{classOpenAPI_1_1OptionalParam_acace8ec257132bf6d10e3ae9bb0d9266}{00038}}     \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_acace8ec257132bf6d10e3ae9bb0d9266}{OptionalParam}}()\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00039}00039         \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_adb1dd6248d3c63435e8e50748201eca9}{m\_hasValue}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00041}\mbox{\hyperlink{classOpenAPI_1_1OptionalParam_a2ed405f0907ea633a1dc81d23c6062ee}{00041}}     \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_a2ed405f0907ea633a1dc81d23c6062ee}{OptionalParam}}(\textcolor{keyword}{const} T \&val)\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00042}00042         \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_adb1dd6248d3c63435e8e50748201eca9}{m\_hasValue}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00043}00043         \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_afa744d34993ac4abf2359af2fa00093e}{m\_Value}} = val;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00045}\mbox{\hyperlink{classOpenAPI_1_1OptionalParam_a5ff1928c08dcf9a74a8e491eb207261f}{00045}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_a5ff1928c08dcf9a74a8e491eb207261f}{hasValue}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00046}00046         \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_adb1dd6248d3c63435e8e50748201eca9}{m\_hasValue}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00047}00047     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00048}\mbox{\hyperlink{classOpenAPI_1_1OptionalParam_a463e1c882e25a2d8fd5e4429d58e64c3}{00048}}     T \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_a463e1c882e25a2d8fd5e4429d58e64c3}{value}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00049}00049         \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OptionalParam_afa744d34993ac4abf2359af2fa00093e}{m\_Value}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00050}00050     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00051}00051 \};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00053}00053 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a717f525876527251375fa6cb0de0e431}{setDateTimeFormat}}(\textcolor{keyword}{const} QString \&format);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00054}00054 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a717f525876527251375fa6cb0de0e431}{setDateTimeFormat}}(\textcolor{keyword}{const} Qt::DateFormat \&format);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00056}00056 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00057}00057 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QList<T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00059}00059 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00060}00060 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QSet<T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00062}00062 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00063}00063 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QList<QString> \&inStr, QList<T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00065}00065 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00066}00066 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QSet<QString> \&inStr, QList<T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00068}00068 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00069}00069 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QMap<QString, QString> \&inStr, QMap<QString, T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00071}00071 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00072}00072 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QList<T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00074}00074 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00075}00075 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QSet<T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00077}00077 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00078}00078 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QMap<QString, T> \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00080}00080 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00081}00081 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QList<T> \&val, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00083}00083 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00084}00084 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QSet<T> \&val, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00086}00086 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00087}00087 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QMap<QString, T> \&val, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00089}00089 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00090}00090 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00091}00091 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00092}00092 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00093}00093 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00094}00094 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00095}00095 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00096}00096 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00097}00097 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00098}00098 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} OAIObject \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00099}00099 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} OAIEnum \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00100}00100 QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} OAIHttpFileElement \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00102}00102 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00103}\mbox{\hyperlink{namespaceOpenAPI_ad630cab02d5b36841a8c4f5628f8089d}{00103}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QList<T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00104}00104     QString strArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00105}00105     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00106}00106         strArray.append(\mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(item) + \textcolor{stringliteral}{"{},"{}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00108}00108     \textcolor{keywordflow}{if} (val.count() > 0) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00109}00109         strArray.chop(1);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00110}00110     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00111}00111     \textcolor{keywordflow}{return} strArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00112}00112 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00114}00114 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00115}\mbox{\hyperlink{namespaceOpenAPI_a14333813ef8b3ae0345fbc1f0a5289ec}{00115}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QSet<T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00116}00116     QString strArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00117}00117     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00118}00118         strArray.append(\mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(item) + \textcolor{stringliteral}{"{},"{}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00119}00119     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00120}00120     \textcolor{keywordflow}{if} (val.count() > 0) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00121}00121         strArray.chop(1);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00122}00122     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00123}00123     \textcolor{keywordflow}{return} strArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00124}00124 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00126}00126 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00127}00127 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00128}00128 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00129}00129 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00130}00130 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00131}00131 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00132}00132 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00133}00133 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00134}00134 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00135}00135 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} OAIObject \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00136}00136 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} OAIEnum \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00137}00137 QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} OAIHttpFileElement \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00139}00139 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00140}\mbox{\hyperlink{namespaceOpenAPI_ac6b04d8a1a370fab7068234642913eb9}{00140}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QList<T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00141}00141     QJsonArray jArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00142}00142     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00143}00143         jArray.append(\mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(item));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00144}00144     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00145}00145     \textcolor{keywordflow}{return} jArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00146}00146 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00148}00148 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00149}\mbox{\hyperlink{namespaceOpenAPI_a7e13fe6a3753b2569d62c6342d33df2c}{00149}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QSet<T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00150}00150     QJsonArray jArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00151}00151     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00152}00152         jArray.append(\mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(item));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00153}00153     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00154}00154     \textcolor{keywordflow}{return} jArray;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00155}00155 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00157}00157 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00158}\mbox{\hyperlink{namespaceOpenAPI_ae67d75f3325b393732e0f5d0a417b86d}{00158}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QMap<QString, T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00159}00159     QJsonObject jObject;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00160}00160     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&itemkey : val.keys()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00161}00161         jObject.insert(itemkey, \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(val.value(itemkey)));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00162}00162     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00163}00163     \textcolor{keywordflow}{return} jObject;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00164}00164 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00166}00166 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00167}00167 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00168}00168 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00169}00169 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00170}00170 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00171}00171 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00172}00172 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00173}00173 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00174}00174 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00175}00175 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, OAIObject \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00176}00176 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, OAIEnum \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00177}00177 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, OAIHttpFileElement \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00179}00179 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00180}\mbox{\hyperlink{namespaceOpenAPI_ad16453b4c2dfc4c6b8a63217b4a0f704}{00180}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QList<QString> \&inStr, QList<T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00181}00181     \textcolor{keywordtype}{bool} ok = (inStr.count() > 0);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00182}00182     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : inStr) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00183}00183         T itemVal;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00184}00184         ok \&= \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(item, itemVal);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00185}00185         val.push\_back(itemVal);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00186}00186     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00187}00187     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00188}00188 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00190}00190 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00191}\mbox{\hyperlink{namespaceOpenAPI_ae7068934914d5452e74cd1ed370434e2}{00191}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QSet<QString> \&inStr, QList<T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00192}00192     \textcolor{keywordtype}{bool} ok = (inStr.count() > 0);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00193}00193     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : inStr) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00194}00194         T itemVal;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00195}00195         ok \&= \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(item, itemVal);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00196}00196         val.push\_back(itemVal);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00197}00197     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00198}00198     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00199}00199 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00200}00200 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00201}00201 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00202}\mbox{\hyperlink{namespaceOpenAPI_aa2e31ef9c56a716210ef58bfa6d1dcde}{00202}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QMap<QString, QString> \&inStr, QMap<QString, T> \&val) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00203}00203     \textcolor{keywordtype}{bool} ok = (inStr.count() > 0);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00204}00204     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&itemkey : inStr.keys()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00205}00205         T itemVal;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00206}00206         ok \&= \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(inStr.value(itemkey), itemVal);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00207}00207         val.insert(itemkey, itemVal);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00208}00208     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00209}00209     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00210}00210 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00212}00212 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00213}00213 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00214}00214 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00215}00215 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00216}00216 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00217}00217 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00218}00218 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00219}00219 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00220}00220 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00221}00221 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(OAIObject \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00222}00222 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(OAIEnum \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00223}00223 \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(OAIHttpFileElement \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00225}00225 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00226}\mbox{\hyperlink{namespaceOpenAPI_a51b2cb9d41c837d7098f5b108c980e17}{00226}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QList<T> \&val, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00227}00227     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00228}00228     \textcolor{keywordflow}{if} (jval.isArray()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00229}00229         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} jitem : jval.toArray()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00230}00230             T item;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00231}00231             ok \&= \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(item, jitem);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00232}00232             val.push\_back(item);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00233}00233         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00234}00234     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00235}00235         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00236}00236     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00237}00237     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00238}00238 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00239}00239 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00240}00240 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00241}\mbox{\hyperlink{namespaceOpenAPI_a14514930d6022bd64c3f492ef8d220a7}{00241}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QSet<T> \&val, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00242}00242     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00243}00243     \textcolor{keywordflow}{if} (jval.isArray()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00244}00244         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} jitem : jval.toArray()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00245}00245             T item;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00246}00246             ok \&= \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(item, jitem);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00247}00247             val.insert(item);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00248}00248         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00249}00249     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00250}00250         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00251}00251     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00252}00252     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00253}00253 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00254}00254 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00255}00255 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00256}\mbox{\hyperlink{namespaceOpenAPI_a2894bbbb6b1a2a6c2d67ad6bed4614e5}{00256}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QMap<QString, T> \&val, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00257}00257     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00258}00258     \textcolor{keywordflow}{if} (jval.isObject()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00259}00259         \textcolor{keyword}{auto} varmap = jval.toObject().toVariantMap();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00260}00260         \textcolor{keywordflow}{if} (varmap.count() > 0) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00261}00261             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&itemkey : varmap.keys()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00262}00262                 T itemVal;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00263}00263                 ok \&= \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(itemVal, QJsonValue::fromVariant(varmap.value(itemkey)));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00264}00264                 val.insert(itemkey, itemVal);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00265}00265             \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00266}00266         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00267}00267     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00268}00268         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00269}00269     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00270}00270     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00271}00271 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00272}00272 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00273}00273 \} \textcolor{comment}{// namespace OpenAPI}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00274}00274 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8h_source_l00275}00275 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// OAI\_HELPERS\_H}}
+
+\end{DoxyCode}

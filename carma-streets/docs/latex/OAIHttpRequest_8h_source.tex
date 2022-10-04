@@ -1,0 +1,103 @@
+\hypertarget{OAIHttpRequest_8h_source}{}\doxysection{OAIHttp\+Request.\+h}
+\label{OAIHttpRequest_8h_source}\index{streets\_utils/streets\_api/intersection\_client\_api/OAIHttpRequest.h@{streets\_utils/streets\_api/intersection\_client\_api/OAIHttpRequest.h}}
+\mbox{\hyperlink{OAIHttpRequest_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00018}00018 \textcolor{preprocessor}{\#ifndef OAI\_HTTPREQUESTWORKER\_H}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00019}00019 \textcolor{preprocessor}{\#define OAI\_HTTPREQUESTWORKER\_H}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00021}00021 \textcolor{preprocessor}{\#include <QMap>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00022}00022 \textcolor{preprocessor}{\#include <QNetworkAccessManager>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00023}00023 \textcolor{preprocessor}{\#include <QNetworkReply>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00024}00024 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00025}00025 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00026}00026 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00027}00027 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00028}00028 \textcolor{preprocessor}{    \#include <QRandomGenerator>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00029}00029 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00031}00031 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__server__api_2src_2models_2OAIHttpFileElement_8h}{OAIHttpFileElement.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00033}00033 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00035}\mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebe}{00035}} \textcolor{keyword}{enum} \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebe}{OAIHttpRequestVarLayout}} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00036}\mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea09b84043874098d4d739a4fa8ece163b}{00036}}     \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea09b84043874098d4d739a4fa8ece163b}{NOT\_SET}},}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00037}\mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacc3845d92d6682a8acc9c8a1a21cd7a2}{00037}}     \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacc3845d92d6682a8acc9c8a1a21cd7a2}{ADDRESS}},}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00038}\mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea387acccc26c1fe6c1f715f0a4c302f0e}{00038}}     \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea387acccc26c1fe6c1f715f0a4c302f0e}{URL\_ENCODED}},}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00039}00039     \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacfa6796b732aada60112c349149dcf6d}{MULTIPART}}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00040}\mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacfa6796b732aada60112c349149dcf6d}{00040}} \};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00042}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput}{00042}} \textcolor{keyword}{class }\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput}{OAIHttpRequestInput}} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00044}00044 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00045}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_aa460e5d2424779878f2a98ab036bfcb4}{00045}}     QString \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_aa460e5d2424779878f2a98ab036bfcb4}{url\_str}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00046}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{00046}}     QString \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00047}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{00047}}     \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebe}{OAIHttpRequestVarLayout}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00048}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{00048}}     QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{vars}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00049}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a3aa129b819ceab8cad92aaf7abc51c97}{00049}}     QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a3aa129b819ceab8cad92aaf7abc51c97}{headers}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00050}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a51eb830dfb68016cec5b7a8666be7484}{00050}}     QList<OAIHttpFileElement> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a51eb830dfb68016cec5b7a8666be7484}{files}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00051}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8a20de2c3c50c6bd6af760f2985033b8}{00051}}     QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8a20de2c3c50c6bd6af760f2985033b8}{request\_body}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00053}00053     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_ae42e5ffef3a34cc8fba75c09c81001a8}{OAIHttpRequestInput}}();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00054}00054     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_ae42e5ffef3a34cc8fba75c09c81001a8}{OAIHttpRequestInput}}(QString v\_url\_str, QString v\_http\_method);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00055}00055     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a768470088686c8f3f4b80cb570237aff}{initialize}}();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00056}00056     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a6fe9c0b8ca106f04a7ea034a73f2f905}{add\_var}}(QString key, QString \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00057}00057     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8bb8ec3ee758dd84769fd9837ba0da89}{add\_file}}(QString variable\_name, QString local\_filename, QString request\_filename, QString mime\_type);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00058}00058 \};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00060}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{00060}} \textcolor{keyword}{class }\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttpRequestWorker}} : \textcolor{keyword}{public} \mbox{\hyperlink{classQObject}{QObject}} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00061}00061     Q\_OBJECT}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00063}00063 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00064}00064     \textcolor{keyword}{explicit} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af9586a588ab0c1f7e6ee75b419a9a5b7}{OAIHttpRequestWorker}}(\mbox{\hyperlink{classQObject}{QObject}} *parent = \textcolor{keyword}{nullptr}, QNetworkAccessManager *\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}} = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00065}00065     \textcolor{keyword}{virtual} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a5382204f7376db01663f0c42c502ad79}{\string~OAIHttpRequestWorker}}();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00067}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aecbecbac85d55628b6cabb73f072fcb5}{00067}}     QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aecbecbac85d55628b6cabb73f072fcb5}{response}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00068}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3efd6243071ccbef5c9312d4db124e9d}{00068}}     QNetworkReply::NetworkError \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3efd6243071ccbef5c9312d4db124e9d}{error\_type}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00069}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a094214d8718ee8f0e8bcd41e1b19ae2b}{00069}}     QString \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a094214d8718ee8f0e8bcd41e1b19ae2b}{error\_str}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00071}00071     QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a85149fa45d51093782939c2bcde63732}{getResponseHeaders}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00072}00072     QString \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a956ba64d89ae192257247fb93a37bbf8}{http\_attribute\_encode}}(QString attribute\_name, QString input);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00073}00073     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a241304dc9d0548df76510834b44617fe}{execute}}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput}{OAIHttpRequestInput}} *input);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00074}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_acb24ce47aac9765fd4efc7365cec2938}{00074}}     \textcolor{keyword}{static} QSslConfiguration *\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_acb24ce47aac9765fd4efc7365cec2938}{sslDefaultConfiguration}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00075}00075     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a4cacd35a634ee9383ed40f2cb3623d2c}{setTimeOut}}(\textcolor{keywordtype}{int} timeOutMs);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00076}00076     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ac4c0e5da7f31b1cb763da1a51cd25eb9}{setWorkingDirectory}}(\textcolor{keyword}{const} QString \&path);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00077}00077     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a4279c4b125a2b64db730b1bfa9b12bc9}{getHttpFileElement}}(\textcolor{keyword}{const} QString \&fieldname = QString());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00078}00078     QByteArray *\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa963aaf81b6956ddf02f8b952cb63bf4}{getMultiPartField}}(\textcolor{keyword}{const} QString \&fieldname = QString());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00079}00079     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9dab9eeb608f5a0230db0acfbdf8610f}{setResponseCompressionEnabled}}(\textcolor{keywordtype}{bool} enable);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00080}00080     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa386809329ecdb5259d15ebf5ab3329c}{setRequestCompressionEnabled}}(\textcolor{keywordtype}{bool} enable);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00081}00081     \textcolor{keywordtype}{int}  \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa5bdb146ddffe45498c9d53598d1507f}{getHttpResponseCode}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00083}00083 signals:}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00084}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{00084}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{on\_execution\_finished}}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker}{OAIHttpRequestWorker}} *worker);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00086}00086 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00087}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45}{00087}}     \textcolor{keyword}{enum} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45}{OAICompressionType}}\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00088}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45af1cec6fdaeedebc5a988912800ca1ddf}{00088}}         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45af1cec6fdaeedebc5a988912800ca1ddf}{Zlib}},}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00089}00089         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45a9a9e01e2c95d33d7f39b81551d4576bc}{Gzip}}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00090}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45a9a9e01e2c95d33d7f39b81551d4576bc}{00090}}     \};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00091}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{00091}}     QNetworkAccessManager *\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00092}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3bf8dada8791c76a3053f27e78c794b6}{00092}}     QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3bf8dada8791c76a3053f27e78c794b6}{headers}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00093}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ad3f51ef826552171725dc37a47a5ca54}{00093}}     QMap<QString, OAIHttpFileElement> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ad3f51ef826552171725dc37a47a5ca54}{files}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00094}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_abcb745ef6db8c7ad4f8c227eb765901c}{00094}}     QMap<QString, QByteArray *> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_abcb745ef6db8c7ad4f8c227eb765901c}{multiPartFields}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00095}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9de4778f9b3efa08167c0a85da1a1b71}{00095}}     QString \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9de4778f9b3efa08167c0a85da1a1b71}{workingDirectory}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00096}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{00096}}     QTimer \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00097}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a890ef52b0524213a72a67fc33b3d754c}{00097}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a890ef52b0524213a72a67fc33b3d754c}{isResponseCompressionEnabled}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00098}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a993abb3df36c31e9106de686b7622d5a}{00098}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a993abb3df36c31e9106de686b7622d5a}{isRequestCompressionEnabled}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00099}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a6906753c3da4c5fb46fe4bf73198caf4}{00099}}     \textcolor{keywordtype}{int}  \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a6906753c3da4c5fb46fe4bf73198caf4}{httpResponseCode}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00100}00100 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00101}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a60155a4318309f3921d6370cb0b9d822}{00101}}     QRandomGenerator \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a60155a4318309f3921d6370cb0b9d822}{randomGenerator}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00102}00102 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00104}00104     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aead3db4ad222cd398b615031e3ee70e0}{on\_reply\_timeout}}(QNetworkReply *reply);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00105}00105     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a490266a612d76cb2a4fc7ae130cec8bb}{on\_reply\_finished}}(QNetworkReply *reply);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00106}00106     \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9b9900e8758f2749189346124502f4a3}{process\_response}}(QNetworkReply *reply);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00107}00107     QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9f05c6d0d2361fa195fb3e8b5673b562}{decompress}}(\textcolor{keyword}{const} QByteArray\& \mbox{\hyperlink{namespacesimulate__bsm_a2aaf0142837b674c6cfa6006cf335bc7}{data}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00108}00108     QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a45ce44e04804c658acf782a32706d771}{compress}}(\textcolor{keyword}{const} QByteArray\& input, \textcolor{keywordtype}{int} level, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45}{OAICompressionType}} compressType);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00109}00109 \};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00111}00111 \} \textcolor{comment}{// namespace OpenAPI}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8h_source_l00113}00113 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// OAI\_HTTPREQUESTWORKER\_H}}
+
+\end{DoxyCode}

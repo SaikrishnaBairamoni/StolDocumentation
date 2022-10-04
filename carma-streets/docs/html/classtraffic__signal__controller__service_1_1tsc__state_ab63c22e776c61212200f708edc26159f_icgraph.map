@@ -1,0 +1,5 @@
+<map id="traffic_signal_controller_service::tsc_state::convert_msepoch_to_hour_tenth_secs" name="traffic_signal_controller_service::tsc_state::convert_msepoch_to_hour_tenth_secs">
+<area shape="rect" id="node1" title="Helper function to convert epoch time to hour&#45;tenths time." alt="" coords="432,5,635,61"/>
+<area shape="rect" id="node2" href="$classtraffic__signal__controller__service_1_1tsc__state.html#af739a1bdb23638f28315e8680f407fdd" title="Updates spat with future movement events for vehicle phases." alt="" coords="5,5,181,61"/>
+<area shape="rect" id="node3" href="$classtraffic__signal__controller__service_1_1tsc__state.html#a167cb5770186a005c223a92c5dcf207e" title="Get predicted next movement event given a current event." alt="" coords="229,37,384,93"/>
+</map>

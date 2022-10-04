@@ -1,0 +1,6 @@
+<map id="streets_vehicle_scheduler::all_stop_intersection_schedule" name="streets_vehicle_scheduler::all_stop_intersection_schedule">
+<area shape="rect" id="node1" title="Struct to store vehicle schedules for all vehicle in an intersection. Includes a timestamp in millise..." alt="" coords="107,344,281,539"/>
+<area shape="rect" id="node2" href="$structstreets__vehicle__scheduler_1_1intersection__schedule.html" title="Struct to store vehicle schedules for all vehicle in an intersection. Includes a timestamp in millise..." alt="" coords="5,145,180,281"/>
+<area shape="rect" id="node3" title=" " alt="" coords="55,5,130,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="205,160,389,267"/>
+</map>

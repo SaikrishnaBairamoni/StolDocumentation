@@ -1,0 +1,117 @@
+\hypertarget{monitor__tsc__state_8h_source}{}\doxysection{monitor\+\_\+tsc\+\_\+state.\+h}
+\label{monitor__tsc__state_8h_source}\index{tsc\_client\_service/include/monitor\_tsc\_state.h@{tsc\_client\_service/include/monitor\_tsc\_state.h}}
+\mbox{\hyperlink{monitor__tsc__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{snmp__client_8h}{snmp\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{snmp__client__exception_8h}{snmp\_client\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ntcip__oids_8h}{ntcip\_oids.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{spat_8h}{spat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <gtest/gtest\_prod.h>}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{monitor__states__exception_8h}{monitor\_states\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00010}00010 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacetraffic__signal__controller__service}{traffic\_signal\_controller\_service}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00011}00011 \{   }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00012}00012     \textcolor{comment}{/*The signal group state stores the traffic signal controller configuration parameters for a J2735 signal group}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00013}00013 \textcolor{comment}{    * The parameters within it define the phase mapped to the signal group and other data necessary to modify a given phase*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00014}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state}{00014}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state}{signal\_group\_state}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00015}00015     \{}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00016}00016         \textcolor{comment}{/* signal group id identifier for J2735 which is mapped to phase number in NTCIP */}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00017}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a0036b45d12f602dc9198d1f9332720c9}{00017}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a0036b45d12f602dc9198d1f9332720c9}{signal\_group\_id}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00018}00018         \textcolor{comment}{/*Phase associated with signal group*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00019}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a9982a853e822adeee5424ebda0d5548e}{00019}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a9982a853e822adeee5424ebda0d5548e}{phase\_num}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00020}00020         \textcolor{comment}{/*Minimum green durations for each active vehicle phase in milliseconds*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00021}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_abb5d1fe463d7e32c9f280871bbef7439}{00021}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_abb5d1fe463d7e32c9f280871bbef7439}{min\_green}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00022}00022         \textcolor{comment}{/*Maximum green durations for each active vehicle phase in milliseconds*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00023}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a7c0a8253511ca12a99c589dd95b72b43}{00023}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a7c0a8253511ca12a99c589dd95b72b43}{max\_green}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00024}00024         \textcolor{comment}{/*Default Green duration for phase in milliseconds*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00025}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_ae3e4af85583a78b43a845d9e26380e3e}{00025}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_ae3e4af85583a78b43a845d9e26380e3e}{green\_duration}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00026}00026         \textcolor{comment}{/*Yellow signal duration for phase in milliseconds*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00027}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a707dce158ff68e9423f629ed30bf6bb2}{00027}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a707dce158ff68e9423f629ed30bf6bb2}{yellow\_duration}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00028}00028         \textcolor{comment}{/* Red clearace time for phase in milliseconds*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00029}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_addc356b7d64987269af4768bfba9c786}{00029}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_addc356b7d64987269af4768bfba9c786}{red\_clearance}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00030}00030         \textcolor{comment}{/*Red signal duration for phase. This is the total time a phase is predicted to be red before its next green. In milliseconds*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00031}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a5ac59f3017aa70843c316a1355a4330e}{00031}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a5ac59f3017aa70843c316a1355a4330e}{red\_duration}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00032}00032         \textcolor{comment}{/*Phase sequence in ring. Stores the sequence starting from the current phase*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00033}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_abab493c06f5770610a6e0cbf2e69cf35}{00033}}         std::vector<int> \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_abab493c06f5770610a6e0cbf2e69cf35}{phase\_seq}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00034}00034         \textcolor{comment}{/*Phases in the same barrier or concurrent group excluding phases from same ring*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00035}\mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a82ee7255c987cdb960972207b2aa59f7}{00035}}         std::vector<int> \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state_a82ee7255c987cdb960972207b2aa59f7}{concurrent\_phases}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00036}00036     \};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00038}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state}{00038}}     \textcolor{keyword}{class }\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state}{tsc\_state}}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00039}00039     \{}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00040}00040         \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00041}00041             \textcolor{comment}{/* A local pointer to an snmp\_client object to be used through the tsc\_state*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00042}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a32ec176910fce4545704a6153c3407eb}{00042}}             std::shared\_ptr<snmp\_client> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a32ec176910fce4545704a6153c3407eb}{snmp\_client\_worker\_}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00044}00044             \textcolor{comment}{/* Mapping between signal group ids(key) and their states(value) defined as a signal group state struct for all active vehicle phases*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00045}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_ac8e58f3d13b58c85c3cea5d6e3961af0}{00045}}             std::unordered\_map<int, signal\_group\_state> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_ac8e58f3d13b58c85c3cea5d6e3961af0}{signal\_group\_state\_map\_}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00046}00046             }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00047}00047             \textcolor{comment}{/* Map between signal group ids(key) and phase numbers(value) for all active vehicle phases in the Traffic Signal Controller*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00048}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a5589bc2137028ff1c1b7ec39bf360fb0}{00048}}             std::unordered\_map<int, int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a5589bc2137028ff1c1b7ec39bf360fb0}{signal\_group\_phase\_map\_}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00050}00050             \textcolor{comment}{/* Map between phase numbers(key) and signal group ids(value) for all active vehicle phases in the Traffic Signal Controller*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00051}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a65824bd6c615b5f4105511c0738aeb89}{00051}}             std::unordered\_map<int,int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a65824bd6c615b5f4105511c0738aeb89}{vehicle\_phase\_num\_map\_}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00053}00053             \textcolor{comment}{/* Map between phase numbers(key) and signal group ids(value) for all active pedestrian phases in the Traffic Signal Controller*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00054}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a8f31ba52cf271dee1b6caec284f9103f}{00054}}             std::unordered\_map<int,int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a8f31ba52cf271dee1b6caec284f9103f}{ped\_phase\_num\_map\_}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00056}00056             \textcolor{comment}{/* The sequence of vehicle phases in ring 1 of TSC*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00057}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a1f7c1e663e2b2e41e1d3cfb902208add}{00057}}             std::vector<int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a1f7c1e663e2b2e41e1d3cfb902208add}{phase\_seq\_ring1\_}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00058}00058             \textcolor{comment}{/* The sequence of vehicle phases in ring 2 of TSC*/}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00059}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a73756e2d00260dfccd9838cf147bf823}{00059}}             std::vector<int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a73756e2d00260dfccd9838cf147bf823}{phase\_seq\_ring2\_}};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00061}00061             \textcolor{comment}{// Number of required following movements on receiving a spat\_ptr}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00062}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_ace2712eeb290c972b3ead1c4ee7e7744}{00062}}             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_ace2712eeb290c972b3ead1c4ee7e7744}{required\_following\_movements\_}} = 3;}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00064}00064             \textcolor{comment}{// Conversion constants}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00065}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a73f09fdaac8a6376b65ad18c44459c9c}{00065}}             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a73f09fdaac8a6376b65ad18c44459c9c}{HOUR\_TO\_SECONDS\_}} = 3600;}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00066}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a17d34ab64b5d3eda6f05a5f3c7622475}{00066}}             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a17d34ab64b5d3eda6f05a5f3c7622475}{SECOND\_TO\_MILLISECONDS\_}} = 1000;}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00073}00073             \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a54bb0ddd47fca73403bbc52bbcfba988}{get\_phase\_channels}}(\textcolor{keywordtype}{int} max\_channels, std::vector<int>\& vehicle\_phase\_channels, std::vector<int>\& ped\_phase\_channels) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00081}00081             \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_af0f1926f5f6495742d204dbde1bf9dbb}{map\_phase\_and\_signalgroup}}(\textcolor{keyword}{const} std::vector<int>\& phase\_channels, \textcolor{keywordtype}{bool} is\_source\_vehicle\_channel);}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00086}00086             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a2f1d658bc65133d1ba6b4f03d593ffb3}{get\_max\_channels}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00092}00092             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a73acb7d06ec8d69783f369c504a3010c}{get\_min\_green}}(\textcolor{keywordtype}{int} phase\_num) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00098}00098             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_aa4dbbf6a17e37cbb38a43d4641bf3ec8}{get\_max\_green}}(\textcolor{keywordtype}{int} phase\_num) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00104}00104             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_ae76cdfcdb7d2cbd8fcf0afef1d0f8925}{get\_yellow\_duration}}(\textcolor{keywordtype}{int} phase\_num) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00110}00110             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_ae5bfca513648fa55566289fe8a9de750}{get\_red\_clearance}}(\textcolor{keywordtype}{int} phase\_num) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00116}00116             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_acaee10dcfb57b70be35a81723b21761b}{get\_red\_duration}}(\textcolor{keywordtype}{int} phase\_num);}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00122}00122             std::vector<int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a08b298b1834ff6c717926a4d0d4b9ef7}{get\_following\_phases}}(\textcolor{keywordtype}{int} phase\_num);}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00128}00128             std::vector<int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_afbb0dd3e03340b8363e34510eb7f5ab7}{phase\_seq}}(\textcolor{keywordtype}{int} ring\_num);}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00134}00134             std::vector<int> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a926ae227a45a7cec9c442c33eeade951}{get\_concurrent\_phases}}(\textcolor{keywordtype}{int} phase\_num) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00140}00140             uint16\_t \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_ab63c22e776c61212200f708edc26159f}{convert\_msepoch\_to\_hour\_tenth\_secs}}(uint64\_t epoch\_time\_ms) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00146}00146             uint64\_t \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a6ac79c6f55b96327e9ad3ef8de6f0f5a}{convert\_hour\_tenth\_secs2epoch\_ts}}(uint16\_t hour\_tenth\_secs) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00154}00154             \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__event}{signal\_phase\_and\_timing::movement\_event}} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a167cb5770186a005c223a92c5dcf207e}{get\_following\_event}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__event}{signal\_phase\_and\_timing::movement\_event}}\& current\_event,}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00155}00155                                                                  uint64\_t current\_event\_end\_time, \textcolor{keyword}{const} \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state}{signal\_group\_state}}\& phase\_state) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00157}00157             \textcolor{comment}{//Add Friend Test to share private members}}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00158}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a37ec67564429caa97a7a9a7e9e0e8832}{00158}}             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a37ec67564429caa97a7a9a7e9e0e8832}{FRIEND\_TEST}}(\mbox{\hyperlink{namespacetraffic__signal__controller__service}{traffic\_signal\_controller\_service}}, test\_get\_following\_movement\_events);                                                              }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00159}00159 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00160}00160         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00165}00165             \textcolor{keyword}{explicit} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_aedb4290f73cd4cfd58b04e1e05969781}{tsc\_state}}(std::shared\_ptr<snmp\_client> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\_client}});}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00171}00171             std::unordered\_map<int, signal\_group\_state>\& \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a27876c0c6172cbb37788cadd97bf6ff3}{get\_signal\_group\_state\_map}}();}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00176}00176             \textcolor{keyword}{const} std::unordered\_map<int,int> \& \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a9af1335fd676f86de7fcbd38493d3985}{get\_ped\_phase\_map}}();}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00177}00177 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00182}00182             \textcolor{keyword}{const} std::unordered\_map<int,int>\& \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_a40c96f54a5eb802026f93906dc1b77d8}{get\_vehicle\_phase\_map}}();}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00189}00189             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_af051312a2931c0f7db32b3d0439a2e6b}{initialize}}();}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00195}00195             \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state_af739a1bdb23638f28315e8680f407fdd}{add\_future\_movement\_events}}(std::shared\_ptr<signal\_phase\_and\_timing::spat> spat\_ptr);}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00197}00197     \};}
+\DoxyCodeLine{\Hypertarget{monitor__tsc__state_8h_source_l00198}00198 \}}
+
+\end{DoxyCode}

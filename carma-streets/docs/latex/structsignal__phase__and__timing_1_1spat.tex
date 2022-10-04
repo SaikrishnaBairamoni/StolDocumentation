@@ -1,0 +1,594 @@
+\hypertarget{structsignal__phase__and__timing_1_1spat}{}\doxysection{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat Struct Reference}
+\label{structsignal__phase__and__timing_1_1spat}\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+
+
+{\ttfamily \#include $<$spat.\+h$>$}
+
+
+
+Collaboration diagram for signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1610241d89b9b84063f248803546a70b}{to\+Json}} () const
+\begin{DoxyCompactList}\small\item\em Serialize SPaT object to rapidjson\+::\+Value for writing as JSON string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a034410d8e6254100552d88d21ca5bedd}{from\+Json}} (const std\+::string \&json)
+\begin{DoxyCompactList}\small\item\em Deserialize SPaT JSON into SPaT object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_abf3e0ae490abd77f4c168e34222c21dc}{update}} (\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip\+::ntcip\+\_\+1202\+\_\+ext}} \&ntcip\+\_\+data, bool use\+\_\+ntcip\+\_\+timestamp)
+\begin{DoxyCompactList}\small\item\em Update spat object data using ntcip\+\_\+1202\+\_\+ext data received via UDP socket. Bool flag to control whether to use ntcip\+\_\+1202\+\_\+ext message provided timestamp or host unix timestamp information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a8225fc5b13a6faaf4d1e309dadd76858}{initialize\+\_\+intersection}} (const std\+::string \&intersection\+\_\+name, const int intersection\+\_\+id, const std\+::unordered\+\_\+map$<$ int, int $>$ \&phase\+\_\+number\+\_\+to\+\_\+signal\+\_\+group)
+\begin{DoxyCompactList}\small\item\em Method to initialize intersection information not provided in the ntcip SPaT UDP message but necessary for the J2735 SPaT message. This method must be executed prior to using the update method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a59f4842ab1588deac2746ecdafcd29b3}{set\+\_\+timestamp\+\_\+ntcip}} (const uint32\+\_\+t second\+\_\+of\+\_\+day, const uint16\+\_\+t millisecond\+\_\+of\+\_\+second)
+\begin{DoxyCompactList}\small\item\em Method to set SPaT timestamp based on NTCIP message timestamp. The NTCIP message timestamp consists of a seconds\+\_\+of\+\_\+day and a milliseconds of second field. This method will get the current day from system time and then apply seconds and milliseconds informat as a offset for the current day. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac664acbcf145d92f92605e3bfde11ce7}{set\+\_\+timestamp\+\_\+local}} ()
+\begin{DoxyCompactList}\small\item\em Method to set SPaT timestamp based on system time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ae02c2e6b6a732834be0f8472270f7931}{update\+\_\+intersection\+\_\+state}} (\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip\+::ntcip\+\_\+1202\+\_\+ext}} \&ntcip\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Method to update the front entry in the intersections list of intersection\+\_\+state(s) with the provided NTCIP SPaT data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ae09b881219e3f51e7d9839668abbb52e}{operator==}} (const \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{spat}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equals operator to asses whether two objects contain equivalent data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a5c73cc279f79a8bfcbd3fbbb1dc31889}{operator!=}} (const \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{spat}} \&other) const
+\begin{DoxyCompactList}\small\item\em Returns the inverse of equals operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+u\+\_\+int32\+\_\+t \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{timestamp}} = 0
+\begin{DoxyCompactList}\small\item\em Timestamp in minutes of the UTC year (see J2735 SPaT message documentation for reference). \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}{name}}
+\begin{DoxyCompactList}\small\item\em Descriptive name for this collection. \end{DoxyCompactList}\item 
+std\+::list$<$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state}{intersection\+\_\+state}} $>$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}
+\begin{DoxyCompactList}\small\item\em Sets of SPaT data ( one per intersection). \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ int, int $>$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}{phase\+\_\+to\+\_\+signal\+\_\+group}}
+\begin{DoxyCompactList}\small\item\em Map of phase number(\+NTCIP) to signal group(\+J2735). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{spat_8h_source_l00018}{18}} of file \mbox{\hyperlink{spat_8h_source}{spat.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a034410d8e6254100552d88d21ca5bedd}\label{structsignal__phase__and__timing_1_1spat_a034410d8e6254100552d88d21ca5bedd}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily void signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::from\+Json (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{json }\end{DoxyParamCaption})}
+
+
+
+Deserialize SPaT JSON into SPaT object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & SPaT JSON. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033                                                \{}
+\DoxyCodeLine{00034         rapidjson::Document doc;}
+\DoxyCodeLine{00035         doc.Parse(json);}
+\DoxyCodeLine{00036         \textcolor{keywordflow}{if} (doc.HasParseError()) \{}
+\DoxyCodeLine{00037             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(\textcolor{stringliteral}{"{}SPaT message JSON is misformatted. JSON parsing failed!"{}});  }
+\DoxyCodeLine{00038         \}}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040         \textcolor{keywordflow}{if} ( doc.HasMember(\textcolor{stringliteral}{"{}time\_stamp"{}}) \&\& doc.FindMember(\textcolor{stringliteral}{"{}time\_stamp"{}})-\/>value.IsUint64()) \{}
+\DoxyCodeLine{00041             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{timestamp}} =  (uint32\_t) doc[\textcolor{stringliteral}{"{}time\_stamp"{}}].GetUint64(); \textcolor{comment}{// OPTIONAL in J2735 SPaT definition}}
+\DoxyCodeLine{00042         \} }
+\DoxyCodeLine{00043         \textcolor{keywordflow}{if} (doc.FindMember(\textcolor{stringliteral}{"{}name"{}})-\/>value.IsString() ) \{}
+\DoxyCodeLine{00044             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}{name}} = doc[\textcolor{stringliteral}{"{}name"{}}].GetString();  \textcolor{comment}{// OPTIONAL see J2735 SPaT definition}}
+\DoxyCodeLine{00045         \}}
+\DoxyCodeLine{00046         \textcolor{keywordflow}{if} ( doc.FindMember(\textcolor{stringliteral}{"{}intersections"{}})-\/>value.IsArray() ) \{}
+\DoxyCodeLine{00047             \textcolor{comment}{// REQUIRED see J2735 SPaT definition}}
+\DoxyCodeLine{00048             \textcolor{comment}{// Clear intersection state list in case it is populated.}}
+\DoxyCodeLine{00049             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.clear();}
+\DoxyCodeLine{00050             \textcolor{keywordflow}{for} ( \textcolor{keyword}{const} \textcolor{keyword}{auto} \&intersection : doc[\textcolor{stringliteral}{"{}intersections"{}}].GetArray() )\{}
+\DoxyCodeLine{00051                 intersection\_state cur\_state;}
+\DoxyCodeLine{00052                 cur\_state.fromJson(intersection);}
+\DoxyCodeLine{00053                 \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.push\_back(cur\_state);}
+\DoxyCodeLine{00054             \}}
+\DoxyCodeLine{00055         \}}
+\DoxyCodeLine{00056         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00057             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(\textcolor{stringliteral}{"{}SPaT message is missing required intersections property!"{}});}
+\DoxyCodeLine{00058         \}}
+\DoxyCodeLine{00059             }
+\DoxyCodeLine{00060         }
+\DoxyCodeLine{00061     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{intersection__state_8cpp_source_l00060}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::intersection\+\_\+state\+::from\+Json()}}, \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, \mbox{\hyperlink{spat_8h_source_l00026}{name}}, and \mbox{\hyperlink{spat_8h_source_l00022}{timestamp}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_a034410d8e6254100552d88d21ca5bedd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a8225fc5b13a6faaf4d1e309dadd76858}\label{structsignal__phase__and__timing_1_1spat_a8225fc5b13a6faaf4d1e309dadd76858}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!initialize\_intersection@{initialize\_intersection}}
+\index{initialize\_intersection@{initialize\_intersection}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{initialize\_intersection()}{initialize\_intersection()}}
+{\footnotesize\ttfamily void signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::initialize\+\_\+intersection (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{intersection\+\_\+name,  }\item[{const int}]{intersection\+\_\+id,  }\item[{const std\+::unordered\+\_\+map$<$ int, int $>$ \&}]{phase\+\_\+number\+\_\+to\+\_\+signal\+\_\+group }\end{DoxyParamCaption})}
+
+
+
+Method to initialize intersection information not provided in the ntcip SPaT UDP message but necessary for the J2735 SPaT message. This method must be executed prior to using the update method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intersection\+\_\+name} & name of intersection \\
+\hline
+{\em intersection\+\_\+id} & J2735 intersection ID \\
+\hline
+{\em phase\+\_\+number\+\_\+to\+\_\+signal\+\_\+group} & a map of phase numbers (NTCIP) to signal groups (J2735) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079                                                                                                                                                                      \{}
+\DoxyCodeLine{00080         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.empty()) \{}
+\DoxyCodeLine{00081             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.clear();}
+\DoxyCodeLine{00082         \}}
+\DoxyCodeLine{00083         intersection\_state cur\_state;}
+\DoxyCodeLine{00084         cur\_state.name = intersection\_name;}
+\DoxyCodeLine{00085         cur\_state.id =  (uint16\_t) intersection\_id;}
+\DoxyCodeLine{00086         \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}{phase\_to\_signal\_group}} = \_phase\_number\_to\_signal\_group;}
+\DoxyCodeLine{00087         cur\_state.initialize\_movement\_states( \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}{phase\_to\_signal\_group}} );}
+\DoxyCodeLine{00088         \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.push\_back(cur\_state);}
+\DoxyCodeLine{00089     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{intersection__state_8h_source_l00031}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::intersection\+\_\+state\+::id}}, \mbox{\hyperlink{intersection__state_8cpp_source_l00200}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::intersection\+\_\+state\+::initialize\+\_\+movement\+\_\+states()}}, \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, \mbox{\hyperlink{intersection__state_8h_source_l00024}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::intersection\+\_\+state\+::name}}, and \mbox{\hyperlink{spat_8h_source_l00035}{phase\+\_\+to\+\_\+signal\+\_\+group}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_a8225fc5b13a6faaf4d1e309dadd76858_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a5c73cc279f79a8bfcbd3fbbb1dc31889}\label{structsignal__phase__and__timing_1_1spat_a5c73cc279f79a8bfcbd3fbbb1dc31889}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{spat}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Returns the inverse of equals operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & second object to compare current object with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if both objects do not contain equivalent data. 
+
+false if both objects do contain equivalent data. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00131}{131}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131                                                 \{}
+\DoxyCodeLine{00132         \textcolor{keywordflow}{return} !\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ae09b881219e3f51e7d9839668abbb52e}{operator==}}(other);}
+\DoxyCodeLine{00133     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{spat_8cpp_source_l00127}{operator==()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_a5c73cc279f79a8bfcbd3fbbb1dc31889_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_ae09b881219e3f51e7d9839668abbb52e}\label{structsignal__phase__and__timing_1_1spat_ae09b881219e3f51e7d9839668abbb52e}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!operator==@{operator==}}
+\index{operator==@{operator==}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{spat}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Equals operator to asses whether two objects contain equivalent data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em compare} & second object to compare current object with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if both object contain equivalent data. 
+
+false if not. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00127}{127}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00127                                                 \{}
+\DoxyCodeLine{00128         \textcolor{keywordflow}{return} \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{timestamp}} == other.timestamp \&\& \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}{name}} == other.name \&\& \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}} == other.intersections;}
+\DoxyCodeLine{00129     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, \mbox{\hyperlink{spat_8h_source_l00026}{name}}, and \mbox{\hyperlink{spat_8h_source_l00022}{timestamp}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00131}{operator!=()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_ae09b881219e3f51e7d9839668abbb52e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_ac664acbcf145d92f92605e3bfde11ce7}\label{structsignal__phase__and__timing_1_1spat_ac664acbcf145d92f92605e3bfde11ce7}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!set\_timestamp\_local@{set\_timestamp\_local}}
+\index{set\_timestamp\_local@{set\_timestamp\_local}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{set\_timestamp\_local()}{set\_timestamp\_local()}}
+{\footnotesize\ttfamily void signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::set\+\_\+timestamp\+\_\+local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to set SPaT timestamp based on system time. 
+
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00102}{102}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00102                                    \{}
+\DoxyCodeLine{00103         \textcolor{keywordflow}{if} ( !\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.empty() ) \{}
+\DoxyCodeLine{00104             intersection\_state \&\mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}} = \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.front();}
+\DoxyCodeLine{00105             \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.set\_timestamp\_local();}
+\DoxyCodeLine{00106             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{timestamp}} =  \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.moy;}
+\DoxyCodeLine{00107         \}}
+\DoxyCodeLine{00108         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00109             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(\textcolor{stringliteral}{"{}Intersection State List is empty! Cannot populate timestamp information!"{}});}
+\DoxyCodeLine{00110         \}}
+\DoxyCodeLine{00111     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, and \mbox{\hyperlink{spat_8h_source_l00022}{timestamp}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00063}{update()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_ac664acbcf145d92f92605e3bfde11ce7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a59f4842ab1588deac2746ecdafcd29b3}\label{structsignal__phase__and__timing_1_1spat_a59f4842ab1588deac2746ecdafcd29b3}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!set\_timestamp\_ntcip@{set\_timestamp\_ntcip}}
+\index{set\_timestamp\_ntcip@{set\_timestamp\_ntcip}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{set\_timestamp\_ntcip()}{set\_timestamp\_ntcip()}}
+{\footnotesize\ttfamily void signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::set\+\_\+timestamp\+\_\+ntcip (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{second\+\_\+of\+\_\+day,  }\item[{const uint16\+\_\+t}]{millisecond\+\_\+of\+\_\+second }\end{DoxyParamCaption})}
+
+
+
+Method to set SPaT timestamp based on NTCIP message timestamp. The NTCIP message timestamp consists of a seconds\+\_\+of\+\_\+day and a milliseconds of second field. This method will get the current day from system time and then apply seconds and milliseconds informat as a offset for the current day. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em second\+\_\+of\+\_\+day} & NTCIP message timestamp information (seconds of the current UTC day). \\
+\hline
+{\em millisecond\+\_\+of\+\_\+second} & NTCIP message timestamp information (millisecond of the current second). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00091                                                                                                       \{}
+\DoxyCodeLine{00092         \textcolor{keywordflow}{if} ( !\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.empty()) \{}
+\DoxyCodeLine{00093             intersection\_state \&\mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}} = \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.front();}
+\DoxyCodeLine{00094             \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.set\_timestamp\_ntcip(second\_of\_day, millisecond\_of\_second);}
+\DoxyCodeLine{00095             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{timestamp}} = \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.moy;}
+\DoxyCodeLine{00096         \}}
+\DoxyCodeLine{00097         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00098             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(\textcolor{stringliteral}{"{}Intersection State List is empty! Cannot populate timestamp information!"{}});}
+\DoxyCodeLine{00099         \}}
+\DoxyCodeLine{00100     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, and \mbox{\hyperlink{spat_8h_source_l00022}{timestamp}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00063}{update()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_a59f4842ab1588deac2746ecdafcd29b3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a1610241d89b9b84063f248803546a70b}\label{structsignal__phase__and__timing_1_1spat_a1610241d89b9b84063f248803546a70b}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!toJson@{toJson}}
+\index{toJson@{toJson}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{toJson()}{toJson()}}
+{\footnotesize\ttfamily std\+::string signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::to\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Serialize SPaT object to rapidjson\+::\+Value for writing as JSON string. 
+
+\begin{DoxyReturn}{Returns}
+rapidjson\+::\+Value serialize SPaT object 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005                                  \{}
+\DoxyCodeLine{00006         rapidjson::Document doc;}
+\DoxyCodeLine{00007         \textcolor{keyword}{auto} allocator = doc.GetAllocator();}
+\DoxyCodeLine{00008         \textcolor{comment}{// Create SPaT JSON value}}
+\DoxyCodeLine{00009         rapidjson::Value spat(rapidjson::kObjectType);}
+\DoxyCodeLine{00010         \textcolor{comment}{// Populate SPat JSON}}
+\DoxyCodeLine{00011         spat.AddMember(\textcolor{stringliteral}{"{}time\_stamp"{}}, \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}{timestamp}}, allocator);}
+\DoxyCodeLine{00012         spat.AddMember( \textcolor{stringliteral}{"{}name"{}}, \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}{name}}, allocator);}
+\DoxyCodeLine{00013         \textcolor{keywordflow}{if} ( !\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.empty() ) \{}
+\DoxyCodeLine{00014             rapidjson::Value list(rapidjson::kArrayType);}
+\DoxyCodeLine{00015             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&intersection : \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}} ) \{}
+\DoxyCodeLine{00016                 list.PushBack(\mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.toJson(allocator), allocator);}
+\DoxyCodeLine{00017             \}}
+\DoxyCodeLine{00018             spat.AddMember(\textcolor{stringliteral}{"{}intersections"{}}, list, allocator);}
+\DoxyCodeLine{00019         \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00020             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(\textcolor{stringliteral}{"{}SPaT message is missing required intersections property!"{}});}
+\DoxyCodeLine{00021         \}}
+\DoxyCodeLine{00022         rapidjson::StringBuffer buffer;}
+\DoxyCodeLine{00023         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00024             rapidjson::Writer<rapidjson::StringBuffer> writer(buffer);}
+\DoxyCodeLine{00025             spat.Accept(writer);}
+\DoxyCodeLine{00026         \}}
+\DoxyCodeLine{00027         \textcolor{keywordflow}{catch}( \textcolor{keyword}{const} std::exception \&e ) \{}
+\DoxyCodeLine{00028             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(e.what());}
+\DoxyCodeLine{00029         \}}
+\DoxyCodeLine{00030         \textcolor{keywordflow}{return} buffer.GetString();}
+\DoxyCodeLine{00031     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, \mbox{\hyperlink{spat_8h_source_l00026}{name}}, and \mbox{\hyperlink{spat_8h_source_l00022}{timestamp}}.
+
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_abf3e0ae490abd77f4c168e34222c21dc}\label{structsignal__phase__and__timing_1_1spat_abf3e0ae490abd77f4c168e34222c21dc}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!update@{update}}
+\index{update@{update}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip\+::ntcip\+\_\+1202\+\_\+ext}} \&}]{ntcip\+\_\+data,  }\item[{bool}]{use\+\_\+ntcip\+\_\+timestamp }\end{DoxyParamCaption})}
+
+
+
+Update spat object data using ntcip\+\_\+1202\+\_\+ext data received via UDP socket. Bool flag to control whether to use ntcip\+\_\+1202\+\_\+ext message provided timestamp or host unix timestamp information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ntcip\+\_\+data} & bytes from UDP socket, read into a struct \\
+\hline
+{\em use\+\_\+ntcip\+\_\+timestamp} & Bool flag to control whether to use ntcip\+\_\+1202\+\_\+ext message provided timestamp or host unix timestamp information. If true will use message timestamp. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00063}{63}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063                                                                                 \{}
+\DoxyCodeLine{00064         \textcolor{keywordflow}{if} ( \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}{phase\_to\_signal\_group}}.empty() || \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.front().name.empty() || \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.front().id == 0) \{}
+\DoxyCodeLine{00065             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(\textcolor{stringliteral}{"{}Before updating SPAT with NTCIP information spat::initialize() must be called! See README documentation!"{}});}
+\DoxyCodeLine{00066         \}}
+\DoxyCodeLine{00067         \textcolor{keywordflow}{if} ( use\_ntcip\_timestamp ) \{}
+\DoxyCodeLine{00068             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a59f4842ab1588deac2746ecdafcd29b3}{set\_timestamp\_ntcip}}( ntcip\_data.\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext_af186e0f2ed0ef770ecc230c4af031a59}{get\_timestamp\_seconds\_of\_day}}(), ntcip\_data.\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext_a8d066489dfd3a7b29753c91066e39f5d}{spat\_timestamp\_msec}});}
+\DoxyCodeLine{00069         \} }
+\DoxyCodeLine{00070         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00071             \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ac664acbcf145d92f92605e3bfde11ce7}{set\_timestamp\_local}}();}
+\DoxyCodeLine{00072         \}}
+\DoxyCodeLine{00073         \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_ae02c2e6b6a732834be0f8472270f7931}{update\_intersection\_state}}( ntcip\_data );}
+\DoxyCodeLine{00074         }
+\DoxyCodeLine{00075         }
+\DoxyCodeLine{00076         }
+\DoxyCodeLine{00077     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{ntcip__1202__ext_8cpp_source_l00090}{ntcip\+::ntcip\+\_\+1202\+\_\+ext\+::get\+\_\+timestamp\+\_\+seconds\+\_\+of\+\_\+day()}}, \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, \mbox{\hyperlink{spat_8h_source_l00035}{phase\+\_\+to\+\_\+signal\+\_\+group}}, \mbox{\hyperlink{spat_8cpp_source_l00102}{set\+\_\+timestamp\+\_\+local()}}, \mbox{\hyperlink{spat_8cpp_source_l00091}{set\+\_\+timestamp\+\_\+ntcip()}}, \mbox{\hyperlink{ntcip__1202__ext_8h_source_l00055}{ntcip\+::ntcip\+\_\+1202\+\_\+ext\+::spat\+\_\+timestamp\+\_\+msec}}, and \mbox{\hyperlink{spat_8cpp_source_l00113}{update\+\_\+intersection\+\_\+state()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_abf3e0ae490abd77f4c168e34222c21dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_ae02c2e6b6a732834be0f8472270f7931}\label{structsignal__phase__and__timing_1_1spat_ae02c2e6b6a732834be0f8472270f7931}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!update\_intersection\_state@{update\_intersection\_state}}
+\index{update\_intersection\_state@{update\_intersection\_state}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{update\_intersection\_state()}{update\_intersection\_state()}}
+{\footnotesize\ttfamily void signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::update\+\_\+intersection\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip\+::ntcip\+\_\+1202\+\_\+ext}} \&}]{ntcip\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Method to update the front entry in the intersections list of intersection\+\_\+state(s) with the provided NTCIP SPaT data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ntcip\+\_\+data} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{spat_8cpp_source_l00113}{113}} of file \mbox{\hyperlink{spat_8cpp_source}{spat.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00113                                                                           \{}
+\DoxyCodeLine{00114         \textcolor{keywordflow}{if} ( !\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.empty() ) \{}
+\DoxyCodeLine{00115             intersection\_state \&\mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}} = \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}{intersections}}.front();}
+\DoxyCodeLine{00116             \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.update\_movements(ntcip\_data, \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}{phase\_to\_signal\_group}});}
+\DoxyCodeLine{00117             \textcolor{comment}{// Update Intersection Status}}
+\DoxyCodeLine{00118             \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.status = ntcip\_data.\mbox{\hyperlink{structntcip_1_1ntcip__1202__ext_a494df3028a1a0d9b6463401cf01f5b54}{spat\_intersection\_status}};}
+\DoxyCodeLine{00119             \textcolor{comment}{// From V2X-\/Hub TODO: Investigate}}
+\DoxyCodeLine{00120             \mbox{\hyperlink{namespaceintersection__model_a9665ff9720af0b25d1c6a216e7bf66b4a26fef4087b2c10cb5ab7e4a5f5436ff4}{intersection}}.revision = 1;}
+\DoxyCodeLine{00121         \}}
+\DoxyCodeLine{00122         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00123             \textcolor{keywordflow}{throw} signal\_phase\_and\_timing\_exception(\textcolor{stringliteral}{"{}Intersection State List is empty! Cannot populate status information!"{}});}
+\DoxyCodeLine{00124         \}}
+\DoxyCodeLine{00125     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{spat_8h_source_l00030}{intersections}}, \mbox{\hyperlink{spat_8h_source_l00035}{phase\+\_\+to\+\_\+signal\+\_\+group}}, and \mbox{\hyperlink{ntcip__1202__ext_8h_source_l00043}{ntcip\+::ntcip\+\_\+1202\+\_\+ext\+::spat\+\_\+intersection\+\_\+status}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00063}{update()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structsignal__phase__and__timing_1_1spat_ae02c2e6b6a732834be0f8472270f7931_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}\label{structsignal__phase__and__timing_1_1spat_a1ab4b5232e535810906b7076d08812ca}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!intersections@{intersections}}
+\index{intersections@{intersections}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{intersections}{intersections}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state}{intersection\+\_\+state}}$>$ signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::intersections}
+
+
+
+Sets of SPaT data ( one per intersection). 
+
+
+
+Definition at line \mbox{\hyperlink{spat_8h_source_l00030}{30}} of file \mbox{\hyperlink{spat_8h_source}{spat.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00033}{from\+Json()}}, \mbox{\hyperlink{spat_8cpp_source_l00079}{initialize\+\_\+intersection()}}, \mbox{\hyperlink{spat_8cpp_source_l00127}{operator==()}}, \mbox{\hyperlink{spat_8cpp_source_l00102}{set\+\_\+timestamp\+\_\+local()}}, \mbox{\hyperlink{spat_8cpp_source_l00091}{set\+\_\+timestamp\+\_\+ntcip()}}, \mbox{\hyperlink{spat_8cpp_source_l00005}{to\+Json()}}, \mbox{\hyperlink{spat_8cpp_source_l00063}{update()}}, and \mbox{\hyperlink{spat_8cpp_source_l00113}{update\+\_\+intersection\+\_\+state()}}.
+
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}\label{structsignal__phase__and__timing_1_1spat_a0a562044bd6250986b309068c079ade0}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!name@{name}}
+\index{name@{name}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::name}
+
+
+
+Descriptive name for this collection. 
+
+
+
+Definition at line \mbox{\hyperlink{spat_8h_source_l00026}{26}} of file \mbox{\hyperlink{spat_8h_source}{spat.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00033}{from\+Json()}}, \mbox{\hyperlink{spat_8cpp_source_l00127}{operator==()}}, and \mbox{\hyperlink{spat_8cpp_source_l00005}{to\+Json()}}.
+
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}\label{structsignal__phase__and__timing_1_1spat_a277d582cc1d76ec0776d5b2dc11f0395}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!phase\_to\_signal\_group@{phase\_to\_signal\_group}}
+\index{phase\_to\_signal\_group@{phase\_to\_signal\_group}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{phase\_to\_signal\_group}{phase\_to\_signal\_group}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$int,int$>$ signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::phase\+\_\+to\+\_\+signal\+\_\+group}
+
+
+
+Map of phase number(\+NTCIP) to signal group(\+J2735). 
+
+
+
+Definition at line \mbox{\hyperlink{spat_8h_source_l00035}{35}} of file \mbox{\hyperlink{spat_8h_source}{spat.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00079}{initialize\+\_\+intersection()}}, \mbox{\hyperlink{spat_8cpp_source_l00063}{update()}}, and \mbox{\hyperlink{spat_8cpp_source_l00113}{update\+\_\+intersection\+\_\+state()}}.
+
+\mbox{\Hypertarget{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}\label{structsignal__phase__and__timing_1_1spat_ac08c93a991a59d5d32fb2a363460d874}} 
+\index{signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!signal\_phase\_and\_timing::spat@{signal\_phase\_and\_timing::spat}}
+\doxysubsubsection{\texorpdfstring{timestamp}{timestamp}}
+{\footnotesize\ttfamily u\+\_\+int32\+\_\+t signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat\+::timestamp = 0}
+
+
+
+Timestamp in minutes of the UTC year (see J2735 SPaT message documentation for reference). 
+
+
+
+Definition at line \mbox{\hyperlink{spat_8h_source_l00022}{22}} of file \mbox{\hyperlink{spat_8h_source}{spat.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{spat_8cpp_source_l00033}{from\+Json()}}, \mbox{\hyperlink{spat_8cpp_source_l00127}{operator==()}}, \mbox{\hyperlink{spat_8cpp_source_l00102}{set\+\_\+timestamp\+\_\+local()}}, \mbox{\hyperlink{spat_8cpp_source_l00091}{set\+\_\+timestamp\+\_\+ntcip()}}, and \mbox{\hyperlink{spat_8cpp_source_l00005}{to\+Json()}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+signal\+\_\+phase\+\_\+and\+\_\+timing/include/\mbox{\hyperlink{spat_8h}{spat.\+h}}\item 
+streets\+\_\+utils/streets\+\_\+signal\+\_\+phase\+\_\+and\+\_\+timing/src/models/\mbox{\hyperlink{spat_8cpp}{spat.\+cpp}}\end{DoxyCompactItemize}

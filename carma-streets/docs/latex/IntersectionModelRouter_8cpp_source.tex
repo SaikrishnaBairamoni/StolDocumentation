@@ -1,0 +1,20 @@
+\hypertarget{IntersectionModelRouter_8cpp_source}{}\doxysection{Intersection\+Model\+Router.\+cpp}
+\label{IntersectionModelRouter_8cpp_source}\index{intersection\_model/src/server/src/handlers/IntersectionModelRouter.cpp@{intersection\_model/src/server/src/handlers/IntersectionModelRouter.cpp}}
+\mbox{\hyperlink{IntersectionModelRouter_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{IntersectionModelRouter_8h}{IntersectionModelRouter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00003}00003 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceIntersectionModelAPI}{IntersectionModelAPI}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00005}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelRouter_a8e107b716294bf56b935e4f808468c7e}{00005}}     \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelRouter_abadc3ffc09010461d67bec95e0cc3ade}{IntersectionModelRouter::IntersectionModelRouter}}(std::shared\_ptr<intersection\_model::intersection\_model> int\_worker)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00006}00006     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00007}00007         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}IntersectionModelRouter constructor called"{}});}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00008}00008         \textcolor{keyword}{auto} mIntersectionModelHandler = QSharedPointer<IntersectionModelHandler>::create(int\_worker);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00009}00009         \textcolor{keywordflow}{if} (mIntersectionModelHandler != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00010}00010         \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00011}00011             \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_ad84704f466c58561dc2e5c7e7f868428}{setOAIDefaultApiHandler}}(mIntersectionModelHandler);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00012}00012         \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00013}00013     \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelRouter_8cpp_source_l00014}00014 \}}
+
+\end{DoxyCode}
