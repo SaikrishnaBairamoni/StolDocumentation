@@ -1,6 +1,0 @@
-<map id="traffic_signal_controller_service::snmp_response_obj" name="traffic_signal_controller_service::snmp_response_obj">
-<area shape="rect" id="node1" title="A struct to hold the value being sent to the TSC, can be integer or string. Type needs to be defined." alt="" coords="47,145,241,237"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,67,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="91,5,197,83"/>
-<area shape="rect" id="node4" title=" " alt="" coords="221,5,328,83"/>
-</map>

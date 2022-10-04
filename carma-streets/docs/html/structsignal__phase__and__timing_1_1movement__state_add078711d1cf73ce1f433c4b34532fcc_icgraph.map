@@ -1,5 +1,0 @@
-<map id="signal_phase_and_timing::movement_state::fromJson" name="signal_phase_and_timing::movement_state::fromJson">
-<area shape="rect" id="node1" title="Deserialize Movement State JSON into Movement State object." alt="" coords="437,13,623,54"/>
-<area shape="rect" id="node2" href="$structsignal__phase__and__timing_1_1intersection__state.html#ac73d712ab8edf86b8d9c892f6bdff5e0" title="Deserialize Intersection State JSON into Intersection State object." alt="" coords="221,5,389,61"/>
-<area shape="rect" id="node3" href="$structsignal__phase__and__timing_1_1spat.html#a034410d8e6254100552d88d21ca5bedd" title="Deserialize SPaT JSON into SPaT object." alt="" coords="5,13,173,54"/>
-</map>
