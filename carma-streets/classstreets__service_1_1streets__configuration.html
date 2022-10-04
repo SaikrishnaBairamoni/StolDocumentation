@@ -89,7 +89,8 @@ $(document).ready(function(){initNavTree('classstreets__service_1_1streets__conf
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="classstreets__service_1_1streets__configuration-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">streets_service::streets_configuration Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -263,9 +264,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><span class="lineno">   13</span>        <span class="comment">// Use configurations array to populate configuration map with service specific configuration</span></div>
 <div class="line"><span class="lineno">   14</span>        <span class="comment">// parameters from Document</span></div>
 <div class="line"><span class="lineno">   15</span>        <a class="code hl_function" href="classstreets__service_1_1streets__configuration.html#add8020786e63d730992680e57bde66b3">update_configuration</a>(doc);</div>
-<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; conf : <a class="code hl_variable" href="classstreets__service_1_1streets__configuration.html#a6ceb469d069f142cf0248d26cbc9d923">configuration_map</a>)</div>
+<div class="line"><span class="lineno">   16</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_namespace" href="namespaceconf.html">conf</a> : <a class="code hl_variable" href="classstreets__service_1_1streets__configuration.html#a6ceb469d069f142cf0248d26cbc9d923">configuration_map</a>)</div>
 <div class="line"><span class="lineno">   17</span>        {</div>
-<div class="line"><span class="lineno">   18</span>            SPDLOG_INFO(<span class="stringliteral">&quot;{0} : {1} &quot;</span>, conf.first.c_str(), conf.second.value.c_str());</div>
+<div class="line"><span class="lineno">   18</span>            SPDLOG_INFO(<span class="stringliteral">&quot;{0} : {1} &quot;</span>, <a class="code hl_namespace" href="namespaceconf.html">conf</a>.first.c_str(), <a class="code hl_namespace" href="namespaceconf.html">conf</a>.second.value.c_str());</div>
 <div class="line"><span class="lineno">   19</span>        }</div>
 <div class="line"><span class="lineno">   20</span>    };</div>
 <div class="ttc" id="aclassstreets__service_1_1streets__configuration_html_a3a54dfe5fa3466b8568229a458d344fc"><div class="ttname"><a href="classstreets__service_1_1streets__configuration.html#a3a54dfe5fa3466b8568229a458d344fc">streets_service::streets_configuration::configure_logger</a></div><div class="ttdeci">void configure_logger(const rapidjson::Document &amp;doc) const</div><div class="ttdoc">Method to read service level configurations from manifest.json file to configure default logger and s...</div><div class="ttdef"><b>Definition:</b> <a href="streets__configuration_8cpp_source.html#l00040">streets_configuration.cpp:40</a></div></div>
@@ -273,6 +274,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassstreets__service_1_1streets__configuration_html_ab1a84cf8b3857cbd5b56ce5605d7f94b"><div class="ttname"><a href="classstreets__service_1_1streets__configuration.html#ab1a84cf8b3857cbd5b56ce5605d7f94b">streets_service::streets_configuration::filepath</a></div><div class="ttdeci">std::string filepath</div><div class="ttdef"><b>Definition:</b> <a href="streets__configuration_8h_source.html#l00032">streets_configuration.h:32</a></div></div>
 <div class="ttc" id="aclassstreets__service_1_1streets__configuration_html_acf5b0a74be5323a4efe6e623f230ef85"><div class="ttname"><a href="classstreets__service_1_1streets__configuration.html#acf5b0a74be5323a4efe6e623f230ef85">streets_service::streets_configuration::parse_configuration_file</a></div><div class="ttdeci">rapidjson::Document parse_configuration_file()</div><div class="ttdoc">Parse manifest.json configuration file for CARMA-Streets service and update configurations.</div><div class="ttdef"><b>Definition:</b> <a href="streets__configuration_8cpp_source.html#l00022">streets_configuration.cpp:22</a></div></div>
 <div class="ttc" id="aclassstreets__service_1_1streets__configuration_html_add8020786e63d730992680e57bde66b3"><div class="ttname"><a href="classstreets__service_1_1streets__configuration.html#add8020786e63d730992680e57bde66b3">streets_service::streets_configuration::update_configuration</a></div><div class="ttdeci">void update_configuration(const rapidjson::Document &amp;doc)</div><div class="ttdoc">Update configuration parameters using json Document.</div><div class="ttdef"><b>Definition:</b> <a href="streets__configuration_8cpp_source.html#l00057">streets_configuration.cpp:57</a></div></div>
+<div class="ttc" id="anamespaceconf_html"><div class="ttname"><a href="namespaceconf.html">conf</a></div><div class="ttdef"><b>Definition:</b> <a href="doc_2conf_8py_source.html#l00001">conf.py:1</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="streets__configuration_8h_source.html#l00036">configuration_map</a>, <a class="el" href="streets__configuration_8cpp_source.html#l00040">configure_logger()</a>, <a class="el" href="streets__configuration_8cpp_source.html#l00022">parse_configuration_file()</a>, and <a class="el" href="streets__configuration_8cpp_source.html#l00057">update_configuration()</a>.</p>
 <div class="dynheader">
@@ -487,11 +489,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  184</span>            <span class="keyword">auto</span> file_sink = std::make_shared&lt;spdlog::sinks::daily_file_sink_mt&gt;(<span class="stringliteral">&quot;../logs/&quot;</span> + service_name, 23, 59, <span class="keyword">false</span>, 3);</div>
 <div class="line"><span class="lineno">  185</span>            <span class="keyword">auto</span> console_sink = std::make_shared&lt;spdlog::sinks::stdout_color_sink_mt&gt;();</div>
 <div class="line"><span class="lineno">  186</span>            <span class="comment">// Link thread pool and sinks to async logger</span></div>
-<div class="line"><span class="lineno">  187</span>            <span class="keyword">auto</span> logger = std::make_shared&lt;spdlog::async_logger&gt;(<span class="stringliteral">&quot;main&quot;</span>,  spdlog::sinks_init_list({console_sink, file_sink}),spdlog::thread_pool());</div>
+<div class="line"><span class="lineno">  187</span>            <span class="keyword">auto</span> <a class="code hl_variable" href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">logger</a> = std::make_shared&lt;spdlog::async_logger&gt;(<span class="stringliteral">&quot;main&quot;</span>,  spdlog::sinks_init_list({console_sink, file_sink}),spdlog::thread_pool());</div>
 <div class="line"><span class="lineno">  188</span>            <span class="comment">// Set pattern [2022-3-31 13:00:00.000] [loglevel] [file_name.cpp:123]</span></div>
-<div class="line"><span class="lineno">  189</span>            logger-&gt;set_pattern(<span class="stringliteral">&quot;[%Y-%m-%d %H:%M:%S.%e] [%^%l%$] [%s:%#] %v&quot;</span>);</div>
+<div class="line"><span class="lineno">  189</span>            <a class="code hl_variable" href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">logger</a>-&gt;set_pattern(<span class="stringliteral">&quot;[%Y-%m-%d %H:%M:%S.%e] [%^%l%$] [%s:%#] %v&quot;</span>);</div>
 <div class="line"><span class="lineno">  190</span>            <span class="comment">// Register logger and set as default</span></div>
-<div class="line"><span class="lineno">  191</span>            spdlog::set_default_logger(logger);</div>
+<div class="line"><span class="lineno">  191</span>            spdlog::set_default_logger(<a class="code hl_variable" href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">logger</a>);</div>
 <div class="line"><span class="lineno">  192</span>            SPDLOG_INFO(<span class="stringliteral">&quot;Default Logger initialized!&quot;</span>);</div>
 <div class="line"><span class="lineno">  193</span>        }   </div>
 <div class="line"><span class="lineno">  194</span>        <span class="keywordflow">catch</span> (<span class="keyword">const</span> spdlog::spdlog_ex&amp; ex)</div>
@@ -499,7 +501,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  196</span>            SPDLOG_ERROR( <span class="stringliteral">&quot;Log initialization failed: {0}!&quot;</span>,ex.what());</div>
 <div class="line"><span class="lineno">  197</span>        }</div>
 <div class="line"><span class="lineno">  198</span>    };</div>
+<div class="ttc" id="anamespacezephyr_1_1doxyrunner_html_a3b3f9cff00699ea6c32f73702fc7e861"><div class="ttname"><a href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">zephyr.doxyrunner.logger</a></div><div class="ttdeci">logger</div><div class="ttdef"><b>Definition:</b> <a href="doxyrunner_8py_source.html#l00062">doxyrunner.py:62</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="doxyrunner_8py_source.html#l00062">zephyr.doxyrunner::logger</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="streets__configuration_8cpp_source.html#l00040">configure_logger()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1038,15 +1043,15 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="streets__configuration_8h_source.html#l00032">filepath</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="streets__configuration_8cpp_source.html#l00206">check_update()</a>, and <a class="el" href="streets__configuration_8cpp_source.html#l00006">streets_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="streets__configuration_8cpp_source.html#l00006">streets_configuration()</a>, and <a class="el" href="streets__configuration_8cpp_source.html#l00206">check_update()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstreets__service_1_1streets__configuration_acf5b0a74be5323a4efe6e623f230ef85_icgraph.png" border="0" usemap="#aclassstreets__service_1_1streets__configuration_acf5b0a74be5323a4efe6e623f230ef85_icgraph" alt=""/></div>
 <map name="aclassstreets__service_1_1streets__configuration_acf5b0a74be5323a4efe6e623f230ef85_icgraph" id="aclassstreets__service_1_1streets__configuration_acf5b0a74be5323a4efe6e623f230ef85_icgraph">
-<area shape="rect" title="Parse manifest.json configuration file for CARMA&#45;Streets service and update configurations." alt="" coords="243,41,485,83"/>
-<area shape="rect" href="classstreets__service_1_1streets__configuration.html#a595d66c854ec6d7bb85d975721b5cde3" title="Method to check last modified time of file to see if a file update is necessary." alt="" coords="5,5,195,47"/>
-<area shape="rect" href="classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="21,70,179,126"/>
+<area shape="rect" title="Parse manifest.json configuration file for CARMA&#45;Streets service and update configurations." alt="" coords="243,49,485,90"/>
+<area shape="rect" href="classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="21,5,179,61"/>
+<area shape="rect" href="classstreets__service_1_1streets__configuration.html#a595d66c854ec6d7bb85d975721b5cde3" title="Method to check last modified time of file to see if a file update is necessary." alt="" coords="5,85,195,126"/>
 </map>
 </div>
 
@@ -1136,10 +1141,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstreets__service_1_1streets__configuration_abf6b664ead9e4d6f9f77c2ad26cec13b_icgraph.png" border="0" usemap="#aclassstreets__service_1_1streets__configuration_abf6b664ead9e4d6f9f77c2ad26cec13b_icgraph" alt=""/></div>
 <map name="aclassstreets__service_1_1streets__configuration_abf6b664ead9e4d6f9f77c2ad26cec13b_icgraph" id="aclassstreets__service_1_1streets__configuration_abf6b664ead9e4d6f9f77c2ad26cec13b_icgraph">
-<area shape="rect" title="Helper method that reads the configurations array inside the manifest.json configuration file." alt="" coords="448,41,711,83"/>
-<area shape="rect" href="classstreets__service_1_1streets__configuration.html#add8020786e63d730992680e57bde66b3" title="Update configuration parameters using json Document." alt="" coords="243,34,400,90"/>
-<area shape="rect" href="classstreets__service_1_1streets__configuration.html#a595d66c854ec6d7bb85d975721b5cde3" title="Method to check last modified time of file to see if a file update is necessary." alt="" coords="5,5,195,47"/>
-<area shape="rect" href="classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="21,70,179,126"/>
+<area shape="rect" title="Helper method that reads the configurations array inside the manifest.json configuration file." alt="" coords="448,49,711,90"/>
+<area shape="rect" href="classstreets__service_1_1streets__configuration.html#add8020786e63d730992680e57bde66b3" title="Update configuration parameters using json Document." alt="" coords="243,41,400,97"/>
+<area shape="rect" href="classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="21,5,179,61"/>
+<area shape="rect" href="classstreets__service_1_1streets__configuration.html#a595d66c854ec6d7bb85d975721b5cde3" title="Method to check last modified time of file to see if a file update is necessary." alt="" coords="5,85,195,126"/>
 </map>
 </div>
 
@@ -1253,7 +1258,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="streets__configuration_8cpp_source.html#l00077">parse_configurations_array()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="streets__configuration_8cpp_source.html#l00206">check_update()</a>, and <a class="el" href="streets__configuration_8cpp_source.html#l00006">streets_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="streets__configuration_8cpp_source.html#l00006">streets_configuration()</a>, and <a class="el" href="streets__configuration_8cpp_source.html#l00206">check_update()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1270,9 +1275,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classstreets__service_1_1streets__configuration_add8020786e63d730992680e57bde66b3_icgraph.png" border="0" usemap="#aclassstreets__service_1_1streets__configuration_add8020786e63d730992680e57bde66b3_icgraph" alt=""/></div>
 <map name="aclassstreets__service_1_1streets__configuration_add8020786e63d730992680e57bde66b3_icgraph" id="aclassstreets__service_1_1streets__configuration_add8020786e63d730992680e57bde66b3_icgraph">
-<area shape="rect" title="Update configuration parameters using json Document." alt="" coords="243,34,400,90"/>
-<area shape="rect" href="classstreets__service_1_1streets__configuration.html#a595d66c854ec6d7bb85d975721b5cde3" title="Method to check last modified time of file to see if a file update is necessary." alt="" coords="5,5,195,47"/>
-<area shape="rect" href="classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="21,70,179,126"/>
+<area shape="rect" title="Update configuration parameters using json Document." alt="" coords="243,41,400,97"/>
+<area shape="rect" href="classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="21,5,179,61"/>
+<area shape="rect" href="classstreets__service_1_1streets__configuration.html#a595d66c854ec6d7bb85d975721b5cde3" title="Method to check last modified time of file to see if a file update is necessary." alt="" coords="5,85,195,126"/>
 </map>
 </div>
 
@@ -1370,7 +1375,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa31c96e5213b3acf6d524d153ad2da96" name="aa31c96e5213b3acf6d524d153ad2da96"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa31c96e5213b3acf6d524d153ad2da96">&#9670;&nbsp;</a></span>config_lock</h2>
 
@@ -1419,7 +1424,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="streets__configuration_8h_source.html#l00036">36</a> of file <a class="el" href="streets__configuration_8h_source.html">streets_configuration.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="streets__configuration_8cpp_source.html#l00077">parse_configurations_array()</a>, and <a class="el" href="streets__configuration_8cpp_source.html#l00006">streets_configuration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="streets__configuration_8cpp_source.html#l00006">streets_configuration()</a>, and <a class="el" href="streets__configuration_8cpp_source.html#l00077">parse_configurations_array()</a>.</p>
 
 </div>
 </div>
@@ -1485,7 +1490,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacestreets__service.html">streets_service</a></li><li class="navelem"><a class="el" href="classstreets__service_1_1streets__configuration.html">streets_configuration</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:54 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:38 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

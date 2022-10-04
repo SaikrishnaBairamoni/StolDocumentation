@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('classOpenAPI_1_1OAIServerConfiguration
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="classOpenAPI_1_1OAIServerConfiguration-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenAPI::OAIServerConfiguration Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -117,7 +118,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aff74d1e2df580aff9fc2b346255a185b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
+Public Attributes</h2></td></tr>
 <tr class="memitem:a3376faebdfff9383346afc7cc4174235"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenAPI_1_1OAIServerConfiguration.html#a3376faebdfff9383346afc7cc4174235">_description</a></td></tr>
 <tr class="separator:a3376faebdfff9383346afc7cc4174235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af964d1595b6867fa9616323266683dbe"><td class="memItemLeft" align="right" valign="top">QMap&lt; QString, <a class="el" href="classOpenAPI_1_1OAIServerVariable.html">OAIServerVariable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenAPI_1_1OAIServerConfiguration.html#af964d1595b6867fa9616323266683dbe">_variables</a></td></tr>
@@ -281,11 +282,12 @@ Data Fields</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="OAIServerConfiguration_8h_source.html#l00068">68</a> of file <a class="el" href="OAIServerConfiguration_8h_source.html">OAIServerConfiguration.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   68</span>                                                                     {</div>
 <div class="line"><span class="lineno">   69</span>      <span class="keywordflow">if</span>(<a class="code hl_variable" href="classOpenAPI_1_1OAIServerConfiguration.html#af964d1595b6867fa9616323266683dbe">_variables</a>.contains(variable))</div>
-<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classOpenAPI_1_1OAIServerConfiguration.html#af964d1595b6867fa9616323266683dbe">_variables</a>[variable].setDefaultValue(value);</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classOpenAPI_1_1OAIServerConfiguration.html#af964d1595b6867fa9616323266683dbe">_variables</a>[variable].setDefaultValue(<a class="code hl_variable" href="namespacesimulate__bsm.html#a4e420317ae55cdf52ea0066e7a2b5fba">value</a>);</div>
 <div class="line"><span class="lineno">   71</span>      <span class="keywordflow">return</span> -1;</div>
 <div class="line"><span class="lineno">   72</span>    }</div>
+<div class="ttc" id="anamespacesimulate__bsm_html_a4e420317ae55cdf52ea0066e7a2b5fba"><div class="ttname"><a href="namespacesimulate__bsm.html#a4e420317ae55cdf52ea0066e7a2b5fba">simulate_bsm.value</a></div><div class="ttdeci">value</div><div class="ttdef"><b>Definition:</b> <a href="simulate__bsm_8py_source.html#l00024">simulate_bsm.py:24</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="OAIServerConfiguration_8h_source.html#l00075">_variables</a>.</p>
+<p class="reference">References <a class="el" href="OAIServerConfiguration_8h_source.html#l00075">_variables</a>, and <a class="el" href="simulate__bsm_8py_source.html#l00024">simulate_bsm::value</a>.</p>
 
 </div>
 </div>
@@ -328,13 +330,13 @@ Data Fields</h2></td></tr>
 <div class="line"><span class="lineno">   51</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span>&amp; v : <a class="code hl_variable" href="classOpenAPI_1_1OAIServerConfiguration.html#af964d1595b6867fa9616323266683dbe">_variables</a>.keys()) {</div>
 <div class="line"><span class="lineno">   52</span>                QString name = v;</div>
 <div class="line"><span class="lineno">   53</span>                OAIServerVariable serverVariable = <a class="code hl_variable" href="classOpenAPI_1_1OAIServerConfiguration.html#af964d1595b6867fa9616323266683dbe">_variables</a>.value(v);</div>
-<div class="line"><span class="lineno">   54</span>                QString value = serverVariable._defaultValue;</div>
+<div class="line"><span class="lineno">   54</span>                QString <a class="code hl_variable" href="namespacesimulate__bsm.html#a4e420317ae55cdf52ea0066e7a2b5fba">value</a> = serverVariable._defaultValue;</div>
 <div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>                <span class="keywordflow">if</span> (!serverVariable._enumValues.empty() &amp;&amp; !serverVariable._enumValues.contains(value)) {</div>
-<div class="line"><span class="lineno">   57</span>                    <span class="keywordflow">throw</span> std::runtime_error(QString(<span class="stringliteral">&quot;The variable &quot;</span> + name + <span class="stringliteral">&quot; in the server URL has invalid value &quot;</span> + value + <span class="stringliteral">&quot;.&quot;</span>).toUtf8().toStdString());</div>
+<div class="line"><span class="lineno">   56</span>                <span class="keywordflow">if</span> (!serverVariable._enumValues.empty() &amp;&amp; !serverVariable._enumValues.contains(<a class="code hl_variable" href="namespacesimulate__bsm.html#a4e420317ae55cdf52ea0066e7a2b5fba">value</a>)) {</div>
+<div class="line"><span class="lineno">   57</span>                    <span class="keywordflow">throw</span> std::runtime_error(QString(<span class="stringliteral">&quot;The variable &quot;</span> + name + <span class="stringliteral">&quot; in the server URL has invalid value &quot;</span> + <a class="code hl_variable" href="namespacesimulate__bsm.html#a4e420317ae55cdf52ea0066e7a2b5fba">value</a> + <span class="stringliteral">&quot;.&quot;</span>).toUtf8().toStdString());</div>
 <div class="line"><span class="lineno">   58</span>                }</div>
 <div class="line"><span class="lineno">   59</span>                QRegularExpression regex(QString(<span class="stringliteral">&quot;\\{&quot;</span> + name + <span class="stringliteral">&quot;\\}&quot;</span>));</div>
-<div class="line"><span class="lineno">   60</span>                url = url.replace(regex, value);</div>
+<div class="line"><span class="lineno">   60</span>                url = url.replace(regex, <a class="code hl_variable" href="namespacesimulate__bsm.html#a4e420317ae55cdf52ea0066e7a2b5fba">value</a>);</div>
 <div class="line"><span class="lineno">   61</span> </div>
 <div class="line"><span class="lineno">   62</span>            }</div>
 <div class="line"><span class="lineno">   63</span>            <span class="keywordflow">return</span> url;</div>
@@ -342,11 +344,11 @@ Data Fields</h2></td></tr>
 <div class="line"><span class="lineno">   65</span>        <span class="keywordflow">return</span> url;</div>
 <div class="line"><span class="lineno">   66</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="OAIServerVariable_8h_source.html#l00050">OpenAPI::OAIServerVariable::_defaultValue</a>, <a class="el" href="OAIServerVariable_8h_source.html#l00052">OpenAPI::OAIServerVariable::_enumValues</a>, <a class="el" href="OAIServerConfiguration_8h_source.html#l00076">_url</a>, and <a class="el" href="OAIServerConfiguration_8h_source.html#l00075">_variables</a>.</p>
+<p class="reference">References <a class="el" href="OAIServerVariable_8h_source.html#l00050">OpenAPI::OAIServerVariable::_defaultValue</a>, <a class="el" href="OAIServerVariable_8h_source.html#l00052">OpenAPI::OAIServerVariable::_enumValues</a>, <a class="el" href="OAIServerConfiguration_8h_source.html#l00076">_url</a>, <a class="el" href="OAIServerConfiguration_8h_source.html#l00075">_variables</a>, and <a class="el" href="simulate__bsm_8py_source.html#l00024">simulate_bsm::value</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a3376faebdfff9383346afc7cc4174235" name="a3376faebdfff9383346afc7cc4174235"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3376faebdfff9383346afc7cc4174235">&#9670;&nbsp;</a></span>_description</h2>
 
@@ -408,7 +410,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceOpenAPI.html">OpenAPI</a></li><li class="navelem"><a class="el" href="classOpenAPI_1_1OAIServerConfiguration.html">OAIServerConfiguration</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:54 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:38 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

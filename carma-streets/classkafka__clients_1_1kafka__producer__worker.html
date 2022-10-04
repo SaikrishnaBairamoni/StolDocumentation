@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('classkafka__clients_1_1kafka__producer
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classkafka__clients_1_1kafka__producer__worker-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">kafka_clients::kafka_producer_worker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -217,41 +218,41 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   13</span>        std::string errstr = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><span class="lineno">   14</span> </div>
 <div class="line"><span class="lineno">   15</span>        <span class="comment">// Create configuration objects</span></div>
-<div class="line"><span class="lineno">   16</span>        RdKafka::Conf *conf = RdKafka::Conf::create(RdKafka::Conf::CONF_GLOBAL);</div>
+<div class="line"><span class="lineno">   16</span>        RdKafka::Conf *<a class="code hl_namespace" href="namespaceconf.html">conf</a> = RdKafka::Conf::create(RdKafka::Conf::CONF_GLOBAL);</div>
 <div class="line"><span class="lineno">   17</span>        RdKafka::Conf *tconf = RdKafka::Conf::create(RdKafka::Conf::CONF_TOPIC);</div>
 <div class="line"><span class="lineno">   18</span> </div>
 <div class="line"><span class="lineno">   19</span><span class="comment">        /***</span></div>
 <div class="line"><span class="lineno">   20</span><span class="comment">         * Set Configuration properties</span></div>
 <div class="line"><span class="lineno">   21</span><span class="comment">         */</span></div>
 <div class="line"><span class="lineno">   22</span>        <span class="comment">// set broker list</span></div>
-<div class="line"><span class="lineno">   23</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a0e130dd02a30f05539120cb5ba477510">BOOTSTRAP_SERVER</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a38bf3fabc40b1db6b4850b335cf6fe4b">_broker_str</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   23</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a0e130dd02a30f05539120cb5ba477510">BOOTSTRAP_SERVER</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a38bf3fabc40b1db6b4850b335cf6fe4b">_broker_str</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   24</span>        {</div>
 <div class="line"><span class="lineno">   25</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RdKafka conf set brokerlist failed: {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   26</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   27</span>        }</div>
 <div class="line"><span class="lineno">   28</span> </div>
 <div class="line"><span class="lineno">   29</span>        <span class="comment">// set delivery report callback</span></div>
-<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a15f3f181dd5c04c64d04bb6473ae2cac">DR_CB</a>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#aa172375ad141af4a27bdb852a7492026">_producer_delivery_report_cb</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a15f3f181dd5c04c64d04bb6473ae2cac">DR_CB</a>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#aa172375ad141af4a27bdb852a7492026">_producer_delivery_report_cb</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   31</span>        {</div>
 <div class="line"><span class="lineno">   32</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RdKafka conf set delivery report callback failed:   {0}&quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   33</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   34</span>        }</div>
 <div class="line"><span class="lineno">   35</span> </div>
 <div class="line"><span class="lineno">   36</span>        <span class="comment">// set event callback</span></div>
-<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a12fac0bb7e9d9fe2425ff506948c51ea">EVENT_CB</a>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#aa71379a7f3bec4a50216eefdd03c640e">_producer_event_cb</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#a12fac0bb7e9d9fe2425ff506948c51ea">EVENT_CB</a>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#aa71379a7f3bec4a50216eefdd03c640e">_producer_event_cb</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   38</span>        {</div>
 <div class="line"><span class="lineno">   39</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RdKafka conf set event callback failed: {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   40</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   41</span>        }</div>
 <div class="line"><span class="lineno">   42</span> </div>
 <div class="line"><span class="lineno">   43</span>        <span class="comment">// create producer using accumulated global configuration.</span></div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#ad24185bcbdf6f674d7b1e81eb6aee89e">_producer</a> = RdKafka::Producer::create(conf, errstr);</div>
+<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#ad24185bcbdf6f674d7b1e81eb6aee89e">_producer</a> = RdKafka::Producer::create(<a class="code hl_namespace" href="namespaceconf.html">conf</a>, errstr);</div>
 <div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#ad24185bcbdf6f674d7b1e81eb6aee89e">_producer</a>)</div>
 <div class="line"><span class="lineno">   46</span>        {</div>
 <div class="line"><span class="lineno">   47</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;Failed to create producer:  {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   48</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   49</span>        }</div>
-<div class="line"><span class="lineno">   50</span>        <span class="keyword">delete</span> conf;</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keyword">delete</span> <a class="code hl_namespace" href="namespaceconf.html">conf</a>;</div>
 <div class="line"><span class="lineno">   51</span> </div>
 <div class="line"><span class="lineno">   52</span>        SPDLOG_INFO(<span class="stringliteral">&quot;created producer:  {:&gt;8} &quot;</span>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__producer__worker.html#ad24185bcbdf6f674d7b1e81eb6aee89e">_producer</a>-&gt;name());</div>
 <div class="line"><span class="lineno">   53</span> </div>
@@ -275,6 +276,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclasskafka__clients_1_1kafka__producer__worker_html_aa71379a7f3bec4a50216eefdd03c640e"><div class="ttname"><a href="classkafka__clients_1_1kafka__producer__worker.html#aa71379a7f3bec4a50216eefdd03c640e">kafka_clients::kafka_producer_worker::_producer_event_cb</a></div><div class="ttdeci">producer_event_cb _producer_event_cb</div><div class="ttdef"><b>Definition:</b> <a href="kafka__producer__worker_8h_source.html#l00080">kafka_producer_worker.h:80</a></div></div>
 <div class="ttc" id="aclasskafka__clients_1_1kafka__producer__worker_html_aaa1ce1c199b4fd69c59dd715294aabb4"><div class="ttname"><a href="classkafka__clients_1_1kafka__producer__worker.html#aaa1ce1c199b4fd69c59dd715294aabb4">kafka_clients::kafka_producer_worker::printCurrConf</a></div><div class="ttdeci">void printCurrConf()</div><div class="ttdef"><b>Definition:</b> <a href="kafka__producer__worker_8cpp_source.html#l00155">kafka_producer_worker.cpp:155</a></div></div>
 <div class="ttc" id="aclasskafka__clients_1_1kafka__producer__worker_html_ad24185bcbdf6f674d7b1e81eb6aee89e"><div class="ttname"><a href="classkafka__clients_1_1kafka__producer__worker.html#ad24185bcbdf6f674d7b1e81eb6aee89e">kafka_clients::kafka_producer_worker::_producer</a></div><div class="ttdeci">RdKafka::Producer * _producer</div><div class="ttdef"><b>Definition:</b> <a href="kafka__producer__worker_8h_source.html#l00073">kafka_producer_worker.h:73</a></div></div>
+<div class="ttc" id="anamespaceconf_html"><div class="ttname"><a href="namespaceconf.html">conf</a></div><div class="ttdef"><b>Definition:</b> <a href="doc_2conf_8py_source.html#l00001">conf.py:1</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="kafka__producer__worker_8h_source.html#l00076">_broker_str</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00073">_producer</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00079">_producer_delivery_report_cb</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00080">_producer_event_cb</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00074">_topic</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00075">_topics_str</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00069">BOOTSTRAP_SERVER</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00070">DR_CB</a>, <a class="el" href="kafka__producer__worker_8h_source.html#l00071">EVENT_CB</a>, and <a class="el" href="kafka__producer__worker_8cpp_source.html#l00155">printCurrConf()</a>.</p>
 
@@ -490,7 +492,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a38bf3fabc40b1db6b4850b335cf6fe4b" name="a38bf3fabc40b1db6b4850b335cf6fe4b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38bf3fabc40b1db6b4850b335cf6fe4b">&#9670;&nbsp;</a></span>_broker_str</h2>
 
@@ -787,7 +789,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacekafka__clients.html">kafka_clients</a></li><li class="navelem"><a class="el" href="classkafka__clients_1_1kafka__producer__worker.html">kafka_producer_worker</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:53 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:37 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

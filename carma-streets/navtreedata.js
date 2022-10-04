@@ -123,11 +123,12 @@ var NAVTREE =
       [ "Introduction", "md_tsc_client_service_README.html#autotoc_md118", null ],
       [ "tsc_service", "md_tsc_client_service_README.html#autotoc_md119", null ]
     ] ],
+    [ "Definitions, Macros, and Messages", "modules.html", "modules" ],
     [ "API documentation", "usergroup0.html", [
       [ "Namespace List", "namespaces.html", [
         [ "Namespace List", "namespaces.html", "namespaces_dup" ],
         [ "Namespace Members", "namespacemembers.html", [
-          [ "All", "namespacemembers.html", null ],
+          [ "All", "namespacemembers.html", "namespacemembers_dup" ],
           [ "Functions", "namespacemembers_func.html", null ],
           [ "Variables", "namespacemembers_vars.html", null ],
           [ "Typedefs", "namespacemembers_type.html", null ],
@@ -135,11 +136,11 @@ var NAVTREE =
           [ "Enumerator", "namespacemembers_eval.html", null ]
         ] ]
       ] ],
-      [ "Data Structures", "annotated.html", [
-        [ "Data Structures", "annotated.html", "annotated_dup" ],
-        [ "Data Structure Index", "classes.html", null ],
+      [ "Class List", "annotated.html", [
+        [ "Class List", "annotated.html", "annotated_dup" ],
+        [ "Class Index", "classes.html", null ],
         [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-        [ "Data Fields", "functions.html", [
+        [ "Class Members", "functions.html", [
           [ "All", "functions.html", "functions_dup" ],
           [ "Functions", "functions_func.html", "functions_func" ],
           [ "Variables", "functions_vars.html", "functions_vars" ],
@@ -150,7 +151,7 @@ var NAVTREE =
       ] ],
       [ "File List", "files.html", [
         [ "File List", "files.html", "files_dup" ],
-        [ "Globals", "globals.html", [
+        [ "File Members", "globals.html", [
           [ "All", "globals.html", null ],
           [ "Functions", "globals_func.html", null ],
           [ "Variables", "globals_vars.html", null ],
@@ -164,22 +165,25 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "IntersectionModelHandler_8cpp.html",
-"classOpenAPI_1_1OAIDefaultApi.html#ac71f52ffd61dcb3efac5ccfa6a1831b5",
-"classOpenAPI_1_1OAIHttpRequestInput.html#a8bb8ec3ee758dd84769fd9837ba0da89",
-"classOpenAPI_1_1OAILanelet__info.html#a1f40cda9769299f3d785c360b4393f77",
-"classOpenAPI_1_1OAIServerConfiguration.html#a513dfd7eea328f85ecfad5ae8ade0903",
-"classkafka__clients_1_1kafka__consumer__worker.html#ae4c07a85eebb901f3809103982e04530",
-"classmessage__services_1_1models_1_1vehicle__status__intent.html#a429cef22eb0dfc9cedb43a179b7234dd",
-"classmessage__services_1_1workers_1_1mobilitypath__worker.html#ab5e6d0ce94c5195ceffd194c0e5d0a5c",
-"classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#a63107a1e136be3a00f3a1445531904aa",
-"classtraffic__signal__controller__service_1_1spat__worker.html",
-"functions_e.html",
-"intersection__server__api_2src_2models_2OAIHelpers_8cpp.html#a1de27b45189fe8f86d6cbd4c70ed82ae",
-"mobilityHeader_8h.html#a570b713faafff4221c10023ae8051c77",
-"namespacetraffic__signal__controller__service.html#aa91e53dd22b41ddac648a9b468615b61",
-"structintersection__model_1_1map__lane.html#ab8c449edd3189b3bea030400f2f75c89",
-"structntcip_1_1ntcip__1202__ext__phasetime.html#a0acc582fc9ed531cfa78a2630e2595c3",
-"structstreets__vehicle__scheduler_1_1all__stop__vehicle__schedule.html#a2726d915b4abd31525531fd583aafc50"
+"classOpenAPI_1_1OAIDefaultApi.html#ab796bf85d3f50c882f9a99fe159523e8",
+"classOpenAPI_1_1OAIHttpRequestInput.html#a768470088686c8f3f4b80cb570237aff",
+"classOpenAPI_1_1OAILanelet__info.html#a1dd7acc57e00d4015cea2a6d59dcfc9d",
+"classOpenAPI_1_1OAIServerConfiguration.html#a22323b5129054dfca9167b581944a475",
+"classkafka__clients_1_1kafka__consumer__worker.html#a5309cebb82d652936e523f5b136c731f",
+"classmessage__services_1_1models_1_1vehicle__status__intent.html#a1d01ea8032517cc0b432cbb543c6e407",
+"classmessage__services_1_1workers_1_1mobilityoperation__worker.html#a0a9135fb02ee5a339f5ee713bf677fc2",
+"classstreets__service_1_1streets__singleton.html#ad750b4d0b29e3de44a66dc6876dcc8a8",
+"classtraffic__signal__controller__service_1_1snmp__client.html#a3ff1755d9120fd159e8ffc5c33bdec8a",
+"classzephyr_1_1kconfig_1_1__FindKconfigSearchDirectiveVisitor.html",
+"functions_l.html",
+"intersection__server__api_2src_2models_2OAIHelpers_8cpp.html",
+"md_streets_utils_streets_service_base_README.html#autotoc_md100",
+"namespacegen__devicetree__rest.html#ada8c51d0836c3ba7e2f69dd2d4493974",
+"namespacezephyr_1_1kconfig.html#a6c6ecff3527982fe3193c11b7ba48335",
+"structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat.html#aeab3c3c1fecb43a5859afb70bbeac338",
+"structntcip_1_1ntcip__1202__ext.html#a2c56febabf67e8344b47f82a8ff9d696",
+"structsignal__phase__and__timing_1_1time__change__details.html",
+"tsc__service_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

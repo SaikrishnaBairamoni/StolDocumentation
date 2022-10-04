@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('structntcip_1_1ntcip__1202__ext.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structntcip_1_1ntcip__1202__ext-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ntcip::ntcip_1202_ext Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -157,7 +158,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3599a4daef1eff847beb567329bb364e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
+Public Attributes</h2></td></tr>
 <tr class="memitem:afeb5b464b96d4e4ed3c2a7f1aec18111"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structntcip_1_1ntcip__1202__ext.html#afeb5b464b96d4e4ed3c2a7f1aec18111">header</a> = 0</td></tr>
 <tr class="memdesc:afeb5b464b96d4e4ed3c2a7f1aec18111"><td class="mdescLeft">&#160;</td><td class="mdescRight">header  <a href="structntcip_1_1ntcip__1202__ext.html#afeb5b464b96d4e4ed3c2a7f1aec18111">More...</a><br /></td></tr>
 <tr class="separator:afeb5b464b96d4e4ed3c2a7f1aec18111"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -797,19 +798,20 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="ntcip__1202__ext_8cpp_source.html#l00094">94</a> of file <a class="el" href="ntcip__1202__ext_8cpp_source.html">ntcip_1202_ext.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   94</span>                                                                                  {</div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0 ; i &lt; 16; i++) {</div>
-<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="structntcip_1_1ntcip__1202__ext.html#a1ebc09f76685143a64cb0883d2873947">phase_times</a>[i].<a class="code hl_variable" href="ntcip__1202__ext__phasetime_8h.html#a818606b5263ca9418c2a574097a9503a">phase_number</a> ==  <a class="code hl_variable" href="ntcip__1202__ext__phasetime_8h.html#a818606b5263ca9418c2a574097a9503a">phase_number</a>) {</div>
-<div class="line"><span class="lineno">   97</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="structntcip_1_1ntcip__1202__ext.html#a1ebc09f76685143a64cb0883d2873947">phase_times</a>[i];</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">for</span> ( <span class="keyword">auto</span> <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a> = 0 ; <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a> &lt; 16; <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>++) {</div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="structntcip_1_1ntcip__1202__ext.html#a1ebc09f76685143a64cb0883d2873947">phase_times</a>[<a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>].<a class="code hl_variable" href="ntcip__1202__ext__phasetime_8h.html#a818606b5263ca9418c2a574097a9503a">phase_number</a> ==  <a class="code hl_variable" href="ntcip__1202__ext__phasetime_8h.html#a818606b5263ca9418c2a574097a9503a">phase_number</a>) {</div>
+<div class="line"><span class="lineno">   97</span>                <span class="keywordflow">return</span> <a class="code hl_variable" href="structntcip_1_1ntcip__1202__ext.html#a1ebc09f76685143a64cb0883d2873947">phase_times</a>[<a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>];</div>
 <div class="line"><span class="lineno">   98</span>            }</div>
 <div class="line"><span class="lineno">   99</span> </div>
 <div class="line"><span class="lineno">  100</span>        }</div>
 <div class="line"><span class="lineno">  101</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="classsignal__phase__and__timing_1_1signal__phase__and__timing__exception.html">signal_phase_and_timing::signal_phase_and_timing_exception</a>(<span class="stringliteral">&quot;Could not find phasetime for phase number &quot;</span> +  <a class="code hl_function" href="ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd">std::to_string</a>(<a class="code hl_variable" href="ntcip__1202__ext__phasetime_8h.html#a818606b5263ca9418c2a574097a9503a">phase_number</a>) +  <span class="stringliteral">&quot;!&quot;</span>);</div>
 <div class="line"><span class="lineno">  102</span>    }</div>
 <div class="ttc" id="aclasssignal__phase__and__timing_1_1signal__phase__and__timing__exception_html"><div class="ttname"><a href="classsignal__phase__and__timing_1_1signal__phase__and__timing__exception.html">signal_phase_and_timing::signal_phase_and_timing_exception</a></div><div class="ttdoc">Runtime error related to processing signal_phase_and_timing JSON updates.</div><div class="ttdef"><b>Definition:</b> <a href="signal__phase__and__timing__exception_8h_source.html#l00013">signal_phase_and_timing_exception.h:13</a></div></div>
+<div class="ttc" id="anamespacesimulate__bsm_html_a29b8e2f01a805057636de5ad54422c21"><div class="ttname"><a href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">simulate_bsm.i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> <a href="simulate__bsm_8py_source.html#l00019">simulate_bsm.py:19</a></div></div>
 <div class="ttc" id="antcip__1202__ext_8h_html_a576de7b60eacee3f1a70393a005502cd"><div class="ttname"><a href="ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd">to_string</a></div><div class="ttdeci">std::string to_string() const</div><div class="ttdoc">Returns std::string representation of ntcip_1202_ext message including phase_times array.</div></div>
 <div class="ttc" id="astructntcip_1_1ntcip__1202__ext_html_a1ebc09f76685143a64cb0883d2873947"><div class="ttname"><a href="structntcip_1_1ntcip__1202__ext.html#a1ebc09f76685143a64cb0883d2873947">ntcip::ntcip_1202_ext::phase_times</a></div><div class="ttdeci">ntcip_1202_ext_phasetime phase_times[16]</div><div class="ttdoc">phase_time object for each phase</div><div class="ttdef"><b>Definition:</b> <a href="ntcip__1202__ext_8h_source.html#l00019">ntcip_1202_ext.h:19</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="ntcip__1202__ext__phasetime_8h_source.html#l00001">phase_number</a>, <a class="el" href="ntcip__1202__ext_8h_source.html#l00019">phase_times</a>, and <a class="el" href="ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd">to_string()</a>.</p>
+<p class="reference">References <a class="el" href="simulate__bsm_8py_source.html#l00019">simulate_bsm::i</a>, <a class="el" href="ntcip__1202__ext__phasetime_8h_source.html#l00001">phase_number</a>, <a class="el" href="ntcip__1202__ext_8h_source.html#l00019">phase_times</a>, and <a class="el" href="ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd">to_string()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="intersection__state_8cpp_source.html#l00211">signal_phase_and_timing::intersection_state::update_movement_state()</a>.</p>
 <div class="dynheader">
@@ -1072,7 +1074,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ae34beeb835c0d92cca1690fd00bf0ea2" name="ae34beeb835c0d92cca1690fd00bf0ea2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae34beeb835c0d92cca1690fd00bf0ea2">&#9670;&nbsp;</a></span>flashing_output_overlap_status</h2>
 
@@ -1559,7 +1561,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacentcip.html">ntcip</a></li><li class="navelem"><a class="el" href="structntcip_1_1ntcip__1202__ext.html">ntcip_1202_ext</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:53 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:37 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

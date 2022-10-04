@@ -86,11 +86,12 @@ $(document).ready(function(){initNavTree('classOpenAPI_1_1OAIHttpRequestWorker.h
   <div class="summary">
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classOpenAPI_1_1OAIHttpRequestWorker-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenAPI::OAIHttpRequestWorker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -160,7 +161,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa5bdb146ddffe45498c9d53598d1507f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
+Public Attributes</h2></td></tr>
 <tr class="memitem:aecbecbac85d55628b6cabb73f072fcb5"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenAPI_1_1OAIHttpRequestWorker.html#aecbecbac85d55628b6cabb73f072fcb5">response</a></td></tr>
 <tr class="separator:aecbecbac85d55628b6cabb73f072fcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3efd6243071ccbef5c9312d4db124e9d"><td class="memItemLeft" align="right" valign="top">QNetworkReply::NetworkError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOpenAPI_1_1OAIHttpRequestWorker.html#a3efd6243071ccbef5c9312d4db124e9d">error_type</a></td></tr>
@@ -457,10 +458,13 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="OAIHttpRequest_8cpp_source.html#l00489">489</a> of file <a class="el" href="OAIHttpRequest_8cpp_source.html">OAIHttpRequest.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  489</span>                                                                 {</div>
 <div class="line"><span class="lineno">  490</span>    </div>
-<div class="line"><span class="lineno">  491</span>    Q_UNUSED(data);</div>
+<div class="line"><span class="lineno">  491</span>    Q_UNUSED(<a class="code hl_variable" href="namespacesimulate__bsm.html#a2aaf0142837b674c6cfa6006cf335bc7">data</a>);</div>
 <div class="line"><span class="lineno">  492</span>    <span class="keywordflow">return</span> QByteArray();</div>
 <div class="line"><span class="lineno">  493</span>}</div>
+<div class="ttc" id="anamespacesimulate__bsm_html_a2aaf0142837b674c6cfa6006cf335bc7"><div class="ttname"><a href="namespacesimulate__bsm.html#a2aaf0142837b674c6cfa6006cf335bc7">simulate_bsm.data</a></div><div class="ttdeci">def data</div><div class="ttdef"><b>Definition:</b> <a href="simulate__bsm_8py_source.html#l00021">simulate_bsm.py:21</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="simulate__bsm_8py_source.html#l00021">simulate_bsm::data</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00432">process_response()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -954,8 +958,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  139</span>    QString result = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><span class="lineno">  140</span>    QByteArray input_c = input.toLocal8Bit();</div>
 <div class="line"><span class="lineno">  141</span>    <span class="keywordtype">char</span> c;</div>
-<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; input_c.length(); i++) {</div>
-<div class="line"><span class="lineno">  143</span>        c = input_c.at(i);</div>
+<div class="line"><span class="lineno">  142</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a> = 0; <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a> &lt; input_c.length(); <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>++) {</div>
+<div class="line"><span class="lineno">  143</span>        c = input_c.at(<a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>);</div>
 <div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> (c == <span class="charliteral">&#39;\\&#39;</span> || c == <span class="charliteral">&#39;/&#39;</span> || c == <span class="charliteral">&#39;\0&#39;</span> || c &lt; &#39; &#39; || c &gt; <span class="charliteral">&#39;~&#39;</span>) {</div>
 <div class="line"><span class="lineno">  145</span>            <span class="comment">// ignore and request utf-8 version</span></div>
 <div class="line"><span class="lineno">  146</span>            need_utf_encoding = <span class="keyword">true</span>;</div>
@@ -976,19 +980,22 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  161</span>    }</div>
 <div class="line"><span class="lineno">  162</span> </div>
 <div class="line"><span class="lineno">  163</span>    QString result_utf8 = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; input_c.length(); i++) {</div>
-<div class="line"><span class="lineno">  165</span>        c = input_c.at(i);</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a> = 0; <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a> &lt; input_c.length(); <a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>++) {</div>
+<div class="line"><span class="lineno">  165</span>        c = input_c.at(<a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>);</div>
 <div class="line"><span class="lineno">  166</span>        <span class="keywordflow">if</span> ((c &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;9&#39;</span>) || (c &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;Z&#39;</span>) || (c &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;z&#39;</span>)) {</div>
 <div class="line"><span class="lineno">  167</span>            result_utf8 += c;</div>
 <div class="line"><span class="lineno">  168</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  169</span>            result_utf8 += <span class="stringliteral">&quot;%&quot;</span> + QString::number(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(input_c.at(i)), 16).toUpper();</div>
+<div class="line"><span class="lineno">  169</span>            result_utf8 += <span class="stringliteral">&quot;%&quot;</span> + QString::number(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span><span class="keyword">&gt;</span>(input_c.at(<a class="code hl_variable" href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">i</a>)), 16).toUpper();</div>
 <div class="line"><span class="lineno">  170</span>        }</div>
 <div class="line"><span class="lineno">  171</span>    }</div>
 <div class="line"><span class="lineno">  172</span> </div>
 <div class="line"><span class="lineno">  173</span>    <span class="comment">// return enhanced version with UTF-8 support</span></div>
 <div class="line"><span class="lineno">  174</span>    <span class="keywordflow">return</span> QString(<span class="stringliteral">&quot;%1=\&quot;%2\&quot;; %1*=utf-8&#39;&#39;%3&quot;</span>).arg(attribute_name, result, result_utf8);</div>
 <div class="line"><span class="lineno">  175</span>}</div>
+<div class="ttc" id="anamespacesimulate__bsm_html_a29b8e2f01a805057636de5ad54422c21"><div class="ttname"><a href="namespacesimulate__bsm.html#a29b8e2f01a805057636de5ad54422c21">simulate_bsm.i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition:</b> <a href="simulate__bsm_8py_source.html#l00019">simulate_bsm.py:19</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="simulate__bsm_8py_source.html#l00019">simulate_bsm::i</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00177">execute()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1493,7 +1500,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a094214d8718ee8f0e8bcd41e1b19ae2b" name="a094214d8718ee8f0e8bcd41e1b19ae2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a094214d8718ee8f0e8bcd41e1b19ae2b">&#9670;&nbsp;</a></span>error_str</h2>
 
@@ -1682,7 +1689,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="OAIHttpRequest_8h_source.html#l00091">91</a> of file <a class="el" href="OAIHttpRequest_8h_source.html">OAIHttpRequest.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00177">execute()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00059">OAIHttpRequestWorker()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00059">OAIHttpRequestWorker()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00177">execute()</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +1715,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="OAIHttpRequest_8h_source.html#l00094">94</a> of file <a class="el" href="OAIHttpRequest_8h_source.html">OAIHttpRequest.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00100">getMultiPartField()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00075">~OAIHttpRequestWorker()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00075">~OAIHttpRequestWorker()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00100">getMultiPartField()</a>.</p>
 
 </div>
 </div>
@@ -1734,7 +1741,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="OAIHttpRequest_8h_source.html#l00101">101</a> of file <a class="el" href="OAIHttpRequest_8h_source.html">OAIHttpRequest.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00177">execute()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00059">OAIHttpRequestWorker()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00059">OAIHttpRequestWorker()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00177">execute()</a>.</p>
 
 </div>
 </div>
@@ -1804,7 +1811,7 @@ Here is the caller graph for this function:</div>
 
 <p class="definition">Definition at line <a class="el" href="OAIHttpRequest_8h_source.html#l00096">96</a> of file <a class="el" href="OAIHttpRequest_8h_source.html">OAIHttpRequest.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00177">execute()</a>, <a class="el" href="OAIHttpRequest_8cpp_source.html#l00059">OAIHttpRequestWorker()</a>, <a class="el" href="OAIHttpRequest_8cpp_source.html#l00398">on_reply_finished()</a>, <a class="el" href="OAIHttpRequest_8cpp_source.html#l00111">setTimeOut()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00075">~OAIHttpRequestWorker()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="OAIHttpRequest_8cpp_source.html#l00059">OAIHttpRequestWorker()</a>, <a class="el" href="OAIHttpRequest_8cpp_source.html#l00075">~OAIHttpRequestWorker()</a>, <a class="el" href="OAIHttpRequest_8cpp_source.html#l00177">execute()</a>, <a class="el" href="OAIHttpRequest_8cpp_source.html#l00398">on_reply_finished()</a>, and <a class="el" href="OAIHttpRequest_8cpp_source.html#l00111">setTimeOut()</a>.</p>
 
 </div>
 </div>
@@ -1844,7 +1851,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceOpenAPI.html">OpenAPI</a></li><li class="navelem"><a class="el" href="classOpenAPI_1_1OAIHttpRequestWorker.html">OAIHttpRequestWorker</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:54 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:38 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['udp_5fsocket_5flistener_0',['udp_socket_listener',['../classtraffic__signal__controller__service_1_1udp__socket__listener.html',1,'traffic_signal_controller_service']]],
-  ['udp_5fsocket_5flistener_5fexception_1',['udp_socket_listener_exception',['../classtraffic__signal__controller__service_1_1udp__socket__listener__exception.html',1,'traffic_signal_controller_service']]]
+  ['time_5fchange_5fdetails_0',['time_change_details',['../structsignal__phase__and__timing_1_1time__change__details.html',1,'signal_phase_and_timing']]],
+  ['trajectory_1',['trajectory',['../structmessage__services_1_1models_1_1trajectory.html',1,'message_services::models']]],
+  ['tsc_5fservice_2',['tsc_service',['../classtraffic__signal__controller__service_1_1tsc__service.html',1,'traffic_signal_controller_service']]],
+  ['tsc_5fstate_3',['tsc_state',['../classtraffic__signal__controller__service_1_1tsc__state.html',1,'traffic_signal_controller_service']]]
 ];

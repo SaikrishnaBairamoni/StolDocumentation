@@ -85,9 +85,10 @@ $(document).ready(function(){initNavTree('classmessage__services_1_1models_1_1mo
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="classmessage__services_1_1models_1_1mobilityoperation-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">message_services::models::mobilityoperation Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -155,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4fedff3ceb673e0200e7738bd6099d5d inherit pub_methods_classmessage__services_1_1models_1_1baseMessage"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
+Public Attributes</h2></td></tr>
 <tr class="memitem:a723624d65aa1c08a1ccb5a9b4f075457"><td class="memItemLeft" align="right" valign="top">std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmessage__services_1_1models_1_1mobilityoperation.html#a723624d65aa1c08a1ccb5a9b4f075457">msg_received_timestamp_</a> = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(std::chrono::system_clock::now().time_since_epoch()).count()</td></tr>
 <tr class="separator:a723624d65aa1c08a1ccb5a9b4f075457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -272,7 +273,7 @@ Friends</h2></td></tr>
 <div class="line"><span class="lineno">   99</span>                writer-&gt;Key(<span class="stringliteral">&quot;plan_id&quot;</span>);</div>
 <div class="line"><span class="lineno">  100</span>                writer-&gt;String(this-&gt;<a class="code hl_function" href="classmessage__services_1_1models_1_1mobilityoperation.html#af120e50b8d8d7609cfba3ff620d34f82">getHeader</a>().plan_id.c_str());</div>
 <div class="line"><span class="lineno">  101</span>                writer-&gt;Key(<span class="stringliteral">&quot;timestamp&quot;</span>);</div>
-<div class="line"><span class="lineno">  102</span>                writer-&gt;Uint64(this-&gt;<a class="code hl_function" href="classmessage__services_1_1models_1_1mobilityoperation.html#af120e50b8d8d7609cfba3ff620d34f82">getHeader</a>().timestamp);</div>
+<div class="line"><span class="lineno">  102</span>                writer-&gt;Uint64(this-&gt;<a class="code hl_function" href="classmessage__services_1_1models_1_1mobilityoperation.html#af120e50b8d8d7609cfba3ff620d34f82">getHeader</a>().<a class="code hl_variable" href="namespacesimulate__mobilityoperation.html#a53dff21a6d447ca660693de3432b79d0">timestamp</a>);</div>
 <div class="line"><span class="lineno">  103</span>                writer-&gt;EndObject();</div>
 <div class="line"><span class="lineno">  104</span>                writer-&gt;Key(<span class="stringliteral">&quot;strategy_params&quot;</span>);</div>
 <div class="line"><span class="lineno">  105</span>                writer-&gt;String(this-&gt;<a class="code hl_function" href="classmessage__services_1_1models_1_1mobilityoperation.html#a9b640ee6d30bcd6a1b9548367f246555">getStrategy_params</a>().c_str());</div>
@@ -290,8 +291,9 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassmessage__services_1_1models_1_1mobilityoperation_html_a9b640ee6d30bcd6a1b9548367f246555"><div class="ttname"><a href="classmessage__services_1_1models_1_1mobilityoperation.html#a9b640ee6d30bcd6a1b9548367f246555">message_services::models::mobilityoperation::getStrategy_params</a></div><div class="ttdeci">std::string getStrategy_params() const</div><div class="ttdef"><b>Definition:</b> <a href="mobilityoperation_8cpp_source.html#l00171">mobilityoperation.cpp:171</a></div></div>
 <div class="ttc" id="aclassmessage__services_1_1models_1_1mobilityoperation_html_ae494ac3adca59be35c8042aae8c4b6b2"><div class="ttname"><a href="classmessage__services_1_1models_1_1mobilityoperation.html#ae494ac3adca59be35c8042aae8c4b6b2">message_services::models::mobilityoperation::getStrategy</a></div><div class="ttdeci">std::string getStrategy() const</div><div class="ttdef"><b>Definition:</b> <a href="mobilityoperation_8cpp_source.html#l00179">mobilityoperation.cpp:179</a></div></div>
 <div class="ttc" id="aclassmessage__services_1_1models_1_1mobilityoperation_html_af120e50b8d8d7609cfba3ff620d34f82"><div class="ttname"><a href="classmessage__services_1_1models_1_1mobilityoperation.html#af120e50b8d8d7609cfba3ff620d34f82">message_services::models::mobilityoperation::getHeader</a></div><div class="ttdeci">mobility_header_t getHeader() const</div><div class="ttdef"><b>Definition:</b> <a href="mobilityoperation_8cpp_source.html#l00163">mobilityoperation.cpp:163</a></div></div>
+<div class="ttc" id="anamespacesimulate__mobilityoperation_html_a53dff21a6d447ca660693de3432b79d0"><div class="ttname"><a href="namespacesimulate__mobilityoperation.html#a53dff21a6d447ca660693de3432b79d0">simulate_mobilityoperation.timestamp</a></div><div class="ttdeci">int timestamp</div><div class="ttdef"><b>Definition:</b> <a href="simulate__mobilityoperation_8py_source.html#l00026">simulate_mobilityoperation.py:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="mobilityoperation_8cpp_source.html#l00163">getHeader()</a>, <a class="el" href="mobilityoperation_8cpp_source.html#l00179">getStrategy()</a>, and <a class="el" href="mobilityoperation_8cpp_source.html#l00171">getStrategy_params()</a>.</p>
+<p class="reference">References <a class="el" href="mobilityoperation_8cpp_source.html#l00163">getHeader()</a>, <a class="el" href="mobilityoperation_8cpp_source.html#l00179">getStrategy()</a>, <a class="el" href="mobilityoperation_8cpp_source.html#l00171">getStrategy_params()</a>, and <a class="el" href="simulate__mobilityoperation_8py_source.html#l00026">simulate_mobilityoperation::timestamp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -494,10 +496,12 @@ Here is the caller graph for this function:</div>
 <p class="definition">Definition at line <a class="el" href="mobilityoperation_8cpp_source.html#l00022">22</a> of file <a class="el" href="mobilityoperation_8cpp_source.html">mobilityoperation.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>        {</div>
 <div class="line"><span class="lineno">   24</span>            std::stringstream hash_ss;</div>
-<div class="line"><span class="lineno">   25</span>            hash_ss &lt;&lt; sender_bsm_id &lt;&lt; timestamp;</div>
+<div class="line"><span class="lineno">   25</span>            hash_ss &lt;&lt; sender_bsm_id &lt;&lt; <a class="code hl_variable" href="namespacesimulate__mobilityoperation.html#a53dff21a6d447ca660693de3432b79d0">timestamp</a>;</div>
 <div class="line"><span class="lineno">   26</span>            <span class="keywordflow">return</span> hash_ss.str();</div>
 <div class="line"><span class="lineno">   27</span>        }</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="simulate__mobilityoperation_8py_source.html#l00026">simulate_mobilityoperation::timestamp</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="vehicle__status__intent__service_8cpp_source.html#l00109">message_services::services::vehicle_status_intent_service::run()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -851,7 +855,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1895afd1e479fc93fe08627aacb1a21d" name="a1895afd1e479fc93fe08627aacb1a21d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1895afd1e479fc93fe08627aacb1a21d">&#9670;&nbsp;</a></span>header</h2>
 
@@ -956,7 +960,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemessage__services.html">message_services</a></li><li class="navelem"><a class="el" href="namespacemessage__services_1_1models.html">models</a></li><li class="navelem"><a class="el" href="classmessage__services_1_1models_1_1mobilityoperation.html">mobilityoperation</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:53 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:37 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

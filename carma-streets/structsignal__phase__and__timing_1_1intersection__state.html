@@ -85,7 +85,8 @@ $(document).ready(function(){initNavTree('structsignal__phase__and__timing_1_1in
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structsignal__phase__and__timing_1_1intersection__state-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">signal_phase_and_timing::intersection_state Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -151,7 +152,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7f3126c08963787918c8d007255b4193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Data Fields</h2></td></tr>
+Public Attributes</h2></td></tr>
 <tr class="memitem:ad71bed5c8cd56cac8dcd041c5fd5a83e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsignal__phase__and__timing_1_1intersection__state.html#ad71bed5c8cd56cac8dcd041c5fd5a83e">MIN_TO_SECONDS</a> = 60</td></tr>
 <tr class="separator:ad71bed5c8cd56cac8dcd041c5fd5a83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebaed676aff07f126fe01e1319b4c605"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsignal__phase__and__timing_1_1intersection__state.html#aebaed676aff07f126fe01e1319b4c605">SECOND_TO_MILLISECONDS</a> = 1000</td></tr>
@@ -299,8 +300,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  301</span>        std::chrono::hours h =  std::chrono::duration_cast&lt;std::chrono::hours&gt;(tp);</div>
 <div class="line"><span class="lineno">  302</span>        tp -= h;</div>
 <div class="line"><span class="lineno">  303</span> </div>
-<div class="line"><span class="lineno">  304</span>        std::chrono::minutes m =  std::chrono::duration_cast&lt;std::chrono::minutes&gt;(tp);</div>
-<div class="line"><span class="lineno">  305</span>        tp -= m;</div>
+<div class="line"><span class="lineno">  304</span>        std::chrono::minutes <a class="code hl_variable" href="namespaceconf.html#a6e236bdca26a4db264a4daba8b82644d">m</a> =  std::chrono::duration_cast&lt;std::chrono::minutes&gt;(tp);</div>
+<div class="line"><span class="lineno">  305</span>        tp -= <a class="code hl_variable" href="namespaceconf.html#a6e236bdca26a4db264a4daba8b82644d">m</a>;</div>
 <div class="line"><span class="lineno">  306</span> </div>
 <div class="line"><span class="lineno">  307</span>        std::chrono::seconds s =  std::chrono::duration_cast&lt;std::chrono::seconds&gt;(tp);</div>
 <div class="line"><span class="lineno">  308</span>        tp -= s;</div>
@@ -308,11 +309,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">  310</span>        std::chrono::milliseconds ms = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(tp);</div>
 <div class="line"><span class="lineno">  311</span> </div>
 <div class="line"><span class="lineno">  312</span>        <span class="keywordtype">double</span> fractionSeconds = ((double)s.count()) + ((<span class="keywordtype">double</span>)ms.count()/1000.0);</div>
-<div class="line"><span class="lineno">  313</span>        <span class="keywordtype">double</span> retTimeD = ((double)(m.count() * 60) + fractionSeconds) * 10.0;</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordtype">double</span> retTimeD = ((double)(<a class="code hl_variable" href="namespaceconf.html#a6e236bdca26a4db264a4daba8b82644d">m</a>.count() * 60) + fractionSeconds) * 10.0;</div>
 <div class="line"><span class="lineno">  314</span>        SPDLOG_TRACE(<span class="stringliteral">&quot;Converted offset {0} to {1}&quot;</span>, offset_tenths_of_seconds, retTimeD);</div>
 <div class="line"><span class="lineno">  315</span>        <span class="keywordflow">return</span> (uint16_t) retTimeD;</div>
 <div class="line"><span class="lineno">  316</span>    }</div>
+<div class="ttc" id="anamespaceconf_html_a6e236bdca26a4db264a4daba8b82644d"><div class="ttname"><a href="namespaceconf.html#a6e236bdca26a4db264a4daba8b82644d">conf.m</a></div><div class="ttdeci">m</div><div class="ttdef"><b>Definition:</b> <a href="doc_2conf_8py_source.html#l00044">conf.py:44</a></div></div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="doc_2conf_8py_source.html#l00044">conf::m</a>.</p>
+
 <p class="reference">Referenced by <a class="el" href="intersection__state_8cpp_source.html#l00211">update_movement_state()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1101,7 +1105,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a8c616e91f927f3803dcd2367e12a4eb9" name="a8c616e91f927f3803dcd2367e12a4eb9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c616e91f927f3803dcd2367e12a4eb9">&#9670;&nbsp;</a></span>enabled_lanes</h2>
 
@@ -1329,7 +1333,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesignal__phase__and__timing.html">signal_phase_and_timing</a></li><li class="navelem"><a class="el" href="structsignal__phase__and__timing_1_1intersection__state.html">intersection_state</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:54 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:38 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

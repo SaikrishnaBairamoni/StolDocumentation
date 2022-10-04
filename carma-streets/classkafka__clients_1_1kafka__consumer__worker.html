@@ -86,7 +86,8 @@ $(document).ready(function(){initNavTree('classkafka__clients_1_1kafka__consumer
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="classkafka__clients_1_1kafka__consumer__worker-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">kafka_clients::kafka_consumer_worker Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -307,48 +308,48 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   15</span>        SPDLOG_INFO(<span class="stringliteral">&quot;kafka_consumer_worker init()... &quot;</span>);</div>
 <div class="line"><span class="lineno">   16</span> </div>
 <div class="line"><span class="lineno">   17</span>        std::string errstr;</div>
-<div class="line"><span class="lineno">   18</span>        RdKafka::Conf *conf = RdKafka::Conf::create(RdKafka::Conf::CONF_GLOBAL);</div>
-<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">if</span> (!conf)</div>
+<div class="line"><span class="lineno">   18</span>        RdKafka::Conf *<a class="code hl_namespace" href="namespaceconf.html">conf</a> = RdKafka::Conf::create(RdKafka::Conf::CONF_GLOBAL);</div>
+<div class="line"><span class="lineno">   19</span>        <span class="keywordflow">if</span> (!<a class="code hl_namespace" href="namespaceconf.html">conf</a>)</div>
 <div class="line"><span class="lineno">   20</span>        {</div>
 <div class="line"><span class="lineno">   21</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RDKafka create global conf failed &quot;</span>);</div>
 <div class="line"><span class="lineno">   22</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   23</span>        }</div>
 <div class="line"><span class="lineno">   24</span> </div>
 <div class="line"><span class="lineno">   25</span>        <span class="comment">// set bootstrap server</span></div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a1be63784601962e39be2c4273c8d8a10">BOOTSTRAP_SERVER</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#adbbd5da9da27879872833432f0356cf9">_broker_str</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a1be63784601962e39be2c4273c8d8a10">BOOTSTRAP_SERVER</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#adbbd5da9da27879872833432f0356cf9">_broker_str</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   27</span>        {</div>
 <div class="line"><span class="lineno">   28</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RDKafka conf set bootstrap server failed: {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   29</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   30</span>        }</div>
 <div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>        conf-&gt;set(<span class="stringliteral">&quot;rebalance_cb&quot;</span>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#abd9eb27ab295bedcf83079cd76be0dca">_consumer_rebalance_cb</a>, errstr);</div>
+<div class="line"><span class="lineno">   32</span>        <a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<span class="stringliteral">&quot;rebalance_cb&quot;</span>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#abd9eb27ab295bedcf83079cd76be0dca">_consumer_rebalance_cb</a>, errstr);</div>
 <div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#af4035adb29186d82e02a421f60e6c20c">EVENT_CB</a>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#afa22d9563c7fa1c1f4b7649d2d916234">_consumer_event_cb</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#af4035adb29186d82e02a421f60e6c20c">EVENT_CB</a>, &amp;<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#afa22d9563c7fa1c1f4b7649d2d916234">_consumer_event_cb</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   35</span>        {</div>
 <div class="line"><span class="lineno">   36</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RDKafka conf set event call back failed:  {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   37</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   38</span>        }</div>
 <div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a7f4316c560cc365bed44c44d85f602a6">ENABLE_PARTITION_END_OF</a>, <span class="stringliteral">&quot;true&quot;</span>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a7f4316c560cc365bed44c44d85f602a6">ENABLE_PARTITION_END_OF</a>, <span class="stringliteral">&quot;true&quot;</span>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   41</span>        {</div>
 <div class="line"><span class="lineno">   42</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RDKafka conf set partition end of failed: {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   43</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   44</span>        }</div>
 <div class="line"><span class="lineno">   45</span> </div>
 <div class="line"><span class="lineno">   46</span>        <span class="comment">// set consumer group</span></div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a1351347e3181003cafa0483c2b52da30">GROUP_ID</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a7190a9c36158ae34bee8e82f76e36c08">_group_id_str</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a1351347e3181003cafa0483c2b52da30">GROUP_ID</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a7190a9c36158ae34bee8e82f76e36c08">_group_id_str</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   48</span>        {</div>
 <div class="line"><span class="lineno">   49</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RDKafka conf set group id failed:  {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   50</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><span class="lineno">   51</span>        }</div>
 <div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (conf-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a7da998a85ddc3bb03dfaaa22f3247657">MAX_PARTITION_FETCH_SIZE</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#ab2ec9e7d75acb7cafcf7f4266c18cc1f">STR_FETCH_NUM</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespaceconf.html">conf</a>-&gt;set(<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a7da998a85ddc3bb03dfaaa22f3247657">MAX_PARTITION_FETCH_SIZE</a>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#ab2ec9e7d75acb7cafcf7f4266c18cc1f">STR_FETCH_NUM</a>, errstr) != RdKafka::Conf::CONF_OK)</div>
 <div class="line"><span class="lineno">   54</span>        {</div>
 <div class="line"><span class="lineno">   55</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;RDKafka cof set max.partition failed:  {0} &quot;</span>, errstr.c_str());</div>
 <div class="line"><span class="lineno">   56</span>        }</div>
 <div class="line"><span class="lineno">   57</span> </div>
 <div class="line"><span class="lineno">   58</span>        <span class="comment">// create consumer</span></div>
-<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a150a975764638c8d35d3c9b721880e7b">_consumer</a> = RdKafka::KafkaConsumer::create(conf, errstr);</div>
+<div class="line"><span class="lineno">   59</span>        <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a150a975764638c8d35d3c9b721880e7b">_consumer</a> = RdKafka::KafkaConsumer::create(<a class="code hl_namespace" href="namespaceconf.html">conf</a>, errstr);</div>
 <div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (!<a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a150a975764638c8d35d3c9b721880e7b">_consumer</a>)</div>
 <div class="line"><span class="lineno">   61</span>        {</div>
 <div class="line"><span class="lineno">   62</span>            SPDLOG_CRITICAL(<span class="stringliteral">&quot;failed to create consumer:  {0}&quot;</span>, errstr.c_str());</div>
@@ -356,7 +357,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><span class="lineno">   64</span>        }</div>
 <div class="line"><span class="lineno">   65</span> </div>
 <div class="line"><span class="lineno">   66</span>        SPDLOG_INFO(<span class="stringliteral">&quot;created consumer: {0} &quot;</span>, <a class="code hl_variable" href="classkafka__clients_1_1kafka__consumer__worker.html#a150a975764638c8d35d3c9b721880e7b">_consumer</a>-&gt;name());</div>
-<div class="line"><span class="lineno">   67</span>        <span class="keyword">delete</span> conf;</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keyword">delete</span> <a class="code hl_namespace" href="namespaceconf.html">conf</a>;</div>
 <div class="line"><span class="lineno">   68</span> </div>
 <div class="line"><span class="lineno">   69</span>        <span class="comment">// create kafka topic</span></div>
 <div class="line"><span class="lineno">   70</span>        RdKafka::Conf *tconf = RdKafka::Conf::create(RdKafka::Conf::CONF_TOPIC);</div>
@@ -387,6 +388,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclasskafka__clients_1_1kafka__consumer__worker_html_abd9eb27ab295bedcf83079cd76be0dca"><div class="ttname"><a href="classkafka__clients_1_1kafka__consumer__worker.html#abd9eb27ab295bedcf83079cd76be0dca">kafka_clients::kafka_consumer_worker::_consumer_rebalance_cb</a></div><div class="ttdeci">consumer_rebalance_cb _consumer_rebalance_cb</div><div class="ttdef"><b>Definition:</b> <a href="kafka__consumer__worker_8h_source.html#l00135">kafka_consumer_worker.h:135</a></div></div>
 <div class="ttc" id="aclasskafka__clients_1_1kafka__consumer__worker_html_af4035adb29186d82e02a421f60e6c20c"><div class="ttname"><a href="classkafka__clients_1_1kafka__consumer__worker.html#af4035adb29186d82e02a421f60e6c20c">kafka_clients::kafka_consumer_worker::EVENT_CB</a></div><div class="ttdeci">const std::string EVENT_CB</div><div class="ttdef"><b>Definition:</b> <a href="kafka__consumer__worker_8h_source.html#l00117">kafka_consumer_worker.h:117</a></div></div>
 <div class="ttc" id="aclasskafka__clients_1_1kafka__consumer__worker_html_afa22d9563c7fa1c1f4b7649d2d916234"><div class="ttname"><a href="classkafka__clients_1_1kafka__consumer__worker.html#afa22d9563c7fa1c1f4b7649d2d916234">kafka_clients::kafka_consumer_worker::_consumer_event_cb</a></div><div class="ttdeci">consumer_event_cb _consumer_event_cb</div><div class="ttdef"><b>Definition:</b> <a href="kafka__consumer__worker_8h_source.html#l00134">kafka_consumer_worker.h:134</a></div></div>
+<div class="ttc" id="anamespaceconf_html"><div class="ttname"><a href="namespaceconf.html">conf</a></div><div class="ttdef"><b>Definition:</b> <a href="doc_2conf_8py_source.html#l00001">conf.py:1</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="kafka__consumer__worker_8h_source.html#l00126">_broker_str</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00129">_consumer</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00134">_consumer_event_cb</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00135">_consumer_rebalance_cb</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00127">_group_id_str</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00130">_topic</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00125">_topics_str</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00115">BOOTSTRAP_SERVER</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00120">ENABLE_PARTITION_END_OF</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00117">EVENT_CB</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00118">GROUP_ID</a>, <a class="el" href="kafka__consumer__worker_8h_source.html#l00119">MAX_PARTITION_FETCH_SIZE</a>, <a class="el" href="kafka__consumer__worker_8cpp_source.html#l00124">printCurrConf()</a>, and <a class="el" href="kafka__consumer__worker_8h_source.html#l00123">STR_FETCH_NUM</a>.</p>
 
@@ -668,7 +670,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="adbbd5da9da27879872833432f0356cf9" name="adbbd5da9da27879872833432f0356cf9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adbbd5da9da27879872833432f0356cf9">&#9670;&nbsp;</a></span>_broker_str</h2>
 
@@ -1143,7 +1145,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacekafka__clients.html">kafka_clients</a></li><li class="navelem"><a class="el" href="classkafka__clients_1_1kafka__consumer__worker.html">kafka_consumer_worker</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:53 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:37 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

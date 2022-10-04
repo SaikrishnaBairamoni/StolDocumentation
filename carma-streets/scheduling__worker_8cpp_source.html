@@ -110,9 +110,9 @@ $(document).ready(function(){initNavTree('scheduling__worker_8cpp_source.html','
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        scheduler-&gt;schedule_vehicles(veh_map, int_schedule);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">if</span> ( <a class="code hl_function" href="classstreets__service_1_1streets__configuration.html#a48f38b0b6ecb3043cc051b624f12824b">streets_service::streets_configuration::get_boolean_config</a>(<span class="stringliteral">&quot;enable_schedule_logging&quot;</span>) ) {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">auto</span> logger = spdlog::get(<span class="stringliteral">&quot;csv_logger&quot;</span>);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">if</span> ( logger != <span class="keyword">nullptr</span> ){</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                logger-&gt;info( int_schedule-&gt;toCSV());</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keyword">auto</span> <a class="code hl_variable" href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">logger</a> = spdlog::get(<span class="stringliteral">&quot;csv_logger&quot;</span>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">if</span> ( <a class="code hl_variable" href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">logger</a> != <span class="keyword">nullptr</span> ){</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                <a class="code hl_variable" href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">logger</a>-&gt;info( int_schedule-&gt;toCSV());</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            }</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        }</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
@@ -125,6 +125,7 @@ $(document).ready(function(){initNavTree('scheduling__worker_8cpp_source.html','
 <div class="ttc" id="aclassstreets__service_1_1streets__configuration_html_a03603871626201e07690effb9f2440bf"><div class="ttname"><a href="classstreets__service_1_1streets__configuration.html#a03603871626201e07690effb9f2440bf">streets_service::streets_configuration::get_string_config</a></div><div class="ttdeci">static std::string get_string_config(const std::string &amp;config_param_name)</div><div class="ttdoc">Retreive configuration parameter string value with provided name.</div><div class="ttdef"><b>Definition:</b> <a href="streets__configuration_8cpp_source.html#l00103">streets_configuration.cpp:103</a></div></div>
 <div class="ttc" id="aclassstreets__service_1_1streets__configuration_html_a48f38b0b6ecb3043cc051b624f12824b"><div class="ttname"><a href="classstreets__service_1_1streets__configuration.html#a48f38b0b6ecb3043cc051b624f12824b">streets_service::streets_configuration::get_boolean_config</a></div><div class="ttdeci">static bool get_boolean_config(const std::string &amp;config_param_name)</div><div class="ttdoc">Retreive configuration parameter boolean value with provide name.</div><div class="ttdef"><b>Definition:</b> <a href="streets__configuration_8cpp_source.html#l00149">streets_configuration.cpp:149</a></div></div>
 <div class="ttc" id="anamespacescheduling__service_html"><div class="ttname"><a href="namespacescheduling__service.html">scheduling_service</a></div><div class="ttdef"><b>Definition:</b> <a href="scheduling__service_2include_2intersection__client_8h_source.html#l00015">intersection_client.h:15</a></div></div>
+<div class="ttc" id="anamespacezephyr_1_1doxyrunner_html_a3b3f9cff00699ea6c32f73702fc7e861"><div class="ttname"><a href="namespacezephyr_1_1doxyrunner.html#a3b3f9cff00699ea6c32f73702fc7e861">zephyr.doxyrunner.logger</a></div><div class="ttdeci">logger</div><div class="ttdef"><b>Definition:</b> <a href="doxyrunner_8py_source.html#l00062">doxyrunner.py:62</a></div></div>
 <div class="ttc" id="ascheduling__worker_8h_html"><div class="ttname"><a href="scheduling__worker_8h.html">scheduling_worker.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -132,7 +133,7 @@ $(document).ready(function(){initNavTree('scheduling__worker_8cpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0a5dd744e173470e5673b2d7425b82fe.html">scheduling_service</a></li><li class="navelem"><a class="el" href="dir_cb97f5385e392d758fdfc53af5f3d1a2.html">src</a></li><li class="navelem"><a class="el" href="scheduling__worker_8cpp.html">scheduling_worker.cpp</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 19:22:52 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 4 2022 17:45:36 for Carma-streets by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

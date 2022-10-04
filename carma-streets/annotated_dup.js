@@ -1,5 +1,8 @@
 var annotated_dup =
 [
+    [ "gen_devicetree_rest", "namespacegen__devicetree__rest.html", [
+      [ "VndLookup", "classgen__devicetree__rest_1_1VndLookup.html", "classgen__devicetree__rest_1_1VndLookup" ]
+    ] ],
     [ "intersection_model", "namespaceintersection__model.html", [
       [ "intersection_info_t", "structintersection__model_1_1intersection__info__t.html", "structintersection__model_1_1intersection__info__t" ],
       [ "intersection_map", "structintersection__model_1_1intersection__map.html", "structintersection__model_1_1intersection__map" ],
@@ -142,6 +145,20 @@ var annotated_dup =
       [ "tsc_state", "classtraffic__signal__controller__service_1_1tsc__state.html", "classtraffic__signal__controller__service_1_1tsc__state" ],
       [ "udp_socket_listener", "classtraffic__signal__controller__service_1_1udp__socket__listener.html", "classtraffic__signal__controller__service_1_1udp__socket__listener" ],
       [ "udp_socket_listener_exception", "classtraffic__signal__controller__service_1_1udp__socket__listener__exception.html", "classtraffic__signal__controller__service_1_1udp__socket__listener__exception" ]
+    ] ],
+    [ "zephyr", "namespacezephyr.html", [
+      [ "application", "namespacezephyr_1_1application.html", [
+        [ "ZephyrAppCommandsDirective", "classzephyr_1_1application_1_1ZephyrAppCommandsDirective.html", "classzephyr_1_1application_1_1ZephyrAppCommandsDirective" ]
+      ] ],
+      [ "kconfig", "namespacezephyr_1_1kconfig.html", [
+        [ "_FindKconfigSearchDirectiveVisitor", "classzephyr_1_1kconfig_1_1__FindKconfigSearchDirectiveVisitor.html", "classzephyr_1_1kconfig_1_1__FindKconfigSearchDirectiveVisitor" ],
+        [ "KconfigDomain", "classzephyr_1_1kconfig_1_1KconfigDomain.html", "classzephyr_1_1kconfig_1_1KconfigDomain" ],
+        [ "KconfigSearch", "classzephyr_1_1kconfig_1_1KconfigSearch.html", "classzephyr_1_1kconfig_1_1KconfigSearch" ],
+        [ "KconfigSearchNode", "classzephyr_1_1kconfig_1_1KconfigSearchNode.html", "classzephyr_1_1kconfig_1_1KconfigSearchNode" ]
+      ] ],
+      [ "warnings_filter", "namespacezephyr_1_1warnings__filter.html", [
+        [ "WarningsFilter", "classzephyr_1_1warnings__filter_1_1WarningsFilter.html", "classzephyr_1_1warnings__filter_1_1WarningsFilter" ]
+      ] ]
     ] ],
     [ "Configuration", "structConfiguration.html", null ],
     [ "intersection_client", "classintersection__client.html", "classintersection__client" ],

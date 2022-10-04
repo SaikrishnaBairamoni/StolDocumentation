@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['configuration_0',['Configuration',['../structConfiguration.html',1,'']]],
-  ['configuration_1',['configuration',['../structstreets__service_1_1configuration.html',1,'streets_service']]],
-  ['connection_5fmaneuver_5fassist_2',['connection_maneuver_assist',['../structsignal__phase__and__timing_1_1connection__maneuver__assist.html',1,'signal_phase_and_timing']]],
-  ['consumer_5fevent_5fcb_3',['consumer_event_cb',['../classkafka__clients_1_1consumer__event__cb.html',1,'kafka_clients']]],
-  ['consumer_5frebalance_5fcb_4',['consumer_rebalance_cb',['../classkafka__clients_1_1consumer__rebalance__cb.html',1,'kafka_clients']]],
-  ['customdatetimeformat_5',['CustomDateTimeFormat',['../structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat.html',1,'OpenAPI::OAISerializerSettings']]]
+  ['base_5fworker_0',['base_worker',['../classmessage__services_1_1workers_1_1base__worker.html',1,'message_services::workers']]],
+  ['basemessage_1',['baseMessage',['../classmessage__services_1_1models_1_1baseMessage.html',1,'message_services::models']]],
+  ['brakesystemstatus_2',['BrakeSystemStatus',['../structmessage__services_1_1models_1_1BrakeSystemStatus.html',1,'message_services::models']]],
+  ['bsm_3',['bsm',['../classmessage__services_1_1models_1_1bsm.html',1,'message_services::models']]],
+  ['bsm_5fworker_4',['bsm_worker',['../classmessage__services_1_1workers_1_1bsm__worker.html',1,'message_services::workers']]],
+  ['bsmcoredata_5',['bsmCoreData',['../structmessage__services_1_1models_1_1bsmCoreData.html',1,'message_services::models']]]
 ];

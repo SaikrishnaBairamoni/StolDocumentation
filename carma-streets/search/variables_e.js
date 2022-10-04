@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['offset_5fx_0',['offset_x',['../structmessage__services_1_1models_1_1locationOffsetECEF.html#a08c0450efb48028a6d04455ddb54814b',1,'message_services::models::locationOffsetECEF']]],
-  ['offset_5fy_1',['offset_y',['../structmessage__services_1_1models_1_1locationOffsetECEF.html#aa9374a90bfef197209b9fb8f9c7c9bcf',1,'message_services::models::locationOffsetECEF']]],
-  ['offset_5fz_2',['offset_z',['../structmessage__services_1_1models_1_1locationOffsetECEF.html#ae551a65028e66d83c8f17222a35b90cc',1,'message_services::models::locationOffsetECEF']]],
-  ['offsets_3',['offsets',['../structmessage__services_1_1models_1_1trajectory.html#a150c97e34c1bdf6d9ed8f8908e521ef4',1,'message_services::models::trajectory']]],
-  ['oid_4',['OID',['../classtraffic__signal__controller__service_1_1snmp__client.html#a5cd5523753710b778674fc09222c25e0',1,'traffic_signal_controller_service::snmp_client']]],
-  ['oid_5flen_5',['OID_len',['../classtraffic__signal__controller__service_1_1snmp__client.html#a81f5a68e78785a51e68a311f76992a1f',1,'traffic_signal_controller_service::snmp_client']]],
-  ['orientation_6',['orientation',['../structmessage__services_1_1models_1_1PositionalAccuracy.html#a8a7a6a427f8822bd102ab00ed162c472',1,'message_services::models::PositionalAccuracy']]],
-  ['osm_5ffile_5fpath_5fkey_7',['osm_file_path_key',['../classintersection__model_1_1intersection__model.html#ac34654195a06c9fdca69dbea15323202',1,'intersection_model::intersection_model']]],
-  ['overlap_5fstatus_5fgroup_5fgreens_8',['overlap_status_group_greens',['../structntcip_1_1ntcip__1202__ext.html#a7481d25b2f94e0573ee869f8f77db42e',1,'ntcip::ntcip_1202_ext::overlap_status_group_greens()'],['../ntcip__1202__ext_8h.html#a2fb23abc33f2b1ec2b144c80ef877172',1,'overlap_status_group_greens():&#160;ntcip_1202_ext.h']]],
-  ['overlap_5fstatus_5fgroup_5freds_9',['overlap_status_group_reds',['../structntcip_1_1ntcip__1202__ext.html#aa497431943dd987aaac3c816ff96b00b',1,'ntcip::ntcip_1202_ext::overlap_status_group_reds()'],['../ntcip__1202__ext_8h.html#a1bc8386b620479ba0dddf6820bb5bc96',1,'overlap_status_group_reds():&#160;ntcip_1202_ext.h']]],
-  ['overlap_5fstatus_5fgroup_5fyellows_10',['overlap_status_group_yellows',['../structntcip_1_1ntcip__1202__ext.html#ac30ec6d140b22cb9d6ce0ab02c805d36',1,'ntcip::ntcip_1202_ext::overlap_status_group_yellows()'],['../ntcip__1202__ext_8h.html#a47d12e74e8e8a1c3079c2d14e8d70231',1,'overlap_status_group_yellows():&#160;ntcip_1202_ext.h']]]
+  ['name_0',['name',['../classzephyr_1_1kconfig_1_1KconfigDomain.html#a54c9648d433ddc009306195aebc38f2d',1,'zephyr.kconfig.KconfigDomain.name()'],['../classOpenAPI_1_1OAIIntersection__info.html#a88eb3aaa42ab2a3c886aa73094b2958e',1,'OpenAPI::OAIIntersection_info::name()'],['../structstreets__service_1_1configuration.html#afcdf9236552174b8bcd45499e4774868',1,'streets_service::configuration::name()'],['../structsignal__phase__and__timing_1_1intersection__state.html#a6da9216f423d4fdb2d754ea68e276e73',1,'signal_phase_and_timing::intersection_state::name()'],['../structsignal__phase__and__timing_1_1spat.html#a0a562044bd6250986b309068c079ade0',1,'signal_phase_and_timing::spat::name()']]],
+  ['next_5ftime_1',['next_time',['../structsignal__phase__and__timing_1_1time__change__details.html#a57ea53825ad4df7b1dff194a151ffa8a',1,'signal_phase_and_timing::time_change_details']]],
+  ['nitpick_5fignore_2',['nitpick_ignore',['../namespaceconf.html#aa73a1cb83234f25a21bd13e1caf88147',1,'conf']]],
+  ['nodes_3',['nodes',['../structintersection__model_1_1map__lane.html#a1550fb18d5de5553a0ac7645c88c668c',1,'intersection_model::map_lane']]],
+  ['notfound_5furls_5fprefix_4',['notfound_urls_prefix',['../namespaceconf.html#a4da3a0edc62718de6a04563d58aa6a4e',1,'conf']]],
+  ['num_5fof_5fphases_5',['num_of_phases',['../structntcip_1_1ntcip__1202__ext.html#a962d0f68283af8a02b761ec3cf28e263',1,'ntcip::ntcip_1202_ext::num_of_phases()'],['../ntcip__1202__ext_8h.html#a30753ca578a919a51441d2434e0e4e39',1,'num_of_phases():&#160;ntcip_1202_ext.h']]],
+  ['numfig_6',['numfig',['../namespaceconf.html#a78179e03b184f241df1ea3fca3f7efd7',1,'conf']]]
 ];
