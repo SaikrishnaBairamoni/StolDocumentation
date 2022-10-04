@@ -1,6 +1,0 @@
-<map id="cpp_message::Mobility_Request::encode_mobility_request_message" name="cpp_message::Mobility_Request::encode_mobility_request_message">
-<area shape="rect" id="node1" title="Mobility Request message encoding function." alt="" coords="424,39,600,95"/>
-<area shape="rect" id="node2" href="$classcpp__message_1_1Node.html#aec8052581dac7f303d843de08c90eee9" title="function callback when there is an outgoing mobility request message. ." alt="" coords="200,5,376,61"/>
-<area shape="rect" id="node4" href="$test__MobilityRequest_8cpp.html#adcb827d563dedab98a0e8469df66241a" title=" " alt="" coords="261,85,315,112"/>
-<area shape="rect" id="node3" href="$classcpp__message_1_1Node.html#a43873dabd42a61112c59a466ba6e1531" title="Initialize pub/sub and params." alt="" coords="5,13,152,54"/>
-</map>

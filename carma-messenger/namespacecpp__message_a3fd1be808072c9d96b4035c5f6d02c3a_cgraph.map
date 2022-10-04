@@ -1,7 +1,0 @@
-<map id="cpp_message::TEST" name="cpp_message::TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,148,98"/>
-<area shape="rect" id="node2" href="$classcpp__message_1_1Map__Message.html#a8c001b1456e73f8bc81d2184e2a9c2af" title="Construct a new map message object." alt="" coords="196,35,391,76"/>
-<area shape="rect" id="node5" href="$namespacecpp__message.html#a30ba4a49b53eb8437a4674cf309d41f7" title=" " alt="" coords="207,101,379,127"/>
-<area shape="rect" id="node3" href="$classcpp__message_1_1Map__Message.html#ac988eff208d46646513deb28b7931871" title="Construct Generic lane j2735 ROS MAP.msg." alt="" coords="439,5,633,47"/>
-<area shape="rect" id="node4" href="$per__decoder_8h.html#a76f8c1079ff1986561a848a2b41c1bda" title=" " alt="" coords="488,71,584,98"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="traffic::TrafficIncidentNode::startTrafficBroadcastCallback" name="traffic::TrafficIncidentNode::startTrafficBroadcastCallback">
-<area shape="rect" id="node1" title=" " alt="" coords="480,5,709,47"/>
-<area shape="rect" id="node2" href="$classtraffic_1_1TrafficIncidentNode.html#affa8ca8a7f34c3645a57c6fa0542d72a" title="initialize this node before running" alt="" coords="292,5,432,47"/>
-<area shape="rect" id="node3" href="$classtraffic_1_1TrafficIncidentNode.html#ab27a683f8b098693844d9482858a8e91" title="General starting point to run this node." alt="" coords="104,5,244,47"/>
-<area shape="rect" id="node4" href="$traffic__incident_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,56,39"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="cpp_message::PSM_Message::encode_psm_message" name="cpp_message::PSM_Message::encode_psm_message">
-<area shape="rect" id="node1" title="helper functions for PSM message encoding." alt="" coords="415,46,613,87"/>
-<area shape="rect" id="node2" href="$classcpp__message_1_1Node.html#a88dc0228d7ea3be17ed9c2a9d8e4758e" title="function callback when there is an outgoing psm message." alt="" coords="200,5,367,61"/>
-<area shape="rect" id="node4" href="$namespacecpp__message.html#a964bcc65e5d4488845b5e7007732b328" title=" " alt="" coords="212,85,355,112"/>
-<area shape="rect" id="node3" href="$classcpp__message_1_1Node.html#a43873dabd42a61112c59a466ba6e1531" title="Initialize pub/sub and params." alt="" coords="5,13,152,54"/>
-</map>

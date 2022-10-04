@@ -1,6 +1,0 @@
-<map id="cpp_message::BSM_Message::encode_bsm_message" name="cpp_message::BSM_Message::encode_bsm_message">
-<area shape="rect" id="node1" title="helper functions for BSM message encoding." alt="" coords="415,46,613,87"/>
-<area shape="rect" id="node2" href="$classcpp__message_1_1Node.html#a7a36c49e97b4de912bb7d7cab8936070" title="function callback when there is an outgoing bsm message." alt="" coords="200,5,367,61"/>
-<area shape="rect" id="node4" href="$test__BSM_8cpp.html#a654bcf09a6ea0c26d107a1cbccae0ec7" title=" " alt="" coords="256,85,311,112"/>
-<area shape="rect" id="node3" href="$classcpp__message_1_1Node.html#a43873dabd42a61112c59a466ba6e1531" title="Initialize pub/sub and params." alt="" coords="5,13,152,54"/>
-</map>

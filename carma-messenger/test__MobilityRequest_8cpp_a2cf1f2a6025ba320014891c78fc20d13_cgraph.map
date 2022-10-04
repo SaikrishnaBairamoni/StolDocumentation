@@ -1,7 +1,0 @@
-<map id="TEST" name="TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,60,60,87"/>
-<area shape="rect" id="node2" href="$classcpp__message_1_1Mobility__Request.html#a64a0797902642b0ef12fe23d023f5be1" title="Mobility Request message decoding function." alt="" coords="108,5,284,61"/>
-<area shape="rect" id="node4" href="$classcpp__message_1_1Mobility__Request.html#acaa4a360bd1d9262445cbb241ba3342f" title="Mobility Request message encoding function." alt="" coords="108,85,284,141"/>
-<area shape="rect" id="node3" href="$per__decoder_8h.html#a76f8c1079ff1986561a848a2b41c1bda" title=" " alt="" coords="361,20,457,47"/>
-<area shape="rect" id="node5" href="$per__encoder_8h.html#ad9d25a879d4499db83fb133c1b8636b9" title=" " alt="" coords="332,100,485,127"/>
-</map>

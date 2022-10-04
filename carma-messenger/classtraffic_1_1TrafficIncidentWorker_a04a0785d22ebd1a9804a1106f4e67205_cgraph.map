@@ -1,7 +1,0 @@
-<map id="traffic::TrafficIncidentWorker::pinpointDriverCallback" name="traffic::TrafficIncidentWorker::pinpointDriverCallback">
-<area shape="rect" id="node1" title="pinpointDriverCallback populates lat lon heading from pinpoint driver." alt="" coords="5,71,204,112"/>
-<area shape="rect" id="node2" href="$classtraffic_1_1TrafficIncidentWorker.html#a8da6015f781bf7d66f62d1473a93a34f" title=" " alt="" coords="252,37,475,79"/>
-<area shape="rect" id="node5" href="$classtraffic_1_1TrafficIncidentWorker.html#a59b40d1e83ed844666698b18283c177b" title=" " alt="" coords="293,103,433,144"/>
-<area shape="rect" id="node3" href="$classtraffic_1_1TrafficIncidentWorker.html#a8773fdc72476808ed9d1d93c7a3e571f" title="anytypeToString converts anytype to string value" alt="" coords="523,5,685,47"/>
-<area shape="rect" id="node4" href="$classtraffic_1_1TrafficIncidentWorker.html#a749ab659e845b5630e0f4f8a6e45d660" title=" " alt="" coords="526,71,682,112"/>
-</map>

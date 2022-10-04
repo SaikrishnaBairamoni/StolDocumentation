@@ -1,6 +1,0 @@
-var unionPartIIcontent__126P0_1_1PartIIcontent__126P0____partII__Value_1_1PartIIcontent__126P0____partII__Value__u =
-[
-    [ "SpecialVehicleExtensions", "unionPartIIcontent__126P0_1_1PartIIcontent__126P0____partII__Value_1_1PartIIcontent__126P0____partII__Value__u.html#a40ac2addd36d6f0b639db50940fcb938", null ],
-    [ "SupplementalVehicleExtensions", "unionPartIIcontent__126P0_1_1PartIIcontent__126P0____partII__Value_1_1PartIIcontent__126P0____partII__Value__u.html#af6fc06d907144c76e3f2d12d0c9aba42", null ],
-    [ "VehicleSafetyExtensions", "unionPartIIcontent__126P0_1_1PartIIcontent__126P0____partII__Value_1_1PartIIcontent__126P0____partII__Value__u.html#a8d8886c1343c052fcb89bea9bbab2147", null ]
-];
