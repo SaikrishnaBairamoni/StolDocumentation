@@ -1,0 +1,8 @@
+<map id="streets_vehicle_scheduler::all_stop_vehicle_scheduler::estimate_entering_time_for_ev" name="streets_vehicle_scheduler::all_stop_vehicle_scheduler::estimate_entering_time_for_ev">
+<area shape="rect" id="node1" title="Estimates an entering time (ET) for a given Entering Vehicle (EV). This method first searches among t..." alt="" coords="5,45,212,101"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#aa06721804b8a4075b98c2e8ad40c84da" title="Given a link lane and a vector of vehicle schedules, this method returns a pointer to a vehicle sched..." alt="" coords="260,5,444,61"/>
+<area shape="rect" id="node4" href="$classstreets__vehicle__scheduler_1_1vehicle__scheduler.html#af2c80eb87e5a9cabaad660544003663c" title="Helper method to get link lane OAILanelet_info from intersection information given a vehicle." alt="" coords="265,85,439,141"/>
+<area shape="rect" id="node3" href="$classOpenAPI_1_1OAILanelet__info.html#ae71cdbd0f92de4b223a654f03d2112c6" title=" " alt="" coords="492,13,671,54"/>
+<area shape="rect" id="node5" href="$classOpenAPI_1_1OAILanelet__info.html#a489d1a475686159298697bccabd2bd52" title=" " alt="" coords="508,85,655,126"/>
+<area shape="rect" id="node6" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="545,151,617,177"/>
+</map>

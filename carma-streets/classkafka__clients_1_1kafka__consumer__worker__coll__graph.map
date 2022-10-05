@@ -1,0 +1,14 @@
+<map id="kafka_clients::kafka_consumer_worker" name="kafka_clients::kafka_consumer_worker">
+<area shape="rect" id="node1" title=" " alt="" coords="484,419,667,613"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,154,60,231"/>
+<area shape="rect" id="node3" title=" " alt="" coords="184,154,239,231"/>
+<area shape="rect" id="node4" title=" " alt="" coords="311,154,373,231"/>
+<area shape="rect" id="node5" title=" " alt="" coords="397,154,519,231"/>
+<area shape="rect" id="node6" title=" " alt="" coords="544,154,607,231"/>
+<area shape="rect" id="node7" title=" " alt="" coords="631,154,693,231"/>
+<area shape="rect" id="node8" title=" " alt="" coords="717,154,764,231"/>
+<area shape="rect" id="node9" href="$classkafka__clients_1_1consumer__event__cb.html" title=" " alt="" coords="789,132,954,253"/>
+<area shape="rect" id="node10" title=" " alt="" coords="808,5,935,83"/>
+<area shape="rect" id="node11" href="$classkafka__clients_1_1consumer__rebalance__cb.html" title=" " alt="" coords="978,139,1141,246"/>
+<area shape="rect" id="node12" title=" " alt="" coords="982,5,1137,83"/>
+</map>

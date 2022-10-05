@@ -1,0 +1,11 @@
+<map id="signal_phase_and_timing::intersection_state" name="signal_phase_and_timing::intersection_state">
+<area shape="rect" id="node1" title=" " alt="" coords="379,189,585,472"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,20,44,97"/>
+<area shape="rect" id="node3" title=" " alt="" coords="220,20,275,97"/>
+<area shape="rect" id="node4" title=" " alt="" coords="299,20,367,97"/>
+<area shape="rect" id="node5" title=" " alt="" coords="406,20,467,97"/>
+<area shape="rect" id="node6" title=" " alt="" coords="492,20,560,97"/>
+<area shape="rect" id="node7" title=" " alt="" coords="585,20,659,97"/>
+<area shape="rect" id="node8" title=" " alt="" coords="684,5,843,112"/>
+<area shape="rect" id="node9" title=" " alt="" coords="867,5,1028,112"/>
+</map>

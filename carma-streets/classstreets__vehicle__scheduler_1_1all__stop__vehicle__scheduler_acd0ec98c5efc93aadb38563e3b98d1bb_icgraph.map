@@ -1,0 +1,4 @@
+<map id="streets_vehicle_scheduler::all_stop_vehicle_scheduler::schedule_evs" name="streets_vehicle_scheduler::all_stop_vehicle_scheduler::schedule_evs">
+<area shape="rect" id="node1" title="Schedule all Entering Vehicles (EVs). Method first organizes all EVs into lists based on their entry ..." alt="" coords="237,5,421,61"/>
+<area shape="rect" id="node2" href="$classstreets__vehicle__scheduler_1_1all__stop__vehicle__scheduler.html#a930961b3e285b2a2d08f4276ffa22658" title="Method to schedule vehicles. Given and empty intersection_schedule object and a map of vehicles and v..." alt="" coords="5,5,189,61"/>
+</map>

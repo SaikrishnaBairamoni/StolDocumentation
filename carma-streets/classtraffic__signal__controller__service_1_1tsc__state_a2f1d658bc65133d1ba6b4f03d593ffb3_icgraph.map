@@ -1,0 +1,4 @@
+<map id="traffic_signal_controller_service::tsc_state::get_max_channels" name="traffic_signal_controller_service::tsc_state::get_max_channels">
+<area shape="rect" id="node1" title="Method for getting maximum channels for the traffic signal controller." alt="" coords="236,5,391,61"/>
+<area shape="rect" id="node2" href="$classtraffic__signal__controller__service_1_1tsc__state.html#af051312a2931c0f7db32b3d0439a2e6b" title="Initialize tsc_state by making SNMP calls to TSC for phase sequence and timing information." alt="" coords="5,13,188,54"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="streets_vehicle_scheduler::all_stop_vehicle_scheduler::get_latest_conflicting" name="streets_vehicle_scheduler::all_stop_vehicle_scheduler::get_latest_conflicting">
+<area shape="rect" id="node1" title="Given a link lane and a vector of vehicle schedules, this method returns a pointer to a vehicle sched..." alt="" coords="5,5,189,61"/>
+<area shape="rect" id="node2" href="$classOpenAPI_1_1OAILanelet__info.html#ae71cdbd0f92de4b223a654f03d2112c6" title=" " alt="" coords="237,13,416,54"/>
+</map>

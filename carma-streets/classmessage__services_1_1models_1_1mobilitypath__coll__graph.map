@@ -1,0 +1,12 @@
+<map id="message_services::models::mobilitypath" name="message_services::models::mobilitypath">
+<area shape="rect" id="node1" title=" " alt="" coords="193,543,372,767"/>
+<area shape="rect" id="node2" href="$classmessage__services_1_1models_1_1baseMessage.html" title=" " alt="" coords="5,344,184,480"/>
+<area shape="rect" id="node3" href="$structmessage__services_1_1models_1_1mobility__header.html" title=" " alt="" coords="80,189,259,281"/>
+<area shape="rect" id="node4" title=" " alt="" coords="58,5,113,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="273,5,341,83"/>
+<area shape="rect" id="node6" href="$structmessage__services_1_1models_1_1trajectory.html" title=" " alt="" coords="303,366,481,458"/>
+<area shape="rect" id="node7" href="$structmessage__services_1_1models_1_1locationECEF.html" title=" " alt="" coords="520,189,699,281"/>
+<area shape="rect" id="node8" title=" " alt="" coords="579,5,640,83"/>
+<area shape="rect" id="node9" title=" " alt="" coords="723,189,923,281"/>
+<area shape="rect" id="node10" title=" " alt="" coords="505,373,564,451"/>
+</map>

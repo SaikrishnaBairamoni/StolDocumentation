@@ -1,0 +1,4 @@
+<map id="streets_service::streets_configuration::configure_logger" name="streets_service::streets_configuration::configure_logger">
+<area shape="rect" id="node1" title="Method to read service level configurations from manifest.json file to configure default logger and s..." alt="" coords="211,13,413,54"/>
+<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#ad7a494e7147c8bbd2872e663340037b8" title="Constructor that takes filepath as a parameter." alt="" coords="5,5,163,61"/>
+</map>

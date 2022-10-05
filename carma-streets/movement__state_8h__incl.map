@@ -1,0 +1,13 @@
+<map id="streets_utils/streets_signal_phase_and_timing/include/movement_state.h" name="streets_utils/streets_signal_phase_and_timing/include/movement_state.h">
+<area shape="rect" id="node1" title=" " alt="" coords="375,5,554,61"/>
+<area shape="rect" id="node2" href="$movement__event_8h.html" title=" " alt="" coords="399,109,531,136"/>
+<area shape="rect" id="node4" href="$signal__phase__and__timing__exception_8h.html" title=" " alt="" coords="170,273,338,315"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,281,145,307"/>
+<area shape="rect" id="node7" title=" " alt="" coords="363,281,508,307"/>
+<area shape="rect" id="node8" title=" " alt="" coords="533,281,645,307"/>
+<area shape="rect" id="node10" title=" " alt="" coords="637,191,676,218"/>
+<area shape="rect" id="node11" href="$connection__maneuver__assist_8h.html" title=" " alt="" coords="39,184,189,225"/>
+<area shape="rect" id="node3" href="$time__change__details_8h.html" title=" " alt="" coords="360,191,511,218"/>
+<area shape="rect" id="node9" href="$advisory__speed_8h.html" title=" " alt="" coords="213,191,335,218"/>
+<area shape="rect" id="node5" title=" " alt="" coords="215,363,293,389"/>
+</map>

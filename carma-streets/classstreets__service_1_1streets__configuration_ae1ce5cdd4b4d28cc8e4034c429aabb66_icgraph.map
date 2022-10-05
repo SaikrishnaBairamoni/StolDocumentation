@@ -1,0 +1,5 @@
+<map id="streets_service::streets_configuration::get_double_config" name="streets_service::streets_configuration::get_double_config">
+<area shape="rect" id="node1" title="Retreive configuration parameter double value with provide name." alt="" coords="192,53,404,94"/>
+<area shape="rect" id="node2" href="$classscheduling__service_1_1scheduling__service.html#aa901f39ddb922a8d02955220a40d92c7" title="Create the vehicle list processor and configure it." alt="" coords="5,5,144,61"/>
+<area shape="rect" id="node3" href="$classscheduling__service_1_1scheduling__service.html#a7bdd65e11e2bd2c3d4029e2f7510f2d9" title="Schedule vehicles and produce the schedule plan." alt="" coords="5,85,144,141"/>
+</map>

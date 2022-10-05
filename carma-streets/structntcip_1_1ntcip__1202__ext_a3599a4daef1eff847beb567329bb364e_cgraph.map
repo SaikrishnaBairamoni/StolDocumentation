@@ -1,0 +1,18 @@
+<map id="ntcip::ntcip_1202_ext::to_string" name="ntcip::ntcip_1202_ext::to_string">
+<area shape="rect" id="node1" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="5,503,148,545"/>
+<area shape="rect" id="node2" href="$structntcip_1_1ntcip__1202__ext.html#a3fe6ed97ecaf33f32da8279d9da846de" title="Returns flashing state of overlap phase." alt="" coords="211,5,358,61"/>
+<area shape="rect" id="node3" href="$structntcip_1_1ntcip__1202__ext.html#a02c2d060e18759ed9673519495842194" title="Returns green overlap state of phase." alt="" coords="196,85,373,126"/>
+<area shape="rect" id="node4" href="$structntcip_1_1ntcip__1202__ext.html#a593cbfb6ab9e2e3c19cabeab2a8c7d2e" title="Returns red overlap state of phase." alt="" coords="203,150,366,191"/>
+<area shape="rect" id="node5" href="$structntcip_1_1ntcip__1202__ext.html#a46e66e3b6fef302eaa3b520e2181db22" title="Returns yellow overlap state of phase." alt="" coords="213,215,356,271"/>
+<area shape="rect" id="node6" href="$structntcip_1_1ntcip__1202__ext.html#a77718fb8c54d6ea25c4507462ebe3bd9" title="Returns dont walk state of phase. Only applies to pedestrian phases." alt="" coords="207,294,362,335"/>
+<area shape="rect" id="node7" href="$structntcip_1_1ntcip__1202__ext.html#a5f5f247af2e7d5c7a2e196c9125907ea" title="Returns flashing state of phase." alt="" coords="213,359,356,415"/>
+<area shape="rect" id="node8" href="$structntcip_1_1ntcip__1202__ext.html#ac8e0437aeac4c314b2f682f57a6c47c9" title="Returns green state of phase." alt="" coords="199,438,370,479"/>
+<area shape="rect" id="node9" href="$structntcip_1_1ntcip__1202__ext.html#a48eaf8ad0d283dc2c3f48f5c67485142" title="Returns pedestrian clear state of phase. Only applies to pedestrian phases." alt="" coords="209,503,360,545"/>
+<area shape="rect" id="node10" href="$structntcip_1_1ntcip__1202__ext.html#adfbdd4d01e9825dc3e1e674473c56171" title="Returns red state of phase." alt="" coords="207,569,363,610"/>
+<area shape="rect" id="node11" href="$structntcip_1_1ntcip__1202__ext.html#aeb9764568c31e8944640aea80a6e5c0b" title="Returns walk state of phase. Only applies to pedestrian phases." alt="" coords="213,634,356,675"/>
+<area shape="rect" id="node12" href="$structntcip_1_1ntcip__1202__ext.html#aa5fef8a2a7ce6499bb545e4e1b343b8e" title="Returns yellow state of phase." alt="" coords="197,699,372,741"/>
+<area shape="rect" id="node13" href="$structntcip_1_1ntcip__1202__ext.html#af01d01c2116db3cad127a1192b981941" title="Returns state of pedestrian calls on phase." alt="" coords="199,765,371,806"/>
+<area shape="rect" id="node14" href="$structntcip_1_1ntcip__1202__ext.html#a60408cbffd2358447495a86ecebe9b7e" title="Returns state of pedestrian detect on phase." alt="" coords="212,829,357,885"/>
+<area shape="rect" id="node15" href="$structntcip_1_1ntcip__1202__ext.html#af186e0f2ed0ef770ecc230c4af031a59" title="Returns 3 bytes translated into seconds of the UTC day message timestamp." alt="" coords="199,909,370,965"/>
+<area shape="rect" id="node16" href="$ntcip__1202__ext_8h.html#a576de7b60eacee3f1a70393a005502cd" title="Returns std::string representation of ntcip_1202_ext message including phase_times array." alt="" coords="249,989,321,1016"/>
+</map>

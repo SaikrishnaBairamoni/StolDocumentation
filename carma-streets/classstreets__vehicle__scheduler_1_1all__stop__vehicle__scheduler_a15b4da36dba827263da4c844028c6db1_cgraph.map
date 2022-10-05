@@ -1,0 +1,5 @@
+<map id="streets_vehicle_scheduler::all_stop_vehicle_scheduler::estimate_clearance_time" name="streets_vehicle_scheduler::all_stop_vehicle_scheduler::estimate_clearance_time">
+<area shape="rect" id="node1" title="Estimate clearance time any vehicle given it&#39;s link lanelet information." alt="" coords="5,31,189,87"/>
+<area shape="rect" id="node2" href="$classOpenAPI_1_1OAILanelet__info.html#abc1c4d5d24a2dafb175874ecad09cfad" title=" " alt="" coords="237,5,384,47"/>
+<area shape="rect" id="node3" href="$classOpenAPI_1_1OAILanelet__info.html#a9ed2860829d5aeba3062f26e78afcbdc" title=" " alt="" coords="237,71,384,112"/>
+</map>
