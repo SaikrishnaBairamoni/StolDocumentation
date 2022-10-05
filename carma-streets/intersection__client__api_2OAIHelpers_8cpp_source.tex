@@ -1,0 +1,422 @@
+\hypertarget{intersection__client__api_2OAIHelpers_8cpp_source}{}\doxysection{OAIHelpers.\+cpp}
+\label{intersection__client__api_2OAIHelpers_8cpp_source}\index{streets\_utils/streets\_api/intersection\_client\_api/OAIHelpers.cpp@{streets\_utils/streets\_api/intersection\_client\_api/OAIHelpers.cpp}}
+\mbox{\hyperlink{intersection__client__api_2OAIHelpers_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00012}00012 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00013}00013 \textcolor{preprocessor}{\#include <QJsonParseError>}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00014}00014 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__server__api_2src_2models_2OAIHelpers_8h}{OAIHelpers.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00016}00016 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00018}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings}{00018}} \textcolor{keyword}{class }\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings}{OAISerializerSettings}} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00019}00019 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00020}\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat}{00020}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat}{CustomDateTimeFormat}}\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00021}\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_a5fe0bdeb5148acce3dd4dce2fed87159}{00021}}         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_a5fe0bdeb5148acce3dd4dce2fed87159}{isStringSet}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00022}\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aa9c3e0e3dfa9a06dbf2dbe021f0cfb25}{00022}}         QString \mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aa9c3e0e3dfa9a06dbf2dbe021f0cfb25}{formatString}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00023}\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aeab3c3c1fecb43a5859afb70bbeac338}{00023}}         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aeab3c3c1fecb43a5859afb70bbeac338}{isEnumSet}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00024}\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_ac04a7f791647f99590ff07b0bcb7acff}{00024}}         Qt::DateFormat \mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_ac04a7f791647f99590ff07b0bcb7acff}{formatEnum}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00025}00025     \};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00027}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a10118d92a251c4c77e3cd4093a652983}{00027}}     \textcolor{keyword}{static} \mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat}{CustomDateTimeFormat}} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a10118d92a251c4c77e3cd4093a652983}{getCustomDateTimeFormat}}() \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00028}00028         \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00029}00029     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00031}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_afa90f23dcafca561a62146710cc00bc8}{00031}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_afa90f23dcafca561a62146710cc00bc8}{setDateTimeFormatString}}(\textcolor{keyword}{const} QString \&dtFormat)\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00032}00032         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_a5fe0bdeb5148acce3dd4dce2fed87159}{isStringSet}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00033}00033         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aeab3c3c1fecb43a5859afb70bbeac338}{isEnumSet}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00034}00034         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aa9c3e0e3dfa9a06dbf2dbe021f0cfb25}{formatString}} = dtFormat;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00035}00035     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00037}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a310de829a9d2379391c2fc8f12070690}{00037}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a310de829a9d2379391c2fc8f12070690}{setDateTimeFormatEnum}}(\textcolor{keyword}{const} Qt::DateFormat \&dtFormat)\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00038}00038         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aeab3c3c1fecb43a5859afb70bbeac338}{isEnumSet}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00039}00039         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_a5fe0bdeb5148acce3dd4dce2fed87159}{isStringSet}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00040}00040         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_ac04a7f791647f99590ff07b0bcb7acff}{formatEnum}} = dtFormat;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00043}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{00043}}     \textcolor{keyword}{static} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings}{OAISerializerSettings}} *\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{getInstance}}()\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00044}00044         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_ae50362ac58bdc81a1e8b33d3d27c489f}{instance}} == \textcolor{keyword}{nullptr})\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00045}00045             \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_ae50362ac58bdc81a1e8b33d3d27c489f}{instance}} = \textcolor{keyword}{new} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a5c36b1ce02af0bb80e22a6740f794015}{OAISerializerSettings}}();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00046}00046         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00047}00047         \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_ae50362ac58bdc81a1e8b33d3d27c489f}{instance}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00050}00050 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00051}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a5c36b1ce02af0bb80e22a6740f794015}{00051}}     \textcolor{keyword}{explicit} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a5c36b1ce02af0bb80e22a6740f794015}{OAISerializerSettings}}()\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00052}00052         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_ae50362ac58bdc81a1e8b33d3d27c489f}{instance}} = \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00053}00053         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_a5fe0bdeb5148acce3dd4dce2fed87159}{isStringSet}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00054}00054         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}}.\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aeab3c3c1fecb43a5859afb70bbeac338}{isEnumSet}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00055}00055     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00056}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_ae50362ac58bdc81a1e8b33d3d27c489f}{00056}}     \textcolor{keyword}{static} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings}{OAISerializerSettings}} *\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_ae50362ac58bdc81a1e8b33d3d27c489f}{instance}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00057}\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{00057}}     \mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat}{CustomDateTimeFormat}} \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a40ca47d1213337184303c8d079af1181}{customDateTimeFormat}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00058}00058 \};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00060}00060 \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings}{OAISerializerSettings}} * \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_ae50362ac58bdc81a1e8b33d3d27c489f}{OAISerializerSettings::instance}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00062}\mbox{\hyperlink{namespaceOpenAPI_a717f525876527251375fa6cb0de0e431}{00062}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a717f525876527251375fa6cb0de0e431}{setDateTimeFormat}}(\textcolor{keyword}{const} QString \&dateTimeFormat)\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00063}00063     \textcolor{keywordtype}{bool} success = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00064}00064     \textcolor{keyword}{auto} dt = QDateTime::fromString(QDateTime::currentDateTime().toString(dateTimeFormat), dateTimeFormat);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00065}00065     \textcolor{keywordflow}{if} (dt.isValid()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00066}00066         success = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00067}00067         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_afa90f23dcafca561a62146710cc00bc8}{OAISerializerSettings::setDateTimeFormatString}}(dateTimeFormat);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00068}00068     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00069}00069     \textcolor{keywordflow}{return} success;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00070}00070 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00072}\mbox{\hyperlink{namespaceOpenAPI_a45ef46d7bcdc4cf12b775eef8ec1f99d}{00072}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a717f525876527251375fa6cb0de0e431}{setDateTimeFormat}}(\textcolor{keyword}{const} Qt::DateFormat \&dateTimeFormat)\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00073}00073     \textcolor{keywordtype}{bool} success = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00074}00074     \textcolor{keyword}{auto} dt = QDateTime::fromString(QDateTime::currentDateTime().toString(dateTimeFormat), dateTimeFormat);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00075}00075     \textcolor{keywordflow}{if} (dt.isValid()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00076}00076         success = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00077}00077         \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a310de829a9d2379391c2fc8f12070690}{OAISerializerSettings::setDateTimeFormatEnum}}(dateTimeFormat);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00079}00079     \textcolor{keywordflow}{return} success;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00080}00080 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00082}\mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{00082}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00083}00083     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00084}00084 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00086}\mbox{\hyperlink{namespaceOpenAPI_af4a2a362d8ee601bf247723bdbc72b45}{00086}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00087}00087     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isStringSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00088}00088         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().formatString);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00091}00091     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isEnumSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00092}00092         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().formatEnum);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00093}00093     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00095}00095     \textcolor{comment}{// ISO 8601}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00096}00096     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(Qt::ISODate);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00097}00097 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00099}\mbox{\hyperlink{namespaceOpenAPI_a5a109cb9d6f847d95f49b00825295ca1}{00099}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00100}00100     \textcolor{keywordflow}{return} QString(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00101}00101 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00103}\mbox{\hyperlink{namespaceOpenAPI_a1b070c2e165f800eea4a2c86ddeaa745}{00103}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00104}00104     \textcolor{comment}{// ISO 8601}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00105}00105     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(Qt::DateFormat::ISODate);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00106}00106 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00108}\mbox{\hyperlink{namespaceOpenAPI_a5bbc664627fc766b79dd3917952e8729}{00108}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00109}00109     \textcolor{keywordflow}{return} QString::number(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00110}00110 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00112}\mbox{\hyperlink{namespaceOpenAPI_a896f4ccae47c0edd6ff9f95d0bb068da}{00112}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00113}00113     \textcolor{keywordflow}{return} QString::number(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00114}00114 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00116}\mbox{\hyperlink{namespaceOpenAPI_a7318e77bbf4d103c864148311d02299c}{00116}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00117}00117     \textcolor{keywordflow}{return} QString(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00118}00118 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00120}\mbox{\hyperlink{namespaceOpenAPI_adaf74a3f78b5c7bf17942caf88d1d884}{00120}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00121}00121     \textcolor{keywordflow}{return} QString::number(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00122}00122 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00124}\mbox{\hyperlink{namespaceOpenAPI_a025bad99c7825a6a65912412bc8ec7b6}{00124}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00125}00125     \textcolor{keywordflow}{return} QString::number(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00126}00126 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00128}\mbox{\hyperlink{namespaceOpenAPI_a1dce1e3ef69547133c27ece962c7a928}{00128}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIObject}{OAIObject}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00129}00129     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.asJson();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00130}00130 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00132}\mbox{\hyperlink{namespaceOpenAPI_af0565fe4236b775da5b51acfdd44a0a3}{00132}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIEnum}{OAIEnum}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00133}00133     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.asJson();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00134}00134 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00136}\mbox{\hyperlink{namespaceOpenAPI_a0936af7eed3f4d752547de5934fed423}{00136}} QString \mbox{\hyperlink{namespaceOpenAPI_ac62c1470f6e22a8d4cdb8cb3de7775ab}{toStringValue}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00137}00137     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.asJson();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00138}00138 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00140}\mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{00140}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00141}00141     \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00142}00142 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00144}\mbox{\hyperlink{namespaceOpenAPI_ae37b1df1266963b6da77d4c726983507}{00144}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00145}00145     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isStringSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00146}00146         \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a10118d92a251c4c77e3cd4093a652983}{getCustomDateTimeFormat}}().\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aa9c3e0e3dfa9a06dbf2dbe021f0cfb25}{formatString}}));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00147}00147     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00148}00148 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00149}00149     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isEnumSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00150}00150         \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a10118d92a251c4c77e3cd4093a652983}{getCustomDateTimeFormat}}().\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_ac04a7f791647f99590ff07b0bcb7acff}{formatEnum}}));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00151}00151     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00152}00152 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00153}00153     \textcolor{comment}{// ISO 8601}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00154}00154     \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(Qt::ISODate));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00155}00155 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00157}\mbox{\hyperlink{namespaceOpenAPI_adce73d621e6a4d2a81fcb11e47896fb1}{00157}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00158}00158     \textcolor{keywordflow}{return} QJsonValue(QString(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toBase64()));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00159}00159 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00161}\mbox{\hyperlink{namespaceOpenAPI_a13ba82bc9d8295489691d9a6c115e871}{00161}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00162}00162     \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.toString(Qt::ISODate));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00163}00163 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00165}\mbox{\hyperlink{namespaceOpenAPI_adc167b7eeaa5d2c0cc6304e1d325276b}{00165}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00166}00166     \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00167}00167 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00168}00168 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00169}\mbox{\hyperlink{namespaceOpenAPI_a9826557a33b485741e9aecb8b1469d48}{00169}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00170}00170     \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00171}00171 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00173}\mbox{\hyperlink{namespaceOpenAPI_a630e4fb65133f5c7b49d115c0b9ed900}{00173}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00174}00174     \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00175}00175 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00177}\mbox{\hyperlink{namespaceOpenAPI_a87864e996625efad0cc1364604e68723}{00177}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00178}00178     \textcolor{keywordflow}{return} QJsonValue(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00179}00179 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00180}00180 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00181}\mbox{\hyperlink{namespaceOpenAPI_a760fb8e0a044a07e4766d4871aa60c48}{00181}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00182}00182     \textcolor{keywordflow}{return} QJsonValue(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00183}00183 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00185}\mbox{\hyperlink{namespaceOpenAPI_aa094ec36b26965466864ee2a2f796fd5}{00185}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIObject}{OAIObject}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00186}00186     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.asJsonObject();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00187}00187 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00189}\mbox{\hyperlink{namespaceOpenAPI_a1613385db422b2cfdd9aae66f527b3c9}{00189}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIEnum}{OAIEnum}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00190}00190     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.asJsonValue();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00191}00191 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00193}\mbox{\hyperlink{namespaceOpenAPI_a5b00495244bee9db8bbef516d6bba349}{00193}} QJsonValue \mbox{\hyperlink{namespaceOpenAPI_a4810235cb9f2ff824b2b602bb45ecc9e}{toJsonValue}}(\textcolor{keyword}{const} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00194}00194     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.asJsonValue();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00195}00195 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00197}\mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{00197}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00198}00198     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.clear();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00199}00199     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.append(inStr);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00200}00200     \textcolor{keywordflow}{return} !inStr.isEmpty();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00201}00201 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00203}\mbox{\hyperlink{namespaceOpenAPI_aa733362aa3b0c430c630f1533e2bef04}{00203}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00204}00204     \textcolor{keywordflow}{if} (inStr.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00205}00205         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00206}00206     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00207}00207        QDateTime dateTime;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00208}00208         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isStringSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00209}00209             dateTime = QDateTime::fromString(inStr, \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().formatString);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00210}00210         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isEnumSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00211}00211             dateTime = QDateTime::fromString(inStr, \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().formatEnum);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00212}00212         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00213}00213             dateTime = QDateTime::fromString(inStr, Qt::ISODate);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00214}00214         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00215}00215 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00216}00216         \textcolor{keywordflow}{if} (dateTime.isValid()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00217}00217             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.setDate(dateTime.date());}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00218}00218             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.setTime(dateTime.time());}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00219}00219         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00220}00220             qDebug() << \textcolor{stringliteral}{"{}DateTime is invalid"{}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00221}00221         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00222}00222         \textcolor{keywordflow}{return} dateTime.isValid();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00223}00223     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00224}00224 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00226}\mbox{\hyperlink{namespaceOpenAPI_a1e6a550ef16686e286394028f97a92cd}{00226}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00227}00227     \textcolor{keywordflow}{if} (inStr.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00228}00228         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00229}00229     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00230}00230         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.clear();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00231}00231         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.append(inStr.toUtf8());}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00232}00232         \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.count() > 0;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00233}00233     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00234}00234 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00236}\mbox{\hyperlink{namespaceOpenAPI_a4cbe07b0c46d0da127db34797c6e6b4c}{00236}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00237}00237     \textcolor{keywordflow}{if} (inStr.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00238}00238         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00239}00239     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00240}00240         \textcolor{keyword}{auto} date = QDate::fromString(inStr, Qt::DateFormat::ISODate);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00241}00241         \textcolor{keywordflow}{if} (date.isValid()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00242}00242             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.setDate(date.year(), date.month(), date.day());}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00243}00243         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00244}00244             qDebug() << \textcolor{stringliteral}{"{}Date is invalid"{}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00245}00245         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00246}00246         \textcolor{keywordflow}{return} date.isValid();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00247}00247     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00248}00248 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00249}00249 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00250}\mbox{\hyperlink{namespaceOpenAPI_a6240bfcafd8856eb3dd93ccfd1243c76}{00250}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00251}00251     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00252}00252     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QVariant(inStr).toInt(\&ok);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00253}00253     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00254}00254 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00255}00255 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00256}\mbox{\hyperlink{namespaceOpenAPI_a5ebe0e56a766d2d4cb3d0d494e39e1d3}{00256}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00257}00257     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00258}00258     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QVariant(inStr).toLongLong(\&ok);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00259}00259     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00260}00260 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00262}\mbox{\hyperlink{namespaceOpenAPI_aacb8c617d5487f8fd88cb6144efb8c6a}{00262}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00263}00263     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QVariant(inStr).toBool();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00264}00264     \textcolor{keywordflow}{return} ((inStr == \textcolor{stringliteral}{"{}true"{}}) || (inStr == \textcolor{stringliteral}{"{}false"{}}));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00265}00265 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00266}00266 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00267}\mbox{\hyperlink{namespaceOpenAPI_a72274bf9197aeba74d50f328c357337c}{00267}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00268}00268     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00269}00269     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QVariant(inStr).toFloat(\&ok);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00270}00270     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00271}00271 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00272}00272 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00273}\mbox{\hyperlink{namespaceOpenAPI_aa37ad993d782fe36c05f1834da8bb8bd}{00273}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00274}00274     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00275}00275     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QVariant(inStr).toDouble(\&ok);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00276}00276     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00277}00277 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00278}00278 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00279}\mbox{\hyperlink{namespaceOpenAPI_a74d1924514313e572602caa5f5f32552}{00279}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \mbox{\hyperlink{classOpenAPI_1_1OAIObject}{OAIObject}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}})}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00280}00280 \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00281}00281     QJsonParseError err;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00282}00282     QJsonDocument::fromJson(inStr.toUtf8(),\&err);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00283}00283     \textcolor{keywordflow}{if} ( err.error == QJsonParseError::NoError )\{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00284}00284         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.fromJson(inStr);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00285}00285         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00286}00286     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00287}00287     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00288}00288 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00289}00289 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00290}\mbox{\hyperlink{namespaceOpenAPI_aa6aa63fa5baf91ad5dff60314e8eef7f}{00290}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \mbox{\hyperlink{classOpenAPI_1_1OAIEnum}{OAIEnum}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00291}00291     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.fromJson(inStr);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00292}00292     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00293}00293 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00294}00294 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00295}\mbox{\hyperlink{namespaceOpenAPI_ab0abfa3e1b2f271587e06306b33a4553}{00295}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_a01d4823413e4fc44fb7a842ed2737152}{fromStringValue}}(\textcolor{keyword}{const} QString \&inStr, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00296}00296     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.fromStringValue(inStr);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00297}00297 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00298}00298 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00299}\mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{00299}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QString \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00300}00300     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00301}00301     \textcolor{keywordflow}{if} (!jval.isUndefined() \&\& !jval.isNull()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00302}00302         \textcolor{keywordflow}{if} (jval.isString()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00303}00303             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = jval.toString();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00304}00304         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (jval.isBool()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00305}00305             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = jval.toBool() ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00306}00306         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (jval.isDouble()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00307}00307             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QString::number(jval.toDouble());}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00308}00308         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00309}00309             ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00310}00310         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00311}00311     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00312}00312         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00313}00313     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00314}00314     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00315}00315 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00316}00316 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00317}\mbox{\hyperlink{namespaceOpenAPI_a9c0f673249d5056bde3bb19cca91900d}{00317}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QDateTime \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00318}00318     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00319}00319     \textcolor{keywordflow}{if} (!jval.isUndefined() \&\& !jval.isNull() \&\& jval.isString()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00320}00320         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isStringSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00321}00321             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QDateTime::fromString(jval.toString(), \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a10118d92a251c4c77e3cd4093a652983}{getCustomDateTimeFormat}}().\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_aa9c3e0e3dfa9a06dbf2dbe021f0cfb25}{formatString}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00322}00322         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>getCustomDateTimeFormat().isEnumSet) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00323}00323             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QDateTime::fromString(jval.toString(), \mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a1b748c1f12b7e3554852408764d4d128}{OAISerializerSettings::getInstance}}()-\/>\mbox{\hyperlink{classOpenAPI_1_1OAISerializerSettings_a10118d92a251c4c77e3cd4093a652983}{getCustomDateTimeFormat}}().\mbox{\hyperlink{structOpenAPI_1_1OAISerializerSettings_1_1CustomDateTimeFormat_ac04a7f791647f99590ff07b0bcb7acff}{formatEnum}});}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00324}00324         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00325}00325             \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QDateTime::fromString(jval.toString(), Qt::ISODate);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00326}00326         \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00327}00327         ok = \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.isValid();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00328}00328     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00329}00329         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00330}00330     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00331}00331     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00332}00332 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00333}00333 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00334}\mbox{\hyperlink{namespaceOpenAPI_ab7cb39570a8884f7612502b228248e8b}{00334}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QByteArray \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00335}00335     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00336}00336     \textcolor{keywordflow}{if} (!jval.isUndefined() \&\& !jval.isNull() \&\& jval.isString()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00337}00337         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QByteArray::fromBase64(QByteArray::fromStdString(jval.toString().toStdString()));}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00338}00338         ok = \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.size() > 0;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00339}00339     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00340}00340         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00341}00341     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00342}00342     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00343}00343 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00344}00344 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00345}\mbox{\hyperlink{namespaceOpenAPI_a0ae0ea67dbf759294765989d7230fba3}{00345}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(QDate \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00346}00346     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00347}00347     \textcolor{keywordflow}{if} (!jval.isUndefined() \&\& !jval.isNull() \&\& jval.isString()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00348}00348         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = QDate::fromString(jval.toString(), Qt::ISODate);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00349}00349         ok = \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.isValid();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00350}00350     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00351}00351         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00352}00352     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00353}00353     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00354}00354 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00355}00355 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00356}\mbox{\hyperlink{namespaceOpenAPI_a08398938666c611a8e6cc223228b5a21}{00356}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(qint32 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00357}00357     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00358}00358     \textcolor{keywordflow}{if} (!jval.isUndefined() \&\& !jval.isNull() \&\& !jval.isObject() \&\& !jval.isArray()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00359}00359         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = jval.toInt();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00360}00360     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00361}00361         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00362}00362     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00363}00363     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00364}00364 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00365}00365 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00366}\mbox{\hyperlink{namespaceOpenAPI_a1de27b45189fe8f86d6cbd4c70ed82ae}{00366}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(qint64 \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00367}00367     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00368}00368     \textcolor{keywordflow}{if} (!jval.isUndefined() \&\& !jval.isNull() \&\& !jval.isObject() \&\& !jval.isArray()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00369}00369         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = jval.toVariant().toLongLong();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00370}00370     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00371}00371         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00372}00372     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00373}00373     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00374}00374 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00375}00375 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00376}\mbox{\hyperlink{namespaceOpenAPI_af4eeee29a1b288f0c4cc71c3530c3f2b}{00376}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\textcolor{keywordtype}{bool} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00377}00377     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00378}00378     \textcolor{keywordflow}{if} (jval.isBool()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00379}00379         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = jval.toBool();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00380}00380     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00381}00381         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00382}00382     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00383}00383     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00384}00384 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00385}00385 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00386}\mbox{\hyperlink{namespaceOpenAPI_ac1e33d63a1061d8c05f13b28bb82b661}{00386}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\textcolor{keywordtype}{float} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00387}00387     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00388}00388     \textcolor{keywordflow}{if} (jval.isDouble()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00389}00389         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}\textcolor{keyword}{>}(jval.toDouble());}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00390}00390     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00391}00391         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00392}00392     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00393}00393     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00394}00394 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00395}00395 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00396}\mbox{\hyperlink{namespaceOpenAPI_a30c1c4286e2bc2c535f7565c919921e7}{00396}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\textcolor{keywordtype}{double} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00397}00397     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00398}00398     \textcolor{keywordflow}{if} (jval.isDouble()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00399}00399         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}} = jval.toDouble();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00400}00400     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00401}00401         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00402}00402     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00403}00403     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00404}00404 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00405}00405 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00406}\mbox{\hyperlink{namespaceOpenAPI_a825d2d3572b2e11dccd272855015c71b}{00406}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\mbox{\hyperlink{classOpenAPI_1_1OAIObject}{OAIObject}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00407}00407     \textcolor{keywordtype}{bool} ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00408}00408     \textcolor{keywordflow}{if} (jval.isObject()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00409}00409         \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.fromJsonObject(jval.toObject());}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00410}00410         ok = \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.isValid();}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00411}00411     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00412}00412         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00413}00413     \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00414}00414     \textcolor{keywordflow}{return} ok;}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00415}00415 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00416}00416 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00417}\mbox{\hyperlink{namespaceOpenAPI_a2e8e5c3fa53b7544613e5cb7f1ab3bb8}{00417}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\mbox{\hyperlink{classOpenAPI_1_1OAIEnum}{OAIEnum}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00418}00418     \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.fromJsonValue(jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00419}00419     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00420}00420 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00421}00421 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00422}\mbox{\hyperlink{namespaceOpenAPI_a8169dbe86e5e928405beea71c245a73b}{00422}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceOpenAPI_accefbcd48d784e1acf7da420dc092909}{fromJsonValue}}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} \&\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}, \textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00423}00423     \textcolor{keywordflow}{return} \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}.fromJsonValue(jval);}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00424}00424 \}}
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00425}00425 }
+\DoxyCodeLine{\Hypertarget{intersection__client__api_2OAIHelpers_8cpp_source_l00426}00426 \} \textcolor{comment}{// namespace OpenAPI}}
+
+\end{DoxyCode}

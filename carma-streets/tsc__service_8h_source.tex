@@ -1,0 +1,66 @@
+\hypertarget{tsc__service_8h_source}{}\doxysection{tsc\+\_\+service.\+h}
+\label{tsc__service_8h_source}\index{tsc\_client\_service/include/tsc\_service.h@{tsc\_client\_service/include/tsc\_service.h}}
+\mbox{\hyperlink{tsc__service_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once }}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kafka__client_8h}{kafka\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{spat__worker_8h}{spat\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__configuration_8h}{streets\_configuration.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__configuration__exception_8h}{streets\_configuration\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{monitor__tsc__state_8h}{monitor\_tsc\_state.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{snmp__client_8h}{snmp\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{spat_8h}{spat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00010}00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{udp__socket__listener_8h}{udp\_socket\_listener.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{tsc__client__service_2include_2intersection__client_8h}{intersection\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00012}00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ntcip__oids_8h}{ntcip\_oids.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00013}00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{monitor__states__exception_8h}{monitor\_states\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00015}00015 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacetraffic__signal__controller__service}{traffic\_signal\_controller\_service}} \{}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00017}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{00017}}     \textcolor{keyword}{class }\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\_service}} \{}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00018}00018         \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00022}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{00022}}             std::shared\_ptr<kafka\_clients::kafka\_producer\_worker> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{spat\_producer}};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00027}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}{00027}}             std::shared\_ptr<spat\_worker> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}{spat\_worker\_ptr}};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00033}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{00033}}             std::shared\_ptr<tsc\_state> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{tsc\_state\_ptr}};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00038}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}{00038}}             std::shared\_ptr<snmp\_client> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}{snmp\_client\_ptr}};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00044}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{00044}}             std::shared\_ptr<signal\_phase\_and\_timing::spat> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{spat\_ptr}};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00050}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}{00050}}             std::shared\_ptr<intersection\_client> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}{intersection\_client\_ptr}};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00052}00052             \textcolor{comment}{// Configurable boolean to enable tsc\_state to update incoming spat with future movement events calculated using }}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00053}00053             \textcolor{comment}{// traffic signal controller configuration information}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00054}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a8612905672ceede1d032fd1123c2f484}{00054}}             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a8612905672ceede1d032fd1123c2f484}{use\_tsc\_state\_spat\_update\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00055}00055             }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00056}00056         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00057}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_abfe9b97a69e5c4c8c614ed2f7bfda80d}{00057}}             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_abfe9b97a69e5c4c8c614ed2f7bfda80d}{tsc\_service}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00059}00059             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aa82f97b9874e91dd19f3557d8fc4905f}{\string~tsc\_service}}();}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00061}00061             \textcolor{comment}{// Remove copy constructor}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00062}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_af1557609aa8e488d04f646e09cde9414}{00062}}             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_af1557609aa8e488d04f646e09cde9414}{tsc\_service}}(\textcolor{keyword}{const} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\_service}} \&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00063}00063             \textcolor{comment}{// Remove copy assignment operator}}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00064}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0d64c3a5157eb5d30cac4e54772e4b90}{00064}}             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\_service}}\& \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0d64c3a5157eb5d30cac4e54772e4b90}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\_service}} \&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00065}00065             }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00072}00072             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0f10530cccdd582172877692d6f480f5}{initialize}}();}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00081}00081             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ac8b524b54e3db0a25765546e2c136dd2}{initialize\_kafka\_producer}}( \textcolor{keyword}{const} std::string \&bootstap\_server, \textcolor{keyword}{const} std::string \&spat\_producer\_topic );}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00094}00094             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0bbce68544a01f99199a07fb642342f9}{initialize\_snmp\_client}}( \textcolor{keyword}{const} std::string \&server\_ip, \textcolor{keyword}{const} \textcolor{keywordtype}{int} server\_port, \textcolor{keyword}{const} std::string \&community,}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00095}00095                                         \textcolor{keyword}{const} \textcolor{keywordtype}{int} snmp\_version, \textcolor{keyword}{const} \textcolor{keywordtype}{int} timeout);}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00096}00096             }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00106}00106             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_adad711d135587e232d5cd92447b9a5af}{initialize\_tsc\_state}}( \textcolor{keyword}{const} std::shared\_ptr<snmp\_client> \_snmp\_client\_ptr);}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00113}00113             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}{enable\_spat}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00127}00127             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a470c3a6c64e310bc4ac0da205a2aeafb}{initialize\_spat\_worker}}(\textcolor{keyword}{const} std::string \&udp\_socket\_ip, \textcolor{keyword}{const} \textcolor{keywordtype}{int} udp\_socket\_port, }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00128}00128                                         \textcolor{keyword}{const} \textcolor{keywordtype}{int} timeout, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} use\_tsc\_timestamp);}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00129}00129             }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00137}00137             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aac8bd449d953386ac8db45dd89a5ec4d}{initialize\_intersection\_client}}();}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00146}00146             \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a54e9845c840c058c682e215fe39a6e0c}{initialize\_spat}}( \textcolor{keyword}{const} std::string \&intersection\_name, \textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id, }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00147}00147                                 \textcolor{keyword}{const} std::unordered\_map<int,int> \&phase\_number\_to\_signal\_group);}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00148}00148                     }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00152}00152             \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e2ac871cb45ef4a98354ca5bc49b25b}{start}}() ;}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00157}00157             \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aa4fb7763e7ae8b9e630fd7fa10bc2479}{produce\_spat\_json}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00159}00159     \};}
+\DoxyCodeLine{\Hypertarget{tsc__service_8h_source_l00160}00160 \}}
+
+\end{DoxyCode}

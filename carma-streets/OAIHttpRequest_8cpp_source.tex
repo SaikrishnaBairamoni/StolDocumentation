@@ -1,0 +1,501 @@
+\hypertarget{OAIHttpRequest_8cpp_source}{}\doxysection{OAIHttp\+Request.\+cpp}
+\label{OAIHttpRequest_8cpp_source}\index{streets\_utils/streets\_api/intersection\_client\_api/OAIHttpRequest.cpp@{streets\_utils/streets\_api/intersection\_client\_api/OAIHttpRequest.cpp}}
+\mbox{\hyperlink{OAIHttpRequest_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00012}00012 \textcolor{preprocessor}{\#include <QBuffer>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00013}00013 \textcolor{preprocessor}{\#include <QDateTime>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00014}00014 \textcolor{preprocessor}{\#include <QDir>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00015}00015 \textcolor{preprocessor}{\#include <QFileInfo>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00016}00016 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00017}00017 \textcolor{preprocessor}{\#include <QUrl>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00018}00018 \textcolor{preprocessor}{\#include <QUuid>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00019}00019 \textcolor{preprocessor}{\#include <QtGlobal>}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00020}00020 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00021}\mbox{\hyperlink{OAIHttpRequest_8cpp_ab0638c99c7aea5ba570d91ae562c3013}{00021}} \textcolor{preprocessor}{    \#define SKIP\_EMPTY\_PARTS Qt::SkipEmptyParts}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00022}00022 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00023}00023 \textcolor{preprocessor}{    \#define SKIP\_EMPTY\_PARTS QString::SkipEmptyParts}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00024}00024 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00026}00026 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{OAIHttpRequest_8h}{OAIHttpRequest.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00028}00028 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00030}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_ae42e5ffef3a34cc8fba75c09c81001a8}{00030}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_ae42e5ffef3a34cc8fba75c09c81001a8}{OAIHttpRequestInput::OAIHttpRequestInput}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00031}00031     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a768470088686c8f3f4b80cb570237aff}{initialize}}();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00032}00032 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00034}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a5a2303ef8028aa44bda2e80130a27df3}{00034}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_ae42e5ffef3a34cc8fba75c09c81001a8}{OAIHttpRequestInput::OAIHttpRequestInput}}(QString v\_url\_str, QString v\_http\_method) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00035}00035     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a768470088686c8f3f4b80cb570237aff}{initialize}}();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00036}00036     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_aa460e5d2424779878f2a98ab036bfcb4}{url\_str}} = v\_url\_str;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00037}00037     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} = v\_http\_method;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00038}00038 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00040}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a768470088686c8f3f4b80cb570237aff}{00040}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a768470088686c8f3f4b80cb570237aff}{OAIHttpRequestInput::initialize}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00041}00041     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} = \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea09b84043874098d4d739a4fa8ece163b}{NOT\_SET}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00042}00042     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_aa460e5d2424779878f2a98ab036bfcb4}{url\_str}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00043}00043     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} = \textcolor{stringliteral}{"{}GET"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00044}00044 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00046}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a6fe9c0b8ca106f04a7ea034a73f2f905}{00046}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a6fe9c0b8ca106f04a7ea034a73f2f905}{OAIHttpRequestInput::add\_var}}(QString key, QString \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00047}00047     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{vars}}[key] = \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00048}00048 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00050}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8bb8ec3ee758dd84769fd9837ba0da89}{00050}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8bb8ec3ee758dd84769fd9837ba0da89}{OAIHttpRequestInput::add\_file}}(QString variable\_name, QString local\_filename, QString request\_filename, QString mime\_type) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00051}00051     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} file;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00052}00052     file.\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a504cf64ed2043e549b6b58c451830111}{variable\_name}} = variable\_name;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00053}00053     file.\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}} = local\_filename;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00054}00054     file.\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_ab6059eb4403801dd9a8187ad0ac12432}{request\_filename}} = request\_filename;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00055}00055     file.\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_aa425b3801352288bcbe16bb15cb12882}{mime\_type}} = mime\_type;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00056}00056     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a51eb830dfb68016cec5b7a8666be7484}{files}}.append(file);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00059}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af9586a588ab0c1f7e6ee75b419a9a5b7}{00059}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af9586a588ab0c1f7e6ee75b419a9a5b7}{OAIHttpRequestWorker::OAIHttpRequestWorker}}(\mbox{\hyperlink{classQObject}{QObject}} *parent, QNetworkAccessManager *\_manager)}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00060}00060     : \mbox{\hyperlink{classQObject}{QObject}}(parent), manager(\_manager), timeOutTimer(this), isResponseCompressionEnabled(false), isRequestCompressionEnabled(false), httpResponseCode(-\/1) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00062}00062 \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00063}00063     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a60155a4318309f3921d6370cb0b9d822}{randomGenerator}} = QRandomGenerator(QDateTime::currentDateTime().toSecsSinceEpoch());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00064}00064 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00065}00065     qsrand(QDateTime::currentDateTime().toTime\_t());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00066}00066 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00068}00068     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}} == \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00069}00069         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}} = \textcolor{keyword}{new} QNetworkAccessManager(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00071}00071     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9de4778f9b3efa08167c0a85da1a1b71}{workingDirectory}} = QDir::currentPath();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00072}00072     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.setSingleShot(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00073}00073 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00075}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a5382204f7376db01663f0c42c502ad79}{00075}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a5382204f7376db01663f0c42c502ad79}{OAIHttpRequestWorker::\string~OAIHttpRequestWorker}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00076}00076     QObject::disconnect(\&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}, \&QTimer::timeout, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00077}00077     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.stop();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00078}00078     \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_abcb745ef6db8c7ad4f8c227eb765901c}{multiPartFields}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00079}00079         \textcolor{keywordflow}{if} (item != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00080}00080             \textcolor{keyword}{delete} item;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00081}00081         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00082}00082     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00083}00083 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00085}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a85149fa45d51093782939c2bcde63732}{00085}} QMap<QString, QString> \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a85149fa45d51093782939c2bcde63732}{OAIHttpRequestWorker::getResponseHeaders}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00086}00086     \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3bf8dada8791c76a3053f27e78c794b6}{headers}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00087}00087 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00089}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a4279c4b125a2b64db730b1bfa9b12bc9}{00089}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a4279c4b125a2b64db730b1bfa9b12bc9}{OAIHttpRequestWorker::getHttpFileElement}}(\textcolor{keyword}{const} QString \&fieldname) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00090}00090     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ad3f51ef826552171725dc37a47a5ca54}{files}}.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00091}00091         \textcolor{keywordflow}{if} (fieldname.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00092}00092             \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ad3f51ef826552171725dc37a47a5ca54}{files}}.first();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00093}00093         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ad3f51ef826552171725dc37a47a5ca54}{files}}.contains(fieldname)) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00094}00094             \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ad3f51ef826552171725dc37a47a5ca54}{files}}[fieldname];}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00095}00095         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00096}00096     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00097}00097     \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}}();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00098}00098 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00100}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa963aaf81b6956ddf02f8b952cb63bf4}{00100}} QByteArray *\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa963aaf81b6956ddf02f8b952cb63bf4}{OAIHttpRequestWorker::getMultiPartField}}(\textcolor{keyword}{const} QString \&fieldname) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00101}00101     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_abcb745ef6db8c7ad4f8c227eb765901c}{multiPartFields}}.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00102}00102         \textcolor{keywordflow}{if} (fieldname.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00103}00103             \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_abcb745ef6db8c7ad4f8c227eb765901c}{multiPartFields}}.first();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00104}00104         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_abcb745ef6db8c7ad4f8c227eb765901c}{multiPartFields}}.contains(fieldname)) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00105}00105             \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_abcb745ef6db8c7ad4f8c227eb765901c}{multiPartFields}}[fieldname];}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00106}00106         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00108}00108     \textcolor{keywordflow}{return} \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00109}00109 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00111}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a4cacd35a634ee9383ed40f2cb3623d2c}{00111}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a4cacd35a634ee9383ed40f2cb3623d2c}{OAIHttpRequestWorker::setTimeOut}}(\textcolor{keywordtype}{int} timeOutMs) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00112}00112     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.setInterval(timeOutMs);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00113}00113     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.interval() == 0) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00114}00114         QObject::disconnect(\&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}, \&QTimer::timeout, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00115}00115     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00116}00116 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00118}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ac4c0e5da7f31b1cb763da1a51cd25eb9}{00118}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ac4c0e5da7f31b1cb763da1a51cd25eb9}{OAIHttpRequestWorker::setWorkingDirectory}}(\textcolor{keyword}{const} QString \&path) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00119}00119     \textcolor{keywordflow}{if} (!path.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00120}00120         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9de4778f9b3efa08167c0a85da1a1b71}{workingDirectory}} = path;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00121}00121     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00122}00122 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00124}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9dab9eeb608f5a0230db0acfbdf8610f}{00124}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9dab9eeb608f5a0230db0acfbdf8610f}{OAIHttpRequestWorker::setResponseCompressionEnabled}}(\textcolor{keywordtype}{bool} enable) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00125}00125     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a890ef52b0524213a72a67fc33b3d754c}{isResponseCompressionEnabled}} = enable;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00126}00126 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00128}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa386809329ecdb5259d15ebf5ab3329c}{00128}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa386809329ecdb5259d15ebf5ab3329c}{OAIHttpRequestWorker::setRequestCompressionEnabled}}(\textcolor{keywordtype}{bool} enable) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00129}00129     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a993abb3df36c31e9106de686b7622d5a}{isRequestCompressionEnabled}} = enable;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00130}00130 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00132}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa5bdb146ddffe45498c9d53598d1507f}{00132}} \textcolor{keywordtype}{int}  \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aa5bdb146ddffe45498c9d53598d1507f}{OAIHttpRequestWorker::getHttpResponseCode}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00133}00133     \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a6906753c3da4c5fb46fe4bf73198caf4}{httpResponseCode}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00134}00134 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00136}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a956ba64d89ae192257247fb93a37bbf8}{00136}} QString \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a956ba64d89ae192257247fb93a37bbf8}{OAIHttpRequestWorker::http\_attribute\_encode}}(QString attribute\_name, QString input) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00137}00137     \textcolor{comment}{// result structure follows RFC 5987}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00138}00138     \textcolor{keywordtype}{bool} need\_utf\_encoding = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00139}00139     QString result = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00140}00140     QByteArray input\_c = input.toLocal8Bit();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00141}00141     \textcolor{keywordtype}{char} c;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00142}00142     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} = 0; \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} < input\_c.length(); \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}++) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00143}00143         c = input\_c.at(\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00144}00144         \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'\(\backslash\)\(\backslash\)'} || c == \textcolor{charliteral}{'/'} || c == \textcolor{charliteral}{'\(\backslash\)0'} || c < ' ' || c > \textcolor{charliteral}{'\string~'}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00145}00145             \textcolor{comment}{// ignore and request utf-\/8 version}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00146}00146             need\_utf\_encoding = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00147}00147         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'"{}'}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00148}00148             result += \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)\(\backslash\)"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00149}00149         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00150}00150             result += c;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00151}00151         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00152}00152     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00154}00154     \textcolor{keywordflow}{if} (result.length() == 0) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00155}00155         need\_utf\_encoding = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00156}00156     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00158}00158     \textcolor{keywordflow}{if} (!need\_utf\_encoding) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00159}00159         \textcolor{comment}{// return simple version}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00160}00160         \textcolor{keywordflow}{return} QString(\textcolor{stringliteral}{"{}\%1=\(\backslash\)"{}\%2\(\backslash\)"{}"{}}).arg(attribute\_name, result);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00161}00161     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00163}00163     QString result\_utf8 = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00164}00164     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} = 0; \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}} < input\_c.length(); \mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}}++) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00165}00165         c = input\_c.at(\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00166}00166         \textcolor{keywordflow}{if} ((c >= \textcolor{charliteral}{'0'} \&\& c <= \textcolor{charliteral}{'9'}) || (c >= \textcolor{charliteral}{'A'} \&\& c <= \textcolor{charliteral}{'Z'}) || (c >= \textcolor{charliteral}{'a'} \&\& c <= \textcolor{charliteral}{'z'})) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00167}00167             result\_utf8 += c;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00168}00168         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00169}00169             result\_utf8 += \textcolor{stringliteral}{"{}\%"{}} + QString::number(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}\textcolor{keyword}{>}(input\_c.at(\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{i}})), 16).toUpper();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00170}00170         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00171}00171     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00173}00173     \textcolor{comment}{// return enhanced version with UTF-\/8 support}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00174}00174     \textcolor{keywordflow}{return} QString(\textcolor{stringliteral}{"{}\%1=\(\backslash\)"{}\%2\(\backslash\)"{}; \%1*=utf-\/8''\%3"{}}).arg(attribute\_name, result, result\_utf8);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00175}00175 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00177}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a241304dc9d0548df76510834b44617fe}{00177}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a241304dc9d0548df76510834b44617fe}{OAIHttpRequestWorker::execute}}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput}{OAIHttpRequestInput}} *input) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00179}00179     \textcolor{comment}{// reset variables}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00180}00180     QNetworkReply *reply = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00181}00181     QByteArray request\_content = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00182}00182     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aecbecbac85d55628b6cabb73f072fcb5}{response}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00183}00183     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3efd6243071ccbef5c9312d4db124e9d}{error\_type}} = QNetworkReply::NoError;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00184}00184     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a094214d8718ee8f0e8bcd41e1b19ae2b}{error\_str}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00185}00185     \textcolor{keywordtype}{bool} isFormData = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00187}00187     \textcolor{comment}{// decide on the variable layout}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00189}00189     \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a51eb830dfb68016cec5b7a8666be7484}{files}}.length() > 0) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00190}00190         input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} = \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacfa6796b732aada60112c349149dcf6d}{MULTIPART}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00191}00191     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00192}00192     \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} == \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea09b84043874098d4d739a4fa8ece163b}{NOT\_SET}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00193}00193         input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} = input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} == \textcolor{stringliteral}{"{}GET"{}} || input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} == \textcolor{stringliteral}{"{}HEAD"{}} ? \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacc3845d92d6682a8acc9c8a1a21cd7a2}{ADDRESS}} : \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea387acccc26c1fe6c1f715f0a4c302f0e}{URL\_ENCODED}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00194}00194     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00196}00196     \textcolor{comment}{// prepare request content}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00198}00198     QString boundary = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00200}00200     \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} == \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacc3845d92d6682a8acc9c8a1a21cd7a2}{ADDRESS}} || input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} == \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea387acccc26c1fe6c1f715f0a4c302f0e}{URL\_ENCODED}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00201}00201         \textcolor{comment}{// variable layout is ADDRESS or URL\_ENCODED}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00203}00203         \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{vars}}.count() > 0) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00204}00204             \textcolor{keywordtype}{bool} first = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00205}00205             isFormData = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00206}00206             \textcolor{keywordflow}{foreach} (QString key, input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{vars}}.keys()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00207}00207                 \textcolor{keywordflow}{if} (!first) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00208}00208                     request\_content.append(\textcolor{stringliteral}{"{}\&"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00209}00209                 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00210}00210                 first = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00212}00212                 request\_content.append(QUrl::toPercentEncoding(key));}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00213}00213                 request\_content.append(\textcolor{stringliteral}{"{}="{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00214}00214                 request\_content.append(QUrl::toPercentEncoding(input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{vars}}.value(key)));}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00215}00215             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00216}00216 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00217}00217             \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} == \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacc3845d92d6682a8acc9c8a1a21cd7a2}{ADDRESS}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00218}00218                 input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_aa460e5d2424779878f2a98ab036bfcb4}{url\_str}} += \textcolor{stringliteral}{"{}?"{}} + request\_content;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00219}00219                 request\_content = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00220}00220             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00221}00221         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00222}00222     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00223}00223         \textcolor{comment}{// variable layout is MULTIPART}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00225}00225         boundary = QString(\textcolor{stringliteral}{"{}\_\_-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\%1\%2"{}})}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00226}00226                     \textcolor{preprocessor}{\#if QT\_VERSION >= QT\_VERSION\_CHECK(5, 15, 0)}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00227}00227                             .arg(QDateTime::currentDateTime().toSecsSinceEpoch())}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00228}00228                             .arg(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a60155a4318309f3921d6370cb0b9d822}{randomGenerator}}.generate());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00229}00229 \textcolor{preprocessor}{                    \#else}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00230}00230                             .arg(QDateTime::currentDateTime().toTime\_t())}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00231}00231                             .arg(qrand());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00232}00232 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00233}00233         QString boundary\_delimiter = \textcolor{stringliteral}{"{}-\/-\/"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00234}00234         QString new\_line = \textcolor{stringliteral}{"{}\(\backslash\)r\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00236}00236         \textcolor{comment}{// add variables}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00237}00237         \textcolor{keywordflow}{foreach} (QString key, input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{vars}}.keys()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00238}00238             \textcolor{comment}{// add boundary}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00239}00239             request\_content.append(boundary\_delimiter.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00240}00240             request\_content.append(boundary.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00241}00241             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00243}00243             \textcolor{comment}{// add header}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00244}00244             request\_content.append(\textcolor{stringliteral}{"{}Content-\/Disposition: form-\/data; "{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00245}00245             request\_content.append(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a956ba64d89ae192257247fb93a37bbf8}{http\_attribute\_encode}}(\textcolor{stringliteral}{"{}name"{}}, key).toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00246}00246             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00247}00247             request\_content.append(\textcolor{stringliteral}{"{}Content-\/Type: text/plain"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00248}00248             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00249}00249 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00250}00250             \textcolor{comment}{// add header to body splitter}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00251}00251             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00252}00252 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00253}00253             \textcolor{comment}{// add variable content}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00254}00254             request\_content.append(input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a2f59faf0f73096e5c5afc35471310eb4}{vars}}.value(key).toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00255}00255             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00256}00256         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00257}00257 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00258}00258         \textcolor{comment}{// add files}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00259}00259         \textcolor{keywordflow}{for} (QList<OAIHttpFileElement>::iterator file\_info = input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a51eb830dfb68016cec5b7a8666be7484}{files}}.begin(); file\_info != input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a51eb830dfb68016cec5b7a8666be7484}{files}}.end(); file\_info++) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00260}00260             QFileInfo fi(file\_info-\/>local\_filename);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00262}00262             \textcolor{comment}{// ensure necessary variables are available}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00263}00263             \textcolor{keywordflow}{if} (file\_info-\/>local\_filename == \textcolor{keyword}{nullptr}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00264}00264                 || file\_info-\/>local\_filename.isEmpty()}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00265}00265                 || file\_info-\/>variable\_name == \textcolor{keyword}{nullptr}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00266}00266                 || file\_info-\/>variable\_name.isEmpty()}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00267}00267                 || !fi.exists()}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00268}00268                 || !fi.isFile()}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00269}00269                 || !fi.isReadable()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00270}00270                 \textcolor{comment}{// silent abort for the current file}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00271}00271                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00272}00272             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00273}00273 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00274}00274             QFile file(file\_info-\/>local\_filename);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00275}00275             \textcolor{keywordflow}{if} (!file.open(QIODevice::ReadOnly)) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00276}00276                 \textcolor{comment}{// silent abort for the current file}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00277}00277                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00278}00278             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00279}00279 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00280}00280             \textcolor{comment}{// ensure filename for the request}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00281}00281             \textcolor{keywordflow}{if} (file\_info-\/>request\_filename == \textcolor{keyword}{nullptr} || file\_info-\/>request\_filename.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00282}00282                 file\_info-\/>request\_filename = fi.fileName();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00283}00283                 \textcolor{keywordflow}{if} (file\_info-\/>request\_filename.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00284}00284                     file\_info-\/>request\_filename = \textcolor{stringliteral}{"{}file"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00285}00285                 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00286}00286             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00287}00287 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00288}00288             \textcolor{comment}{// add boundary}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00289}00289             request\_content.append(boundary\_delimiter.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00290}00290             request\_content.append(boundary.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00291}00291             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00292}00292 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00293}00293             \textcolor{comment}{// add header}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00294}00294             request\_content.append(}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00295}00295                 QString(\textcolor{stringliteral}{"{}Content-\/Disposition: form-\/data; \%1; \%2"{}}).arg(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a956ba64d89ae192257247fb93a37bbf8}{http\_attribute\_encode}}(\textcolor{stringliteral}{"{}name"{}}, file\_info-\/>variable\_name), \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a956ba64d89ae192257247fb93a37bbf8}{http\_attribute\_encode}}(\textcolor{stringliteral}{"{}filename"{}}, file\_info-\/>request\_filename)).toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00296}00296             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00297}00297 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00298}00298             \textcolor{keywordflow}{if} (file\_info-\/>mime\_type != \textcolor{keyword}{nullptr} \&\& !file\_info-\/>mime\_type.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00299}00299                 request\_content.append(\textcolor{stringliteral}{"{}Content-\/Type: "{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00300}00300                 request\_content.append(file\_info-\/>mime\_type.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00301}00301                 request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00302}00302             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00303}00303 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00304}00304             request\_content.append(\textcolor{stringliteral}{"{}Content-\/Transfer-\/Encoding: binary"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00305}00305             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00306}00306 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00307}00307             \textcolor{comment}{// add header to body splitter}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00308}00308             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00309}00309 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00310}00310             \textcolor{comment}{// add file content}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00311}00311             request\_content.append(file.readAll());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00312}00312             request\_content.append(new\_line.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00313}00313 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00314}00314             file.close();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00315}00315         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00316}00316 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00317}00317         \textcolor{comment}{// add end of body}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00318}00318         request\_content.append(boundary\_delimiter.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00319}00319         request\_content.append(boundary.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00320}00320         request\_content.append(boundary\_delimiter.toUtf8());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00321}00321     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00322}00322 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00323}00323     \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8a20de2c3c50c6bd6af760f2985033b8}{request\_body}}.size() > 0) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00324}00324         qDebug() << \textcolor{stringliteral}{"{}got a request body"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00325}00325         request\_content.clear();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00326}00326         \textcolor{keywordflow}{if}(!isFormData \&\& (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} != \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacfa6796b732aada60112c349149dcf6d}{MULTIPART}}) \&\& \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a993abb3df36c31e9106de686b7622d5a}{isRequestCompressionEnabled}})\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00327}00327             request\_content.append(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a45ce44e04804c658acf782a32706d771}{compress}}(input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8a20de2c3c50c6bd6af760f2985033b8}{request\_body}}, 7, OAICompressionType::Gzip));}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00328}00328         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00329}00329             request\_content.append(input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a8a20de2c3c50c6bd6af760f2985033b8}{request\_body}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00330}00330         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00331}00331     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00332}00332     \textcolor{comment}{// prepare connection}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00333}00333 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00334}00334     QNetworkRequest request = QNetworkRequest(QUrl(input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_aa460e5d2424779878f2a98ab036bfcb4}{url\_str}}));}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00335}00335     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_acb24ce47aac9765fd4efc7365cec2938}{OAIHttpRequestWorker::sslDefaultConfiguration}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00336}00336         request.setSslConfiguration(*\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_acb24ce47aac9765fd4efc7365cec2938}{OAIHttpRequestWorker::sslDefaultConfiguration}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00337}00337     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00338}00338     request.setRawHeader(\textcolor{stringliteral}{"{}User-\/Agent"{}}, \textcolor{stringliteral}{"{}OpenAPI-\/Generator/1.0.0/cpp-\/qt"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00339}00339     \textcolor{keywordflow}{foreach} (QString key, input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a3aa129b819ceab8cad92aaf7abc51c97}{headers}}.keys()) \{ request.setRawHeader(key.toStdString().c\_str(), input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a3aa129b819ceab8cad92aaf7abc51c97}{headers}}.value(key).toStdString().c\_str()); \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00340}00340 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00341}00341     \textcolor{keywordflow}{if} (request\_content.size() > 0 \&\& !isFormData \&\& (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} != \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacfa6796b732aada60112c349149dcf6d}{MULTIPART}})) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00342}00342         \textcolor{keywordflow}{if} (!input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a3aa129b819ceab8cad92aaf7abc51c97}{headers}}.contains(\textcolor{stringliteral}{"{}Content-\/Type"{}})) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00343}00343             request.setHeader(QNetworkRequest::ContentTypeHeader, \textcolor{stringliteral}{"{}application/json"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00344}00344         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00345}00345             request.setHeader(QNetworkRequest::ContentTypeHeader, input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a3aa129b819ceab8cad92aaf7abc51c97}{headers}}.value(\textcolor{stringliteral}{"{}Content-\/Type"{}}));}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00346}00346         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00347}00347         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a993abb3df36c31e9106de686b7622d5a}{isRequestCompressionEnabled}})\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00348}00348             request.setRawHeader(\textcolor{stringliteral}{"{}Content-\/Encoding"{}}, \textcolor{stringliteral}{"{}gzip"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00349}00349         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00350}00350     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} == \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebea387acccc26c1fe6c1f715f0a4c302f0e}{URL\_ENCODED}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00351}00351         request.setHeader(QNetworkRequest::ContentTypeHeader, \textcolor{stringliteral}{"{}application/x-\/www-\/form-\/urlencoded"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00352}00352     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a603e7f6bdf29c9f912263142b305bb81}{var\_layout}} == \mbox{\hyperlink{namespaceOpenAPI_a01f5551f0ce7e6159bde77dabe47aebeacfa6796b732aada60112c349149dcf6d}{MULTIPART}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00353}00353         request.setHeader(QNetworkRequest::ContentTypeHeader, \textcolor{stringliteral}{"{}multipart/form-\/data; boundary="{}} + boundary);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00354}00354     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00355}00355 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00356}00356     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a890ef52b0524213a72a67fc33b3d754c}{isResponseCompressionEnabled}})\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00357}00357         request.setRawHeader(\textcolor{stringliteral}{"{}Accept-\/Encoding"{}}, \textcolor{stringliteral}{"{}gzip"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00358}00358     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00359}00359         request.setRawHeader(\textcolor{stringliteral}{"{}Accept-\/Encoding"{}}, \textcolor{stringliteral}{"{}identity"{}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00360}00360     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00361}00361 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00362}00362     \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} == \textcolor{stringliteral}{"{}GET"{}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00363}00363         reply = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}}-\/>get(request);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00364}00364     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} == \textcolor{stringliteral}{"{}POST"{}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00365}00365         reply = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}}-\/>post(request, request\_content);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00366}00366     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} == \textcolor{stringliteral}{"{}PUT"{}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00367}00367         reply = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}}-\/>put(request, request\_content);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00368}00368     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} == \textcolor{stringliteral}{"{}HEAD"{}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00369}00369         reply = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}}-\/>head(request);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00370}00370     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}} == \textcolor{stringliteral}{"{}DELETE"{}}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00371}00371         reply = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}}-\/>deleteResource(request);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00372}00372     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00373}00373 \textcolor{preprocessor}{\#if (QT\_VERSION >= 0x050800)}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00374}00374         reply = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}}-\/>sendCustomRequest(request, input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}}.toLatin1(), request\_content);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00375}00375 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00376}00376         QBuffer *buffer = \textcolor{keyword}{new} QBuffer;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00377}00377         buffer-\/>setData(request\_content);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00378}00378         buffer-\/>open(QIODevice::ReadOnly);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00379}00379 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00380}00380         reply = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_af757c50675d87c93c326f2326fb334b0}{manager}}-\/>sendCustomRequest(request, input-\/>\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestInput_a7fa83f18ce449cb11ae50cbd1aa5d659}{http\_method}}.toLatin1(), buffer);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00381}00381         buffer-\/>setParent(reply);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00382}00382 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00383}00383     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00384}00384     \textcolor{keywordflow}{if} (reply != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00385}00385         reply-\/>setParent(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00386}00386         connect(reply, \&QNetworkReply::finished, [\textcolor{keyword}{this}, reply] \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00387}00387             \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a490266a612d76cb2a4fc7ae130cec8bb}{on\_reply\_finished}}(reply);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00388}00388         \});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00389}00389     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00390}00390     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.interval() > 0) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00391}00391         QObject::connect(\&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}, \&QTimer::timeout, [\textcolor{keyword}{this}, reply] \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00392}00392             \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aead3db4ad222cd398b615031e3ee70e0}{on\_reply\_timeout}}(reply);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00393}00393         \});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00394}00394         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.start();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00395}00395     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00396}00396 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00397}00397 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00398}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a490266a612d76cb2a4fc7ae130cec8bb}{00398}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a490266a612d76cb2a4fc7ae130cec8bb}{OAIHttpRequestWorker::on\_reply\_finished}}(QNetworkReply *reply) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00399}00399     \textcolor{keywordtype}{bool} codeSts = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00400}00400     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.isActive()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00401}00401         QObject::disconnect(\&\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}, \&QTimer::timeout, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00402}00402         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a25c18a95e2096351938c9f50e83c3ffa}{timeOutTimer}}.stop();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00403}00403     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00404}00404     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3efd6243071ccbef5c9312d4db124e9d}{error\_type}} = reply-\/>error();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00405}00405     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a094214d8718ee8f0e8bcd41e1b19ae2b}{error\_str}} = reply-\/>errorString();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00406}00406     \textcolor{keywordflow}{if} (reply-\/>rawHeaderPairs().count() > 0) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00407}00407         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&item : reply-\/>rawHeaderPairs()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00408}00408             \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3bf8dada8791c76a3053f27e78c794b6}{headers}}.insert(item.first, item.second);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00409}00409         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00410}00410     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00411}00411     \textcolor{keyword}{auto} rescode = reply-\/>attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt(\&codeSts);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00412}00412     \textcolor{keywordflow}{if}(codeSts)\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00413}00413         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a6906753c3da4c5fb46fe4bf73198caf4}{httpResponseCode}} = rescode;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00414}00414     \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00415}00415         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a6906753c3da4c5fb46fe4bf73198caf4}{httpResponseCode}} = -\/1;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00416}00416     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00417}00417     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9b9900e8758f2749189346124502f4a3}{process\_response}}(reply);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00418}00418     reply-\/>deleteLater();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00419}00419     emit \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{on\_execution\_finished}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00420}00420 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00421}00421 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00422}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aead3db4ad222cd398b615031e3ee70e0}{00422}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aead3db4ad222cd398b615031e3ee70e0}{OAIHttpRequestWorker::on\_reply\_timeout}}(QNetworkReply *reply) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00423}00423     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a3efd6243071ccbef5c9312d4db124e9d}{error\_type}} = QNetworkReply::TimeoutError;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00424}00424     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aecbecbac85d55628b6cabb73f072fcb5}{response}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00425}00425     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a094214d8718ee8f0e8bcd41e1b19ae2b}{error\_str}} = \textcolor{stringliteral}{"{}Timed out waiting for response"{}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00426}00426     disconnect(reply, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr}, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00427}00427     reply-\/>abort();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00428}00428     reply-\/>deleteLater();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00429}00429     emit \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a668f76ebf5174efb680bf0189d3f4d0f}{on\_execution\_finished}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00430}00430 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00431}00431 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00432}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9b9900e8758f2749189346124502f4a3}{00432}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9b9900e8758f2749189346124502f4a3}{OAIHttpRequestWorker::process\_response}}(QNetworkReply *reply) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00433}00433     QString contentDispositionHdr;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00434}00434     QString contentTypeHdr;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00435}00435     QString contentEncodingHdr;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00436}00436 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00437}00437     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} hdr: \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a85149fa45d51093782939c2bcde63732}{getResponseHeaders}}().keys())\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00438}00438         \textcolor{keywordflow}{if}(hdr.compare(QString(\textcolor{stringliteral}{"{}Content-\/Disposition"{}}), Qt::CaseInsensitive) == 0)\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00439}00439             contentDispositionHdr = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a85149fa45d51093782939c2bcde63732}{getResponseHeaders}}().value(hdr);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00440}00440         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00441}00441         \textcolor{keywordflow}{if}(hdr.compare(QString(\textcolor{stringliteral}{"{}Content-\/Type"{}}), Qt::CaseInsensitive) == 0)\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00442}00442             contentTypeHdr = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a85149fa45d51093782939c2bcde63732}{getResponseHeaders}}().value(hdr);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00443}00443         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00444}00444         \textcolor{keywordflow}{if}(hdr.compare(QString(\textcolor{stringliteral}{"{}Content-\/Encoding"{}}), Qt::CaseInsensitive) == 0)\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00445}00445             contentEncodingHdr = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a85149fa45d51093782939c2bcde63732}{getResponseHeaders}}().value(hdr);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00446}00446         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00447}00447     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00448}00448 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00449}00449     \textcolor{keywordflow}{if} (!contentDispositionHdr.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00450}00450         \textcolor{keyword}{auto} contentDisposition = contentDispositionHdr.split(QString(\textcolor{stringliteral}{"{};"{}}), \mbox{\hyperlink{OAIHttpRequest_8cpp_ab0638c99c7aea5ba570d91ae562c3013}{SKIP\_EMPTY\_PARTS}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00451}00451         \textcolor{keyword}{auto} contentType =}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00452}00452             !contentTypeHdr.isEmpty() ? contentTypeHdr.split(QString(\textcolor{stringliteral}{"{};"{}}), \mbox{\hyperlink{OAIHttpRequest_8cpp_ab0638c99c7aea5ba570d91ae562c3013}{SKIP\_EMPTY\_PARTS}}).first() : QString();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00453}00453         \textcolor{keywordflow}{if} ((contentDisposition.count() > 0) \&\& (contentDisposition.first() == QString(\textcolor{stringliteral}{"{}attachment"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00454}00454             QString filename = QUuid::createUuid().toString();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00455}00455             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&file : contentDisposition) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00456}00456                 \textcolor{keywordflow}{if} (file.contains(QString(\textcolor{stringliteral}{"{}filename"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00457}00457                     filename = file.split(QString(\textcolor{stringliteral}{"{}="{}}), \mbox{\hyperlink{OAIHttpRequest_8cpp_ab0638c99c7aea5ba570d91ae562c3013}{SKIP\_EMPTY\_PARTS}}).at(1);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00458}00458                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00459}00459                 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00460}00460             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00461}00461             \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement}{OAIHttpFileElement}} felement;}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00462}00462             felement.\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_ac7d0085f1733eac3c81fc8d09c4a1a60}{saveToFile}}(QString(), \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9de4778f9b3efa08167c0a85da1a1b71}{workingDirectory}} + QDir::separator() + filename, filename, contentType, reply-\/>readAll());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00463}00463             \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_ad3f51ef826552171725dc37a47a5ca54}{files}}.insert(filename, felement);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00464}00464         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00465}00465 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00466}00466     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!contentTypeHdr.isEmpty()) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00467}00467         \textcolor{keyword}{auto} contentType = contentTypeHdr.split(QString(\textcolor{stringliteral}{"{};"{}}), \mbox{\hyperlink{OAIHttpRequest_8cpp_ab0638c99c7aea5ba570d91ae562c3013}{SKIP\_EMPTY\_PARTS}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00468}00468         \textcolor{keywordflow}{if} ((contentType.count() > 0) \&\& (contentType.first() == QString(\textcolor{stringliteral}{"{}multipart/form-\/data"{}}))) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00469}00469             \textcolor{comment}{// TODO : Handle Multipart responses}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00470}00470         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00471}00471             \textcolor{keywordflow}{if}(!contentEncodingHdr.isEmpty())\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00472}00472                 \textcolor{keyword}{auto} encoding = contentEncodingHdr.split(QString(\textcolor{stringliteral}{"{};"{}}), \mbox{\hyperlink{OAIHttpRequest_8cpp_ab0638c99c7aea5ba570d91ae562c3013}{SKIP\_EMPTY\_PARTS}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00473}00473                 \textcolor{keywordflow}{if}(encoding.count() > 0)\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00474}00474                     \textcolor{keyword}{auto} compressionTypes = encoding.first().split(\textcolor{charliteral}{','}, \mbox{\hyperlink{OAIHttpRequest_8cpp_ab0638c99c7aea5ba570d91ae562c3013}{SKIP\_EMPTY\_PARTS}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00475}00475                     \textcolor{keywordflow}{if}(compressionTypes.contains(\textcolor{stringliteral}{"{}gzip"{}}, Qt::CaseInsensitive) || compressionTypes.contains(\textcolor{stringliteral}{"{}deflate"{}}, Qt::CaseInsensitive))\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00476}00476                         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aecbecbac85d55628b6cabb73f072fcb5}{response}} = \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9f05c6d0d2361fa195fb3e8b5673b562}{decompress}}(reply-\/>readAll());}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00477}00477                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(compressionTypes.contains(\textcolor{stringliteral}{"{}identity"{}}, Qt::CaseInsensitive))\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00478}00478                         \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aecbecbac85d55628b6cabb73f072fcb5}{response}} = reply-\/>readAll();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00479}00479                     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00480}00480                 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00481}00481             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00482}00482             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00483}00483                 \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_aecbecbac85d55628b6cabb73f072fcb5}{response}} = reply-\/>readAll();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00484}00484             \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00485}00485         \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00486}00486     \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00487}00487 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00488}00488 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00489}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9f05c6d0d2361fa195fb3e8b5673b562}{00489}} QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a9f05c6d0d2361fa195fb3e8b5673b562}{OAIHttpRequestWorker::decompress}}(\textcolor{keyword}{const} QByteArray\& \mbox{\hyperlink{namespacesimulate__bsm_a2aaf0142837b674c6cfa6006cf335bc7}{data}})\{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00490}00490     }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00491}00491     Q\_UNUSED(\mbox{\hyperlink{namespacesimulate__bsm_a2aaf0142837b674c6cfa6006cf335bc7}{data}});}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00492}00492     \textcolor{keywordflow}{return} QByteArray();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00493}00493 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00494}00494 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00495}\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a45ce44e04804c658acf782a32706d771}{00495}} QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a45ce44e04804c658acf782a32706d771}{OAIHttpRequestWorker::compress}}(\textcolor{keyword}{const} QByteArray\& input, \textcolor{keywordtype}{int} level, \mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_a18d20a87e31b666628237941745a0f45}{OAICompressionType}} compressType) \{}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00496}00496     }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00497}00497     Q\_UNUSED(input);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00498}00498     Q\_UNUSED(level);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00499}00499     Q\_UNUSED(compressType);}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00500}00500     \textcolor{keywordflow}{return} QByteArray();}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00501}00501 \}}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00502}00502 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00503}00503 QSslConfiguration *\mbox{\hyperlink{classOpenAPI_1_1OAIHttpRequestWorker_acb24ce47aac9765fd4efc7365cec2938}{OAIHttpRequestWorker::sslDefaultConfiguration}};}
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00504}00504 }
+\DoxyCodeLine{\Hypertarget{OAIHttpRequest_8cpp_source_l00505}00505 \} \textcolor{comment}{// namespace OpenAPI}}
+
+\end{DoxyCode}

@@ -1,0 +1,42 @@
+\hypertarget{scheduling__worker_8h_source}{}\doxysection{scheduling\+\_\+worker.\+h}
+\label{scheduling__worker_8h_source}\index{scheduling\_service/include/scheduling\_worker.h@{scheduling\_service/include/scheduling\_worker.h}}
+\mbox{\hyperlink{scheduling__worker_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00002}00002 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <rapidjson/rapidjson.h>}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <rapidjson/writer.h>}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <rapidjson/stringbuffer.h>}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00012}00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kafka__client_8h}{kafka\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00013}00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__configuration_8h}{streets\_configuration.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00014}00014 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{tsc__client__service_2include_2intersection__client_8h}{intersection\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00015}00015 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{vehicle__list_8h}{vehicle\_list.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00016}00016 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{vehicle__scheduler_8h}{vehicle\_scheduler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00017}00017 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{all__stop__vehicle__scheduler_8h}{all\_stop\_vehicle\_scheduler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00018}00018 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{all__stop__status__intent__processor_8h}{all\_stop\_status\_intent\_processor.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00019}00019 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{signalized__vehicle__scheduler_8h}{signalized\_vehicle\_scheduler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00020}00020 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{signalized__status__intent__processor_8h}{signalized\_status\_intent\_processor.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00022}00022 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacescheduling__service}{scheduling\_service}}\{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00024}\mbox{\hyperlink{classscheduling__service_1_1scheduling__worker}{00024}}     \textcolor{keyword}{class }\mbox{\hyperlink{classscheduling__service_1_1scheduling__worker}{scheduling\_worker}}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00025}00025     \{}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00027}00027     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00028}00028         }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00036}00036         std::shared\_ptr<streets\_vehicle\_scheduler::intersection\_schedule> \mbox{\hyperlink{classscheduling__service_1_1scheduling__worker_ae8e70252fc78b11963c52a73b8af8025}{schedule\_vehicles}}(std::unordered\_map<std::string, streets\_vehicles::vehicle> veh\_map, std::shared\_ptr<streets\_vehicle\_scheduler::vehicle\_scheduler> scheduler) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00039}00039     \};}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{scheduling__worker_8h_source_l00042}00042 }
+
+\end{DoxyCode}

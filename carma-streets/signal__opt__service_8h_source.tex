@@ -1,0 +1,41 @@
+\hypertarget{signal__opt__service_8h_source}{}\doxysection{signal\+\_\+opt\+\_\+service.\+h}
+\label{signal__opt__service_8h_source}\index{signal\_opt\_service/include/signal\_opt\_service.h@{signal\_opt\_service/include/signal\_opt\_service.h}}
+\mbox{\hyperlink{signal__opt__service_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kafka__client_8h}{kafka\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{signal__opt__messages__worker_8h}{signal\_opt\_messages\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__configuration_8h}{streets\_configuration.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00006}00006 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacesignal__opt__service}{signal\_opt\_service}}}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00008}\mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4}{00008}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4}{CONSUME\_MSG\_TYPE}}}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00009}00009     \{}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00010}00010         \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4a939a2eaa3056608a0f3a65c88f11a8d4}{SPAT}},}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00011}00011         \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4acf90a87df6565c5cc280ba6ef2bb32e3}{VEHICLE\_STATUS\_INTENT}},}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00012}00012     \};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00014}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service}{00014}}     \textcolor{keyword}{class }\mbox{\hyperlink{namespacesignal__opt__service}{signal\_opt\_service}}}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00015}00015     \{}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00016}00016     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00017}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{00017}}         std::shared\_ptr<signal\_opt\_messages\_worker> \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a40b90f97eca99e1c1c478bc1af8d8636}{\_so\_msgs\_worker\_ptr}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00018}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}{00018}}         std::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aaf4964e5d228326b1caf8ccb20afd1fa}{\_bootstrap\_server}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00019}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a255149a2d37457917f8caa8d3be9338f}{00019}}         std::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a255149a2d37457917f8caa8d3be9338f}{\_spat\_group\_id}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00020}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aad2215a642361fd7d2aea0e3deca6e9f}{00020}}         std::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_aad2215a642361fd7d2aea0e3deca6e9f}{\_spat\_topic\_name}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00021}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a1bc6138e550e75240fc960b5bdc42167}{00021}}         std::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a1bc6138e550e75240fc960b5bdc42167}{\_vsi\_group\_id}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00022}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afffacb7300b6b824cb57e3909b507f44}{00022}}         std::string \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afffacb7300b6b824cb57e3909b507f44}{\_vsi\_topic\_name}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00023}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{00023}}         std::shared\_ptr<kafka\_clients::kafka\_consumer\_worker> \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac4f6b6db88a4db913601a305a358c94d}{\_vsi\_consumer}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00024}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{00024}}         std::shared\_ptr<kafka\_clients::kafka\_consumer\_worker> \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_af822874b21cb36ebb69c7281e335b52e}{\_spat\_consumer}};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00026}00026     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00030}\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afd84585cb22897ece5f6cb02cebdf4c9}{00030}}         \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_afd84585cb22897ece5f6cb02cebdf4c9}{signal\_opt\_service}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00034}00034         \mbox{\hyperlink{namespacesignal__opt__service}{\string~signal\_opt\_service}}();}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00038}00038         \textcolor{keywordtype}{bool} initialize();}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00042}00042         \textcolor{keywordtype}{void} start() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00049}00049         \textcolor{keywordtype}{void} consume\_msg(std::shared\_ptr<kafka\_clients::kafka\_consumer\_worker> consumer, \mbox{\hyperlink{namespacesignal__opt__service_a4f380fdb90d9f7f62085c821fb7db3e4}{CONSUME\_MSG\_TYPE}} consume\_msg\_type) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00056}00056         \textcolor{keywordtype}{bool} update\_intersection\_info(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} sleep\_millisecs, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} int\_client\_request\_attempts) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00057}00057     \};}
+\DoxyCodeLine{\Hypertarget{signal__opt__service_8h_source_l00058}00058 \}}
+
+\end{DoxyCode}

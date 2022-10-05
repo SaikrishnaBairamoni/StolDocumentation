@@ -1,0 +1,143 @@
+\hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source}{}\doxysection{OAIHttp\+File\+Element.\+cpp}
+\label{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source}\index{streets\_utils/streets\_api/intersection\_server\_api/src/models/OAIHttpFileElement.cpp@{streets\_utils/streets\_api/intersection\_server\_api/src/models/OAIHttpFileElement.cpp}}
+\mbox{\hyperlink{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00012}00012 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00013}00013 \textcolor{preprocessor}{\#include <QFile>}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00014}00014 \textcolor{preprocessor}{\#include <QJsonDocument>}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00015}00015 \textcolor{preprocessor}{\#include <QJsonObject>}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00017}00017 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__server__api_2src_2models_2OAIHttpFileElement_8h}{OAIHttpFileElement.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00019}00019 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00021}00021 \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a3c009e1c6c89dae5fdb9c18297cbed3c}{OAIHttpFileElement::setMimeType}}(\textcolor{keyword}{const} QString \&mime) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00022}00022     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_aa425b3801352288bcbe16bb15cb12882}{mime\_type}} = mime;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00025}00025 \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7811cd56f2b17b27681276394eedf356}{OAIHttpFileElement::setFileName}}(\textcolor{keyword}{const} QString \&name) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00026}00026     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}} = name;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00029}00029 \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7e14cebfdc226ed662d4e0b5a498cf86}{OAIHttpFileElement::setVariableName}}(\textcolor{keyword}{const} QString \&name) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00030}00030     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a504cf64ed2043e549b6b58c451830111}{variable\_name}} = name;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00033}00033 \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_acae99f8e17209d0c78e07338ef04843e}{OAIHttpFileElement::setRequestFileName}}(\textcolor{keyword}{const} QString \&name) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00034}00034     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_ab6059eb4403801dd9a8187ad0ac12432}{request\_filename}} = name;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00037}00037 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_af44f18f3329ab41ee0d9e1319020a0b9}{OAIHttpFileElement::isSet}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00038}00038     \textcolor{keywordflow}{return} !\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}}.isEmpty() || !\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_ab6059eb4403801dd9a8187ad0ac12432}{request\_filename}}.isEmpty();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00041}00041 QString \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a1456b934d0bfa11c18b6930e1c44d7a8}{OAIHttpFileElement::asJson}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00042}00042     QFile file(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}});}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00043}00043     QByteArray bArray;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00044}00044     \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00045}00045     \textcolor{keywordflow}{if} (file.exists()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00046}00046         result = file.open(QIODevice::ReadOnly);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00047}00047         bArray = file.readAll();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00048}00048         file.close();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00050}00050     \textcolor{keywordflow}{if} (!result) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00051}00051         qDebug() << \textcolor{stringliteral}{"{}Error opening file "{}} << \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00052}00052     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00053}00053     \textcolor{keywordflow}{return} QString(bArray);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00054}00054 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00056}00056 QJsonValue \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a9257970bc7a2d46321e993bc7bd4372e}{OAIHttpFileElement::asJsonValue}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00057}00057     QFile file(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}});}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00058}00058     QByteArray bArray;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00059}00059     \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00060}00060     \textcolor{keywordflow}{if} (file.exists()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00061}00061         result = file.open(QIODevice::ReadOnly);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00062}00062         bArray = file.readAll();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00063}00063         file.close();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00065}00065     \textcolor{keywordflow}{if} (!result) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00066}00066         qDebug() << \textcolor{stringliteral}{"{}Error opening file "{}} << \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00067}00067     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00068}00068     \textcolor{keywordflow}{return} QJsonDocument::fromBinaryData(bArray.data()).object();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00069}00069 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00071}00071 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_ad49b819949e739356a427654672a65b8}{OAIHttpFileElement::fromStringValue}}(\textcolor{keyword}{const} QString \&instr) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00072}00072     QFile file(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}});}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00073}00073     \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00074}00074     \textcolor{keywordflow}{if} (file.exists()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00075}00075         file.remove();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00076}00076     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00077}00077     result = file.open(QIODevice::WriteOnly);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00078}00078     file.write(instr.toUtf8());}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00079}00079     file.close();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00080}00080     \textcolor{keywordflow}{if} (!result) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00081}00081         qDebug() << \textcolor{stringliteral}{"{}Error creating file "{}} << \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00082}00082     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00083}00083     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00084}00084 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00086}00086 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a1aff296a25ce64c0e2ec680884f4017e}{OAIHttpFileElement::fromJsonValue}}(\textcolor{keyword}{const} QJsonValue \&jval) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00087}00087     QFile file(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}});}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00088}00088     \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00089}00089     \textcolor{keywordflow}{if} (file.exists()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00090}00090         file.remove();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00091}00091     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00092}00092     result = file.open(QIODevice::WriteOnly);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00093}00093     file.write(QJsonDocument(jval.toObject()).toBinaryData());}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00094}00094     file.close();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00095}00095     \textcolor{keywordflow}{if} (!result) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00096}00096         qDebug() << \textcolor{stringliteral}{"{}Error creating file "{}} << \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00097}00097     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00098}00098     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00099}00099 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00101}00101 QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_aeac9949d5d466d9eb0f355fe46a8f347}{OAIHttpFileElement::asByteArray}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00102}00102     QFile file(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}});}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00103}00103     QByteArray bArray;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00104}00104     \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00105}00105     \textcolor{keywordflow}{if} (file.exists()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00106}00106         result = file.open(QIODevice::ReadOnly);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00107}00107         bArray = file.readAll();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00108}00108         file.close();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00109}00109     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00110}00110     \textcolor{keywordflow}{if} (!result) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00111}00111         qDebug() << \textcolor{stringliteral}{"{}Error opening file "{}} << \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00112}00112     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00113}00113     \textcolor{keywordflow}{return} bArray;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00114}00114 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00116}00116 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a0f928971dfc6a789a1c65fdf82bf73e0}{OAIHttpFileElement::fromByteArray}}(\textcolor{keyword}{const} QByteArray \&bytes) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00117}00117     QFile file(\mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}});}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00118}00118     \textcolor{keywordtype}{bool} result = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00119}00119     \textcolor{keywordflow}{if} (file.exists()) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00120}00120         file.remove();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00121}00121     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00122}00122     result = file.open(QIODevice::WriteOnly);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00123}00123     file.write(bytes);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00124}00124     file.close();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00125}00125     \textcolor{keywordflow}{if} (!result) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00126}00126         qDebug() << \textcolor{stringliteral}{"{}Error creating file "{}} << \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7cb210f269551b417925030184334572}{local\_filename}};}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00127}00127     \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00128}00128     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00129}00129 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00131}00131 \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_ac7d0085f1733eac3c81fc8d09c4a1a60}{OAIHttpFileElement::saveToFile}}(\textcolor{keyword}{const} QString \&varName, \textcolor{keyword}{const} QString \&localFName, \textcolor{keyword}{const} QString \&reqFname, \textcolor{keyword}{const} QString \&mime, \textcolor{keyword}{const} QByteArray \&bytes) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00132}00132     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a3c009e1c6c89dae5fdb9c18297cbed3c}{setMimeType}}(mime);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00133}00133     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7811cd56f2b17b27681276394eedf356}{setFileName}}(localFName);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00134}00134     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7e14cebfdc226ed662d4e0b5a498cf86}{setVariableName}}(varName);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00135}00135     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_acae99f8e17209d0c78e07338ef04843e}{setRequestFileName}}(reqFname);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00136}00136     \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a0f928971dfc6a789a1c65fdf82bf73e0}{fromByteArray}}(bytes);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00137}00137 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00139}00139 QByteArray \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a5b88b55dd21b2d95cfb66e2e88a5cbdf}{OAIHttpFileElement::loadFromFile}}(\textcolor{keyword}{const} QString \&varName, \textcolor{keyword}{const} QString \&localFName, \textcolor{keyword}{const} QString \&reqFname, \textcolor{keyword}{const} QString \&mime) \{}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00140}00140     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a3c009e1c6c89dae5fdb9c18297cbed3c}{setMimeType}}(mime);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00141}00141     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7811cd56f2b17b27681276394eedf356}{setFileName}}(localFName);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00142}00142     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_a7e14cebfdc226ed662d4e0b5a498cf86}{setVariableName}}(varName);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00143}00143     \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_acae99f8e17209d0c78e07338ef04843e}{setRequestFileName}}(reqFname);}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00144}00144     \textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIHttpFileElement_aeac9949d5d466d9eb0f355fe46a8f347}{asByteArray}}();}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00145}00145 \}}
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{intersection__server__api_2src_2models_2OAIHttpFileElement_8cpp_source_l00147}00147 \} \textcolor{comment}{// namespace OpenAPI}}
+
+\end{DoxyCode}

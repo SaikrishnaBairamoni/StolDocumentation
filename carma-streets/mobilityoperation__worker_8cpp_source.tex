@@ -1,0 +1,56 @@
+\hypertarget{mobilityoperation__worker_8cpp_source}{}\doxysection{mobilityoperation\+\_\+worker.\+cpp}
+\label{mobilityoperation__worker_8cpp_source}\index{message\_services/src/workers/mobilityoperation\_worker.cpp@{message\_services/src/workers/mobilityoperation\_worker.cpp}}
+\mbox{\hyperlink{mobilityoperation__worker_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{mobilityoperation__worker_8h}{mobilityoperation\_worker.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00002}00002 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacemessage__services}{message\_services}}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00003}00003 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00004}00004     \textcolor{keyword}{namespace }workers}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00005}00005     \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00006}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a868c1046cfc65ad20e56bc873c564463}{00006}}         \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a868c1046cfc65ad20e56bc873c564463}{mobilityoperation\_worker::mobilityoperation\_worker}}(\textcolor{comment}{/* args */})}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00007}00007         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00008}00008         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00010}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a957e66bb9093d03a877ee09be5017907}{00010}}         \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a957e66bb9093d03a877ee09be5017907}{mobilityoperation\_worker::\string~mobilityoperation\_worker}}()}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00011}00011         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00012}00012             this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a46a56dce07bd75519e0fbbcc7a1841bd}{mobilityoperation\_v}}.clear();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00013}00013         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00015}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a694f5d3a661ad6aa317f65d11ed51df3}{00015}}         std::deque<models::mobilityoperation> \&\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a694f5d3a661ad6aa317f65d11ed51df3}{mobilityoperation\_worker::get\_curr\_list}}()}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00016}00016         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00017}00017             \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a46a56dce07bd75519e0fbbcc7a1841bd}{mobilityoperation\_v}};}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00018}00018         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00020}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_ae24cd70a331bae649090db3abed28f7f}{00020}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_ae24cd70a331bae649090db3abed28f7f}{mobilityoperation\_worker::process\_incoming\_msg}}(\textcolor{keyword}{const} std::string json\_str)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00021}00021         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00022}00022             \mbox{\hyperlink{classmessage__services_1_1models_1_1mobilityoperation}{message\_services::models::mobilityoperation}} mobilityoperation\_obj;}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00023}00023             \textcolor{keywordflow}{if} (mobilityoperation\_obj.\mbox{\hyperlink{classmessage__services_1_1models_1_1baseMessage_a3f9c04935a000829b2ef25300d2fb57b}{fromJson}}(json\_str.c\_str()))}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00024}00024             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00025}00025                 std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a0a9135fb02ee5a339f5ee713bf677fc2}{worker\_mtx}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00026}00026                 this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a46a56dce07bd75519e0fbbcc7a1841bd}{mobilityoperation\_v}}.push\_back(mobilityoperation\_obj);}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00027}00027             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00028}00028             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00029}00029             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00030}00030                 SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}mobilityoperation\_worker: Document parse error"{}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00031}00031             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00033}00033         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00034}\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a0201405c43c4567026d4c3f6f88abcc0}{00034}}         \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a0201405c43c4567026d4c3f6f88abcc0}{mobilityoperation\_worker::pop\_cur\_element\_from\_list}}(\textcolor{keywordtype}{long} element\_position)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00035}00035         \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00036}00036             \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a46a56dce07bd75519e0fbbcc7a1841bd}{mobilityoperation\_v}}.size() > 0)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00037}00037             \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00038}00038                 std::unique\_lock<std::mutex> lck(\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a0a9135fb02ee5a339f5ee713bf677fc2}{worker\_mtx}});}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00039}00039                 \textcolor{keywordflow}{if} (element\_position == 0)}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00040}00040                 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00041}00041                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a46a56dce07bd75519e0fbbcc7a1841bd}{mobilityoperation\_v}}.pop\_front();}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00042}00042                 \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00043}00043                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00044}00044                 \{}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00045}00045                     this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a46a56dce07bd75519e0fbbcc7a1841bd}{mobilityoperation\_v}}.erase(this-\/>\mbox{\hyperlink{classmessage__services_1_1workers_1_1mobilityoperation__worker_a46a56dce07bd75519e0fbbcc7a1841bd}{mobilityoperation\_v}}.begin() + element\_position);}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00046}00046                 \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00047}00047             \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00048}00048         \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{mobilityoperation__worker_8cpp_source_l00050}00050 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,324 @@
+\hypertarget{doc_2conf_8py_source}{}\doxysection{conf.\+py}
+\label{doc_2conf_8py_source}\index{doc/conf.py@{doc/conf.py}}
+\mbox{\hyperlink{doc_2conf_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00001}\mbox{\hyperlink{namespaceconf}{00001}} \textcolor{comment}{\# Zephyr documentation build configuration file.}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00002}00002 \textcolor{comment}{\# Reference: https://www.sphinx-\/doc.org/en/master/usage/configuration.html}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00004}00004 \textcolor{keyword}{import} sys}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00005}00005 \textcolor{keyword}{import} os}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00006}00006 \textcolor{keyword}{from} pathlib \textcolor{keyword}{import} Path}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00007}00007 \textcolor{keyword}{import} re}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00009}00009 \textcolor{keyword}{from} sphinx.cmd.build \textcolor{keyword}{import} get\_parser}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00010}00010 \textcolor{keyword}{import} sphinx\_rtd\_theme}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00013}\mbox{\hyperlink{namespaceconf_a07d096ef427554bf3104969b8c552869}{00013}} args = get\_parser().\mbox{\hyperlink{namespacegen__devicetree__rest_a281d6119360f3b38a9a10a4a92000aa0}{parse\_args}}()}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00014}\mbox{\hyperlink{namespaceconf_a6c4c38bfb6a9cffe547bdd19fe5b667d}{00014}} ZEPHYR\_BASE = Path(\_\_file\_\_).resolve().parents[1]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00015}\mbox{\hyperlink{namespaceconf_a443306f3b2bfb9fca75c6fafffeb54bb}{00015}} ZEPHYR\_BUILD = Path(args.outputdir).resolve()}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00017}00017 \textcolor{comment}{\# Add the '\_extensions' directory to sys.path, to enable finding Sphinx}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00018}00018 \textcolor{comment}{\# extensions within.}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00019}00019 sys.path.insert(0, str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_extensions"{}}))}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00021}00021 \textcolor{comment}{\# Add the '\_scripts' directory to sys.path, to enable finding utility}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00022}00022 \textcolor{comment}{\# modules.}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00023}00023 sys.path.insert(0, str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_scripts"{}}))}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00025}00025 \textcolor{comment}{\# Add the directory which contains the runners package as well,}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00026}00026 \textcolor{comment}{\# for autodoc directives on runners.xyz.}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00027}00027 sys.path.insert(0, str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}scripts"{}} / \textcolor{stringliteral}{"{}west\_commands"{}}))}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00029}00029 \textcolor{keyword}{import} redirects}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00031}00031 \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00032}00032     \textcolor{keyword}{import} west \textcolor{keyword}{as} west\_found}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00033}00033 \textcolor{keywordflow}{except} ImportError:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00034}\mbox{\hyperlink{namespaceconf_a20190b2d589e513d2044295ac6620c3e}{00034}}     west\_found = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00036}00036 \textcolor{comment}{\# -\/-\/ Project -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00038}\mbox{\hyperlink{namespaceconf_aa2c6aefbed1597a70cfb45a760e5977c}{00038}} project = \textcolor{stringliteral}{"{}Zephyr Project"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00039}\mbox{\hyperlink{namespaceconf_ac8ccf456b321bc9052c0691a173b6925}{00039}} copyright = \textcolor{stringliteral}{"{}2015-\/2022 Zephyr Project members and individual contributors"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00040}\mbox{\hyperlink{namespaceconf_a6d7145a280c30059b454017b266c11c0}{00040}} author = \textcolor{stringliteral}{"{}The Zephyr Project Contributors"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00042}00042 \textcolor{comment}{\# parse version from 'VERSION' file}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00043}00043 \textcolor{keyword}{with} open(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}VERSION"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00044}\mbox{\hyperlink{namespaceconf_a6e236bdca26a4db264a4daba8b82644d}{00044}}     m = re.match(}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00045}00045         (}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00046}00046             \textcolor{stringliteral}{r"{}\string^VERSION\_MAJOR\(\backslash\)s*=\(\backslash\)s*(\(\backslash\)d+)\$\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00047}00047             + \textcolor{stringliteral}{r"{}\string^VERSION\_MINOR\(\backslash\)s*=\(\backslash\)s*(\(\backslash\)d+)\$\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00048}00048             + \textcolor{stringliteral}{r"{}\string^PATCHLEVEL\(\backslash\)s*=\(\backslash\)s*(\(\backslash\)d+)\$\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00049}00049             + \textcolor{stringliteral}{r"{}\string^VERSION\_TWEAK\(\backslash\)s*=\(\backslash\)s*\(\backslash\)d+\$\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00050}00050             + \textcolor{stringliteral}{r"{}\string^EXTRAVERSION\(\backslash\)s*=\(\backslash\)s*(.*)\$"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00051}00051         ),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00052}00052         f.read(),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00053}00053         re.MULTILINE,}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00054}00054     )}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00056}00056     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} m:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00057}00057         sys.stderr.write(\textcolor{stringliteral}{"{}Warning: Could not extract kernel version\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00058}\mbox{\hyperlink{namespaceconf_a93370314d5e59e93dabf67ca4906c634}{00058}}         version = \textcolor{stringliteral}{"{}Unknown"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00059}00059     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00060}\mbox{\hyperlink{namespaceconf_adf0c73c8b294999e1af0145a7a30d41b}{00060}}         major, minor, patch, extra = m.groups(1)}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00061}00061         version = \textcolor{stringliteral}{"{}."{}}.join((major, minor, patch))}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00062}00062         \textcolor{keywordflow}{if} extra:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00063}00063             version += \textcolor{stringliteral}{"{}-\/"{}} + extra}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00065}\mbox{\hyperlink{namespaceconf_a90a599726178800ad5a42f6bc2cd5208}{00065}} release = version}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00067}00067 \textcolor{comment}{\# -\/-\/ General configuration -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00069}\mbox{\hyperlink{namespaceconf_a540efa67c53e84c1c353c1df2e37e39c}{00069}} extensions = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00070}00070     \textcolor{stringliteral}{"{}breathe"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00071}00071     \textcolor{stringliteral}{"{}sphinx.ext.todo"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00072}00072     \textcolor{stringliteral}{"{}sphinx.ext.extlinks"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00073}00073     \textcolor{stringliteral}{"{}sphinx.ext.autodoc"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00074}00074     \textcolor{stringliteral}{"{}sphinx.ext.graphviz"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00075}00075     \textcolor{stringliteral}{"{}zephyr.application"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00076}00076     \textcolor{stringliteral}{"{}zephyr.html\_redirects"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00077}00077     \textcolor{stringliteral}{"{}zephyr.kconfig"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00078}00078     \textcolor{stringliteral}{"{}zephyr.dtcompatible-\/role"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00079}00079     \textcolor{stringliteral}{"{}zephyr.link-\/roles"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00080}00080     \textcolor{stringliteral}{"{}sphinx\_tabs.tabs"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00081}00081     \textcolor{stringliteral}{"{}zephyr.warnings\_filter"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00082}00082     \textcolor{stringliteral}{"{}zephyr.doxyrunner"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00083}00083     \textcolor{stringliteral}{"{}zephyr.vcs\_link"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00084}00084     \textcolor{stringliteral}{"{}notfound.extension"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00085}00085     \textcolor{stringliteral}{"{}sphinx\_copybutton"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00086}00086     \textcolor{stringliteral}{"{}zephyr.external\_content"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00087}00087 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00089}00089 \textcolor{comment}{\# Only use SVG converter when it is really needed, e.g. LaTeX.}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00090}00090 \textcolor{keywordflow}{if} tags.has(\textcolor{stringliteral}{"{}svgconvert"{}}):  \textcolor{comment}{\# pylint: disable=undefined-\/variable}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00091}00091     extensions.append(\textcolor{stringliteral}{"{}sphinxcontrib.rsvgconverter"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00093}\mbox{\hyperlink{namespaceconf_af50129dcc1f90655539f025595a3093b}{00093}} templates\_path = [\textcolor{stringliteral}{"{}\_templates"{}}]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00095}\mbox{\hyperlink{namespaceconf_aa01918cfe75aed3ae059dd96c71c8f08}{00095}} exclude\_patterns = [\textcolor{stringliteral}{"{}\_build"{}}]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00097}00097 \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} west\_found:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00098}00098     exclude\_patterns.append(\textcolor{stringliteral}{"{}**/*west-\/apis*"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00099}00099 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00100}00100     exclude\_patterns.append(\textcolor{stringliteral}{"{}**/*west-\/not-\/found*"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00102}\mbox{\hyperlink{namespaceconf_afa4e4ed164119ef5f4656e9554ed1f1b}{00102}} pygments\_style = \textcolor{stringliteral}{"{}sphinx"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00104}\mbox{\hyperlink{namespaceconf_a9c4d0250afe7e547830927b55eadeec5}{00104}} todo\_include\_todos = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00106}\mbox{\hyperlink{namespaceconf_a78179e03b184f241df1ea3fca3f7efd7}{00106}} numfig = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00108}\mbox{\hyperlink{namespaceconf_aa73a1cb83234f25a21bd13e1caf88147}{00108}} nitpick\_ignore = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00109}00109     \textcolor{comment}{\# ignore C standard identifiers (they are not defined in Zephyr docs)}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00110}00110     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}FILE"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00111}00111     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}int8\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00112}00112     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}int16\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00113}00113     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}int32\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00114}00114     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}int64\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00115}00115     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}intptr\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00116}00116     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}off\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00117}00117     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}size\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00118}00118     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}ssize\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00119}00119     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}time\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00120}00120     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}uint8\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00121}00121     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}uint16\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00122}00122     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}uint32\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00123}00123     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}uint64\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00124}00124     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}uintptr\_t"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00125}00125     (\textcolor{stringliteral}{"{}c:identifier"{}}, \textcolor{stringliteral}{"{}va\_list"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00126}00126 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00128}\mbox{\hyperlink{namespaceconf_a97f2ff312a56c8294e9df85c24009b2e}{00128}} rst\_epilog = \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00129}00129 \textcolor{stringliteral}{.. include:: /substitutions.txt}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00130}00130 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00132}00132 \textcolor{comment}{\# -\/-\/ Options for HTML output -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00133}00133 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00134}\mbox{\hyperlink{namespaceconf_a7f1b143ff25817758abd21a7db110510}{00134}} html\_theme = \textcolor{stringliteral}{"{}sphinx\_rtd\_theme"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00135}\mbox{\hyperlink{namespaceconf_a98891f2e4a5d0fc6e8cbe787fb9c2439}{00135}} html\_theme\_path = [sphinx\_rtd\_theme.get\_html\_theme\_path()]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00136}\mbox{\hyperlink{namespaceconf_a59fb37ca5915e18823f5f433129b35ec}{00136}} html\_theme\_options = \{}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00137}00137     \textcolor{stringliteral}{"{}logo\_only"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00138}00138     \textcolor{stringliteral}{"{}prev\_next\_buttons\_location"{}}: \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00139}00139 \}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00140}\mbox{\hyperlink{namespaceconf_a21723aa72b000ec08ec9fdab86bddebb}{00140}} html\_title = \textcolor{stringliteral}{"{}Zephyr Project Documentation"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00141}\mbox{\hyperlink{namespaceconf_a9e38d925cb3e0f34bde33c949a5e4ef2}{00141}} html\_logo = str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_static"{}} / \textcolor{stringliteral}{"{}images"{}} / \textcolor{stringliteral}{"{}logo.svg"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00142}\mbox{\hyperlink{namespaceconf_ab7e2d4bd0051bc860b5aea0a011c4085}{00142}} html\_favicon = str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_static"{}} / \textcolor{stringliteral}{"{}images"{}} / \textcolor{stringliteral}{"{}favicon.png"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00143}\mbox{\hyperlink{namespaceconf_acb91fefcfd3aa6f3529fa682ab834832}{00143}} html\_static\_path = [str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_static"{}})]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00144}\mbox{\hyperlink{namespaceconf_a1df5dba510911118b9db724a1d60c7af}{00144}} html\_last\_updated\_fmt = \textcolor{stringliteral}{"{}\%b \%d, \%Y"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00145}\mbox{\hyperlink{namespaceconf_a1ebc7ff6ac00b97136aa51b8cb3ed130}{00145}} html\_domain\_indices = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00146}\mbox{\hyperlink{namespaceconf_aeae214e9372412c594c17093e22b70a6}{00146}} html\_split\_index = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00147}\mbox{\hyperlink{namespaceconf_aaf1ac37a2ba571d82ba00bda313c4d41}{00147}} html\_show\_sourcelink = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00148}\mbox{\hyperlink{namespaceconf_a22bd9f1747649863226e16d1fa02799c}{00148}} html\_show\_sphinx = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00149}\mbox{\hyperlink{namespaceconf_ac6ee35ec119cea16b15be29bb01b468d}{00149}} html\_search\_scorer = str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_static"{}} / \textcolor{stringliteral}{"{}js"{}} / \textcolor{stringliteral}{"{}scorer.js"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00150}00150 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00151}\mbox{\hyperlink{namespaceconf_af1405c64ec318a8bfa25dd1f58caf6cb}{00151}} is\_release = tags.has(\textcolor{stringliteral}{"{}release"{}})  \textcolor{comment}{\# pylint: disable=undefined-\/variable}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00152}\mbox{\hyperlink{namespaceconf_a3d2da5e57f0fa179c3e600aba6abf177}{00152}} reference\_prefix = \textcolor{stringliteral}{"{}"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00153}00153 \textcolor{keywordflow}{if} tags.has(\textcolor{stringliteral}{"{}publish"{}}):  \textcolor{comment}{\# pylint: disable=undefined-\/variable}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00154}00154     reference\_prefix = f\textcolor{stringliteral}{"{}/\{version\}"{}} \textcolor{keywordflow}{if} is\_release \textcolor{keywordflow}{else} \textcolor{stringliteral}{"{}/latest"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00155}\mbox{\hyperlink{namespaceconf_ae631b7d4f32421c06cf53597a5e3aaaa}{00155}} docs\_title = \textcolor{stringliteral}{"{}Docs / \{\}"{}}.format(version \textcolor{keywordflow}{if} is\_release \textcolor{keywordflow}{else} \textcolor{stringliteral}{"{}Latest"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00156}\mbox{\hyperlink{namespaceconf_abe0cf752a6ed0f200c82339faf9b56ff}{00156}} html\_context = \{}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00157}00157     \textcolor{stringliteral}{"{}show\_license"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00158}00158     \textcolor{stringliteral}{"{}docs\_title"{}}: docs\_title,}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00159}00159     \textcolor{stringliteral}{"{}is\_release"{}}: is\_release,}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00160}00160     \textcolor{stringliteral}{"{}current\_version"{}}: version,}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00161}00161     \textcolor{stringliteral}{"{}versions"{}}: (}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00162}00162         (\textcolor{stringliteral}{"{}latest"{}}, \textcolor{stringliteral}{"{}/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00163}00163         (\textcolor{stringliteral}{"{}3.1.0"{}}, \textcolor{stringliteral}{"{}/3.1.0/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00164}00164         (\textcolor{stringliteral}{"{}3.0.0"{}}, \textcolor{stringliteral}{"{}/3.0.0/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00165}00165         (\textcolor{stringliteral}{"{}2.7.0"{}}, \textcolor{stringliteral}{"{}/2.7.0/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00166}00166         (\textcolor{stringliteral}{"{}2.6.0"{}}, \textcolor{stringliteral}{"{}/2.6.0/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00167}00167         (\textcolor{stringliteral}{"{}2.5.0"{}}, \textcolor{stringliteral}{"{}/2.5.0/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00168}00168         (\textcolor{stringliteral}{"{}2.4.0"{}}, \textcolor{stringliteral}{"{}/2.4.0/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00169}00169         (\textcolor{stringliteral}{"{}2.3.0"{}}, \textcolor{stringliteral}{"{}/2.3.0/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00170}00170         (\textcolor{stringliteral}{"{}1.14.1"{}}, \textcolor{stringliteral}{"{}/1.14.1/"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00171}00171     ),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00172}00172     \textcolor{stringliteral}{"{}display\_vcs\_link"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00173}00173     \textcolor{stringliteral}{"{}reference\_links"{}}: \{}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00174}00174         \textcolor{stringliteral}{"{}API"{}}: f\textcolor{stringliteral}{"{}\{reference\_prefix\}/doxygen/html/index.html"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00175}00175         \textcolor{stringliteral}{"{}Kconfig Options"{}}: f\textcolor{stringliteral}{"{}\{reference\_prefix\}/kconfig.html"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00176}00176         \textcolor{stringliteral}{"{}Devicetree Bindings"{}}: f\textcolor{stringliteral}{"{}\{reference\_prefix\}/build/dts/api/bindings.html"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00177}00177     \}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00178}00178 \}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00180}00180 \textcolor{comment}{\# -\/-\/ Options for LaTeX output -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00181}00181 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00182}\mbox{\hyperlink{namespaceconf_a82b98d5b4f4b8dee5476fb983fd85407}{00182}} latex\_elements = \{}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00183}00183     \textcolor{stringliteral}{"{}papersize"{}}: \textcolor{stringliteral}{"{}a4paper"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00184}00184     \textcolor{stringliteral}{"{}maketitle"{}}: open(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_static"{}} / \textcolor{stringliteral}{"{}latex"{}} / \textcolor{stringliteral}{"{}title.tex"{}}).read(),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00185}00185     \textcolor{stringliteral}{"{}preamble"{}}: open(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_static"{}} / \textcolor{stringliteral}{"{}latex"{}} / \textcolor{stringliteral}{"{}preamble.tex"{}}).read(),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00186}00186     \textcolor{stringliteral}{"{}fontpkg"{}}: \textcolor{stringliteral}{r"{}\(\backslash\)usepackage\{charter\}"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00187}00187     \textcolor{stringliteral}{"{}sphinxsetup"{}}: \textcolor{stringliteral}{"{},"{}}.join(}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00188}00188         (}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00189}00189             \textcolor{comment}{\# NOTE: colors match those found in light.css stylesheet}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00190}00190             \textcolor{stringliteral}{"{}verbatimwithframe=false"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00191}00191             \textcolor{stringliteral}{"{}VerbatimColor=\{HTML\}\{f0f2f4\}"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00192}00192             \textcolor{stringliteral}{"{}InnerLinkColor=\{HTML\}\{2980b9\}"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00193}00193             \textcolor{stringliteral}{"{}warningBgColor=\{HTML\}\{e9a499\}"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00194}00194             \textcolor{stringliteral}{"{}warningborder=0pt"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00195}00195             \textcolor{stringliteral}{r"{}HeaderFamily=\(\backslash\)rmfamily\(\backslash\)bfseries"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00196}00196         )}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00197}00197     ),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00198}00198 \}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00199}\mbox{\hyperlink{namespaceconf_ac3fb2a24255962238e1c26a5b5e0e645}{00199}} latex\_logo = str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}\_static"{}} / \textcolor{stringliteral}{"{}images"{}} / \textcolor{stringliteral}{"{}logo-\/latex.pdf"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00200}\mbox{\hyperlink{namespaceconf_a00b7896473527f894006130b1113cb4b}{00200}} latex\_documents = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00201}00201     (\textcolor{stringliteral}{"{}index-\/tex"{}}, \textcolor{stringliteral}{"{}zephyr.tex"{}}, \textcolor{stringliteral}{"{}Zephyr Project Documentation"{}}, author, \textcolor{stringliteral}{"{}manual"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00202}00202 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00204}00204 \textcolor{comment}{\# -\/-\/ Options for zephyr.doxyrunner plugin -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00205}00205 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00206}\mbox{\hyperlink{namespaceconf_ad8540d7e41447491849521dc39acba37}{00206}} doxyrunner\_doxygen = os.environ.get(\textcolor{stringliteral}{"{}DOXYGEN\_EXECUTABLE"{}}, \textcolor{stringliteral}{"{}doxygen"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00207}\mbox{\hyperlink{namespaceconf_a7c2db12c5f28acf5b3fcc9c830e17ab1}{00207}} doxyrunner\_doxyfile = ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}zephyr.doxyfile.in"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00208}\mbox{\hyperlink{namespaceconf_a529d185833afb73c31ad6d3fb9d2f344}{00208}} doxyrunner\_outdir = ZEPHYR\_BUILD / \textcolor{stringliteral}{"{}doxygen"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00209}\mbox{\hyperlink{namespaceconf_a237561be4453cbed127ee4995da59f09}{00209}} doxyrunner\_fmt = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00210}\mbox{\hyperlink{namespaceconf_abbe34e652e65791beac9dedd7cf4c832}{00210}} doxyrunner\_fmt\_vars = \{\textcolor{stringliteral}{"{}ZEPHYR\_BASE"{}}: str(ZEPHYR\_BASE), \textcolor{stringliteral}{"{}ZEPHYR\_VERSION"{}}: version\}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00211}\mbox{\hyperlink{namespaceconf_a0b511f9b1325b1bac9ecdc14a3aabf8d}{00211}} doxyrunner\_outdir\_var = \textcolor{stringliteral}{"{}DOXY\_OUT"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00212}00212 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00213}00213 \textcolor{comment}{\# -\/-\/ Options for Breathe plugin -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00215}\mbox{\hyperlink{namespaceconf_a7942a19d324ba7a3ff32140c7a7cbc2f}{00215}} breathe\_projects = \{\textcolor{stringliteral}{"{}Zephyr"{}}: str(doxyrunner\_outdir / \textcolor{stringliteral}{"{}xml"{}})\}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00216}\mbox{\hyperlink{namespaceconf_ae989613d8aad2a443902eec5d7f3ec4f}{00216}} breathe\_default\_project = \textcolor{stringliteral}{"{}Zephyr"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00217}\mbox{\hyperlink{namespaceconf_ad0d454b83dec8d7b34b0d8b2894c62de}{00217}} breathe\_domain\_by\_extension = \{}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00218}00218     \textcolor{stringliteral}{"{}h"{}}: \textcolor{stringliteral}{"{}c"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00219}00219     \textcolor{stringliteral}{"{}c"{}}: \textcolor{stringliteral}{"{}c"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00220}00220 \}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00221}\mbox{\hyperlink{namespaceconf_aa3494b4df33ca3dc33d621f77fcc766d}{00221}} breathe\_show\_enumvalue\_initializer = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00222}\mbox{\hyperlink{namespaceconf_a1c121fa952c0cbd7ea367a58d2ad7676}{00222}} breathe\_default\_members = (\textcolor{stringliteral}{"{}members"{}}, )}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00223}00223 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00224}\mbox{\hyperlink{namespaceconf_a7a0f1f344d8cc321b4a44efa9d869be9}{00224}} cpp\_id\_attributes = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00225}00225     \textcolor{stringliteral}{"{}\_\_syscall"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00226}00226     \textcolor{stringliteral}{"{}\_\_deprecated"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00227}00227     \textcolor{stringliteral}{"{}\_\_may\_alias"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00228}00228     \textcolor{stringliteral}{"{}\_\_used"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00229}00229     \textcolor{stringliteral}{"{}\_\_unused"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00230}00230     \textcolor{stringliteral}{"{}\_\_weak"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00231}00231     \textcolor{stringliteral}{"{}\_\_attribute\_const\_\_"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00232}00232     \textcolor{stringliteral}{"{}\_\_DEPRECATED\_MACRO"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00233}00233     \textcolor{stringliteral}{"{}FUNC\_NORETURN"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00234}00234     \textcolor{stringliteral}{"{}\_\_subsystem"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00235}00235     \textcolor{stringliteral}{"{}ALWAYS\_INLINE"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00236}00236 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00237}\mbox{\hyperlink{namespaceconf_a5d73a74b9ff41fff25c8e5a6d5f42e79}{00237}} c\_id\_attributes = cpp\_id\_attributes}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00239}00239 \textcolor{comment}{\# -\/-\/ Options for html\_redirect plugin -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00240}00240 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00241}\mbox{\hyperlink{namespaceconf_a2ec2e62a91f5bc41adc7df86b2be9a10}{00241}} html\_redirect\_pages = redirects.REDIRECTS}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00243}00243 \textcolor{comment}{\# -\/-\/ Options for zephyr.warnings\_filter -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00244}00244 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00245}\mbox{\hyperlink{namespaceconf_a7db2ec1dabbfb5f644329e4e5384ab0b}{00245}} warnings\_filter\_config = str(ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}} / \textcolor{stringliteral}{"{}known-\/warnings.txt"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00246}00246 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00247}00247 \textcolor{comment}{\# -\/-\/ Options for notfound.extension -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00248}00248 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00249}\mbox{\hyperlink{namespaceconf_a4da3a0edc62718de6a04563d58aa6a4e}{00249}} notfound\_urls\_prefix = f\textcolor{stringliteral}{"{}/\{version\}/"{}} \textcolor{keywordflow}{if} is\_release \textcolor{keywordflow}{else} \textcolor{stringliteral}{"{}/latest/"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00250}00250 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00251}00251 \textcolor{comment}{\# -\/-\/ Options for zephyr.vcs\_link -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00252}00252 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00253}\mbox{\hyperlink{namespaceconf_a1dcad5609ece8ea2b8f548a3bc4de145}{00253}} vcs\_link\_version = f\textcolor{stringliteral}{"{}v\{version\}"{}} \textcolor{keywordflow}{if} is\_release \textcolor{keywordflow}{else} \textcolor{stringliteral}{"{}main"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00254}\mbox{\hyperlink{namespaceconf_abf8428e1e4bd1512242fba5b524f1ec8}{00254}} vcs\_link\_base\_url = f\textcolor{stringliteral}{"{}https://github.com/zephyrproject-\/rtos/zephyr/blob/\{vcs\_link\_version\}"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00255}\mbox{\hyperlink{namespaceconf_a905e796156e72091e968f35b58479854}{00255}} vcs\_link\_prefixes = \{}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00256}00256     \textcolor{stringliteral}{"{}samples/.*"{}}: \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00257}00257     \textcolor{stringliteral}{"{}boards/.*"{}}: \textcolor{stringliteral}{"{}"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00258}00258     \textcolor{stringliteral}{"{}.*"{}}: \textcolor{stringliteral}{"{}doc"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00259}00259 \}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00260}\mbox{\hyperlink{namespaceconf_a160ad9b8829d0d6e999c07195f5205f4}{00260}} vcs\_link\_exclude = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00261}00261     \textcolor{stringliteral}{"{}reference/kconfig.*"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00262}00262     \textcolor{stringliteral}{"{}build/dts/api/bindings.*"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00263}00263     \textcolor{stringliteral}{"{}build/dts/api/compatibles.*"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00264}00264 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00265}00265 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00266}00266 \textcolor{comment}{\# -\/-\/ Options for zephyr.kconfig -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00267}00267 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00268}\mbox{\hyperlink{namespaceconf_a11fa86d36e29811aba2766eb367dd6bd}{00268}} kconfig\_generate\_db = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00269}\mbox{\hyperlink{namespaceconf_ad1c998e2b933d9b14ade04d6cdca377a}{00269}} kconfig\_ext\_paths = [ZEPHYR\_BASE]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00270}00270 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00271}00271 \textcolor{comment}{\# -\/-\/ Options for zephyr.external\_content -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00272}00272 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00273}\mbox{\hyperlink{namespaceconf_a86400b4116827328e0b47ca67234f83c}{00273}} external\_content\_contents = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00274}00274     (ZEPHYR\_BASE / \textcolor{stringliteral}{"{}doc"{}}, \textcolor{stringliteral}{"{}[!\_]*"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00275}00275     (ZEPHYR\_BASE, \textcolor{stringliteral}{"{}boards/**/*.rst"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00276}00276     (ZEPHYR\_BASE, \textcolor{stringliteral}{"{}boards/**/doc"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00277}00277     (ZEPHYR\_BASE, \textcolor{stringliteral}{"{}samples/**/*.rst"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00278}00278     (ZEPHYR\_BASE, \textcolor{stringliteral}{"{}samples/**/doc"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00279}00279 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00280}\mbox{\hyperlink{namespaceconf_a540ea2fb08052b4a289c983d26e032e7}{00280}} external\_content\_keep = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00281}00281     \textcolor{stringliteral}{"{}reference/kconfig/*"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00282}00282     \textcolor{stringliteral}{"{}build/dts/api/bindings.rst"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00283}00283     \textcolor{stringliteral}{"{}build/dts/api/bindings/**/*"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00284}00284     \textcolor{stringliteral}{"{}build/dts/api/compatibles/**/*"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00285}00285 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00286}00286 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00287}00287 \textcolor{comment}{\# -\/-\/ Options for sphinx.ext.graphviz -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00288}00288 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00289}\mbox{\hyperlink{namespaceconf_a47b78a577f428d46fcff1e0dfb4dfeca}{00289}} graphviz\_dot = os.environ.get(\textcolor{stringliteral}{"{}DOT\_EXECUTABLE"{}}, \textcolor{stringliteral}{"{}dot"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00290}\mbox{\hyperlink{namespaceconf_a5df737fadb133e190919888ea6e7a5cb}{00290}} graphviz\_output\_format = \textcolor{stringliteral}{"{}svg"{}}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00291}\mbox{\hyperlink{namespaceconf_a41a5cfed0cc77327a154119f22d04742}{00291}} graphviz\_dot\_args = [}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00292}00292     \textcolor{stringliteral}{"{}-\/Gbgcolor=transparent"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00293}00293     \textcolor{stringliteral}{"{}-\/Nstyle=filled"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00294}00294     \textcolor{stringliteral}{"{}-\/Nfillcolor=white"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00295}00295     \textcolor{stringliteral}{"{}-\/Ncolor=gray60"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00296}00296     \textcolor{stringliteral}{"{}-\/Nfontcolor=gray25"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00297}00297     \textcolor{stringliteral}{"{}-\/Ecolor=gray60"{}},}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00298}00298 ]}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00299}00299 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00300}00300 \textcolor{comment}{\# -\/-\/ Linkcheck options -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00301}00301 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00302}\mbox{\hyperlink{namespaceconf_a02b21bbdeaae4927edd9e2368f67ea67}{00302}} extlinks = \{}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00303}00303     \textcolor{stringliteral}{"{}jira"{}}: (\textcolor{stringliteral}{"{}https://jira.zephyrproject.org/browse/\%s"{}}, \textcolor{stringliteral}{"{}JIRA \#\%s"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00304}00304     \textcolor{stringliteral}{"{}github"{}}: (\textcolor{stringliteral}{"{}https://github.com/zephyrproject-\/rtos/zephyr/issues/\%s"{}}, \textcolor{stringliteral}{"{}GitHub \#\%s"{}}),}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00305}00305 \}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00306}00306 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00307}\mbox{\hyperlink{namespaceconf_a019b40d8a6d5cf4eabf21507b32b94c3}{00307}} linkcheck\_timeout = 30}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00308}\mbox{\hyperlink{namespaceconf_ae863d701bc4b7c498929ccda4705b8c3}{00308}} linkcheck\_workers = 10}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00309}\mbox{\hyperlink{namespaceconf_ac60c40728199d965a02671e0ad2dc2f9}{00309}} linkcheck\_anchors = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00310}00310 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00311}00311 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00312}\mbox{\hyperlink{namespaceconf_af9aac08c9c9642aad1bbbd8a48108b3f}{00312}} \textcolor{keyword}{def }\mbox{\hyperlink{namespaceconf_af9aac08c9c9642aad1bbbd8a48108b3f}{setup}}(app):}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00313}00313     \textcolor{comment}{\# theme customizations}}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00314}00314     app.add\_css\_file(\textcolor{stringliteral}{"{}css/custom.css"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00315}00315     app.add\_js\_file(\textcolor{stringliteral}{"{}js/dark-\/mode-\/toggle.min.mjs"{}}, type=\textcolor{stringliteral}{"{}module"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00316}00316 }
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00317}00317     app.add\_js\_file(\textcolor{stringliteral}{"{}https://www.googletagmanager.com/gtag/js?id=UA-\/831873-\/47"{}})}
+\DoxyCodeLine{\Hypertarget{doc_2conf_8py_source_l00318}00318     app.add\_js\_file(\textcolor{stringliteral}{"{}js/ga-\/tracker.js"{}})}
+
+\end{DoxyCode}

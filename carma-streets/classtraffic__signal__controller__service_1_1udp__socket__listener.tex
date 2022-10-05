@@ -1,0 +1,337 @@
+\hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener}{}\doxysection{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener Class Reference}
+\label{classtraffic__signal__controller__service_1_1udp__socket__listener}\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+
+
+{\ttfamily \#include $<$udp\+\_\+socket\+\_\+listener.\+h$>$}
+
+
+
+Collaboration diagram for traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{classtraffic__signal__controller__service_1_1udp__socket__listener__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_abb74b3fc2e393afda366987d4eef108f}{udp\+\_\+socket\+\_\+listener}} (const std\+::string \&ip, const int port, const int socket\+\_\+timeout)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} object. This will initialize the member variables to the values assigned in the manifest json file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_a31b4e86e82539c46c84578142eddadef}{$\sim$udp\+\_\+socket\+\_\+listener}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the udp socket listener. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_a05faa09034e8685d279639706ad8e092}{udp\+\_\+socket\+\_\+listener}} (const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} \&)=delete
+\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} \& \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ac05e865dfed7bac16f9165de03d344b1}{operator=}} (const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} \&)=delete
+\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ab8db65687e8eaf74c7eb8142af58f9e0}{initialize}} ()
+\item 
+std\+::vector$<$ char $>$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_af588b9deae54432dcc82cb9541ab5992}{receive}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_af535b8d275486b7546558dc41a6d10ed}{ip\+\_\+}}
+\begin{DoxyCompactList}\small\item\em ip address of \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ad069e356174925d0b1a09dd188e4c335}{port\+\_\+}}
+\begin{DoxyCompactList}\small\item\em ethernet port on \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} host to receive spat messages on \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ad300629888717a80c15e7ee94f98c5fa}{socket\+\_\+timeout\+\_\+}}
+\begin{DoxyCompactList}\small\item\em timeout in milliseconds for udp socket to \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_a8a00eb3e0b47bfc5cbbcf30519d97e8d}{socket\+\_\+created\+\_\+}} = false
+\begin{DoxyCompactList}\small\item\em boolean to verify whether socket has successfully been created \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}{sock}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8h_source_l00013}{13}} of file \mbox{\hyperlink{udp__socket__listener_8h_source}{udp\+\_\+socket\+\_\+listener.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_abb74b3fc2e393afda366987d4eef108f}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_abb74b3fc2e393afda366987d4eef108f}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!udp\_socket\_listener@{udp\_socket\_listener}}
+\index{udp\_socket\_listener@{udp\_socket\_listener}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{udp\_socket\_listener()}{udp\_socket\_listener()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::udp\+\_\+socket\+\_\+listener (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ip,  }\item[{const int}]{port,  }\item[{const int}]{socket\+\_\+timeout }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} object. This will initialize the member variables to the values assigned in the manifest json file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & The ip address of the \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \\
+\hline
+{\em port} & The ethernet port to receive spat messages on \\
+\hline
+{\em socket\+Timeout} & Timeout, in seconds, for udp socket to TSC \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{udp__socket__listener_8cpp_source}{udp\+\_\+socket\+\_\+listener.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006                                                 : \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_af535b8d275486b7546558dc41a6d10ed}{ip\_}}(ip), \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ad069e356174925d0b1a09dd188e4c335}{port\_}}(port), \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ad300629888717a80c15e7ee94f98c5fa}{socket\_timeout\_}}(socket\_timeout) \{}
+\DoxyCodeLine{00007 }
+\DoxyCodeLine{00008     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_a31b4e86e82539c46c84578142eddadef}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_a31b4e86e82539c46c84578142eddadef}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!````~udp\_socket\_listener@{$\sim$udp\_socket\_listener}}
+\index{````~udp\_socket\_listener@{$\sim$udp\_socket\_listener}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{$\sim$udp\_socket\_listener()}{~udp\_socket\_listener()}}
+{\footnotesize\ttfamily traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::$\sim$udp\+\_\+socket\+\_\+listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the udp socket listener. 
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{udp__socket__listener_8cpp_source}{udp\+\_\+socket\+\_\+listener.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010                                               \{}
+\DoxyCodeLine{00011         shutdown(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}{sock}}, SHUT\_RD);}
+\DoxyCodeLine{00012     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{udp__socket__listener_8h_source_l00035}{sock}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_a05faa09034e8685d279639706ad8e092}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_a05faa09034e8685d279639706ad8e092}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!udp\_socket\_listener@{udp\_socket\_listener}}
+\index{udp\_socket\_listener@{udp\_socket\_listener}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{udp\_socket\_listener()}{udp\_socket\_listener()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::udp\+\_\+socket\+\_\+listener (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_ab8db65687e8eaf74c7eb8142af58f9e0}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_ab8db65687e8eaf74c7eb8142af58f9e0}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!initialize@{initialize}}
+\index{initialize@{initialize}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{udp__socket__listener_8cpp_source}{udp\+\_\+socket\+\_\+listener.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014                                          \{}
+\DoxyCodeLine{00015         addrinfo hints;}
+\DoxyCodeLine{00016         addrinfo *result;}
+\DoxyCodeLine{00017         timeval tv;}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019         \textcolor{comment}{//set addr info criteria for results to return}}
+\DoxyCodeLine{00020         memset(\&hints, 0, \textcolor{keyword}{sizeof}(hints));}
+\DoxyCodeLine{00021         hints.ai\_family = AF\_UNSPEC;}
+\DoxyCodeLine{00022         hints.ai\_socktype = SOCK\_DGRAM;}
+\DoxyCodeLine{00023         hints.ai\_protocol = IPPROTO\_UDP;}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025         \textcolor{comment}{//getting address info for streets, 0 indicates success}}
+\DoxyCodeLine{00026         \textcolor{keywordtype}{int} tsc\_addr\_info = getaddrinfo(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_af535b8d275486b7546558dc41a6d10ed}{ip\_}}.c\_str(), \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ad069e356174925d0b1a09dd188e4c335}{port\_}}).c\_str(), \&hints, \&result);}
+\DoxyCodeLine{00027         \textcolor{keywordflow}{if} (tsc\_addr\_info != 0) \{}
+\DoxyCodeLine{00028             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed to get addr info for the tsc\_service instance"{}});}
+\DoxyCodeLine{00029             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00030         \}}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032         \textcolor{comment}{//creating socket}}
+\DoxyCodeLine{00033         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}{sock}} = socket(AF\_INET, SOCK\_DGRAM, IPPROTO\_UDP);}
+\DoxyCodeLine{00034         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}{sock}} == -\/1) \{}
+\DoxyCodeLine{00035             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed to create socket"{}});}
+\DoxyCodeLine{00036             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00037         \}}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039         \textcolor{comment}{//set socket options with timeout from manifest json}}
+\DoxyCodeLine{00040         tv.tv\_sec = \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ad300629888717a80c15e7ee94f98c5fa}{socket\_timeout\_}};}
+\DoxyCodeLine{00041         tv.tv\_usec = 0;}
+\DoxyCodeLine{00042         setsockopt(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}{sock}}, SOL\_SOCKET, SO\_RCVTIMEO, \&tv, \textcolor{keyword}{sizeof}(\textcolor{keyword}{struct} timeval));}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044         \textcolor{comment}{//attempt to bind to socket}}
+\DoxyCodeLine{00045         \textcolor{keywordflow}{if} (bind(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}{sock}}, result-\/>ai\_addr, result-\/>ai\_addrlen) == -\/1) \{}
+\DoxyCodeLine{00046             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed to bind to socket error number : \{0\}"{}}, errno);}
+\DoxyCodeLine{00047             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00048         \}}
+\DoxyCodeLine{00049         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_a8a00eb3e0b47bfc5cbbcf30519d97e8d}{socket\_created\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00050         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00051     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{udp__socket__listener_8h_source_l00018}{ip\+\_\+}}, \mbox{\hyperlink{udp__socket__listener_8h_source_l00023}{port\+\_\+}}, \mbox{\hyperlink{udp__socket__listener_8h_source_l00035}{sock}}, \mbox{\hyperlink{udp__socket__listener_8h_source_l00033}{socket\+\_\+created\+\_\+}}, \mbox{\hyperlink{udp__socket__listener_8h_source_l00028}{socket\+\_\+timeout\+\_\+}}, and \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{to\+\_\+string()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classtraffic__signal__controller__service_1_1udp__socket__listener_ab8db65687e8eaf74c7eb8142af58f9e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_ac05e865dfed7bac16f9165de03d344b1}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_ac05e865dfed7bac16f9165de03d344b1}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!operator=@{operator=}}
+\index{operator=@{operator=}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} \& traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_af588b9deae54432dcc82cb9541ab5992}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_af588b9deae54432dcc82cb9541ab5992}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!receive@{receive}}
+\index{receive@{receive}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily std\+::vector$<$ char $>$ traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{udp__socket__listener_8cpp_source}{udp\+\_\+socket\+\_\+listener.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054                                                       \{}
+\DoxyCodeLine{00055         \textcolor{comment}{// Max size 1 kb}}
+\DoxyCodeLine{00056         std::vector<char> spat\_buf(1024);}
+\DoxyCodeLine{00057         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_a8a00eb3e0b47bfc5cbbcf30519d97e8d}{socket\_created\_}}) \{}
+\DoxyCodeLine{00058             ssize\_t bytes\_received = recv(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}{sock}}, spat\_buf.data(), spat\_buf.size(), 0);}
+\DoxyCodeLine{00059             \textcolor{comment}{// see recv documentation https://man7.org/linux/man-\/pages/man2/recv.2.html\#RETURN\_VALUE}}
+\DoxyCodeLine{00060             \textcolor{keywordflow}{if} (bytes\_received > 0)}
+\DoxyCodeLine{00061             \{}
+\DoxyCodeLine{00062                 spat\_buf.resize(bytes\_received);}
+\DoxyCodeLine{00063             \}}
+\DoxyCodeLine{00064             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bytes\_received == -\/1)\{}
+\DoxyCodeLine{00065                 \textcolor{comment}{// see recv documentation https://man7.org/linux/man-\/pages/man2/recv.2.html\#ERRORS}}
+\DoxyCodeLine{00066                 \textcolor{keywordflow}{if} (EAGAIN == errno)\{}
+\DoxyCodeLine{00067                     \textcolor{keywordflow}{throw} udp\_socket\_listener\_exception(\textcolor{stringliteral}{"{}Timeout of "{}}+ \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener_ad300629888717a80c15e7ee94f98c5fa}{socket\_timeout\_}}) + \textcolor{stringliteral}{"{} seconds has elapsed. Closing SPaT Work UDP Socket"{}});}
+\DoxyCodeLine{00068                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00069                     \textcolor{keywordflow}{throw} udp\_socket\_listener\_exception(strerror(errno));}
+\DoxyCodeLine{00070                 \}}
+\DoxyCodeLine{00071             \}}
+\DoxyCodeLine{00072             \textcolor{comment}{// Should be impossible since UDP is connectionless communication protocol}}
+\DoxyCodeLine{00073             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bytes\_received == 0)\{}
+\DoxyCodeLine{00074                 \textcolor{keywordflow}{throw} udp\_socket\_listener\_exception(\textcolor{stringliteral}{"{}Connection terminated by server"{}});}
+\DoxyCodeLine{00075             \}    }
+\DoxyCodeLine{00076         \}}
+\DoxyCodeLine{00077         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00078             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}UPD socket initialization failed or was never executed!"{}});}
+\DoxyCodeLine{00079         \}}
+\DoxyCodeLine{00080         \textcolor{keywordflow}{return} spat\_buf;   }
+\DoxyCodeLine{00081     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{udp__socket__listener_8h_source_l00035}{sock}}, \mbox{\hyperlink{udp__socket__listener_8h_source_l00033}{socket\+\_\+created\+\_\+}}, \mbox{\hyperlink{udp__socket__listener_8h_source_l00028}{socket\+\_\+timeout\+\_\+}}, and \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{to\+\_\+string()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classtraffic__signal__controller__service_1_1udp__socket__listener_af588b9deae54432dcc82cb9541ab5992_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_af535b8d275486b7546558dc41a6d10ed}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_af535b8d275486b7546558dc41a6d10ed}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!ip\_@{ip\_}}
+\index{ip\_@{ip\_}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{ip\_}{ip\_}}
+{\footnotesize\ttfamily std\+::string traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::ip\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ip address of \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} 
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8h_source_l00018}{18}} of file \mbox{\hyperlink{udp__socket__listener_8h_source}{udp\+\_\+socket\+\_\+listener.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00014}{initialize()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_ad069e356174925d0b1a09dd188e4c335}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_ad069e356174925d0b1a09dd188e4c335}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!port\_@{port\_}}
+\index{port\_@{port\_}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{port\_}{port\_}}
+{\footnotesize\ttfamily int traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::port\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ethernet port on \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} host to receive spat messages on 
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8h_source_l00023}{23}} of file \mbox{\hyperlink{udp__socket__listener_8h_source}{udp\+\_\+socket\+\_\+listener.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00014}{initialize()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_aff87a592085b61e4cd1ebf24923cff63}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!sock@{sock}}
+\index{sock@{sock}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{sock}{sock}}
+{\footnotesize\ttfamily int traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::sock = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8h_source_l00035}{35}} of file \mbox{\hyperlink{udp__socket__listener_8h_source}{udp\+\_\+socket\+\_\+listener.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00010}{$\sim$udp\+\_\+socket\+\_\+listener()}}, \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00014}{initialize()}}, and \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00054}{receive()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_a8a00eb3e0b47bfc5cbbcf30519d97e8d}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_a8a00eb3e0b47bfc5cbbcf30519d97e8d}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!socket\_created\_@{socket\_created\_}}
+\index{socket\_created\_@{socket\_created\_}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{socket\_created\_}{socket\_created\_}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::socket\+\_\+created\+\_\+ = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+boolean to verify whether socket has successfully been created 
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8h_source_l00033}{33}} of file \mbox{\hyperlink{udp__socket__listener_8h_source}{udp\+\_\+socket\+\_\+listener.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00014}{initialize()}}, and \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00054}{receive()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1udp__socket__listener_ad300629888717a80c15e7ee94f98c5fa}\label{classtraffic__signal__controller__service_1_1udp__socket__listener_ad300629888717a80c15e7ee94f98c5fa}} 
+\index{traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}!socket\_timeout\_@{socket\_timeout\_}}
+\index{socket\_timeout\_@{socket\_timeout\_}!traffic\_signal\_controller\_service::udp\_socket\_listener@{traffic\_signal\_controller\_service::udp\_socket\_listener}}
+\doxysubsubsection{\texorpdfstring{socket\_timeout\_}{socket\_timeout\_}}
+{\footnotesize\ttfamily int traffic\+\_\+signal\+\_\+controller\+\_\+service\+::udp\+\_\+socket\+\_\+listener\+::socket\+\_\+timeout\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+timeout in milliseconds for udp socket to \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} 
+
+
+
+Definition at line \mbox{\hyperlink{udp__socket__listener_8h_source_l00028}{28}} of file \mbox{\hyperlink{udp__socket__listener_8h_source}{udp\+\_\+socket\+\_\+listener.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00014}{initialize()}}, and \mbox{\hyperlink{udp__socket__listener_8cpp_source_l00054}{receive()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tsc\+\_\+client\+\_\+service/include/\mbox{\hyperlink{udp__socket__listener_8h}{udp\+\_\+socket\+\_\+listener.\+h}}\item 
+tsc\+\_\+client\+\_\+service/src/\mbox{\hyperlink{udp__socket__listener_8cpp}{udp\+\_\+socket\+\_\+listener.\+cpp}}\end{DoxyCompactItemize}

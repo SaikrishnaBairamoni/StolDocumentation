@@ -1,0 +1,803 @@
+\hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective}{}\doxysection{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive Class Reference}
+\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective}\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+
+
+Inheritance diagram for zephyr.\+application.\+Zephyr\+App\+Commands\+Directive\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for zephyr.\+application.\+Zephyr\+App\+Commands\+Directive\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_ad2c609964829ace69d2d0408ed4db561}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3e496bb5f1e2ce8400a3595d3e2454e3}{has\+\_\+content}} = False
+\item 
+int \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_aefb6018b471e728e62885bd6935b12ca}{required\+\_\+arguments}} = 0
+\item 
+int \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a37750f9126310291defa546951902bbd}{optional\+\_\+arguments}} = 0
+\item 
+bool \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a0a397c6ff2d3bcadb58d8e98d87d14af}{final\+\_\+argument\+\_\+whitespace}} = False
+\item 
+dictionary \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a1f0e880a3a9854da1d644379eda8f98c}{option\+\_\+spec}}
+\item 
+list \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_acde3bd4e5a5d7411da5a17a095b24725}{TOOLS}} = \mbox{[}\textquotesingle{}cmake\textquotesingle{}, \textquotesingle{}west\textquotesingle{}, \textquotesingle{}all\textquotesingle{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a04a9a0e9b69ac240a3fe7eb86dc40235}{GENERATORS}} = \mbox{[}\textquotesingle{}make\textquotesingle{}, \textquotesingle{}ninja\textquotesingle{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a97325484b7fd21b6aad6b38e161c2d13}{HOST\+\_\+\+OS}} = \mbox{[}\textquotesingle{}unix\textquotesingle{}, \textquotesingle{}win\textquotesingle{}, \textquotesingle{}all\textquotesingle{}\mbox{]}
+\item 
+string \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a6b5a520a57d59c0a195b623cf67bc1d5}{IN\+\_\+\+TREE\+\_\+\+STR}} = \textquotesingle{}\# From the root of the zephyr repository\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a2079f413619d17a370b58ee4ac7fa079}{\+\_\+lit\+\_\+block}} (self, content)
+\item 
+def \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3fbde2fe2d28eb6fac350b8c096d7322}{\+\_\+generate\+\_\+west}} (self, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a54c4caa09db978c709eef4b201abeacb}{\+\_\+cd\+\_\+into}} (self, mkdir, $\ast$$\ast$kwargs)
+\item 
+def \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a80ed59beb7852b5f766d41f573cfc6ce}{\+\_\+generate\+\_\+cmake}} (self, $\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a651f4e560d1ae2186d75281b3a88905d}{\+\_\+mkdir}} (mkdir, build\+\_\+dir, host\+\_\+os, skip\+\_\+config)
+\item 
+def \mbox{\hyperlink{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a0f3a3671dbdd590865168f1ddd2a623c}{\+\_\+cmake\+\_\+args}} ($\ast$$\ast$kwargs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is a Zephyr directive for generating consistent documentation
+of the shell commands needed to manage (build, flash, etc.) an application.
+
+For example, to generate commands to build samples/hello_world for
+qemu_x86 use::
+
+   .. zephyr-app-commands::
+      :zephyr-app: samples/hello_world
+      :board: qemu_x86
+      :goals: build
+
+Directive options:
+
+\:tool:
+  which tool to use. Valid options are currently 'cmake', 'west' and 'all'.
+  The default is 'west'.
+
+\:app:
+  path to the application to build.
+
+\:zephyr-app:
+  path to the application to build, this is an app present in the upstream
+  zephyr repository. Mutually exclusive with \:app:.
+
+\:cd-into:
+  if set, build instructions are given from within the \:app: folder,
+  instead of outside of it.
+
+\:generator:
+  which build system to generate. Valid options are
+  currently 'ninja' and 'make'. The default is 'ninja'. This option
+  is not case sensitive.
+
+\:host-os:
+  which host OS the instructions are for. Valid options are
+  'unix', 'win' and 'all'. The default is 'all'.
+
+\:board:
+  if set, the application build will target the given board.
+
+\:shield:
+  if set, the application build will target the given shield.
+
+\:conf:
+  if set, the application build will use the given configuration
+  file.  If multiple conf files are provided, enclose the
+  space-separated list of files with quotes, e.g., "a.conf b.conf".
+
+\:gen-args:
+  if set, additional arguments to the CMake invocation
+
+\:build-args:
+  if set, additional arguments to the build invocation
+
+\:build-dir:
+  if set, the application build directory will *APPEND* this
+  (relative, Unix-separated) path to the standard build directory. This is
+  mostly useful for distinguishing builds for one application within a
+  single page.
+
+\:goals:
+  a whitespace-separated list of what to do with the app (in
+  'build', 'flash', 'debug', 'debugserver', 'run'). Commands to accomplish
+  these tasks will be generated in the right order.
+
+\:maybe-skip-config:
+  if set, this indicates the reader may have already
+  created a build directory and changed there, and will tweak the text to
+  note that doing so again is not necessary.
+
+\:compact:
+  if set, the generated output is a single code block with no
+  additional comment lines
+
+\:west-args:
+  if set, additional arguments to the west invocation (ignored for CMake)\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00016}{16}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a54c4caa09db978c709eef4b201abeacb}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a54c4caa09db978c709eef4b201abeacb}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!\_cd\_into@{\_cd\_into}}
+\index{\_cd\_into@{\_cd\_into}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{\_cd\_into()}{\_cd\_into()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+cd\+\_\+into (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{mkdir,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00326}{326}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00326     \textcolor{keyword}{def }\_cd\_into(self, mkdir, **kwargs):}
+\DoxyCodeLine{00327         app = kwargs[\textcolor{stringliteral}{'app'}]}
+\DoxyCodeLine{00328         host\_os = kwargs[\textcolor{stringliteral}{'host\_os'}]}
+\DoxyCodeLine{00329         compact = kwargs[\textcolor{stringliteral}{'compact'}]}
+\DoxyCodeLine{00330         build\_dir = kwargs[\textcolor{stringliteral}{'build\_dir'}]}
+\DoxyCodeLine{00331         skip\_config = kwargs[\textcolor{stringliteral}{'skip\_config'}]}
+\DoxyCodeLine{00332         content = []}
+\DoxyCodeLine{00333         os\_comment = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00334         \textcolor{keywordflow}{if} len(host\_os) > 1:}
+\DoxyCodeLine{00335             os\_comment = \textcolor{stringliteral}{'\# On \{\}'}}
+\DoxyCodeLine{00336             num\_slashes = build\_dir.count(\textcolor{stringliteral}{'/'})}
+\DoxyCodeLine{00337             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} app \textcolor{keywordflow}{and} mkdir \textcolor{keywordflow}{and} num\_slashes == 0:}
+\DoxyCodeLine{00338                 \textcolor{comment}{\# When there's no app and a single level deep build dir,}}
+\DoxyCodeLine{00339                 \textcolor{comment}{\# simplify output}}
+\DoxyCodeLine{00340                 content.extend(self.\_mkdir(mkdir, build\_dir, \textcolor{stringliteral}{'all'},}
+\DoxyCodeLine{00341                                skip\_config))}
+\DoxyCodeLine{00342                 \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} compact:}
+\DoxyCodeLine{00343                     content.append(\textcolor{stringliteral}{''})}
+\DoxyCodeLine{00344                 \textcolor{keywordflow}{return} content}
+\DoxyCodeLine{00345         \textcolor{keywordflow}{for} host \textcolor{keywordflow}{in} host\_os:}
+\DoxyCodeLine{00346             \textcolor{keywordflow}{if} host == \textcolor{stringliteral}{"{}unix"{}}:}
+\DoxyCodeLine{00347                 \textcolor{keywordflow}{if} os\_comment:}
+\DoxyCodeLine{00348                     content.append(os\_comment.format(\textcolor{stringliteral}{'Linux/macOS'}))}
+\DoxyCodeLine{00349                 \textcolor{keywordflow}{if} app:}
+\DoxyCodeLine{00350                     content.append(\textcolor{stringliteral}{'cd \{\}'}.format(app))}
+\DoxyCodeLine{00351             \textcolor{keywordflow}{elif} host == \textcolor{stringliteral}{"{}win"{}}:}
+\DoxyCodeLine{00352                 \textcolor{keywordflow}{if} os\_comment:}
+\DoxyCodeLine{00353                     content.append(os\_comment.format(\textcolor{stringliteral}{'Windows'}))}
+\DoxyCodeLine{00354                 \textcolor{keywordflow}{if} app:}
+\DoxyCodeLine{00355                     backslashified = app.replace(\textcolor{stringliteral}{'/'}, \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'})}
+\DoxyCodeLine{00356                     content.append(\textcolor{stringliteral}{'cd \{\}'}.format(backslashified))}
+\DoxyCodeLine{00357             \textcolor{keywordflow}{if} mkdir:}
+\DoxyCodeLine{00358                 content.extend(self.\_mkdir(mkdir, build\_dir, host, skip\_config))}
+\DoxyCodeLine{00359             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} compact:}
+\DoxyCodeLine{00360                 content.append(\textcolor{stringliteral}{''})}
+\DoxyCodeLine{00361         \textcolor{keywordflow}{return} content}
+\DoxyCodeLine{00362 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{application_8py_source_l00300}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+mkdir()}}.
+
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00363}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+generate\+\_\+cmake()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a54c4caa09db978c709eef4b201abeacb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a54c4caa09db978c709eef4b201abeacb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a0f3a3671dbdd590865168f1ddd2a623c}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a0f3a3671dbdd590865168f1ddd2a623c}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!\_cmake\_args@{\_cmake\_args}}
+\index{\_cmake\_args@{\_cmake\_args}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{\_cmake\_args()}{\_cmake\_args()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+cmake\+\_\+args (\begin{DoxyParamCaption}\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00314}{314}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00314     \textcolor{keyword}{def }\_cmake\_args(**kwargs):}
+\DoxyCodeLine{00315         board = kwargs[\textcolor{stringliteral}{'board'}]}
+\DoxyCodeLine{00316         shield = kwargs[\textcolor{stringliteral}{'shield'}]}
+\DoxyCodeLine{00317         conf = kwargs[\textcolor{stringliteral}{'conf'}]}
+\DoxyCodeLine{00318         gen\_args = kwargs[\textcolor{stringliteral}{'gen\_args'}]}
+\DoxyCodeLine{00319         board\_arg = \textcolor{stringliteral}{' -\/DBOARD=\{\}'}.format(board) \textcolor{keywordflow}{if} board \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00320         shield\_arg = \textcolor{stringliteral}{' -\/DSHIELD=\{\}'}.format(shield) \textcolor{keywordflow}{if} shield \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00321         conf\_arg = \textcolor{stringliteral}{' -\/DCONF\_FILE=\{\}'}.format(conf) \textcolor{keywordflow}{if} conf \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00322         gen\_args = \textcolor{stringliteral}{' \{\}'}.format(gen\_args) \textcolor{keywordflow}{if} gen\_args \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00323 }
+\DoxyCodeLine{00324         \textcolor{keywordflow}{return} \textcolor{stringliteral}{'\{\}\{\}\{\}\{\}'}.format(board\_arg, shield\_arg, conf\_arg, gen\_args)}
+\DoxyCodeLine{00325 }
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00363}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+generate\+\_\+cmake()}}, and \mbox{\hyperlink{application_8py_source_l00236}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+generate\+\_\+west()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a0f3a3671dbdd590865168f1ddd2a623c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a80ed59beb7852b5f766d41f573cfc6ce}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a80ed59beb7852b5f766d41f573cfc6ce}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!\_generate\_cmake@{\_generate\_cmake}}
+\index{\_generate\_cmake@{\_generate\_cmake}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{\_generate\_cmake()}{\_generate\_cmake()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+generate\+\_\+cmake (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00363}{363}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00363     \textcolor{keyword}{def }\_generate\_cmake(self, **kwargs):}
+\DoxyCodeLine{00364         generator = kwargs[\textcolor{stringliteral}{'generator'}]}
+\DoxyCodeLine{00365         cd\_into = kwargs[\textcolor{stringliteral}{'cd\_into'}]}
+\DoxyCodeLine{00366         app = kwargs[\textcolor{stringliteral}{'app'}]}
+\DoxyCodeLine{00367         in\_tree = kwargs[\textcolor{stringliteral}{'in\_tree'}]}
+\DoxyCodeLine{00368         build\_dir = kwargs[\textcolor{stringliteral}{'build\_dir'}]}
+\DoxyCodeLine{00369         build\_args = kwargs[\textcolor{stringliteral}{'build\_args'}]}
+\DoxyCodeLine{00370         skip\_config = kwargs[\textcolor{stringliteral}{'skip\_config'}]}
+\DoxyCodeLine{00371         goals = kwargs[\textcolor{stringliteral}{'goals'}]}
+\DoxyCodeLine{00372         compact = kwargs[\textcolor{stringliteral}{'compact'}]}
+\DoxyCodeLine{00373 }
+\DoxyCodeLine{00374         content = []}
+\DoxyCodeLine{00375 }
+\DoxyCodeLine{00376         \textcolor{keywordflow}{if} in\_tree \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} compact:}
+\DoxyCodeLine{00377             content.append(in\_tree)}
+\DoxyCodeLine{00378 }
+\DoxyCodeLine{00379         \textcolor{keywordflow}{if} cd\_into:}
+\DoxyCodeLine{00380             num\_slashes = build\_dir.count(\textcolor{stringliteral}{'/'})}
+\DoxyCodeLine{00381             mkdir = \textcolor{stringliteral}{'mkdir'} \textcolor{keywordflow}{if} num\_slashes == 0 \textcolor{keywordflow}{else} \textcolor{stringliteral}{'mkdir -\/p'}}
+\DoxyCodeLine{00382             content.extend(self.\_cd\_into(mkdir, **kwargs))}
+\DoxyCodeLine{00383             \textcolor{comment}{\# Prepare cmake/ninja/make variables}}
+\DoxyCodeLine{00384             source\_dir = \textcolor{stringliteral}{' '} + \textcolor{stringliteral}{'/'}.join([\textcolor{stringliteral}{'..'} \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(num\_slashes + 1)])}
+\DoxyCodeLine{00385             cmake\_build\_dir = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00386             tool\_build\_dir = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00387         \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00388             source\_dir = \textcolor{stringliteral}{' \{\}'}.format(app) \textcolor{keywordflow}{if} app \textcolor{keywordflow}{else} \textcolor{stringliteral}{' .'}}
+\DoxyCodeLine{00389             cmake\_build\_dir = \textcolor{stringliteral}{' -\/B\{\}'}.format(build\_dir)}
+\DoxyCodeLine{00390             tool\_build\_dir = \textcolor{stringliteral}{' -\/C\{\}'}.format(build\_dir)}
+\DoxyCodeLine{00391 }
+\DoxyCodeLine{00392         \textcolor{comment}{\# Now generate the actual cmake and make/ninja commands}}
+\DoxyCodeLine{00393         gen\_arg = \textcolor{stringliteral}{' -\/GNinja'} \textcolor{keywordflow}{if} generator == \textcolor{stringliteral}{'ninja'} \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00394         build\_args = \textcolor{stringliteral}{' \{\}'}.format(build\_args) \textcolor{keywordflow}{if} build\_args \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00395         cmake\_args = self.\_cmake\_args(**kwargs)}
+\DoxyCodeLine{00396 }
+\DoxyCodeLine{00397         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} compact:}
+\DoxyCodeLine{00398             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} cd\_into \textcolor{keywordflow}{and} skip\_config:}
+\DoxyCodeLine{00399                 content.append(\textcolor{stringliteral}{"{}\# If you already ran cmake with -\/B\{\}, you "{}} \(\backslash\)}
+\DoxyCodeLine{00400                                \textcolor{stringliteral}{"{}can skip this step and run \{\} directly."{}}.}
+\DoxyCodeLine{00401                                format(build\_dir, generator))  \textcolor{comment}{\# noqa: E501}}
+\DoxyCodeLine{00402             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00403                 content.append(\textcolor{stringliteral}{'\# Use cmake to configure a \{\}-\/based build'} \(\backslash\)}
+\DoxyCodeLine{00404                                \textcolor{stringliteral}{'system:'}.format(generator.capitalize()))  \textcolor{comment}{\# noqa: E501}}
+\DoxyCodeLine{00405 }
+\DoxyCodeLine{00406         content.append(\textcolor{stringliteral}{'cmake\{\}\{\}\{\}\{\}'}.format(cmake\_build\_dir, gen\_arg,}
+\DoxyCodeLine{00407                                               cmake\_args, source\_dir))}
+\DoxyCodeLine{00408         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} compact:}
+\DoxyCodeLine{00409             content.extend([\textcolor{stringliteral}{''},}
+\DoxyCodeLine{00410                             \textcolor{stringliteral}{'\# Now run ninja on the generated build system:'}])}
+\DoxyCodeLine{00411 }
+\DoxyCodeLine{00412         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'build'} \textcolor{keywordflow}{in} goals:}
+\DoxyCodeLine{00413             content.append(\textcolor{stringliteral}{'\{\}\{\}\{\}'}.format(generator, tool\_build\_dir,}
+\DoxyCodeLine{00414                                            build\_args))}
+\DoxyCodeLine{00415         \textcolor{keywordflow}{for} goal \textcolor{keywordflow}{in} goals:}
+\DoxyCodeLine{00416             \textcolor{keywordflow}{if} goal == \textcolor{stringliteral}{'build'}:}
+\DoxyCodeLine{00417                 \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00418             content.append(\textcolor{stringliteral}{'\{\}\{\} \{\}'}.format(generator, tool\_build\_dir, goal))}
+\DoxyCodeLine{00419 }
+\DoxyCodeLine{00420         \textcolor{keywordflow}{return} content}
+\DoxyCodeLine{00421 }
+\DoxyCodeLine{00422 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{application_8py_source_l00326}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+cd\+\_\+into()}}, and \mbox{\hyperlink{application_8py_source_l00314}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+cmake\+\_\+args()}}.
+
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00124}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a80ed59beb7852b5f766d41f573cfc6ce_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a80ed59beb7852b5f766d41f573cfc6ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3fbde2fe2d28eb6fac350b8c096d7322}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3fbde2fe2d28eb6fac350b8c096d7322}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!\_generate\_west@{\_generate\_west}}
+\index{\_generate\_west@{\_generate\_west}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{\_generate\_west()}{\_generate\_west()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+generate\+\_\+west (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{$\ast$$\ast$}]{kwargs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00236}{236}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00236     \textcolor{keyword}{def }\_generate\_west(self, **kwargs):}
+\DoxyCodeLine{00237         content = []}
+\DoxyCodeLine{00238         generator = kwargs[\textcolor{stringliteral}{'generator'}]}
+\DoxyCodeLine{00239         board = kwargs[\textcolor{stringliteral}{'board'}]}
+\DoxyCodeLine{00240         app = kwargs[\textcolor{stringliteral}{'app'}]}
+\DoxyCodeLine{00241         in\_tree = kwargs[\textcolor{stringliteral}{'in\_tree'}]}
+\DoxyCodeLine{00242         goals = kwargs[\textcolor{stringliteral}{'goals'}]}
+\DoxyCodeLine{00243         cd\_into = kwargs[\textcolor{stringliteral}{'cd\_into'}]}
+\DoxyCodeLine{00244         build\_dir = kwargs[\textcolor{stringliteral}{'build\_dir'}]}
+\DoxyCodeLine{00245         compact = kwargs[\textcolor{stringliteral}{'compact'}]}
+\DoxyCodeLine{00246         west\_args = kwargs[\textcolor{stringliteral}{'west\_args'}]}
+\DoxyCodeLine{00247         kwargs[\textcolor{stringliteral}{'board'}] = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00248         \textcolor{comment}{\# west always defaults to ninja}}
+\DoxyCodeLine{00249         gen\_arg = \textcolor{stringliteral}{' -\/G\(\backslash\)'Unix Makefiles\(\backslash\)''} \textcolor{keywordflow}{if} generator == \textcolor{stringliteral}{'make'} \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00250         cmake\_args = gen\_arg + self.\_cmake\_args(**kwargs)}
+\DoxyCodeLine{00251         cmake\_args = \textcolor{stringliteral}{' -\/-\/\{\}'}.format(cmake\_args) \textcolor{keywordflow}{if} cmake\_args != \textcolor{stringliteral}{''} \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00252         west\_args = \textcolor{stringliteral}{' \{\}'}.format(west\_args) \textcolor{keywordflow}{if} west\_args \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00253         \textcolor{comment}{\# ignore zephyr\_app since west needs to run within}}
+\DoxyCodeLine{00254         \textcolor{comment}{\# the installation. Instead rely on relative path.}}
+\DoxyCodeLine{00255         src = \textcolor{stringliteral}{' \{\}'}.format(app) \textcolor{keywordflow}{if} app \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} cd\_into \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00256         dst = \textcolor{stringliteral}{' -\/d \{\}'}.format(build\_dir) \textcolor{keywordflow}{if} build\_dir != \textcolor{stringliteral}{'build'} \textcolor{keywordflow}{else} \textcolor{stringliteral}{''}}
+\DoxyCodeLine{00257 }
+\DoxyCodeLine{00258         \textcolor{keywordflow}{if} in\_tree \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} compact:}
+\DoxyCodeLine{00259             content.append(in\_tree)}
+\DoxyCodeLine{00260 }
+\DoxyCodeLine{00261         \textcolor{keywordflow}{if} cd\_into \textcolor{keywordflow}{and} app:}
+\DoxyCodeLine{00262             content.append(\textcolor{stringliteral}{'cd \{\}'}.format(app))}
+\DoxyCodeLine{00263 }
+\DoxyCodeLine{00264         \textcolor{comment}{\# We always have to run west build.}}
+\DoxyCodeLine{00265         \textcolor{comment}{\#}}
+\DoxyCodeLine{00266         \textcolor{comment}{\# FIXME: doing this unconditionally essentially ignores the}}
+\DoxyCodeLine{00267         \textcolor{comment}{\# maybe-\/skip-\/config option if set.}}
+\DoxyCodeLine{00268         \textcolor{comment}{\#}}
+\DoxyCodeLine{00269         \textcolor{comment}{\# This whole script and its users from within the}}
+\DoxyCodeLine{00270         \textcolor{comment}{\# documentation needs to be overhauled now that we're}}
+\DoxyCodeLine{00271         \textcolor{comment}{\# defaulting to west.}}
+\DoxyCodeLine{00272         \textcolor{comment}{\#}}
+\DoxyCodeLine{00273         \textcolor{comment}{\# For now, this keeps the resulting commands working.}}
+\DoxyCodeLine{00274         content.append(\textcolor{stringliteral}{'west build -\/b \{\}\{\}\{\}\{\}\{\}'}.}
+\DoxyCodeLine{00275                        format(board, west\_args, dst, src, cmake\_args))}
+\DoxyCodeLine{00276 }
+\DoxyCodeLine{00277         \textcolor{comment}{\# If we're signing, we want to do that next, so that flashing}}
+\DoxyCodeLine{00278         \textcolor{comment}{\# etc. commands can use the signed file which must be created}}
+\DoxyCodeLine{00279         \textcolor{comment}{\# in this step.}}
+\DoxyCodeLine{00280         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'sign'} \textcolor{keywordflow}{in} goals:}
+\DoxyCodeLine{00281             content.append(\textcolor{stringliteral}{'west sign\{\}'}.format(dst))}
+\DoxyCodeLine{00282 }
+\DoxyCodeLine{00283         \textcolor{keywordflow}{for} goal \textcolor{keywordflow}{in} goals:}
+\DoxyCodeLine{00284             \textcolor{keywordflow}{if} goal \textcolor{keywordflow}{in} \{\textcolor{stringliteral}{'build'}, \textcolor{stringliteral}{'sign'}\}:}
+\DoxyCodeLine{00285                 \textcolor{keywordflow}{continue}}
+\DoxyCodeLine{00286             \textcolor{keywordflow}{elif} goal == \textcolor{stringliteral}{'flash'}:}
+\DoxyCodeLine{00287                 content.append(\textcolor{stringliteral}{'west flash\{\}'}.format(dst))}
+\DoxyCodeLine{00288             \textcolor{keywordflow}{elif} goal == \textcolor{stringliteral}{'debug'}:}
+\DoxyCodeLine{00289                 content.append(\textcolor{stringliteral}{'west debug\{\}'}.format(dst))}
+\DoxyCodeLine{00290             \textcolor{keywordflow}{elif} goal == \textcolor{stringliteral}{'debugserver'}:}
+\DoxyCodeLine{00291                 content.append(\textcolor{stringliteral}{'west debugserver\{\}'}.format(dst))}
+\DoxyCodeLine{00292             \textcolor{keywordflow}{elif} goal == \textcolor{stringliteral}{'attach'}:}
+\DoxyCodeLine{00293                 content.append(\textcolor{stringliteral}{'west attach\{\}'}.format(dst))}
+\DoxyCodeLine{00294             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00295                 content.append(\textcolor{stringliteral}{'west build -\/t \{\}\{\}'}.format(goal, dst))}
+\DoxyCodeLine{00296 }
+\DoxyCodeLine{00297         \textcolor{keywordflow}{return} content}
+\DoxyCodeLine{00298 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{application_8py_source_l00314}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+cmake\+\_\+args()}}.
+
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00124}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3fbde2fe2d28eb6fac350b8c096d7322_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3fbde2fe2d28eb6fac350b8c096d7322_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a2079f413619d17a370b58ee4ac7fa079}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a2079f413619d17a370b58ee4ac7fa079}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!\_lit\_block@{\_lit\_block}}
+\index{\_lit\_block@{\_lit\_block}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{\_lit\_block()}{\_lit\_block()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+lit\+\_\+block (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00226}{226}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00226     \textcolor{keyword}{def }\_lit\_block(self, content):}
+\DoxyCodeLine{00227         content = \textcolor{stringliteral}{'\(\backslash\)n'}.join(content)}
+\DoxyCodeLine{00228 }
+\DoxyCodeLine{00229         \textcolor{comment}{\# Create the nodes.}}
+\DoxyCodeLine{00230         literal = nodes.literal\_block(content, content)}
+\DoxyCodeLine{00231         self.add\_name(literal)}
+\DoxyCodeLine{00232         literal[\textcolor{stringliteral}{'language'}] = \textcolor{stringliteral}{'console'}}
+\DoxyCodeLine{00233         \textcolor{keywordflow}{return} literal}
+\DoxyCodeLine{00234 }
+\DoxyCodeLine{00235 }
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00124}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a2079f413619d17a370b58ee4ac7fa079_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a651f4e560d1ae2186d75281b3a88905d}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a651f4e560d1ae2186d75281b3a88905d}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!\_mkdir@{\_mkdir}}
+\index{\_mkdir@{\_mkdir}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{\_mkdir()}{\_mkdir()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+mkdir (\begin{DoxyParamCaption}\item[{}]{mkdir,  }\item[{}]{build\+\_\+dir,  }\item[{}]{host\+\_\+os,  }\item[{}]{skip\+\_\+config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00300}{300}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00300     \textcolor{keyword}{def }\_mkdir(mkdir, build\_dir, host\_os, skip\_config):}
+\DoxyCodeLine{00301         content = []}
+\DoxyCodeLine{00302         \textcolor{keywordflow}{if} skip\_config:}
+\DoxyCodeLine{00303             content.append(\textcolor{stringliteral}{"{}\# If you already made a build directory (\{\}) and ran cmake, just 'cd \{\}' instead."{}}.format(build\_dir, build\_dir))  \textcolor{comment}{\# noqa: E501}}
+\DoxyCodeLine{00304         \textcolor{keywordflow}{if} host\_os == \textcolor{stringliteral}{'all'}:}
+\DoxyCodeLine{00305             content.append(\textcolor{stringliteral}{'mkdir \{\} \&\& cd \{\}'}.format(build\_dir, build\_dir))}
+\DoxyCodeLine{00306         \textcolor{keywordflow}{if} host\_os == \textcolor{stringliteral}{"{}unix"{}}:}
+\DoxyCodeLine{00307             content.append(\textcolor{stringliteral}{'\{\} \{\} \&\& cd \{\}'}.format(mkdir, build\_dir, build\_dir))}
+\DoxyCodeLine{00308         \textcolor{keywordflow}{elif} host\_os == \textcolor{stringliteral}{"{}win"{}}:}
+\DoxyCodeLine{00309             build\_dir = build\_dir.replace(\textcolor{stringliteral}{'/'}, \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'})}
+\DoxyCodeLine{00310             content.append(\textcolor{stringliteral}{'mkdir \{\} \& cd \{\}'}.format(build\_dir, build\_dir))}
+\DoxyCodeLine{00311         \textcolor{keywordflow}{return} content}
+\DoxyCodeLine{00312 }
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00326}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+cd\+\_\+into()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a651f4e560d1ae2186d75281b3a88905d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_ad2c609964829ace69d2d0408ed4db561}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_ad2c609964829ace69d2d0408ed4db561}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!run@{run}}
+\index{run@{run}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00124}{124}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124     \textcolor{keyword}{def }run(self):}
+\DoxyCodeLine{00125         \textcolor{comment}{\# Re-\/run on the current document if this directive's source changes.}}
+\DoxyCodeLine{00126         self.state.document.settings.env.note\_dependency(\_\_file\_\_)}
+\DoxyCodeLine{00127 }
+\DoxyCodeLine{00128         \textcolor{comment}{\# Parse directive options.  Don't use os.path.sep or os.path.join here!}}
+\DoxyCodeLine{00129         \textcolor{comment}{\# That would break if building the docs on Windows.}}
+\DoxyCodeLine{00130         tool = self.options.get(\textcolor{stringliteral}{'tool'}, \textcolor{stringliteral}{'west'}).lower()}
+\DoxyCodeLine{00131         app = self.options.get(\textcolor{stringliteral}{'app'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00132         zephyr\_app = self.options.get(\textcolor{stringliteral}{'zephyr-\/app'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00133         cd\_into = \textcolor{stringliteral}{'cd-\/into'} \textcolor{keywordflow}{in} self.options}
+\DoxyCodeLine{00134         generator = self.options.get(\textcolor{stringliteral}{'generator'}, \textcolor{stringliteral}{'ninja'}).lower()}
+\DoxyCodeLine{00135         host\_os = self.options.get(\textcolor{stringliteral}{'host-\/os'}, \textcolor{stringliteral}{'all'}).lower()}
+\DoxyCodeLine{00136         board = self.options.get(\textcolor{stringliteral}{'board'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00137         shield = self.options.get(\textcolor{stringliteral}{'shield'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00138         conf = self.options.get(\textcolor{stringliteral}{'conf'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00139         gen\_args = self.options.get(\textcolor{stringliteral}{'gen-\/args'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00140         build\_args = self.options.get(\textcolor{stringliteral}{'build-\/args'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00141         build\_dir\_append = self.options.get(\textcolor{stringliteral}{'build-\/dir'}, \textcolor{stringliteral}{''}).strip(\textcolor{stringliteral}{'/'})}
+\DoxyCodeLine{00142         goals = self.options.get(\textcolor{stringliteral}{'goals'}).split()}
+\DoxyCodeLine{00143         skip\_config = \textcolor{stringliteral}{'maybe-\/skip-\/config'} \textcolor{keywordflow}{in} self.options}
+\DoxyCodeLine{00144         compact = \textcolor{stringliteral}{'compact'} \textcolor{keywordflow}{in} self.options}
+\DoxyCodeLine{00145         west\_args = self.options.get(\textcolor{stringliteral}{'west-\/args'}, \textcolor{keywordtype}{None})}
+\DoxyCodeLine{00146 }
+\DoxyCodeLine{00147         \textcolor{keywordflow}{if} tool \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} self.TOOLS:}
+\DoxyCodeLine{00148             \textcolor{keywordflow}{raise} self.error(\textcolor{stringliteral}{'Unknown tool \{\}; choose from: \{\}'}.format(}
+\DoxyCodeLine{00149                 tool, self.TOOLS))}
+\DoxyCodeLine{00150 }
+\DoxyCodeLine{00151         \textcolor{keywordflow}{if} app \textcolor{keywordflow}{and} zephyr\_app:}
+\DoxyCodeLine{00152             \textcolor{keywordflow}{raise} self.error(\textcolor{stringliteral}{'Both app and zephyr-\/app options were given.'})}
+\DoxyCodeLine{00153 }
+\DoxyCodeLine{00154         \textcolor{keywordflow}{if} generator \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} self.GENERATORS:}
+\DoxyCodeLine{00155             \textcolor{keywordflow}{raise} self.error(\textcolor{stringliteral}{'Unknown generator \{\}; choose from: \{\}'}.format(}
+\DoxyCodeLine{00156                 generator, self.GENERATORS))}
+\DoxyCodeLine{00157 }
+\DoxyCodeLine{00158         \textcolor{keywordflow}{if} host\_os \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} self.HOST\_OS:}
+\DoxyCodeLine{00159             \textcolor{keywordflow}{raise} self.error(\textcolor{stringliteral}{'Unknown host-\/os \{\}; choose from: \{\}'}.format(}
+\DoxyCodeLine{00160                 host\_os, self.HOST\_OS))}
+\DoxyCodeLine{00161 }
+\DoxyCodeLine{00162         \textcolor{keywordflow}{if} compact \textcolor{keywordflow}{and} skip\_config:}
+\DoxyCodeLine{00163             \textcolor{keywordflow}{raise} self.error(\textcolor{stringliteral}{'Both compact and maybe-\/skip-\/config options were given.'})}
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165         app = app \textcolor{keywordflow}{or} zephyr\_app}
+\DoxyCodeLine{00166         in\_tree = self.IN\_TREE\_STR \textcolor{keywordflow}{if} zephyr\_app \textcolor{keywordflow}{else} \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00167         \textcolor{comment}{\# Allow build directories which are nested.}}
+\DoxyCodeLine{00168         build\_dir = (\textcolor{stringliteral}{'build'} + \textcolor{stringliteral}{'/'} + build\_dir\_append).rstrip(\textcolor{stringliteral}{'/'})}
+\DoxyCodeLine{00169 }
+\DoxyCodeLine{00170         \textcolor{comment}{\# Create host\_os array}}
+\DoxyCodeLine{00171         host\_os = [host\_os] \textcolor{keywordflow}{if} host\_os != \textcolor{stringliteral}{"{}all"{}} \textcolor{keywordflow}{else} [v \textcolor{keywordflow}{for} v \textcolor{keywordflow}{in} self.HOST\_OS}
+\DoxyCodeLine{00172                                                         \textcolor{keywordflow}{if} v != \textcolor{stringliteral}{'all'}]}
+\DoxyCodeLine{00173         \textcolor{comment}{\# Create tools array}}
+\DoxyCodeLine{00174         tools = [tool] \textcolor{keywordflow}{if} tool != \textcolor{stringliteral}{"{}all"{}} \textcolor{keywordflow}{else} [v \textcolor{keywordflow}{for} v \textcolor{keywordflow}{in} self.TOOLS}
+\DoxyCodeLine{00175                                                 \textcolor{keywordflow}{if} v != \textcolor{stringliteral}{'all'}]}
+\DoxyCodeLine{00176         \textcolor{comment}{\# Build the command content as a list, then convert to string.}}
+\DoxyCodeLine{00177         content = []}
+\DoxyCodeLine{00178         tool\_comment = \textcolor{keywordtype}{None}}
+\DoxyCodeLine{00179         \textcolor{keywordflow}{if} len(tools) > 1:}
+\DoxyCodeLine{00180             tool\_comment = \textcolor{stringliteral}{'Using \{\}:'}}
+\DoxyCodeLine{00181 }
+\DoxyCodeLine{00182         run\_config = \{}
+\DoxyCodeLine{00183             \textcolor{stringliteral}{'host\_os'}: host\_os,}
+\DoxyCodeLine{00184             \textcolor{stringliteral}{'app'}: app,}
+\DoxyCodeLine{00185             \textcolor{stringliteral}{'in\_tree'}: in\_tree,}
+\DoxyCodeLine{00186             \textcolor{stringliteral}{'cd\_into'}: cd\_into,}
+\DoxyCodeLine{00187             \textcolor{stringliteral}{'board'}: board,}
+\DoxyCodeLine{00188             \textcolor{stringliteral}{'shield'}: shield,}
+\DoxyCodeLine{00189             \textcolor{stringliteral}{'conf'}: conf,}
+\DoxyCodeLine{00190             \textcolor{stringliteral}{'gen\_args'}: gen\_args,}
+\DoxyCodeLine{00191             \textcolor{stringliteral}{'build\_args'}: build\_args,}
+\DoxyCodeLine{00192             \textcolor{stringliteral}{'build\_dir'}: build\_dir,}
+\DoxyCodeLine{00193             \textcolor{stringliteral}{'goals'}: goals,}
+\DoxyCodeLine{00194             \textcolor{stringliteral}{'compact'}: compact,}
+\DoxyCodeLine{00195             \textcolor{stringliteral}{'skip\_config'}: skip\_config,}
+\DoxyCodeLine{00196             \textcolor{stringliteral}{'generator'}: generator,}
+\DoxyCodeLine{00197             \textcolor{stringliteral}{'west\_args'}: west\_args}
+\DoxyCodeLine{00198             \}}
+\DoxyCodeLine{00199 }
+\DoxyCodeLine{00200         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'west'} \textcolor{keywordflow}{in} tools:}
+\DoxyCodeLine{00201             w = self.\_generate\_west(**run\_config)}
+\DoxyCodeLine{00202             \textcolor{keywordflow}{if} tool\_comment:}
+\DoxyCodeLine{00203                 paragraph = nodes.paragraph()}
+\DoxyCodeLine{00204                 paragraph += nodes.Text(tool\_comment.format(\textcolor{stringliteral}{'west'}))}
+\DoxyCodeLine{00205                 content.append(paragraph)}
+\DoxyCodeLine{00206                 content.append(self.\_lit\_block(w))}
+\DoxyCodeLine{00207             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00208                 content.extend(w)}
+\DoxyCodeLine{00209 }
+\DoxyCodeLine{00210         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'cmake'} \textcolor{keywordflow}{in} tools:}
+\DoxyCodeLine{00211             c = self.\_generate\_cmake(**run\_config)}
+\DoxyCodeLine{00212             \textcolor{keywordflow}{if} tool\_comment:}
+\DoxyCodeLine{00213                 paragraph = nodes.paragraph()}
+\DoxyCodeLine{00214                 paragraph += nodes.Text(tool\_comment.format(}
+\DoxyCodeLine{00215                     \textcolor{stringliteral}{'CMake and \{\}'}.format(generator)))}
+\DoxyCodeLine{00216                 content.append(paragraph)}
+\DoxyCodeLine{00217                 content.append(self.\_lit\_block(c))}
+\DoxyCodeLine{00218             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00219                 content.extend(c)}
+\DoxyCodeLine{00220 }
+\DoxyCodeLine{00221         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} tool\_comment:}
+\DoxyCodeLine{00222             content = [self.\_lit\_block(content)]}
+\DoxyCodeLine{00223 }
+\DoxyCodeLine{00224         \textcolor{keywordflow}{return} content}
+\DoxyCodeLine{00225 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{application_8py_source_l00363}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+generate\+\_\+cmake()}}, \mbox{\hyperlink{application_8py_source_l00236}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+generate\+\_\+west()}}, \mbox{\hyperlink{application_8py_source_l00226}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+\_\+lit\+\_\+block()}}, \mbox{\hyperlink{application_8py_source_l00120}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+GENERATORS}}, \mbox{\hyperlink{application_8py_source_l00121}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+HOST\+\_\+\+OS}}, \mbox{\hyperlink{application_8py_source_l00122}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+IN\+\_\+\+TREE\+\_\+\+STR}}, \mbox{\hyperlink{all__stop__intersection__schedule_8h_source_l00060}{streets\+\_\+vehicle\+\_\+scheduler\+::all\+\_\+stop\+\_\+vehicle\+\_\+schedule.\+state}}, \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00044}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule.\+state}}, and \mbox{\hyperlink{application_8py_source_l00119}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+TOOLS}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_ad2c609964829ace69d2d0408ed4db561_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a0a397c6ff2d3bcadb58d8e98d87d14af}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a0a397c6ff2d3bcadb58d8e98d87d14af}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!final\_argument\_whitespace@{final\_argument\_whitespace}}
+\index{final\_argument\_whitespace@{final\_argument\_whitespace}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{final\_argument\_whitespace}{final\_argument\_whitespace}}
+{\footnotesize\ttfamily bool zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+final\+\_\+argument\+\_\+whitespace = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00099}{99}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a04a9a0e9b69ac240a3fe7eb86dc40235}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a04a9a0e9b69ac240a3fe7eb86dc40235}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!GENERATORS@{GENERATORS}}
+\index{GENERATORS@{GENERATORS}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{GENERATORS}{GENERATORS}}
+{\footnotesize\ttfamily list zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+GENERATORS = \mbox{[}\textquotesingle{}make\textquotesingle{}, \textquotesingle{}ninja\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00120}{120}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00124}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run()}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3e496bb5f1e2ce8400a3595d3e2454e3}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a3e496bb5f1e2ce8400a3595d3e2454e3}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!has\_content@{has\_content}}
+\index{has\_content@{has\_content}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{has\_content}{has\_content}}
+{\footnotesize\ttfamily bool zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+has\+\_\+content = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00096}{96}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a97325484b7fd21b6aad6b38e161c2d13}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a97325484b7fd21b6aad6b38e161c2d13}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!HOST\_OS@{HOST\_OS}}
+\index{HOST\_OS@{HOST\_OS}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{HOST\_OS}{HOST\_OS}}
+{\footnotesize\ttfamily list zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+HOST\+\_\+\+OS = \mbox{[}\textquotesingle{}unix\textquotesingle{}, \textquotesingle{}win\textquotesingle{}, \textquotesingle{}all\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00121}{121}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00124}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run()}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a6b5a520a57d59c0a195b623cf67bc1d5}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a6b5a520a57d59c0a195b623cf67bc1d5}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!IN\_TREE\_STR@{IN\_TREE\_STR}}
+\index{IN\_TREE\_STR@{IN\_TREE\_STR}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{IN\_TREE\_STR}{IN\_TREE\_STR}}
+{\footnotesize\ttfamily string zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+IN\+\_\+\+TREE\+\_\+\+STR = \textquotesingle{}\# From the root of the zephyr repository\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00122}{122}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00124}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run()}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a1f0e880a3a9854da1d644379eda8f98c}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a1f0e880a3a9854da1d644379eda8f98c}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!option\_spec@{option\_spec}}
+\index{option\_spec@{option\_spec}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{option\_spec}{option\_spec}}
+{\footnotesize\ttfamily dictionary zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+option\+\_\+spec\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=  \{}
+\DoxyCodeLine{        \textcolor{stringliteral}{'tool'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'app'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'zephyr-\/app'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'cd-\/into'}: directives.flag,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'generator'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'host-\/os'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'board'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'shield'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'conf'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'gen-\/args'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'build-\/args'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'build-\/dir'}: directives.unchanged,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'goals'}: directives.unchanged\_required,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'maybe-\/skip-\/config'}: directives.flag,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'compact'}: directives.flag,}
+\DoxyCodeLine{        \textcolor{stringliteral}{'west-\/args'}: directives.unchanged,}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00100}{100}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a37750f9126310291defa546951902bbd}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_a37750f9126310291defa546951902bbd}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!optional\_arguments@{optional\_arguments}}
+\index{optional\_arguments@{optional\_arguments}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{optional\_arguments}{optional\_arguments}}
+{\footnotesize\ttfamily int zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+optional\+\_\+arguments = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00098}{98}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_aefb6018b471e728e62885bd6935b12ca}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_aefb6018b471e728e62885bd6935b12ca}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!required\_arguments@{required\_arguments}}
+\index{required\_arguments@{required\_arguments}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{required\_arguments}{required\_arguments}}
+{\footnotesize\ttfamily int zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+required\+\_\+arguments = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00097}{97}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+\mbox{\Hypertarget{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_acde3bd4e5a5d7411da5a17a095b24725}\label{classzephyr_1_1application_1_1ZephyrAppCommandsDirective_acde3bd4e5a5d7411da5a17a095b24725}} 
+\index{zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}!TOOLS@{TOOLS}}
+\index{TOOLS@{TOOLS}!zephyr.application.ZephyrAppCommandsDirective@{zephyr.application.ZephyrAppCommandsDirective}}
+\doxysubsubsection{\texorpdfstring{TOOLS}{TOOLS}}
+{\footnotesize\ttfamily list zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+TOOLS = \mbox{[}\textquotesingle{}cmake\textquotesingle{}, \textquotesingle{}west\textquotesingle{}, \textquotesingle{}all\textquotesingle{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{application_8py_source_l00119}{119}} of file \mbox{\hyperlink{application_8py_source}{application.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{application_8py_source_l00124}{zephyr.\+application.\+Zephyr\+App\+Commands\+Directive.\+run()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doc/\+\_\+extensions/zephyr/\mbox{\hyperlink{application_8py}{application.\+py}}\end{DoxyCompactItemize}

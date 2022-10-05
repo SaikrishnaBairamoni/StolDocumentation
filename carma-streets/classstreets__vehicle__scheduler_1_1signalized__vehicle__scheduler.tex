@@ -1,0 +1,1370 @@
+\hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler}{}\doxysection{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler Class Reference}
+\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler}\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+
+
+{\ttfamily \#include $<$signalized\+\_\+vehicle\+\_\+scheduler.\+h$>$}
+
+
+
+Inheritance diagram for streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ad5549c21cf0c7d99ad6ed41192f319dc}{signalized\+\_\+vehicle\+\_\+scheduler}} ()=default
+\begin{DoxyCompactList}\small\item\em Construct a new signalized vehicle scheduler object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a253b363db5dde03d2d3ad5565d900260}{$\sim$signalized\+\_\+vehicle\+\_\+scheduler}} () override=default
+\begin{DoxyCompactList}\small\item\em Destroy the signalized vehicle scheduler object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a2572fdbb86e141df40174d618fe2a3d0}{schedule\+\_\+vehicles}} (std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} $>$ \&vehicles, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} $>$ \&schedule) override
+\begin{DoxyCompactList}\small\item\em Method to schedule vehicles. Given and empty \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} shared pointer and a map of vehicles and vehicle ids. This method will populate the intersection schedule with a schedule for all vehicles in the vehicle map based on UC 3 scheduling logic to estimate vehicles\textquotesingle{} entering times to the intersection box based on the modified spat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a2532494d22760bd75165d7b2c25bc354}{set\+\_\+initial\+\_\+green\+\_\+buffer}} (const uint64\+\_\+t buffer)
+\begin{DoxyCompactList}\small\item\em Set the initial green buffer (ms). This value is used to account for the time it takes a vehicle before entering the intersection box at a green phase. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a0c1c065ffbe9ecd62e2a985815aa8170}{get\+\_\+initial\+\_\+green\+\_\+buffer}} () const
+\begin{DoxyCompactList}\small\item\em Get the initial green buffer (ms). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9f16f001c3768c180d62ea66a8770151}{set\+\_\+final\+\_\+green\+\_\+buffer}} (const uint64\+\_\+t buffer)
+\begin{DoxyCompactList}\small\item\em Set the final green buffer (ms). This value is used to account for safety. The assumption is that no vehicle shall enter the intersection box after the end of a green phase minus the final green buffer. entering the intersection box at a green phase. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_afbeb97e551e87ad6340c620b51f28fe1}{get\+\_\+final\+\_\+green\+\_\+buffer}} () const
+\begin{DoxyCompactList}\small\item\em Get the final green buffer (ms). \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}} $>$ \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa4707ffc16fca19f724911b9f0c0e581}{get\+\_\+spat}} () const
+\begin{DoxyCompactList}\small\item\em Get the spat object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a31439c5e2c152727be5df25e109ba988}{set\+\_\+spat}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}} $>$ spat\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Set the spat object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4ff15023fb9c14d1765ebe78d3d3a944}{schedule\+\_\+dvs}} (const std\+::list$<$ \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} $>$ \&dvs, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}} $>$ \&schedule) const
+\begin{DoxyCompactList}\small\item\em Estimate the intersection departure times (dt\textquotesingle{}s) for all currently Departing Vehicle (DVs) based on kinematic vehicle information and intersection geometry. Method assumes empty \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} is passed in. Method will add vehicle\+\_\+schedule(s) for each DV in the vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ac41bc42db46cbbf7a037486fa46dd7e0}{schedule\+\_\+evs}} (std\+::list$<$ \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} $>$ \&evs, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}} $>$ \&schedule) const
+\begin{DoxyCompactList}\small\item\em Schedule all Entering Vehicles (EVs). Method first organizes all EVs into lists based on their entry lane. These list are ordered in ascending order with the vehicle closest to the intersection in a given lane being the first vehicle in that entry lanes vehicle list. Then, for each entry lane, an entering time (ET) for each EV in the entry lane is calculated sequentially starting from the first vehicle until in the list. ET is estimated based on the EV\textquotesingle{}s earliest entering time (EET), its preceding vehicle\textquotesingle{}s estimated ET, and the modifed spat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4d00a1ab964b44569653d414280a3419}{estimate\+\_\+et}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__vehicle__schedule}{signalized\+\_\+vehicle\+\_\+schedule}} $>$ \&preceding\+\_\+veh, \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__vehicle__schedule}{signalized\+\_\+vehicle\+\_\+schedule}} \&sched, const \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::movement\+\_\+state}} \&move\+\_\+state, const uint64\+\_\+t schedule\+\_\+timestamp) const
+\begin{DoxyCompactList}\small\item\em Estimate an entering time (ET) for a given Entering Vehicle (EV). ET is estimated based on the EV\textquotesingle{}s earliest entering time (EET), its preceding vehicle\textquotesingle{}s estimated ET, and the modifed spat. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a616f990b94f85cbe7c8ac5ecc215d41c}{calculate\+\_\+earliest\+\_\+entering\+\_\+time}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh) const
+\begin{DoxyCompactList}\small\item\em Method to use vehicle kinematic information to estimate earliest possible entering time (EET) for an entering vehicle (EV). Does not consider any other vehicles. Limiting factors are the vehicles current kinematic information, lane speed limits and vehicle acceleration and deceleration limits. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a925165d32ec5e00e9e2992df9337010d}{calculate\+\_\+distance\+\_\+accel\+\_\+and\+\_\+decel}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh, const double max\+\_\+speed, const double departure\+\_\+speed) const
+\begin{DoxyCompactList}\small\item\em Calculate the distance required to speed up to lane speed limit with maximum acceleration and then decelerate to departure speed with maximum deceleration. This is used to calculate the earliest entering time (EET) for the vehicle. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a98775d8dc582750131d1a7daff140397}{calculate\+\_\+distance\+\_\+accel\+\_\+or\+\_\+decel}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh, const double departure\+\_\+speed) const
+\begin{DoxyCompactList}\small\item\em Calculate the distance required to speed up (slow down) to departure speed with maximum acceleration (maximum deceleration). If the departure speed is greater than the vehicle\textquotesingle{}s current speed, the vehicle has to speed up with maximum acceleration. Otherwise, the vehicle has to slow down with maximum deceleration. This is used to calculate the earliest entering time (EET) for the vehicle. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a8d4f24941809d897f4f2bd27d16a41e0}{calculate\+\_\+v\+\_\+hat}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh, const double max\+\_\+speed, const double departure\+\_\+speed, const double delta\+\_\+x, const double delta\+\_\+x\+\_\+prime, const double delta\+\_\+x\+\_\+zegond) const
+\begin{DoxyCompactList}\small\item\em Method to calculate v\+\_\+hat. This is the joint speed between the acceleration and deceleration periods of a vehicle trajectory that is calculated to estimate the vehicle\textquotesingle{}s earliest entering time (EET). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9c75b9f5697f17b55e8ee1749370ce85}{calculate\+\_\+acceleration\+\_\+time}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh, const double v\+\_\+hat, const double departure\+\_\+speed, const double delta\+\_\+x, const double delta\+\_\+x\+\_\+zegond) const
+\begin{DoxyCompactList}\small\item\em Method to calculate time interval necessary for accelerating to speed v\+\_\+hat for a given vehicle. Will return 0 if there is no acceleration period. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a5b376d76daf797d450e98eee7773ba4a}{calculate\+\_\+deceleration\+\_\+time}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh, const double v\+\_\+hat, const double departure\+\_\+speed, const double delta\+\_\+x, const double delta\+\_\+x\+\_\+zegond) const
+\begin{DoxyCompactList}\small\item\em Method to calculate time interval necessary for deceleration from v\+\_\+hat to departure speed. Will return 0 if there is no deceleration period. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af28d893b32779b4c75ab82a38f640169}{calculate\+\_\+cruising\+\_\+time}} (const double v\+\_\+hat, const double delta\+\_\+x, const double delta\+\_\+x\+\_\+prime) const
+\begin{DoxyCompactList}\small\item\em Method to calculate time interval necessary for cruising at a constant speed v\+\_\+hat (speed limit) greater than current vehicle speed. Will return 0 if there is no cruising period. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a6b1ad1b03c5a472d08448ddaaae63369}{calculate\+\_\+min\+\_\+headway}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh, const double speed) const
+\begin{DoxyCompactList}\small\item\em Calculate the minimum safety time headway required by the vehicle at a given speed. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a1cce3f6e4da6ae1804dfd6a49305baf2}{estimate\+\_\+clearance\+\_\+time}} (const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&veh) const
+\begin{DoxyCompactList}\small\item\em Estimate clearance time of a vehicle given it\textquotesingle{}s current speed. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::movement\+\_\+state}} \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed159065f9086c0c9e8b7c7476f3e7aa}{find\+\_\+movement\+\_\+state\+\_\+for\+\_\+lane}} (const \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{Open\+API\+::\+OAILanelet\+\_\+info}} \&entry\+\_\+lane\+\_\+info) const
+\begin{DoxyCompactList}\small\item\em find the movement state info from the modified spat for a given entry lane. ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}} $>$ \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}{spat\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em A shared pointer to the modified\+\_\+spat. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed5f596d0160b7fc2941f8f003293f50}{initial\+\_\+green\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em The configurable time interval at the beginning of a green phase in milliseconds that is considered for estimating vehicles\textquotesingle{} entering times. The earliest possible entering time during a phase is set to the beginning of the green phase plus the initial\+\_\+green\+\_\+buffer. \end{DoxyCompactList}\item 
+uint64\+\_\+t \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af23ea3f8079aedda1f3e36203d0bc0c9}{final\+\_\+green\+\_\+buffer}}
+\begin{DoxyCompactList}\small\item\em The configurable time interval at the end of a green phase in milliseconds that is considered for estimating vehicles\textquotesingle{} entering times. The latest possible entering time during a phase is set to the end of the green phase minus the final\+\_\+green\+\_\+buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00017}{17}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ad5549c21cf0c7d99ad6ed41192f319dc}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ad5549c21cf0c7d99ad6ed41192f319dc}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!signalized\_vehicle\_scheduler@{signalized\_vehicle\_scheduler}}
+\index{signalized\_vehicle\_scheduler@{signalized\_vehicle\_scheduler}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{signalized\_vehicle\_scheduler()}{signalized\_vehicle\_scheduler()}}
+{\footnotesize\ttfamily streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construct a new signalized vehicle scheduler object. 
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a253b363db5dde03d2d3ad5565d900260}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a253b363db5dde03d2d3ad5565d900260}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!````~signalized\_vehicle\_scheduler@{$\sim$signalized\_vehicle\_scheduler}}
+\index{````~signalized\_vehicle\_scheduler@{$\sim$signalized\_vehicle\_scheduler}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{$\sim$signalized\_vehicle\_scheduler()}{~signalized\_vehicle\_scheduler()}}
+{\footnotesize\ttfamily streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::$\sim$signalized\+\_\+vehicle\+\_\+scheduler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destroy the signalized vehicle scheduler object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9c75b9f5697f17b55e8ee1749370ce85}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9c75b9f5697f17b55e8ee1749370ce85}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_acceleration\_time@{calculate\_acceleration\_time}}
+\index{calculate\_acceleration\_time@{calculate\_acceleration\_time}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_acceleration\_time()}{calculate\_acceleration\_time()}}
+{\footnotesize\ttfamily double streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+acceleration\+\_\+time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh,  }\item[{const double}]{v\+\_\+hat,  }\item[{const double}]{departure\+\_\+speed,  }\item[{const double}]{delta\+\_\+x,  }\item[{const double}]{delta\+\_\+x\+\_\+zegond }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to calculate time interval necessary for accelerating to speed v\+\_\+hat for a given vehicle. Will return 0 if there is no acceleration period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to calculate the joint speed. \\
+\hline
+{\em v\+\_\+hat} & joint speed between the acceleration and deceleration periods. \\
+\hline
+{\em departure\+\_\+speed} & departure speed = speed limit of the vehicle\textquotesingle{}s link lane. \\
+\hline
+{\em delta\+\_\+x} & distance between the vehicle and the stop bar at its entry lane \\
+\hline
+{\em delta\+\_\+x\+\_\+zegond} & distance required to speed up (slow down) to departure speed with maximum acceleration (maximum deceleration). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double acceleration time interval in seconds. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00313}{313}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00313                                                                                                                                                                                                                   \{}
+\DoxyCodeLine{00314         \textcolor{keywordtype}{double} t\_accel = 0.0;}
+\DoxyCodeLine{00315         \textcolor{keywordflow}{if} (delta\_x >= delta\_x\_zegond || departure\_speed >= veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}})\{}
+\DoxyCodeLine{00316             \textcolor{keywordflow}{if} (v\_hat >= veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}) \{}
+\DoxyCodeLine{00317                 t\_accel = (v\_hat -\/ veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}) / veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a1180998ca4eeb7d695d135a1e4a75424}{\_accel\_max}};}
+\DoxyCodeLine{00318             \}}
+\DoxyCodeLine{00319             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00320                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Negative acceleration time interval is calculated for vehicle \{0\}. The acceleration time interval is set to 0."{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}});}
+\DoxyCodeLine{00321             \}}
+\DoxyCodeLine{00322         \}}
+\DoxyCodeLine{00323         \textcolor{keywordflow}{return} t\_accel;}
+\DoxyCodeLine{00324     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00045}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+accel\+\_\+max}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, and \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{calculate\+\_\+earliest\+\_\+entering\+\_\+time()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9c75b9f5697f17b55e8ee1749370ce85_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af28d893b32779b4c75ab82a38f640169}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af28d893b32779b4c75ab82a38f640169}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_cruising\_time@{calculate\_cruising\_time}}
+\index{calculate\_cruising\_time@{calculate\_cruising\_time}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_cruising\_time()}{calculate\_cruising\_time()}}
+{\footnotesize\ttfamily double streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+cruising\+\_\+time (\begin{DoxyParamCaption}\item[{const double}]{v\+\_\+hat,  }\item[{const double}]{delta\+\_\+x,  }\item[{const double}]{delta\+\_\+x\+\_\+prime }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to calculate time interval necessary for cruising at a constant speed v\+\_\+hat (speed limit) greater than current vehicle speed. Will return 0 if there is no cruising period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v\+\_\+hat} & cruising speed\textbackslash{}joint speed between the acceleration and deceleration periods. Usually lane speed limit, in m/s. \\
+\hline
+{\em delta\+\_\+x} & distance between the vehicle and the stop bar at its entry lane \\
+\hline
+{\em delta\+\_\+x\+\_\+prime} & distance required to speed up to lane speed limit with maximum acceleration and then decelerate to departure speed with maximum deceleration. The difference between the distance to the stop bar and this distance is the part of the trajectory for which the vehicle can cruise at v\+\_\+hat. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double cruising time interval in seconds. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00349}{349}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00349                                                                                                                                            \{}
+\DoxyCodeLine{00350         \textcolor{keywordflow}{if} (delta\_x > delta\_x\_prime) \{}
+\DoxyCodeLine{00351             \textcolor{keywordflow}{return} (delta\_x -\/ delta\_x\_prime) / v\_hat;}
+\DoxyCodeLine{00352         \}}
+\DoxyCodeLine{00353         \textcolor{keywordflow}{return} 0.0;}
+\DoxyCodeLine{00354     \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{calculate\+\_\+earliest\+\_\+entering\+\_\+time()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af28d893b32779b4c75ab82a38f640169_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a5b376d76daf797d450e98eee7773ba4a}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a5b376d76daf797d450e98eee7773ba4a}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_deceleration\_time@{calculate\_deceleration\_time}}
+\index{calculate\_deceleration\_time@{calculate\_deceleration\_time}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_deceleration\_time()}{calculate\_deceleration\_time()}}
+{\footnotesize\ttfamily double streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+deceleration\+\_\+time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh,  }\item[{const double}]{v\+\_\+hat,  }\item[{const double}]{departure\+\_\+speed,  }\item[{const double}]{delta\+\_\+x,  }\item[{const double}]{delta\+\_\+x\+\_\+zegond }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to calculate time interval necessary for deceleration from v\+\_\+hat to departure speed. Will return 0 if there is no deceleration period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to calculate trajectory. \\
+\hline
+{\em v\+\_\+hat} & joint speed between the acceleration and deceleration periods. \\
+\hline
+{\em departure\+\_\+speed} & departure speed = speed limit of the vehicle\textquotesingle{}s link lane. \\
+\hline
+{\em delta\+\_\+x} & distance between the vehicle and the stop bar at its entry lane \\
+\hline
+{\em delta\+\_\+x\+\_\+zegond} & distance required to speed up (slow down) to departure speed with maximum acceleration (maximum deceleration). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double deceleration time interval in seconds. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00327}{327}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00327                                                                                                                                                                                                                   \{}
+\DoxyCodeLine{00328         \textcolor{keywordtype}{double} t\_decel = 0.0;}
+\DoxyCodeLine{00329         \textcolor{keywordflow}{if} (delta\_x < delta\_x\_zegond \&\& departure\_speed < veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}) \{}
+\DoxyCodeLine{00330             \textcolor{keywordflow}{if} (v\_hat <= veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}) \{}
+\DoxyCodeLine{00331                 t\_decel = (v\_hat -\/ veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}) / veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}};}
+\DoxyCodeLine{00332             \}}
+\DoxyCodeLine{00333             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00334                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Negative deceleration time interval is calculated for vehicle \{0\}. The deceleration time interval is set to 0."{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}});}
+\DoxyCodeLine{00335             \}}
+\DoxyCodeLine{00336         \}}
+\DoxyCodeLine{00337         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (delta\_x >= delta\_x\_zegond) \{}
+\DoxyCodeLine{00338             \textcolor{keywordflow}{if} (v\_hat >= departure\_speed) \{}
+\DoxyCodeLine{00339                 t\_decel = (departure\_speed -\/ v\_hat) / veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}};}
+\DoxyCodeLine{00340             \}}
+\DoxyCodeLine{00341             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00342                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Negative deceleration time interval is calculated for vehicle \{0\}. The deceleration time interval is set to 0."{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}});}
+\DoxyCodeLine{00343             \}}
+\DoxyCodeLine{00344         \}}
+\DoxyCodeLine{00345         \textcolor{keywordflow}{return} t\_decel;}
+\DoxyCodeLine{00346     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, \mbox{\hyperlink{vehicle_8h_source_l00047}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+decel\+\_\+max}}, and \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{calculate\+\_\+earliest\+\_\+entering\+\_\+time()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a5b376d76daf797d450e98eee7773ba4a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a925165d32ec5e00e9e2992df9337010d}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a925165d32ec5e00e9e2992df9337010d}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_distance\_accel\_and\_decel@{calculate\_distance\_accel\_and\_decel}}
+\index{calculate\_distance\_accel\_and\_decel@{calculate\_distance\_accel\_and\_decel}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_distance\_accel\_and\_decel()}{calculate\_distance\_accel\_and\_decel()}}
+{\footnotesize\ttfamily double streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+distance\+\_\+accel\+\_\+and\+\_\+decel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh,  }\item[{const double}]{max\+\_\+speed,  }\item[{const double}]{departure\+\_\+speed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculate the distance required to speed up to lane speed limit with maximum acceleration and then decelerate to departure speed with maximum deceleration. This is used to calculate the earliest entering time (EET) for the vehicle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to calculate distance. \\
+\hline
+{\em max\+\_\+speed} & speed limit of the vehicle\textquotesingle{}s entry lane. \\
+\hline
+{\em departure\+\_\+speed} & departure speed = speed limit of the vehicle\textquotesingle{}s link lane. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double distance in meters 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00273}{273}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00273                                                                                                                                                                            \{}
+\DoxyCodeLine{00274         \textcolor{comment}{// calculate delta x prime}}
+\DoxyCodeLine{00275         \textcolor{keywordtype}{double} delta\_x\_prime = ((pow(max\_speed, 2) -\/ pow(veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}, 2)) / (2 * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a1180998ca4eeb7d695d135a1e4a75424}{\_accel\_max}})) + ((pow(departure\_speed, 2) -\/ pow(max\_speed, 2)) / (2 * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}}));}
+\DoxyCodeLine{00276         \textcolor{keywordflow}{return}  delta\_x\_prime;}
+\DoxyCodeLine{00277     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00045}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+accel\+\_\+max}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, and \mbox{\hyperlink{vehicle_8h_source_l00047}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+decel\+\_\+max}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{calculate\+\_\+earliest\+\_\+entering\+\_\+time()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a925165d32ec5e00e9e2992df9337010d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a98775d8dc582750131d1a7daff140397}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a98775d8dc582750131d1a7daff140397}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_distance\_accel\_or\_decel@{calculate\_distance\_accel\_or\_decel}}
+\index{calculate\_distance\_accel\_or\_decel@{calculate\_distance\_accel\_or\_decel}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_distance\_accel\_or\_decel()}{calculate\_distance\_accel\_or\_decel()}}
+{\footnotesize\ttfamily double streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+distance\+\_\+accel\+\_\+or\+\_\+decel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh,  }\item[{const double}]{departure\+\_\+speed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculate the distance required to speed up (slow down) to departure speed with maximum acceleration (maximum deceleration). If the departure speed is greater than the vehicle\textquotesingle{}s current speed, the vehicle has to speed up with maximum acceleration. Otherwise, the vehicle has to slow down with maximum deceleration. This is used to calculate the earliest entering time (EET) for the vehicle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to calculate distance. \\
+\hline
+{\em departure\+\_\+speed} & departure speed = speed limit of the vehicle\textquotesingle{}s link lane. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double distance in meters 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00280}{280}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00280                                                                                                                                                    \{}
+\DoxyCodeLine{00281         \textcolor{comment}{// calculate delta x zegond}}
+\DoxyCodeLine{00282         \textcolor{keywordtype}{double} delta\_x\_zegond;}
+\DoxyCodeLine{00283         \textcolor{keywordflow}{if} (veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}} <= departure\_speed) \{}
+\DoxyCodeLine{00284             delta\_x\_zegond = (pow(departure\_speed, 2) -\/ pow(veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}, 2)) / (2 * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a1180998ca4eeb7d695d135a1e4a75424}{\_accel\_max}});}
+\DoxyCodeLine{00285         \}}
+\DoxyCodeLine{00286         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00287             delta\_x\_zegond = (pow(departure\_speed, 2) -\/ pow(veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}, 2)) / (2 * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}});}
+\DoxyCodeLine{00288         \}}
+\DoxyCodeLine{00289         \textcolor{keywordflow}{return}  delta\_x\_zegond;}
+\DoxyCodeLine{00290     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00045}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+accel\+\_\+max}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, and \mbox{\hyperlink{vehicle_8h_source_l00047}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+decel\+\_\+max}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{calculate\+\_\+earliest\+\_\+entering\+\_\+time()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a98775d8dc582750131d1a7daff140397_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a616f990b94f85cbe7c8ac5ecc215d41c}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a616f990b94f85cbe7c8ac5ecc215d41c}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_earliest\_entering\_time@{calculate\_earliest\_entering\_time}}
+\index{calculate\_earliest\_entering\_time@{calculate\_earliest\_entering\_time}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_earliest\_entering\_time()}{calculate\_earliest\_entering\_time()}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+earliest\+\_\+entering\+\_\+time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to use vehicle kinematic information to estimate earliest possible entering time (EET) for an entering vehicle (EV). Does not consider any other vehicles. Limiting factors are the vehicles current kinematic information, lane speed limits and vehicle acceleration and deceleration limits. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to estimate EET. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint64\+\_\+t time in milliseconds. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{226}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00226                                                                                                                     \{}
+\DoxyCodeLine{00227         }
+\DoxyCodeLine{00228         \textcolor{keywordflow}{if} ( veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a54872859b3a12ee290b98e0eedd2864f}{\_cur\_state}} == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\_vehicles::vehicle\_state::EV}}) \{}
+\DoxyCodeLine{00229             \textcolor{comment}{// Distance to stop bar }}
+\DoxyCodeLine{00230             \textcolor{keywordtype}{double} delta\_x = veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a21a6378ca2401ac4bc9ca6f6364833fb}{\_cur\_distance}};}
+\DoxyCodeLine{00231             \textcolor{comment}{// Get Entry Lane}}
+\DoxyCodeLine{00232             \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} entry\_lane =  \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_af8916add714bef70d8f48efc0ccfca7b}{get\_entry\_lanelet\_info}}( veh );}
+\DoxyCodeLine{00233             \textcolor{comment}{// Get Link Lane}}
+\DoxyCodeLine{00234             \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} link\_lane =  \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_af2c80eb87e5a9cabaad660544003663c}{get\_link\_lanelet\_info}}( veh );}
+\DoxyCodeLine{00235             \textcolor{comment}{// Distance necessary to get to max speed and decelerate with decel\_max to departure speed}}
+\DoxyCodeLine{00236             \textcolor{keywordtype}{double} delta\_x\_prime =  \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a925165d32ec5e00e9e2992df9337010d}{calculate\_distance\_accel\_and\_decel}}( veh, entry\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}(), link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}() );}
+\DoxyCodeLine{00237             \textcolor{comment}{// Distance necessary to get to the departure speed}}
+\DoxyCodeLine{00238             \textcolor{keywordtype}{double} delta\_x\_zegond =  \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a98775d8dc582750131d1a7daff140397}{calculate\_distance\_accel\_or\_decel}}( veh, link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}() );}
+\DoxyCodeLine{00239             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Delta X = \{0\}, Delta X Prime = \{1\}, Delta X Zegond = \{2\}."{}}, delta\_x, delta\_x\_prime, delta\_x\_zegond);}
+\DoxyCodeLine{00240 }
+\DoxyCodeLine{00241             \textcolor{comment}{// Calculate v\_hat}}
+\DoxyCodeLine{00242             \textcolor{keywordtype}{double} v\_hat = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a8d4f24941809d897f4f2bd27d16a41e0}{calculate\_v\_hat}}(veh, entry\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}(), link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}(), delta\_x, delta\_x\_prime, delta\_x\_zegond);}
+\DoxyCodeLine{00243             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}V hat = \{0\}."{}}, v\_hat);}
+\DoxyCodeLine{00244 }
+\DoxyCodeLine{00245             \textcolor{comment}{// calculate planned acceleration time interval}}
+\DoxyCodeLine{00246             \textcolor{keywordtype}{double} t\_accel = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9c75b9f5697f17b55e8ee1749370ce85}{calculate\_acceleration\_time}}(veh, v\_hat, link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}(), delta\_x, delta\_x\_zegond);}
+\DoxyCodeLine{00247             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}T accel = \{0\}."{}},t\_accel);}
+\DoxyCodeLine{00248 }
+\DoxyCodeLine{00249             \textcolor{comment}{// calculate planned deceleration time interval}}
+\DoxyCodeLine{00250             \textcolor{keywordtype}{double} t\_decel = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a5b376d76daf797d450e98eee7773ba4a}{calculate\_deceleration\_time}}(veh, v\_hat, link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}(), delta\_x, delta\_x\_zegond);}
+\DoxyCodeLine{00251             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}T decel = \{0\}."{}},t\_decel);}
+\DoxyCodeLine{00252 }
+\DoxyCodeLine{00253             \textcolor{comment}{// Calculate planned cruising time interval}}
+\DoxyCodeLine{00254             \textcolor{keywordtype}{double} t\_cruising = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af28d893b32779b4c75ab82a38f640169}{calculate\_cruising\_time}}(v\_hat, delta\_x, delta\_x\_prime);}
+\DoxyCodeLine{00255             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}T cruising = \{0\}."{}},t\_cruising);}
+\DoxyCodeLine{00256             }
+\DoxyCodeLine{00257             \textcolor{comment}{// calculate earliest entering time to stop bar}}
+\DoxyCodeLine{00258             \textcolor{keywordtype}{double} eet = t\_accel + t\_cruising + t\_decel;}
+\DoxyCodeLine{00259             \textcolor{keywordflow}{if} (eet <= 0) \{}
+\DoxyCodeLine{00260                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}The estimated eet for vehicle \{0\} has a negative value = \{1\}!"{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}}, eet);}
+\DoxyCodeLine{00261             \}}
+\DoxyCodeLine{00262             \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}uint64\_t\textcolor{keyword}{>}(ceil(eet * 1000.0)) + veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a278b51810d25efcfcfb91bb13e43e6f3}{\_cur\_time}};}
+\DoxyCodeLine{00263         \}}
+\DoxyCodeLine{00264         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00265         \{}
+\DoxyCodeLine{00266             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Cannot estimate the earliest entering time for vehicle \{0\} which is not an EV!"{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}});}
+\DoxyCodeLine{00267             \textcolor{keywordflow}{throw} scheduling\_exception(\textcolor{stringliteral}{"{}Trying to calculate earliest entering time (EET) for a vehicle that is not an EV!"{}});}
+\DoxyCodeLine{00268         \}}
+\DoxyCodeLine{00269         \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{00270     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00073}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+distance}}, \mbox{\hyperlink{vehicle_8h_source_l00079}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+state}}, \mbox{\hyperlink{vehicle_8h_source_l00071}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+time}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00313}{calculate\+\_\+acceleration\+\_\+time()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00349}{calculate\+\_\+cruising\+\_\+time()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00327}{calculate\+\_\+deceleration\+\_\+time()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00273}{calculate\+\_\+distance\+\_\+accel\+\_\+and\+\_\+decel()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00280}{calculate\+\_\+distance\+\_\+accel\+\_\+or\+\_\+decel()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00293}{calculate\+\_\+v\+\_\+hat()}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\+\_\+vehicles\+::\+EV}}, \mbox{\hyperlink{vehicle__scheduler_8cpp_source_l00013}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler\+::get\+\_\+entry\+\_\+lanelet\+\_\+info()}}, \mbox{\hyperlink{vehicle__scheduler_8cpp_source_l00031}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler\+::get\+\_\+link\+\_\+lanelet\+\_\+info()}}, and \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00137}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Speed\+Limit()}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00169}{estimate\+\_\+et()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a616f990b94f85cbe7c8ac5ecc215d41c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a616f990b94f85cbe7c8ac5ecc215d41c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a6b1ad1b03c5a472d08448ddaaae63369}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a6b1ad1b03c5a472d08448ddaaae63369}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_min\_headway@{calculate\_min\_headway}}
+\index{calculate\_min\_headway@{calculate\_min\_headway}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_min\_headway()}{calculate\_min\_headway()}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+min\+\_\+headway (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh,  }\item[{const double}]{speed }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculate the minimum safety time headway required by the vehicle at a given speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to calculate minimum safety time headway. \\
+\hline
+{\em speed} & the assumed speed at which to calculate minimum safety time headway. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint64\+\_\+t minimum safety time headway in milliseconds. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00357}{357}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00357                                                                                                                              \{}
+\DoxyCodeLine{00358         }
+\DoxyCodeLine{00359         \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}uint64\_t\textcolor{keyword}{>}(ceil( 1000*(veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a5c6b46bfbbb31785e7a07e96bc18ae76}{\_reaction\_time}} + ((veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a8df55ea8c6a305540ae4601f5c770843}{\_length}} + veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a3a38a205ab41c1912245c3d2a3b8c907}{\_min\_gap}})/speed)) ));}
+\DoxyCodeLine{00360     \} }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00039}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+length}}, \mbox{\hyperlink{vehicle_8h_source_l00041}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+min\+\_\+gap}}, and \mbox{\hyperlink{vehicle_8h_source_l00043}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+reaction\+\_\+time}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00169}{estimate\+\_\+et()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a6b1ad1b03c5a472d08448ddaaae63369_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a8d4f24941809d897f4f2bd27d16a41e0}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a8d4f24941809d897f4f2bd27d16a41e0}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!calculate\_v\_hat@{calculate\_v\_hat}}
+\index{calculate\_v\_hat@{calculate\_v\_hat}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{calculate\_v\_hat()}{calculate\_v\_hat()}}
+{\footnotesize\ttfamily double streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::calculate\+\_\+v\+\_\+hat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh,  }\item[{const double}]{max\+\_\+speed,  }\item[{const double}]{departure\+\_\+speed,  }\item[{const double}]{delta\+\_\+x,  }\item[{const double}]{delta\+\_\+x\+\_\+prime,  }\item[{const double}]{delta\+\_\+x\+\_\+zegond }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Method to calculate v\+\_\+hat. This is the joint speed between the acceleration and deceleration periods of a vehicle trajectory that is calculated to estimate the vehicle\textquotesingle{}s earliest entering time (EET). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to calculate the joint speed. \\
+\hline
+{\em max\+\_\+speed} & speed limit of the vehicle\textquotesingle{}s entry lane. \\
+\hline
+{\em departure\+\_\+speed} & departure speed = speed limit of the vehicle\textquotesingle{}s link lane. \\
+\hline
+{\em delta\+\_\+x} & distance between the vehicle and the stop bar at its entry lane \\
+\hline
+{\em delta\+\_\+x\+\_\+prime} & distance required to speed up to lane speed limit with maximum acceleration and then decelerate to departure speed with maximum deceleration. \\
+\hline
+{\em delta\+\_\+x\+\_\+zegond} & distance required to speed up (slow down) to departure speed with maximum acceleration (maximum deceleration). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double v\+\_\+hat in m/s 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00293}{293}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00293                                                                                                                                                                                                                                         \{}
+\DoxyCodeLine{00294         \textcolor{keywordflow}{if} (delta\_x >= delta\_x\_prime) \{}
+\DoxyCodeLine{00295             \textcolor{keywordflow}{return} max\_speed;}
+\DoxyCodeLine{00296         \}}
+\DoxyCodeLine{00297         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (delta\_x\_prime > delta\_x \&\& delta\_x >= delta\_x\_zegond) \{}
+\DoxyCodeLine{00298             \textcolor{keywordtype}{double} numerator = (2 * delta\_x * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}} * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a1180998ca4eeb7d695d135a1e4a75424}{\_accel\_max}}) + (veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}} * pow(veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}, 2)) -\/ (veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a1180998ca4eeb7d695d135a1e4a75424}{\_accel\_max}} * pow(departure\_speed, 2));}
+\DoxyCodeLine{00299             \textcolor{keywordtype}{double} denominator = veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}} -\/ veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a1180998ca4eeb7d695d135a1e4a75424}{\_accel\_max}};}
+\DoxyCodeLine{00300             \textcolor{keywordflow}{return} sqrt(numerator/denominator);}
+\DoxyCodeLine{00301         \}}
+\DoxyCodeLine{00302         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00303             \textcolor{keywordflow}{if} (veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}} <= departure\_speed) \{}
+\DoxyCodeLine{00304                 \textcolor{keywordflow}{return} sqrt((2 * delta\_x * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a1180998ca4eeb7d695d135a1e4a75424}{\_accel\_max}}) + pow(veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}, 2));}
+\DoxyCodeLine{00305             \}}
+\DoxyCodeLine{00306             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00307                 \textcolor{keywordflow}{return} sqrt((2 * delta\_x * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a253341595deb3473620116dcf63d9927}{\_decel\_max}}) + pow(veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}, 2));}
+\DoxyCodeLine{00308             \}}
+\DoxyCodeLine{00309         \}}
+\DoxyCodeLine{00310     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00045}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+accel\+\_\+max}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, and \mbox{\hyperlink{vehicle_8h_source_l00047}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+decel\+\_\+max}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{calculate\+\_\+earliest\+\_\+entering\+\_\+time()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a8d4f24941809d897f4f2bd27d16a41e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a1cce3f6e4da6ae1804dfd6a49305baf2}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a1cce3f6e4da6ae1804dfd6a49305baf2}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!estimate\_clearance\_time@{estimate\_clearance\_time}}
+\index{estimate\_clearance\_time@{estimate\_clearance\_time}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{estimate\_clearance\_time()}{estimate\_clearance\_time()}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::estimate\+\_\+clearance\+\_\+time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estimate clearance time of a vehicle given it\textquotesingle{}s current speed. ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to estimate clearance time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+uint64\+\_\+t clearance time in milliseconds. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00363}{363}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00363                                                                                                              \{}
+\DoxyCodeLine{00364         \textcolor{comment}{// Get Link Lane}}
+\DoxyCodeLine{00365         \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} link\_lane =  \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_af2c80eb87e5a9cabaad660544003663c}{get\_link\_lanelet\_info}}( veh );}
+\DoxyCodeLine{00366         \textcolor{keywordflow}{if} ( veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a54872859b3a12ee290b98e0eedd2864f}{\_cur\_state}} == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\_vehicles::vehicle\_state::DV}} ) \{}
+\DoxyCodeLine{00367             \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}uint64\_t\textcolor{keyword}{>}( ceil(1000 * veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a21a6378ca2401ac4bc9ca6f6364833fb}{\_cur\_distance}} / veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a026375b9e6ffc8f8c8aee72465f352dc}{\_cur\_speed}}) );}
+\DoxyCodeLine{00368         \}}
+\DoxyCodeLine{00369         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00370             \textcolor{keywordflow}{return} \textcolor{keyword}{static\_cast<}uint64\_t\textcolor{keyword}{>}( ceil(1000 * link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_abc1c4d5d24a2dafb175874ecad09cfad}{getLength}}() / link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}()) );}
+\DoxyCodeLine{00371         \}}
+\DoxyCodeLine{00372     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00073}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+distance}}, \mbox{\hyperlink{vehicle_8h_source_l00075}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+speed}}, \mbox{\hyperlink{vehicle_8h_source_l00079}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+cur\+\_\+state}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\+\_\+vehicles\+::\+DV}}, \mbox{\hyperlink{vehicle__scheduler_8cpp_source_l00031}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler\+::get\+\_\+link\+\_\+lanelet\+\_\+info()}}, \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00169}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Length()}}, and \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00137}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Speed\+Limit()}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00169}{estimate\+\_\+et()}}, and \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00046}{schedule\+\_\+dvs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a1cce3f6e4da6ae1804dfd6a49305baf2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a1cce3f6e4da6ae1804dfd6a49305baf2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4d00a1ab964b44569653d414280a3419}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4d00a1ab964b44569653d414280a3419}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!estimate\_et@{estimate\_et}}
+\index{estimate\_et@{estimate\_et}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{estimate\_et()}{estimate\_et()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::estimate\+\_\+et (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} \&}]{veh,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__vehicle__schedule}{signalized\+\_\+vehicle\+\_\+schedule}} $>$ \&}]{preceding\+\_\+veh,  }\item[{\mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__vehicle__schedule}{signalized\+\_\+vehicle\+\_\+schedule}} \&}]{sched,  }\item[{const \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::movement\+\_\+state}} \&}]{move\+\_\+state,  }\item[{const uint64\+\_\+t}]{schedule\+\_\+timestamp }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estimate an entering time (ET) for a given Entering Vehicle (EV). ET is estimated based on the EV\textquotesingle{}s earliest entering time (EET), its preceding vehicle\textquotesingle{}s estimated ET, and the modifed spat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em veh} & vehicle for which to estimate ET. \\
+\hline
+{\em preceding\+\_\+veh} & shared pointer of the preceding vehicle of the subject vehicle (veh) \\
+\hline
+{\em sched} & \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}} to add EV scheduling information to. \\
+\hline
+{\em move\+\_\+state} & movement state information that includes a list of current and pending phases. \\
+\hline
+{\em schedule\+\_\+timestamp} & timestamp of the current schedule in milliseconds. \\
+\hline
+\end{DoxyParams}
+estimate the earliest possible ET based on the current timestamp, the preceding vehicle\textquotesingle{}s estimated ET, and the subject vehicle\textquotesingle{}s minimum required safety time headway at tbe departure speed.
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00169}{169}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00169                                                                                                                                                                                                                                                                                             \{}
+\DoxyCodeLine{00170 }
+\DoxyCodeLine{00171         \textcolor{comment}{// Get link lanelet information for ev}}
+\DoxyCodeLine{00172         \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} link\_lane = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_af2c80eb87e5a9cabaad660544003663c}{get\_link\_lanelet\_info}}( veh );}
+\DoxyCodeLine{00173         SPDLOG\_DEBUG( \textcolor{stringliteral}{"{}Link lanelet for vehicle \{0\} is \{1\}."{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}}, link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a489d1a475686159298697bccabd2bd52}{getId}}());}
+\DoxyCodeLine{00174         \textcolor{comment}{// Calculate EET for vehicle}}
+\DoxyCodeLine{00175         uint64\_t eet = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a616f990b94f85cbe7c8ac5ecc215d41c}{calculate\_earliest\_entering\_time}}(veh);}
+\DoxyCodeLine{00176         SPDLOG\_DEBUG( \textcolor{stringliteral}{"{}EET for vehicle \{0\} is \{1\}."{}} ,veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}}, eet );}
+\DoxyCodeLine{00177         \textcolor{comment}{// Calculate min\_headway}}
+\DoxyCodeLine{00178         uint64\_t min\_headway = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a6b1ad1b03c5a472d08448ddaaae63369}{calculate\_min\_headway}}( veh, link\_lane.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a9ed2860829d5aeba3062f26e78afcbdc}{getSpeedLimit}}() );}
+\DoxyCodeLine{00179         SPDLOG\_DEBUG( \textcolor{stringliteral}{"{}min headway for vehicle \{0\} is \{1\}."{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}}, min\_headway );}
+\DoxyCodeLine{00183         uint64\_t first\_available\_et;}
+\DoxyCodeLine{00184         \textcolor{keywordflow}{if} (preceding\_veh == \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{00185             first\_available\_et = schedule\_timestamp;}
+\DoxyCodeLine{00186         \}}
+\DoxyCodeLine{00187         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00188             first\_available\_et = std::max(schedule\_timestamp, preceding\_veh-\/>et + min\_headway);}
+\DoxyCodeLine{00189         \}}
+\DoxyCodeLine{00190 }
+\DoxyCodeLine{00191         \textcolor{comment}{// Check the movement\_event list one by one until successfully estimating the vehicle's entering time (ET).}}
+\DoxyCodeLine{00192         \textcolor{comment}{// The assumption is that the movement\_event list is sorted based on the movement\_event timing.}}
+\DoxyCodeLine{00193         \textcolor{comment}{// (example: the second phase's start time shall be equal to the first phase's min\_end\_time).}}
+\DoxyCodeLine{00194         \textcolor{keywordtype}{bool} is\_successful = \textcolor{keyword}{false};}
+\DoxyCodeLine{00195         uint64\_t et;}
+\DoxyCodeLine{00196         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&move\_event : move\_state.\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_a087beaba691971b31df26e90bf4e81c4}{state\_time\_speed}}) \{}
+\DoxyCodeLine{00197             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Moving to the next movement event from the list! start time without buffer = \{0\}, end time without buffer = \{1\}"{}}, move\_event.timing.get\_epoch\_start\_time(), move\_event.timing.get\_epoch\_min\_end\_time() );}
+\DoxyCodeLine{00198             \textcolor{keywordflow}{if} (move\_event.event\_state == \mbox{\hyperlink{namespacesignal__phase__and__timing_a89bd5b280352669f719b2c36a9dc2a14ababa6a65d4933ea6229e61b20668218b}{signal\_phase\_and\_timing::movement\_phase\_state::protected\_movement\_allowed}}) \{}
+\DoxyCodeLine{00199                 et = std::max(first\_available\_et, std::max(eet, move\_event.timing.get\_epoch\_start\_time() + \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed5f596d0160b7fc2941f8f003293f50}{initial\_green\_buffer}}));}
+\DoxyCodeLine{00200                 \textcolor{keywordflow}{if} ( et < move\_event.timing.get\_epoch\_min\_end\_time() -\/ \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af23ea3f8079aedda1f3e36203d0bc0c9}{final\_green\_buffer}} ) \{}
+\DoxyCodeLine{00201                     SPDLOG\_DEBUG( \textcolor{stringliteral}{"{}Successfully estimate an ET (within a green phase) for vehicle \{0\}. The estimated ET = \{1\}."{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}}, et);}
+\DoxyCodeLine{00202                     is\_successful = \textcolor{keyword}{true};}
+\DoxyCodeLine{00203                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00204                 \}}
+\DoxyCodeLine{00205                 SPDLOG\_DEBUG( \textcolor{stringliteral}{"{}The estimated ET for vehicle \{0\} is later than the end of the phase. Estimated ET = \{1\}, end of the phase"{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}}, et, move\_event.timing.get\_epoch\_min\_end\_time() -\/ \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af23ea3f8079aedda1f3e36203d0bc0c9}{final\_green\_buffer}} );}
+\DoxyCodeLine{00206             \}}
+\DoxyCodeLine{00207         \}}
+\DoxyCodeLine{00208 }
+\DoxyCodeLine{00209         \textcolor{comment}{// TBD area}}
+\DoxyCodeLine{00210         \textcolor{keywordflow}{if} (!is\_successful) \{}
+\DoxyCodeLine{00211             et = std::max(first\_available\_et, std::max(eet, move\_state.\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state_a087beaba691971b31df26e90bf4e81c4}{state\_time\_speed}}.back().timing.get\_epoch\_min\_end\_time() + \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed5f596d0160b7fc2941f8f003293f50}{initial\_green\_buffer}}));}
+\DoxyCodeLine{00212             SPDLOG\_DEBUG( \textcolor{stringliteral}{"{}Successfully estimate an ET (within TBD area) for vehicle \{0\}. The estimated ET = \{1\}."{}}, veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}}, et);}
+\DoxyCodeLine{00213         \}}
+\DoxyCodeLine{00214 }
+\DoxyCodeLine{00215         \textcolor{comment}{// Set schedule properties}}
+\DoxyCodeLine{00216         sched.v\_id =  veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a470605f661a8f625329ebbb10888e2b8}{\_id}};}
+\DoxyCodeLine{00217         sched.eet = eet;}
+\DoxyCodeLine{00218         sched.et = et;}
+\DoxyCodeLine{00219         sched.dt = sched.et + \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a1cce3f6e4da6ae1804dfd6a49305baf2}{estimate\_clearance\_time}}( veh );}
+\DoxyCodeLine{00220         sched.entry\_lane =  veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_a4ef0e2e811b0f5cb00f14b89a353c3b5}{\_entry\_lane\_id}};}
+\DoxyCodeLine{00221         sched.link\_id = veh.\mbox{\hyperlink{structstreets__vehicles_1_1vehicle_aaa9cbe97b2343b3f14841c1ed2bc8e3d}{\_link\_id}};}
+\DoxyCodeLine{00222         sched.state = \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\_vehicles::vehicle\_state::EV}};}
+\DoxyCodeLine{00223     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle_8h_source_l00051}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+entry\+\_\+lane\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00037}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+id}}, \mbox{\hyperlink{vehicle_8h_source_l00055}{streets\+\_\+vehicles\+::vehicle\+::\+\_\+link\+\_\+id}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00226}{calculate\+\_\+earliest\+\_\+entering\+\_\+time()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00357}{calculate\+\_\+min\+\_\+headway()}}, \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00040}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule\+::dt}}, \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00029}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule\+::eet}}, \mbox{\hyperlink{intersection__schedule_8h_source_l00032}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+schedule\+::entry\+\_\+lane}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00363}{estimate\+\_\+clearance\+\_\+time()}}, \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00034}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule\+::et}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\+\_\+vehicles\+::\+EV}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00039}{final\+\_\+green\+\_\+buffer}}, \mbox{\hyperlink{vehicle__scheduler_8cpp_source_l00031}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler\+::get\+\_\+link\+\_\+lanelet\+\_\+info()}}, \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00121}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Id()}}, \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00137}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Speed\+Limit()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00032}{initial\+\_\+green\+\_\+buffer}}, \mbox{\hyperlink{intersection__schedule_8h_source_l00036}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+schedule\+::link\+\_\+id}}, \mbox{\hyperlink{namespacesignal__phase__and__timing_a89bd5b280352669f719b2c36a9dc2a14ababa6a65d4933ea6229e61b20668218b}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::protected\+\_\+movement\+\_\+allowed}}, \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00044}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule\+::state}}, \mbox{\hyperlink{movement__state_8h_source_l00034}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::movement\+\_\+state\+::state\+\_\+time\+\_\+speed}}, and \mbox{\hyperlink{intersection__schedule_8h_source_l00028}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+schedule\+::v\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00078}{schedule\+\_\+evs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4d00a1ab964b44569653d414280a3419_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4d00a1ab964b44569653d414280a3419_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed159065f9086c0c9e8b7c7476f3e7aa}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed159065f9086c0c9e8b7c7476f3e7aa}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!find\_movement\_state\_for\_lane@{find\_movement\_state\_for\_lane}}
+\index{find\_movement\_state\_for\_lane@{find\_movement\_state\_for\_lane}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{find\_movement\_state\_for\_lane()}{find\_movement\_state\_for\_lane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::movement\+\_\+state}} streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::find\+\_\+movement\+\_\+state\+\_\+for\+\_\+lane (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{Open\+API\+::\+OAILanelet\+\_\+info}} \&}]{entry\+\_\+lane\+\_\+info }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+find the movement state info from the modified spat for a given entry lane. ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entry\+\_\+lane\+\_\+info} & entry lanelet lane. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::movement\+\_\+state}} movement stat object. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00146}{146}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00146                                                                                                                                                         \{}
+\DoxyCodeLine{00147 }
+\DoxyCodeLine{00148         \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{signal\_phase\_and\_timing::movement\_state}} move\_state; }
+\DoxyCodeLine{00149         \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}{spat\_ptr}} || entry\_lane\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a71c6691fa0f9af797b4540f8a94ad9be}{getSignalGroupId}}() ) \{}
+\DoxyCodeLine{00150             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& ms : \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}{spat\_ptr}}-\/>intersections.front().states)\{}
+\DoxyCodeLine{00151                 \textcolor{keywordflow}{if} (ms.signal\_group == entry\_lane\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a71c6691fa0f9af797b4540f8a94ad9be}{getSignalGroupId}}()) \{}
+\DoxyCodeLine{00152                     move\_state = ms;}
+\DoxyCodeLine{00153                     \textcolor{keywordflow}{return} move\_state;}
+\DoxyCodeLine{00154                 \}}
+\DoxyCodeLine{00155             \}}
+\DoxyCodeLine{00156         \}}
+\DoxyCodeLine{00157         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00158             \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}{spat\_ptr}} ) \{}
+\DoxyCodeLine{00159                 \textcolor{keywordflow}{throw} scheduling\_exception(\textcolor{stringliteral}{"{}SPaT is not found!"{}});}
+\DoxyCodeLine{00160             \}}
+\DoxyCodeLine{00161             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00162                 \textcolor{keywordflow}{throw} scheduling\_exception(\textcolor{stringliteral}{"{}the lanelet does not have group\_id!"{}});}
+\DoxyCodeLine{00163             \}}
+\DoxyCodeLine{00164         \}}
+\DoxyCodeLine{00165         \textcolor{keywordflow}{return} move\_state;}
+\DoxyCodeLine{00166     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00201}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Signal\+Group\+Id()}}, and \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00024}{spat\+\_\+ptr}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00078}{schedule\+\_\+evs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed159065f9086c0c9e8b7c7476f3e7aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed159065f9086c0c9e8b7c7476f3e7aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_afbeb97e551e87ad6340c620b51f28fe1}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_afbeb97e551e87ad6340c620b51f28fe1}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!get\_final\_green\_buffer@{get\_final\_green\_buffer}}
+\index{get\_final\_green\_buffer@{get\_final\_green\_buffer}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{get\_final\_green\_buffer()}{get\_final\_green\_buffer()}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::get\+\_\+final\+\_\+green\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the final green buffer (ms). 
+
+\begin{DoxyReturn}{Returns}
+uint64\+\_\+t final green buffer. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00387}{387}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00387                                                                         \{}
+\DoxyCodeLine{00388         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af23ea3f8079aedda1f3e36203d0bc0c9}{final\_green\_buffer}};}
+\DoxyCodeLine{00389     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00039}{final\+\_\+green\+\_\+buffer}}.
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a0c1c065ffbe9ecd62e2a985815aa8170}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a0c1c065ffbe9ecd62e2a985815aa8170}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!get\_initial\_green\_buffer@{get\_initial\_green\_buffer}}
+\index{get\_initial\_green\_buffer@{get\_initial\_green\_buffer}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{get\_initial\_green\_buffer()}{get\_initial\_green\_buffer()}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::get\+\_\+initial\+\_\+green\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the initial green buffer (ms). 
+
+\begin{DoxyReturn}{Returns}
+uint64\+\_\+t initial green buffer. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00379}{379}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00379                                                                           \{}
+\DoxyCodeLine{00380         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed5f596d0160b7fc2941f8f003293f50}{initial\_green\_buffer}};}
+\DoxyCodeLine{00381     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00032}{initial\+\_\+green\+\_\+buffer}}.
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa4707ffc16fca19f724911b9f0c0e581}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa4707ffc16fca19f724911b9f0c0e581}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!get\_spat@{get\_spat}}
+\index{get\_spat@{get\_spat}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{get\_spat()}{get\_spat()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}} $>$ streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::get\+\_\+spat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the spat object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat$>$ spat object 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00391}{391}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00391                                                                                             \{}
+\DoxyCodeLine{00392         \textcolor{keywordflow}{return} \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}{spat\_ptr}};}
+\DoxyCodeLine{00393     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00024}{spat\+\_\+ptr}}.
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4ff15023fb9c14d1765ebe78d3d3a944}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4ff15023fb9c14d1765ebe78d3d3a944}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!schedule\_dvs@{schedule\_dvs}}
+\index{schedule\_dvs@{schedule\_dvs}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{schedule\_dvs()}{schedule\_dvs()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+dvs (\begin{DoxyParamCaption}\item[{const std\+::list$<$ \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} $>$ \&}]{dvs,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}} $>$ \&}]{schedule }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Estimate the intersection departure times (dt\textquotesingle{}s) for all currently Departing Vehicle (DVs) based on kinematic vehicle information and intersection geometry. Method assumes empty \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} is passed in. Method will add vehicle\+\_\+schedule(s) for each DV in the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dvs} & vector of unscheduled DVs. \\
+\hline
+{\em schedule} & \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}} to add DV scheduling information to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00046                                                                                                                                                                         \{}
+\DoxyCodeLine{00047         }
+\DoxyCodeLine{00048         \textcolor{keywordflow}{for} ( \textcolor{keyword}{const} \textcolor{keyword}{auto} \&departing\_veh : dvs ) \{}
+\DoxyCodeLine{00049             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Scheduling the departure time for DV with ID \{0\} ."{}}, departing\_veh.\_id);}
+\DoxyCodeLine{00050             \textcolor{comment}{// get link lane info}}
+\DoxyCodeLine{00051             \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lane\_info =  \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_af2c80eb87e5a9cabaad660544003663c}{get\_link\_lanelet\_info}}( departing\_veh );}
+\DoxyCodeLine{00052             \textcolor{comment}{// calculate clearance time in milliseconds }}
+\DoxyCodeLine{00053             uint64\_t clearance\_time = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a1cce3f6e4da6ae1804dfd6a49305baf2}{estimate\_clearance\_time}}( departing\_veh );}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{00055             signalized\_vehicle\_schedule veh\_sched;}
+\DoxyCodeLine{00056             \textcolor{comment}{// set id}}
+\DoxyCodeLine{00057             veh\_sched.v\_id = departing\_veh.\_id;}
+\DoxyCodeLine{00058             \textcolor{comment}{// set et }}
+\DoxyCodeLine{00059             veh\_sched.et = departing\_veh.\_actual\_et;}
+\DoxyCodeLine{00060             \textcolor{comment}{// departure time is equal to current time plus clearance time for DVs}}
+\DoxyCodeLine{00061             veh\_sched.dt =  schedule-\/>timestamp + clearance\_time;}
+\DoxyCodeLine{00062             \textcolor{comment}{// set state}}
+\DoxyCodeLine{00063             veh\_sched.state = departing\_veh.\_cur\_state;}
+\DoxyCodeLine{00064             \textcolor{comment}{// set vehicle link id}}
+\DoxyCodeLine{00065             veh\_sched.link\_id =  departing\_veh.\_link\_id;}
+\DoxyCodeLine{00066             \textcolor{comment}{// set vehicle entry lane id}}
+\DoxyCodeLine{00067             veh\_sched.entry\_lane =  departing\_veh.\_entry\_lane\_id;}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{00069             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Added schedule for DV \{0\} with dt \{1\}."{}}, veh\_sched.v\_id, veh\_sched.dt);}
+\DoxyCodeLine{00070             \textcolor{comment}{// add vehicle\_schedule}}
+\DoxyCodeLine{00071             schedule-\/>vehicle\_schedules.push\_back(veh\_sched);}
+\DoxyCodeLine{00072         \}}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00040}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule\+::dt}}, \mbox{\hyperlink{intersection__schedule_8h_source_l00032}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+schedule\+::entry\+\_\+lane}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00363}{estimate\+\_\+clearance\+\_\+time()}}, \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00034}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule\+::et}}, \mbox{\hyperlink{vehicle__scheduler_8cpp_source_l00031}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler\+::get\+\_\+link\+\_\+lanelet\+\_\+info()}}, \mbox{\hyperlink{intersection__schedule_8h_source_l00036}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+schedule\+::link\+\_\+id}}, \mbox{\hyperlink{signalized__intersection__schedule_8h_source_l00044}{streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+schedule\+::state}}, and \mbox{\hyperlink{intersection__schedule_8h_source_l00028}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+schedule\+::v\+\_\+id}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00005}{schedule\+\_\+vehicles()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4ff15023fb9c14d1765ebe78d3d3a944_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4ff15023fb9c14d1765ebe78d3d3a944_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ac41bc42db46cbbf7a037486fa46dd7e0}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ac41bc42db46cbbf7a037486fa46dd7e0}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!schedule\_evs@{schedule\_evs}}
+\index{schedule\_evs@{schedule\_evs}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{schedule\_evs()}{schedule\_evs()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+evs (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} $>$ \&}]{evs,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}} $>$ \&}]{schedule }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Schedule all Entering Vehicles (EVs). Method first organizes all EVs into lists based on their entry lane. These list are ordered in ascending order with the vehicle closest to the intersection in a given lane being the first vehicle in that entry lanes vehicle list. Then, for each entry lane, an entering time (ET) for each EV in the entry lane is calculated sequentially starting from the first vehicle until in the list. ET is estimated based on the EV\textquotesingle{}s earliest entering time (EET), its preceding vehicle\textquotesingle{}s estimated ET, and the modifed spat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evs} & list of all EVs. \\
+\hline
+{\em schedule} & \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1signalized__intersection__schedule}{signalized\+\_\+intersection\+\_\+schedule}} to add EV scheduling information to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078                                                                                                                                                                   \{}
+\DoxyCodeLine{00079         }
+\DoxyCodeLine{00080         \textcolor{comment}{// Sort vehicles based on distance}}
+\DoxyCodeLine{00081         evs.sort(\mbox{\hyperlink{namespacestreets__vehicle__scheduler_ab550673e6a269f9f374ca3ca7ff6ba82}{distance\_comparator}});}
+\DoxyCodeLine{00082         }
+\DoxyCodeLine{00083         \textcolor{comment}{// Create a map of entry lane id keys and list of EVs in each lane.}}
+\DoxyCodeLine{00084         std::unordered\_map<int, std::list<streets\_vehicles::vehicle>> vehicle\_lane\_map;}
+\DoxyCodeLine{00085         \textcolor{keywordflow}{for} ( \textcolor{keyword}{const} \textcolor{keyword}{auto} \&entry\_lane : \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_a5fa37276e5ccb41e38cbef573e830e8e}{intersection\_info}}-\/>getEntryLanelets() ) \{}
+\DoxyCodeLine{00086             std::list<streets\_vehicles::vehicle> vehicles\_in\_lane;}
+\DoxyCodeLine{00087             \textcolor{keywordflow}{for} ( \textcolor{keyword}{const} \textcolor{keyword}{auto} \&ev : evs ) \{}
+\DoxyCodeLine{00088                 \textcolor{keywordflow}{if} ( ev.\_entry\_lane\_id == entry\_lane.getId()) \{}
+\DoxyCodeLine{00089                     SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Adding vehicle \{0\} to EVs list in entry lane \{1\}"{}}, ev.\_id, ev.\_entry\_lane\_id);}
+\DoxyCodeLine{00090                     vehicles\_in\_lane.push\_back(ev);}
+\DoxyCodeLine{00091                 \}}
+\DoxyCodeLine{00092             \}}
+\DoxyCodeLine{00093             \textcolor{keywordflow}{if} ( !vehicles\_in\_lane.empty()) \{}
+\DoxyCodeLine{00094                 vehicles\_in\_lane.sort(\mbox{\hyperlink{namespacestreets__vehicle__scheduler_ab550673e6a269f9f374ca3ca7ff6ba82}{distance\_comparator}});}
+\DoxyCodeLine{00095                 vehicle\_lane\_map.try\_emplace( entry\_lane.getId(), vehicles\_in\_lane );}
+\DoxyCodeLine{00096             \}}
+\DoxyCodeLine{00097             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00098                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}No EVs in lane \{0\}."{}}, \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(entry\_lane.getId()) );}
+\DoxyCodeLine{00099             \}}
+\DoxyCodeLine{00100         \}}
+\DoxyCodeLine{00101         \textcolor{keywordflow}{if} ( vehicle\_lane\_map.empty() ) \{}
+\DoxyCodeLine{00102             \textcolor{keywordflow}{throw} scheduling\_exception(\textcolor{stringliteral}{"{}Map of vehicles to be scheduled is empty but list of EVs to be scheduled is not!"{}});}
+\DoxyCodeLine{00103         \}}
+\DoxyCodeLine{00104         }
+\DoxyCodeLine{00105         \textcolor{keywordflow}{for} ( \textcolor{keyword}{const} \textcolor{keyword}{auto} \&[entry\_lane, evs\_in\_lane] : vehicle\_lane\_map ) \{           }
+\DoxyCodeLine{00106             }
+\DoxyCodeLine{00107             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Scheduling EVs from entry lane \{0\} "{}}, entry\_lane);}
+\DoxyCodeLine{00108 }
+\DoxyCodeLine{00109             \textcolor{comment}{// Find the last DV from the entry lane}}
+\DoxyCodeLine{00110             std::shared\_ptr<signalized\_vehicle\_schedule> preceding\_veh = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00111             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&veh\_sched : schedule-\/>vehicle\_schedules ) \{}
+\DoxyCodeLine{00112                 \textcolor{keywordflow}{if} ( veh\_sched.entry\_lane == entry\_lane \&\& veh\_sched.state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\_vehicles::vehicle\_state::DV}} \&\& (preceding\_veh == \textcolor{keyword}{nullptr} || veh\_sched.et < preceding\_veh-\/>et)) \{}
+\DoxyCodeLine{00113                     preceding\_veh = std::make\_shared<signalized\_vehicle\_schedule>(veh\_sched);}
+\DoxyCodeLine{00114                 \}}
+\DoxyCodeLine{00115             \}}
+\DoxyCodeLine{00116             }
+\DoxyCodeLine{00117             \textcolor{comment}{// Find the entry lane object}}
+\DoxyCodeLine{00118             \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} entry\_lane\_info;}
+\DoxyCodeLine{00119             \textcolor{keywordflow}{for} ( \textcolor{keyword}{const} \textcolor{keyword}{auto} \&lane : \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_a5fa37276e5ccb41e38cbef573e830e8e}{intersection\_info}}-\/>getEntryLanelets() )\{}
+\DoxyCodeLine{00120                 \textcolor{keywordflow}{if} ( lane.getId() == entry\_lane ) \{}
+\DoxyCodeLine{00121                     entry\_lane\_info = lane;}
+\DoxyCodeLine{00122                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00123                 \}}
+\DoxyCodeLine{00124             \}}
+\DoxyCodeLine{00125             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}The signal group id of the entry lane \{0\} = \{1\}"{}}, entry\_lane\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a489d1a475686159298697bccabd2bd52}{getId}}(), entry\_lane\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a71c6691fa0f9af797b4540f8a94ad9be}{getSignalGroupId}}());}
+\DoxyCodeLine{00126 }
+\DoxyCodeLine{00127             \textcolor{comment}{// Get the movement\_state object that connects to this entry lane}}
+\DoxyCodeLine{00128             \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{signal\_phase\_and\_timing::movement\_state}} move\_state = \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed159065f9086c0c9e8b7c7476f3e7aa}{find\_movement\_state\_for\_lane}}(entry\_lane\_info);}
+\DoxyCodeLine{00129 }
+\DoxyCodeLine{00130             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&ev : evs\_in\_lane)\{}
+\DoxyCodeLine{00131                 signalized\_vehicle\_schedule sched;}
+\DoxyCodeLine{00132                 SPDLOG\_DEBUG( \textcolor{stringliteral}{"{}Estimating schedule for \{0\}."{}}, ev.\_id);}
+\DoxyCodeLine{00133                 \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4d00a1ab964b44569653d414280a3419}{estimate\_et}}(ev, preceding\_veh, sched, move\_state, schedule-\/>timestamp);}
+\DoxyCodeLine{00134                 \textcolor{comment}{// Add vehicle schedule to the schedule list.}}
+\DoxyCodeLine{00135                 schedule-\/>vehicle\_schedules.push\_back(sched);}
+\DoxyCodeLine{00136                 \textcolor{comment}{// Update the preceding vehicle schedule.}}
+\DoxyCodeLine{00137                 preceding\_veh = std::make\_shared<signalized\_vehicle\_schedule>(sched);}
+\DoxyCodeLine{00138             \}}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}All vehicles in lane \{0\} have been scheduled!"{}}, entry\_lane);}
+\DoxyCodeLine{00141 }
+\DoxyCodeLine{00142         \}}
+\DoxyCodeLine{00143     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{vehicle__sorting_8cpp_source_l00029}{streets\+\_\+vehicle\+\_\+scheduler\+::distance\+\_\+comparator()}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\+\_\+vehicles\+::\+DV}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00169}{estimate\+\_\+et()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00146}{find\+\_\+movement\+\_\+state\+\_\+for\+\_\+lane()}}, \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00121}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Id()}}, \mbox{\hyperlink{intersection__client__api_2OAILanelet__info_8cpp_source_l00201}{Open\+API\+::\+OAILanelet\+\_\+info\+::get\+Signal\+Group\+Id()}}, and \mbox{\hyperlink{vehicle__scheduler_8h_source_l00026}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler\+::intersection\+\_\+info}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00005}{schedule\+\_\+vehicles()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ac41bc42db46cbbf7a037486fa46dd7e0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ac41bc42db46cbbf7a037486fa46dd7e0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a2572fdbb86e141df40174d618fe2a3d0}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a2572fdbb86e141df40174d618fe2a3d0}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!schedule\_vehicles@{schedule\_vehicles}}
+\index{schedule\_vehicles@{schedule\_vehicles}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{schedule\_vehicles()}{schedule\_vehicles()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::schedule\+\_\+vehicles (\begin{DoxyParamCaption}\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{structstreets__vehicles_1_1vehicle}{streets\+\_\+vehicles\+::vehicle}} $>$ \&}]{vehicles,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} $>$ \&}]{schedule }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Method to schedule vehicles. Given and empty \mbox{\hyperlink{structstreets__vehicle__scheduler_1_1intersection__schedule}{intersection\+\_\+schedule}} shared pointer and a map of vehicles and vehicle ids. This method will populate the intersection schedule with a schedule for all vehicles in the vehicle map based on UC 3 scheduling logic to estimate vehicles\textquotesingle{} entering times to the intersection box based on the modified spat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vehicles} & A map of the vehicles to schedule, with vehicle id as keys \\
+\hline
+{\em schedule} & A signalize\+\_\+intersection schedule shared pointer populated with a vehicle schedule for all EVs and DVs in the map. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_a68ae44ddfa8ae16f298b2798ed93b9d2}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler}}.
+
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005                                                                                                                                                                        \{}
+\DoxyCodeLine{00006         }
+\DoxyCodeLine{00007         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00008             \textcolor{keyword}{auto} schedule = std::dynamic\_pointer\_cast<signalized\_intersection\_schedule> (i\_sched);}
+\DoxyCodeLine{00009             }
+\DoxyCodeLine{00010             \textcolor{keywordflow}{if} ( vehicles.empty() ) \{}
+\DoxyCodeLine{00011                 SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}No vehicles to schedule."{}});}
+\DoxyCodeLine{00012                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00013             \}}
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{00015             \textcolor{comment}{// Estimate Vehicles at common time }}
+\DoxyCodeLine{00016             \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1vehicle__scheduler_a85947f43b293504a108619374c0c0dae}{estimate\_vehicles\_at\_common\_time}}( vehicles, schedule-\/>timestamp);}
+\DoxyCodeLine{00017             \textcolor{comment}{// Create vectors of DVs and EVs}}
+\DoxyCodeLine{00018             std::list<streets\_vehicles::vehicle> DVs;}
+\DoxyCodeLine{00019             std::list<streets\_vehicles::vehicle> EVs;}
+\DoxyCodeLine{00020             }
+\DoxyCodeLine{00021             \textcolor{keywordflow}{for} ( \textcolor{keyword}{const} \textcolor{keyword}{auto} \&[v\_id, veh] : vehicles) \{}
+\DoxyCodeLine{00022                 \textcolor{keywordflow}{if} ( veh.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\_vehicles::vehicle\_state::EV}}) \{}
+\DoxyCodeLine{00023                     EVs.push\_back(veh);}
+\DoxyCodeLine{00024                 \}}
+\DoxyCodeLine{00025                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ( veh.\_cur\_state == \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\_vehicles::vehicle\_state::DV}} ) \{}
+\DoxyCodeLine{00026                     DVs.push\_back(veh);}
+\DoxyCodeLine{00027                 \}}
+\DoxyCodeLine{00028             \}}
+\DoxyCodeLine{00029             }
+\DoxyCodeLine{00030             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Number of Entering Vehicles (EVs) to schedule are : \{0\} "{}}, EVs.size());}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032             \textcolor{comment}{// Schedule DVs}}
+\DoxyCodeLine{00033             \textcolor{keywordflow}{if} ( !DVs.empty() )}
+\DoxyCodeLine{00034                 \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a4ff15023fb9c14d1765ebe78d3d3a944}{schedule\_dvs}}( DVs, schedule);}
+\DoxyCodeLine{00035             \textcolor{comment}{// Schedule EVs}}
+\DoxyCodeLine{00036             \textcolor{keywordflow}{if} ( !EVs.empty() )}
+\DoxyCodeLine{00037                 \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_ac41bc42db46cbbf7a037486fa46dd7e0}{schedule\_evs}}( EVs, schedule);}
+\DoxyCodeLine{00038         \}}
+\DoxyCodeLine{00039         \textcolor{keywordflow}{catch} ( \textcolor{keyword}{const} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}} \&ex ) \{}
+\DoxyCodeLine{00040             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}signalized scheduler failure: \{0\} "{}}, ex.what());}
+\DoxyCodeLine{00041         \}}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca58d6a88f13e2db7f5059c41047876f00}{streets\+\_\+vehicles\+::\+DV}}, \mbox{\hyperlink{vehicle__scheduler_8cpp_source_l00049}{streets\+\_\+vehicle\+\_\+scheduler\+::vehicle\+\_\+scheduler\+::estimate\+\_\+vehicles\+\_\+at\+\_\+common\+\_\+time()}}, \mbox{\hyperlink{namespacestreets__vehicles_a41f5c896d8020c141aa96235cf1405aca834d41112f2943c357f660165b6eb6de}{streets\+\_\+vehicles\+::\+EV}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00046}{schedule\+\_\+dvs()}}, and \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00078}{schedule\+\_\+evs()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a2572fdbb86e141df40174d618fe2a3d0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9f16f001c3768c180d62ea66a8770151}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a9f16f001c3768c180d62ea66a8770151}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!set\_final\_green\_buffer@{set\_final\_green\_buffer}}
+\index{set\_final\_green\_buffer@{set\_final\_green\_buffer}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{set\_final\_green\_buffer()}{set\_final\_green\_buffer()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::set\+\_\+final\+\_\+green\+\_\+buffer (\begin{DoxyParamCaption}\item[{const uint64\+\_\+t}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Set the final green buffer (ms). This value is used to account for safety. The assumption is that no vehicle shall enter the intersection box after the end of a green phase minus the final green buffer. entering the intersection box at a green phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & final green buffer in milliseconds. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00383}{383}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00383                                                                                   \{}
+\DoxyCodeLine{00384         \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af23ea3f8079aedda1f3e36203d0bc0c9}{final\_green\_buffer}} = buffer;}
+\DoxyCodeLine{00385     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00039}{final\+\_\+green\+\_\+buffer}}.
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a2532494d22760bd75165d7b2c25bc354}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a2532494d22760bd75165d7b2c25bc354}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!set\_initial\_green\_buffer@{set\_initial\_green\_buffer}}
+\index{set\_initial\_green\_buffer@{set\_initial\_green\_buffer}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{set\_initial\_green\_buffer()}{set\_initial\_green\_buffer()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::set\+\_\+initial\+\_\+green\+\_\+buffer (\begin{DoxyParamCaption}\item[{const uint64\+\_\+t}]{buffer }\end{DoxyParamCaption})}
+
+
+
+Set the initial green buffer (ms). This value is used to account for the time it takes a vehicle before entering the intersection box at a green phase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & initial green buffer in milliseconds. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00375}{375}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00375                                                                                     \{}
+\DoxyCodeLine{00376         \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed5f596d0160b7fc2941f8f003293f50}{initial\_green\_buffer}} = buffer;}
+\DoxyCodeLine{00377     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00032}{initial\+\_\+green\+\_\+buffer}}.
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a31439c5e2c152727be5df25e109ba988}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_a31439c5e2c152727be5df25e109ba988}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!set\_spat@{set\_spat}}
+\index{set\_spat@{set\_spat}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{set\_spat()}{set\_spat()}}
+{\footnotesize\ttfamily void streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::set\+\_\+spat (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}} $>$}]{spat\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Set the spat object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spat\+\_\+info} & \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00395}{395}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00395                                                                                                     \{}
+\DoxyCodeLine{00396         \mbox{\hyperlink{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}{spat\_ptr}} = spat\_info;}
+\DoxyCodeLine{00397     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00024}{spat\+\_\+ptr}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af23ea3f8079aedda1f3e36203d0bc0c9}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_af23ea3f8079aedda1f3e36203d0bc0c9}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!final\_green\_buffer@{final\_green\_buffer}}
+\index{final\_green\_buffer@{final\_green\_buffer}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{final\_green\_buffer}{final\_green\_buffer}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::final\+\_\+green\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The configurable time interval at the end of a green phase in milliseconds that is considered for estimating vehicles\textquotesingle{} entering times. The latest possible entering time during a phase is set to the end of the green phase minus the final\+\_\+green\+\_\+buffer. 
+
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00039}{39}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00169}{estimate\+\_\+et()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00387}{get\+\_\+final\+\_\+green\+\_\+buffer()}}, and \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00383}{set\+\_\+final\+\_\+green\+\_\+buffer()}}.
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed5f596d0160b7fc2941f8f003293f50}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aed5f596d0160b7fc2941f8f003293f50}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!initial\_green\_buffer@{initial\_green\_buffer}}
+\index{initial\_green\_buffer@{initial\_green\_buffer}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{initial\_green\_buffer}{initial\_green\_buffer}}
+{\footnotesize\ttfamily uint64\+\_\+t streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::initial\+\_\+green\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The configurable time interval at the beginning of a green phase in milliseconds that is considered for estimating vehicles\textquotesingle{} entering times. The earliest possible entering time during a phase is set to the beginning of the green phase plus the initial\+\_\+green\+\_\+buffer. 
+
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00032}{32}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00169}{estimate\+\_\+et()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00379}{get\+\_\+initial\+\_\+green\+\_\+buffer()}}, and \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00375}{set\+\_\+initial\+\_\+green\+\_\+buffer()}}.
+
+\mbox{\Hypertarget{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}\label{classstreets__vehicle__scheduler_1_1signalized__vehicle__scheduler_aa17cd405d5cda86d877060b915b9aa32}} 
+\index{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}!spat\_ptr@{spat\_ptr}}
+\index{spat\_ptr@{spat\_ptr}!streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler@{streets\_vehicle\_scheduler::signalized\_vehicle\_scheduler}}
+\doxysubsubsection{\texorpdfstring{spat\_ptr}{spat\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}}$>$ streets\+\_\+vehicle\+\_\+scheduler\+::signalized\+\_\+vehicle\+\_\+scheduler\+::spat\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A shared pointer to the modified\+\_\+spat. 
+
+
+
+Definition at line \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source_l00024}{24}} of file \mbox{\hyperlink{signalized__vehicle__scheduler_8h_source}{signalized\+\_\+vehicle\+\_\+scheduler.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00146}{find\+\_\+movement\+\_\+state\+\_\+for\+\_\+lane()}}, \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00391}{get\+\_\+spat()}}, and \mbox{\hyperlink{signalized__vehicle__scheduler_8cpp_source_l00395}{set\+\_\+spat()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+vehicle\+\_\+scheduler/include/\mbox{\hyperlink{signalized__vehicle__scheduler_8h}{signalized\+\_\+vehicle\+\_\+scheduler.\+h}}\item 
+streets\+\_\+utils/streets\+\_\+vehicle\+\_\+scheduler/src/\mbox{\hyperlink{signalized__vehicle__scheduler_8cpp}{signalized\+\_\+vehicle\+\_\+scheduler.\+cpp}}\end{DoxyCompactItemize}

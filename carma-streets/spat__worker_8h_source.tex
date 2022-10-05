@@ -1,0 +1,43 @@
+\hypertarget{spat__worker_8h_source}{}\doxysection{spat\+\_\+worker.\+h}
+\label{spat__worker_8h_source}\index{tsc\_client\_service/include/spat\_worker.h@{tsc\_client\_service/include/spat\_worker.h}}
+\mbox{\hyperlink{spat__worker_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ntcip__1202__ext_8h}{ntcip\_1202\_ext.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{spat_8h}{spat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{udp__socket__listener_8h}{udp\_socket\_listener.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00010}00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{udp__socket__listener__exception_8h}{udp\_socket\_listener\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00013}00013 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacetraffic__signal__controller__service}{traffic\_signal\_controller\_service}}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00014}00014 \{}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00015}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker}{00015}}     \textcolor{keyword}{class }\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker}{spat\_worker}}}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00016}00016     \{}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00017}00017         \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00021}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a9a3ae5052adf4ec92ed6a4b0037be944}{00021}}             std::string \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a9a3ae5052adf4ec92ed6a4b0037be944}{socket\_ip\_}}; }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00022}00022             }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00026}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a6910dda204a67ee0a45324029e209654}{00026}}             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a6910dda204a67ee0a45324029e209654}{socket\_port\_}}; }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00031}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a63226b291bc20ac8d9334899095a9aba}{00031}}             \textcolor{keywordtype}{int} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a63226b291bc20ac8d9334899095a9aba}{socket\_timeout\_}};}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00036}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a73335c776e6bfa02cb7ec1b4588985a0}{00036}}             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a73335c776e6bfa02cb7ec1b4588985a0}{socket\_created\_}} = \textcolor{keyword}{false}; }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00042}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a4ee619a743fa9ddcfea5347f82988630}{00042}}             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a4ee619a743fa9ddcfea5347f82988630}{\_use\_msg\_timestamp}};}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00047}\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_af4376217cd80cff72b70d38c2d0d55d1}{00047}}             std::unique\_ptr<udp\_socket\_listener> \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_af4376217cd80cff72b70d38c2d0d55d1}{spat\_listener}};}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00049}00049         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00060}00060             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_a3a679b92d5d397cf74684a90ab56dab8}{spat\_worker}}(\textcolor{keyword}{const} std::string\& ip, \textcolor{keyword}{const} \textcolor{keywordtype}{int}\& port, \textcolor{keyword}{const} \textcolor{keywordtype}{int}\& socket\_timeout, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} use\_msg\_timestamp);}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00061}00061             }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00068}00068             \textcolor{keywordtype}{bool} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_ac79506c9870fa7010c7c4403939a87cb}{initialize}}();}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00076}00076             \textcolor{keywordtype}{void} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker_aa38e623a3c2a391069809669672e4014}{receive\_spat}}(\textcolor{keyword}{const} std::shared\_ptr<signal\_phase\_and\_timing::spat> \_spat\_ptr) \textcolor{keyword}{const} ; }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00078}00078            }
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00079}00079     \};}
+\DoxyCodeLine{\Hypertarget{spat__worker_8h_source_l00080}00080 \}}
+
+\end{DoxyCode}

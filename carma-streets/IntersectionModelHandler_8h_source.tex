@@ -1,0 +1,40 @@
+\hypertarget{IntersectionModelHandler_8h_source}{}\doxysection{Intersection\+Model\+Handler.\+h}
+\label{IntersectionModelHandler_8h_source}\index{intersection\_model/src/server/src/handlers/IntersectionModelHandler.h@{intersection\_model/src/server/src/handlers/IntersectionModelHandler.h}}
+\mbox{\hyperlink{IntersectionModelHandler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00002}00002 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}spdlog/spdlog.h"{}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}intersection\_server\_api\_lib/OAIDefaultApiHandler.h"{}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}intersection\_server\_api\_lib/OAIDefaultApiRequest.h"{}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__model_8h}{intersection\_model.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00009}00009 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceIntersectionModelAPI}{IntersectionModelAPI}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00011}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler}{00011}}     \textcolor{keyword}{class }\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler}{IntersectionModelHandler}} : \textcolor{keyword}{public} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiHandler}{OpenAPI::OAIDefaultApiHandler}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00013}00013         Q\_OBJECT}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00014}00014     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00015}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{00015}}         std::shared\_ptr<intersection\_model::intersection\_model> \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00017}00017     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00018}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_acd88613283000b7696ee7302c3ec9f6c}{00018}}         \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_acd88613283000b7696ee7302c3ec9f6c}{IntersectionModelHandler}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00019}00019         \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_acd88613283000b7696ee7302c3ec9f6c}{IntersectionModelHandler}}(std::shared\_ptr<intersection\_model::intersection\_model> int\_worker);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00020}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ad15105d5396133e32d28a80e17ff696c}{00020}}         \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ad15105d5396133e32d28a80e17ff696c}{\string~IntersectionModelHandler}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00022}00022     \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00028}00028         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ab5e910c0381e00c870b5c4f6dbb2926b}{getConflictLanelets}}(qint32 link\_lanelet\_id) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00033}00033         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a93629c379a778d8ffdce415466f6cbdb}{getIntersectionInfo}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00038}00038         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_adbcea85837b855819000f5678af682af}{listDepartureLanelets}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00043}00043         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ae41985a418728df00ac59979b5dbd17e}{listEntryLanelets}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00048}00048         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_add77e41589dc034ab5882586825e5a01}{listLinkLanelets}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00049}00049     \};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8h_source_l00051}00051 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,851 @@
+\hypertarget{classtraffic__signal__controller__service_1_1tsc__service}{}\doxysection{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service Class Reference}
+\label{classtraffic__signal__controller__service_1_1tsc__service}\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+
+
+{\ttfamily \#include $<$tsc\+\_\+service.\+h$>$}
+
+
+
+Collaboration diagram for traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_abfe9b97a69e5c4c8c614ed2f7bfda80d}{tsc\+\_\+service}} ()=default
+\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aa82f97b9874e91dd19f3557d8fc4905f}{$\sim$tsc\+\_\+service}} ()
+\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_af1557609aa8e488d04f646e09cde9414}{tsc\+\_\+service}} (const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \&)=delete
+\item 
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \& \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0d64c3a5157eb5d30cac4e54772e4b90}{operator=}} (const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \&)=delete
+\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0f10530cccdd582172877692d6f480f5}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Method to initialize the \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ac8b524b54e3db0a25765546e2c136dd2}{initialize\+\_\+kafka\+\_\+producer}} (const std\+::string \&bootstap\+\_\+server, const std\+::string \&spat\+\_\+producer\+\_\+topic)
+\begin{DoxyCompactList}\small\item\em Initialize Kafka SPaT producer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0bbce68544a01f99199a07fb642342f9}{initialize\+\_\+snmp\+\_\+client}} (const std\+::string \&server\+\_\+ip, const int server\+\_\+port, const std\+::string \&community, const int snmp\+\_\+version, const int timeout)
+\begin{DoxyCompactList}\small\item\em Initialize SNMP Client to make SNMP calls to Traffic Signal Controller. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_adad711d135587e232d5cd92447b9a5af}{initialize\+\_\+tsc\+\_\+state}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\+\_\+client}} $>$ \+\_\+snmp\+\_\+client\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Initialize TSC State object which uses an SNMP Client to query initial information from the Traffic Signal Controller including default phase sequence, phase timing information, and phase number to signal group mapping. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}{enable\+\_\+spat}} () const
+\begin{DoxyCompactList}\small\item\em Method to enable spat using the TSC Service SNMP Client. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a470c3a6c64e310bc4ac0da205a2aeafb}{initialize\+\_\+spat\+\_\+worker}} (const std\+::string \&udp\+\_\+socket\+\_\+ip, const int udp\+\_\+socket\+\_\+port, const int timeout, const bool use\+\_\+tsc\+\_\+timestamp)
+\begin{DoxyCompactList}\small\item\em Initialize SPaT Worker which is responsible for standing up UDP Socket Listener and consuming Traffic Signal Controller NTCIP UDP SPaT messages and updating the SPaT object using this information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aac8bd449d953386ac8db45dd89a5ec4d}{initialize\+\_\+intersection\+\_\+client}} ()
+\begin{DoxyCompactList}\small\item\em Initialize Intersection Client used to query Intersection Model REST API for Intersection Name and Intersection ID for SPaT message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a54e9845c840c058c682e215fe39a6e0c}{initialize\+\_\+spat}} (const std\+::string \&intersection\+\_\+name, const int intersection\+\_\+id, const std\+::unordered\+\_\+map$<$ int, int $>$ \&phase\+\_\+number\+\_\+to\+\_\+signal\+\_\+group)
+\begin{DoxyCompactList}\small\item\em Initialize SPaT pointer with intersection name, intersection id and phase number to signal group mapping not provided in NTCIP UDP messages from TSC but required for interpretation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e2ac871cb45ef4a98354ca5bc49b25b}{start}} ()
+\begin{DoxyCompactList}\small\item\em Method to start all threads included in the \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aa4fb7763e7ae8b9e630fd7fa10bc2479}{produce\+\_\+spat\+\_\+json}} () const
+\begin{DoxyCompactList}\small\item\em Method to receive UDP data from traffic signal controller and broadcast spat JSON data to the carma-\/streets kafka broker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classkafka__clients_1_1kafka__producer__worker}{kafka\+\_\+clients\+::kafka\+\_\+producer\+\_\+worker}} $>$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{spat\+\_\+producer}}
+\begin{DoxyCompactList}\small\item\em Kafka producer for spat JSON. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker}{spat\+\_\+worker}} $>$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}{spat\+\_\+worker\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker}{spat\+\_\+worker}} contains \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} and consumes UDP data packets and updates spat accordingly. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state}{tsc\+\_\+state}} $>$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{tsc\+\_\+state\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state}{tsc\+\_\+state}} queries and stores traffic signal controller configurations including phase sequence, signal group (J2735) to phase number (NTCIP) maping and red clearance, yellow change, min/max green times. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\+\_\+client}} $>$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}{snmp\+\_\+client\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\+\_\+client}} used for making SNMP GET and SET calls th NTCIP OIDs to set and retrieve information from the traffic signal controller. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}} $>$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{spat\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer to spat object which is updated based on received UDP messsages from the traffic signal controller and broadcast on the carma-\/streets kafka broker as a JSON message. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1intersection__client}{intersection\+\_\+client}} $>$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}{intersection\+\_\+client\+\_\+ptr}}
+\begin{DoxyCompactList}\small\item\em Pointer to \mbox{\hyperlink{classtraffic__signal__controller__service_1_1intersection__client}{intersection\+\_\+client}} used to query intersection information including name and id from the \mbox{\hyperlink{namespaceintersection__model}{intersection\+\_\+model}} REST API. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a8612905672ceede1d032fd1123c2f484}{use\+\_\+tsc\+\_\+state\+\_\+spat\+\_\+update\+\_\+}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00017}{17}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_abfe9b97a69e5c4c8c614ed2f7bfda80d}\label{classtraffic__signal__controller__service_1_1tsc__service_abfe9b97a69e5c4c8c614ed2f7bfda80d}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!tsc\_service@{tsc\_service}}
+\index{tsc\_service@{tsc\_service}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{tsc\_service()}{tsc\_service()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::tsc\+\_\+service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_aa82f97b9874e91dd19f3557d8fc4905f}\label{classtraffic__signal__controller__service_1_1tsc__service_aa82f97b9874e91dd19f3557d8fc4905f}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!````~tsc\_service@{$\sim$tsc\_service}}
+\index{````~tsc\_service@{$\sim$tsc\_service}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{$\sim$tsc\_service()}{~tsc\_service()}}
+{\footnotesize\ttfamily traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::$\sim$tsc\+\_\+service (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00177}{177}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00178     \{}
+\DoxyCodeLine{00179         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{spat\_producer}})}
+\DoxyCodeLine{00180         \{}
+\DoxyCodeLine{00181             SPDLOG\_WARN(\textcolor{stringliteral}{"{}Stopping spat producer!"{}});}
+\DoxyCodeLine{00182             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{spat\_producer}}-\/>stop();}
+\DoxyCodeLine{00183         \}}
+\DoxyCodeLine{00184     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00022}{spat\+\_\+producer}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_af1557609aa8e488d04f646e09cde9414}\label{classtraffic__signal__controller__service_1_1tsc__service_af1557609aa8e488d04f646e09cde9414}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!tsc\_service@{tsc\_service}}
+\index{tsc\_service@{tsc\_service}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{tsc\_service()}{tsc\_service()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::tsc\+\_\+service (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}\label{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!enable\_spat@{enable\_spat}}
+\index{enable\_spat@{enable\_spat}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{enable\_spat()}{enable\_spat()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::enable\+\_\+spat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to enable spat using the TSC Service SNMP Client. 
+
+\begin{DoxyReturn}{Returns}
+true if SET operation is successful. 
+
+false if SET operation is not successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00098}{98}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00098                                        \{}
+\DoxyCodeLine{00099         \textcolor{comment}{// Enable SPaT }}
+\DoxyCodeLine{00100         snmp\_response\_obj \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}{enable\_spat}};}
+\DoxyCodeLine{00101         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}{enable\_spat}}.type = \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a7379a4a3fcabddd7000d9be76111c38aa5d5cd46919fa987731fb2edefe0f2a0c}{snmp\_response\_obj::response\_type::INTEGER}};}
+\DoxyCodeLine{00102         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}{enable\_spat}}.val\_int = 2;}
+\DoxyCodeLine{00103         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}{snmp\_client\_ptr}}-\/>process\_snmp\_request(\mbox{\hyperlink{namespacentcip__oids_ab1f88eabb00f61c8b06fea2deae959b5}{ntcip\_oids::ENABLE\_SPAT\_OID}}, \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a8c52684db8f49511e9b44471716bf164}{request\_type::SET}}, \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}{enable\_spat}}))\{}
+\DoxyCodeLine{00104             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed to enable SPaT broadcasting on Traffic Signal Controller!"{}});}
+\DoxyCodeLine{00105             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00106         \}}
+\DoxyCodeLine{00107         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Enabled UDP broadcasting of NTCIP SPaT data from TSC!"{}});}
+\DoxyCodeLine{00108         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00109     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8cpp_source_l00098}{enable\+\_\+spat()}}, \mbox{\hyperlink{ntcip__oids_8h_source_l00012}{ntcip\+\_\+oids\+::\+ENABLE\+\_\+\+SPAT\+\_\+\+OID}}, \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj_a7379a4a3fcabddd7000d9be76111c38aa5d5cd46919fa987731fb2edefe0f2a0c}{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::snmp\+\_\+response\+\_\+obj\+::\+INTEGER}}, \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a8c52684db8f49511e9b44471716bf164}{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::\+SET}}, and \mbox{\hyperlink{tsc__service_8h_source_l00038}{snmp\+\_\+client\+\_\+ptr}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00098}{enable\+\_\+spat()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a0f10530cccdd582172877692d6f480f5}\label{classtraffic__signal__controller__service_1_1tsc__service_a0f10530cccdd582172877692d6f480f5}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!initialize@{initialize}}
+\index{initialize@{initialize}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to initialize the \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}}. 
+
+\begin{DoxyReturn}{Returns}
+true if successful. 
+
+false if not successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006                                  \{}
+\DoxyCodeLine{00007         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00008         \{}
+\DoxyCodeLine{00009             \textcolor{comment}{// Intialize spat kafka producer}}
+\DoxyCodeLine{00010             std::string bootstrap\_server = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}bootstrap\_server"{}});}
+\DoxyCodeLine{00011             std::string spat\_topic\_name = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}spat\_producer\_topic"{}});}
+\DoxyCodeLine{00012             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ac8b524b54e3db0a25765546e2c136dd2}{initialize\_kafka\_producer}}(bootstrap\_server, spat\_topic\_name)) \{}
+\DoxyCodeLine{00013                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00014             \}}
+\DoxyCodeLine{00015             }
+\DoxyCodeLine{00016             \textcolor{comment}{// Initialize SNMP Client}}
+\DoxyCodeLine{00017             std::string target\_ip = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}target\_ip"{}});}
+\DoxyCodeLine{00018             \textcolor{keywordtype}{int} target\_port = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}target\_port"{}});}
+\DoxyCodeLine{00019             std::string community = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}community"{}});}
+\DoxyCodeLine{00020             \textcolor{keywordtype}{int} snmp\_version = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}snmp\_version"{}});}
+\DoxyCodeLine{00021             \textcolor{keywordtype}{int} timeout = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}timeout"{}});}
+\DoxyCodeLine{00022             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a0bbce68544a01f99199a07fb642342f9}{initialize\_snmp\_client}}(target\_ip, target\_port, community, snmp\_version, timeout)) \{}
+\DoxyCodeLine{00023                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00024             \}}
+\DoxyCodeLine{00025             \textcolor{comment}{//Initialize TSC State}}
+\DoxyCodeLine{00026             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a8612905672ceede1d032fd1123c2f484}{use\_tsc\_state\_spat\_update\_}} = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a48f38b0b6ecb3043cc051b624f12824b}{streets\_service::streets\_configuration::get\_boolean\_config}}(\textcolor{stringliteral}{"{}use\_tsc\_state\_spat\_update"{}});}
+\DoxyCodeLine{00027             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_adad711d135587e232d5cd92447b9a5af}{initialize\_tsc\_state}}(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}{snmp\_client\_ptr}}))\{}
+\DoxyCodeLine{00028                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00029             \}}
+\DoxyCodeLine{00030             \textcolor{comment}{// Enable SPaT}}
+\DoxyCodeLine{00031             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a34c50831f1ed8f48d8123b05b6724b32}{enable\_spat}}()) \{}
+\DoxyCodeLine{00032                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00033             \}}
+\DoxyCodeLine{00034             \textcolor{comment}{// Initialize spat\_worker}}
+\DoxyCodeLine{00035             std::string socket\_ip = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}udp\_socket\_ip"{}});}
+\DoxyCodeLine{00036             \textcolor{keywordtype}{int} socket\_port = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}udp\_socket\_port"{}});}
+\DoxyCodeLine{00037             \textcolor{keywordtype}{int} socket\_timeout = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_ab33a5d183c0ca2b2f0d757f5466f200b}{streets\_service::streets\_configuration::get\_int\_config}}(\textcolor{stringliteral}{"{}socket\_timeout"{}});}
+\DoxyCodeLine{00038             \textcolor{keywordtype}{bool} use\_msg\_timestamp =  \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a48f38b0b6ecb3043cc051b624f12824b}{streets\_service::streets\_configuration::get\_boolean\_config}}(\textcolor{stringliteral}{"{}use\_tsc\_timestamp"{}});         }
+\DoxyCodeLine{00039             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a470c3a6c64e310bc4ac0da205a2aeafb}{initialize\_spat\_worker}}(socket\_ip, socket\_port, socket\_timeout, use\_msg\_timestamp)) \{}
+\DoxyCodeLine{00040                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00041             \}}
+\DoxyCodeLine{00042             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aac8bd449d953386ac8db45dd89a5ec4d}{initialize\_intersection\_client}}()) \{}
+\DoxyCodeLine{00043                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00044             \}}
+\DoxyCodeLine{00045             \textcolor{comment}{// Add all phases to a single map}}
+\DoxyCodeLine{00046             \textcolor{keyword}{auto} all\_phases = \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{tsc\_state\_ptr}}-\/>get\_vehicle\_phase\_map();}
+\DoxyCodeLine{00047             \textcolor{keyword}{auto} ped\_phases = \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{tsc\_state\_ptr}}-\/>get\_ped\_phase\_map();}
+\DoxyCodeLine{00048             \textcolor{comment}{// Insert pedestrian phases into map of vehicle phases.}}
+\DoxyCodeLine{00049             all\_phases.insert(ped\_phases.begin(), ped\_phases.end());}
+\DoxyCodeLine{00050             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a54e9845c840c058c682e215fe39a6e0c}{initialize\_spat}}(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}{intersection\_client\_ptr}}-\/>get\_intersection\_name(), \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}{intersection\_client\_ptr}}-\/>get\_intersection\_id(), }
+\DoxyCodeLine{00051                                 all\_phases);}
+\DoxyCodeLine{00052             }
+\DoxyCodeLine{00053             \textcolor{comment}{// Initialize spat ptr}}
+\DoxyCodeLine{00054             SPDLOG\_INFO(\textcolor{stringliteral}{"{}Traffic Signal Controller Service initialized successfully!"{}});}
+\DoxyCodeLine{00055             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00056         \}}
+\DoxyCodeLine{00057         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}} \&ex)}
+\DoxyCodeLine{00058         \{}
+\DoxyCodeLine{00059             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Signal Optimization Service Initialization failure: \{0\} "{}}, ex.what());}
+\DoxyCodeLine{00060             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00061         \}}
+\DoxyCodeLine{00062     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8cpp_source_l00098}{enable\+\_\+spat()}}, \mbox{\hyperlink{streets__configuration_8cpp_source_l00149}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+boolean\+\_\+config()}}, \mbox{\hyperlink{streets__configuration_8cpp_source_l00118}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+int\+\_\+config()}}, \mbox{\hyperlink{streets__configuration_8cpp_source_l00103}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+string\+\_\+config()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00124}{initialize\+\_\+intersection\+\_\+client()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00064}{initialize\+\_\+kafka\+\_\+producer()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00076}{initialize\+\_\+snmp\+\_\+client()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00134}{initialize\+\_\+spat()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00111}{initialize\+\_\+spat\+\_\+worker()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00089}{initialize\+\_\+tsc\+\_\+state()}}, \mbox{\hyperlink{tsc__service_8h_source_l00050}{intersection\+\_\+client\+\_\+ptr}}, \mbox{\hyperlink{tsc__service_8h_source_l00038}{snmp\+\_\+client\+\_\+ptr}}, \mbox{\hyperlink{tsc__service_8h_source_l00033}{tsc\+\_\+state\+\_\+ptr}}, and \mbox{\hyperlink{tsc__service_8h_source_l00054}{use\+\_\+tsc\+\_\+state\+\_\+spat\+\_\+update\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__client__service_2src_2main_8cpp_source_l00007}{main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_a0f10530cccdd582172877692d6f480f5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classtraffic__signal__controller__service_1_1tsc__service_a0f10530cccdd582172877692d6f480f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_aac8bd449d953386ac8db45dd89a5ec4d}\label{classtraffic__signal__controller__service_1_1tsc__service_aac8bd449d953386ac8db45dd89a5ec4d}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!initialize\_intersection\_client@{initialize\_intersection\_client}}
+\index{initialize\_intersection\_client@{initialize\_intersection\_client}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{initialize\_intersection\_client()}{initialize\_intersection\_client()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::initialize\+\_\+intersection\+\_\+client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Intersection Client used to query Intersection Model REST API for Intersection Name and Intersection ID for SPaT message. 
+
+\begin{DoxyReturn}{Returns}
+true if initialization is successful. 
+
+false if initialization is not successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124                                                      \{}
+\DoxyCodeLine{00125         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}{intersection\_client\_ptr}} = std::make\_shared<intersection\_client>();}
+\DoxyCodeLine{00126         \textcolor{keywordflow}{if} ( !\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}{intersection\_client\_ptr}}-\/>request\_intersection\_info() ) \{}
+\DoxyCodeLine{00127             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed to retrieve intersection information from intersection model!"{}});}
+\DoxyCodeLine{00128             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00129         \}}
+\DoxyCodeLine{00130         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Intersection client initialized successfully!"{}});}
+\DoxyCodeLine{00131         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00132     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00050}{intersection\+\_\+client\+\_\+ptr}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_aac8bd449d953386ac8db45dd89a5ec4d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_ac8b524b54e3db0a25765546e2c136dd2}\label{classtraffic__signal__controller__service_1_1tsc__service_ac8b524b54e3db0a25765546e2c136dd2}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!initialize\_kafka\_producer@{initialize\_kafka\_producer}}
+\index{initialize\_kafka\_producer@{initialize\_kafka\_producer}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{initialize\_kafka\_producer()}{initialize\_kafka\_producer()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::initialize\+\_\+kafka\+\_\+producer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{bootstap\+\_\+server,  }\item[{const std\+::string \&}]{spat\+\_\+producer\+\_\+topic }\end{DoxyParamCaption})}
+
+
+
+Initialize Kafka SPaT producer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bootstap\+\_\+server} & for CARMA-\/\+Streets Kafka broker. \\
+\hline
+{\em spat\+\_\+producer\+\_\+topic} & name of topic to produce to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if initialization is successful. 
+
+false if initialization is not successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00064}{64}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00064                                                                                                                       \{}
+\DoxyCodeLine{00065         \textcolor{keyword}{auto} client = std::make\_unique<kafka\_clients::kafka\_client>();}
+\DoxyCodeLine{00066         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{spat\_producer}} = client-\/>create\_producer(bootstrap\_server, spat\_producer\_topc);}
+\DoxyCodeLine{00067         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{spat\_producer}}-\/>init())}
+\DoxyCodeLine{00068         \{}
+\DoxyCodeLine{00069             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}Kafka spat producer initialize error"{}});}
+\DoxyCodeLine{00070             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00071         \}}
+\DoxyCodeLine{00072         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Initialized SPAT Kafka producer!"{}});}
+\DoxyCodeLine{00073         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00074     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00022}{spat\+\_\+producer}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_ac8b524b54e3db0a25765546e2c136dd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a0bbce68544a01f99199a07fb642342f9}\label{classtraffic__signal__controller__service_1_1tsc__service_a0bbce68544a01f99199a07fb642342f9}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!initialize\_snmp\_client@{initialize\_snmp\_client}}
+\index{initialize\_snmp\_client@{initialize\_snmp\_client}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{initialize\_snmp\_client()}{initialize\_snmp\_client()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::initialize\+\_\+snmp\+\_\+client (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{server\+\_\+ip,  }\item[{const int}]{server\+\_\+port,  }\item[{const std\+::string \&}]{community,  }\item[{const int}]{snmp\+\_\+version,  }\item[{const int}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Initialize SNMP Client to make SNMP calls to Traffic Signal Controller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server\+\_\+ip} & of Traffic Signal Controller. \\
+\hline
+{\em server\+\_\+port} & of Traffic Signal Controller NTCIP Server. \\
+\hline
+{\em community} & of SNMP communication used. \\
+\hline
+{\em snmp\+\_\+version} & of SNMP communication used. \\
+\hline
+{\em timeout} & timeout micro seconds of SNMP connection \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if initialization is successful. 
+
+false if initialization is not successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00076}{76}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00077                                                                                    \{}
+\DoxyCodeLine{00078         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00079             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}{snmp\_client\_ptr}} = std::make\_shared<snmp\_client>(server\_ip, server\_port, community, snmp\_version, timeout);}
+\DoxyCodeLine{00080             SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}SNMP Client initialized!"{}});}
+\DoxyCodeLine{00081             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00082         \}}
+\DoxyCodeLine{00083         \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} snmp\_client\_exception \&e) \{}
+\DoxyCodeLine{00084             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Exception encountered initializing snmp client : \(\backslash\)n \{0\}"{}}, e.what());}
+\DoxyCodeLine{00085             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00086         \}}
+\DoxyCodeLine{00087     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00038}{snmp\+\_\+client\+\_\+ptr}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_a0bbce68544a01f99199a07fb642342f9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a54e9845c840c058c682e215fe39a6e0c}\label{classtraffic__signal__controller__service_1_1tsc__service_a54e9845c840c058c682e215fe39a6e0c}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!initialize\_spat@{initialize\_spat}}
+\index{initialize\_spat@{initialize\_spat}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{initialize\_spat()}{initialize\_spat()}}
+{\footnotesize\ttfamily void traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::initialize\+\_\+spat (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{intersection\+\_\+name,  }\item[{const int}]{intersection\+\_\+id,  }\item[{const std\+::unordered\+\_\+map$<$ int, int $>$ \&}]{phase\+\_\+number\+\_\+to\+\_\+signal\+\_\+group }\end{DoxyParamCaption})}
+
+
+
+Initialize SPaT pointer with intersection name, intersection id and phase number to signal group mapping not provided in NTCIP UDP messages from TSC but required for interpretation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intersection\+\_\+name} & J2735 Intersection name \\
+\hline
+{\em intersection\+\_\+id} & J2735 Intersection ID \\
+\hline
+{\em phase\+\_\+number\+\_\+to\+\_\+signal\+\_\+group} & map of phase numbers (NTCIP) to signal groups provided by TSC State \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00134}{134}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00135                                                                                                \{}
+\DoxyCodeLine{00136         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{spat\_ptr}} =  std::make\_shared<signal\_phase\_and\_timing::spat>();}
+\DoxyCodeLine{00137         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{spat\_ptr}}-\/>initialize\_intersection( intersection\_name, intersection\_id, phase\_number\_to\_signal\_group);}
+\DoxyCodeLine{00138     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00044}{spat\+\_\+ptr}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_a54e9845c840c058c682e215fe39a6e0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a470c3a6c64e310bc4ac0da205a2aeafb}\label{classtraffic__signal__controller__service_1_1tsc__service_a470c3a6c64e310bc4ac0da205a2aeafb}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!initialize\_spat\_worker@{initialize\_spat\_worker}}
+\index{initialize\_spat\_worker@{initialize\_spat\_worker}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{initialize\_spat\_worker()}{initialize\_spat\_worker()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::initialize\+\_\+spat\+\_\+worker (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{udp\+\_\+socket\+\_\+ip,  }\item[{const int}]{udp\+\_\+socket\+\_\+port,  }\item[{const int}]{timeout,  }\item[{const bool}]{use\+\_\+tsc\+\_\+timestamp }\end{DoxyParamCaption})}
+
+
+
+Initialize SPaT Worker which is responsible for standing up UDP Socket Listener and consuming Traffic Signal Controller NTCIP UDP SPaT messages and updating the SPaT object using this information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em udp\+\_\+socket\+\_\+ip} & IP of localhost where UDP packets will be received. \\
+\hline
+{\em udp\+\_\+socket\+\_\+port} & Port of localhost where UDP packets will be received. \\
+\hline
+{\em timeout} & Timeout in seconds for UDP client. UDP socket will throw an exception if no messages are receive for timeount window. \\
+\hline
+{\em use\+\_\+tsc\+\_\+timestamp} & bool flag to indicate whether to use TSC timestamp provided in UDP packet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if initialization is successful. 
+
+false if initialization is not successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00111}{111}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00112                                                                                          \{}
+\DoxyCodeLine{00113         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}{spat\_worker\_ptr}} = std::make\_shared<spat\_worker>(udp\_socket\_ip, udp\_socket\_port, timeout, use\_tsc\_timestamp);}
+\DoxyCodeLine{00114         \textcolor{comment}{// HTTP request to update intersection information}}
+\DoxyCodeLine{00115         \textcolor{keywordflow}{if} (!\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}{spat\_worker\_ptr}}-\/>initialize())}
+\DoxyCodeLine{00116         \{}
+\DoxyCodeLine{00117             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed to initialize spat worker!"{}});}
+\DoxyCodeLine{00118             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00119         \}}
+\DoxyCodeLine{00120         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Spat worker initialized successfully!"{}});}
+\DoxyCodeLine{00121         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00122     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00027}{spat\+\_\+worker\+\_\+ptr}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_a470c3a6c64e310bc4ac0da205a2aeafb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_adad711d135587e232d5cd92447b9a5af}\label{classtraffic__signal__controller__service_1_1tsc__service_adad711d135587e232d5cd92447b9a5af}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!initialize\_tsc\_state@{initialize\_tsc\_state}}
+\index{initialize\_tsc\_state@{initialize\_tsc\_state}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{initialize\_tsc\_state()}{initialize\_tsc\_state()}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::initialize\+\_\+tsc\+\_\+state (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\+\_\+client}} $>$}]{\+\_\+snmp\+\_\+client\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Initialize TSC State object which uses an SNMP Client to query initial information from the Traffic Signal Controller including default phase sequence, phase timing information, and phase number to signal group mapping. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+snmp\+\_\+client\+\_\+ptr} & SNMP client to use for querying initial information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if initialization is successful. 
+
+false if initialization is not successful. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00089                                                                                              \{}
+\DoxyCodeLine{00090         \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{tsc\_state\_ptr}} = std::make\_shared<tsc\_state>(\_snmp\_client\_ptr );}
+\DoxyCodeLine{00091         \textcolor{keywordflow}{if} ( !\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{tsc\_state\_ptr}}-\/>initialize() )\{}
+\DoxyCodeLine{00092             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Failed to initialize tsc\_state!"{}});}
+\DoxyCodeLine{00093             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00094         \}}
+\DoxyCodeLine{00095         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}TSC State initialized!"{}});}
+\DoxyCodeLine{00096         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00097     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00033}{tsc\+\_\+state\+\_\+ptr}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_adad711d135587e232d5cd92447b9a5af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a0d64c3a5157eb5d30cac4e54772e4b90}\label{classtraffic__signal__controller__service_1_1tsc__service_a0d64c3a5157eb5d30cac4e54772e4b90}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!operator=@{operator=}}
+\index{operator=@{operator=}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \& traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_aa4fb7763e7ae8b9e630fd7fa10bc2479}\label{classtraffic__signal__controller__service_1_1tsc__service_aa4fb7763e7ae8b9e630fd7fa10bc2479}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!produce\_spat\_json@{produce\_spat\_json}}
+\index{produce\_spat\_json@{produce\_spat\_json}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{produce\_spat\_json()}{produce\_spat\_json()}}
+{\footnotesize\ttfamily void traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::produce\+\_\+spat\+\_\+json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to receive UDP data from traffic signal controller and broadcast spat JSON data to the carma-\/streets kafka broker. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00141}{141}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00141                                               \{}
+\DoxyCodeLine{00142         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00143             \textcolor{keywordflow}{while}(\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{00144                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00145                     \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}{spat\_worker\_ptr}}-\/>receive\_spat(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{spat\_ptr}});}
+\DoxyCodeLine{00146                     }
+\DoxyCodeLine{00147                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a8612905672ceede1d032fd1123c2f484}{use\_tsc\_state\_spat\_update\_}})\{}
+\DoxyCodeLine{00148                         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00149                             \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}{tsc\_state\_ptr}}-\/>add\_future\_movement\_events(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{spat\_ptr}});}
+\DoxyCodeLine{00150                         \}}
+\DoxyCodeLine{00151                         \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} \mbox{\hyperlink{classtraffic__signal__controller__service_1_1monitor__states__exception}{traffic\_signal\_controller\_service::monitor\_states\_exception}} \&e)\{}
+\DoxyCodeLine{00152                             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Could not update movement events, spat not published. Encounted exception : \(\backslash\)n \{0\}"{}}, e.what());}
+\DoxyCodeLine{00153                         \}}
+\DoxyCodeLine{00154                     \}}
+\DoxyCodeLine{00155                     }
+\DoxyCodeLine{00156                     \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}{spat\_producer}}-\/>send(\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}{spat\_ptr}}-\/>toJson());}
+\DoxyCodeLine{00157                     }
+\DoxyCodeLine{00158                 \}}
+\DoxyCodeLine{00159                 \textcolor{keywordflow}{catch}( \textcolor{keyword}{const} \mbox{\hyperlink{classsignal__phase__and__timing_1_1signal__phase__and__timing__exception}{signal\_phase\_and\_timing::signal\_phase\_and\_timing\_exception}} \&e ) \{}
+\DoxyCodeLine{00160                     SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Encounted exception : \(\backslash\)n \{0\}"{}}, e.what());}
+\DoxyCodeLine{00161                 \}   }
+\DoxyCodeLine{00162             \}}
+\DoxyCodeLine{00163         \}}
+\DoxyCodeLine{00164         \textcolor{keywordflow}{catch}( \textcolor{keyword}{const} udp\_socket\_listener\_exception \&e) \{}
+\DoxyCodeLine{00165             SPDLOG\_ERROR(\textcolor{stringliteral}{"{}Encounted exception : \(\backslash\)n \{0\}"{}}, e.what());}
+\DoxyCodeLine{00166         \}}
+\DoxyCodeLine{00167         }
+\DoxyCodeLine{00168     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8h_source_l00022}{spat\+\_\+producer}}, \mbox{\hyperlink{tsc__service_8h_source_l00044}{spat\+\_\+ptr}}, \mbox{\hyperlink{tsc__service_8h_source_l00027}{spat\+\_\+worker\+\_\+ptr}}, \mbox{\hyperlink{tsc__service_8h_source_l00033}{tsc\+\_\+state\+\_\+ptr}}, and \mbox{\hyperlink{tsc__service_8h_source_l00054}{use\+\_\+tsc\+\_\+state\+\_\+spat\+\_\+update\+\_\+}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00172}{start()}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_aa4fb7763e7ae8b9e630fd7fa10bc2479_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a9e2ac871cb45ef4a98354ca5bc49b25b}\label{classtraffic__signal__controller__service_1_1tsc__service_a9e2ac871cb45ef4a98354ca5bc49b25b}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!start@{start}}
+\index{start@{start}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to start all threads included in the \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}}. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8cpp_source_l00172}{172}} of file \mbox{\hyperlink{tsc__service_8cpp_source}{tsc\+\_\+service.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00172                             \{}
+\DoxyCodeLine{00173         std::thread spat\_t(\&\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service_aa4fb7763e7ae8b9e630fd7fa10bc2479}{tsc\_service::produce\_spat\_json}}, \textcolor{keyword}{this});}
+\DoxyCodeLine{00174         spat\_t.join();}
+\DoxyCodeLine{00175     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{tsc__service_8cpp_source_l00141}{produce\+\_\+spat\+\_\+json()}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__client__service_2src_2main_8cpp_source_l00007}{main()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtraffic__signal__controller__service_1_1tsc__service_a9e2ac871cb45ef4a98354ca5bc49b25b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classtraffic__signal__controller__service_1_1tsc__service_a9e2ac871cb45ef4a98354ca5bc49b25b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}\label{classtraffic__signal__controller__service_1_1tsc__service_ab618504f0fe46fe639c43e48f9d6a264}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!intersection\_client\_ptr@{intersection\_client\_ptr}}
+\index{intersection\_client\_ptr@{intersection\_client\_ptr}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{intersection\_client\_ptr}{intersection\_client\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtraffic__signal__controller__service_1_1intersection__client}{intersection\+\_\+client}}$>$ traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::intersection\+\_\+client\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to \mbox{\hyperlink{classtraffic__signal__controller__service_1_1intersection__client}{intersection\+\_\+client}} used to query intersection information including name and id from the \mbox{\hyperlink{namespaceintersection__model}{intersection\+\_\+model}} REST API. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00050}{50}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00124}{initialize\+\_\+intersection\+\_\+client()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}\label{classtraffic__signal__controller__service_1_1tsc__service_a9e901a004e42f8fd670d54e16f4fb3bb}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!snmp\_client\_ptr@{snmp\_client\_ptr}}
+\index{snmp\_client\_ptr@{snmp\_client\_ptr}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{snmp\_client\_ptr}{snmp\_client\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\+\_\+client}}$>$ traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::snmp\+\_\+client\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\+\_\+client}} used for making SNMP GET and SET calls th NTCIP OIDs to set and retrieve information from the traffic signal controller. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00038}{38}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00098}{enable\+\_\+spat()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00076}{initialize\+\_\+snmp\+\_\+client()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}\label{classtraffic__signal__controller__service_1_1tsc__service_a1dfbd2157cd62094844fb2e1a6d70711}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!spat\_producer@{spat\_producer}}
+\index{spat\_producer@{spat\_producer}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{spat\_producer}{spat\_producer}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classkafka__clients_1_1kafka__producer__worker}{kafka\+\_\+clients\+::kafka\+\_\+producer\+\_\+worker}}$>$ traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::spat\+\_\+producer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kafka producer for spat JSON. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00022}{22}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00177}{$\sim$tsc\+\_\+service()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00064}{initialize\+\_\+kafka\+\_\+producer()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00141}{produce\+\_\+spat\+\_\+json()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}\label{classtraffic__signal__controller__service_1_1tsc__service_ae77457ef9ea248e80a34a2a145a59096}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!spat\_ptr@{spat\_ptr}}
+\index{spat\_ptr@{spat\_ptr}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{spat\_ptr}{spat\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structsignal__phase__and__timing_1_1spat}{signal\+\_\+phase\+\_\+and\+\_\+timing\+::spat}}$>$ traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::spat\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer to spat object which is updated based on received UDP messsages from the traffic signal controller and broadcast on the carma-\/streets kafka broker as a JSON message. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00044}{44}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00134}{initialize\+\_\+spat()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00141}{produce\+\_\+spat\+\_\+json()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}\label{classtraffic__signal__controller__service_1_1tsc__service_a390a1495b441c84b4ad620113635556f}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!spat\_worker\_ptr@{spat\_worker\_ptr}}
+\index{spat\_worker\_ptr@{spat\_worker\_ptr}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{spat\_worker\_ptr}{spat\_worker\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker}{spat\+\_\+worker}}$>$ traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::spat\+\_\+worker\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker}{spat\+\_\+worker}} contains \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}} and consumes UDP data packets and updates spat accordingly. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00027}{27}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00111}{initialize\+\_\+spat\+\_\+worker()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00141}{produce\+\_\+spat\+\_\+json()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}\label{classtraffic__signal__controller__service_1_1tsc__service_a26027ff7d1a2fdf05a67be10543aa1bd}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!tsc\_state\_ptr@{tsc\_state\_ptr}}
+\index{tsc\_state\_ptr@{tsc\_state\_ptr}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{tsc\_state\_ptr}{tsc\_state\_ptr}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state}{tsc\+\_\+state}}$>$ traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::tsc\+\_\+state\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state}{tsc\+\_\+state}} queries and stores traffic signal controller configurations including phase sequence, signal group (J2735) to phase number (NTCIP) maping and red clearance, yellow change, min/max green times. 
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00033}{33}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}, \mbox{\hyperlink{tsc__service_8cpp_source_l00089}{initialize\+\_\+tsc\+\_\+state()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00141}{produce\+\_\+spat\+\_\+json()}}.
+
+\mbox{\Hypertarget{classtraffic__signal__controller__service_1_1tsc__service_a8612905672ceede1d032fd1123c2f484}\label{classtraffic__signal__controller__service_1_1tsc__service_a8612905672ceede1d032fd1123c2f484}} 
+\index{traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}!use\_tsc\_state\_spat\_update\_@{use\_tsc\_state\_spat\_update\_}}
+\index{use\_tsc\_state\_spat\_update\_@{use\_tsc\_state\_spat\_update\_}!traffic\_signal\_controller\_service::tsc\_service@{traffic\_signal\_controller\_service::tsc\_service}}
+\doxysubsubsection{\texorpdfstring{use\_tsc\_state\_spat\_update\_}{use\_tsc\_state\_spat\_update\_}}
+{\footnotesize\ttfamily bool traffic\+\_\+signal\+\_\+controller\+\_\+service\+::tsc\+\_\+service\+::use\+\_\+tsc\+\_\+state\+\_\+spat\+\_\+update\+\_\+ = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{tsc__service_8h_source_l00054}{54}} of file \mbox{\hyperlink{tsc__service_8h_source}{tsc\+\_\+service.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{tsc__service_8cpp_source_l00006}{initialize()}}, and \mbox{\hyperlink{tsc__service_8cpp_source_l00141}{produce\+\_\+spat\+\_\+json()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tsc\+\_\+client\+\_\+service/include/\mbox{\hyperlink{tsc__service_8h}{tsc\+\_\+service.\+h}}\item 
+tsc\+\_\+client\+\_\+service/src/\mbox{\hyperlink{tsc__service_8cpp}{tsc\+\_\+service.\+cpp}}\end{DoxyCompactItemize}

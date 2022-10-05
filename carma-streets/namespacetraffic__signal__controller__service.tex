@@ -1,0 +1,71 @@
+\hypertarget{namespacetraffic__signal__controller__service}{}\doxysection{traffic\+\_\+signal\+\_\+controller\+\_\+service Namespace Reference}
+\label{namespacetraffic__signal__controller__service}\index{traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1intersection__client}{intersection\+\_\+client}}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1monitor__states__exception}{monitor\+\_\+states\+\_\+exception}}
+\begin{DoxyCompactList}\small\item\em Runtime error related to SNMP client used to communicate with Traffic Signal Controller (NTCIP). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtraffic__signal__controller__service_1_1signal__group__state}{signal\+\_\+group\+\_\+state}}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client}{snmp\+\_\+client}}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1snmp__client__exception}{snmp\+\_\+client\+\_\+exception}}
+\begin{DoxyCompactList}\small\item\em Runtime error related to SNMP client used to communicate with Traffic Signal Controller (NTCIP). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structtraffic__signal__controller__service_1_1snmp__response__obj}{snmp\+\_\+response\+\_\+obj}}
+\begin{DoxyCompactList}\small\item\em A struct to hold the value being sent to the TSC, can be integer or string. Type needs to be defined. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1spat__worker}{spat\+\_\+worker}}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__service}{tsc\+\_\+service}}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1tsc__state}{tsc\+\_\+state}}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener}{udp\+\_\+socket\+\_\+listener}}
+\item 
+class \mbox{\hyperlink{classtraffic__signal__controller__service_1_1udp__socket__listener__exception}{udp\+\_\+socket\+\_\+listener\+\_\+exception}}
+\begin{DoxyCompactList}\small\item\em Runtime error related to spat worker and the UDP socket it uses to listen for incoming UDP NTCIP SPaT data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{request\+\_\+type}} \{ \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a7528035a93ee69cedb1dbddb2f0bfcc8}{GET}}
+, \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a8c52684db8f49511e9b44471716bf164}{SET}}
+, \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a03570470bad94692ce93e32700d2e1cb}{OTHER}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}\label{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}} 
+\index{traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}!request\_type@{request\_type}}
+\index{request\_type@{request\_type}!traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}}
+\doxysubsubsection{\texorpdfstring{request\_type}{request\_type}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61}{traffic\+\_\+signal\+\_\+controller\+\_\+service\+::request\+\_\+type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GET@{GET}!traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}}\index{traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}!GET@{GET}}}\mbox{\Hypertarget{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a7528035a93ee69cedb1dbddb2f0bfcc8}\label{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a7528035a93ee69cedb1dbddb2f0bfcc8}} 
+GET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SET@{SET}!traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}}\index{traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}!SET@{SET}}}\mbox{\Hypertarget{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a8c52684db8f49511e9b44471716bf164}\label{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a8c52684db8f49511e9b44471716bf164}} 
+SET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OTHER@{OTHER}!traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}}\index{traffic\_signal\_controller\_service@{traffic\_signal\_controller\_service}!OTHER@{OTHER}}}\mbox{\Hypertarget{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a03570470bad94692ce93e32700d2e1cb}\label{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a03570470bad94692ce93e32700d2e1cb}} 
+OTHER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{snmp__client_8h_source_l00018}{18}} of file \mbox{\hyperlink{snmp__client_8h_source}{snmp\+\_\+client.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019 \{}
+\DoxyCodeLine{00020     \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a7528035a93ee69cedb1dbddb2f0bfcc8}{GET}},}
+\DoxyCodeLine{00021     \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a8c52684db8f49511e9b44471716bf164}{SET}},}
+\DoxyCodeLine{00022     \mbox{\hyperlink{namespacetraffic__signal__controller__service_aa91e53dd22b41ddac648a9b468615b61a03570470bad94692ce93e32700d2e1cb}{OTHER}} \textcolor{comment}{//Processing this request type is not a defined behavior, included for testing only}}
+\DoxyCodeLine{00023 \};}
+
+\end{DoxyCode}

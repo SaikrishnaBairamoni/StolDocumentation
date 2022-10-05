@@ -1,0 +1,173 @@
+\hypertarget{IntersectionModelHandler_8cpp_source}{}\doxysection{Intersection\+Model\+Handler.\+cpp}
+\label{IntersectionModelHandler_8cpp_source}\index{intersection\_model/src/server/src/handlers/IntersectionModelHandler.cpp@{intersection\_model/src/server/src/handlers/IntersectionModelHandler.cpp}}
+\mbox{\hyperlink{IntersectionModelHandler_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{IntersectionModelHandler_8h}{IntersectionModelHandler.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{intersection__model_8h}{intersection\_model.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00004}\mbox{\hyperlink{namespaceIntersectionModelAPI}{00004}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceIntersectionModelAPI}{IntersectionModelAPI}}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00005}00005 \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00006}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_adb647dd3ed56fca32de5fbe687881217}{00006}}     \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_acd88613283000b7696ee7302c3ec9f6c}{IntersectionModelHandler::IntersectionModelHandler}}(std::shared\_ptr<intersection\_model::intersection\_model> int\_worker) : int\_worker\_(int\_worker)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00007}00007     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00008}00008         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}IntersectionModelHandler constructor called"{}});}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00009}00009     \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00011}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a93629c379a778d8ffdce415466f6cbdb}{00011}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a93629c379a778d8ffdce415466f6cbdb}{IntersectionModelHandler::getIntersectionInfo}}()}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00013}00013         \textcolor{keyword}{auto} reqObj = qobject\_cast<OpenAPI::OAIDefaultApiRequest *>(sender());}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00014}00014         \textcolor{keywordflow}{if} (reqObj != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00015}00015         \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00016}00016             \mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info}{OpenAPI::OAIIntersection\_info}} res;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00017}00017             res.\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info_af2df3f71b038ab4dcbd48197dec82eaf}{setId}}(\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_intersection\_info().intersection\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00018}00018             res.\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info_af745d2dd9a54c4853e6b30fde03e6aac}{setName}}(\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_intersection\_info().intersection\_name.c\_str());}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00019}00019             QList<OpenAPI::OAILanelet\_info> departure\_lanlets;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00020}00020             \mbox{\hyperlink{structintersection__model_1_1intersection__info__t}{intersection\_model::intersection\_info\_t}} int\_info = \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_intersection\_info();}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00021}00021             \textcolor{keywordflow}{for} (std::set<intersection\_model::lanelet\_info\_t>::iterator itr = int\_info.\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a3247132d260b9048c39f51d33d1cb0bb}{departure\_lanelets\_info}}.begin(); itr != int\_info.\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a3247132d260b9048c39f51d33d1cb0bb}{departure\_lanelets\_info}}.end(); itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00022}00022             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00023}00023                 \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lanelet\_info;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00024}00024                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a794cac974b4418934d66a3255266f2a5}{setId}}(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00025}00025                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a67ee86888134602a96eab83faef7d285}{setSpeedLimit}}(itr-\/>speed\_limit);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00026}00026                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a416e72147c5b6b17009ac9bccb928efa}{setLength}}(itr-\/>length);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00027}00027                 departure\_lanlets.push\_back(lanelet\_info);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00028}00028             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00029}00029             res.\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info_ad4ff74800072aeff7af7dd8755c1e4c3}{setDepartureLanelets}}(departure\_lanlets);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00031}00031             QList<OpenAPI::OAILanelet\_info> link\_lanlets;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00032}00032             \textcolor{keywordflow}{for} (std::vector<intersection\_model::lanelet\_info\_t>::iterator itr = int\_info.\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a98ef36c3c2bcb89fe26f277a0e6f13b5}{link\_lanelets\_info}}.begin(); itr != int\_info.\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_a98ef36c3c2bcb89fe26f277a0e6f13b5}{link\_lanelets\_info}}.end(); itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00033}00033             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00034}00034                 \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lanelet\_info;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00035}00035                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a794cac974b4418934d66a3255266f2a5}{setId}}(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00036}00036                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a67ee86888134602a96eab83faef7d285}{setSpeedLimit}}(itr-\/>speed\_limit);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00037}00037                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a88f182ae07c3fb18bc530afe9e7cd739}{setSignalGroupId}}(itr-\/>signal\_group\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00039}00039                 \textcolor{comment}{// Update the llink lanelet\_info with the list of conflict lanelets}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00040}00040                 std::vector<intersection\_model::lanelet\_info\_t> conflict\_lanelet\_info\_v = \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_conflict\_lanelets\_info(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00041}00041                 QList<qint32> conflict\_lanelet\_ids;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00042}00042                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} conflict\_itr = conflict\_lanelet\_info\_v.begin(); conflict\_itr != conflict\_lanelet\_info\_v.end(); conflict\_itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00043}00043                 \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00044}00044                     conflict\_lanelet\_ids.push\_back(conflict\_itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00045}00045                 \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00046}00046                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_af9306033ac7d9e1708206c9b59bea79e}{setConflictLaneletIds}}(conflict\_lanelet\_ids);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00047}00047                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a416e72147c5b6b17009ac9bccb928efa}{setLength}}(itr-\/>length);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00048}00048                 link\_lanlets.push\_back(lanelet\_info);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00049}00049             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00050}00050             res.\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info_aab2fa0fdae5eba5aec38270fd47b423d}{setLinkLanelets}}(link\_lanlets);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00052}00052             QList<OpenAPI::OAILanelet\_info> entry\_lanlets;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00053}00053             \textcolor{keywordflow}{for} (std::vector<intersection\_model::lanelet\_info\_t>::iterator itr = int\_info.\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_aaec275e8e8b2d9ab62c83f6e04087f15}{entering\_lanelets\_info}}.begin(); itr != int\_info.\mbox{\hyperlink{structintersection__model_1_1intersection__info__t_aaec275e8e8b2d9ab62c83f6e04087f15}{entering\_lanelets\_info}}.end(); itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00054}00054             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00055}00055                 \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lanelet\_info;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00056}00056                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a794cac974b4418934d66a3255266f2a5}{setId}}(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00057}00057                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a67ee86888134602a96eab83faef7d285}{setSpeedLimit}}(itr-\/>speed\_limit);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00058}00058                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a416e72147c5b6b17009ac9bccb928efa}{setLength}}(itr-\/>length);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00059}00059                 QList<qint32> conn\_lanelet\_ids;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00060}00060                 \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto} \& conn\_lane\_id: itr-\/>connecting\_lanelet\_ids)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00061}00061                 \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00062}00062                     conn\_lanelet\_ids.push\_back(conn\_lane\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00063}00063                 \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00064}00064                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a4b707a9e3f109d6772f51f1eec7965e1}{setConnectingLaneletIds}}(conn\_lanelet\_ids);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00065}00065                 entry\_lanlets.push\_back(lanelet\_info);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00066}00066             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00067}00067             res.\mbox{\hyperlink{classOpenAPI_1_1OAIIntersection__info_a05053402d9de2cc88d5dfdd44121c8ab}{setEntryLanelets}}(entry\_lanlets);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00068}00068             reqObj-\/>getIntersectionInfoResponse(res);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00069}00069         \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00072}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_adbcea85837b855819000f5678af682af}{00072}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_adbcea85837b855819000f5678af682af}{IntersectionModelHandler::listDepartureLanelets}}()}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00073}00073     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00074}00074         \textcolor{keyword}{auto} reqObj = qobject\_cast<OpenAPI::OAIDefaultApiRequest *>(sender());}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00075}00075         \textcolor{keywordflow}{if} (reqObj != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00076}00076         \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00077}00077             QList<OpenAPI::OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00078}00078             std::set<intersection\_model::lanelet\_info\_t> departure\_lanelet\_v = \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_departure\_lanelets\_info();}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00079}00079             \textcolor{keywordflow}{for} (std::set<intersection\_model::lanelet\_info\_t>::iterator itr = departure\_lanelet\_v.begin(); itr != departure\_lanelet\_v.end(); itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00080}00080             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00081}00081                 \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lanelet\_info;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00082}00082                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a794cac974b4418934d66a3255266f2a5}{setId}}(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00083}00083                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a67ee86888134602a96eab83faef7d285}{setSpeedLimit}}(itr-\/>speed\_limit);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00084}00084                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a416e72147c5b6b17009ac9bccb928efa}{setLength}}(itr-\/>length);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00085}00085                 res.push\_back(lanelet\_info);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00086}00086             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00087}00087             reqObj-\/>listDepartureLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00088}00088         \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00091}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ae41985a418728df00ac59979b5dbd17e}{00091}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ae41985a418728df00ac59979b5dbd17e}{IntersectionModelHandler::listEntryLanelets}}()}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00092}00092     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00093}00093         \textcolor{keyword}{auto} reqObj = qobject\_cast<OpenAPI::OAIDefaultApiRequest *>(sender());}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00094}00094         \textcolor{keywordflow}{if} (reqObj != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00095}00095         \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00096}00096             QList<OpenAPI::OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00097}00097             std::vector<intersection\_model::lanelet\_info\_t> entry\_lanelet\_v = \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_entry\_lanelets\_info();}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00098}00098             \textcolor{keywordflow}{for} (std::vector<intersection\_model::lanelet\_info\_t>::iterator itr = entry\_lanelet\_v.begin(); itr != entry\_lanelet\_v.end(); itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00099}00099             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00100}00100                 \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lanelet\_info;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00101}00101                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a794cac974b4418934d66a3255266f2a5}{setId}}(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00102}00102                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a67ee86888134602a96eab83faef7d285}{setSpeedLimit}}(itr-\/>speed\_limit);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00103}00103                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a416e72147c5b6b17009ac9bccb928efa}{setLength}}(itr-\/>length);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00104}00104                 QList<qint32> conn\_lanelet\_ids;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00105}00105                 \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto} \& conn\_lane\_id: itr-\/>connecting\_lanelet\_ids)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00106}00106                 \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00107}00107                     conn\_lanelet\_ids.push\_back(conn\_lane\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00108}00108                 \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00109}00109                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a4b707a9e3f109d6772f51f1eec7965e1}{setConnectingLaneletIds}}(conn\_lanelet\_ids);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00110}00110                 res.push\_back(lanelet\_info);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00111}00111             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00112}00112             reqObj-\/>listEntryLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00113}00113         \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00114}00114     \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00116}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_add77e41589dc034ab5882586825e5a01}{00116}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_add77e41589dc034ab5882586825e5a01}{IntersectionModelHandler::listLinkLanelets}}()}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00117}00117     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00118}00118         \textcolor{keyword}{auto} reqObj = qobject\_cast<OpenAPI::OAIDefaultApiRequest *>(sender());}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00119}00119         \textcolor{keywordflow}{if} (reqObj != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00120}00120         \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00121}00121             QList<OpenAPI::OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00122}00122             std::vector<intersection\_model::lanelet\_info\_t> link\_lanelet\_v = \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_link\_lanelets\_info();}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00123}00123             \textcolor{keywordflow}{for} (std::vector<intersection\_model::lanelet\_info\_t>::iterator itr = link\_lanelet\_v.begin(); itr != link\_lanelet\_v.end(); itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00124}00124             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00125}00125                 \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lanelet\_info;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00126}00126                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a794cac974b4418934d66a3255266f2a5}{setId}}(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00127}00127                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a67ee86888134602a96eab83faef7d285}{setSpeedLimit}}(itr-\/>speed\_limit);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00128}00128                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a416e72147c5b6b17009ac9bccb928efa}{setLength}}(itr-\/>length);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00129}00129                 lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a88f182ae07c3fb18bc530afe9e7cd739}{setSignalGroupId}}(itr-\/>signal\_group\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00130}00130                 res.push\_back(lanelet\_info);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00131}00131             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00132}00132             reqObj-\/>listLinkLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00133}00133         \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00134}00134     \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00136}\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ab5e910c0381e00c870b5c4f6dbb2926b}{00136}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_ab5e910c0381e00c870b5c4f6dbb2926b}{IntersectionModelHandler::getConflictLanelets}}(qint32 link\_lanelet\_id)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00137}00137     \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00138}00138         Q\_UNUSED(link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00139}00139         \textcolor{keyword}{auto} reqObj = qobject\_cast<OpenAPI::OAIDefaultApiRequest *>(sender());}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00140}00140         \textcolor{keywordflow}{if} (reqObj != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00141}00141         \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00142}00142             QList<OpenAPI::OAILanelet\_info> res;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00143}00143             \textcolor{comment}{// Only return the conflict lanelet ids when input is a link lanelet within an intersection}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00144}00144             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>is\_valid\_link\_lanelet\_id(link\_lanelet\_id))}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00145}00145             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00146}00146                 std::vector<intersection\_model::lanelet\_info\_t> link\_lanelet\_v = \mbox{\hyperlink{classIntersectionModelAPI_1_1IntersectionModelHandler_a39089f9a53ed385b256795b0fb99603f}{int\_worker\_}}-\/>get\_conflict\_lanelets\_info(link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00147}00147                 \textcolor{keywordflow}{for} (std::vector<intersection\_model::lanelet\_info\_t>::iterator itr = link\_lanelet\_v.begin(); itr != link\_lanelet\_v.end(); itr++)}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00148}00148                 \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00149}00149                     \mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info}{OpenAPI::OAILanelet\_info}} lanelet\_info;}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00150}00150                     lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a794cac974b4418934d66a3255266f2a5}{setId}}(itr-\/>id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00151}00151                     lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a67ee86888134602a96eab83faef7d285}{setSpeedLimit}}(itr-\/>speed\_limit);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00152}00152                     lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a416e72147c5b6b17009ac9bccb928efa}{setLength}}(itr-\/>length);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00153}00153                     lanelet\_info.\mbox{\hyperlink{classOpenAPI_1_1OAILanelet__info_a88f182ae07c3fb18bc530afe9e7cd739}{setSignalGroupId}}(itr-\/>signal\_group\_id);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00154}00154                     res.push\_back(lanelet\_info);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00155}00155                 \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00156}00156                 reqObj-\/>getConflictLaneletsResponse(res);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00157}00157             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00158}00158             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00159}00159             \{}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00160}00160                 QString err\_msg = \textcolor{stringliteral}{"{}Invalid link lanelet id parameter."{}};}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00161}00161                 reqObj-\/>getConflictLaneletsError(res, QNetworkReply::NetworkError::ContentAccessDenied, err\_msg);}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00162}00162             \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00163}00163         \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00164}00164     \}}
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{IntersectionModelHandler_8cpp_source_l00167}00167 \}}
+
+\end{DoxyCode}

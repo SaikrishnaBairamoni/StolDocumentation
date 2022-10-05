@@ -1,0 +1,114 @@
+\hypertarget{namespacezephyr_1_1html__redirects}{}\doxysection{zephyr.\+html\+\_\+redirects Namespace Reference}
+\label{namespacezephyr_1_1html__redirects}\index{zephyr.html\_redirects@{zephyr.html\_redirects}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacezephyr_1_1html__redirects_a58b4fe4a4861d82737a29c85a6b2ee69}{setup}} (app)
+\item 
+def \mbox{\hyperlink{namespacezephyr_1_1html__redirects_a0cc0b386955d8ee0ed4fc97699bd2ab3}{create\+\_\+redirect\+\_\+pages}} (app, docname)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{namespacezephyr_1_1html__redirects_a79a148d55211d98ac7c66170d41e9fad}{REDIRECT\+\_\+\+TEMPLATE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1html__redirects_a0cc0b386955d8ee0ed4fc97699bd2ab3}\label{namespacezephyr_1_1html__redirects_a0cc0b386955d8ee0ed4fc97699bd2ab3}} 
+\index{zephyr.html\_redirects@{zephyr.html\_redirects}!create\_redirect\_pages@{create\_redirect\_pages}}
+\index{create\_redirect\_pages@{create\_redirect\_pages}!zephyr.html\_redirects@{zephyr.html\_redirects}}
+\doxysubsubsection{\texorpdfstring{create\_redirect\_pages()}{create\_redirect\_pages()}}
+{\footnotesize\ttfamily def zephyr.\+html\+\_\+redirects.\+create\+\_\+redirect\+\_\+pages (\begin{DoxyParamCaption}\item[{}]{app,  }\item[{}]{docname }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{html__redirects_8py_source_l00063}{63}} of file \mbox{\hyperlink{html__redirects_8py_source}{html\+\_\+redirects.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00063 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1html__redirects_a0cc0b386955d8ee0ed4fc97699bd2ab3}{create\_redirect\_pages}}(app, docname):}
+\DoxyCodeLine{00064     \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} isinstance(app.builder, StandaloneHTMLBuilder):}
+\DoxyCodeLine{00065         \textcolor{keywordflow}{return}  \textcolor{comment}{\# only relevant for standalone HTML output}}
+\DoxyCodeLine{00066 }
+\DoxyCodeLine{00067     \textcolor{keywordflow}{for} (old\_url, new\_url) \textcolor{keywordflow}{in} app.config.html\_redirect\_pages:}
+\DoxyCodeLine{00068         \textcolor{keywordflow}{if} old\_url.startswith(\textcolor{stringliteral}{'/'}):}
+\DoxyCodeLine{00069             old\_url = old\_url[1:]}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071         new\_url = app.builder.get\_relative\_uri(old\_url, new\_url)}
+\DoxyCodeLine{00072         out\_file = app.builder.get\_outfilename(old\_url)}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074         out\_dir = os.path.dirname(out\_file)}
+\DoxyCodeLine{00075         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.exists(out\_dir):}
+\DoxyCodeLine{00076             os.makedirs(out\_dir)}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078         content = REDIRECT\_TEMPLATE.replace(\textcolor{stringliteral}{"{}\$NEWURL"{}}, new\_url)}
+\DoxyCodeLine{00079 }
+\DoxyCodeLine{00080         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.exists(out\_file):}
+\DoxyCodeLine{00081             \textcolor{keyword}{with} open(out\_file, \textcolor{stringliteral}{"{}w"{}}) \textcolor{keyword}{as} rp:}
+\DoxyCodeLine{00082                 rp.write(content)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacezephyr_1_1html__redirects_a58b4fe4a4861d82737a29c85a6b2ee69}\label{namespacezephyr_1_1html__redirects_a58b4fe4a4861d82737a29c85a6b2ee69}} 
+\index{zephyr.html\_redirects@{zephyr.html\_redirects}!setup@{setup}}
+\index{setup@{setup}!zephyr.html\_redirects@{zephyr.html\_redirects}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily def zephyr.\+html\+\_\+redirects.\+setup (\begin{DoxyParamCaption}\item[{}]{app }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{html__redirects_8py_source_l00051}{51}} of file \mbox{\hyperlink{html__redirects_8py_source}{html\+\_\+redirects.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00051 \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1html__redirects_a58b4fe4a4861d82737a29c85a6b2ee69}{setup}}(app):}
+\DoxyCodeLine{00052     app.add\_config\_value(\textcolor{stringliteral}{'html\_redirect\_pages'}, [], \textcolor{stringliteral}{'html'})}
+\DoxyCodeLine{00053     app.connect(\textcolor{stringliteral}{'build-\/finished'}, create\_redirect\_pages)}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{00055     \textcolor{comment}{\# Since we're just setting up a build-\/finished hook, which runs}}
+\DoxyCodeLine{00056     \textcolor{comment}{\# after both reading and writing, this extension is safe for both.}}
+\DoxyCodeLine{00057     \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{00058         \textcolor{stringliteral}{'parallel\_read\_safe'}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00059         \textcolor{stringliteral}{'parallel\_write\_safe'}: \textcolor{keyword}{True},}
+\DoxyCodeLine{00060     \}}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacezephyr_1_1html__redirects_a79a148d55211d98ac7c66170d41e9fad}\label{namespacezephyr_1_1html__redirects_a79a148d55211d98ac7c66170d41e9fad}} 
+\index{zephyr.html\_redirects@{zephyr.html\_redirects}!REDIRECT\_TEMPLATE@{REDIRECT\_TEMPLATE}}
+\index{REDIRECT\_TEMPLATE@{REDIRECT\_TEMPLATE}!zephyr.html\_redirects@{zephyr.html\_redirects}}
+\doxysubsubsection{\texorpdfstring{REDIRECT\_TEMPLATE}{REDIRECT\_TEMPLATE}}
+{\footnotesize\ttfamily string zephyr.\+html\+\_\+redirects.\+REDIRECT\+\_\+\+TEMPLATE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 =  \textcolor{stringliteral}{r"{}"{}"{}}}
+\DoxyCodeLine{00002 \textcolor{stringliteral}{<html>}}
+\DoxyCodeLine{00003 \textcolor{stringliteral}{  <head>}}
+\DoxyCodeLine{00004 \textcolor{stringliteral}{    <meta http-\/equiv="{}refresh"{}} content=\textcolor{stringliteral}{"{}0; url=\$NEWURL"{}} />}
+\DoxyCodeLine{00005     <script>}
+\DoxyCodeLine{00006      var id=window.location.href.split(\textcolor{stringliteral}{"{}\#"{}})[1];}
+\DoxyCodeLine{00007 }
+\DoxyCodeLine{00008      \textcolor{keywordflow}{if} (id \&\& (/\string^[a-\/zA-\/Z\(\backslash\):\(\backslash\)/0-\/9\(\backslash\)\_\(\backslash\)-\/\(\backslash\).]+\$/.test(id))) \{}
+\DoxyCodeLine{00009         window.location.href = \textcolor{stringliteral}{"{}\$NEWURL"{}}+\textcolor{stringliteral}{"{}\#"{}}+id;}
+\DoxyCodeLine{00010         \}}
+\DoxyCodeLine{00011      \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00012         window.location.href = \textcolor{stringliteral}{"{}\$NEWURL"{}};}
+\DoxyCodeLine{00013      \};}
+\DoxyCodeLine{00014     </script>}
+\DoxyCodeLine{00015   </head>}
+\DoxyCodeLine{00016   <body>}
+\DoxyCodeLine{00017   <p>Page has moved <a href=\textcolor{stringliteral}{"{}\$NEWURL"{}}>here</a>.</p>}
+\DoxyCodeLine{00018   </body>}
+\DoxyCodeLine{00019 </html>}
+\DoxyCodeLine{00020 \textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{html__redirects_8py_source_l00029}{29}} of file \mbox{\hyperlink{html__redirects_8py_source}{html\+\_\+redirects.\+py}}.
+

@@ -1,0 +1,49 @@
+\hypertarget{bsm_8h_source}{}\doxysection{bsm.\+h}
+\label{bsm_8h_source}\index{message\_services/src/models/bsm.h@{message\_services/src/models/bsm.h}}
+\mbox{\hyperlink{bsm_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef BSM\_H}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00002}00002 \textcolor{preprocessor}{\#define BSM\_H}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <boost/algorithm/string.hpp>}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00008}00008 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{baseMessage_8h}{baseMessage.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bsmCoreData_8h}{bsmCoreData.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00011}00011 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacemessage__services}{message\_services}}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00012}00012 \{}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00013}00013     \textcolor{keyword}{namespace }models}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00014}00014     \{}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00015}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{00015}}         \textcolor{keyword}{class }\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{bsm}} : \textcolor{keyword}{public} \mbox{\hyperlink{classmessage__services_1_1models_1_1baseMessage}{baseMessage}}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00016}00016         \{}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00017}00017             \textcolor{keyword}{friend} std::ostream \&\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a53d45e9bdc619cbb89192fd014fae9c7}{operator<<}}(std::ostream \&out, \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm}{bsm}} \&bsm\_obj);}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00019}00019         \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00020}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{00020}}             \mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData}{bsmCoreData\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}};}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00022}00022         \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00023}00023             \textcolor{comment}{//constructors}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00024}00024             \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a2835250fe1a3aebecccf68808cefa4b2}{bsm}}();}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00026}00026             \textcolor{comment}{//desctructor}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00027}00027             \textcolor{keyword}{virtual} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_aab3dcf44c418cd3dbf6ea94bdb96c76f}{\string~bsm}}();}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00028}00028             \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_abf442fb7679805e7834fd556e23b48b0}{setCore\_data}}(\mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData}{bsmCoreData\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a1faacadd5ac2b05e16d4b61a4c8f9539}{core\_data}});}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00029}00029             \mbox{\hyperlink{structmessage__services_1_1models_1_1bsmCoreData}{bsmCoreData\_t}} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_ac9119ef3e4a5d64b493f49f06353b9d8}{getCore\_data}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00030}00030             std::string \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a31f50e14ec5295d0397ad02048755862}{generate\_hash\_bsm\_msg\_id}}( std::string temprary\_id, \textcolor{keywordtype}{long} msg\_count, \textcolor{keywordtype}{long} sec\_mark);}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00032}00032             \textcolor{comment}{//Current timestamp in unit of milliseconds}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00033}\mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a4c1bcd0bb0507c93553886c6411a276c}{00033}}             std::time\_t \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a4c1bcd0bb0507c93553886c6411a276c}{msg\_received\_timestamp\_}} = std::chrono::duration\_cast<std::chrono::milliseconds>(std::chrono::system\_clock::now().time\_since\_epoch()).count();}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00035}00035             \textcolor{comment}{//json string object converter with rapidjson}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00036}00036             \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_a47ced6158eabc3894dd283ebc031b19c}{fromJsonObject}}(\textcolor{keyword}{const} rapidjson::Value \&obj);}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00037}00037             \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classmessage__services_1_1models_1_1bsm_af873065f2764928e411802eaf519323d}{asJsonObject}}(rapidjson::Writer<rapidjson::StringBuffer> *writer) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00038}00038         \};}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00039}00039     \}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{bsm_8h_source_l00043}00043 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

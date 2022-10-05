@@ -1,0 +1,31 @@
+\hypertarget{message__services_8cpp_source}{}\doxysection{message\+\_\+services.\+cpp}
+\label{message__services_8cpp_source}\index{message\_services/src/message\_services.cpp@{message\_services/src/message\_services.cpp}}
+\mbox{\hyperlink{message__services_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include <thread>}}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{vehicle__status__intent__service_8h}{vehicle\_status\_intent\_service.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__configuration_8h}{streets\_configuration.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00006}\mbox{\hyperlink{message__services_8cpp_ab4838180becdec72c62eb8756c933d97}{00006}} \textcolor{keywordtype}{void} \mbox{\hyperlink{message__services_8cpp_ab4838180becdec72c62eb8756c933d97}{vehicle\_status\_intent\_service\_call}}(std::shared\_ptr<message\_services::message\_translations::message\_lanelet2\_translation> msg\_translate\_ptr)}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00008}00008     \mbox{\hyperlink{classmessage__services_1_1services_1_1vehicle__status__intent__service}{message\_services::services::vehicle\_status\_intent\_service}} s\_v;}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00009}00009     \textcolor{keywordflow}{if} (s\_v.\mbox{\hyperlink{classmessage__services_1_1services_1_1vehicle__status__intent__service_a037ead29156388388d54f0e15234cfb7}{initialize}}(msg\_translate\_ptr))}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00010}00010     \{}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00011}00011         s\_v.\mbox{\hyperlink{classmessage__services_1_1services_1_1vehicle__status__intent__service_a1f00f479f5268cf6cd38a128d009b184}{start}}();}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00012}00012     \}}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00013}00013 \}}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00015}\mbox{\hyperlink{message__services_8cpp_a217dbf8b442f20279ea00b898af96f52}{00015}} \textcolor{keywordtype}{int} \mbox{\hyperlink{message__services_8cpp_a217dbf8b442f20279ea00b898af96f52}{main}}(\textcolor{keywordtype}{int} argc, \textcolor{keyword}{const} \textcolor{keywordtype}{char} **argv)}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00016}00016 \{}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00017}00017     \textcolor{keyword}{const} std::string OSM\_FILE\_PATH = \textcolor{stringliteral}{"{}../vector\_map.osm"{}};}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00018}00018     \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a8f1dd2ae49aae6b730a041889177c8e6}{streets\_service::streets\_configuration::initialize\_logger}}();}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00019}00019     \textcolor{comment}{//initialize lanelet2 message translation object}}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00020}00020     \textcolor{keyword}{auto} msg\_translate\_ptr = std::make\_shared<message\_services::message\_translations::message\_lanelet2\_translation>(OSM\_FILE\_PATH);}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00022}00022     std::thread vehicle\_status\_intent\_service\_t(\mbox{\hyperlink{message__services_8cpp_ab4838180becdec72c62eb8756c933d97}{vehicle\_status\_intent\_service\_call}}, std::ref(msg\_translate\_ptr));}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00023}00023     vehicle\_status\_intent\_service\_t.join();}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00024}00024     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{message__services_8cpp_source_l00025}00025 \}}
+
+\end{DoxyCode}

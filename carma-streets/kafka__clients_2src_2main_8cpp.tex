@@ -1,0 +1,165 @@
+\hypertarget{kafka__clients_2src_2main_8cpp}{}\doxysection{kafka\+\_\+clients/src/main.cpp File Reference}
+\label{kafka__clients_2src_2main_8cpp}\index{kafka\_clients/src/main.cpp@{kafka\_clients/src/main.cpp}}
+{\ttfamily \#include \char`\"{}kafka\+\_\+client.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}streets\+\_\+configuration.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kafka__clients_2src_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_a6572b0c39967495c61b6a9c29e4ae5b2}{call\+\_\+consumer\+\_\+thread}} ()
+\item 
+void \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_a0f2d18004edc36135168c1af80fa962c}{call\+\_\+producer\+\_\+thread}} ()
+\item 
+int \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{kafka__clients_2src_2main_8cpp_a6572b0c39967495c61b6a9c29e4ae5b2}\label{kafka__clients_2src_2main_8cpp_a6572b0c39967495c61b6a9c29e4ae5b2}} 
+\index{main.cpp@{main.cpp}!call\_consumer\_thread@{call\_consumer\_thread}}
+\index{call\_consumer\_thread@{call\_consumer\_thread}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{call\_consumer\_thread()}{call\_consumer\_thread()}}
+{\footnotesize\ttfamily void call\+\_\+consumer\+\_\+thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005 \{}
+\DoxyCodeLine{00006     \textcolor{keyword}{auto} client = std::make\_shared<kafka\_clients::kafka\_client>();}
+\DoxyCodeLine{00007     std::string bootstrap\_server = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}( \textcolor{stringliteral}{"{}BOOTSTRAP\_SERVER"{}});}
+\DoxyCodeLine{00008     std::string group\_id = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}GROUP\_ID"{}});}
+\DoxyCodeLine{00009     std::string topic = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}CONSUMER\_TOPIC"{}});}
+\DoxyCodeLine{00010     \textcolor{keyword}{auto} consumer\_worker = client-\/>create\_consumer(bootstrap\_server, topic, group\_id);}
+\DoxyCodeLine{00011     \textcolor{keywordflow}{if} (!consumer\_worker-\/>init())}
+\DoxyCodeLine{00012     \{}
+\DoxyCodeLine{00013         SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}kafka consumer initialize error"{}});}
+\DoxyCodeLine{00014     \}}
+\DoxyCodeLine{00015     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00016     \{}
+\DoxyCodeLine{00017         consumer\_worker-\/>subscribe();}
+\DoxyCodeLine{00018         \textcolor{keywordflow}{if} (!consumer\_worker-\/>is\_running())}
+\DoxyCodeLine{00019         \{}
+\DoxyCodeLine{00020             SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}consumer\_worker is not running"{}});}
+\DoxyCodeLine{00021         \}}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023         \textcolor{keywordflow}{while} (consumer\_worker-\/>is\_running())}
+\DoxyCodeLine{00024         \{}
+\DoxyCodeLine{00025             \textcolor{keyword}{const} std::string payload = consumer\_worker-\/>consume(1000);}
+\DoxyCodeLine{00026             \textcolor{keywordflow}{if}(payload.length() > 0)}
+\DoxyCodeLine{00027             \{}
+\DoxyCodeLine{00028                 SPDLOG\_INFO(\textcolor{stringliteral}{"{}message payload: \{0\}"{}}, payload);}
+\DoxyCodeLine{00029             \}}
+\DoxyCodeLine{00030         \}}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032         consumer\_worker-\/>stop();}
+\DoxyCodeLine{00033     \}}
+\DoxyCodeLine{00034     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00035 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{streets__configuration_8cpp_source_l00103}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+string\+\_\+config()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kafka__clients_2src_2main_8cpp_a6572b0c39967495c61b6a9c29e4ae5b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kafka__clients_2src_2main_8cpp_a0f2d18004edc36135168c1af80fa962c}\label{kafka__clients_2src_2main_8cpp_a0f2d18004edc36135168c1af80fa962c}} 
+\index{main.cpp@{main.cpp}!call\_producer\_thread@{call\_producer\_thread}}
+\index{call\_producer\_thread@{call\_producer\_thread}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{call\_producer\_thread()}{call\_producer\_thread()}}
+{\footnotesize\ttfamily void call\+\_\+producer\+\_\+thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038 \{}
+\DoxyCodeLine{00039     \textcolor{keyword}{auto} client = std::make\_shared<kafka\_clients::kafka\_client>();}
+\DoxyCodeLine{00040     std::string bootstrap\_server = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}BOOTSTRAP\_SERVER"{}});}
+\DoxyCodeLine{00041     std::string topic = \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a03603871626201e07690effb9f2440bf}{streets\_service::streets\_configuration::get\_string\_config}}(\textcolor{stringliteral}{"{}PRODUCER\_TOPIC"{}});}
+\DoxyCodeLine{00042     \textcolor{keyword}{auto} producer\_worker = client-\/>create\_producer(bootstrap\_server, topic);}
+\DoxyCodeLine{00043     \textcolor{keywordflow}{if} (!producer\_worker-\/>init())}
+\DoxyCodeLine{00044     \{}
+\DoxyCodeLine{00045         SPDLOG\_CRITICAL(\textcolor{stringliteral}{"{}kafka producer initialize error"{}});}
+\DoxyCodeLine{00046     \}}
+\DoxyCodeLine{00047     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00048     \{}
+\DoxyCodeLine{00049         SPDLOG\_INFO(\textcolor{stringliteral}{"{}Type message and hit enter to producer message. Exit type \(\backslash\)"{}exit\(\backslash\)"{}"{}});}
+\DoxyCodeLine{00050         \textcolor{keywordflow}{for} (std::string msg\_to\_send; std::getline(std::cin, msg\_to\_send);)}
+\DoxyCodeLine{00051         \{}
+\DoxyCodeLine{00052             \textcolor{keywordflow}{if} (strcmp(msg\_to\_send.c\_str(), \textcolor{stringliteral}{"{}exit"{}}) == 0)}
+\DoxyCodeLine{00053             \{}
+\DoxyCodeLine{00054                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00055             \}}
+\DoxyCodeLine{00056             producer\_worker-\/>send(msg\_to\_send);}
+\DoxyCodeLine{00057         \}}
+\DoxyCodeLine{00058         producer\_worker-\/>stop();}
+\DoxyCodeLine{00059     \}}
+\DoxyCodeLine{00060 }
+\DoxyCodeLine{00061     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00062 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{streets__configuration_8cpp_source_l00103}{streets\+\_\+service\+::streets\+\_\+configuration\+::get\+\_\+string\+\_\+config()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kafka__clients_2src_2main_8cpp_a0f2d18004edc36135168c1af80fa962c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{kafka__clients_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{kafka__clients_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_source_l00064}{64}} of file \mbox{\hyperlink{kafka__clients_2src_2main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00065 \{}
+\DoxyCodeLine{00066     \mbox{\hyperlink{classstreets__service_1_1streets__configuration_a8f1dd2ae49aae6b730a041889177c8e6}{streets\_service::streets\_configuration::initialize\_logger}}();}
+\DoxyCodeLine{00067     boost::thread t\_producer\{\mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_a0f2d18004edc36135168c1af80fa962c}{call\_producer\_thread}}\};}
+\DoxyCodeLine{00068     boost::thread t\_consumer\{\mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_a6572b0c39967495c61b6a9c29e4ae5b2}{call\_consumer\_thread}}\};}
+\DoxyCodeLine{00069     t\_producer.join();}
+\DoxyCodeLine{00070     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00071 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_source_l00006}{call\+\_\+consumer\+\_\+thread()}}, \mbox{\hyperlink{examples_2kafka__examples_2src_2main_8cpp_source_l00044}{call\+\_\+producer\+\_\+thread()}}, and \mbox{\hyperlink{streets__configuration_8cpp_source_l00200}{streets\+\_\+service\+::streets\+\_\+configuration\+::initialize\+\_\+logger()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kafka__clients_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}

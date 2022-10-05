@@ -1,0 +1,96 @@
+\hypertarget{classzephyr_1_1kconfig_1_1KconfigSearch}{}\doxysection{zephyr.\+kconfig.\+Kconfig\+Search Class Reference}
+\label{classzephyr_1_1kconfig_1_1KconfigSearch}\index{zephyr.kconfig.KconfigSearch@{zephyr.kconfig.KconfigSearch}}
+
+
+Inheritance diagram for zephyr.\+kconfig.\+Kconfig\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classzephyr_1_1kconfig_1_1KconfigSearch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for zephyr.\+kconfig.\+Kconfig\+Search\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{classzephyr_1_1kconfig_1_1KconfigSearch__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classzephyr_1_1kconfig_1_1KconfigSearch_a4ff14cae1aa934c7507f2dbcf21b66e6}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classzephyr_1_1kconfig_1_1KconfigSearch_acc80bd8b5aaeba8dcaec3d3e237ee721}{has\+\_\+content}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Kconfig search directive\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00140}{140}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classzephyr_1_1kconfig_1_1KconfigSearch_a4ff14cae1aa934c7507f2dbcf21b66e6}\label{classzephyr_1_1kconfig_1_1KconfigSearch_a4ff14cae1aa934c7507f2dbcf21b66e6}} 
+\index{zephyr.kconfig.KconfigSearch@{zephyr.kconfig.KconfigSearch}!run@{run}}
+\index{run@{run}!zephyr.kconfig.KconfigSearch@{zephyr.kconfig.KconfigSearch}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def zephyr.\+kconfig.\+Kconfig\+Search.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00145}{145}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00145     \textcolor{keyword}{def }run(self):}
+\DoxyCodeLine{00146         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.config.kconfig\_generate\_db:}
+\DoxyCodeLine{00147             \textcolor{keywordflow}{raise} ExtensionError(}
+\DoxyCodeLine{00148                 \textcolor{stringliteral}{"{}Kconfig search directive can not be used without database"{}}}
+\DoxyCodeLine{00149             )}
+\DoxyCodeLine{00150 }
+\DoxyCodeLine{00151         \textcolor{keywordflow}{if} \textcolor{stringliteral}{"{}kconfig\_search\_inserted"{}} \textcolor{keywordflow}{in} self.env.temp\_data:}
+\DoxyCodeLine{00152             \textcolor{keywordflow}{raise} ExtensionError(\textcolor{stringliteral}{"{}Kconfig search directive can only be used once"{}})}
+\DoxyCodeLine{00153 }
+\DoxyCodeLine{00154         self.env.temp\_data[\textcolor{stringliteral}{"{}kconfig\_search\_inserted"{}}] = \textcolor{keyword}{True}}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156         \textcolor{comment}{\# register all options to the domain at this point, so that they all}}
+\DoxyCodeLine{00157         \textcolor{comment}{\# resolve to the page where the kconfig:search directive is inserted}}
+\DoxyCodeLine{00158         domain = self.env.get\_domain(\textcolor{stringliteral}{"{}kconfig"{}})}
+\DoxyCodeLine{00159         unique = set(\{option[\textcolor{stringliteral}{"{}name"{}}] \textcolor{keywordflow}{for} option \textcolor{keywordflow}{in} self.env.kconfig\_db\})}
+\DoxyCodeLine{00160         \textcolor{keywordflow}{for} option \textcolor{keywordflow}{in} unique:}
+\DoxyCodeLine{00161             domain.add\_option(option)}
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163         \textcolor{keywordflow}{return} [KconfigSearchNode()]}
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classzephyr_1_1kconfig_1_1KconfigSearch_acc80bd8b5aaeba8dcaec3d3e237ee721}\label{classzephyr_1_1kconfig_1_1KconfigSearch_acc80bd8b5aaeba8dcaec3d3e237ee721}} 
+\index{zephyr.kconfig.KconfigSearch@{zephyr.kconfig.KconfigSearch}!has\_content@{has\_content}}
+\index{has\_content@{has\_content}!zephyr.kconfig.KconfigSearch@{zephyr.kconfig.KconfigSearch}}
+\doxysubsubsection{\texorpdfstring{has\_content}{has\_content}}
+{\footnotesize\ttfamily bool zephyr.\+kconfig.\+Kconfig\+Search.\+has\+\_\+content = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{kconfig_2____init_____8py_source_l00143}{143}} of file \mbox{\hyperlink{kconfig_2____init_____8py_source}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doc/\+\_\+extensions/zephyr/kconfig/\mbox{\hyperlink{kconfig_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

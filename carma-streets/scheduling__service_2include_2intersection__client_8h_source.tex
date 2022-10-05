@@ -1,0 +1,42 @@
+\hypertarget{scheduling__service_2include_2intersection__client_8h_source}{}\doxysection{intersection\+\_\+client.\+h}
+\label{scheduling__service_2include_2intersection__client_8h_source}\index{scheduling\_service/include/intersection\_client.h@{scheduling\_service/include/intersection\_client.h}}
+\mbox{\hyperlink{scheduling__service_2include_2intersection__client_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <intersection\_client\_api\_lib/OAIHelpers.h>}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}intersection\_client\_api\_lib/OAIDefaultApi.h"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}intersection\_client\_api\_lib/OAIIntersection\_info.h"{}}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <QTimer>}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <QEventLoop>}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <thread>}         \textcolor{comment}{// std::this\_thread::sleep\_for}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <chrono>}         \textcolor{comment}{// std::chrono::seconds}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00015}\mbox{\hyperlink{namespacescheduling__service}{00015}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacescheduling__service}{scheduling\_service}}\{}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00017}\mbox{\hyperlink{classscheduling__service_1_1intersection__client}{00017}}     \textcolor{keyword}{class }\mbox{\hyperlink{classscheduling__service_1_1intersection__client}{intersection\_client}}: \textcolor{keyword}{public} \mbox{\hyperlink{classQObject}{QObject}}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00018}00018     \{}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00019}00019     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00021}\mbox{\hyperlink{classscheduling__service_1_1intersection__client_af101024f9f717f0afdfc385c2d1799a5}{00021}}         std::shared\_ptr<OpenAPI::OAIIntersection\_info> \mbox{\hyperlink{classscheduling__service_1_1intersection__client_af101024f9f717f0afdfc385c2d1799a5}{intersection\_info\_ptr}};}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00023}00023     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00032}00032         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classscheduling__service_1_1intersection__client_ac510cca78365a620384ff9faeaad572f}{update\_intersection\_info}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} sleep\_millisecs, \textcolor{keyword}{const} \textcolor{keywordtype}{int} int\_client\_request\_attempts);}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00039}00039         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classscheduling__service_1_1intersection__client_ad6bd9f3f48ee4e352798f418b88b730a}{request\_intersection\_info}}();}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00045}00045         std::shared\_ptr<OpenAPI::OAIIntersection\_info> \mbox{\hyperlink{classscheduling__service_1_1intersection__client_ad3f7253d9f88279fde9ae9eeb2552459}{get\_intersection\_info}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00047}00047     \};}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00049}00049 \}}
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{scheduling__service_2include_2intersection__client_8h_source_l00051}00051 }
+
+\end{DoxyCode}

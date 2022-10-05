@@ -1,0 +1,170 @@
+\hypertarget{classzephyr_1_1warnings__filter_1_1WarningsFilter}{}\doxysection{zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter Class Reference}
+\label{classzephyr_1_1warnings__filter_1_1WarningsFilter}\index{zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}}
+
+
+Inheritance diagram for zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classzephyr_1_1warnings__filter_1_1WarningsFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classzephyr_1_1warnings__filter_1_1WarningsFilter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}str\mbox{]} expressions, bool silent, str name=\char`\"{}\char`\"{})
+\item 
+bool \mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_a889eab0460b25641fb15fef83cd48af7}{filter}} (self, logging.\+Log\+Record record)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_a471afdd2b1a91d6e05f6cae72d11ff83}{\+\_\+expressions}}
+\item 
+\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_ac8f79ffee32ec67a65c3640b8122dd5d}{\+\_\+silent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Warnings filter.
+
+Args:
+    expressions: List of regular expressions.
+    silent: If true, warning is hidden, otherwise it is shown as INFO.
+    name: Filter name.
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{warnings__filter_8py_source_l00036}{36}} of file \mbox{\hyperlink{warnings__filter_8py_source}{warnings\+\_\+filter.\+py}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad}\label{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad}} 
+\index{zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily  None zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{List\mbox{[}str\mbox{]}}]{expressions,  }\item[{bool}]{silent,  }\item[{str }]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{warnings__filter_8py_source_l00044}{44}} of file \mbox{\hyperlink{warnings__filter_8py_source}{warnings\+\_\+filter.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044     \textcolor{keyword}{def }\_\_init\_\_(self, expressions: List[str], silent: bool, name: str = \textcolor{stringliteral}{"{}"{}}) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00045         super().\_\_init\_\_(name)}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00047         self.\_expressions = expressions}
+\DoxyCodeLine{00048         self.\_silent = silent}
+\DoxyCodeLine{00049 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{warnings__filter_8py_source_l00044}{zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+()}}.
+
+
+
+Referenced by \mbox{\hyperlink{warnings__filter_8py_source_l00044}{zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classzephyr_1_1warnings__filter_1_1WarningsFilter_a889eab0460b25641fb15fef83cd48af7}\label{classzephyr_1_1warnings__filter_1_1WarningsFilter_a889eab0460b25641fb15fef83cd48af7}} 
+\index{zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}!filter@{filter}}
+\index{filter@{filter}!zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily  bool zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+filter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{logging.\+Log\+Record}]{record }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{warnings__filter_8py_source_l00050}{50}} of file \mbox{\hyperlink{warnings__filter_8py_source}{warnings\+\_\+filter.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050     \textcolor{keyword}{def }filter(self, record: logging.LogRecord) -\/> bool:}
+\DoxyCodeLine{00051         \textcolor{keywordflow}{if} record.levelno != logging.WARNING:}
+\DoxyCodeLine{00052             \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{00053 }
+\DoxyCodeLine{00054         \textcolor{keywordflow}{for} expression \textcolor{keywordflow}{in} self.\_expressions:}
+\DoxyCodeLine{00055             \textcolor{keywordflow}{if} re.match(expression, record.msg):}
+\DoxyCodeLine{00056                 \textcolor{keywordflow}{if} self.\_silent:}
+\DoxyCodeLine{00057                     \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{00058                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00059                     record.levelno = logging.INFO}
+\DoxyCodeLine{00060                     record.msg = f\textcolor{stringliteral}{"{}Filtered warning: \{record.msg\}"{}}}
+\DoxyCodeLine{00061                     \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{00062 }
+\DoxyCodeLine{00063         \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{warnings__filter_8py_source_l00047}{zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+\_\+expressions}}, and \mbox{\hyperlink{warnings__filter_8py_source_l00048}{zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+\_\+silent}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classzephyr_1_1warnings__filter_1_1WarningsFilter_a471afdd2b1a91d6e05f6cae72d11ff83}\label{classzephyr_1_1warnings__filter_1_1WarningsFilter_a471afdd2b1a91d6e05f6cae72d11ff83}} 
+\index{zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}!\_expressions@{\_expressions}}
+\index{\_expressions@{\_expressions}!zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}}
+\doxysubsubsection{\texorpdfstring{\_expressions}{\_expressions}}
+{\footnotesize\ttfamily zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+\_\+expressions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{warnings__filter_8py_source_l00047}{47}} of file \mbox{\hyperlink{warnings__filter_8py_source}{warnings\+\_\+filter.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{warnings__filter_8py_source_l00050}{zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+filter()}}.
+
+\mbox{\Hypertarget{classzephyr_1_1warnings__filter_1_1WarningsFilter_ac8f79ffee32ec67a65c3640b8122dd5d}\label{classzephyr_1_1warnings__filter_1_1WarningsFilter_ac8f79ffee32ec67a65c3640b8122dd5d}} 
+\index{zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}!\_silent@{\_silent}}
+\index{\_silent@{\_silent}!zephyr.warnings\_filter.WarningsFilter@{zephyr.warnings\_filter.WarningsFilter}}
+\doxysubsubsection{\texorpdfstring{\_silent}{\_silent}}
+{\footnotesize\ttfamily zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+\_\+silent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{warnings__filter_8py_source_l00048}{48}} of file \mbox{\hyperlink{warnings__filter_8py_source}{warnings\+\_\+filter.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{warnings__filter_8py_source_l00050}{zephyr.\+warnings\+\_\+filter.\+Warnings\+Filter.\+filter()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doc/\+\_\+extensions/zephyr/\mbox{\hyperlink{warnings__filter_8py}{warnings\+\_\+filter.\+py}}\end{DoxyCompactItemize}

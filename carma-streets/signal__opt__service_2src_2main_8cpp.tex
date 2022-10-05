@@ -1,0 +1,55 @@
+\hypertarget{signal__opt__service_2src_2main_8cpp}{}\doxysection{signal\+\_\+opt\+\_\+service/src/main.cpp File Reference}
+\label{signal__opt__service_2src_2main_8cpp}\index{signal\_opt\_service/src/main.cpp@{signal\_opt\_service/src/main.cpp}}
+{\ttfamily \#include $<$QCore\+Application$>$}\newline
+{\ttfamily \#include \char`\"{}signal\+\_\+opt\+\_\+service.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{signal__opt__service_2src_2main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{signal__opt__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{signal__opt__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{signal__opt__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{signal__opt__service_2src_2main_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{signal__opt__service_2src_2main_8cpp_source}{main.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005 \{}
+\DoxyCodeLine{00006     QCoreApplication a(argc, argv);}
+\DoxyCodeLine{00007     \mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service}{signal\_opt\_service::signal\_opt\_service}} so\_service;}
+\DoxyCodeLine{00008     \textcolor{keywordflow}{if} (so\_service.\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_ac5270550fc00e6e7b4f7822fcac522dc}{initialize}}())}
+\DoxyCodeLine{00009     \{}
+\DoxyCodeLine{00010         so\_service.\mbox{\hyperlink{classsignal__opt__service_1_1signal__opt__service_a27c7129220640b4974bdb247ab1bbc26}{start}}();}
+\DoxyCodeLine{00011     \}}
+\DoxyCodeLine{00012     \textcolor{keywordflow}{return} a.exec();}
+\DoxyCodeLine{00013 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{signal__opt__service_8cpp_source_l00005}{signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::initialize()}}, and \mbox{\hyperlink{signal__opt__service_8cpp_source_l00058}{signal\+\_\+opt\+\_\+service\+::signal\+\_\+opt\+\_\+service\+::start()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{signal__opt__service_2src_2main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}

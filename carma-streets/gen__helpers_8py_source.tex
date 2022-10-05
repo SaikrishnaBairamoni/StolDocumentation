@@ -1,0 +1,35 @@
+\hypertarget{gen__helpers_8py_source}{}\doxysection{gen\+\_\+helpers.\+py}
+\label{gen__helpers_8py_source}\index{doc/\_scripts/gen\_helpers.py@{doc/\_scripts/gen\_helpers.py}}
+\mbox{\hyperlink{gen__helpers_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00001}\mbox{\hyperlink{namespacegen__helpers}{00001}} \textcolor{comment}{\# Copyright (c) 2020 Nordic Semiconductor ASA}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00002}00002 \textcolor{comment}{\# SPDX-\/License-\/Identifier: Apache-\/2.0}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00004}00004 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00005}00005 \textcolor{stringliteral}{Helper functions used by gen\_kconfig\_rest.py and gen\_devicetree\_rest.py.}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00006}00006 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00008}00008 \textcolor{keyword}{import} errno}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00010}\mbox{\hyperlink{namespacegen__helpers_a5cbbd41b74a2b603576d99a9ba3bb07d}{00010}} \textcolor{keyword}{def }\mbox{\hyperlink{namespacegen__helpers_a5cbbd41b74a2b603576d99a9ba3bb07d}{write\_if\_updated}}(path, s):}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00011}00011     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00012}00012 \textcolor{stringliteral}{    Writes 's'} \textcolor{keyword}{as} the contents of <out\_dir>/<filename>, but only \textcolor{keywordflow}{if} it}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00013}00013     differs \textcolor{keyword}{from} the current contents of the file. This avoids unnecessary}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00014}00014     timestamp updates, which trigger documentation rebuilds.}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00016}00016     Returns \textcolor{keyword}{True} \textcolor{keywordflow}{if} the file was updated, \textcolor{keyword}{False} otherwise.}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00017}00017     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00018}00018 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00019}00019 \textcolor{stringliteral}{    }\textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00020}00020         \textcolor{keyword}{with} open(path, \textcolor{stringliteral}{"{}r"{}}, encoding=\textcolor{stringliteral}{"{}utf-\/8"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00021}00021             \textcolor{keywordflow}{if} s == f.read():}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00022}00022                 \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00023}00023     \textcolor{keywordflow}{except} OSError \textcolor{keyword}{as} e:}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00024}00024         \textcolor{keywordflow}{if} e.errno != errno.ENOENT:}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00025}00025             \textcolor{keywordflow}{raise}}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00027}00027     \textcolor{keyword}{with} open(path, \textcolor{stringliteral}{"{}w"{}}, encoding=\textcolor{stringliteral}{"{}utf-\/8"{}}) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00028}00028         f.write(s)}
+\DoxyCodeLine{\Hypertarget{gen__helpers_8py_source_l00029}00029     \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+
+\end{DoxyCode}

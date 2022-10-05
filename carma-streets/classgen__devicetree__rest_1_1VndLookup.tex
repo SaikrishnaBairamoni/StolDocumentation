@@ -1,0 +1,352 @@
+\hypertarget{classgen__devicetree__rest_1_1VndLookup}{}\doxysection{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup Class Reference}
+\label{classgen__devicetree__rest_1_1VndLookup}\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+
+
+Collaboration diagram for gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classgen__devicetree__rest_1_1VndLookup__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a3d48fa5493fb40d40a2263dedd0ee041}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, vendor\+\_\+prefixes, \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a132797017a3950a773ec2f67fc276494}{bindings}})
+\item 
+def \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a760a025446abc3204e6c501cb751b7ff}{vendor}} (self, vnd)
+\item 
+def \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a132797017a3950a773ec2f67fc276494}{bindings}} (self, vnd, default=None)
+\item 
+def \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_ad548c4dd557205de3b9d2f6a93645d98}{target}} (self, vnd)
+\item 
+def \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a9512a13a68b36a81c40c3e09829459a2}{init\+\_\+vnd2bindings}} (self, \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a132797017a3950a773ec2f67fc276494}{bindings}})
+\item 
+def \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_af3835c5ef74db26b7023825579b2258b}{init\+\_\+vnd2ref\+\_\+target}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_af3b4871ff781b80a6b0e32ad0e597d92}{load\+\_\+vnd2vendor}} (vendor\+\_\+prefixes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_afddb4eefe39343982155e01032489b73}{vnd2vendor}}
+\item 
+\mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a959060b7e2149cb3e0d5d590dad00b14}{vnd2bindings}}
+\item 
+\mbox{\hyperlink{classgen__devicetree__rest_1_1VndLookup_a1ab4024bc60ee454336a6e9e64808496}{vnd2ref\+\_\+target}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A convenience class for looking up information based on a
+devicetree compatible's vendor prefix 'vnd'.
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00037}{37}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_a3d48fa5493fb40d40a2263dedd0ee041}\label{classgen__devicetree__rest_1_1VndLookup_a3d48fa5493fb40d40a2263dedd0ee041}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{vendor\+\_\+prefixes,  }\item[{}]{bindings }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00043}{43}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043     \textcolor{keyword}{def }\_\_init\_\_(self, vendor\_prefixes, bindings):}
+\DoxyCodeLine{00044         self.vnd2vendor = self.load\_vnd2vendor(vendor\_prefixes)}
+\DoxyCodeLine{00045         self.vnd2bindings = self.init\_vnd2bindings(bindings)}
+\DoxyCodeLine{00046         self.vnd2ref\_target = self.init\_vnd2ref\_target()}
+\DoxyCodeLine{00047 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_a132797017a3950a773ec2f67fc276494}\label{classgen__devicetree__rest_1_1VndLookup_a132797017a3950a773ec2f67fc276494}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!bindings@{bindings}}
+\index{bindings@{bindings}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{bindings()}{bindings()}}
+{\footnotesize\ttfamily def gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+bindings (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{vnd,  }\item[{}]{default = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00051}{51}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00051     \textcolor{keyword}{def }bindings(self, vnd, default=None):}
+\DoxyCodeLine{00052         \textcolor{keywordflow}{return} self.vnd2bindings.get(vnd, default)}
+\DoxyCodeLine{00053 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00045}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2bindings}}.
+
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_a9512a13a68b36a81c40c3e09829459a2}\label{classgen__devicetree__rest_1_1VndLookup_a9512a13a68b36a81c40c3e09829459a2}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!init\_vnd2bindings@{init\_vnd2bindings}}
+\index{init\_vnd2bindings@{init\_vnd2bindings}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{init\_vnd2bindings()}{init\_vnd2bindings()}}
+{\footnotesize\ttfamily def gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+init\+\_\+vnd2bindings (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{bindings }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00085}{85}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085     \textcolor{keyword}{def }init\_vnd2bindings(self, bindings):}
+\DoxyCodeLine{00086         \textcolor{comment}{\# Take a 'vnd2vendor' map and a list of bindings and return a dict}}
+\DoxyCodeLine{00087         \textcolor{comment}{\# mapping 'vnd' vendor prefixes prefixes to lists of bindings. The}}
+\DoxyCodeLine{00088         \textcolor{comment}{\# bindings in each list are sorted by compatible. The keys in the}}
+\DoxyCodeLine{00089         \textcolor{comment}{\# return value are sorted by vendor name.}}
+\DoxyCodeLine{00090         \textcolor{comment}{\#}}
+\DoxyCodeLine{00091         \textcolor{comment}{\# Special cases:}}
+\DoxyCodeLine{00092         \textcolor{comment}{\#}}
+\DoxyCodeLine{00093         \textcolor{comment}{\# -\/ The 'None' key maps to bindings with no vendor prefix}}
+\DoxyCodeLine{00094         \textcolor{comment}{\#   in their compatibles, like 'gpio-\/keys'. This is the first key.}}
+\DoxyCodeLine{00095         \textcolor{comment}{\# -\/ The (UNKNOWN\_VENDOR,) key maps to bindings whose compatible}}
+\DoxyCodeLine{00096         \textcolor{comment}{\#   has a vendor prefix that exists, but is not known,}}
+\DoxyCodeLine{00097         \textcolor{comment}{\#   like 'somethingrandom,device'. This is the last key.}}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099         \textcolor{comment}{\# Get an unsorted dict mapping vendor prefixes to lists of bindings.}}
+\DoxyCodeLine{00100         unsorted = defaultdict(list)}
+\DoxyCodeLine{00101         generic\_bindings = []}
+\DoxyCodeLine{00102         unknown\_vendor\_bindings = []}
+\DoxyCodeLine{00103         \textcolor{keywordflow}{for} binding \textcolor{keywordflow}{in} bindings:}
+\DoxyCodeLine{00104             vnd = \mbox{\hyperlink{namespacegen__devicetree__rest_a679948b8adac3da2d996b5d4ec0d2238}{compatible\_vnd}}(binding.compatible)}
+\DoxyCodeLine{00105             \textcolor{keywordflow}{if} vnd \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00106                 generic\_bindings.append(binding)}
+\DoxyCodeLine{00107             \textcolor{keywordflow}{elif} vnd \textcolor{keywordflow}{in} self.vnd2vendor:}
+\DoxyCodeLine{00108                 unsorted[vnd].append(binding)}
+\DoxyCodeLine{00109             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00110                 unknown\_vendor\_bindings.append(binding)}
+\DoxyCodeLine{00111 }
+\DoxyCodeLine{00112         \textcolor{comment}{\# Key functions for sorting.}}
+\DoxyCodeLine{00113         \textcolor{keyword}{def }vnd\_key(vnd):}
+\DoxyCodeLine{00114             \textcolor{keywordflow}{return} self.vnd2vendor[vnd].casefold()}
+\DoxyCodeLine{00115 }
+\DoxyCodeLine{00116         \textcolor{keyword}{def }binding\_key(binding):}
+\DoxyCodeLine{00117             \textcolor{keywordflow}{return} binding.compatible}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119         \textcolor{comment}{\# Sort the bindings for each vendor by compatible.}}
+\DoxyCodeLine{00120         \textcolor{comment}{\# Plain dicts are sorted in CPython 3.6+, which is what we}}
+\DoxyCodeLine{00121         \textcolor{comment}{\# support, so the return dict's keys are in the same}}
+\DoxyCodeLine{00122         \textcolor{comment}{\# order as vnd2vendor.}}
+\DoxyCodeLine{00123         \textcolor{comment}{\#}}
+\DoxyCodeLine{00124         \textcolor{comment}{\# The unknown-\/vendor bindings being inserted as a 1-\/tuple key is a}}
+\DoxyCodeLine{00125         \textcolor{comment}{\# hack for convenience that ensures they won't collide with a}}
+\DoxyCodeLine{00126         \textcolor{comment}{\# known vendor. The code that consumes the dict below handles}}
+\DoxyCodeLine{00127         \textcolor{comment}{\# this.}}
+\DoxyCodeLine{00128         vnd2bindings = \{}
+\DoxyCodeLine{00129             \textcolor{keywordtype}{None}: sorted(generic\_bindings, key=binding\_key)}
+\DoxyCodeLine{00130         \}}
+\DoxyCodeLine{00131         \textcolor{keywordflow}{for} vnd \textcolor{keywordflow}{in} sorted(unsorted, key=vnd\_key):}
+\DoxyCodeLine{00132             vnd2bindings[vnd] = sorted(unsorted[vnd], key=binding\_key)}
+\DoxyCodeLine{00133         vnd2bindings[(UNKNOWN\_VENDOR,)] = sorted(unknown\_vendor\_bindings,}
+\DoxyCodeLine{00134                                                       key=binding\_key)}
+\DoxyCodeLine{00135 }
+\DoxyCodeLine{00136         \textcolor{keywordflow}{if} logger.isEnabledFor(logging.DEBUG):}
+\DoxyCodeLine{00137             logger.debug(\textcolor{stringliteral}{'vnd2bindings: \%s'}, pprint.pformat(vnd2bindings))}
+\DoxyCodeLine{00138 }
+\DoxyCodeLine{00139         \textcolor{keywordflow}{return} vnd2bindings}
+\DoxyCodeLine{00140 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00737}{gen\+\_\+devicetree\+\_\+rest.\+compatible\+\_\+vnd()}}, and \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00044}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2vendor}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classgen__devicetree__rest_1_1VndLookup_a9512a13a68b36a81c40c3e09829459a2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_af3835c5ef74db26b7023825579b2258b}\label{classgen__devicetree__rest_1_1VndLookup_af3835c5ef74db26b7023825579b2258b}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!init\_vnd2ref\_target@{init\_vnd2ref\_target}}
+\index{init\_vnd2ref\_target@{init\_vnd2ref\_target}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{init\_vnd2ref\_target()}{init\_vnd2ref\_target()}}
+{\footnotesize\ttfamily def gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+init\+\_\+vnd2ref\+\_\+target (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00141}{141}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00141     \textcolor{keyword}{def }init\_vnd2ref\_target(self):}
+\DoxyCodeLine{00142         \textcolor{comment}{\# The return value, vnd2ref\_target, is a dict mapping vendor}}
+\DoxyCodeLine{00143         \textcolor{comment}{\# prefixes to ref targets for their relevant sections in this}}
+\DoxyCodeLine{00144         \textcolor{comment}{\# file, with these special cases:}}
+\DoxyCodeLine{00145         \textcolor{comment}{\#}}
+\DoxyCodeLine{00146         \textcolor{comment}{\# -\/ The None key maps to the ref target for bindings with no}}
+\DoxyCodeLine{00147         \textcolor{comment}{\#   vendor prefix in their compatibles, like 'gpio-\/keys'}}
+\DoxyCodeLine{00148         \textcolor{comment}{\# -\/ The (UNKNOWN\_VENDOR,) key maps to the ref target for bindings}}
+\DoxyCodeLine{00149         \textcolor{comment}{\#   whose compatible has a vendor prefix that is not recognized.}}
+\DoxyCodeLine{00150         vnd2ref\_target = \{\}}
+\DoxyCodeLine{00151 }
+\DoxyCodeLine{00152         \textcolor{keywordflow}{for} vnd \textcolor{keywordflow}{in} self.vnd2bindings:}
+\DoxyCodeLine{00153             \textcolor{keywordflow}{if} vnd \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00154                 vnd2ref\_target[vnd] = \textcolor{stringliteral}{'dt\_no\_vendor'}}
+\DoxyCodeLine{00155             \textcolor{keywordflow}{elif} isinstance(vnd, str):}
+\DoxyCodeLine{00156                 vnd2ref\_target[vnd] = f\textcolor{stringliteral}{'dt\_vendor\_\{vnd\}'}}
+\DoxyCodeLine{00157             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00158                 \textcolor{keyword}{assert} vnd == (UNKNOWN\_VENDOR,), vnd}
+\DoxyCodeLine{00159                 vnd2ref\_target[vnd] = \textcolor{stringliteral}{'dt\_unknown\_vendor'}}
+\DoxyCodeLine{00160 }
+\DoxyCodeLine{00161         \textcolor{keywordflow}{return} vnd2ref\_target}
+\DoxyCodeLine{00162 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00045}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2bindings}}.
+
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_af3b4871ff781b80a6b0e32ad0e597d92}\label{classgen__devicetree__rest_1_1VndLookup_af3b4871ff781b80a6b0e32ad0e597d92}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!load\_vnd2vendor@{load\_vnd2vendor}}
+\index{load\_vnd2vendor@{load\_vnd2vendor}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{load\_vnd2vendor()}{load\_vnd2vendor()}}
+{\footnotesize\ttfamily def gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+load\+\_\+vnd2vendor (\begin{DoxyParamCaption}\item[{}]{vendor\+\_\+prefixes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00059}{59}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059     \textcolor{keyword}{def }load\_vnd2vendor(vendor\_prefixes):}
+\DoxyCodeLine{00060         \textcolor{comment}{\# Load the vendor-\/prefixes.txt file. Return a dict mapping 'vnd'}}
+\DoxyCodeLine{00061         \textcolor{comment}{\# vendor prefixes as they are found in compatible properties to}}
+\DoxyCodeLine{00062         \textcolor{comment}{\# each vendor's full name.}}
+\DoxyCodeLine{00063         \textcolor{comment}{\#}}
+\DoxyCodeLine{00064         \textcolor{comment}{\# For example, this line:}}
+\DoxyCodeLine{00065         \textcolor{comment}{\#}}
+\DoxyCodeLine{00066         \textcolor{comment}{\#    vnd    A stand-\/in for a real vendor}}
+\DoxyCodeLine{00067         \textcolor{comment}{\#}}
+\DoxyCodeLine{00068         \textcolor{comment}{\# Gets split into a key 'vnd' and a value 'A stand-\/in for a real}}
+\DoxyCodeLine{00069         \textcolor{comment}{\# vendor' in the return value.}}
+\DoxyCodeLine{00070         \textcolor{comment}{\#}}
+\DoxyCodeLine{00071         \textcolor{comment}{\# The 'None' key maps to GENERIC\_OR\_VENDOR\_INDEPENDENT.}}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073         vnd2vendor = \{}
+\DoxyCodeLine{00074             \textcolor{keywordtype}{None}: GENERIC\_OR\_VENDOR\_INDEPENDENT,}
+\DoxyCodeLine{00075         \}}
+\DoxyCodeLine{00076         vnd2vendor.update(edtlib.load\_vendor\_prefixes\_txt(vendor\_prefixes))}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078         logger.info(\textcolor{stringliteral}{'found \%d vendor prefixes in \%s'}, len(vnd2vendor) -\/ 1,}
+\DoxyCodeLine{00079                     vendor\_prefixes)}
+\DoxyCodeLine{00080         \textcolor{keywordflow}{if} logger.isEnabledFor(logging.DEBUG):}
+\DoxyCodeLine{00081             logger.debug(\textcolor{stringliteral}{'vnd2vendor=\%s'}, pprint.pformat(vnd2vendor))}
+\DoxyCodeLine{00082 }
+\DoxyCodeLine{00083         \textcolor{keywordflow}{return} vnd2vendor}
+\DoxyCodeLine{00084 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_ad548c4dd557205de3b9d2f6a93645d98}\label{classgen__devicetree__rest_1_1VndLookup_ad548c4dd557205de3b9d2f6a93645d98}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!target@{target}}
+\index{target@{target}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{target()}{target()}}
+{\footnotesize\ttfamily def gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+target (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{vnd }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00054}{54}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054     \textcolor{keyword}{def }target(self, vnd):}
+\DoxyCodeLine{00055         \textcolor{keywordflow}{return} self.vnd2ref\_target.get(}
+\DoxyCodeLine{00056             vnd, self.vnd2ref\_target[(UNKNOWN\_VENDOR,)])}
+\DoxyCodeLine{00057 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00046}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2ref\+\_\+target}}.
+
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_a760a025446abc3204e6c501cb751b7ff}\label{classgen__devicetree__rest_1_1VndLookup_a760a025446abc3204e6c501cb751b7ff}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!vendor@{vendor}}
+\index{vendor@{vendor}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{vendor()}{vendor()}}
+{\footnotesize\ttfamily def gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vendor (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{vnd }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00048}{48}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00048     \textcolor{keyword}{def }vendor(self, vnd):}
+\DoxyCodeLine{00049         \textcolor{keywordflow}{return} self.vnd2vendor.get(vnd, UNKNOWN\_VENDOR)}
+\DoxyCodeLine{00050 }
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00044}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2vendor}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_a959060b7e2149cb3e0d5d590dad00b14}\label{classgen__devicetree__rest_1_1VndLookup_a959060b7e2149cb3e0d5d590dad00b14}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!vnd2bindings@{vnd2bindings}}
+\index{vnd2bindings@{vnd2bindings}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{vnd2bindings}{vnd2bindings}}
+{\footnotesize\ttfamily gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2bindings}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00045}{45}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00051}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+bindings()}}, and \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00141}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+init\+\_\+vnd2ref\+\_\+target()}}.
+
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_a1ab4024bc60ee454336a6e9e64808496}\label{classgen__devicetree__rest_1_1VndLookup_a1ab4024bc60ee454336a6e9e64808496}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!vnd2ref\_target@{vnd2ref\_target}}
+\index{vnd2ref\_target@{vnd2ref\_target}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{vnd2ref\_target}{vnd2ref\_target}}
+{\footnotesize\ttfamily gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2ref\+\_\+target}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00046}{46}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00054}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+target()}}.
+
+\mbox{\Hypertarget{classgen__devicetree__rest_1_1VndLookup_afddb4eefe39343982155e01032489b73}\label{classgen__devicetree__rest_1_1VndLookup_afddb4eefe39343982155e01032489b73}} 
+\index{gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}!vnd2vendor@{vnd2vendor}}
+\index{vnd2vendor@{vnd2vendor}!gen\_devicetree\_rest.VndLookup@{gen\_devicetree\_rest.VndLookup}}
+\doxysubsubsection{\texorpdfstring{vnd2vendor}{vnd2vendor}}
+{\footnotesize\ttfamily gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vnd2vendor}
+
+
+
+Definition at line \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00044}{44}} of file \mbox{\hyperlink{gen__devicetree__rest_8py_source}{gen\+\_\+devicetree\+\_\+rest.\+py}}.
+
+
+
+Referenced by \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00085}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+init\+\_\+vnd2bindings()}}, and \mbox{\hyperlink{gen__devicetree__rest_8py_source_l00048}{gen\+\_\+devicetree\+\_\+rest.\+Vnd\+Lookup.\+vendor()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+doc/\+\_\+scripts/\mbox{\hyperlink{gen__devicetree__rest_8py}{gen\+\_\+devicetree\+\_\+rest.\+py}}\end{DoxyCompactItemize}

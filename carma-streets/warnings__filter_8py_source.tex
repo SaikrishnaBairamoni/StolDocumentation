@@ -1,0 +1,103 @@
+\hypertarget{warnings__filter_8py_source}{}\doxysection{warnings\+\_\+filter.\+py}
+\label{warnings__filter_8py_source}\index{doc/\_extensions/zephyr/warnings\_filter.py@{doc/\_extensions/zephyr/warnings\_filter.py}}
+\mbox{\hyperlink{warnings__filter_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00001}\mbox{\hyperlink{namespacezephyr_1_1warnings__filter}{00001}} \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00002}00002 \textcolor{stringliteral}{Warnings filter extension}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00003}00003 \textcolor{stringliteral}{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00004}00004 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00005}00005 \textcolor{stringliteral}{Copyright (c) 2021 Nordic Semiconductor ASA}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00006}00006 \textcolor{stringliteral}{SPDX-\/License-\/Identifier: Apache-\/2.0}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00007}00007 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00008}00008 \textcolor{stringliteral}{Introduction}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00009}00009 \textcolor{stringliteral}{============}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00010}00010 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00011}00011 \textcolor{stringliteral}{This Sphinx plugin can be used to filter out warnings that are known to be false}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00012}00012 \textcolor{stringliteral}{positives. The warnings are filtered out based on a set of regular expressions}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00013}00013 \textcolor{stringliteral}{given via an configuration file. The format of the configuration file is a}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00014}00014 \textcolor{stringliteral}{plain-\/text file where each line consists of a regular expression. Any lines}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00015}00015 \textcolor{stringliteral}{starting with ``\#`` will be ignored.}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00016}00016 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00017}00017 \textcolor{stringliteral}{Configuration options}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00018}00018 \textcolor{stringliteral}{=====================}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00019}00019 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00020}00020 \textcolor{stringliteral}{-\/ ``warnings\_filter\_config``: Configuration file.}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00021}00021 \textcolor{stringliteral}{-\/ ``warnings\_filter\_silent``: Silent flag. If True, warning is hidden. If False}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00022}00022 \textcolor{stringliteral}{  the warning }\textcolor{keywordflow}{is} converted to an information message \textcolor{keywordflow}{and} displayed.}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00023}00023 \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00024}00024 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00025}00025 \textcolor{stringliteral}{import logging}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00026}00026 \textcolor{stringliteral}{import re}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00027}00027 \textcolor{stringliteral}{from typing import Dict, Any, List}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00028}00028 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00029}00029 \textcolor{stringliteral}{from sphinx.application import Sphinx}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00030}00030 \textcolor{stringliteral}{from sphinx.util.logging import NAMESPACE}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00031}00031 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00032}00032 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00033}\mbox{\hyperlink{namespacezephyr_1_1warnings__filter_a75556f1c3db2f1ecec976d68a8b6b8bf}{00033}} \textcolor{stringliteral}{\_\_version\_\_ = "{}0.1.0"{}}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00034}00034 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00035}00035 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00036}\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter}{00036}} \textcolor{stringliteral}{class WarningsFilter(logging.Filter):}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00037}00037 \textcolor{stringliteral}{    "{}"{}"{}Warnings filter.}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00038}00038 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00039}00039 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00040}00040 \textcolor{stringliteral}{        expressions: List of regular expressions.}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00041}00041 \textcolor{stringliteral}{        silent: If true, warning }\textcolor{keywordflow}{is} hidden, otherwise it \textcolor{keywordflow}{is} shown \textcolor{keyword}{as} INFO.}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00042}00042         name: Filter name.}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00043}00043     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00044}\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad}{00044}} \textcolor{stringliteral}{    }\textcolor{keyword}{def }\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad}{\_\_init\_\_}}(self, expressions: List[str], silent: bool, name: str = \textcolor{stringliteral}{"{}"{}}) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00045}00045         super().\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_aff340d158436f1b1f8bc67ec27c245ad}{\_\_init\_\_}}(name)}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00047}\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_a471afdd2b1a91d6e05f6cae72d11ff83}{00047}}         self.\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_a471afdd2b1a91d6e05f6cae72d11ff83}{\_expressions}} = expressions}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00048}\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_ac8f79ffee32ec67a65c3640b8122dd5d}{00048}}         self.\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_ac8f79ffee32ec67a65c3640b8122dd5d}{\_silent}} = silent}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00050}\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_a889eab0460b25641fb15fef83cd48af7}{00050}}     \textcolor{keyword}{def }\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_a889eab0460b25641fb15fef83cd48af7}{filter}}(self, record: logging.LogRecord) -\/> bool:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00051}00051         \textcolor{keywordflow}{if} record.levelno != logging.WARNING:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00052}00052             \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00054}00054         \textcolor{keywordflow}{for} expression \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_a471afdd2b1a91d6e05f6cae72d11ff83}{\_expressions}}:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00055}00055             \textcolor{keywordflow}{if} re.match(expression, record.msg):}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00056}00056                 \textcolor{keywordflow}{if} self.\mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter_ac8f79ffee32ec67a65c3640b8122dd5d}{\_silent}}:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00057}00057                     \textcolor{keywordflow}{return} \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00058}00058                 \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00059}00059                     record.levelno = logging.INFO}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00060}00060                     record.msg = f\textcolor{stringliteral}{"{}Filtered warning: \{record.msg\}"{}}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00061}00061                     \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00063}00063         \textcolor{keywordflow}{return} \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00066}\mbox{\hyperlink{namespacezephyr_1_1warnings__filter_a57f939479593357a3613fa9d78fbd658}{00066}} \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1warnings__filter_a57f939479593357a3613fa9d78fbd658}{configure}}(app: Sphinx) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00067}00067     \textcolor{stringliteral}{"{}"{}"{}Entry point.}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00068}00068 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00069}00069 \textcolor{stringliteral}{    Args:}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00070}00070 \textcolor{stringliteral}{        app: Sphinx application instance.}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00071}00071 \textcolor{stringliteral}{    "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00072}00072 \textcolor{stringliteral}{}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00073}00073 \textcolor{stringliteral}{    }\textcolor{comment}{\# load expressions from configuration file}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00074}00074     \textcolor{keyword}{with} open(app.config.warnings\_filter\_config) \textcolor{keyword}{as} f:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00075}00075         expressions = list()}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00076}00076         \textcolor{keywordflow}{for} line \textcolor{keywordflow}{in} f.readlines():}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00077}00077             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} line.startswith(\textcolor{stringliteral}{"{}\#"{}}):}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00078}00078                 expressions.append(line.rstrip())}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00080}00080     \textcolor{comment}{\# install warnings filter to all the Sphinx logger handlers}}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00081}00081     filter = \mbox{\hyperlink{classzephyr_1_1warnings__filter_1_1WarningsFilter}{WarningsFilter}}(expressions, app.config.warnings\_filter\_silent)}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00082}00082     logger = logging.getLogger(NAMESPACE)}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00083}00083     \textcolor{keywordflow}{for} handler \textcolor{keywordflow}{in} logger.handlers:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00084}00084         handler.filters.insert(0, filter)}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00087}\mbox{\hyperlink{namespacezephyr_1_1warnings__filter_aca0909711cf68ea1f36a15bb1cfbe200}{00087}} \textcolor{keyword}{def }\mbox{\hyperlink{namespacezephyr_1_1warnings__filter_aca0909711cf68ea1f36a15bb1cfbe200}{setup}}(app: Sphinx) -\/> Dict[str, Any]:}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00088}00088     app.add\_config\_value(\textcolor{stringliteral}{"{}warnings\_filter\_config"{}}, \textcolor{stringliteral}{"{}"{}}, \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00089}00089     app.add\_config\_value(\textcolor{stringliteral}{"{}warnings\_filter\_silent"{}}, \textcolor{keyword}{True}, \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00091}00091     app.connect(\textcolor{stringliteral}{"{}builder-\/inited"{}}, configure)}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00093}00093     \textcolor{keywordflow}{return} \{}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00094}00094         \textcolor{stringliteral}{"{}version"{}}: \_\_version\_\_,}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00095}00095         \textcolor{stringliteral}{"{}parallel\_read\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00096}00096         \textcolor{stringliteral}{"{}parallel\_write\_safe"{}}: \textcolor{keyword}{True},}
+\DoxyCodeLine{\Hypertarget{warnings__filter_8py_source_l00097}00097     \}}
+
+\end{DoxyCode}

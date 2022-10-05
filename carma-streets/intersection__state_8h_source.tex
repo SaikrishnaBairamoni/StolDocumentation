@@ -1,0 +1,60 @@
+\hypertarget{intersection__state_8h_source}{}\doxysection{intersection\+\_\+state.\+h}
+\label{intersection__state_8h_source}\index{streets\_utils/streets\_signal\_phase\_and\_timing/include/intersection\_state.h@{streets\_utils/streets\_signal\_phase\_and\_timing/include/intersection\_state.h}}
+\mbox{\hyperlink{intersection__state_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{movement__state_8h}{movement\_state.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{connection__maneuver__assist_8h}{connection\_maneuver\_assist.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{signal__phase__and__timing__exception_8h}{signal\_phase\_and\_timing\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{ntcip__1202__ext_8h}{ntcip\_1202\_ext.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <rapidjson/rapidjson.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00014}00014 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacesignal__phase__and__timing}{signal\_phase\_and\_timing}}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00015}00015 \{}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00016}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state}{00016}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state}{intersection\_state}}}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00017}00017     \{}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00018}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_ad71bed5c8cd56cac8dcd041c5fd5a83e}{00018}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_ad71bed5c8cd56cac8dcd041c5fd5a83e}{MIN\_TO\_SECONDS}} = 60;}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00019}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_aebaed676aff07f126fe01e1319b4c605}{00019}}         \textcolor{keywordtype}{int} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_aebaed676aff07f126fe01e1319b4c605}{SECOND\_TO\_MILLISECONDS}} = 1000;}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00024}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a6da9216f423d4fdb2d754ea68e276e73}{00024}}         std::string \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a6da9216f423d4fdb2d754ea68e276e73}{name}};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00031}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_ada34bde87ec24eb85810d408cd13f69f}{00031}}         uint16\_t \textcolor{keywordtype}{id} = 0;}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00033}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a7ec8a1a400233389a5640c48bda4d1e3}{00033}}         uint8\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a7ec8a1a400233389a5640c48bda4d1e3}{revision}} = 0;}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00076}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_abbd9ce5f7a9b4930e5cdfeaf84ddbe02}{00076}}         uint8\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_abbd9ce5f7a9b4930e5cdfeaf84ddbe02}{status}};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00080}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a0a0ee55cccc9fb11add9902564ad504e}{00080}}         uint32\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a0a0ee55cccc9fb11add9902564ad504e}{moy}} = 0;}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00084}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a51c19a8652fc7761cb9e632fc01a9dd2}{00084}}         uint16\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a51c19a8652fc7761cb9e632fc01a9dd2}{time\_stamp}} = 0;}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00088}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a8c616e91f927f3803dcd2367e12a4eb9}{00088}}         std::list<int> \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a8c616e91f927f3803dcd2367e12a4eb9}{enabled\_lanes}};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00094}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a7ede63a37705e6c5cdce68883fe78a7d}{00094}}         std::list<movement\_state> \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a7ede63a37705e6c5cdce68883fe78a7d}{states}};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00099}\mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a608bced258a6e40c5b975021b3a6bc02}{00099}}         std::list<connection\_maneuver\_assist> \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a608bced258a6e40c5b975021b3a6bc02}{maneuver\_assist\_list}};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00106}00106         rapidjson::Value \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_ae992920af2fdef8ffd0cf29da74e0ac9}{toJson}}(rapidjson::Document::AllocatorType \&allocator) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00112}00112         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_ac73d712ab8edf86b8d9c892f6bdff5e0}{fromJson}}(\textcolor{keyword}{const} rapidjson::Value \&val);}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00120}00120         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_ac42d471e1b9b4bf7924ffb93bd6892e9}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state}{intersection\_state}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00128}00128         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a19acfe5a1d6bdd80a61d086b52579f8b}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state}{intersection\_state}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00136}00136         uint64\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a4fde3ad2fb225f963f411ad66e72066f}{convert\_min\_mills2epoch\_ts}}(uint32\_t moy\_ll ,uint16\_t min\_mills\_timestamp) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00143}00143         uint64\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a8bc23ba89dd6c079735485173ba6d6d5}{get\_epoch\_timestamp}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00154}00154         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a5aa5329bedd738f5579cf045975d87a9}{set\_timestamp\_ntcip}}(\textcolor{keyword}{const} uint32\_t second\_of\_day , \textcolor{keyword}{const} uint16\_t millisecond\_of\_second );}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00155}00155 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00160}00160         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a480dafe7aae5c872f14d1f60c8627636}{set\_timestamp\_local}}();}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00168}00168         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a01285f8060241eec1adbaa0c5e97a1df}{update\_movement\_state}}( \mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip::ntcip\_1202\_ext}} \&spat\_data, \textcolor{keyword}{const} \textcolor{keywordtype}{int} signal\_group\_id, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{ntcip__1202__ext__phasetime_8h_a818606b5263ca9418c2a574097a9503a}{phase\_number}});}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00180}00180         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_adb8a7d8693ba85ab08f3c0e31afe4935}{update\_movements}}( \mbox{\hyperlink{structntcip_1_1ntcip__1202__ext}{ntcip::ntcip\_1202\_ext}} \&spat\_data,\textcolor{keyword}{const} std::unordered\_map<int,int> \&phase\_number\_to\_signal\_group );}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00187}00187         \mbox{\hyperlink{structsignal__phase__and__timing_1_1movement__state}{movement\_state}}\& \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a0212a92fdea9a7f1f5959d002ba7dda9}{get\_movement}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} signal\_group\_id);}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00196}00196         \textcolor{keywordtype}{void} \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_aca7f3528dc9e42b152c0e4537468fd79}{initialize\_movement\_states}}(\textcolor{keyword}{const} std::unordered\_map<int,int> \&phase\_number\_to\_signal\_group);}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00205}00205         uint16\_t \mbox{\hyperlink{structsignal__phase__and__timing_1_1intersection__state_a7f3126c08963787918c8d007255b4193}{convert\_offset}}(\textcolor{keyword}{const} uint16\_t offset\_tenths\_of\_sec ) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00206}00206     \};}
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{intersection__state_8h_source_l00208}00208 \}}
+
+\end{DoxyCode}

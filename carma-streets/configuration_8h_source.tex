@@ -1,0 +1,29 @@
+\hypertarget{configuration_8h_source}{}\doxysection{configuration.\+h}
+\label{configuration_8h_source}\index{streets\_utils/streets\_service\_base/include/configuration.h@{streets\_utils/streets\_service\_base/include/configuration.h}}
+\mbox{\hyperlink{configuration_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{streets__configuration__exception_8h}{streets\_configuration\_exception.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00009}\mbox{\hyperlink{namespacestreets__service}{00009}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacestreets__service}{streets\_service}} \{}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00013}\mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4}{00013}}     \textcolor{keyword}{enum class} \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4}{data\_type}} \{ \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a4bae25e1323a2f1b5dd1159afceec8f3}{config\_string}}=0, \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4abe682c09d117d0b091233fc583ba97a8}{config\_int}}=1, \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a770d9b43ef602560902f09624e9d4b8a}{config\_double}}=2, \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a0d0e7ae3046b05f1005df9793dbea92c}{config\_bool}}=3 \}; }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00020}\mbox{\hyperlink{structstreets__service_1_1configuration}{00020}}     \textcolor{keyword}{struct }\mbox{\hyperlink{structstreets__service_1_1configuration}{configuration}} \{}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00024}\mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{00024}}         std::string \mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}};}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00028}\mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{00028}}         std::string \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}};}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00032}\mbox{\hyperlink{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}{00032}}         std::string \mbox{\hyperlink{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}{description}};}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00036}\mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{00036}}         \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4}{data\_type}} \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}};}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00042}00042         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structstreets__service_1_1configuration_ab61848f1c278a6d038b94d343868d667}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{structstreets__service_1_1configuration}{configuration}}\& t) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00048}00048         \textcolor{keywordtype}{bool} \mbox{\hyperlink{structstreets__service_1_1configuration_aa940c706f2a23cd7c6006c8b9e337273}{operator!=}}(\textcolor{keyword}{const} \mbox{\hyperlink{structstreets__service_1_1configuration}{configuration}}\& t) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00055}00055         \textcolor{keywordtype}{void} \mbox{\hyperlink{structstreets__service_1_1configuration_a879fd3a8c15c4167ca1ba4d3a1bb3753}{fromJson}}(\textcolor{keyword}{const} rapidjson::Value \&val );}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00056}00056     \};}
+\DoxyCodeLine{\Hypertarget{configuration_8h_source_l00057}00057 \}}
+
+\end{DoxyCode}

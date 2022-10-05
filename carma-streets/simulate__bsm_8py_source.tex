@@ -1,0 +1,33 @@
+\hypertarget{simulate__bsm_8py_source}{}\doxysection{simulate\+\_\+bsm.\+py}
+\label{simulate__bsm_8py_source}\index{scripts/simulate\_bsm.py@{scripts/simulate\_bsm.py}}
+\mbox{\hyperlink{simulate__bsm_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00001}\mbox{\hyperlink{namespacesimulate__bsm}{00001}} \textcolor{keyword}{from} os \textcolor{keyword}{import} read}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00002}00002 \textcolor{keyword}{from} kafka \textcolor{keyword}{import} KafkaProducer}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00003}00003 \textcolor{keyword}{import} time}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00004}00004 \textcolor{keyword}{from} time \textcolor{keyword}{import} sleep}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00005}00005 \textcolor{keyword}{import} json}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00008}\mbox{\hyperlink{namespacesimulate__bsm_ad21dfaf5e5570adbbc44c79cd1cbf844}{00008}} \textcolor{keyword}{def }\mbox{\hyperlink{namespacesimulate__bsm_ad21dfaf5e5570adbbc44c79cd1cbf844}{read\_json}}(json\_name):}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00009}00009     data = \{\}}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00010}00010     \textcolor{keyword}{with} open(json\_name, \textcolor{stringliteral}{"{}r"{}}) \textcolor{keyword}{as} json\_file:}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00011}00011         data = json.load(json\_file)}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00012}00012     \textcolor{keywordflow}{return} data}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00015}00015 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00016}\mbox{\hyperlink{namespacesimulate__bsm_a88896685ca027b80cae5cd3cca4003ea}{00016}}     producer = KafkaProducer(bootstrap\_servers=[\textcolor{stringliteral}{"{}127.0.0.1:9092"{}}],}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00017}00017                              value\_serializer=\textcolor{keyword}{lambda} x: json.dumps(x).encode(\textcolor{stringliteral}{'utf-\/8'}))}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00018}\mbox{\hyperlink{namespacesimulate__bsm_a76f645adf8af768fa959ecb6f90d7831}{00018}}     count = 10}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00019}\mbox{\hyperlink{namespacesimulate__bsm_a29b8e2f01a805057636de5ad54422c21}{00019}}     i = 0}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00020}00020     while(i < count):}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00021}\mbox{\hyperlink{namespacesimulate__bsm_a2aaf0142837b674c6cfa6006cf335bc7}{00021}}         data = \mbox{\hyperlink{namespacesimulate__bsm_ad21dfaf5e5570adbbc44c79cd1cbf844}{read\_json}}(\textcolor{stringliteral}{'bsm.json'})}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00022}00022         data[\textcolor{stringliteral}{"{}core\_data"{}}][\textcolor{stringliteral}{"{}msg\_count"{}}] = str(i)}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00023}00023         data[\textcolor{stringliteral}{"{}core\_data"{}}][\textcolor{stringliteral}{"{}speed"{}}] = str(i)}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00024}\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{00024}}         producer.send(\textcolor{stringliteral}{'v2xhub\_bsm\_in'}, value=data)}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00025}00025         print(\textcolor{stringliteral}{'Sent a bsm.'})}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00026}00026         i += 1}
+\DoxyCodeLine{\Hypertarget{simulate__bsm_8py_source_l00027}00027         producer.flush()}
+
+\end{DoxyCode}

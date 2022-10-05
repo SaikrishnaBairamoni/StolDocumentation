@@ -1,0 +1,276 @@
+\hypertarget{structstreets__service_1_1configuration}{}\doxysection{streets\+\_\+service\+::configuration Struct Reference}
+\label{structstreets__service_1_1configuration}\index{streets\_service::configuration@{streets\_service::configuration}}
+
+
+{\ttfamily \#include $<$configuration.\+h$>$}
+
+
+
+Collaboration diagram for streets\+\_\+service\+::configuration\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{structstreets__service_1_1configuration__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structstreets__service_1_1configuration_ab61848f1c278a6d038b94d343868d667}{operator==}} (const \mbox{\hyperlink{structstreets__service_1_1configuration}{configuration}} \&t) const
+\begin{DoxyCompactList}\small\item\em operator== checks if two instances are equal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structstreets__service_1_1configuration_aa940c706f2a23cd7c6006c8b9e337273}{operator!=}} (const \mbox{\hyperlink{structstreets__service_1_1configuration}{configuration}} \&t) const
+\begin{DoxyCompactList}\small\item\em operator!= checks if two instances are not equal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structstreets__service_1_1configuration_a879fd3a8c15c4167ca1ba4d3a1bb3753}{from\+Json}} (const rapidjson\+::\+Value \&val)
+\begin{DoxyCompactList}\small\item\em Method to translate json object to configuration struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}}
+\item 
+std\+::string \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}}
+\item 
+std\+::string \mbox{\hyperlink{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}{description}}
+\item 
+\mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4}{data\+\_\+type}} \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{configuration_8h_source_l00020}{20}} of file \mbox{\hyperlink{configuration_8h_source}{configuration.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structstreets__service_1_1configuration_a879fd3a8c15c4167ca1ba4d3a1bb3753}\label{structstreets__service_1_1configuration_a879fd3a8c15c4167ca1ba4d3a1bb3753}} 
+\index{streets\_service::configuration@{streets\_service::configuration}!fromJson@{fromJson}}
+\index{fromJson@{fromJson}!streets\_service::configuration@{streets\_service::configuration}}
+\doxysubsubsection{\texorpdfstring{fromJson()}{fromJson()}}
+{\footnotesize\ttfamily void streets\+\_\+service\+::configuration\+::from\+Json (\begin{DoxyParamCaption}\item[{const rapidjson\+::\+Value \&}]{val }\end{DoxyParamCaption})}
+
+
+
+Method to translate json object to configuration struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & rapidjson\+::\+Value object representing configuration. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\+\_\+configuration\+\_\+exception}}} & if rapidjson\+::\+Value is not correctly formatted. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{configuration_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{configuration_8cpp_source}{configuration.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012                                                           \{}
+\DoxyCodeLine{00013         \textcolor{keywordflow}{if} (!val.FindMember(\textcolor{stringliteral}{"{}name"{}})-\/>value.IsString()) \{}
+\DoxyCodeLine{00014             \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}Configuration is missing name!"{}});}
+\DoxyCodeLine{00015         \}}
+\DoxyCodeLine{00016         \mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}} = val.FindMember(\textcolor{stringliteral}{"{}name"{}})-\/>value.GetString();}
+\DoxyCodeLine{00017 }
+\DoxyCodeLine{00018         \textcolor{keywordflow}{if} ( !val.FindMember(\textcolor{stringliteral}{"{}description"{}})-\/>value.IsString() )\{}
+\DoxyCodeLine{00019             \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}Configuration is"{}} + \mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}} + \textcolor{stringliteral}{"{} missing a description"{}});}
+\DoxyCodeLine{00020         \} }
+\DoxyCodeLine{00021         \mbox{\hyperlink{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}{description}} = val.FindMember(\textcolor{stringliteral}{"{}description"{}})-\/>value.GetString();}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023         \textcolor{keywordflow}{if} ( val.FindMember(\textcolor{stringliteral}{"{}type"{}})-\/>value.IsString() )\{}
+\DoxyCodeLine{00024             std::string doc\_type = val.FindMember(\textcolor{stringliteral}{"{}type"{}})-\/>value.GetString();}
+\DoxyCodeLine{00025             \textcolor{keywordflow}{if} ( doc\_type == \textcolor{stringliteral}{"{}STRING"{}} ) \{}
+\DoxyCodeLine{00026                 \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}} = \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a4bae25e1323a2f1b5dd1159afceec8f3}{data\_type::config\_string}};}
+\DoxyCodeLine{00027                 \textcolor{keywordflow}{if} ( !val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.IsString() ) \{}
+\DoxyCodeLine{00028                     \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}String configuration is missing or incorrect type value"{}});}
+\DoxyCodeLine{00029                 \}}
+\DoxyCodeLine{00030                 \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}} = val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.GetString();}
+\DoxyCodeLine{00031             \}}
+\DoxyCodeLine{00032             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (doc\_type == \textcolor{stringliteral}{"{}INTEGER"{}})\{}
+\DoxyCodeLine{00033                 \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}} = \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4abe682c09d117d0b091233fc583ba97a8}{data\_type::config\_int}};}
+\DoxyCodeLine{00034                 \textcolor{keywordflow}{if} ( !val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.IsInt() ) \{}
+\DoxyCodeLine{00035                     \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}Integer configuration is missing or incorrect type value"{}});}
+\DoxyCodeLine{00036                 \}}
+\DoxyCodeLine{00037                 \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}} = \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.GetInt());}
+\DoxyCodeLine{00038             \}}
+\DoxyCodeLine{00039             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (doc\_type == \textcolor{stringliteral}{"{}DOUBLE"{}})\{}
+\DoxyCodeLine{00040                 \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}} = \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a770d9b43ef602560902f09624e9d4b8a}{data\_type::config\_double}};}
+\DoxyCodeLine{00041                 \textcolor{keywordflow}{if} ( !val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.IsDouble() ) \{}
+\DoxyCodeLine{00042                     \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}Double configuration is missing or incorrect type value"{}});}
+\DoxyCodeLine{00043                 \}}
+\DoxyCodeLine{00044                 \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}} = \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{std::to\_string}}(val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.GetDouble());}
+\DoxyCodeLine{00045             \}}
+\DoxyCodeLine{00046             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (doc\_type == \textcolor{stringliteral}{"{}BOOL"{}}) \{}
+\DoxyCodeLine{00047                 \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}} = \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a0d0e7ae3046b05f1005df9793dbea92c}{data\_type::config\_bool}};}
+\DoxyCodeLine{00048                 \textcolor{keywordflow}{if} ( !val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.IsBool() ) \{}
+\DoxyCodeLine{00049                     \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}Bool configuration is missing or incorrect type value"{}});}
+\DoxyCodeLine{00050                 \}}
+\DoxyCodeLine{00051                 \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}} = val.FindMember(\textcolor{stringliteral}{"{}value"{}})-\/>value.GetBool() ? \textcolor{stringliteral}{"{}true"{}} : \textcolor{stringliteral}{"{}false"{}};}
+\DoxyCodeLine{00052                 }
+\DoxyCodeLine{00053             \} }
+\DoxyCodeLine{00054             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00055                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}Data type configuration is invalid!"{}});}
+\DoxyCodeLine{00056             \}}
+\DoxyCodeLine{00057         \} }
+\DoxyCodeLine{00058         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00059             \textcolor{keywordflow}{throw} \mbox{\hyperlink{classstreets__service_1_1streets__configuration__exception}{streets\_service::streets\_configuration\_exception}}(\textcolor{stringliteral}{"{}Configuration "{}} + \mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}} + \textcolor{stringliteral}{"{} is missing a type"{}});}
+\DoxyCodeLine{00060         \}}
+\DoxyCodeLine{00061         }
+\DoxyCodeLine{00062         SPDLOG\_DEBUG(\textcolor{stringliteral}{"{}Create config name : \{0\}, value : \{1\}, description : \{3\} "{}},\mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}}, \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}}, \mbox{\hyperlink{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}{description}} );}
+\DoxyCodeLine{00063 }
+\DoxyCodeLine{00064     \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a0d0e7ae3046b05f1005df9793dbea92c}{streets\+\_\+service\+::config\+\_\+bool}}, \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a770d9b43ef602560902f09624e9d4b8a}{streets\+\_\+service\+::config\+\_\+double}}, \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4abe682c09d117d0b091233fc583ba97a8}{streets\+\_\+service\+::config\+\_\+int}}, \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4a4bae25e1323a2f1b5dd1159afceec8f3}{streets\+\_\+service\+::config\+\_\+string}}, \mbox{\hyperlink{configuration_8h_source_l00032}{description}}, \mbox{\hyperlink{configuration_8h_source_l00024}{name}}, \mbox{\hyperlink{ntcip__1202__ext_8h_a576de7b60eacee3f1a70393a005502cd}{to\+\_\+string()}}, \mbox{\hyperlink{configuration_8h_source_l00036}{type}}, and \mbox{\hyperlink{configuration_8h_source_l00028}{value}}.
+
+
+
+Referenced by \mbox{\hyperlink{streets__configuration_8cpp_source_l00077}{streets\+\_\+service\+::streets\+\_\+configuration\+::parse\+\_\+configurations\+\_\+array()}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{structstreets__service_1_1configuration_a879fd3a8c15c4167ca1ba4d3a1bb3753_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structstreets__service_1_1configuration_a879fd3a8c15c4167ca1ba4d3a1bb3753_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structstreets__service_1_1configuration_aa940c706f2a23cd7c6006c8b9e337273}\label{structstreets__service_1_1configuration_aa940c706f2a23cd7c6006c8b9e337273}} 
+\index{streets\_service::configuration@{streets\_service::configuration}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!streets\_service::configuration@{streets\_service::configuration}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool streets\+\_\+service\+::configuration\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__service_1_1configuration}{configuration}} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+operator!= checks if two instances are not equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & configuration comparison. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{configuration_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{configuration_8cpp_source}{configuration.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008                                                                \{}
+\DoxyCodeLine{00009         \textcolor{keywordflow}{return} !(\mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}} == t.name \&\& \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}} == t.value \&\& \mbox{\hyperlink{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}{description}} == t.description \&\& \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}} == t.type);}
+\DoxyCodeLine{00010     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{configuration_8h_source_l00032}{description}}, \mbox{\hyperlink{configuration_8h_source_l00024}{name}}, \mbox{\hyperlink{configuration_8h_source_l00036}{type}}, and \mbox{\hyperlink{configuration_8h_source_l00028}{value}}.
+
+\mbox{\Hypertarget{structstreets__service_1_1configuration_ab61848f1c278a6d038b94d343868d667}\label{structstreets__service_1_1configuration_ab61848f1c278a6d038b94d343868d667}} 
+\index{streets\_service::configuration@{streets\_service::configuration}!operator==@{operator==}}
+\index{operator==@{operator==}!streets\_service::configuration@{streets\_service::configuration}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool streets\+\_\+service\+::configuration\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structstreets__service_1_1configuration}{configuration}} \&}]{t }\end{DoxyParamCaption}) const}
+
+
+
+operator== checks if two instances are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & configuration comparison. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{configuration_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{configuration_8cpp_source}{configuration.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004                                                                \{}
+\DoxyCodeLine{00005         \textcolor{keywordflow}{return} \mbox{\hyperlink{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}{name}} == t.name \&\& \mbox{\hyperlink{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}{value}} == t.value \&\& \mbox{\hyperlink{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}{description}} == t.description \&\& \mbox{\hyperlink{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}{type}} == t.type;}
+\DoxyCodeLine{00006     \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{configuration_8h_source_l00032}{description}}, \mbox{\hyperlink{configuration_8h_source_l00024}{name}}, \mbox{\hyperlink{configuration_8h_source_l00036}{type}}, and \mbox{\hyperlink{configuration_8h_source_l00028}{value}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}\label{structstreets__service_1_1configuration_a48a110a5113f4a6adcee14ecfa5dcc3c}} 
+\index{streets\_service::configuration@{streets\_service::configuration}!description@{description}}
+\index{description@{description}!streets\_service::configuration@{streets\_service::configuration}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily std\+::string streets\+\_\+service\+::configuration\+::description}
+
+Description of configuration 
+
+Definition at line \mbox{\hyperlink{configuration_8h_source_l00032}{32}} of file \mbox{\hyperlink{configuration_8h_source}{configuration.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{configuration_8cpp_source_l00012}{from\+Json()}}, \mbox{\hyperlink{configuration_8cpp_source_l00008}{operator!=()}}, and \mbox{\hyperlink{configuration_8cpp_source_l00004}{operator==()}}.
+
+\mbox{\Hypertarget{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}\label{structstreets__service_1_1configuration_afcdf9236552174b8bcd45499e4774868}} 
+\index{streets\_service::configuration@{streets\_service::configuration}!name@{name}}
+\index{name@{name}!streets\_service::configuration@{streets\_service::configuration}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string streets\+\_\+service\+::configuration\+::name}
+
+Name of configuration 
+
+Definition at line \mbox{\hyperlink{configuration_8h_source_l00024}{24}} of file \mbox{\hyperlink{configuration_8h_source}{configuration.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{configuration_8cpp_source_l00012}{from\+Json()}}, \mbox{\hyperlink{configuration_8cpp_source_l00008}{operator!=()}}, and \mbox{\hyperlink{configuration_8cpp_source_l00004}{operator==()}}.
+
+\mbox{\Hypertarget{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}\label{structstreets__service_1_1configuration_a042984c0e00f800acc28257894fd8d0d}} 
+\index{streets\_service::configuration@{streets\_service::configuration}!type@{type}}
+\index{type@{type}!streets\_service::configuration@{streets\_service::configuration}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacestreets__service_a48aeb3058116f112bc1af5e5920548f4}{data\+\_\+type}} streets\+\_\+service\+::configuration\+::type}
+
+Data type enum for configuration 
+
+Definition at line \mbox{\hyperlink{configuration_8h_source_l00036}{36}} of file \mbox{\hyperlink{configuration_8h_source}{configuration.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{configuration_8cpp_source_l00012}{from\+Json()}}, \mbox{\hyperlink{configuration_8cpp_source_l00008}{operator!=()}}, and \mbox{\hyperlink{configuration_8cpp_source_l00004}{operator==()}}.
+
+\mbox{\Hypertarget{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}\label{structstreets__service_1_1configuration_a8dc55a410d66732ca5e7136f2f3e7fb5}} 
+\index{streets\_service::configuration@{streets\_service::configuration}!value@{value}}
+\index{value@{value}!streets\_service::configuration@{streets\_service::configuration}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily std\+::string streets\+\_\+service\+::configuration\+::value}
+
+Value of configuration 
+
+Definition at line \mbox{\hyperlink{configuration_8h_source_l00028}{28}} of file \mbox{\hyperlink{configuration_8h_source}{configuration.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{configuration_8cpp_source_l00012}{from\+Json()}}, \mbox{\hyperlink{configuration_8cpp_source_l00008}{operator!=()}}, and \mbox{\hyperlink{configuration_8cpp_source_l00004}{operator==()}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+streets\+\_\+utils/streets\+\_\+service\+\_\+base/include/\mbox{\hyperlink{configuration_8h}{configuration.\+h}}\item 
+streets\+\_\+utils/streets\+\_\+service\+\_\+base/src/\mbox{\hyperlink{configuration_8cpp}{configuration.\+cpp}}\end{DoxyCompactItemize}

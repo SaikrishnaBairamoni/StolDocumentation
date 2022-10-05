@@ -1,0 +1,50 @@
+\hypertarget{map__msg__worker_8h_source}{}\doxysection{map\+\_\+msg\+\_\+worker.\+h}
+\label{map__msg__worker_8h_source}\index{intersection\_model/include/map\_msg\_worker.h@{intersection\_model/include/map\_msg\_worker.h}}
+\mbox{\hyperlink{map__msg__worker_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <rapidjson/document.h>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <mutex>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00006}00006 \textcolor{preprocessor}{\#include <thread>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00007}00007 \textcolor{preprocessor}{\#include <rapidjson/istreamwrapper.h>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00008}00008 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00009}00009 \textcolor{preprocessor}{\#include <rapidjson/stringbuffer.h>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00010}00010 \textcolor{preprocessor}{\#include <rapidjson/writer.h>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00011}00011 \textcolor{preprocessor}{\#include <spdlog/spdlog.h>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00013}00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kafka__client_8h}{kafka\_client.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00014}00014 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{map_8h}{map.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00016}00016 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceintersection__model}{intersection\_model}}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00017}00017 \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00018}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker}{00018}}     \textcolor{keyword}{class }\mbox{\hyperlink{classintersection__model_1_1map__msg__worker}{map\_msg\_worker}}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00019}00019     \{}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00020}00020     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00021}00021         \textcolor{comment}{// Kafka consumer configuration}}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00022}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{00022}}         std::string \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{bootstrap\_server}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00023}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{00023}}         std::string \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{map\_msg\_group\_id}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00024}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{00024}}         std::string \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{map\_msg\_topic\_name}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00025}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{00025}}         std::shared\_ptr<kafka\_clients::kafka\_consumer\_worker> \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad83e85115b6fd47e759da61dc2a867cc}{\_map\_msg\_consumer}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00026}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aab2d3179da1e6be47a1ee35c170a6ab6}{00026}}         std::mutex \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aab2d3179da1e6be47a1ee35c170a6ab6}{intersection\_map\_msg\_mtx}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00027}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{00027}}         std::shared\_ptr<intersection\_map> \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a8988ca1129b6b79091f0743c79d2d42f}{\_intersection\_map\_ptr}};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00029}00029     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00030}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}{00030}}         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}{map\_msg\_worker}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00035}00035         \textcolor{keyword}{explicit} \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}{map\_msg\_worker}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00041}00041         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1d38d57d4d790484936839a3ddd8f4dd}{map\_msg\_worker}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} intersection\_id, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_acc92687a9244368617bb04022cef53e8}{bootstrap\_server}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a1a22e3410eb5d8cf8126f7954225d9c9}{map\_msg\_group\_id}}, \textcolor{keyword}{const} std::string \&\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a995dd977db71a6a753f99b0b60544ce7}{map\_msg\_topic\_name}});}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00042}\mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a24ba3b8fbac71ec535483c400beabd99}{00042}}         \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a24ba3b8fbac71ec535483c400beabd99}{\string~map\_msg\_worker}}() = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00050}00050         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_ad59f4cb6f6e4afc090fdda3937f1b672}{update\_map\_msg}}(\textcolor{keyword}{const} std::string \&payload);}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00051}00051         }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00057}00057         \textcolor{keyword}{const} std::shared\_ptr<intersection\_map>\& \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_aa18c01177386e52a8c31c185ac3a9f9b}{get\_map\_msg\_ptr}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00058}00058         }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00064}00064         \textcolor{keyword}{const} std::shared\_ptr<kafka\_clients::kafka\_consumer\_worker>\& \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0379ce194582140e930c2e3b3ccc5ad8}{get\_map\_msg\_consumer\_ptr}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00069}00069         rapidjson::Document \mbox{\hyperlink{classintersection__model_1_1map__msg__worker_a0d72b27c573747d7dd6b32ef6fae34ab}{parse\_JSON\_string}}(\textcolor{keyword}{const} std::string \&jsonString) \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00070}00070     \};}
+\DoxyCodeLine{\Hypertarget{map__msg__worker_8h_source_l00071}00071 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,97 @@
+\hypertarget{OAIApiRouter_8cpp_source}{}\doxysection{OAIApi\+Router.\+cpp}
+\label{OAIApiRouter_8cpp_source}\index{streets\_utils/streets\_api/intersection\_server\_api/src/handlers/OAIApiRouter.cpp@{streets\_utils/streets\_api/intersection\_server\_api/src/handlers/OAIApiRouter.cpp}}
+\mbox{\hyperlink{OAIApiRouter_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00012}00012 \textcolor{preprocessor}{\#include <QJsonArray>}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00013}00013 \textcolor{preprocessor}{\#include <QJsonDocument>}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00014}00014 \textcolor{preprocessor}{\#include <QJsonObject>}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00015}00015 \textcolor{preprocessor}{\#include <QVariantMap>}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00018}00018 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{OAIApiRouter_8h}{OAIApiRouter.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00019}00019 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{OAIDefaultApiRequest_8h}{OAIDefaultApiRequest.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00022}00022 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00024}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a538680cddee24abb90a8c8b438657f70}{00024}} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a538680cddee24abb90a8c8b438657f70}{OAIApiRouter::OAIApiRouter}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00025}00025     \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af5c8f60a4a34255114b4b87720d2c349}{createApiHandlers}}();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00026}00026 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00028}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a73aea895b4fd55d3b1952c85bba07912}{00028}} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a73aea895b4fd55d3b1952c85bba07912}{OAIApiRouter::\string~OAIApiRouter}}()\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00030}00030 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00032}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af5c8f60a4a34255114b4b87720d2c349}{00032}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af5c8f60a4a34255114b4b87720d2c349}{OAIApiRouter::createApiHandlers}}() \{ }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00033}00033     \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af1f8f9fe509ba350567bc87627289ae9}{mOAIDefaultApiHandler}} = QSharedPointer<OAIDefaultApiHandler>::create();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00034}00034 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00037}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_ad84704f466c58561dc2e5c7e7f868428}{00037}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_ad84704f466c58561dc2e5c7e7f868428}{OAIApiRouter::setOAIDefaultApiHandler}}(QSharedPointer<OAIDefaultApiHandler> handler)\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00038}00038     \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af1f8f9fe509ba350567bc87627289ae9}{mOAIDefaultApiHandler}} = handler;}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00041}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a96c84bc8f6825a964976be0640058c77}{00041}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a96c84bc8f6825a964976be0640058c77}{OAIApiRouter::setUpRoutes}}() \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00042}00042     }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00043}00043     \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_aa45ca6e410137cb40fc3a87abc1f02ea}{Routes}}.insert(QString(\textcolor{stringliteral}{"{}\%1 \%2"{}}).arg(\textcolor{stringliteral}{"{}GET"{}}).arg(\textcolor{stringliteral}{"{}/intersection\_model/v1/info"{}}).toLower(), [\textcolor{keyword}{this}](QHttpEngine::Socket *socket) \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00044}00044             \textcolor{keyword}{auto} reqObj = \textcolor{keyword}{new} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest}{OAIDefaultApiRequest}}(socket, \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af1f8f9fe509ba350567bc87627289ae9}{mOAIDefaultApiHandler}});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00045}00045             reqObj-\/>getIntersectionInfoRequest();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00046}00046     \});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00047}00047     \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_aa45ca6e410137cb40fc3a87abc1f02ea}{Routes}}.insert(QString(\textcolor{stringliteral}{"{}\%1 \%2"{}}).arg(\textcolor{stringliteral}{"{}GET"{}}).arg(\textcolor{stringliteral}{"{}/intersection\_model/v1/departure\_lanelets"{}}).toLower(), [\textcolor{keyword}{this}](QHttpEngine::Socket *socket) \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00048}00048             \textcolor{keyword}{auto} reqObj = \textcolor{keyword}{new} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest}{OAIDefaultApiRequest}}(socket, \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af1f8f9fe509ba350567bc87627289ae9}{mOAIDefaultApiHandler}});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00049}00049             reqObj-\/>listDepartureLaneletsRequest();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00050}00050     \});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00051}00051     \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_aa45ca6e410137cb40fc3a87abc1f02ea}{Routes}}.insert(QString(\textcolor{stringliteral}{"{}\%1 \%2"{}}).arg(\textcolor{stringliteral}{"{}GET"{}}).arg(\textcolor{stringliteral}{"{}/intersection\_model/v1/entry\_lanelets"{}}).toLower(), [\textcolor{keyword}{this}](QHttpEngine::Socket *socket) \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00052}00052             \textcolor{keyword}{auto} reqObj = \textcolor{keyword}{new} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest}{OAIDefaultApiRequest}}(socket, \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af1f8f9fe509ba350567bc87627289ae9}{mOAIDefaultApiHandler}});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00053}00053             reqObj-\/>listEntryLaneletsRequest();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00054}00054     \});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00055}00055     \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_aa45ca6e410137cb40fc3a87abc1f02ea}{Routes}}.insert(QString(\textcolor{stringliteral}{"{}\%1 \%2"{}}).arg(\textcolor{stringliteral}{"{}GET"{}}).arg(\textcolor{stringliteral}{"{}/intersection\_model/v1/link\_lanelets"{}}).toLower(), [\textcolor{keyword}{this}](QHttpEngine::Socket *socket) \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00056}00056             \textcolor{keyword}{auto} reqObj = \textcolor{keyword}{new} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest}{OAIDefaultApiRequest}}(socket, \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af1f8f9fe509ba350567bc87627289ae9}{mOAIDefaultApiHandler}});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00057}00057             reqObj-\/>listLinkLaneletsRequest();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00058}00058     \});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00061}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a377e58cb9bd3b687570d111f3d0bfdda}{00061}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a377e58cb9bd3b687570d111f3d0bfdda}{OAIApiRouter::processRequest}}(QHttpEngine::Socket *socket)\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00062}00062     \textcolor{keywordflow}{if}( \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a070a623fc66bce76f6f1d72a3689dff4}{handleRequest}}(socket) )\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00063}00063         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00065}00065     \textcolor{keywordflow}{if}( \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_adb8f8614995fcbf74906ee7dc3f09081}{handleRequestAndExtractPathParam}}(socket) )\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00066}00066         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00067}00067     \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00068}00068     socket-\/>setStatusCode(QHttpEngine::Socket::NotFound);}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00069}00069     \textcolor{keywordflow}{if}(socket-\/>isOpen())\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00070}00070         socket-\/>writeHeaders();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00071}00071         socket-\/>close();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00073}00073 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00075}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a070a623fc66bce76f6f1d72a3689dff4}{00075}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a070a623fc66bce76f6f1d72a3689dff4}{OAIApiRouter::handleRequest}}(QHttpEngine::Socket *socket)\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00076}00076     \textcolor{keyword}{auto} reqPath = QString(\textcolor{stringliteral}{"{}\%1 \%2"{}}).arg(\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a2070802a58701010af9764ede26c3b42}{fromQHttpEngineMethod}}(socket-\/>method())).arg(socket-\/>path()).toLower();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00077}00077     \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_aa45ca6e410137cb40fc3a87abc1f02ea}{Routes}}.contains(reqPath) ) \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00078}00078         \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_aa45ca6e410137cb40fc3a87abc1f02ea}{Routes}}.value(reqPath).operator()(socket);}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00079}00079         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00080}00080     \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00081}00081     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00082}00082 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00084}\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_adb8f8614995fcbf74906ee7dc3f09081}{00084}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_adb8f8614995fcbf74906ee7dc3f09081}{OAIApiRouter::handleRequestAndExtractPathParam}}(QHttpEngine::Socket *socket)\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00085}00085     \textcolor{keyword}{auto} reqPath = QString(\textcolor{stringliteral}{"{}\%1 \%2"{}}).arg(\mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_a2070802a58701010af9764ede26c3b42}{fromQHttpEngineMethod}}(socket-\/>method())).arg(socket-\/>path()).toLower();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00086}00086     \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00087}00087         \textcolor{keyword}{auto} completePath = QString(\textcolor{stringliteral}{"{}\%1 \%2"{}}).arg(\textcolor{stringliteral}{"{}GET"{}}).arg(\textcolor{stringliteral}{"{}/intersection\_model/v1/get\_conflict\_lanelets/\{link\_lanelet\_id\}"{}}).toLower();}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00088}00088         \textcolor{keywordflow}{if} ( reqPath.startsWith(completePath.leftRef( completePath.indexOf(QString(\textcolor{stringliteral}{"{}/\{"{}})))) ) \{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00089}00089             QRegularExpressionMatch match = \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_ae8b91644f3895eb1733b3ca51e63ef11}{getRequestMatch}}( completePath, reqPath );}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00090}00090             \textcolor{keywordflow}{if} ( match.hasMatch() )\{}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00091}00091                 QString link\_lanelet\_id = match.captured(QString(\textcolor{stringliteral}{"{}link\_lanelet\_id"{}}).toLower());}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00092}00092                 \textcolor{keyword}{auto} reqObj = \textcolor{keyword}{new} \mbox{\hyperlink{classOpenAPI_1_1OAIDefaultApiRequest}{OAIDefaultApiRequest}}(socket, \mbox{\hyperlink{classOpenAPI_1_1OAIApiRouter_af1f8f9fe509ba350567bc87627289ae9}{mOAIDefaultApiHandler}});}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00093}00093                 reqObj-\/>getConflictLaneletsRequest(link\_lanelet\_id);}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00094}00094                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00095}00095             \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00096}00096         \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00097}00097     \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00098}00098     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00099}00099 \}}
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{OAIApiRouter_8cpp_source_l00101}00101 \}}
+
+\end{DoxyCode}

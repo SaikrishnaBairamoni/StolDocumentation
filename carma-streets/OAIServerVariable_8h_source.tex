@@ -1,0 +1,46 @@
+\hypertarget{OAIServerVariable_8h_source}{}\doxysection{OAIServer\+Variable.\+h}
+\label{OAIServerVariable_8h_source}\index{streets\_utils/streets\_api/intersection\_client\_api/OAIServerVariable.h@{streets\_utils/streets\_api/intersection\_client\_api/OAIServerVariable.h}}
+\mbox{\hyperlink{OAIServerVariable_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00015}00015 \textcolor{preprocessor}{\#ifndef OAI\_SERVERVARIABLE\_H}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00016}00016 \textcolor{preprocessor}{\#define OAI\_SERVERVARIABLE\_H}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <QString>}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00018}00018 \textcolor{preprocessor}{\#include <QSet>}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00020}00020 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceOpenAPI}{OpenAPI}} \{}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00022}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{00022}} \textcolor{keyword}{class }\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable}{OAIServerVariable}} \{}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00023}00023 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00030}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_aa03cb6390c832863eff091db0f9e7825}{00030}}     \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_aa03cb6390c832863eff091db0f9e7825}{OAIServerVariable}}(\textcolor{keyword}{const} QString \&description, \textcolor{keyword}{const} QString \&defaultValue, \textcolor{keyword}{const} QSet<QString> \&enumValues)}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00031}00031     : \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a33bbf6db1cc65710f6c7736ed5a70b22}{\_defaultValue}}(defaultValue),}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00032}00032       \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a78b1b635978a3edec1212c309c64390d}{\_description}}(description),}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00033}00033       \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_aaeef369656995c64b9e9726b7160b5bd}{\_enumValues}}(enumValues)\{\}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00035}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_acd663343f570362fb04338e77db68c6f}{00035}}     \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_acd663343f570362fb04338e77db68c6f}{OAIServerVariable}}()\{\}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00036}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_afae1aa756842f66724a13b66ce355526}{00036}}     \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_afae1aa756842f66724a13b66ce355526}{\string~OAIServerVariable}}()\{\}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00038}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a0d01e3b3d52e89df04d41d3338b0620e}{00038}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a0d01e3b3d52e89df04d41d3338b0620e}{setDefaultValue}}(\textcolor{keyword}{const} QString\& \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}})\{}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00039}00039       \textcolor{keywordflow}{if}( \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_aaeef369656995c64b9e9726b7160b5bd}{\_enumValues}}.contains(\mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}}))\{}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00040}00040         \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a33bbf6db1cc65710f6c7736ed5a70b22}{\_defaultValue}} = \mbox{\hyperlink{namespacesimulate__bsm_a4e420317ae55cdf52ea0066e7a2b5fba}{value}};}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00041}00041         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00042}00042       \}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00043}00043       \textcolor{keywordflow}{return} -\/2;}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00046}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a4ce8afaf0c7151cef5966eb2e80100b2}{00046}}     QString \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a4ce8afaf0c7151cef5966eb2e80100b2}{getDefaultValue}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a33bbf6db1cc65710f6c7736ed5a70b22}{\_defaultValue}};\}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00047}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a39e5be629e00be0b0bae591bae1eedfa}{00047}}     QSet<QString> \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a39e5be629e00be0b0bae591bae1eedfa}{getEnumValues}}()\{\textcolor{keywordflow}{return} \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_aaeef369656995c64b9e9726b7160b5bd}{\_enumValues}};\}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00050}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a33bbf6db1cc65710f6c7736ed5a70b22}{00050}}     QString \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a33bbf6db1cc65710f6c7736ed5a70b22}{\_defaultValue}};}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00051}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a78b1b635978a3edec1212c309c64390d}{00051}}     QString \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_a78b1b635978a3edec1212c309c64390d}{\_description}};}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00052}\mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_aaeef369656995c64b9e9726b7160b5bd}{00052}}     QSet<QString> \mbox{\hyperlink{classOpenAPI_1_1OAIServerVariable_aaeef369656995c64b9e9726b7160b5bd}{\_enumValues}};}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00054}00054 \};}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00056}00056 \} \textcolor{comment}{// namespace OpenAPI}}
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{OAIServerVariable_8h_source_l00058}00058 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// OAI\_SERVERVARIABLE\_H}}
+
+\end{DoxyCode}
