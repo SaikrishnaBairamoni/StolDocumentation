@@ -1,5 +1,0 @@
-<map id="streets_service::streets_configuration::configure_logger" name="streets_service::streets_configuration::configure_logger">
-<area shape="rect" id="node1" title="Method to read service level configurations from manifest.json file to configure default logger and s..." alt="" coords="5,49,208,90"/>
-<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#a73e05345064161cb34c629881622c068" title="Method to configuration spdlog default multisink logger. Includes a file sink which rotates daily and..." alt="" coords="266,5,423,61"/>
-<area shape="rect" id="node3" href="$classstreets__service_1_1streets__configuration.html#af65edea791c4df09b00836dd0dbf164d" title="Method to set the spdlog::default." alt="" coords="256,85,433,126"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="scheduling_service::scheduling_worker::schedule_vehicles" name="scheduling_service::scheduling_worker::schedule_vehicles">
-<area shape="rect" id="node1" title="Runs the scheduler&#39;s schedule_veh method to schedule all vehicles." alt="" coords="5,31,141,87"/>
-<area shape="rect" id="node2" href="$classstreets__service_1_1streets__configuration.html#a48f38b0b6ecb3043cc051b624f12824b" title="Retreive configuration parameter boolean value with provide name." alt="" coords="189,5,408,47"/>
-<area shape="rect" id="node4" href="$classstreets__service_1_1streets__configuration.html#a03603871626201e07690effb9f2440bf" title="Retreive configuration parameter string value with provided name." alt="" coords="195,71,402,112"/>
-<area shape="rect" id="node3" href="$classstreets__service_1_1streets__configuration.html#a92ea5469cbab9198efb4696b7e5598eb" title=" " alt="" coords="456,39,641,80"/>
-</map>

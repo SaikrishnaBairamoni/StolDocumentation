@@ -1,7 +1,0 @@
-<map id="kafka_clients::kafka_consumer_worker::stop" name="kafka_clients::kafka_consumer_worker::stop">
-<area shape="rect" id="node1" title=" " alt="" coords="751,5,913,47"/>
-<area shape="rect" id="node2" href="$examples_2kafka__examples_2src_2main_8cpp.html#a6572b0c39967495c61b6a9c29e4ae5b2" title=" " alt="" coords="104,11,253,38"/>
-<area shape="rect" id="node4" href="$classkafka__clients_1_1kafka__consumer__worker.html#afe6dbad81e23024916594351983aefc0" title=" " alt="" coords="540,30,703,86"/>
-<area shape="rect" id="node3" href="$examples_2kafka__examples_2src_2main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,11,56,38"/>
-<area shape="rect" id="node5" href="$classkafka__clients_1_1kafka__consumer__worker.html#a3578a2abd82b20715659c9784a43b035" title=" " alt="" coords="301,33,492,75"/>
-</map>
